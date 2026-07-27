@@ -1,24 +1,561 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>risk-place.org</title>
-<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>risk-place.org — Business Continuity &amp; Resilience · GCC</title>
+<meta name="description" content="Drone incident and ransomware readiness for GCC companies. We turn business resilience into measurable metrics and money: gap assessment, continuity dashboard, training.">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  html,body{height:100%;margin:0}
-  body{
-    display:flex;flex-direction:column;align-items:center;justify-content:center;
-    min-height:100vh;background:#ffffff;color:#000000;
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    text-align:center;padding:24px;
-  }
-  .domain{font-size:clamp(28px,6vw,56px);font-weight:700;letter-spacing:.01em}
-  .status{margin-top:14px;font-size:clamp(14px,2.4vw,20px);font-weight:400;color:#000000;text-transform:uppercase;letter-spacing:.18em}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;-webkit-font-smoothing:antialiased;font-family:'Figtree','IBM Plex Sans Arabic',system-ui,sans-serif;color:#16181F;line-height:1.55}
+html[dir="rtl"] body{font-family:'IBM Plex Sans Arabic','Figtree',system-ui,sans-serif}
+a{color:#16181F;text-decoration:none}
+::selection{background:#FBE0CB}
+input,textarea,button{font-family:inherit}
+.mono{font-family:'IBM Plex Mono',monospace}
+.wrap{max-width:1280px;margin:0 auto;padding:0 36px}
+/* header */
+.hdr{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.94);backdrop-filter:blur(14px);border-bottom:1px solid #EAE7E1}
+.hdr .in{height:74px;display:flex;align-items:center;gap:44px}
+.logo{flex-shrink:0;display:flex;flex-direction:column;gap:1px}
+.logo .nm{font-size:24px;font-weight:600;letter-spacing:-0.02em}
+.logo .nm b{color:#C4571C;font-weight:600}
+.logo .tg{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#8A8478}
+.nav{display:flex;align-items:center;gap:28px;font-size:16px;font-weight:400;flex:1}
+.nav a{padding:26px 0 25px;border-bottom:2px solid transparent;color:#3D4149}
+.nav a:hover{border-bottom-color:#C4571C;color:#16181F}
+.hdr .right{display:flex;align-items:center;gap:16px;flex-shrink:0}
+.langbtn{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.08em;background:none;border:1px solid #DCD8D0;border-radius:999px;padding:7px 15px;cursor:pointer;color:#3D4149}
+.langbtn:hover{border-color:#16181F;color:#16181F}
+.cta-dark{font-size:16px;font-weight:500;background:#16181F;color:#fff !important;padding:11px 22px;border-radius:999px}
+.cta-dark:hover{background:#C4571C}
+.ar-note{display:none;background:#FBE0CB;color:#5A2E10;text-align:center;font-size:15px;font-weight:500;padding:10px 24px}
+html[dir="rtl"] .ar-note{display:block}
+/* hero */
+.hero{position:relative;background:#0D1117;overflow:hidden}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% top}
+.hero .shade{position:absolute;inset:0;background:linear-gradient(96deg,rgba(9,12,18,0.93) 0%,rgba(9,12,18,0.78) 38%,rgba(9,12,18,0.24) 72%,rgba(9,12,18,0.08) 100%)}
+html[dir="rtl"] .hero .shade{background:linear-gradient(264deg,rgba(9,12,18,0.93) 0%,rgba(9,12,18,0.78) 38%,rgba(9,12,18,0.24) 72%,rgba(9,12,18,0.08) 100%)}
+.hero .in{position:relative;padding-top:128px;padding-bottom:116px}
+.kicker{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:#F0A868;margin:0 0 30px}
+.hero h1{font-size:66px;font-weight:300;line-height:1.08;letter-spacing:-0.03em;color:#fff;margin:0;max-width:20ch;text-wrap:pretty}
+.hero .accent{font-size:27px;font-weight:300;line-height:1.32;color:#F0A868;margin:22px 0 0;max-width:24ch;letter-spacing:-0.01em}
+.hero .body{font-size:19.5px;font-weight:300;line-height:1.62;color:rgba(255,255,255,0.72);margin:32px 0 0;max-width:56ch}
+.hero .ctas{display:flex;gap:12px;margin-top:40px;flex-wrap:wrap}
+.btn-w{font-size:17px;font-weight:500;background:#fff;color:#16181F;padding:15px 30px;border-radius:999px;border:0;cursor:pointer}
+.btn-w:hover{background:#F0A868}
+.btn-o{font-size:17px;font-weight:400;color:#fff !important;border:1px solid rgba(255,255,255,0.34);padding:15px 30px;border-radius:999px;display:inline-block}
+.btn-o:hover{border-color:#fff}
+.hero .trust{font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.06em;color:rgba(255,255,255,0.5);margin:44px 0 0;max-width:72ch;line-height:1.7}
+/* sections */
+.sec{padding-top:104px;padding-bottom:96px}
+.sec-head{display:grid;grid-template-columns:6fr 5fr;gap:72px;align-items:end;margin-bottom:64px}
+.sec-head h2{font-size:44px;font-weight:300;line-height:1.14;letter-spacing:-0.025em;margin:0;text-wrap:pretty}
+.sec-head p{font-size:19px;font-weight:300;line-height:1.62;color:#5E636D;margin:0}
+/* threats */
+.thr{display:grid;grid-template-columns:1fr 1fr;gap:64px}
+.thr .card{display:flex;flex-direction:column;gap:18px;padding-top:26px;border-top:2px solid #16181F}
+.thr .tag{font-family:'IBM Plex Mono',monospace;font-size:12.5px;font-weight:500;letter-spacing:0.13em;text-transform:uppercase;color:#C4571C}
+.thr h3{font-size:29px;font-weight:400;line-height:1.2;letter-spacing:-0.02em;margin:0}
+.thr .body{font-size:17.5px;font-weight:300;line-height:1.62;color:#5E636D;margin:0}
+.thr ul{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;gap:12px}
+.thr li{display:grid;grid-template-columns:18px 1fr;gap:12px;font-size:17px;font-weight:400;line-height:1.5}
+.thr li .d{color:#C4571C}
+.thr .q{margin:18px 0 0;font-size:19px;font-weight:400;line-height:1.5;color:#16181F;border-inline-start:3px solid #F0A868;padding-inline-start:18px}
+/* experience */
+.beige{background:#F7F4EF;border-top:1px solid #EAE7E1;border-bottom:1px solid #EAE7E1}
+.exp{display:grid;grid-template-columns:7fr 5fr;gap:88px;padding-top:96px;padding-bottom:96px}
+.exp h2{font-size:44px;font-weight:300;line-height:1.14;letter-spacing:-0.025em;margin:0 0 8px;text-wrap:pretty}
+.exp .acc{font-size:44px;font-weight:400;line-height:1.14;letter-spacing:-0.025em;margin:0 0 32px;color:#C4571C}
+.exp .paras{display:flex;flex-direction:column;gap:18px;max-width:62ch}
+.exp .paras p{font-size:18px;font-weight:300;line-height:1.66;color:#3D4149;margin:0}
+.stats{display:flex;flex-direction:column}
+.stat{display:grid;grid-template-columns:128px 1fr;gap:20px;align-items:baseline;padding:22px 0;border-bottom:1px solid #E1DCD3}
+.stat .v{font-size:38px;font-weight:300;letter-spacing:-0.03em;color:#16181F}
+.stat .l{font-size:16px;font-weight:300;line-height:1.5;color:#5E636D}
+/* services — визуальный якорь лендинга */
+.svc-sec{background:#0D1117}
+.svc-sec .sec-head h2{color:#fff}
+.svc-sec .sec-head p{color:rgba(255,255,255,0.68)}
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.svc .p{background:#fff;border-radius:18px;padding:34px 30px 30px;display:flex;flex-direction:column;gap:13px;min-height:400px;transition:transform .18s ease, box-shadow .18s ease;position:relative}
+.svc .p:hover{transform:translateY(-5px);box-shadow:0 18px 44px rgba(0,0,0,0.35)}
+.svc .p.flag{border:2px solid #C4571C}
+.flagbadge{position:absolute;top:-14px;inset-inline-end:22px;background:#C4571C;color:#fff;font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;border-radius:999px;padding:5px 14px}
+.svc .step{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:0.13em;text-transform:uppercase;color:#C4571C}
+.svc h3{font-size:24px;font-weight:600;line-height:1.24;letter-spacing:-0.015em;margin:0}
+.svc .b{font-size:16px;font-weight:300;line-height:1.6;color:#5E636D;margin:0;flex:1}
+.svc .pr{font-size:26px;font-weight:600;letter-spacing:-0.02em;margin-top:auto;padding-top:14px;color:#16181F}
+.svc .prn{font-size:14px;font-weight:300;color:#8A8478;min-height:44px}
+.svc button{margin-top:12px;width:100%;font-size:16.5px;font-weight:600;background:#C4571C;border:0;border-radius:12px;padding:15px 20px;cursor:pointer;color:#fff}
+.svc button:hover{background:#A03F12}
+.pnote{font-size:14.5px;font-weight:300;color:rgba(255,255,255,0.55);margin:22px 0 0}
+/* regwatch */
+.regs{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.regs .r{display:flex;flex-direction:column;gap:14px;padding-top:22px;border-top:1px solid #D6D0C6}
+.regs .rt{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:0.13em;text-transform:uppercase;color:#8A8478}
+.regs h3{font-size:24px;font-weight:500;line-height:1.24;letter-spacing:-0.015em;margin:0}
+.regs p{font-size:16.5px;font-weight:300;line-height:1.62;color:#5E636D;margin:0}
+.regs button{align-self:flex-start;margin-top:6px;background:none;border:0;padding:0;font-size:16px;font-weight:500;color:#C4571C;cursor:pointer}
+.regs button:hover{color:#16181F}
+/* results */
+.res{display:grid;grid-template-columns:repeat(4,1fr);gap:36px}
+.res .r{display:flex;flex-direction:column;gap:12px;padding-top:20px;border-top:2px solid #16181F}
+.res .v{font-size:34px;font-weight:300;letter-spacing:-0.03em}
+.res .l{font-size:16px;font-weight:300;line-height:1.55;color:#5E636D}
+/* contact */
+.dark{background:#0D1117;color:#fff}
+.cont{display:grid;grid-template-columns:6fr 5fr;gap:88px;padding-top:96px;padding-bottom:96px}
+.cont h2{font-size:44px;font-weight:300;line-height:1.14;letter-spacing:-0.025em;margin:0 0 18px;text-wrap:pretty}
+.cont .sub{font-size:19px;font-weight:300;line-height:1.62;color:rgba(255,255,255,0.66);margin:0 0 48px;max-width:50ch}
+.person{display:grid;grid-template-columns:104px 1fr;gap:26px;align-items:start}
+.person img{width:104px;height:104px;border-radius:50%;object-fit:cover;filter:grayscale(0.15)}
+.person h3{font-size:23px;font-weight:500;letter-spacing:-0.015em;margin:0}
+.person .role{font-size:16px;font-weight:300;color:rgba(255,255,255,0.6);margin:5px 0 16px}
+.person ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px}
+.person li{font-size:16px;font-weight:300;color:rgba(255,255,255,0.82)}
+.plinks{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap}
+.plinks a{font-size:15px;border-radius:999px;padding:8px 16px}
+.plinks a.em{color:#F0A868;border:1px solid rgba(240,168,104,0.4)}
+.plinks a.em:hover{background:#F0A868;color:#0D1117}
+.plinks a.soc{color:rgba(255,255,255,0.8);border:1px solid rgba(255,255,255,0.22)}
+.plinks a.soc:hover{border-color:#fff;color:#fff}
+.form{display:flex;flex-direction:column;gap:4px}
+.form input,.form textarea{background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,0.24);padding:15px 2px;font-size:17px;font-weight:300;color:#fff;outline:none;resize:none}
+.form input:focus,.form textarea:focus{border-bottom-color:#F0A868}
+.form ::placeholder{color:rgba(255,255,255,0.45)}
+.form button{margin-top:26px;align-self:flex-start;font-size:17px;font-weight:500;background:#fff;color:#16181F;border:0;padding:14px 30px;border-radius:999px;cursor:pointer}
+.form button:hover{background:#F0A868}
+.sentnote{font-size:15px;font-weight:400;color:#7BD6A0;margin:16px 0 0;min-height:20px}
+.foot{border-top:1px solid rgba(255,255,255,0.12)}
+.foot .in{padding:24px 36px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;font-size:14.5px;font-weight:300;color:rgba(255,255,255,0.46)}
+.foot button{background:none;border:0;padding:0;font-size:14.5px;font-weight:300;color:rgba(255,255,255,0.46);cursor:pointer}
+.foot button:hover{color:#fff}
+/* responsive */
+@media(max-width:1000px){
+  .hero h1{font-size:46px}
+  .sec-head,.thr,.exp,.cont{grid-template-columns:1fr;gap:32px}
+  .svc{grid-template-columns:1fr 1fr}
+  .regs{grid-template-columns:1fr}
+  .res{grid-template-columns:1fr 1fr}
+  .nav{display:none}
+}
+@media(max-width:600px){
+  .svc,.res{grid-template-columns:1fr}
+  .hero h1{font-size:38px}
+  .wrap{padding-left:20px;padding-right:20px}
+}
 </style>
 </head>
 <body>
-  <div class="domain">risk-place.org</div>
-  <div class="status">Under construction</div>
+
+<header class="hdr">
+  <div class="wrap in">
+    <a href="#top" class="logo">
+      <span class="nm">risk-place<b>.org</b></span>
+      <span class="tg" data-k="tagline">Business Continuity &amp; Resilience · GCC</span>
+    </a>
+    <nav class="nav">
+      <a href="#threats" data-k="nav.0">Threats</a>
+      <a href="#experience" data-k="nav.1">Why us</a>
+      <a href="#services" data-k="nav.2">Services</a>
+      <a href="#regwatch" data-k="nav.3">Regulatory watch</a>
+      <a href="#contact" data-k="nav.4">Contact</a>
+    </nav>
+    <div class="right">
+      <button class="langbtn" id="langbtn" onclick="toggleLang()">AR</button>
+      <a href="#contact" class="cta-dark" data-k="navCta">Discuss your task</a>
+    </div>
+  </div>
+</header>
+
+<div class="ar-note" data-k="arNote"></div>
+
+<section id="top" class="hero">
+  <img class="bg" src="hero-dubai.jpg" alt="Dubai skyline at sunrise">
+  <div class="shade"></div>
+  <div class="wrap in">
+    <p class="kicker" data-k="heroKicker">Drone &amp; ransomware readiness — measured in money</p>
+    <h1 data-k="heroTitle">A drone incident closes your site. Ransomware closes your revenue.</h1>
+    <p class="accent" data-k="heroAccent">Are you ready for either?</p>
+    <p class="body" data-k="heroBody">When the alarm sounds, it is too late to write the plan. We assess how long your business survives, what a day of downtime costs — and build the continuity system that keeps revenue flowing.</p>
+    <div class="ctas">
+      <button class="btn-w" onclick="stub()" data-k="heroCta">Take the free diagnostic →</button>
+      <a href="#contact" class="btn-o" data-k="heroCta2">Discuss your task</a>
+    </div>
+    <p class="trust" data-k="heroTrust">ISO 22301 · NCEMA 7000 · CBUAE operational resilience · data stays inside your infrastructure</p>
+  </div>
+</section>
+
+<section id="threats" class="wrap sec">
+  <div class="sec-head">
+    <h2 data-k="threatsTitle">Two threats we know better than anyone</h2>
+    <p data-k="threatsSub">Both stop the business, not just the IT department. Both are survivable — if the decisions are made before day X.</p>
+  </div>
+  <div class="thr">
+    <div class="card">
+      <span class="tag" data-k="threats.0.tag">Physical threat</span>
+      <h3 data-k="threats.0.title">Drone / UAV incident readiness</h3>
+      <p class="body" data-k="threats.0.body">An airspace incident near your facility means evacuation, site shutdown, supply disruption and insurance questions — even if nothing touches your fence.</p>
+      <ul>
+        <li><span class="d">—</span><span data-k="threats.0.items.0">Site shutdown &amp; evacuation playbooks, tested with your team</span></li>
+        <li><span class="d">—</span><span data-k="threats.0.items.1">Cost of a lost day per site — calculated from your own data</span></li>
+        <li><span class="d">—</span><span data-k="threats.0.items.2">Alternate logistics, suppliers and communication channels</span></li>
+        <li><span class="d">—</span><span data-k="threats.0.items.3">Business-interruption evidence your insurer will accept</span></li>
+      </ul>
+      <p class="q" data-k="threats.0.q">If your main site is closed for 72 hours — who sells, who ships, who talks to clients?</p>
+    </div>
+    <div class="card">
+      <span class="tag" data-k="threats.1.tag">Cyber threat</span>
+      <h3 data-k="threats.1.title">Ransomware &amp; cyber resilience</h3>
+      <p class="body" data-k="threats.1.body">Encryption is not an IT incident — it is a CEO exam. The three decisions that decide the outcome are taken before the attack, outside the IT department.</p>
+      <ul>
+        <li><span class="d">—</span><span data-k="threats.1.items.0">Isolated, restore-tested backups — budgeted by the CFO, not hoped for</span></li>
+        <li><span class="d">—</span><span data-k="threats.1.items.1">First-hours playbook: who shuts the network, who talks to clients</span></li>
+        <li><span class="d">—</span><span data-k="threats.1.items.2">Emergency-mode revenue: selling and serving at 30% capacity</span></li>
+        <li><span class="d">—</span><span data-k="threats.1.items.3">Crisis-team authority fixed in advance — no meetings on day X</span></li>
+      </ul>
+      <p class="q" data-k="threats.1.q">Average public-case downtime is about a week. What does a week without systems cost you?</p>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="beige">
+  <div class="wrap exp">
+    <div>
+      <h2 data-k="expTitle">We did not read about these risks.</h2>
+      <p class="acc" data-k="expTitleAccent">We lived them.</p>
+      <div class="paras">
+        <p data-k="expParas.0">Our team built and ran business continuity under real, sustained drone and ransomware pressure — in heavy industry, energy, telecom and financial infrastructure, where these scenarios have been operational reality for years.</p>
+        <p data-k="expParas.1">Led by Evgeny Telenkov — Best Risk Manager of Russia 2020, PhD in industrial risk management. Continuity and risk leadership at Nornickel, Rosneft, beeline, EY; 15+ BCM implementations including the national settlement depository (NSD).</p>
+        <p data-k="expParas.2">That field experience is now available to GCC companies — turned into metrics, money and working plans.</p>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat"><span class="v" data-k="stats.0.value">15+</span><span class="l" data-k="stats.0.label">BCM systems built in critical industries</span></div>
+      <div class="stat"><span class="v" data-k="stats.1.value">300+</span><span class="l" data-k="stats.1.label">risk &amp; continuity specialists trained</span></div>
+      <div class="stat"><span class="v" data-k="stats.2.value">2020</span><span class="l" data-k="stats.2.label">Best Risk Manager of Russia (RusRisk)</span></div>
+      <div class="stat"><span class="v" data-k="stats.3.value">26</span><span class="l" data-k="stats.3.label">metrics in the resilience index model</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="svc-sec">
+  <div class="wrap sec">
+  <div class="sec-head" style="margin-bottom:60px">
+    <h2 data-k="servicesTitle">Four steps from unknown risk to managed resilience</h2>
+    <p data-k="servicesSub">Start free, see the gaps in money terms, then decide how far to go. Every step is a complete result on its own.</p>
+  </div>
+  <div class="svc">
+    <div class="p">
+      <span class="step" data-k="products.0.step">Step 1 · Free</span>
+      <h3 data-k="products.0.title">Readiness quiz</h3>
+      <p class="b" data-k="products.0.body">13 questions, 5 minutes. Your maturity level against drone and ransomware scenarios — instantly, no email required.</p>
+      <div class="pr" data-k="products.0.price">Free</div>
+      <div class="prn" data-k="products.0.priceNote"></div>
+      <button onclick="stub()" data-k="products.0.cta">Take the quiz</button>
+    </div>
+    <div class="p">
+      <span class="step" data-k="products.1.step">Step 2 · Remote</span>
+      <h3 data-k="products.1.title">Continuity gap assessment</h3>
+      <p class="b" data-k="products.1.body">Remote diagnostic against ISO 22301 and NCEMA 7000 / CBUAE requirements. Cost of a downtime day, single points of failure, 90-day action plan.</p>
+      <div class="pr" data-k="products.1.price">from $4,900</div>
+      <div class="prn" data-k="products.1.priceNote">fixed scope · 2-3 weeks</div>
+      <button onclick="stub()" data-k="products.1.cta">Request assessment</button>
+    </div>
+    <div class="p flag">
+      <span class="flagbadge" data-k="flagBadge">Flagship</span>
+      <span class="step" data-k="products.2.step">Step 3 · Flagship</span>
+      <h3 data-k="products.2.title">Continuity &amp; risk dashboard</h3>
+      <p class="b" data-k="products.2.body">One board-level screen: resilience index 0-100, cost of downtime, recovery status of critical processes. Deployed on-premise — data never leaves your infrastructure.</p>
+      <div class="pr" data-k="products.2.price">from $15,000</div>
+      <div class="prn" data-k="products.2.priceNote">setup · then from $1,500/mo support</div>
+      <button onclick="stub()" data-k="products.2.cta">See a live demo</button>
+    </div>
+    <div class="p">
+      <span class="step" data-k="products.3.step">Step 4 · Team</span>
+      <h3 data-k="products.3.title">BCM training for your team</h3>
+      <p class="b" data-k="products.3.body">Executive and specialist tracks: ISO 22301 in practice, crisis roles and authority, first-hours decision drills for drone and cyber scenarios.</p>
+      <div class="pr" data-k="products.3.price">from $3,500</div>
+      <div class="prn" data-k="products.3.priceNote">per group · online or on-site</div>
+      <button onclick="stub()" data-k="products.3.cta">Request program</button>
+    </div>
+  </div>
+  <p class="pnote" data-k="pnote">Introductory pricing, 2026. Crisis simulation «Day X» (tabletop war-game) is available to existing clients on-site.</p>
+  </div>
+</section>
+
+<section id="regwatch" class="beige">
+  <div class="wrap" style="padding-top:96px;padding-bottom:96px">
+    <div class="sec-head" style="margin-bottom:56px">
+      <h2 data-k="regTitle">Regulatory watch · GCC</h2>
+      <p data-k="regSub">Continuity is no longer optional in the region. Materials and briefings on what applies to you.</p>
+    </div>
+    <div class="regs">
+      <div class="r">
+        <span class="rt" data-k="regs.0.rt">UAE · Government &amp; CNI</span>
+        <h3 data-k="regs.0.title">NCEMA 7000</h3>
+        <p data-k="regs.0.body">The national BCM standard — mandatory for government entities and critical infrastructure. What it requires and how to comply without bureaucracy.</p>
+        <button onclick="stub()" data-k="regs.0.link">Read the briefing →</button>
+      </div>
+      <div class="r">
+        <span class="rt" data-k="regs.1.rt">UAE · Banking deadline</span>
+        <h3 data-k="regs.1.title">CBUAE · Decree-Law 6/2025</h3>
+        <p data-k="regs.1.body">Operational resilience requirements for banks and financial institutions — with a compliance deadline around September 2026. The clock is running.</p>
+        <button onclick="stub()" data-k="regs.1.link">Check your gap →</button>
+      </div>
+      <div class="r">
+        <span class="rt" data-k="regs.2.rt">DIFC / ADGM · Listed companies</span>
+        <h3 data-k="regs.2.title">Operational risk rulebooks</h3>
+        <p data-k="regs.2.body">DFSA and FSRA rulebooks on operational risk and cyber resilience, plus ESG disclosure for SCA / ADX / DFM listed companies.</p>
+        <button onclick="stub()" data-k="regs.2.link">What applies to you →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap sec">
+  <div class="sec-head" style="margin-bottom:56px">
+    <h2 data-k="resTitle">A result you can measure</h2>
+    <p data-k="resSub">No binders on a shelf. Numbers the CFO and the board can act on.</p>
+  </div>
+  <div class="res">
+    <div class="r"><span class="v" data-k="results.0.value">$ / day</span><span class="l" data-k="results.0.label">cost of downtime per site and process — from your own data</span></div>
+    <div class="r"><span class="v" data-k="results.1.value">0-100</span><span class="l" data-k="results.1.label">resilience index — one number for the board, tracked monthly</span></div>
+    <div class="r"><span class="v" data-k="results.2.value">RTO / RPO</span><span class="l" data-k="results.2.label">recovery targets vs actuals for every critical process</span></div>
+    <div class="r"><span class="v" data-k="results.3.value">SPOF list</span><span class="l" data-k="results.3.label">single points of failure found and diversified — before day X</span></div>
+  </div>
+</section>
+
+<section id="contact" class="dark">
+  <div class="wrap cont">
+    <div>
+      <h2 data-k="contactTitle">Book a consultation</h2>
+      <p class="sub" data-k="contactSub">You talk to the expert, not a sales team. One call — your two or three biggest continuity gaps and what they cost, before any contract.</p>
+      <div class="person">
+        <img src="evgeny.jpg" alt="Evgeny Telenkov">
+        <div>
+          <h3>Evgeny Telenkov</h3>
+          <p class="role" data-k="role">Partner · Head of Business Continuity Practice</p>
+          <ul>
+            <li data-k="bio.0">Best Risk Manager of Russia 2020 (RusRisk)</li>
+            <li data-k="bio.1">PhD in industrial risk management</li>
+            <li data-k="bio.2">Nornickel · Rosneft · beeline · EY · NSD</li>
+          </ul>
+          <div class="plinks">
+            <a class="em" href="mailto:evgeny@risk-place.org">evgeny@risk-place.org</a>
+            <a class="soc" href="https://t.me/JhonsonTel" target="_blank" rel="noopener">Telegram</a>
+            <a class="soc" href="https://www.linkedin.com/in/evgeny-telenkov-6992b952" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form class="form" onsubmit="return sendStub(event)">
+      <input id="f-name" data-kp="fName" placeholder="Name" required>
+      <input id="f-email" data-kp="fEmail" type="email" placeholder="Work email" required>
+      <textarea id="f-msg" data-kp="fMsg" rows="3" placeholder="What worries you most — drones, ransomware, regulation?"></textarea>
+      <button type="submit" data-k="fSend">Request a call</button>
+      <p class="sentnote" id="sentnote"></p>
+    </form>
+  </div>
+  <div class="foot">
+    <div class="wrap in" style="padding-left:0;padding-right:0">
+      <span data-k="copyright">© 2026 risk-place.org · Business Continuity &amp; Resilience</span>
+      <button onclick="stub()" data-k="privacy">Privacy policy</button>
+    </div>
+  </div>
+</section>
+
+<script>
+var T = {
+en: {
+  tagline: "Business Continuity & Resilience · GCC",
+  navCta: "Discuss your task",
+  nav: ["Threats", "Why us", "Services", "Regulatory watch", "Contact"],
+  arNote: "",
+  flagBadge: "Flagship",
+  heroKicker: "Drone & ransomware readiness — measured in money",
+  heroTitle: "A drone incident closes your site. Ransomware closes your revenue.",
+  heroAccent: "Are you ready for either?",
+  heroBody: "When the alarm sounds, it is too late to write the plan. We assess how long your business survives, what a day of downtime costs — and build the continuity system that keeps revenue flowing.",
+  heroCta: "Take the free diagnostic →",
+  heroCta2: "Discuss your task",
+  heroTrust: "ISO 22301 · NCEMA 7000 · CBUAE operational resilience · data stays inside your infrastructure",
+  threatsTitle: "Two threats we know better than anyone",
+  threatsSub: "Both stop the business, not just the IT department. Both are survivable — if the decisions are made before day X.",
+  threats: [
+    { tag: "Physical threat", title: "Drone / UAV incident readiness",
+      body: "An airspace incident near your facility means evacuation, site shutdown, supply disruption and insurance questions — even if nothing touches your fence.",
+      items: ["Site shutdown & evacuation playbooks, tested with your team","Cost of a lost day per site — calculated from your own data","Alternate logistics, suppliers and communication channels","Business-interruption evidence your insurer will accept"],
+      q: "If your main site is closed for 72 hours — who sells, who ships, who talks to clients?" },
+    { tag: "Cyber threat", title: "Ransomware & cyber resilience",
+      body: "Encryption is not an IT incident — it is a CEO exam. The three decisions that decide the outcome are taken before the attack, outside the IT department.",
+      items: ["Isolated, restore-tested backups — budgeted by the CFO, not hoped for","First-hours playbook: who shuts the network, who talks to clients","Emergency-mode revenue: selling and serving at 30% capacity","Crisis-team authority fixed in advance — no meetings on day X"],
+      q: "Average public-case downtime is about a week. What does a week without systems cost you?" }
+  ],
+  expTitle: "We did not read about these risks.",
+  expTitleAccent: "We lived them.",
+  expParas: [
+    "Our team built and ran business continuity under real, sustained drone and ransomware pressure — in heavy industry, energy, telecom and financial infrastructure, where these scenarios have been operational reality for years.",
+    "Led by Evgeny Telenkov — Best Risk Manager of Russia 2020, PhD in industrial risk management. Continuity and risk leadership at Nornickel, Rosneft, beeline, EY; 15+ BCM implementations including the national settlement depository (NSD).",
+    "That field experience is now available to GCC companies — turned into metrics, money and working plans."
+  ],
+  stats: [
+    { value: "15+", label: "BCM systems built in critical industries" },
+    { value: "300+", label: "risk & continuity specialists trained" },
+    { value: "2020", label: "Best Risk Manager of Russia (RusRisk)" },
+    { value: "26", label: "metrics in the resilience index model" }
+  ],
+  servicesTitle: "Four steps from unknown risk to managed resilience",
+  servicesSub: "Start free, see the gaps in money terms, then decide how far to go. Every step is a complete result on its own.",
+  products: [
+    { step: "Step 1 · Free", title: "Readiness quiz", body: "13 questions, 5 minutes. Your maturity level against drone and ransomware scenarios — instantly, no email required.", price: "Free", priceNote: "", cta: "Take the quiz" },
+    { step: "Step 2 · Remote", title: "Continuity gap assessment", body: "Remote diagnostic against ISO 22301 and NCEMA 7000 / CBUAE requirements. Cost of a downtime day, single points of failure, 90-day action plan.", price: "from $4,900", priceNote: "fixed scope · 2-3 weeks", cta: "Request assessment" },
+    { step: "Step 3 · Flagship", title: "Continuity & risk dashboard", body: "One board-level screen: resilience index 0-100, cost of downtime, recovery status of critical processes. Deployed on-premise — data never leaves your infrastructure.", price: "from $15,000", priceNote: "setup · then from $1,500/mo support", cta: "See a live demo" },
+    { step: "Step 4 · Team", title: "BCM training for your team", body: "Executive and specialist tracks: ISO 22301 in practice, crisis roles and authority, first-hours decision drills for drone and cyber scenarios.", price: "from $3,500", priceNote: "per group · online or on-site", cta: "Request program" }
+  ],
+  pnote: "Introductory pricing, 2026. Crisis simulation «Day X» (tabletop war-game) is available to existing clients on-site.",
+  regTitle: "Regulatory watch · GCC",
+  regSub: "Continuity is no longer optional in the region. Materials and briefings on what applies to you.",
+  regs: [
+    { rt: "UAE · Government & CNI", title: "NCEMA 7000", body: "The national BCM standard — mandatory for government entities and critical infrastructure. What it requires and how to comply without bureaucracy.", link: "Read the briefing →" },
+    { rt: "UAE · Banking deadline", title: "CBUAE · Decree-Law 6/2025", body: "Operational resilience requirements for banks and financial institutions — with a compliance deadline around September 2026. The clock is running.", link: "Check your gap →" },
+    { rt: "DIFC / ADGM · Listed companies", title: "Operational risk rulebooks", body: "DFSA and FSRA rulebooks on operational risk and cyber resilience, plus ESG disclosure for SCA / ADX / DFM listed companies.", link: "What applies to you →" }
+  ],
+  resTitle: "A result you can measure",
+  resSub: "No binders on a shelf. Numbers the CFO and the board can act on.",
+  results: [
+    { value: "$ / day", label: "cost of downtime per site and process — from your own data" },
+    { value: "0-100", label: "resilience index — one number for the board, tracked monthly" },
+    { value: "RTO / RPO", label: "recovery targets vs actuals for every critical process" },
+    { value: "SPOF list", label: "single points of failure found and diversified — before day X" }
+  ],
+  contactTitle: "Book a consultation",
+  contactSub: "You talk to the expert, not a sales team. One call — your two or three biggest continuity gaps and what they cost, before any contract.",
+  role: "Partner · Head of Business Continuity Practice",
+  bio: ["Best Risk Manager of Russia 2020 (RusRisk)", "PhD in industrial risk management", "Nornickel · Rosneft · beeline · EY · NSD"],
+  fName: "Name", fEmail: "Work email", fMsg: "What worries you most — drones, ransomware, regulation?", fSend: "Request a call",
+  sent: "Thank you. We will reply within one business day.",
+  stubMsg: "Coming soon — this section is in development.",
+  copyright: "© 2026 risk-place.org · Business Continuity & Resilience",
+  privacy: "Privacy policy"
+},
+ar: {
+  tagline: "استمرارية الأعمال والمرونة · دول الخليج",
+  navCta: "ناقشوا مهمتكم",
+  nav: ["التهديدات", "لماذا نحن", "الخدمات", "المراقبة التنظيمية", "اتصل بنا"],
+  flagBadge: "الرائد",
+  arNote: "النسخة العربية قيد الإعداد — بعض المصطلحات التقنية تظهر بالإنجليزية",
+  heroKicker: "الجاهزية لحوادث الطائرات المسيرة وبرمجيات الفدية — مقاسة بالمال",
+  heroTitle: "حادث طائرة مسيرة يغلق موقعك. برمجية فدية توقف إيراداتك.",
+  heroAccent: "هل أنتم مستعدون لأيٍّ منهما؟",
+  heroBody: "عندما ينطلق الإنذار يكون الأوان قد فات لكتابة الخطة. نقيس قدرة أعمالكم على الصمود وتكلفة يوم التوقف، ونبني نظام الاستمرارية الذي يحفظ تدفق الإيرادات.",
+  heroCta: "ابدأوا التشخيص المجاني",
+  heroCta2: "ناقشوا مهمتكم",
+  heroTrust: "ISO 22301 · NCEMA 7000 · المرونة التشغيلية للمصرف المركزي · تبقى البيانات داخل بنيتكم التحتية",
+  threatsTitle: "تهديدان نعرفهما أفضل من غيرنا",
+  threatsSub: "كلاهما يوقف الأعمال لا قسم تقنية المعلومات فقط. وكلاهما يمكن النجاة منه إذا اتُخذت القرارات قبل اليوم س.",
+  threats: [
+    { tag: "تهديد مادي", title: "الجاهزية لحوادث الطائرات المسيرة",
+      body: "حادث في المجال الجوي قرب منشأتكم يعني الإخلاء وإغلاق الموقع وتعطل الإمداد وأسئلة التأمين — حتى إن لم يمس شيء سياجكم.",
+      items: ["خطط إغلاق الموقع والإخلاء، مختبرة مع فريقكم","تكلفة يوم التوقف لكل موقع — محسوبة من بياناتكم","بدائل اللوجستيات والموردين وقنوات الاتصال","أدلة انقطاع الأعمال المقبولة لدى شركة التأمين"],
+      q: "إذا أُغلق موقعكم الرئيسي ٧٢ ساعة — من يبيع ومن يشحن ومن يتحدث مع العملاء؟" },
+    { tag: "تهديد سيبراني", title: "برمجيات الفدية والمرونة السيبرانية",
+      body: "التشفير ليس حادثة تقنية بل اختبار للرئيس التنفيذي. القرارات الثلاثة الحاسمة تُتخذ قبل الهجوم وخارج قسم تقنية المعلومات.",
+      items: ["نسخ احتياطية معزولة ومختبرة الاستعادة — بميزانية معتمدة","خطة الساعات الأولى: من يعزل الشبكة ومن يخاطب العملاء","إيرادات وضع الطوارئ: البيع والخدمة بطاقة ٣٠٪","صلاحيات فريق الأزمة محددة مسبقاً — لا اجتماعات في اليوم س"],
+      q: "متوسط التوقف في الحالات المعلنة أسبوع تقريباً. كم يكلفكم أسبوع دون أنظمة؟" }
+  ],
+  expTitle: "لم نقرأ عن هذه المخاطر —",
+  expTitleAccent: "بل عشناها.",
+  expParas: [
+    "بنى فريقنا استمرارية الأعمال وأدارها تحت ضغط حقيقي ومستمر من المسيرات وبرمجيات الفدية، في الصناعة الثقيلة والطاقة والاتصالات والبنية المالية حيث كانت هذه السيناريوهات واقعاً تشغيلياً لسنوات.",
+    "بقيادة يفغيني تيلينكوف — أفضل مدير مخاطر في روسيا ٢٠٢٠، دكتوراه في إدارة المخاطر الصناعية. قاد الاستمرارية والمخاطر في نورنيكل وروسنفت وبيلاين وEY، ونفّذ أكثر من ١٥ نظام استمرارية بينها مركز الإيداع الوطني.",
+    "هذه الخبرة الميدانية متاحة الآن لشركات الخليج — محوّلة إلى مقاييس وأموال وخطط عملية."
+  ],
+  stats: [
+    { value: "+١٥", label: "نظام استمرارية في صناعات حرجة" },
+    { value: "+٣٠٠", label: "متخصص مخاطر واستمرارية تم تدريبهم" },
+    { value: "٢٠٢٠", label: "أفضل مدير مخاطر في روسيا (RusRisk)" },
+    { value: "٢٦", label: "مقياساً في نموذج مؤشر المرونة" }
+  ],
+  servicesTitle: "أربع خطوات من مخاطر مجهولة إلى مرونة مُدارة",
+  servicesSub: "ابدأ مجاناً، وشاهد الفجوات بلغة المال، ثم قرر مدى التقدم. كل خطوة نتيجة كاملة بحد ذاتها.",
+  products: [
+    { step: "الخطوة ١ · مجاناً", title: "اختبار الجاهزية", body: "١٣ سؤالاً في ٥ دقائق. مستوى نضجكم أمام سيناريوهات المسيرات والفدية فوراً، دون بريد إلكتروني.", price: "مجاناً", priceNote: "", cta: "ابدأ الاختبار" },
+    { step: "الخطوة ٢ · عن بُعد", title: "تقييم فجوات الاستمرارية", body: "تشخيص عن بُعد وفق ISO 22301 وNCEMA 7000 ومتطلبات المصرف المركزي. تكلفة يوم التوقف ونقاط الفشل وخطة ٩٠ يوماً.", price: "من ٤٩٠٠$", priceNote: "نطاق ثابت · ٢-٣ أسابيع", cta: "اطلب التقييم" },
+    { step: "الخطوة ٣ · الرائد", title: "لوحة الاستمرارية والمخاطر", body: "شاشة واحدة لمجلس الإدارة: مؤشر المرونة ٠-١٠٠ وتكلفة التوقف وحالة تعافي العمليات الحرجة. تُنشر داخلياً ولا تغادر البيانات بنيتكم.", price: "من ١٥٠٠٠$", priceNote: "التأسيس · ثم من ١٥٠٠$ شهرياً", cta: "شاهد عرضاً حياً" },
+    { step: "الخطوة ٤ · الفريق", title: "تدريب فريقكم على استمرارية الأعمال", body: "مسارات تنفيذية وتخصصية: ISO 22301 عملياً وأدوار الأزمات والصلاحيات وتمارين قرارات الساعات الأولى.", price: "من ٣٥٠٠$", priceNote: "لكل مجموعة · عن بُعد أو حضورياً", cta: "اطلب البرنامج" }
+  ],
+  pnote: "أسعار تمهيدية ٢٠٢٦. محاكاة الأزمات «اليوم س» متاحة للعملاء الحاليين حضورياً.",
+  regTitle: "المراقبة التنظيمية · الخليج",
+  regSub: "لم تعد الاستمرارية اختيارية في المنطقة. مواد وإحاطات عما ينطبق عليكم.",
+  regs: [
+    { rt: "الإمارات · الحكومة والبنية الحرجة", title: "NCEMA 7000", body: "المعيار الوطني لاستمرارية الأعمال — إلزامي للجهات الحكومية والبنية التحتية الحرجة. ما يطلبه وكيف تمتثلون له دون بيروقراطية.", link: "اقرأ الإحاطة ←" },
+    { rt: "الإمارات · مهلة القطاع المصرفي", title: "المصرف المركزي · مرسوم بقانون ٦/٢٠٢٥", body: "متطلبات المرونة التشغيلية للبنوك والمؤسسات المالية — بمهلة امتثال نحو سبتمبر ٢٠٢٦. الوقت يمضي.", link: "افحص فجوتكم ←" },
+    { rt: "مركز دبي المالي / سوق أبوظبي", title: "قواعد المخاطر التشغيلية", body: "قواعد DFSA وFSRA للمخاطر التشغيلية والمرونة السيبرانية، وإفصاحات ESG للشركات المدرجة في SCA / ADX / DFM.", link: "ما ينطبق عليكم ←" }
+  ],
+  resTitle: "نتيجة يمكن قياسها",
+  resSub: "لا ملفات على الرف — أرقام يعمل بها المدير المالي ومجلس الإدارة.",
+  results: [
+    { value: "$ / يوم", label: "تكلفة التوقف لكل موقع وعملية — من بياناتكم" },
+    { value: "٠-١٠٠", label: "مؤشر المرونة — رقم واحد لمجلس الإدارة يُتابع شهرياً" },
+    { value: "RTO / RPO", label: "أهداف التعافي مقابل الواقع لكل عملية حرجة" },
+    { value: "قائمة نقاط الفشل", label: "نقاط الفشل الأحادية مكتشفة ومعالجة قبل اليوم س" }
+  ],
+  contactTitle: "احجزوا استشارة",
+  contactSub: "تتحدثون إلى الخبير مباشرة لا إلى فريق مبيعات. مكالمة واحدة — أكبر فجوتين أو ثلاث في استمراريتكم وتكلفتها، قبل أي عقد.",
+  role: "شريك · رئيس ممارسة استمرارية الأعمال",
+  bio: ["أفضل مدير مخاطر في روسيا ٢٠٢٠ (RusRisk)", "دكتوراه في إدارة المخاطر الصناعية", "نورنيكل · روسنفت · بيلاين · EY · NSD"],
+  fName: "الاسم", fEmail: "البريد الإلكتروني للعمل", fMsg: "ما الذي يقلقكم أكثر — المسيرات أم الفدية أم التنظيم؟", fSend: "اطلب مكالمة",
+  sent: "شكراً لكم. سنرد خلال يوم عمل واحد.",
+  stubMsg: "قريباً — هذا القسم قيد التطوير.",
+  copyright: "© ٢٠٢٦ risk-place.org · استمرارية الأعمال والمرونة",
+  privacy: "سياسة الخصوصية"
+}
+};
+
+function pick(obj, path){
+  var parts = path.split('.');
+  var cur = obj;
+  for (var i = 0; i < parts.length; i++){
+    if (cur === undefined || cur === null) return undefined;
+    cur = cur[parts[i]];
+  }
+  return cur;
+}
+var CUR = 'en';
+function setLang(lang){
+  CUR = lang;
+  var dict = T[lang];
+  document.documentElement.lang = lang;
+  document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+  document.querySelectorAll('[data-k]').forEach(function(el){
+    var v = pick(dict, el.getAttribute('data-k'));
+    if (v === undefined) v = pick(T.en, el.getAttribute('data-k'));
+    if (v !== undefined) el.textContent = v;
+  });
+  document.querySelectorAll('[data-kp]').forEach(function(el){
+    var v = pick(dict, el.getAttribute('data-kp'));
+    if (v === undefined) v = pick(T.en, el.getAttribute('data-kp'));
+    if (v !== undefined) el.setAttribute('placeholder', v);
+  });
+  document.getElementById('langbtn').textContent = (lang === 'ar') ? 'EN' : 'AR';
+  try { localStorage.setItem('rp_org_lang', lang); } catch(e){}
+}
+function toggleLang(){ setLang(CUR === 'ar' ? 'en' : 'ar'); }
+function stub(){ alert(T[CUR].stubMsg); }
+function sendStub(e){
+  e.preventDefault();
+  document.getElementById('sentnote').textContent = T[CUR].sent;
+  return false;
+}
+(function(){
+  var saved = null;
+  try { saved = localStorage.getItem('rp_org_lang'); } catch(e){}
+  if (saved === 'ar') setLang('ar');
+})();
+</script>
 </body>
 </html>
