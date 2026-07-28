@@ -89,8 +89,8 @@ html[dir="rtl"] .hero .shade{background:linear-gradient(264deg,rgba(9,12,18,0.93
 .svc .b{font-size:16px;font-weight:300;line-height:1.6;color:#5E636D;margin:0;flex:1}
 .svc .pr{font-size:26px;font-weight:600;letter-spacing:-0.02em;margin-top:auto;padding-top:14px;color:#16181F}
 .svc .prn{font-size:14px;font-weight:300;color:#8A8478;min-height:44px}
-.svc button{margin-top:12px;width:100%;font-size:16.5px;font-weight:600;background:#C4571C;border:0;border-radius:12px;padding:15px 20px;cursor:pointer;color:#fff}
-.svc button:hover{background:#A03F12}
+.svc button,.svc a.qbtn{margin-top:12px;width:100%;font-size:16.5px;font-weight:600;background:#C4571C;border:0;border-radius:12px;padding:15px 20px;cursor:pointer;color:#fff !important;display:block;text-align:center}
+.svc button:hover,.svc a.qbtn:hover{background:#A03F12}
 /* regwatch */
 .regs{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
 .regs .r{display:flex;flex-direction:column;gap:14px;padding-top:22px;border-top:1px solid #D6D0C6}
@@ -181,7 +181,7 @@ html[dir="rtl"] .hero .shade{background:linear-gradient(264deg,rgba(9,12,18,0.93
     <p class="accent" data-k="heroAccent">Are you ready for either?</p>
     <p class="body" data-k="heroBody">When the alarm sounds, it is too late to write the plan. We assess how long your business survives and what a day of downtime costs — and build a continuity system that helps you recover faster and return to normal work.</p>
     <div class="ctas">
-      <button class="btn-w" onclick="stub()" data-k="heroCta">Take the free diagnostic →</button>
+      <a class="btn-w" style="display:inline-block" href="quiz.html" data-k="heroCta">Take the free diagnostic →</a>
       <a href="#contact" class="btn-o" data-k="heroCta2">Discuss your task</a>
     </div>
     <p class="trust" data-k="heroTrust">ISO 22301 · NCEMA 7000 · CBUAE operational resilience · data stays inside your infrastructure</p>
@@ -250,11 +250,11 @@ html[dir="rtl"] .hero .shade{background:linear-gradient(264deg,rgba(9,12,18,0.93
   <div class="svc">
     <div class="p">
       <span class="step" data-k="products.0.step">Step 1 · Free</span>
-      <h3 data-k="products.0.title">Readiness quiz</h3>
-      <p class="b" data-k="products.0.body">13 questions, 5 minutes. Your maturity level against drone and ransomware scenarios — instantly, no email required.</p>
+      <h3 data-k="products.0.title">Readiness check: drone &amp; ransomware</h3>
+      <p class="b" data-k="products.0.body">Two scenarios — a drone incident and a ransomware attack. 13 questions, 5 minutes. You will see: can the business survive, where your three biggest gaps are, and what to fix first. Result on screen, no email.</p>
       <div class="pr" data-k="products.0.price">Free</div>
       <div class="prn" data-k="products.0.priceNote"></div>
-      <button onclick="stub()" data-k="products.0.cta">Take the quiz</button>
+      <a class="qbtn" href="quiz.html" data-k="products.0.cta">Take the quiz</a>
     </div>
     <div class="p">
       <span class="step" data-k="products.1.step">Step 2 · Remote</span>
@@ -409,7 +409,7 @@ en: {
   servicesTitle: "Four steps from unknown risk to managed resilience",
   servicesSub: "Start free, see the gaps in money terms, then decide how far to go. Every step is a complete result on its own.",
   products: [
-    { step: "Step 1 · Free", title: "Readiness quiz", body: "13 questions, 5 minutes. Your maturity level against drone and ransomware scenarios — instantly, no email required.", price: "Free", priceNote: "", cta: "Take the quiz" },
+    { step: "Step 1 · Free", title: "Readiness check: drone & ransomware", body: "Two scenarios — a drone incident and a ransomware attack. 13 questions, 5 minutes. You will see: can the business survive, where your three biggest gaps are, and what to fix first. Result on screen, no email.", price: "Free", priceNote: "", cta: "Take the quiz" },
     { step: "Step 2 · Remote", title: "Continuity gap assessment", body: "Remote diagnostic against ISO 22301 and NCEMA 7000 / CBUAE requirements. Cost of a downtime day, single points of failure, 90-day action plan.", price: "from $4,900", priceNote: "fixed scope · 2-3 weeks", cta: "Request assessment" },
     { step: "Step 3 · Flagship", title: "Continuity & risk dashboard", body: "One board-level screen: resilience index 0-100, cost of downtime, recovery status of critical processes. Deployed on-premise — data never leaves your infrastructure.", price: "from $2,900", priceNote: "setup · then from $300/mo support", cta: "See a live demo" },
     { step: "Step 4 · Team", title: "BCM training for your team", body: "Executive and specialist tracks: ISO 22301 in practice, crisis roles, first-hours decision drills for drone and cyber scenarios. Online or in person at your facility.", price: "from $3,500", priceNote: "per group", cta: "Request program" }
@@ -480,7 +480,7 @@ ar: {
   servicesTitle: "أربع خطوات من مخاطر مجهولة إلى مرونة مُدارة",
   servicesSub: "ابدأ مجاناً، وشاهد الفجوات بلغة المال، ثم قرر مدى التقدم. كل خطوة نتيجة كاملة بحد ذاتها.",
   products: [
-    { step: "الخطوة ١ · مجاناً", title: "اختبار الجاهزية", body: "١٣ سؤالاً في ٥ دقائق. مستوى نضجكم أمام سيناريوهات المسيرات والفدية فوراً، دون بريد إلكتروني.", price: "مجاناً", priceNote: "", cta: "ابدأ الاختبار" },
+    { step: "الخطوة ١ · مجاناً", title: "فحص الجاهزية: المسيرات وبرمجيات الفدية", body: "سيناريوهان — حادث طائرة مسيرة وهجوم برمجية فدية. ١٣ سؤالاً في ٥ دقائق. سترون: هل يصمد العمل، وأين أكبر ثلاث فجوات، وما الذي يُصلح أولاً. النتيجة على الشاشة دون بريد إلكتروني.", price: "مجاناً", priceNote: "", cta: "ابدأوا الفحص" },
     { step: "الخطوة ٢ · عن بُعد", title: "تقييم فجوات الاستمرارية", body: "تشخيص عن بُعد وفق ISO 22301 وNCEMA 7000 ومتطلبات المصرف المركزي. تكلفة يوم التوقف ونقاط الفشل وخطة ٩٠ يوماً.", price: "من ٤٩٠٠$", priceNote: "نطاق ثابت · ٢-٣ أسابيع", cta: "اطلب التقييم" },
     { step: "الخطوة ٣ · الرائد", title: "لوحة الاستمرارية والمخاطر", body: "شاشة واحدة لمجلس الإدارة: مؤشر المرونة ٠-١٠٠ وتكلفة التوقف وحالة تعافي العمليات الحرجة. تُنشر داخلياً ولا تغادر البيانات بنيتكم.", price: "من ٢٩٠٠$", priceNote: "التأسيس · ثم من ٣٠٠$ شهرياً", cta: "شاهد عرضاً حياً" },
     { step: "الخطوة ٤ · الفريق", title: "تدريب فريقكم على استمرارية الأعمال", body: "مسارات تنفيذية وتخصصية: ISO 22301 عملياً وأدوار الأزمات وتمارين قرارات الساعات الأولى — عن بُعد أو حضورياً في منشأتكم.", price: "من ٣٥٠٠$", priceNote: "لكل مجموعة", cta: "اطلب البرنامج" }

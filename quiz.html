@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Readiness check: drone incident &amp; ransomware — risk-place.org</title>
+<meta name="description" content="Free 13-question readiness check for GCC companies: drone incident or ransomware. Result on screen in 5 minutes — no email required.">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#F7F4EF;-webkit-font-smoothing:antialiased;font-family:'Figtree','IBM Plex Sans Arabic',system-ui,sans-serif;color:#16181F;line-height:1.55}
+html[dir="rtl"] body{font-family:'IBM Plex Sans Arabic','Figtree',system-ui,sans-serif}
+a{color:#16181F;text-decoration:none}
+::selection{background:#FBE0CB}
+button{font-family:inherit}
+.wrap{max-width:860px;margin:0 auto;padding:0 22px}
+/* header */
+.hdr{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.94);backdrop-filter:blur(14px);border-bottom:1px solid #EAE7E1}
+.hdr .in{height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;flex-direction:column;gap:1px}
+.logo .nm{font-size:22px;font-weight:600;letter-spacing:-0.02em}
+.logo .nm b{color:#C4571C;font-weight:600}
+.logo .tg{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#8A8478}
+.hdr .right{display:flex;align-items:center;gap:12px}
+.langbtn{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.08em;background:none;border:1px solid #DCD8D0;border-radius:999px;padding:7px 15px;cursor:pointer;color:#3D4149}
+.langbtn:hover{border-color:#16181F;color:#16181F}
+.backlink{font-size:14.5px;color:#3D4149}
+.backlink:hover{color:#C4571C}
+/* progress */
+.pbar{height:4px;background:#EAE7E1}
+.pbar i{display:block;height:4px;background:#C4571C;width:0;transition:width .3s}
+/* screens */
+.scr{display:none;padding:52px 0 80px}
+.scr.on{display:block}
+.kicker{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#C4571C;margin:0 0 18px}
+h1{font-size:38px;font-weight:300;line-height:1.14;letter-spacing:-0.025em;margin:0 0 14px;text-wrap:pretty}
+.sub{font-size:17.5px;font-weight:300;color:#5E636D;margin:0 0 34px;max-width:56ch}
+/* scenario cards */
+.scen{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.scard{background:#fff;border:1px solid #EAE7E1;border-radius:18px;padding:30px 28px;cursor:pointer;text-align:start;transition:transform .15s, box-shadow .15s;border-top:4px solid #C4571C}
+.scard:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(20,20,42,0.12)}
+.scard .tag{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:500;letter-spacing:0.13em;text-transform:uppercase;color:#C4571C}
+.scard h3{font-size:22px;font-weight:600;margin:10px 0 8px;letter-spacing:-0.015em}
+.scard p{font-size:15px;font-weight:300;color:#5E636D;margin:0}
+.note{font-size:13.5px;color:#8A8478;margin-top:26px}
+/* question */
+.qnum{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.1em;color:#8A8478;margin-bottom:14px}
+.qtext{font-size:26px;font-weight:400;line-height:1.3;letter-spacing:-0.015em;margin:0 0 28px;text-wrap:pretty}
+.opts{display:flex;flex-direction:column;gap:12px}
+.opt{background:#fff;border:1.5px solid #EAE7E1;border-radius:14px;padding:18px 22px;font-size:16.5px;font-weight:400;cursor:pointer;text-align:start;width:100%;transition:border-color .12s, background .12s}
+.opt:hover{border-color:#C4571C}
+.opt.sel{border-color:#C4571C;background:#FBE0CB}
+.navrow{display:flex;justify-content:space-between;align-items:center;margin-top:34px;gap:12px}
+.btn{font-size:16px;font-weight:500;border-radius:999px;padding:13px 30px;cursor:pointer;border:0}
+.btn-dark{background:#16181F;color:#fff}
+.btn-dark:hover{background:#C4571C}
+.btn-dark:disabled{background:#C9C4BB;cursor:default}
+.btn-ghost{background:none;border:1px solid #DCD8D0;color:#3D4149}
+.btn-ghost:hover{border-color:#16181F;color:#16181F}
+/* results */
+.resbox{background:#0D1117;color:#fff;border-radius:22px;padding:42px 40px;margin-bottom:26px}
+.resbox .lvl{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#F0A868;margin-bottom:14px}
+.resbox .score{font-size:52px;font-weight:300;letter-spacing:-0.03em;line-height:1;margin-bottom:6px}
+.resbox .score small{font-size:20px;color:rgba(255,255,255,0.55)}
+.resbox h2{font-size:28px;font-weight:400;line-height:1.25;letter-spacing:-0.02em;margin:16px 0 12px;text-wrap:pretty}
+.resbox p{font-size:16.5px;font-weight:300;color:rgba(255,255,255,0.75);margin:0;max-width:62ch}
+.gaps{background:#fff;border:1px solid #EAE7E1;border-radius:18px;padding:30px;margin-bottom:26px}
+.gaps h3{font-size:14px;font-family:'IBM Plex Mono',monospace;letter-spacing:0.12em;text-transform:uppercase;color:#C4571C;margin:0 0 18px;font-weight:500}
+.gap{display:grid;grid-template-columns:20px 1fr;gap:14px;padding:13px 0;border-top:1px solid #F0EDE7;font-size:16px;line-height:1.55}
+.gap:first-of-type{border-top:0}
+.gap .d{color:#C4571C;font-weight:600}
+.ctabox{background:#fff;border:2px solid #C4571C;border-radius:18px;padding:30px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px}
+.ctabox .t{font-size:19px;font-weight:600;letter-spacing:-0.01em;max-width:34ch}
+.ctabox a.btn{display:inline-block;background:#C4571C;color:#fff}
+.ctabox a.btn:hover{background:#A03F12}
+.again{margin-top:22px;font-size:14.5px}
+.again button{background:none;border:0;color:#8A8478;cursor:pointer;font-size:14.5px;text-decoration:underline;padding:0}
+.again button:hover{color:#16181F}
+@media(max-width:700px){
+  .scen{grid-template-columns:1fr}
+  h1{font-size:30px}
+  .qtext{font-size:21px}
+  .resbox{padding:30px 24px}
+}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <div class="wrap in">
+    <a class="logo" href="index.html">
+      <span class="nm">risk-place<b>.org</b></span>
+      <span class="tg" data-ui="tagline">Business Continuity &amp; Resilience · GCC</span>
+    </a>
+    <div class="right">
+      <a class="backlink" href="index.html" data-ui="back">← risk-place.org</a>
+      <button class="langbtn" id="langbtn" onclick="toggleLang()">AR</button>
+    </div>
+  </div>
+</header>
+<div class="pbar"><i id="pfill"></i></div>
+
+<!-- SCENARIO -->
+<section class="scr on" id="s-scen">
+  <div class="wrap">
+    <p class="kicker" data-ui="kicker">Free readiness check · 13 questions · result on screen</p>
+    <h1 data-ui="introTitle">Which scenario do you want to test?</h1>
+    <p class="sub" data-ui="introSub">5 minutes, plain language, no email required. You will see your readiness level, your biggest gaps, and what to fix first.</p>
+    <div class="scen">
+      <button class="scard" onclick="startTrack('drone')">
+        <span class="tag" data-ui="tagPhys">Physical threat</span>
+        <h3 data-ui="scDroneT">Drone / UAV incident</h3>
+        <p data-ui="scDroneD">An impact near your facility: fire, evacuation, site shutdown — and days of lost production.</p>
+      </button>
+      <button class="scard" onclick="startTrack('ransom')">
+        <span class="tag" data-ui="tagCyber">Cyber threat</span>
+        <h3 data-ui="scRansomT">Ransomware attack</h3>
+        <p data-ui="scRansomD">Systems encrypted, sales stopped: can you recover — and how many days would it take?</p>
+      </button>
+    </div>
+    <p class="note" data-ui="privacy">No personal data is collected. Anonymous statistics only.</p>
+  </div>
+</section>
+
+<!-- QUESTION -->
+<section class="scr" id="s-q">
+  <div class="wrap">
+    <div class="qnum" id="qnum"></div>
+    <div class="qtext" id="qtext"></div>
+    <div class="opts" id="opts"></div>
+    <div class="navrow">
+      <button class="btn btn-ghost" id="btnBack" onclick="goBack()" data-ui="btnBack">Back</button>
+      <button class="btn btn-dark" id="btnNext" onclick="goNext()" disabled data-ui="btnNext">Next</button>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="scr" id="s-res">
+  <div class="wrap">
+    <div class="resbox">
+      <div class="lvl" id="r-lvl"></div>
+      <div class="score" id="r-score"></div>
+      <h2 id="r-verdict"></h2>
+      <p id="r-text"></p>
+    </div>
+    <div class="gaps" id="r-gaps-box">
+      <h3 data-ui="gapsTitle">Top gaps to close first</h3>
+      <div id="r-gaps"></div>
+    </div>
+    <div class="ctabox">
+      <div class="t" id="r-cta-t"></div>
+      <a class="btn" id="r-cta-btn" href="index.html#contact"></a>
+    </div>
+    <div class="again"><button onclick="restart()" data-ui="again">Take the other scenario →</button></div>
+  </div>
+</section>
+
+<script>
+var WORKER_URL = "https://risk-place-quiz.tonus911.workers.dev";
+
+/* ============ UI STRINGS ============ */
+var UI = {
+en:{tagline:"Business Continuity & Resilience · GCC",back:"← risk-place.org",
+kicker:"Free readiness check · 13 questions · result on screen",
+introTitle:"Which scenario do you want to test?",
+introSub:"5 minutes, plain language, no email required. You will see your readiness level, your biggest gaps, and what to fix first.",
+tagPhys:"Physical threat",tagCyber:"Cyber threat",
+scDroneT:"Drone / UAV incident",scDroneD:"An impact near your facility: fire, evacuation, site shutdown — and days of lost production.",
+scRansomT:"Ransomware attack",scRansomD:"Systems encrypted, sales stopped: can you recover — and how many days would it take?",
+privacy:"No personal data is collected. Anonymous statistics only.",
+btnBack:"Back",btnNext:"Next",btnShow:"Show my result",
+qOf:function(i,n){return "Question "+i+" of "+n;},
+levelWord:"Level",scoreOf:function(s,m){return s+" <small>/ "+m+"</small>";},
+gapsTitle:"Top gaps to close first",again:"Take the other scenario →",
+ctaLow:"Get a clear picture: a remote gap assessment maps your gaps in money terms.",
+ctaLowBtn:"Request a gap assessment",
+ctaHigh:"Keep your readiness visible: one board-level dashboard, updated monthly.",
+ctaHighBtn:"See the dashboard"},
+ar:{tagline:"استمرارية الأعمال والمرونة · دول الخليج",back:"→ risk-place.org",
+kicker:"فحص جاهزية مجاني · ١٣ سؤالاً · النتيجة على الشاشة",
+introTitle:"أي سيناريو تريدون اختباره؟",
+introSub:"خمس دقائق، بلغة واضحة، دون بريد إلكتروني. سترون مستوى جاهزيتكم وأكبر الفجوات وما ينبغي إصلاحه أولاً.",
+tagPhys:"تهديد مادي",tagCyber:"تهديد سيبراني",
+scDroneT:"حادث طائرة مسيرة",scDroneD:"سقوط قرب منشأتكم: حريق وإخلاء وإغلاق للموقع — وأيام من الإنتاج الضائع.",
+scRansomT:"هجوم برمجية فدية",scRansomD:"الأنظمة مشفرة والمبيعات متوقفة: هل يمكنكم التعافي — وكم يوماً سيستغرق؟",
+privacy:"لا نجمع أي بيانات شخصية. إحصاءات مجهولة فقط.",
+btnBack:"السابق",btnNext:"التالي",btnShow:"أظهر نتيجتي",
+qOf:function(i,n){return "السؤال "+i+" من "+n;},
+levelWord:"المستوى",scoreOf:function(s,m){return s+" <small>/ "+m+"</small>";},
+gapsTitle:"أهم الفجوات التي تُغلق أولاً",again:"جرّبوا السيناريو الآخر ←",
+ctaLow:"احصلوا على صورة واضحة: تقييم فجوات عن بُعد يحدد فجواتكم بلغة المال.",
+ctaLowBtn:"اطلبوا تقييم الفجوات",
+ctaHigh:"أبقوا جاهزيتكم مرئية: لوحة واحدة لمجلس الإدارة تُحدَّث شهرياً.",
+ctaHighBtn:"شاهدوا اللوحة"}
+};
+
+/* ============ LEVELS ============ */
+var LEVELS=[
+{n:1,en:"Initial",ar:"مبدئي"},
+{n:2,en:"Reactive",ar:"تفاعلي"},
+{n:3,en:"Developing",ar:"متطور"},
+{n:4,en:"Managed",ar:"مُدار"},
+{n:5,en:"Optimised",ar:"مُحسَّن"}];
+
+/* ============ QUESTIONS ============ */
+/* opts: [text, points]; flag: true => 0-баллов ответ подсвечивается всегда */
+var Q = {
+ransom:[
+{q:{en:"Do you know how much your business loses for each day your IT systems are down?",ar:"هل تعرفون كم يخسر عملكم عن كل يوم تتعطل فيه أنظمة تقنية المعلومات؟"},
+ o:[{t:{en:"Yes, calculated and kept up to date",ar:"نعم، محسوبة ومحدّثة"},p:2},{t:{en:"Roughly, a gut feeling",ar:"تقريبياً، تقدير حدسي"},p:1},{t:{en:"No",ar:"لا"},p:0}],
+ hl:{en:"Without the cost of a downtime day it is hard to justify any protection investment economically.",ar:"دون معرفة تكلفة يوم التوقف يصعب تبرير أي استثمار في الحماية اقتصادياً."}},
+{q:{en:"Do you keep isolated (offline / air-gap) backups of critical data?",ar:"هل تحتفظون بنسخ احتياطية معزولة (خارج الشبكة) للبيانات الحرجة؟"},flag:true,
+ o:[{t:{en:"Yes, isolated from the main network",ar:"نعم، معزولة عن الشبكة الرئيسية"},p:2},{t:{en:"We have backups, but on the same network or cloud",ar:"لدينا نسخ لكن على الشبكة أو السحابة نفسها"},p:1},{t:{en:"No / not sure",ar:"لا / لست متأكداً"},p:0}],
+ hl:{en:"CRITICAL: backups on the same network get encrypted with everything else. This is a company problem, not an IT problem.",ar:"حرج: النسخ على الشبكة نفسها تُشفَّر مع كل شيء آخر. هذه مشكلة الشركة، لا مشكلة تقنية المعلومات."}},
+{q:{en:"When did you last actually test restoring from your backups?",ar:"متى اختبرتم فعلياً الاستعادة من النسخ الاحتياطية آخر مرة؟"},
+ o:[{t:{en:"Within the last 6 months",ar:"خلال الأشهر الستة الماضية"},p:2},{t:{en:"More than a year ago / once",ar:"قبل أكثر من سنة / مرة واحدة"},p:1},{t:{en:"Never",ar:"أبداً"},p:0}],
+ hl:{en:"An untested backup is hope, not part of your protection.",ar:"نسخة غير مختبرة هي أمل، وليست جزءاً من الحماية."}},
+{q:{en:"Do you have a written first-2-hours plan: who isolates the network, who declares emergency mode?",ar:"هل لديكم خطة مكتوبة للساعتين الأوليين: من يعزل الشبكة ومن يعلن وضع الطوارئ؟"},flag:true,
+ o:[{t:{en:"Yes, written, and the on-duty team knows it",ar:"نعم، مكتوبة وفريق المناوبة يعرفها"},p:2},{t:{en:"A general security plan, not first hours",ar:"خطة أمنية عامة دون الساعات الأولى"},p:1},{t:{en:"No",ar:"لا"},p:0}],
+ hl:{en:"CRITICAL: the first hours decide the outcome — without a plan every hour costs money.",ar:"حرج: الساعات الأولى تحسم النتيجة — دون خطة كل ساعة تكلف مالاً."}},
+{q:{en:"Is it decided in advance who can shut systems down and stop operations — without a meeting?",ar:"هل حُدد مسبقاً من يملك صلاحية إيقاف الأنظمة والعمليات — دون اجتماع؟"},
+ o:[{t:{en:"Yes, with a deputy",ar:"نعم، مع نائب"},p:2},{t:{en:"One person, no deputy",ar:"شخص واحد دون نائب"},p:1},{t:{en:"Not defined",ar:"غير محدد"},p:0}],
+ hl:{en:"Roles and first steps must be rehearsed in advance — a crisis is no time to discuss authority.",ar:"الأدوار والخطوات الأولى يجب التدرب عليها مسبقاً — الأزمة ليست وقتاً لمناقشة الصلاحيات."}},
+{q:{en:"Could you still sell and serve clients with systems down (emergency mode, ~30% capacity)?",ar:"هل يمكنكم البيع وخدمة العملاء والأنظمة متوقفة (وضع الطوارئ، ~٣٠٪ من الطاقة)؟"},
+ o:[{t:{en:"Yes, described and tried",ar:"نعم، موصوف ومجرب"},p:2},{t:{en:"In theory",ar:"نظرياً"},p:1},{t:{en:"No",ar:"لا"},p:0}],
+ hl:{en:"Managing emergency revenue gives the company a good chance to go through the crisis softer than others.",ar:"إدارة إيرادات الطوارئ تمنح الشركة فرصة جيدة لتجاوز الأزمة بأخف من الآخرين."}},
+{q:{en:"Are RTO and RPO (recovery time and acceptable data loss) defined for critical processes?",ar:"هل حُددت أهداف زمن التعافي وحد فقدان البيانات المقبول للعمليات الحرجة؟"},
+ o:[{t:{en:"Yes, agreed with the business",ar:"نعم، متفق عليها مع إدارة الأعمال"},p:2},{t:{en:"Only in IT documents",ar:"في وثائق تقنية المعلومات فقط"},p:1},{t:{en:"No / don't know",ar:"لا / لا أعلم"},p:0}],
+ hl:{en:"Until recovery targets are agreed with the business, IT may be protecting the wrong things.",ar:"ما لم تُتفق أهداف التعافي مع إدارة الأعمال، قد تحمي تقنية المعلومات الأشياء الخطأ."}},
+{q:{en:"How would you reach clients and partners if email and CRM are down?",ar:"كيف ستتواصلون مع العملاء والشركاء إذا تعطل البريد ونظام إدارة العملاء؟"},
+ o:[{t:{en:"Backup channels and contact lists are ready",ar:"قنوات بديلة وقوائم اتصال جاهزة"},p:2},{t:{en:"We would figure it out",ar:"سنجد حلاً حينها"},p:1},{t:{en:"Haven't thought about it",ar:"لم نفكر في الأمر"},p:0}],
+ hl:{en:"Clients remember silence in a crisis longer than the crisis itself.",ar:"العملاء يتذكرون الصمت في الأزمة أطول من الأزمة نفسها."}},
+{q:{en:"How well is access to your systems protected: logins confirmed with a phone code (not just a password), staff can only access what they need for their job, and office and production networks are kept separate?",ar:"ما مدى حماية الدخول إلى أنظمتكم: تأكيد الدخول برمز على الهاتف (لا كلمة مرور فقط)، ولكل موظف صلاحيات عمله فقط، وشبكتا المكتب والإنتاج منفصلتان؟"},
+ o:[{t:{en:"Yes, all three barriers are in place",ar:"نعم، الحواجز الثلاثة موجودة"},p:2},{t:{en:"Partially (some yes, some no)",ar:"جزئياً (بعضها موجود)"},p:1},{t:{en:"No / don't know",ar:"لا / لا أعلم"},p:0}],
+ hl:{en:"Three simple barriers — a code at login, minimal access, a separated network — stop most attacks before they become a crisis.",ar:"ثلاثة حواجز بسيطة — رمز عند الدخول، صلاحيات دنيا، شبكة مفصولة — توقف معظم الهجمات قبل أن تصبح أزمة."}},
+{q:{en:"Does your insurance cover cyber incidents and business interruption (BI)?",ar:"هل يغطي تأمينكم الحوادث السيبرانية وانقطاع الأعمال؟"},
+ o:[{t:{en:"Yes, we checked the policy wording",ar:"نعم، راجعنا صياغة الوثيقة"},p:2},{t:{en:"We believe so",ar:"نعتقد ذلك"},p:1},{t:{en:"No / don't know",ar:"لا / لا نعلم"},p:0}],
+ hl:{en:"An insurance policy has many limits and exclusions — they can block your payout when you need it most.",ar:"وثيقة التأمين مليئة بالقيود والاستثناءات — وقد تمنع التعويض حين تحتاجونه."}},
+{q:{en:"Have you run a ransomware tabletop exercise in the last year?",ar:"هل أجريتم تمريناً نظرياً لسيناريو برمجية الفدية خلال السنة الماضية؟"},
+ o:[{t:{en:"Yes, with leadership",ar:"نعم، بمشاركة القيادة"},p:2},{t:{en:"Only inside IT",ar:"داخل تقنية المعلومات فقط"},p:1},{t:{en:"No",ar:"لا"},p:0}],
+ hl:{en:"A 3-hour exercise finds the gaps that will cost you millions when the risk hits.",ar:"تمرين من ثلاث ساعات يكشف الفجوات التي ستكلفكم الملايين عند وقوع الخطر."}},
+{q:{en:"Do you know how many days it would really take to recover from full encryption?",ar:"هل تعرفون كم يوماً سيستغرق التعافي فعلياً من تشفير كامل؟"},
+ o:[{t:{en:"Yes, verified by exercise or calculation",ar:"نعم، مؤكد بتمرين أو حساب"},p:2},{t:{en:"A paper estimate",ar:"تقدير ورقي"},p:1},{t:{en:"No",ar:"لا"},p:0}],
+ hl:{en:"The average public case is about a week of downtime. Your number may differ — in either direction.",ar:"متوسط الحالات المعلنة نحو أسبوع من التوقف. رقمكم قد يختلف في الاتجاهين."}}
+],
+drone:[
+{q:{en:"Do you know the cost of one day of downtime for your key facility (plant, warehouse, terminal)?",ar:"هل تعرفون تكلفة يوم توقف واحد لمنشأتكم الرئيسية (مصنع، مستودع، محطة)؟"},
+ o:[{t:{en:"Yes, calculated and kept up to date",ar:"نعم، محسوبة ومحدّثة"},p:2},{t:{en:"Roughly",ar:"تقريبياً"},p:1},{t:{en:"No",ar:"لا"},p:0}],
+ hl:{en:"The cost of a downtime day is the basis for every protection decision.",ar:"تكلفة يوم التوقف هي أساس كل قرارات الحماية."}},
+{q:{en:"Are passive protection measures in place for critical zones: metallised mesh screens, reinforced roofing, covers over open storage?",ar:"هل توجد حماية سلبية للمناطق الحرجة: شبكات معدنية، أسقف معززة، مظلات فوق التخزين المكشوف؟"},
+ o:[{t:{en:"Yes, on critical zones",ar:"نعم، في المناطق الحرجة"},p:2},{t:{en:"Partially / planned",ar:"جزئياً / مخطط لها"},p:1},{t:{en:"No, not considered",ar:"لا، لم نبحثها"},p:0}],
+ hl:{en:"Passive barriers are the cheapest element of protection: they do not intercept the drone — they stop the impact from becoming a fire.",ar:"الحواجز السلبية أرخص عناصر الحماية: لا تعترض المسيرة، بل تمنع السقوط من التحول إلى حريق."}},
+{q:{en:"Are flammable materials and fuel stored away from critical equipment?",ar:"هل تُخزن المواد القابلة للاشتعال والوقود بمعزل عن المعدات الحرجة؟"},flag:true,
+ o:[{t:{en:"Yes, isolated, standards met",ar:"نعم، معزولة ووفق المعايير"},p:2},{t:{en:"Partially",ar:"جزئياً"},p:1},{t:{en:"Open storage next to equipment",ar:"تخزين مكشوف بجوار المعدات"},p:0}],
+ hl:{en:"CRITICAL: fuel next to critical equipment turns a drone impact into a major fire.",ar:"حرج: الوقود بجوار المعدات الحرجة يحول سقوط المسيرة إلى حريق كبير."}},
+{q:{en:"Is the site divided into fire compartments so a fire cannot spread across the whole operation?",ar:"هل المنشأة مقسمة إلى قطاعات حريق تمنع امتداد النار إلى كامل العمليات؟"},flag:true,
+ o:[{t:{en:"Yes, confirmed by audit",ar:"نعم، مؤكد بتدقيق"},p:2},{t:{en:"Partially",ar:"جزئياً"},p:1},{t:{en:"No / don't know",ar:"لا / لا أعلم"},p:0}],
+ hl:{en:"CRITICAL: a fire with nothing to physically stop it stops the whole business. Fire is a risk humanity has managed for centuries — use that.",ar:"حرج: حريق لا يوقفه حاجز مادي يوقف العمل كله. الحريق خطر تعلمت البشرية إدارته منذ قرون — استفيدوا من ذلك."}},
+{q:{en:"Would the shift know about an impact or fire within minutes (sensors, cameras, alert procedure)?",ar:"هل ستعلم الوردية بسقوط أو حريق خلال دقائق (حساسات، كاميرات، إجراء إنذار)؟"},
+ o:[{t:{en:"Yes",ar:"نعم"},p:2},{t:{en:"Depends on where it happens",ar:"يعتمد على مكان الحدث"},p:1},{t:{en:"No",ar:"لا"},p:0}],
+ hl:{en:"The first minutes of detection define the future scale of the accident.",ar:"دقائق الاكتشاف الأولى تحدد حجم الحادث لاحقاً."}},
+{q:{en:"Are evacuation and safe shutdown rehearsed for an airspace incident scenario?",ar:"هل تم التدرب على الإخلاء والإيقاف الآمن لسيناريو حادث جوي؟"},
+ o:[{t:{en:"Drills have been run",ar:"أُجريت تمارين"},p:2},{t:{en:"A paper plan only",ar:"خطة ورقية فقط"},p:1},{t:{en:"No",ar:"لا"},p:0}],
+ hl:{en:"People's safety comes first. It is also the first thing the regulator and the insurer will ask about.",ar:"سلامة الناس أولاً — وهي أول ما سيسأل عنه المنظم وشركة التأمين."}},
+{q:{en:"Is it defined who can immediately stop production or close the site?",ar:"هل حُدد من يملك صلاحية إيقاف الإنتاج أو إغلاق المنشأة فوراً؟"},
+ o:[{t:{en:"Yes, with a deputy",ar:"نعم، مع نائب"},p:2},{t:{en:"One person",ar:"شخص واحد"},p:1},{t:{en:"Not defined",ar:"غير محدد"},p:0}],
+ hl:{en:"The authority to stop must be decided before the incident, not during it.",ar:"صلاحية الإيقاف تُحسم قبل الحادث لا أثناءه."}},
+{q:{en:"Do you have an alternate site, route or supplier if your facility is closed for 72 hours?",ar:"هل لديكم منشأة أو مسار أو مورد بديل إذا أُغلقت منشأتكم ٧٢ ساعة؟"},flag:true,
+ o:[{t:{en:"Yes, tested",ar:"نعم، مجرب"},p:2},{t:{en:"Partially",ar:"جزئياً"},p:1},{t:{en:"No",ar:"لا"},p:0}],
+ hl:{en:"CRITICAL: a closed facility (even with no damage to you) means downtime. 72 hours is the horizon you must be able to recover within.",ar:"حرج: منشأة مغلقة (حتى دون ضرر مباشر) تعني توقفاً. ٧٢ ساعة هي الأفق الذي يجب أن تتعافوا خلاله."}},
+{q:{en:"Are fire suppression systems rated for an intense fire (UAV fuel)?",ar:"هل أنظمة إطفاء الحريق مصممة لحريق شديد (وقود المسيرة)؟"},
+ o:[{t:{en:"Yes, we assessed this scenario",ar:"نعم، قيّمنا هذا السيناريو"},p:2},{t:{en:"Standard systems, scenario not assessed",ar:"أنظمة قياسية دون تقييم السيناريو"},p:1},{t:{en:"No / don't know",ar:"لا / لا أعلم"},p:0}],
+ hl:{en:"A standard system may not cope with a non-standard ignition source.",ar:"النظام القياسي قد لا يتعامل مع مصدر اشتعال غير قياسي."}},
+{q:{en:"Does your BI insurance cover fire from external impact — and do you know what evidence the insurer will need?",ar:"هل يغطي تأمين انقطاع الأعمال حريقاً من أثر خارجي — وهل تعرفون الأدلة التي ستطلبها شركة التأمين؟"},
+ o:[{t:{en:"Yes, policy wording checked",ar:"نعم، روجعت صياغة الوثيقة"},p:2},{t:{en:"We believe so",ar:"نعتقد ذلك"},p:1},{t:{en:"No / don't know",ar:"لا / لا نعلم"},p:0}],
+ hl:{en:"A dispute with the insurer after the incident is a second crisis. Wording, evidence and exclusion scenarios must be worked through in advance.",ar:"النزاع مع شركة التأمين بعد الحادث أزمة ثانية. الصياغة والأدلة وسيناريوهات الاستثناء تُدرس مسبقاً."}},
+{q:{en:"Who speaks to authorities, clients and media in the first hours? Are draft statements ready?",ar:"من يتحدث إلى السلطات والعملاء والإعلام في الساعات الأولى؟ وهل البيانات الجاهزة معدة؟"},
+ o:[{t:{en:"Roles and drafts are ready",ar:"الأدوار والمسودات جاهزة"},p:2},{t:{en:"Partially",ar:"جزئياً"},p:1},{t:{en:"No",ar:"لا"},p:0}],
+ hl:{en:"In the first hours an information vacuum is filled by someone else — and fear does the talking.",ar:"في الساعات الأولى يملأ الفراغَ الإعلامي طرفٌ آخر — ويتكلم الخوف."}},
+{q:{en:"Have you run a drill for the chain 'UAV impact → fire → downtime' (or a fire drill including it)?",ar:"هل أجريتم تمريناً لسلسلة «سقوط مسيرة ← حريق ← توقف» (أو تمرين حريق يشملها)؟"},
+ o:[{t:{en:"Yes",ar:"نعم"},p:2},{t:{en:"Only standard fire drills",ar:"تمارين حريق قياسية فقط"},p:1},{t:{en:"No",ar:"لا"},p:0}],
+ hl:{en:"One drill connects every link of the chain — from the mesh on the roof to the call to your insurer.",ar:"تمرين واحد يربط حلقات السلسلة كلها — من الشبكة على السطح إلى الاتصال بشركة التأمين."}}
+]};
+
+/* ============ RESULTS ============ */
+var RES = {
+ransom:[
+{v:{en:"Encryption would stop your business completely — and for long.",ar:"التشفير سيوقف عملكم تماماً — ولمدة طويلة."},
+ t:{en:"Today the outcome of an attack is decided by chance. Without isolated backups and a first-hours plan, recovery takes weeks and some data is lost for good.",ar:"اليوم تُحسم نتيجة الهجوم بالصدفة. دون نسخ معزولة وخطة للساعات الأولى، يستغرق التعافي أسابيع وتضيع بعض البيانات نهائياً."},
+ r:{en:"Start with two decisions: isolated backups and a first-2-hours action plan.",ar:"ابدأوا بقرارين: نسخ احتياطية معزولة وخطة عمل للساعتين الأوليين."},cta:"low"},
+{v:{en:"Some protection exists, but the chain breaks in the first hour.",ar:"توجد عناصر حماية، لكن السلسلة تنقطع في الساعة الأولى."},
+ t:{en:"Backups or plans exist on paper but are untested. Authority is not fixed — the first hours would be lost to meetings.",ar:"النسخ أو الخطط موجودة ورقياً لكنها غير مختبرة، والصلاحيات غير محسومة — ستضيع الساعات الأولى في الاجتماعات."},
+ r:{en:"Test restoring from backups in practice and fix authority in documents.",ar:"اختبروا الاستعادة من النسخ عملياً وثبّتوا الصلاحيات في الوثائق."},cta:"low"},
+{v:{en:"The basics are there. Now connect them into a working system with clear metrics.",ar:"الأساسيات موجودة. اربطوها الآن في نظام عامل بمقاييس واضحة."},
+ t:{en:"Key elements exist but are not connected: recovery has not been tested under pressure, emergency-mode revenue is not described.",ar:"العناصر الأساسية موجودة لكنها غير مترابطة: التعافي لم يُختبر تحت الضغط، وإيرادات وضع الطوارئ غير موصوفة."},
+ r:{en:"Run a tabletop exercise with leadership — it will show the gaps.",ar:"أجروا تمريناً نظرياً بمشاركة القيادة — سيكشف الفجوات."},cta:"low"},
+{v:{en:"Good level. Now test the system under pressure.",ar:"مستوى جيد. اختبروا النظام الآن تحت الضغط."},
+ t:{en:"The system is built. Usual weak spots: freshness of restore tests, emergency revenue, insurance wording.",ar:"النظام مبني. نقاط الضعف المعتادة: حداثة اختبارات الاستعادة، إيرادات الطوارئ، صياغة التأمين."},
+ r:{en:"Regular exercises + a dashboard with recovery metrics on one screen.",ar:"تمارين منتظمة + لوحة بمقاييس التعافي على شاشة واحدة."},cta:"high"},
+{v:{en:"You are better prepared than most. The task is to keep it that way.",ar:"أنتم أفضل استعداداً من معظم الشركات. المهمة هي الحفاظ على ذلك."},
+ t:{en:"A mature system. The remaining risk is degradation without regular checks and monitoring.",ar:"نظام ناضج. الخطر المتبقي هو التدهور دون فحص ومراقبة منتظمين."},
+ r:{en:"Monthly monitoring of your resilience index.",ar:"مراقبة شهرية لمؤشر المرونة."},cta:"high"}
+],
+drone:[
+{v:{en:"A UAV impact near your site can cause a major fire with a long business stoppage.",ar:"سقوط مسيرة قرب منشأتكم قد يسبب حريقاً كبيراً وتوقفاً طويلاً للأعمال."},
+ t:{en:"Fuel is not isolated, there are no fire compartments, no alternate site. Any ignition source — not only a drone — endangers the whole operation.",ar:"الوقود غير معزول، ولا قطاعات حريق، ولا منشأة بديلة. أي مصدر اشتعال — لا المسيرة وحدها — يهدد العمليات كلها."},
+ r:{en:"Start with fire physics: isolated fuel and separated compartments. That protects against every scenario at once.",ar:"ابدأوا بفيزياء الحريق: عزل الوقود وفصل القطاعات — حماية من كل السيناريوهات دفعة واحدة."},cta:"low"},
+{v:{en:"Basic fire protection exists, but the airspace scenario is not thought through. The consequences are unpredictable.",ar:"الحماية الأساسية من الحريق موجودة، لكن سيناريو الحادث الجوي غير مدروس — والعواقب غير متوقعة."},
+ t:{en:"Classic fire protection is in place, but detection, evacuation and shutdown for an airspace scenario are not rehearsed.",ar:"الحماية التقليدية قائمة، لكن الاكتشاف والإخلاء والإيقاف لسيناريو جوي غير مُتدرَّب عليها."},
+ r:{en:"Add the airspace scenario to your existing fire procedures and drills.",ar:"أضيفوا السيناريو الجوي إلى إجراءات وتمارين الحريق الحالية."},cta:"low"},
+{v:{en:"Your site is protected better than average. Link protection to money and define which zones still need it.",ar:"منشأتكم محمية فوق المتوسط. اربطوا الحماية بالمال وحددوا المناطق التي ما تزال بحاجة إليها."},
+ t:{en:"The physics is fine, but the cost of downtime is not calculated, insurance wording is unchecked, the 72-hour reserve is partial.",ar:"الفيزياء سليمة، لكن تكلفة التوقف غير محسوبة، وصياغة التأمين غير مراجعة، واحتياطي ٧٢ ساعة جزئي."},
+ r:{en:"Calculate a downtime day and check your BI policy — those are your budget arguments.",ar:"احسبوا تكلفة يوم التوقف وراجعوا وثيقة التأمين — هذه حجج الميزانية."},cta:"low"},
+{v:{en:"Strong position. Test the whole chain with one drill.",ar:"موقف قوي. اختبروا السلسلة كاملة بتمرين واحد."},
+ t:{en:"The elements are ready one by one. A drill for 'impact → fire → downtime' will show the joints between teams.",ar:"العناصر جاهزة منفردة. تمرين «سقوط ← حريق ← توقف» سيكشف الوصلات بين الفرق."},
+ r:{en:"A full-chain drill + a readiness dashboard for your sites.",ar:"تمرين شامل + لوحة جاهزية لمنشآتكم."},cta:"high"},
+{v:{en:"Benchmark readiness. Maintain it with monitoring and exercises.",ar:"جاهزية نموذجية. حافظوا عليها بالمراقبة والتمارين."},
+ t:{en:"A rare level of maturity. Next: regular checks and comparable metrics across all sites.",ar:"مستوى نضج نادر. التالي: فحص منتظم ومقاييس قابلة للمقارنة عبر المنشآت."},
+ r:{en:"A resilience index per site, updated monthly, with regular audits.",ar:"مؤشر مرونة لكل منشأة، يُحدَّث شهرياً، مع تدقيق منتظم."},cta:"high"}
+]};
+
+/* ============ STATE ============ */
+var lang="en", track=null, qi=0, answers=[];
+var TOTAL=13; /* 1 сценарий + 12 вопросов */
+
+function setLang(l){
+  lang=l;
+  document.documentElement.lang=l;
+  document.documentElement.dir=(l==="ar")?"rtl":"ltr";
+  var u=UI[l];
+  document.querySelectorAll("[data-ui]").forEach(function(el){
+    var k=el.getAttribute("data-ui");
+    if(typeof u[k]==="string") el.innerHTML=u[k];
+  });
+  document.getElementById("langbtn").textContent=(l==="ar")?"EN":"AR";
+  try{localStorage.setItem("rp_org_lang",l);}catch(e){}
+  if(document.getElementById("s-q").classList.contains("on")) renderQ();
+}
+function toggleLang(){ setLang(lang==="ar"?"en":"ar"); }
+
+function showScr(id){
+  document.querySelectorAll(".scr").forEach(function(s){s.classList.remove("on");});
+  document.getElementById(id).classList.add("on");
+  window.scrollTo(0,0);
+}
+function progress(step){ document.getElementById("pfill").style.width=Math.round(step/TOTAL*100)+"%"; }
+
+function startTrack(t){ track=t; qi=0; answers=[]; progress(1); renderQ(); showScr("s-q"); }
+
+function renderQ(){
+  var u=UI[lang], qq=Q[track][qi];
+  document.getElementById("qnum").textContent=u.qOf(qi+2,TOTAL);
+  document.getElementById("qtext").textContent=qq.q[lang];
+  var box=document.getElementById("opts"); box.innerHTML="";
+  qq.o.forEach(function(o,idx){
+    var b=document.createElement("button");
+    b.className="opt"+(answers[qi]===idx?" sel":"");
+    b.textContent=o.t[lang];
+    b.onclick=function(){ answers[qi]=idx; renderQ(); document.getElementById("btnNext").disabled=false; };
+    box.appendChild(b);
+  });
+  document.getElementById("btnNext").disabled=(answers[qi]===undefined);
+  document.getElementById("btnNext").textContent=(qi===Q[track].length-1)?u.btnShow:u.btnNext;
+  document.getElementById("btnBack").textContent=u.btnBack;
+}
+function goBack(){
+  if(qi===0){ showScr("s-scen"); progress(0); return; }
+  qi--; progress(qi+1); renderQ();
+}
+function goNext(){
+  if(answers[qi]===undefined) return;
+  if(qi<Q[track].length-1){ qi++; progress(qi+1); renderQ(); }
+  else { showResults(); }
+}
+
+function calc(){
+  var score=0, max=Q[track].length*2, gaps=[];
+  Q[track].forEach(function(qq,i){
+    var p=qq.o[answers[i]].p; score+=p;
+    if(p<2) gaps.push({flag:!!qq.flag&&p===0, p:p, hl:qq.hl});
+  });
+  gaps.sort(function(a,b){ return (b.flag-a.flag)||(a.p-b.p); });
+  var pct=score/max, li;
+  if(pct<=0.20) li=0; else if(pct<=0.40) li=1; else if(pct<=0.60) li=2; else if(pct<=0.80) li=3; else li=4;
+  return {score:score,max:max,li:li,gaps:gaps.slice(0,3)};
+}
+
+var sentCompleted=false;
+function showResults(){
+  var u=UI[lang], c=calc(), lv=LEVELS[c.li], rr=RES[track][c.li];
+  progress(TOTAL);
+  document.getElementById("r-lvl").textContent=u.levelWord+" "+lv.n+" / 5 · "+lv[lang];
+  document.getElementById("r-score").innerHTML=u.scoreOf(c.score,c.max);
+  document.getElementById("r-verdict").textContent=rr.v[lang];
+  document.getElementById("r-text").textContent=rr.t[lang]+" "+rr.r[lang];
+  var gb=document.getElementById("r-gaps"); gb.innerHTML="";
+  if(c.gaps.length===0){ document.getElementById("r-gaps-box").style.display="none"; }
+  else{
+    document.getElementById("r-gaps-box").style.display="block";
+    c.gaps.forEach(function(g){
+      var d=document.createElement("div"); d.className="gap";
+      d.innerHTML='<span class="d">'+(g.flag?"!":"—")+'</span><span>'+g.hl[lang]+'</span>';
+      gb.appendChild(d);
+    });
+  }
+  var isLow=(rr.cta==="low");
+  document.getElementById("r-cta-t").textContent=isLow?u.ctaLow:u.ctaHigh;
+  var btn=document.getElementById("r-cta-btn");
+  btn.textContent=isLow?u.ctaLowBtn:u.ctaHighBtn;
+  btn.href=isLow?"index.html#contact":"index.html#services";
+  showScr("s-res");
+  sendQuizCompleted(c,lv);
+  sendResultNotification(c,lv,rr);
+}
+function restart(){ track=null; qi=0; answers=[]; sentCompleted=false; progress(0); showScr("s-scen"); }
+
+/* ============ WORKER ============ */
+async function postWorker(body, tries){
+  tries=tries||3;
+  var payload=JSON.stringify(body);
+  for(var i=0;i<tries;i++){
+    try{
+      var res=await fetch(WORKER_URL,{method:"POST",headers:{"Content-Type":"text/plain"},body:payload,keepalive:true});
+      if(res&&res.ok) return res;
+    }catch(e){}
+    if(i<tries-1) await new Promise(function(r){setTimeout(r,800*(i+1));});
+  }
+  return null;
+}
+function trackName(){ return track==="drone"?"ORG-DRONE":"ORG-RANSOM"; }
+function sendQuizCompleted(c,lv){
+  if(sentCompleted) return; sentCompleted=true;
+  try{
+    postWorker({event:"quiz_completed",quiz:trackName(),language:lang.toUpperCase(),
+      score:c.score+" / "+c.max, level:"Level "+lv.n+" — "+lv.en},2);
+  }catch(e){}
+}
+function sendResultNotification(c,lv,rr){
+  try{
+    var gapsTxt=c.gaps.map(function(g){return (g.flag?"[FLAG] ":"")+g.hl.en;}).join("\n");
+    postWorker({
+      formTitle:"risk-place.org — квиз пройден ("+(track==="drone"?"ДРОН":"ШИФРОВАЛЬЩИК")+")",
+      name:"Диагностика (без контакта)", company:"—", email:"—",
+      product:"risk-place.org · "+trackName(),
+      language:lang.toUpperCase(),
+      score:c.score+" / "+c.max,
+      level:"Level "+lv.n+" — "+lv.en,
+      description:rr.v.en,
+      risks:gapsTxt,
+      comment:"—"
+    });
+  }catch(e){}
+}
+
+/* init */
+(function(){
+  var saved=null; try{saved=localStorage.getItem("rp_org_lang");}catch(e){}
+  setLang(saved==="ar"?"ar":"en");
+})();
+</script>
+</body>
+</html>
