@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HNF79F1SSN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HNF79F1SSN');</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>risk-place.org — Business Continuity &amp; Resilience · GCC</title>
 <meta name="description" content="Drone incident and ransomware readiness for GCC companies. We turn business resilience into measurable metrics and money: gap assessment, continuity dashboard, training.">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:title" content="risk-place.org — Business Continuity &amp; Resilience · GCC">
+<meta property="og:description" content="Drone incident and ransomware readiness for GCC companies. Free 13-question readiness check, gap assessment, continuity dashboard, training.">
+<meta property="og:image" content="https://risk-place.org/hero-dubai.jpg">
+<meta property="og:url" content="https://risk-place.org/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -262,7 +272,7 @@ html[dir="rtl"] .hero .shade{background:linear-gradient(264deg,rgba(9,12,18,0.93
       <p class="b" data-k="products.1.body">Remote diagnostic against ISO 22301 and NCEMA 7000 / CBUAE requirements. Cost of a downtime day, single points of failure, 90-day action plan.</p>
       <div class="pr" data-k="products.1.price">from $4,900</div>
       <div class="prn" data-k="products.1.priceNote">fixed scope · 2-3 weeks</div>
-      <button onclick="stub()" data-k="products.1.cta">Request assessment</button>
+      <a class="qbtn" href="gap-assessment.html" data-k="products.1.cta">Request assessment</a>
     </div>
     <div class="p flag">
       <span class="flagbadge" data-k="flagBadge">Flagship</span>
@@ -271,7 +281,7 @@ html[dir="rtl"] .hero .shade{background:linear-gradient(264deg,rgba(9,12,18,0.93
       <p class="b" data-k="products.2.body">One board-level screen: resilience index 0-100, cost of downtime, recovery status of critical processes. Deployed on-premise — data never leaves your infrastructure.</p>
       <div class="pr" data-k="products.2.price">from $2,900</div>
       <div class="prn" data-k="products.2.priceNote">setup · then from $300/mo support</div>
-      <button onclick="stub()" data-k="products.2.cta">See a live demo</button>
+      <a class="qbtn" href="dashboard.html" data-k="products.2.cta">See a live demo</a>
     </div>
     <div class="p">
       <span class="step" data-k="products.3.step">Step 4 · Team</span>
@@ -279,7 +289,7 @@ html[dir="rtl"] .hero .shade{background:linear-gradient(264deg,rgba(9,12,18,0.93
       <p class="b" data-k="products.3.body">Executive and specialist tracks: ISO 22301 in practice, crisis roles, first-hours decision drills for drone and cyber scenarios. Online or in person at your facility.</p>
       <div class="pr" data-k="products.3.price">from $3,500</div>
       <div class="prn" data-k="products.3.priceNote">per group</div>
-      <button onclick="stub()" data-k="products.3.cta">Request program</button>
+      <a class="qbtn" href="training.html" data-k="products.3.cta">Request program</a>
     </div>
   </div>
   </div>
@@ -361,7 +371,7 @@ html[dir="rtl"] .hero .shade{background:linear-gradient(264deg,rgba(9,12,18,0.93
   <div class="foot">
     <div class="wrap in" style="padding-left:0;padding-right:0">
       <span data-k="copyright">© 2026 risk-place.org · Business Continuity &amp; Resilience</span>
-      <button onclick="stub()" data-k="privacy">Privacy policy</button>
+      <a href="privacy.html" style="color:rgba(255,255,255,0.46)" data-k="privacy">Privacy policy</a>
     </div>
   </div>
 </section>
@@ -544,7 +554,24 @@ function toggleLang(){ setLang(CUR === 'ar' ? 'en' : 'ar'); }
 function stub(){ alert(T[CUR].stubMsg); }
 function sendStub(e){
   e.preventDefault();
+  var name=document.getElementById('f-name').value.trim();
+  var email=document.getElementById('f-email').value.trim();
+  var msg=document.getElementById('f-msg').value.trim();
+  var payload=JSON.stringify({
+    formTitle:"ЗАЯВКА risk-place.org — форма Discuss your task",
+    name:name||"—", email:email||"—", company:"—",
+    comment:msg||"—", language:CUR.toUpperCase(),
+    product:"risk-place.org · contact form"
+  });
+  var send=function(tries){
+    fetch("https://risk-place-quiz.tonus911.workers.dev",{method:"POST",headers:{"Content-Type":"text/plain"},body:payload,keepalive:true})
+      .then(function(r){ if(!r.ok && tries>0) setTimeout(function(){send(tries-1);},900); })
+      .catch(function(){ if(tries>0) setTimeout(function(){send(tries-1);},900); });
+  };
+  send(2);
+  try{gtag('event','lead_form_submit');}catch(e2){}
   document.getElementById('sentnote').textContent = T[CUR].sent;
+  document.getElementById('f-name').value=''; document.getElementById('f-email').value=''; document.getElementById('f-msg').value='';
   return false;
 }
 (function(){

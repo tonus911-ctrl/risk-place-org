@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HNF79F1SSN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HNF79F1SSN');</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Readiness check: drone incident &amp; ransomware — risk-place.org</title>
 <meta name="description" content="Free 13-question readiness check for GCC companies: drone incident or ransomware. Result on screen in 5 minutes — no email required.">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:title" content="Free readiness check: drone incident &amp; ransomware — risk-place.org">
+<meta property="og:description" content="13 questions, 5 minutes, result on screen. Test your readiness for a drone incident or a ransomware attack.">
+<meta property="og:image" content="https://risk-place.org/hero-dubai.jpg">
+<meta property="og:url" content="https://risk-place.org/quiz.html">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -413,6 +423,7 @@ function showResults(){
   showScr("s-res");
   sendQuizCompleted(c,lv);
   sendResultNotification(c,lv,rr);
+  try{gtag('event','quiz_completed',{track:track,level:lv.n});}catch(e){}
 }
 function restart(){ track=null; qi=0; answers=[]; sentCompleted=false; progress(0); showScr("s-scen"); }
 
