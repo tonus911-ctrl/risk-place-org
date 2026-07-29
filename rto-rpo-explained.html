@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HNF79F1SSN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HNF79F1SSN');</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RTO and RPO explained: how to set recovery objectives you can actually meet — risk-place.org</title>
+<meta name="description" content="RTO vs RPO in plain language: what each means, how they are set from the business impact curve, worked examples, and the mistakes that make recovery objectives fiction.">
+<link rel="canonical" href="https://risk-place.org/rto-rpo-explained.html">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:title" content="RTO and RPO explained: how to set recovery objectives you can actually meet — risk-place.org">
+<meta property="og:description" content="RTO vs RPO in plain language: what each means, how they are set from the business impact curve, worked examples, and the mistakes that make recovery objectives fiction.">
+<meta property="og:image" content="https://risk-place.org/hero-dubai.jpg">
+<meta property="og:url" content="https://risk-place.org/rto-rpo-explained.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the difference between RTO and MTPD?", "acceptedAnswer": {"@type": "Answer", "text": "MTPD (maximum tolerable period of disruption) is the ceiling — beyond it damage is unacceptable by definition. The RTO is set below it with a safety margin. NCEMA 7000 and ISO 22301 both use this layering."}}, {"@type": "Question", "name": "Who approves RTO and RPO?", "acceptedAnswer": {"@type": "Answer", "text": "Activity owners propose from the impact curve, technology confirms feasibility, leadership approves the residual gap — because an unmet objective is an accepted risk, and accepting risk is leadership's job."}}, {"@type": "Question", "name": "How often should objectives be revalidated?", "acceptedAnswer": {"@type": "Answer", "text": "At every BIA refresh, after material change, and at least at the annual exercise — where «revalidated» means demonstrated against the clock, not re-signed."}}]}</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#fff;-webkit-font-smoothing:antialiased;font-family:'Figtree','IBM Plex Sans Arabic',system-ui,sans-serif;color:#16181F;line-height:1.55}
+html[dir="rtl"] body{font-family:'IBM Plex Sans Arabic','Figtree',system-ui,sans-serif}
+a{color:#16181F;text-decoration:none}
+::selection{background:#FBE0CB}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+.hdr{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.94);backdrop-filter:blur(14px);border-bottom:1px solid #EAE7E1}
+.hdr .in{height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;flex-direction:column;gap:1px}
+.logo .nm{font-size:26px;font-weight:600;letter-spacing:-0.02em}
+.logo .nm b{color:#C4571C;font-weight:600}
+.logo .tg{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8A8478}
+.hdr .right{display:flex;align-items:center;gap:12px}
+.langbtn{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.08em;background:none;border:1px solid #DCD8D0;border-radius:999px;padding:7px 15px;cursor:pointer;color:#3D4149}
+.langbtn:hover{border-color:#16181F;color:#16181F}
+.backlink{font-size:14.5px;color:#3D4149}
+.backlink:hover{color:#C4571C}
+.hero{background:#0D1117;color:#fff}
+.hero .in{padding-top:64px;padding-bottom:56px}
+.kicker{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#F0A868;margin:0 0 20px}
+.hero h1{font-size:42px;font-weight:300;line-height:1.14;letter-spacing:-0.025em;margin:0 0 16px;max-width:28ch;text-wrap:pretty}
+.hero .sub{font-size:18px;font-weight:300;color:rgba(255,255,255,0.75);margin:0;max-width:62ch;line-height:1.6}
+.btn{display:inline-block;font-size:16.5px;font-weight:600;background:#C4571C;color:#fff !important;padding:15px 32px;border-radius:999px}
+.btn:hover{background:#A03F12}
+.btn2{display:inline-block;font-size:16px;font-weight:400;color:#fff !important;border:1px solid rgba(255,255,255,0.34);padding:14px 28px;border-radius:999px;margin-inline-start:10px}
+.btn2:hover{border-color:#fff}
+.cta{background:#0D1117;color:#fff}
+.cta .in{padding-top:64px;padding-bottom:64px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:22px}
+.cta h2{font-size:30px;font-weight:300;letter-spacing:-0.02em;margin:0;max-width:30ch;text-wrap:pretty}
+.foot{background:#0D1117;color:rgba(255,255,255,0.46);border-top:1px solid rgba(255,255,255,0.12)}
+.foot .in{padding-top:22px;padding-bottom:22px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13.5px;font-weight:300}
+.foot a{color:rgba(255,255,255,0.6)}
+.foot a:hover{color:#fff}
+.stickycta{display:none;position:fixed;left:14px;right:14px;bottom:14px;z-index:70;background:#C4571C;color:#fff !important;text-align:center;font-size:16px;font-weight:600;padding:14px 18px;border-radius:999px;box-shadow:0 10px 28px rgba(13,17,23,0.28)}
+
+.art{padding:64px 0 20px}
+.art h2{font-size:30px;font-weight:300;line-height:1.18;letter-spacing:-0.02em;margin:52px 0 18px;text-wrap:pretty}
+.art h2:first-child{margin-top:0}
+.art p{font-size:16.5px;font-weight:300;line-height:1.72;color:#3D4149;margin:0 0 16px;max-width:76ch}
+.art ul{margin:0 0 18px;padding-inline-start:22px;max-width:76ch}
+.art li{font-size:16.5px;font-weight:300;line-height:1.66;color:#3D4149;margin-bottom:9px}
+.art li b,.art p b{font-weight:600;color:#16181F}
+.callout{background:#F7F4EF;border:1px solid #EAE7E1;border-inline-start:3px solid #C4571C;border-radius:12px;padding:20px 24px;margin:26px 0;max-width:76ch}
+.callout p{margin:0;font-size:16px}
+.tbl{width:100%;border-collapse:collapse;margin:24px 0 30px;font-size:15.5px}
+.tbl th{text-align:start;font-weight:600;padding:12px 14px;border-bottom:2px solid #16181F;font-size:14.5px}
+.tbl td{padding:12px 14px;border-bottom:1px solid #E1DCD3;font-weight:300;color:#3D4149;vertical-align:top;line-height:1.55}
+.tbl td:first-child{font-weight:500;color:#16181F}
+.faq{margin:10px 0 30px;max-width:76ch}
+.faq details{border-bottom:1px solid #E1DCD3;padding:4px 0}
+.faq summary{font-size:17px;font-weight:600;padding:14px 0;cursor:pointer;list-style-position:outside}
+.faq details p{padding:0 0 16px}
+.cluster{background:#F7F4EF;border-top:1px solid #EAE7E1;border-bottom:1px solid #EAE7E1;padding:56px 0}
+.cluster h2{font-size:26px;font-weight:300;margin:0 0 26px}
+.cluster .links{display:grid;grid-template-columns:1fr 1fr;gap:14px 40px}
+.cluster a{display:block;padding:14px 0;border-bottom:1px solid #E1DCD3;font-size:16px;font-weight:500}
+.cluster a:hover{color:#C4571C}
+.src{font-size:13.5px;color:#8A8478;margin-top:30px;max-width:76ch}
+.src a{color:#8A8478;text-decoration:underline}
+@media(max-width:760px){.art h2{font-size:24px}.cluster .links{grid-template-columns:1fr}.tbl{font-size:14px}.tbl th,.tbl td{padding:9px 8px}}
+
+@media(max-width:760px){.hero h1{font-size:30px}}
+@media(max-width:600px){
+  .wrap{padding-left:20px;padding-right:20px}
+  .logo .nm{font-size:22px}
+  .logo .tg{display:none}
+  .backlink{font-size:13px}
+  .hero .in{padding-top:38px;padding-bottom:34px}
+  .hero h1{font-size:25px;line-height:1.2}
+  .art{padding:40px 0 10px}
+  .stickycta.on{display:block}
+}
+</style>
+</head>
+<body>
+<header class="hdr"><div class="wrap in">
+  <a class="logo" href="index.html"><span class="nm">risk-place<b>.org</b></span><span class="tg" data-ui="tagline">Business Continuity &amp; Resilience · GCC</span></a>
+  <div class="right"><a class="backlink" href="business-continuity-uae.html" data-ui="back">← Home</a><button class="langbtn" id="langbtn" onclick="toggleLang()">AR</button></div>
+</div></header>
+
+<section class="hero"><div class="wrap in">
+  <p class="kicker" data-ui="kicker">Guide · Method · RTO / RPO</p>
+  <h1 data-ui="h1">RTO and RPO, explained in plain language</h1>
+  <p class="sub" data-ui="sub">Two abbreviations carry most of continuity planning. One is about time, one is about data — and both are promises your arrangements must be able to keep.</p>
+</div></section>
+
+<article class="art"><div class="wrap" id="art">
+<h2>The definitions, without jargon</h2>
+<p><b>RTO — Recovery Time Objective</b> — is the maximum time an activity may stay down before the damage becomes unacceptable. It answers: <b>how fast must this be back?</b> <b>RPO — Recovery Point Objective</b> — is the maximum amount of data, measured in time, you can afford to lose. It answers: <b>how old may the last good copy be?</b></p>
+<p>A payroll run with an RTO of 24 hours and an RPO of one hour means: payroll must work again within a day, and when it does, at most the final hour of entries may be missing. Two different promises, two different sets of arrangements — recovery capacity for the first, backup frequency for the second.</p>
+<h2>How to set them honestly</h2>
+<ul><li><b>From the impact curve, not from comfort.</b> The BIA draws how damage grows over hours and days; the RTO sits just before the curve steepens. If you have no curve, you have no basis for the number.</li><li><b>Per activity, not per company.</b> «Our RTO is 4 hours» is meaningless across a whole business. Invoicing, production, regulatory reporting each earn their own numbers.</li><li><b>Check feasibility against arrangements.</b> An RTO of 4 hours with nightly-restore-only backups is fiction. Either invest to close the gap or state the honest, longer RTO.</li><li><b>Mind the chain.</b> An activity's real recovery time is the longest path across its dependencies — system restore plus data check plus people in place. RTOs set per system, ignoring the chain, understate reality.</li></ul>
+<table class="tbl"><thead><tr><th>Example activity</th><th>Typical RTO</th><th>Typical RPO</th><th>What usually sets the limit</th></tr></thead><tbody><tr><td>Online sales / payments</td><td>Minutes to 4 hours</td><td>Near zero</td><td>Revenue per hour; replication cost rises steeply near zero</td></tr><tr><td>Production line control</td><td>2-24 hours</td><td>Last shift</td><td>Restart procedures and safety checks, not IT alone</td></tr><tr><td>Invoicing and payroll</td><td>24-72 hours</td><td>1-24 hours</td><td>Contractual dates and staff trust</td></tr><tr><td>Regulatory reporting</td><td>Before the deadline</td><td>Last submission</td><td>The calendar, not the technology</td></tr></tbody></table>
+<div class="callout"><p>The tell of a fictional RTO: it has never been demonstrated. An objective that has not survived a timed test is a wish. Auditors — and incidents — treat it accordingly.</p></div>
+<h2>The classic mistakes</h2>
+<ul><li><b>Copying vendor numbers.</b> A platform's advertised recovery speed is not your activity's RTO — your data volumes, procedures and people set the real time.</li><li><b>Zero-everything ambitions.</b> RTO zero and RPO zero exist — at a price few activities justify. The BIA tells you which ones.</li><li><b>Confusing RPO with backup schedule.</b> Backups nightly does not make RPO 24 hours — a failed restore makes it infinity. RPO lives or dies with tested restores.</li><li><b>Setting once, forgetting.</b> Volumes grow, systems change; last year's demonstrated 6 hours may be 14 today. Objectives age like the BIA they came from.</li></ul>
+<h2>Frequently asked questions</h2>
+<div class="faq"><details><summary>What is the difference between RTO and MTPD?</summary><p>MTPD (maximum tolerable period of disruption) is the ceiling — beyond it damage is unacceptable by definition. The RTO is set below it with a safety margin. NCEMA 7000 and ISO 22301 both use this layering.</p></details><details><summary>Who approves RTO and RPO?</summary><p>Activity owners propose from the impact curve, technology confirms feasibility, leadership approves the residual gap — because an unmet objective is an accepted risk, and accepting risk is leadership's job.</p></details><details><summary>How often should objectives be revalidated?</summary><p>At every BIA refresh, after material change, and at least at the annual exercise — where «revalidated» means demonstrated against the clock, not re-signed.</p></details></div>
+</div></article>
+
+<section class="cluster"><div class="wrap">
+  <h2 data-ui="clusterTitle">More from the continuity hub</h2>
+  <div class="links" id="cluster"><a href="business-continuity-uae.html">Business continuity in the UAE: the complete guide</a><a href="business-impact-analysis.html">Business impact analysis: the money-first method</a><a href="iso-22301-implementation-uae.html">Implementing ISO 22301 in the UAE</a><a href="bcp-template-structure.html">What a real business continuity plan contains</a><a href="tabletop-exercise-guide.html">How to run a tabletop exercise that finds real gaps</a><a href="ncema-7000.html">NCEMA 7000: the UAE national BCM standard</a><a href="cbuae-operational-resilience.html">CBUAE operational resilience: the complete guide</a></div>
+</div></section>
+
+<section class="cta"><div class="wrap in">
+  <h2 data-ui="ctaTitle">Are your recovery objectives promises — or guesses?</h2>
+  <div><a class="btn" href="gap-assessment.html" data-ui="cta">Request a gap assessment</a><a class="btn2" href="quiz.html" data-ui="cta2">Take the free readiness check</a></div>
+</div></section>
+
+<footer class="foot"><div class="wrap in">
+  <span data-ui="copy">© 2026 risk-place.org · Business Continuity &amp; Resilience</span>
+  <a href="privacy.html" data-ui="privacy">Privacy policy</a>
+</div></footer>
+
+<a class="stickycta" id="stickycta" href="gap-assessment.html" data-ui="sticky">NCEMA-ready gap assessment</a>
+
+<script>
+var C={"en": {"tagline": "Business Continuity &amp; Resilience · GCC", "back": "← NCEMA 7000 hub", "copy": "© 2026 risk-place.org · Business Continuity &amp; Resilience", "privacy": "Privacy policy", "sticky": "NCEMA-ready gap assessment", "cta": "Request a gap assessment", "cta2": "Take the free readiness check", "kicker": "Guide · Method · RTO / RPO", "h1": "RTO and RPO, explained in plain language", "sub": "Two abbreviations carry most of continuity planning. One is about time, one is about data — and both are promises your arrangements must be able to keep.", "clusterTitle": "More from the continuity hub", "ctaTitle": "Are your recovery objectives promises — or guesses?", "sections": [["h2", "The definitions, without jargon"], ["p", "<b>RTO — Recovery Time Objective</b> — is the maximum time an activity may stay down before the damage becomes unacceptable. It answers: <b>how fast must this be back?</b> <b>RPO — Recovery Point Objective</b> — is the maximum amount of data, measured in time, you can afford to lose. It answers: <b>how old may the last good copy be?</b>"], ["p", "A payroll run with an RTO of 24 hours and an RPO of one hour means: payroll must work again within a day, and when it does, at most the final hour of entries may be missing. Two different promises, two different sets of arrangements — recovery capacity for the first, backup frequency for the second."], ["h2", "How to set them honestly"], ["ul", ["<b>From the impact curve, not from comfort.</b> The BIA draws how damage grows over hours and days; the RTO sits just before the curve steepens. If you have no curve, you have no basis for the number.", "<b>Per activity, not per company.</b> «Our RTO is 4 hours» is meaningless across a whole business. Invoicing, production, regulatory reporting each earn their own numbers.", "<b>Check feasibility against arrangements.</b> An RTO of 4 hours with nightly-restore-only backups is fiction. Either invest to close the gap or state the honest, longer RTO.", "<b>Mind the chain.</b> An activity's real recovery time is the longest path across its dependencies — system restore plus data check plus people in place. RTOs set per system, ignoring the chain, understate reality."]], ["table", ["Example activity", "Typical RTO", "Typical RPO", "What usually sets the limit"], [["Online sales / payments", "Minutes to 4 hours", "Near zero", "Revenue per hour; replication cost rises steeply near zero"], ["Production line control", "2-24 hours", "Last shift", "Restart procedures and safety checks, not IT alone"], ["Invoicing and payroll", "24-72 hours", "1-24 hours", "Contractual dates and staff trust"], ["Regulatory reporting", "Before the deadline", "Last submission", "The calendar, not the technology"]]], ["callout", "The tell of a fictional RTO: it has never been demonstrated. An objective that has not survived a timed test is a wish. Auditors — and incidents — treat it accordingly."], ["h2", "The classic mistakes"], ["ul", ["<b>Copying vendor numbers.</b> A platform's advertised recovery speed is not your activity's RTO — your data volumes, procedures and people set the real time.", "<b>Zero-everything ambitions.</b> RTO zero and RPO zero exist — at a price few activities justify. The BIA tells you which ones.", "<b>Confusing RPO with backup schedule.</b> Backups nightly does not make RPO 24 hours — a failed restore makes it infinity. RPO lives or dies with tested restores.", "<b>Setting once, forgetting.</b> Volumes grow, systems change; last year's demonstrated 6 hours may be 14 today. Objectives age like the BIA they came from."]], ["h2", "Frequently asked questions"], ["faq", [["What is the difference between RTO and MTPD?", "MTPD (maximum tolerable period of disruption) is the ceiling — beyond it damage is unacceptable by definition. The RTO is set below it with a safety margin. NCEMA 7000 and ISO 22301 both use this layering."], ["Who approves RTO and RPO?", "Activity owners propose from the impact curve, technology confirms feasibility, leadership approves the residual gap — because an unmet objective is an accepted risk, and accepting risk is leadership's job."], ["How often should objectives be revalidated?", "At every BIA refresh, after material change, and at least at the annual exercise — where «revalidated» means demonstrated against the clock, not re-signed."]]]], "cluster": [["business-continuity-uae.html", "Business continuity in the UAE: the complete guide"], ["business-impact-analysis.html", "Business impact analysis: the money-first method"], ["iso-22301-implementation-uae.html", "Implementing ISO 22301 in the UAE"], ["bcp-template-structure.html", "What a real business continuity plan contains"], ["tabletop-exercise-guide.html", "How to run a tabletop exercise that finds real gaps"], ["ncema-7000.html", "NCEMA 7000: the UAE national BCM standard"], ["cbuae-operational-resilience.html", "CBUAE operational resilience: the complete guide"]]}, "ar": {"tagline": "استمرارية الأعمال والمرونة · دول الخليج", "back": "→ دليل NCEMA 7000", "copy": "© ٢٠٢٦ risk-place.org · استمرارية الأعمال والمرونة", "privacy": "سياسة الخصوصية", "sticky": "تقييم فجوات الجاهزية لـ NCEMA", "cta": "اطلبوا تقييم الفجوات", "cta2": "جرّبوا فحص الجاهزية المجاني", "kicker": "دليل · منهجية · RTO / RPO", "h1": "RTO وRPO بلغة واضحة", "sub": "اختصاران يحملان معظم تخطيط الاستمرارية. أحدهما عن الزمن والآخر عن البيانات — وكلاهما وعود يجب أن تستطيع ترتيباتكم الوفاء بها.", "clusterTitle": "المزيد من مركز الاستمرارية", "ctaTitle": "هل أهداف تعافيكم وعود — أم تخمينات؟", "sections": [["h2", "التعريفات بلا مصطلحات معقدة"], ["p", "<b>RTO — هدف زمن التعافي</b> — هو أقصى مدة يمكن أن يبقى فيها نشاط متوقفاً قبل أن يصبح الضرر غير مقبول. يجيب عن: <b>بأي سرعة يجب أن يعود؟</b> <b>RPO — هدف نقطة الاستعادة</b> — هو أقصى قدر من البيانات، مقاساً بالزمن، تحتملون خسارته. يجيب عن: <b>كم يمكن أن تكون آخر نسخة سليمة قديمة؟</b>"], ["p", "تشغيل رواتب بـ RTO يساوي 24 ساعة وRPO يساوي ساعة يعني: يجب أن تعمل الرواتب مجدداً خلال يوم، وعندها قد تنقص الساعة الأخيرة من الإدخالات على الأكثر. وعدان مختلفان وترتيبات مختلفة — قدرة تعافٍ للأول وتكرار نسخ احتياطي للثاني."], ["h2", "كيف تحددونهما بصدق"], ["ul", ["<b>من منحنى الأثر لا من الارتياح.</b> تحليل الأثر يرسم نمو الضرر عبر الساعات والأيام؛ وRTO يقع قبيل انحدار المنحنى. إن لم يكن لديكم منحنى فليس لديكم أساس للرقم.", "<b>لكل نشاط لا لكل الشركة.</b> «هدفنا 4 ساعات» بلا معنى عبر عمل كامل. الفوترة والإنتاج والتقارير التنظيمية يستحق كل منها رقمه.", "<b>تحققوا من القابلية مقابل الترتيبات.</b> هدف 4 ساعات مع نسخ تُستعاد ليلياً فقط خيال. إما استثمار يغلق الفجوة أو إعلان الهدف الأطول الصادق.", "<b>انتبهوا للسلسلة.</b> زمن التعافي الحقيقي لنشاط هو أطول مسار عبر اعتمادياته — استعادة النظام ثم فحص البيانات ثم الأشخاص في أماكنهم. الأهداف الموضوعة لكل نظام متجاهلة السلسلة تقلل من الواقع."]], ["table", ["نشاط مثال", "RTO معتاد", "RPO معتاد", "ما يضع الحد عادة"], [["مبيعات ودفع إلكتروني", "دقائق إلى 4 ساعات", "قريب من الصفر", "الإيراد بالساعة؛ وتكلفة النسخ المتزامن ترتفع بحدة قرب الصفر"], ["تحكم خط إنتاج", "2-24 ساعة", "آخر وردية", "إجراءات إعادة التشغيل وفحوص السلامة لا التقنية وحدها"], ["الفوترة والرواتب", "24-72 ساعة", "1-24 ساعة", "المواعيد التعاقدية وثقة الموظفين"], ["التقارير التنظيمية", "قبل الموعد النهائي", "آخر تقديم", "التقويم لا التقنية"]]], ["callout", "علامة الهدف الخيالي: أنه لم يُثبت قط. الهدف الذي لم ينجُ من اختبار موقوت أمنية. والمدققون — والحوادث — يعاملونه وفق ذلك."], ["h2", "الأخطاء الكلاسيكية"], ["ul", ["<b>نسخ أرقام المزودين.</b> سرعة التعافي المعلنة لمنصة ليست هدف نشاطكم — أحجام بياناتكم وإجراءاتكم وأشخاصكم يضعون الزمن الحقيقي.", "<b>طموح الصفر في كل شيء.</b> RTO صفر وRPO صفر موجودان — بثمن قليل من الأنشطة يبرره. تحليل الأثر يخبركم أيها.", "<b>خلط RPO بجدول النسخ.</b> نسخ ليلية لا تجعل RPO أربعاً وعشرين ساعة — استعادة فاشلة تجعله لا نهاية. يعيش RPO أو يموت مع استعادات مختبرة.", "<b>التحديد مرة والنسيان.</b> الأحجام تنمو والأنظمة تتغير؛ وست ساعات المثبتة العام الماضي قد تكون أربع عشرة اليوم. الأهداف تشيخ كتحليل الأثر الذي أتت منه."]], ["h2", "أسئلة شائعة"], ["faq", [["ما الفرق بين RTO وMTPD؟", "MTPD (أقصى فترة اضطراب محتملة) هو السقف — بعده الضرر غير مقبول بالتعريف. وRTO يوضع تحته بهامش أمان. NCEMA 7000 وISO 22301 كلاهما يستخدم هذا التدرج."], ["من يعتمد RTO وRPO؟", "أصحاب الأنشطة يقترحون من منحنى الأثر، والتقنية تؤكد القابلية، والقيادة تعتمد الفجوة المتبقية — لأن الهدف غير المحقق خطر مقبول، وقبول الخطر عمل القيادة."], ["كم مرة يعاد التحقق من الأهداف؟", "عند كل تحديث لتحليل الأثر، وبعد أي تغيير جوهري، وعلى الأقل في التمرين السنوي — حيث «إعادة التحقق» تعني الإثبات مقابل الساعة لا إعادة التوقيع."]]]], "cluster": [["business-continuity-uae.html", "استمرارية الأعمال في الإمارات: الدليل الكامل"], ["business-impact-analysis.html", "تحليل أثر الأعمال: منهجية تبدأ بالمال"], ["iso-22301-implementation-uae.html", "تطبيق ISO 22301 في الإمارات"], ["bcp-template-structure.html", "ماذا تحتوي خطة استمرارية أعمال حقيقية"], ["tabletop-exercise-guide.html", "كيف تديرون تمريناً نظرياً يجد فجوات حقيقية"], ["ncema-7000.html", "NCEMA 7000: المعيار الوطني الإماراتي"], ["cbuae-operational-resilience.html", "المرونة التشغيلية للمصرف المركزي: الدليل الكامل"]]}};
+var lang="en";
+function renderSections(secs){
+  var out=[];
+  secs.forEach(function(s){
+    if(s[0]==="h2")out.push("<h2>"+s[1]+"</h2>");
+    else if(s[0]==="p")out.push("<p>"+s[1]+"</p>");
+    else if(s[0]==="ul")out.push("<ul>"+s[1].map(function(x){return "<li>"+x+"</li>";}).join("")+"</ul>");
+    else if(s[0]==="callout")out.push('<div class="callout"><p>'+s[1]+"</p></div>");
+    else if(s[0]==="table"){
+      out.push('<table class="tbl"><thead><tr>'+s[1].map(function(c){return "<th>"+c+"</th>";}).join("")+"</tr></thead><tbody>"+
+        s[2].map(function(r){return "<tr>"+r.map(function(c){return "<td>"+c+"</td>";}).join("")+"</tr>";}).join("")+"</tbody></table>");
+    } else if(s[0]==="faq"){
+      out.push('<div class="faq">'+s[1].map(function(x){return "<details><summary>"+x[0]+"</summary><p>"+x[1]+"</p></details>";}).join("")+"</div>");
+    }
+  });
+  return out.join("\n");
+}
+function setLang(l){
+  lang=l;document.documentElement.lang=l;document.documentElement.dir=(l==="ar")?"rtl":"ltr";
+  var d=C[l];
+  document.querySelectorAll("[data-ui]").forEach(function(el){var k=el.getAttribute("data-ui");if(typeof d[k]==="string")el.innerHTML=d[k];});
+  document.getElementById("art").innerHTML=renderSections(d.sections);
+  document.getElementById("cluster").innerHTML=d.cluster.map(function(x){return '<a href="'+x[0]+'">'+x[1]+"</a>";}).join("");
+  document.getElementById("langbtn").textContent=(l==="ar")?"EN":"AR";
+  try{localStorage.setItem("rp_org_lang",l);}catch(e){}
+}
+function toggleLang(){setLang(lang==="ar"?"en":"ar");}
+(function(){var s=null;try{s=localStorage.getItem("rp_org_lang");}catch(e){}if(s==="ar")setLang("ar");})();
+window.addEventListener('scroll',function(){
+  var el=document.getElementById('stickycta');if(!el)return;
+  var cta=document.querySelector('section.cta');
+  var show=window.scrollY>600&&(!cta||cta.getBoundingClientRect().top>window.innerHeight);
+  el.classList.toggle('on',show);
+},{passive:true});
+</script>
+</body>
+</html>

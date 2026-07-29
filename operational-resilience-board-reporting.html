@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HNF79F1SSN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HNF79F1SSN');</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Operational resilience reporting for the board: metrics that satisfy directors and supervisors — risk-place.org</title>
+<meta name="description" content="What board-level operational resilience reporting should contain: the five metrics, the one-page format, and how a live dashboard replaces the annual slide. UAE context: CBUAE and NCEMA expectations.">
+<link rel="canonical" href="https://risk-place.org/operational-resilience-board-reporting.html">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:title" content="Operational resilience reporting for the board: metrics that satisfy directors and supervisors — risk-place.org">
+<meta property="og:description" content="What board-level operational resilience reporting should contain: the five metrics, the one-page format, and how a live dashboard replaces the annual slide. UAE context: CBUAE and NCEMA expectations.">
+<meta property="og:image" content="https://risk-place.org/hero-dubai.jpg">
+<meta property="og:url" content="https://risk-place.org/operational-resilience-board-reporting.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How is a resilience index calculated?", "acceptedAnswer": {"@type": "Answer", "text": "A weighted score across measurable components: BIA currency, plan coverage, test results against recovery objectives, closure of findings, dependency risk. The exact model matters less than consistency — the board reads the trend, the supervisor reads the decomposition."}}, {"@type": "Question", "name": "What does the supervisor actually ask boards?", "acceptedAnswer": {"@type": "Answer", "text": "Variants of three questions: how do you know your recovery capability is real, when was it last tested against your stated objectives, and what did you change after the last incident or test. The one-page format answers all three."}}, {"@type": "Question", "name": "Can we build this reporting ourselves?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — the format above is deliberately tool-agnostic. The effort is in the data discipline underneath: current BIA, tested objectives, tracked findings. If that discipline exists, a spreadsheet works; a dashboard makes it continuous."}}]}</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#fff;-webkit-font-smoothing:antialiased;font-family:'Figtree','IBM Plex Sans Arabic',system-ui,sans-serif;color:#16181F;line-height:1.55}
+html[dir="rtl"] body{font-family:'IBM Plex Sans Arabic','Figtree',system-ui,sans-serif}
+a{color:#16181F;text-decoration:none}
+::selection{background:#FBE0CB}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+.hdr{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.94);backdrop-filter:blur(14px);border-bottom:1px solid #EAE7E1}
+.hdr .in{height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;flex-direction:column;gap:1px}
+.logo .nm{font-size:26px;font-weight:600;letter-spacing:-0.02em}
+.logo .nm b{color:#C4571C;font-weight:600}
+.logo .tg{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8A8478}
+.hdr .right{display:flex;align-items:center;gap:12px}
+.langbtn{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.08em;background:none;border:1px solid #DCD8D0;border-radius:999px;padding:7px 15px;cursor:pointer;color:#3D4149}
+.langbtn:hover{border-color:#16181F;color:#16181F}
+.backlink{font-size:14.5px;color:#3D4149}
+.backlink:hover{color:#C4571C}
+.hero{background:#0D1117;color:#fff}
+.hero .in{padding-top:64px;padding-bottom:56px}
+.kicker{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#F0A868;margin:0 0 20px}
+.hero h1{font-size:42px;font-weight:300;line-height:1.14;letter-spacing:-0.025em;margin:0 0 16px;max-width:28ch;text-wrap:pretty}
+.hero .sub{font-size:18px;font-weight:300;color:rgba(255,255,255,0.75);margin:0;max-width:62ch;line-height:1.6}
+.btn{display:inline-block;font-size:16.5px;font-weight:600;background:#C4571C;color:#fff !important;padding:15px 32px;border-radius:999px}
+.btn:hover{background:#A03F12}
+.btn2{display:inline-block;font-size:16px;font-weight:400;color:#fff !important;border:1px solid rgba(255,255,255,0.34);padding:14px 28px;border-radius:999px;margin-inline-start:10px}
+.btn2:hover{border-color:#fff}
+.cta{background:#0D1117;color:#fff}
+.cta .in{padding-top:64px;padding-bottom:64px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:22px}
+.cta h2{font-size:30px;font-weight:300;letter-spacing:-0.02em;margin:0;max-width:30ch;text-wrap:pretty}
+.foot{background:#0D1117;color:rgba(255,255,255,0.46);border-top:1px solid rgba(255,255,255,0.12)}
+.foot .in{padding-top:22px;padding-bottom:22px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13.5px;font-weight:300}
+.foot a{color:rgba(255,255,255,0.6)}
+.foot a:hover{color:#fff}
+.stickycta{display:none;position:fixed;left:14px;right:14px;bottom:14px;z-index:70;background:#C4571C;color:#fff !important;text-align:center;font-size:16px;font-weight:600;padding:14px 18px;border-radius:999px;box-shadow:0 10px 28px rgba(13,17,23,0.28)}
+
+.art{padding:64px 0 20px}
+.art h2{font-size:30px;font-weight:300;line-height:1.18;letter-spacing:-0.02em;margin:52px 0 18px;text-wrap:pretty}
+.art h2:first-child{margin-top:0}
+.art p{font-size:16.5px;font-weight:300;line-height:1.72;color:#3D4149;margin:0 0 16px;max-width:76ch}
+.art ul{margin:0 0 18px;padding-inline-start:22px;max-width:76ch}
+.art li{font-size:16.5px;font-weight:300;line-height:1.66;color:#3D4149;margin-bottom:9px}
+.art li b,.art p b{font-weight:600;color:#16181F}
+.callout{background:#F7F4EF;border:1px solid #EAE7E1;border-inline-start:3px solid #C4571C;border-radius:12px;padding:20px 24px;margin:26px 0;max-width:76ch}
+.callout p{margin:0;font-size:16px}
+.tbl{width:100%;border-collapse:collapse;margin:24px 0 30px;font-size:15.5px}
+.tbl th{text-align:start;font-weight:600;padding:12px 14px;border-bottom:2px solid #16181F;font-size:14.5px}
+.tbl td{padding:12px 14px;border-bottom:1px solid #E1DCD3;font-weight:300;color:#3D4149;vertical-align:top;line-height:1.55}
+.tbl td:first-child{font-weight:500;color:#16181F}
+.faq{margin:10px 0 30px;max-width:76ch}
+.faq details{border-bottom:1px solid #E1DCD3;padding:4px 0}
+.faq summary{font-size:17px;font-weight:600;padding:14px 0;cursor:pointer;list-style-position:outside}
+.faq details p{padding:0 0 16px}
+.cluster{background:#F7F4EF;border-top:1px solid #EAE7E1;border-bottom:1px solid #EAE7E1;padding:56px 0}
+.cluster h2{font-size:26px;font-weight:300;margin:0 0 26px}
+.cluster .links{display:grid;grid-template-columns:1fr 1fr;gap:14px 40px}
+.cluster a{display:block;padding:14px 0;border-bottom:1px solid #E1DCD3;font-size:16px;font-weight:500}
+.cluster a:hover{color:#C4571C}
+.src{font-size:13.5px;color:#8A8478;margin-top:30px;max-width:76ch}
+.src a{color:#8A8478;text-decoration:underline}
+@media(max-width:760px){.art h2{font-size:24px}.cluster .links{grid-template-columns:1fr}.tbl{font-size:14px}.tbl th,.tbl td{padding:9px 8px}}
+
+@media(max-width:760px){.hero h1{font-size:30px}}
+@media(max-width:600px){
+  .wrap{padding-left:20px;padding-right:20px}
+  .logo .nm{font-size:22px}
+  .logo .tg{display:none}
+  .backlink{font-size:13px}
+  .hero .in{padding-top:38px;padding-bottom:34px}
+  .hero h1{font-size:25px;line-height:1.2}
+  .art{padding:40px 0 10px}
+  .stickycta.on{display:block}
+}
+</style>
+</head>
+<body>
+<header class="hdr"><div class="wrap in">
+  <a class="logo" href="index.html"><span class="nm">risk-place<b>.org</b></span><span class="tg" data-ui="tagline">Business Continuity &amp; Resilience · GCC</span></a>
+  <div class="right"><a class="backlink" href="cbuae-operational-resilience.html" data-ui="back">← Home</a><button class="langbtn" id="langbtn" onclick="toggleLang()">AR</button></div>
+</div></header>
+
+<section class="hero"><div class="wrap in">
+  <p class="kicker" data-ui="kicker">Regulatory watch · UAE · Board reporting</p>
+  <h1 data-ui="h1">Resilience reporting the board can act on — and the supervisor will respect</h1>
+  <p class="sub" data-ui="sub">Regulators increasingly expect the board to be sighted on operational resilience. A once-a-year slide does not survive that expectation. Here is what a working board report contains.</p>
+</div></section>
+
+<article class="art"><div class="wrap" id="art">
+<h2>Why the annual slide is dead</h2>
+<p>Both regulatory layers in the UAE point the same way. The CBUAE Rulebook requires business continuity arrangements the board can be held accountable for; NCEMA 7000 puts top management accountability and measurable performance indicators into the standard itself. Supervisory interviews now routinely ask directors what they know about the institution's recovery capability — and «we approved the policy» is a weak answer.</p>
+<p>The failure is rarely willingness; it is format. Continuity teams produce operational detail the board cannot act on, or a reassuring annual summary the board cannot interrogate. The fix is a short, recurring report built on a handful of metrics that do not change shape month to month.</p>
+<h2>The five metrics that belong in front of the board</h2>
+<table class="tbl"><thead><tr><th>Metric</th><th>What it answers</th><th>Red flag</th></tr></thead><tbody><tr><td>Resilience index (0-100)</td><td>Overall: are we getting stronger or weaker?</td><td>Falling trend, or a number nobody can decompose</td></tr><tr><td>Cost of one lost day</td><td>How much is at stake, per critical facility or function</td><td>«We have never calculated it»</td></tr><tr><td>Recovery objectives vs tested reality</td><td>Can we actually recover in the time we promise?</td><td>Objectives without a test date next to them</td></tr><tr><td>Single points of failure</td><td>Where one supplier, system or person stops the business</td><td>A list that has not shrunk in two quarters</td></tr><tr><td>Last test: findings and closure</td><td>Is the system alive and learning?</td><td>A test with zero findings — nothing real was tested</td></tr></tbody></table>
+<h2>The one-page format</h2>
+<ul><li><b>Top strip:</b> the index, its 12-month trend, and one sentence of leadership commentary.</li><li><b>Middle:</b> the five metrics with traffic-light status and the single most important change since last report.</li><li><b>Bottom:</b> decisions requested from the board — budget, risk acceptance, deadline — never more than three.</li><li><b>Frequency:</b> monthly to the risk committee, quarterly to the full board, immediately after any material incident or failed test.</li></ul>
+<div class="callout"><p>The test of a good board report: a director who reads only this page can answer the supervisor's question «how do you satisfy yourself the institution can recover?» — with numbers, dates and a trend.</p></div>
+<h2>From report to dashboard</h2>
+<p>A static report ages the day it is issued. The step beyond it is a live dashboard fed by the same data: resilience index, downtime cost, recovery status of critical processes — visible to the executive team continuously and exported to the board pack in one click. That is precisely the product we build: deployed on-premise, so the data never leaves your infrastructure — a requirement most financial institutions will recognise.</p>
+<h2>Frequently asked questions</h2>
+<div class="faq"><details><summary>How is a resilience index calculated?</summary><p>A weighted score across measurable components: BIA currency, plan coverage, test results against recovery objectives, closure of findings, dependency risk. The exact model matters less than consistency — the board reads the trend, the supervisor reads the decomposition.</p></details><details><summary>What does the supervisor actually ask boards?</summary><p>Variants of three questions: how do you know your recovery capability is real, when was it last tested against your stated objectives, and what did you change after the last incident or test. The one-page format answers all three.</p></details><details><summary>Can we build this reporting ourselves?</summary><p>Yes — the format above is deliberately tool-agnostic. The effort is in the data discipline underneath: current BIA, tested objectives, tracked findings. If that discipline exists, a spreadsheet works; a dashboard makes it continuous.</p></details></div>
+</div></article>
+
+<section class="cluster"><div class="wrap">
+  <h2 data-ui="clusterTitle">More on CBUAE resilience</h2>
+  <div class="links" id="cluster"><a href="cbuae-operational-resilience.html">CBUAE operational resilience: the complete guide</a><a href="cbuae-deadline-timeline.html">The 16 September 2026 deadline: a countdown plan</a><a href="cbuae-gap-checklist.html">CBUAE BCM & resilience checklist</a><a href="ncema-7000.html">NCEMA 7000: the UAE national BCM standard</a><a href="business-continuity-uae.html">Business continuity in the UAE: the complete guide</a></div>
+</div></section>
+
+<section class="cta"><div class="wrap in">
+  <h2 data-ui="ctaTitle">One board-level screen: resilience index, cost of downtime, recovery status.</h2>
+  <div><a class="btn" href="gap-assessment.html" data-ui="cta">Request a gap assessment</a><a class="btn2" href="quiz.html" data-ui="cta2">Take the free readiness check</a></div>
+</div></section>
+
+<footer class="foot"><div class="wrap in">
+  <span data-ui="copy">© 2026 risk-place.org · Business Continuity &amp; Resilience</span>
+  <a href="privacy.html" data-ui="privacy">Privacy policy</a>
+</div></footer>
+
+<a class="stickycta" id="stickycta" href="gap-assessment.html" data-ui="sticky">NCEMA-ready gap assessment</a>
+
+<script>
+var C={"en": {"tagline": "Business Continuity &amp; Resilience · GCC", "back": "← NCEMA 7000 hub", "copy": "© 2026 risk-place.org · Business Continuity &amp; Resilience", "privacy": "Privacy policy", "sticky": "NCEMA-ready gap assessment", "cta": "Request a gap assessment", "cta2": "Take the free readiness check", "kicker": "Regulatory watch · UAE · Board reporting", "h1": "Resilience reporting the board can act on — and the supervisor will respect", "sub": "Regulators increasingly expect the board to be sighted on operational resilience. A once-a-year slide does not survive that expectation. Here is what a working board report contains.", "clusterTitle": "More on CBUAE resilience", "ctaTitle": "One board-level screen: resilience index, cost of downtime, recovery status.", "sections": [["h2", "Why the annual slide is dead"], ["p", "Both regulatory layers in the UAE point the same way. The CBUAE Rulebook requires business continuity arrangements the board can be held accountable for; NCEMA 7000 puts top management accountability and measurable performance indicators into the standard itself. Supervisory interviews now routinely ask directors what they know about the institution's recovery capability — and «we approved the policy» is a weak answer."], ["p", "The failure is rarely willingness; it is format. Continuity teams produce operational detail the board cannot act on, or a reassuring annual summary the board cannot interrogate. The fix is a short, recurring report built on a handful of metrics that do not change shape month to month."], ["h2", "The five metrics that belong in front of the board"], ["table", ["Metric", "What it answers", "Red flag"], [["Resilience index (0-100)", "Overall: are we getting stronger or weaker?", "Falling trend, or a number nobody can decompose"], ["Cost of one lost day", "How much is at stake, per critical facility or function", "«We have never calculated it»"], ["Recovery objectives vs tested reality", "Can we actually recover in the time we promise?", "Objectives without a test date next to them"], ["Single points of failure", "Where one supplier, system or person stops the business", "A list that has not shrunk in two quarters"], ["Last test: findings and closure", "Is the system alive and learning?", "A test with zero findings — nothing real was tested"]]], ["h2", "The one-page format"], ["ul", ["<b>Top strip:</b> the index, its 12-month trend, and one sentence of leadership commentary.", "<b>Middle:</b> the five metrics with traffic-light status and the single most important change since last report.", "<b>Bottom:</b> decisions requested from the board — budget, risk acceptance, deadline — never more than three.", "<b>Frequency:</b> monthly to the risk committee, quarterly to the full board, immediately after any material incident or failed test."]], ["callout", "The test of a good board report: a director who reads only this page can answer the supervisor's question «how do you satisfy yourself the institution can recover?» — with numbers, dates and a trend."], ["h2", "From report to dashboard"], ["p", "A static report ages the day it is issued. The step beyond it is a live dashboard fed by the same data: resilience index, downtime cost, recovery status of critical processes — visible to the executive team continuously and exported to the board pack in one click. That is precisely the product we build: deployed on-premise, so the data never leaves your infrastructure — a requirement most financial institutions will recognise."], ["h2", "Frequently asked questions"], ["faq", [["How is a resilience index calculated?", "A weighted score across measurable components: BIA currency, plan coverage, test results against recovery objectives, closure of findings, dependency risk. The exact model matters less than consistency — the board reads the trend, the supervisor reads the decomposition."], ["What does the supervisor actually ask boards?", "Variants of three questions: how do you know your recovery capability is real, when was it last tested against your stated objectives, and what did you change after the last incident or test. The one-page format answers all three."], ["Can we build this reporting ourselves?", "Yes — the format above is deliberately tool-agnostic. The effort is in the data discipline underneath: current BIA, tested objectives, tracked findings. If that discipline exists, a spreadsheet works; a dashboard makes it continuous."]]]], "cluster": [["cbuae-operational-resilience.html", "CBUAE operational resilience: the complete guide"], ["cbuae-deadline-timeline.html", "The 16 September 2026 deadline: a countdown plan"], ["cbuae-gap-checklist.html", "CBUAE BCM & resilience checklist"], ["ncema-7000.html", "NCEMA 7000: the UAE national BCM standard"], ["business-continuity-uae.html", "Business continuity in the UAE: the complete guide"]]}, "ar": {"tagline": "استمرارية الأعمال والمرونة · دول الخليج", "back": "→ دليل NCEMA 7000", "copy": "© ٢٠٢٦ risk-place.org · استمرارية الأعمال والمرونة", "privacy": "سياسة الخصوصية", "sticky": "تقييم فجوات الجاهزية لـ NCEMA", "cta": "اطلبوا تقييم الفجوات", "cta2": "جرّبوا فحص الجاهزية المجاني", "kicker": "المراقبة التنظيمية · الإمارات · تقارير المجلس", "h1": "تقارير مرونة يستطيع المجلس التصرف بناء عليها — ويحترمها المشرف", "sub": "يتوقع المنظمون بشكل متزايد اطلاع مجلس الإدارة على المرونة التشغيلية. شريحة عرض سنوية واحدة لا تصمد أمام هذا التوقع. إليكم ما يحتويه تقرير مجلس فعال.", "clusterTitle": "المزيد عن مرونة المصرف المركزي", "ctaTitle": "شاشة واحدة بمستوى المجلس: مؤشر المرونة وتكلفة التوقف وحالة التعافي.", "sections": [["h2", "لماذا ماتت الشريحة السنوية"], ["p", "الطبقتان التنظيميتان في الإمارات تشيران إلى الاتجاه نفسه. كتاب قواعد المصرف المركزي يتطلب ترتيبات استمرارية يُساءل عنها المجلس؛ وNCEMA 7000 يضع مساءلة الإدارة العليا ومؤشرات أداء قابلة للقياس في صلب المعيار. مقابلات الرقابة تسأل أعضاء المجالس الآن بشكل روتيني عما يعرفونه عن قدرة مؤسستهم على التعافي — و«اعتمدنا السياسة» جواب ضعيف."], ["p", "الفشل نادراً ما يكون في الإرادة؛ بل في الصيغة. فرق الاستمرارية تنتج تفاصيل تشغيلية لا يستطيع المجلس التصرف بناء عليها، أو ملخصاً سنوياً مطمئناً لا يستطيع المجلس مساءلته. الحل تقرير قصير دوري مبني على حفنة مؤشرات لا يتغير شكلها شهراً بشهر."], ["h2", "المؤشرات الخمسة التي تنتمي أمام المجلس"], ["table", ["المؤشر", "عن ماذا يجيب", "إشارة الخطر"], [["مؤشر المرونة (0-100)", "إجمالاً: هل نقوى أم نضعف؟", "اتجاه هابط، أو رقم لا يستطيع أحد تفكيكه"], ["تكلفة اليوم الضائع", "كم على المحك لكل منشأة أو وظيفة حيوية", "«لم نحسبها قط»"], ["أهداف التعافي مقابل الواقع المختبر", "هل نتعافى فعلاً في الزمن الذي نعد به؟", "أهداف بلا تاريخ اختبار بجانبها"], ["نقاط الفشل المنفردة", "أين يوقف مورد أو نظام أو شخص واحد الأعمال", "قائمة لم تتقلص منذ ربعين"], ["آخر اختبار: الملاحظات والإغلاق", "هل النظام حي ويتعلم؟", "اختبار بصفر ملاحظات — لم يُختبر شيء حقيقي"]]], ["h2", "صيغة الصفحة الواحدة"], ["ul", ["<b>الشريط العلوي:</b> المؤشر واتجاهه خلال 12 شهراً وجملة واحدة من تعليق القيادة.", "<b>الوسط:</b> المؤشرات الخمسة بحالة إشارات المرور وأهم تغيير واحد منذ التقرير السابق.", "<b>الأسفل:</b> القرارات المطلوبة من المجلس — ميزانية أو قبول مخاطرة أو موعد — لا أكثر من ثلاثة أبداً.", "<b>الدورية:</b> شهرياً للجنة المخاطر، وربعياً للمجلس الكامل، وفوراً بعد أي حادث جوهري أو اختبار فاشل."]], ["callout", "اختبار التقرير الجيد: عضو مجلس يقرأ هذه الصفحة وحدها يستطيع الإجابة عن سؤال المشرف «كيف تطمئنون إلى قدرة المؤسسة على التعافي؟» — بأرقام وتواريخ واتجاه."], ["h2", "من التقرير إلى لوحة المتابعة"], ["p", "التقرير الثابت يشيخ يوم صدوره. الخطوة التالية لوحة متابعة حية تتغذى من البيانات نفسها: مؤشر المرونة وتكلفة التوقف وحالة تعافي العمليات الحيوية — مرئية للفريق التنفيذي باستمرار وتُصدّر إلى حزمة المجلس بنقرة واحدة. هذا تحديداً المنتج الذي نبنيه: يُنشر داخل بنيتكم التحتية فلا تغادر البيانات مؤسستكم — متطلب ستعرفه معظم المؤسسات المالية."], ["h2", "أسئلة شائعة"], ["faq", [["كيف يُحسب مؤشر المرونة؟", "درجة موزونة عبر مكونات قابلة للقياس: حداثة تحليل الأثر، وتغطية الخطط، ونتائج الاختبار مقابل أهداف التعافي، وإغلاق الملاحظات، ومخاطر الاعتماديات. النموذج الدقيق أقل أهمية من الاتساق — المجلس يقرأ الاتجاه والمشرف يقرأ التفكيك."], ["ماذا يسأل المشرف المجالس فعلاً؟", "صيغ من ثلاثة أسئلة: كيف تعرفون أن قدرتكم على التعافي حقيقية، ومتى اختُبرت آخر مرة مقابل أهدافكم المعلنة، وماذا غيرتم بعد آخر حادث أو اختبار. صيغة الصفحة الواحدة تجيب عن الثلاثة."], ["هل نستطيع بناء هذه التقارير بأنفسنا؟", "نعم — الصيغة أعلاه محايدة الأدوات عمداً. الجهد في انضباط البيانات تحتها: تحليل أثر محدث وأهداف مختبرة وملاحظات متتبعة. إن وُجد هذا الانضباط يكفي جدول بيانات؛ واللوحة تجعله مستمراً."]]]], "cluster": [["cbuae-operational-resilience.html", "المرونة التشغيلية للمصرف المركزي: الدليل الكامل"], ["cbuae-deadline-timeline.html", "الموعد النهائي 16 سبتمبر 2026: خطة العد التنازلي"], ["cbuae-gap-checklist.html", "قائمة تحقق استمرارية الأعمال والمرونة للمصرف المركزي"], ["ncema-7000.html", "NCEMA 7000: المعيار الوطني الإماراتي"], ["business-continuity-uae.html", "استمرارية الأعمال في الإمارات: الدليل الكامل"]]}};
+var lang="en";
+function renderSections(secs){
+  var out=[];
+  secs.forEach(function(s){
+    if(s[0]==="h2")out.push("<h2>"+s[1]+"</h2>");
+    else if(s[0]==="p")out.push("<p>"+s[1]+"</p>");
+    else if(s[0]==="ul")out.push("<ul>"+s[1].map(function(x){return "<li>"+x+"</li>";}).join("")+"</ul>");
+    else if(s[0]==="callout")out.push('<div class="callout"><p>'+s[1]+"</p></div>");
+    else if(s[0]==="table"){
+      out.push('<table class="tbl"><thead><tr>'+s[1].map(function(c){return "<th>"+c+"</th>";}).join("")+"</tr></thead><tbody>"+
+        s[2].map(function(r){return "<tr>"+r.map(function(c){return "<td>"+c+"</td>";}).join("")+"</tr>";}).join("")+"</tbody></table>");
+    } else if(s[0]==="faq"){
+      out.push('<div class="faq">'+s[1].map(function(x){return "<details><summary>"+x[0]+"</summary><p>"+x[1]+"</p></details>";}).join("")+"</div>");
+    }
+  });
+  return out.join("\n");
+}
+function setLang(l){
+  lang=l;document.documentElement.lang=l;document.documentElement.dir=(l==="ar")?"rtl":"ltr";
+  var d=C[l];
+  document.querySelectorAll("[data-ui]").forEach(function(el){var k=el.getAttribute("data-ui");if(typeof d[k]==="string")el.innerHTML=d[k];});
+  document.getElementById("art").innerHTML=renderSections(d.sections);
+  document.getElementById("cluster").innerHTML=d.cluster.map(function(x){return '<a href="'+x[0]+'">'+x[1]+"</a>";}).join("");
+  document.getElementById("langbtn").textContent=(l==="ar")?"EN":"AR";
+  try{localStorage.setItem("rp_org_lang",l);}catch(e){}
+}
+function toggleLang(){setLang(lang==="ar"?"en":"ar");}
+(function(){var s=null;try{s=localStorage.getItem("rp_org_lang");}catch(e){}if(s==="ar")setLang("ar");})();
+window.addEventListener('scroll',function(){
+  var el=document.getElementById('stickycta');if(!el)return;
+  var cta=document.querySelector('section.cta');
+  var show=window.scrollY>600&&(!cta||cta.getBoundingClientRect().top>window.innerHeight);
+  el.classList.toggle('on',show);
+},{passive:true});
+</script>
+</body>
+</html>

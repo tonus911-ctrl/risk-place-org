@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HNF79F1SSN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HNF79F1SSN');</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to run a tabletop exercise that finds real gaps — a facilitator's guide — risk-place.org</title>
+<meta name="description" content="Running a business continuity tabletop exercise: scenario design, roles, injects, timing, findings and follow-up. Ransomware and facility-shutdown scenarios for GCC organisations.">
+<link rel="canonical" href="https://risk-place.org/tabletop-exercise-guide.html">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:title" content="How to run a tabletop exercise that finds real gaps — a facilitator's guide — risk-place.org">
+<meta property="og:description" content="Running a business continuity tabletop exercise: scenario design, roles, injects, timing, findings and follow-up. Ransomware and facility-shutdown scenarios for GCC organisations.">
+<meta property="og:image" content="https://risk-place.org/hero-dubai.jpg">
+<meta property="og:url" content="https://risk-place.org/tabletop-exercise-guide.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How often should we exercise?", "acceptedAnswer": {"@type": "Answer", "text": "At least annually per the regulatory minimum — plus after any material change, and a second run when the first produced serious findings. Mature programmes alternate scenarios year to year."}}, {"@type": "Question", "name": "Tabletop or full simulation?", "acceptedAnswer": {"@type": "Answer", "text": "Tabletop first, always: it finds the decision and authority gaps at near-zero cost. Full simulations (actual failover, site evacuation) come after tabletops stop producing findings."}}, {"@type": "Question", "name": "Who should facilitate?", "acceptedAnswer": {"@type": "Answer", "text": "Someone outside the response structure — internal audit, a continuity professional, or an external facilitator. The person who wrote the plan defending the plan is a conflict, not a facilitator."}}, {"@type": "Question", "name": "How do we exercise a drone-incident scenario without alarmism?", "acceptedAnswer": {"@type": "Answer", "text": "Frame it as what it is operationally: a facility-access and fire scenario — production stopped, zone closed, insurer and media asking questions. The response disciplines are identical to any area incident; no military framing is needed or useful."}}]}</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#fff;-webkit-font-smoothing:antialiased;font-family:'Figtree','IBM Plex Sans Arabic',system-ui,sans-serif;color:#16181F;line-height:1.55}
+html[dir="rtl"] body{font-family:'IBM Plex Sans Arabic','Figtree',system-ui,sans-serif}
+a{color:#16181F;text-decoration:none}
+::selection{background:#FBE0CB}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+.hdr{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.94);backdrop-filter:blur(14px);border-bottom:1px solid #EAE7E1}
+.hdr .in{height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;flex-direction:column;gap:1px}
+.logo .nm{font-size:26px;font-weight:600;letter-spacing:-0.02em}
+.logo .nm b{color:#C4571C;font-weight:600}
+.logo .tg{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8A8478}
+.hdr .right{display:flex;align-items:center;gap:12px}
+.langbtn{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.08em;background:none;border:1px solid #DCD8D0;border-radius:999px;padding:7px 15px;cursor:pointer;color:#3D4149}
+.langbtn:hover{border-color:#16181F;color:#16181F}
+.backlink{font-size:14.5px;color:#3D4149}
+.backlink:hover{color:#C4571C}
+.hero{background:#0D1117;color:#fff}
+.hero .in{padding-top:64px;padding-bottom:56px}
+.kicker{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#F0A868;margin:0 0 20px}
+.hero h1{font-size:42px;font-weight:300;line-height:1.14;letter-spacing:-0.025em;margin:0 0 16px;max-width:28ch;text-wrap:pretty}
+.hero .sub{font-size:18px;font-weight:300;color:rgba(255,255,255,0.75);margin:0;max-width:62ch;line-height:1.6}
+.btn{display:inline-block;font-size:16.5px;font-weight:600;background:#C4571C;color:#fff !important;padding:15px 32px;border-radius:999px}
+.btn:hover{background:#A03F12}
+.btn2{display:inline-block;font-size:16px;font-weight:400;color:#fff !important;border:1px solid rgba(255,255,255,0.34);padding:14px 28px;border-radius:999px;margin-inline-start:10px}
+.btn2:hover{border-color:#fff}
+.cta{background:#0D1117;color:#fff}
+.cta .in{padding-top:64px;padding-bottom:64px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:22px}
+.cta h2{font-size:30px;font-weight:300;letter-spacing:-0.02em;margin:0;max-width:30ch;text-wrap:pretty}
+.foot{background:#0D1117;color:rgba(255,255,255,0.46);border-top:1px solid rgba(255,255,255,0.12)}
+.foot .in{padding-top:22px;padding-bottom:22px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13.5px;font-weight:300}
+.foot a{color:rgba(255,255,255,0.6)}
+.foot a:hover{color:#fff}
+.stickycta{display:none;position:fixed;left:14px;right:14px;bottom:14px;z-index:70;background:#C4571C;color:#fff !important;text-align:center;font-size:16px;font-weight:600;padding:14px 18px;border-radius:999px;box-shadow:0 10px 28px rgba(13,17,23,0.28)}
+
+.art{padding:64px 0 20px}
+.art h2{font-size:30px;font-weight:300;line-height:1.18;letter-spacing:-0.02em;margin:52px 0 18px;text-wrap:pretty}
+.art h2:first-child{margin-top:0}
+.art p{font-size:16.5px;font-weight:300;line-height:1.72;color:#3D4149;margin:0 0 16px;max-width:76ch}
+.art ul{margin:0 0 18px;padding-inline-start:22px;max-width:76ch}
+.art li{font-size:16.5px;font-weight:300;line-height:1.66;color:#3D4149;margin-bottom:9px}
+.art li b,.art p b{font-weight:600;color:#16181F}
+.callout{background:#F7F4EF;border:1px solid #EAE7E1;border-inline-start:3px solid #C4571C;border-radius:12px;padding:20px 24px;margin:26px 0;max-width:76ch}
+.callout p{margin:0;font-size:16px}
+.tbl{width:100%;border-collapse:collapse;margin:24px 0 30px;font-size:15.5px}
+.tbl th{text-align:start;font-weight:600;padding:12px 14px;border-bottom:2px solid #16181F;font-size:14.5px}
+.tbl td{padding:12px 14px;border-bottom:1px solid #E1DCD3;font-weight:300;color:#3D4149;vertical-align:top;line-height:1.55}
+.tbl td:first-child{font-weight:500;color:#16181F}
+.faq{margin:10px 0 30px;max-width:76ch}
+.faq details{border-bottom:1px solid #E1DCD3;padding:4px 0}
+.faq summary{font-size:17px;font-weight:600;padding:14px 0;cursor:pointer;list-style-position:outside}
+.faq details p{padding:0 0 16px}
+.cluster{background:#F7F4EF;border-top:1px solid #EAE7E1;border-bottom:1px solid #EAE7E1;padding:56px 0}
+.cluster h2{font-size:26px;font-weight:300;margin:0 0 26px}
+.cluster .links{display:grid;grid-template-columns:1fr 1fr;gap:14px 40px}
+.cluster a{display:block;padding:14px 0;border-bottom:1px solid #E1DCD3;font-size:16px;font-weight:500}
+.cluster a:hover{color:#C4571C}
+.src{font-size:13.5px;color:#8A8478;margin-top:30px;max-width:76ch}
+.src a{color:#8A8478;text-decoration:underline}
+@media(max-width:760px){.art h2{font-size:24px}.cluster .links{grid-template-columns:1fr}.tbl{font-size:14px}.tbl th,.tbl td{padding:9px 8px}}
+
+@media(max-width:760px){.hero h1{font-size:30px}}
+@media(max-width:600px){
+  .wrap{padding-left:20px;padding-right:20px}
+  .logo .nm{font-size:22px}
+  .logo .tg{display:none}
+  .backlink{font-size:13px}
+  .hero .in{padding-top:38px;padding-bottom:34px}
+  .hero h1{font-size:25px;line-height:1.2}
+  .art{padding:40px 0 10px}
+  .stickycta.on{display:block}
+}
+</style>
+</head>
+<body>
+<header class="hdr"><div class="wrap in">
+  <a class="logo" href="index.html"><span class="nm">risk-place<b>.org</b></span><span class="tg" data-ui="tagline">Business Continuity &amp; Resilience · GCC</span></a>
+  <div class="right"><a class="backlink" href="business-continuity-uae.html" data-ui="back">← Home</a><button class="langbtn" id="langbtn" onclick="toggleLang()">AR</button></div>
+</div></header>
+
+<section class="hero"><div class="wrap in">
+  <p class="kicker" data-ui="kicker">Guide · Method · Exercises</p>
+  <h1 data-ui="h1">The tabletop exercise: how to make the plan break in rehearsal</h1>
+  <p class="sub" data-ui="sub">An exercise that ends with «went well, no major issues» has failed. The point is to find where the plan breaks — while breaking is still free. Here is the facilitator's method.</p>
+</div></section>
+
+<article class="art"><div class="wrap" id="art">
+<h2>What a tabletop is — and what it is for</h2>
+<p>A tabletop exercise walks your real decision-makers through a realistic scenario, hour by hour, around a table — no systems touched, no production risked. It tests the three things documents cannot: <b>do people know their authority, do the handoffs work, and do the assumed workarounds actually exist</b>. It is the cheapest instrument in continuity — and the one that produces the most findings per hour invested.</p>
+<h2>Designing the scenario</h2>
+<ul><li><b>Pick your worst realistic day.</b> For most GCC organisations right now: a ransomware event with full encryption, or a facility closed by an area incident — intact but inaccessible for 72 hours. Both scenarios have public regional precedent; neither needs invention.</li><li><b>Write a timeline with injects.</b> 6-10 developments delivered at intervals: detection, escalation, a media call, a regulator question, a supplier failing, a recovery setback. Injects force decisions; decisions expose gaps.</li><li><b>Set constraints honestly.</b> The CEO is unreachable for the first hour. The backup administrator is on leave. Realism lives in the constraints.</li><li><b>Prepare the answer key.</b> For each inject: what the plan says should happen. The gap between the plan's answer and the room's answer is your findings list.</li></ul>
+<h2>Running the room</h2>
+<ul><li><b>Cast real roles.</b> The people who would decide on the day — not their more available delegates. Authority questions only surface with authority holders present.</li><li><b>Keep the clock moving.</b> 2-3 hours total; every stalled discussion is itself a finding («no one owns this decision») — log it and move.</li><li><b>Facilitator asks, never answers.</b> «What do you do now? Who authorises that? Where is that number?» The moment the facilitator helps, the test stops testing.</li><li><b>Scribe everything.</b> Timings, decisions, disagreements, missing information. The scribe's log is the raw material of the report.</li></ul>
+<div class="callout"><p>The paradox of a good exercise: the more uncomfortable the room, the more valuable the report. A smooth exercise means the scenario was too easy — or the room was rehearsing agreement instead of response.</p></div>
+<h2>After: findings that change things</h2>
+<ul><li><b>Write the report within a week.</b> Scenario, timings against RTOs, findings ranked by consequence, owners and deadlines per fix. Two to four pages.</li><li><b>Close the top three first.</b> A dozen open findings age into wallpaper; three closed findings change the plan.</li><li><b>Amend the plan visibly.</b> Each finding either changes a document, a contract, an arrangement — or is formally accepted as risk by leadership.</li><li><b>Keep the evidence.</b> Report, attendance, closed actions: this is exactly what NCEMA 7000 clause 9, CBUAE Article 7 and ISO 22301 auditors ask to see.</li></ul>
+<h2>Frequently asked questions</h2>
+<div class="faq"><details><summary>How often should we exercise?</summary><p>At least annually per the regulatory minimum — plus after any material change, and a second run when the first produced serious findings. Mature programmes alternate scenarios year to year.</p></details><details><summary>Tabletop or full simulation?</summary><p>Tabletop first, always: it finds the decision and authority gaps at near-zero cost. Full simulations (actual failover, site evacuation) come after tabletops stop producing findings.</p></details><details><summary>Who should facilitate?</summary><p>Someone outside the response structure — internal audit, a continuity professional, or an external facilitator. The person who wrote the plan defending the plan is a conflict, not a facilitator.</p></details><details><summary>How do we exercise a drone-incident scenario without alarmism?</summary><p>Frame it as what it is operationally: a facility-access and fire scenario — production stopped, zone closed, insurer and media asking questions. The response disciplines are identical to any area incident; no military framing is needed or useful.</p></details></div>
+</div></article>
+
+<section class="cluster"><div class="wrap">
+  <h2 data-ui="clusterTitle">More from the continuity hub</h2>
+  <div class="links" id="cluster"><a href="business-continuity-uae.html">Business continuity in the UAE: the complete guide</a><a href="business-impact-analysis.html">Business impact analysis: the money-first method</a><a href="iso-22301-implementation-uae.html">Implementing ISO 22301 in the UAE</a><a href="rto-rpo-explained.html">RTO and RPO explained in plain language</a><a href="bcp-template-structure.html">What a real business continuity plan contains</a><a href="ncema-7000.html">NCEMA 7000: the UAE national BCM standard</a><a href="cbuae-operational-resilience.html">CBUAE operational resilience: the complete guide</a></div>
+</div></section>
+
+<section class="cta"><div class="wrap in">
+  <h2 data-ui="ctaTitle">Want a drill on your worst realistic day — designed and facilitated?</h2>
+  <div><a class="btn" href="gap-assessment.html" data-ui="cta">Request a gap assessment</a><a class="btn2" href="quiz.html" data-ui="cta2">Take the free readiness check</a></div>
+</div></section>
+
+<footer class="foot"><div class="wrap in">
+  <span data-ui="copy">© 2026 risk-place.org · Business Continuity &amp; Resilience</span>
+  <a href="privacy.html" data-ui="privacy">Privacy policy</a>
+</div></footer>
+
+<a class="stickycta" id="stickycta" href="gap-assessment.html" data-ui="sticky">NCEMA-ready gap assessment</a>
+
+<script>
+var C={"en": {"tagline": "Business Continuity &amp; Resilience · GCC", "back": "← NCEMA 7000 hub", "copy": "© 2026 risk-place.org · Business Continuity &amp; Resilience", "privacy": "Privacy policy", "sticky": "NCEMA-ready gap assessment", "cta": "Request a gap assessment", "cta2": "Take the free readiness check", "kicker": "Guide · Method · Exercises", "h1": "The tabletop exercise: how to make the plan break in rehearsal", "sub": "An exercise that ends with «went well, no major issues» has failed. The point is to find where the plan breaks — while breaking is still free. Here is the facilitator's method.", "clusterTitle": "More from the continuity hub", "ctaTitle": "Want a drill on your worst realistic day — designed and facilitated?", "sections": [["h2", "What a tabletop is — and what it is for"], ["p", "A tabletop exercise walks your real decision-makers through a realistic scenario, hour by hour, around a table — no systems touched, no production risked. It tests the three things documents cannot: <b>do people know their authority, do the handoffs work, and do the assumed workarounds actually exist</b>. It is the cheapest instrument in continuity — and the one that produces the most findings per hour invested."], ["h2", "Designing the scenario"], ["ul", ["<b>Pick your worst realistic day.</b> For most GCC organisations right now: a ransomware event with full encryption, or a facility closed by an area incident — intact but inaccessible for 72 hours. Both scenarios have public regional precedent; neither needs invention.", "<b>Write a timeline with injects.</b> 6-10 developments delivered at intervals: detection, escalation, a media call, a regulator question, a supplier failing, a recovery setback. Injects force decisions; decisions expose gaps.", "<b>Set constraints honestly.</b> The CEO is unreachable for the first hour. The backup administrator is on leave. Realism lives in the constraints.", "<b>Prepare the answer key.</b> For each inject: what the plan says should happen. The gap between the plan's answer and the room's answer is your findings list."]], ["h2", "Running the room"], ["ul", ["<b>Cast real roles.</b> The people who would decide on the day — not their more available delegates. Authority questions only surface with authority holders present.", "<b>Keep the clock moving.</b> 2-3 hours total; every stalled discussion is itself a finding («no one owns this decision») — log it and move.", "<b>Facilitator asks, never answers.</b> «What do you do now? Who authorises that? Where is that number?» The moment the facilitator helps, the test stops testing.", "<b>Scribe everything.</b> Timings, decisions, disagreements, missing information. The scribe's log is the raw material of the report."]], ["callout", "The paradox of a good exercise: the more uncomfortable the room, the more valuable the report. A smooth exercise means the scenario was too easy — or the room was rehearsing agreement instead of response."], ["h2", "After: findings that change things"], ["ul", ["<b>Write the report within a week.</b> Scenario, timings against RTOs, findings ranked by consequence, owners and deadlines per fix. Two to four pages.", "<b>Close the top three first.</b> A dozen open findings age into wallpaper; three closed findings change the plan.", "<b>Amend the plan visibly.</b> Each finding either changes a document, a contract, an arrangement — or is formally accepted as risk by leadership.", "<b>Keep the evidence.</b> Report, attendance, closed actions: this is exactly what NCEMA 7000 clause 9, CBUAE Article 7 and ISO 22301 auditors ask to see."]], ["h2", "Frequently asked questions"], ["faq", [["How often should we exercise?", "At least annually per the regulatory minimum — plus after any material change, and a second run when the first produced serious findings. Mature programmes alternate scenarios year to year."], ["Tabletop or full simulation?", "Tabletop first, always: it finds the decision and authority gaps at near-zero cost. Full simulations (actual failover, site evacuation) come after tabletops stop producing findings."], ["Who should facilitate?", "Someone outside the response structure — internal audit, a continuity professional, or an external facilitator. The person who wrote the plan defending the plan is a conflict, not a facilitator."], ["How do we exercise a drone-incident scenario without alarmism?", "Frame it as what it is operationally: a facility-access and fire scenario — production stopped, zone closed, insurer and media asking questions. The response disciplines are identical to any area incident; no military framing is needed or useful."]]]], "cluster": [["business-continuity-uae.html", "Business continuity in the UAE: the complete guide"], ["business-impact-analysis.html", "Business impact analysis: the money-first method"], ["iso-22301-implementation-uae.html", "Implementing ISO 22301 in the UAE"], ["rto-rpo-explained.html", "RTO and RPO explained in plain language"], ["bcp-template-structure.html", "What a real business continuity plan contains"], ["ncema-7000.html", "NCEMA 7000: the UAE national BCM standard"], ["cbuae-operational-resilience.html", "CBUAE operational resilience: the complete guide"]]}, "ar": {"tagline": "استمرارية الأعمال والمرونة · دول الخليج", "back": "→ دليل NCEMA 7000", "copy": "© ٢٠٢٦ risk-place.org · استمرارية الأعمال والمرونة", "privacy": "سياسة الخصوصية", "sticky": "تقييم فجوات الجاهزية لـ NCEMA", "cta": "اطلبوا تقييم الفجوات", "cta2": "جرّبوا فحص الجاهزية المجاني", "kicker": "دليل · منهجية · التمارين", "h1": "التمرين النظري: كيف تجعلون الخطة تنكسر في التدريب", "sub": "التمرين الذي ينتهي بـ«سار جيداً، لا مشكلات كبرى» قد فشل. الغاية إيجاد مواضع انكسار الخطة — بينما الانكسار ما زال مجانياً. إليكم منهجية الميسر.", "clusterTitle": "المزيد من مركز الاستمرارية", "ctaTitle": "تريدون تمريناً على أسوأ يوم واقعي لديكم — مصمماً ومُيسّراً؟", "sections": [["h2", "ما التمرين النظري — ولماذا"], ["p", "يمشي التمرين النظري بصناع قراركم الحقيقيين عبر سيناريو واقعي، ساعة بساعة، حول طاولة — دون لمس أنظمة أو مخاطرة بالإنتاج. يختبر الأشياء الثلاثة التي لا تستطيع الوثائق اختبارها: <b>هل يعرف الناس صلاحياتهم، وهل تعمل التسليمات بينهم، وهل الحلول المؤقتة المفترضة موجودة فعلاً</b>. إنه أرخص أدوات الاستمرارية — وأكثرها إنتاجاً للملاحظات لكل ساعة مستثمرة."], ["h2", "تصميم السيناريو"], ["ul", ["<b>اختاروا أسوأ يوم واقعي لديكم.</b> لمعظم مؤسسات الخليج الآن: برمجية فدية بتشفير كامل، أو منشأة أغلقها حادث في المنطقة — سليمة لكن يتعذر الوصول إليها 72 ساعة. لكلا السيناريوهين سوابق إقليمية علنية؛ ولا يحتاج أي منهما اختراعاً.", "<b>اكتبوا خطاً زمنياً بمداخلات.</b> 6-10 تطورات تُسلّم على فترات: اكتشاف وتصعيد واتصال إعلامي وسؤال منظم وفشل مورد وانتكاسة تعافٍ. المداخلات تفرض قرارات؛ والقرارات تكشف الفجوات.", "<b>ضعوا القيود بصدق.</b> الرئيس التنفيذي لا يمكن الوصول إليه في الساعة الأولى. مدير النسخ الاحتياطي في إجازة. الواقعية تسكن في القيود.", "<b>جهزوا مفتاح الإجابة.</b> لكل مداخلة: ما الذي تقول الخطة إنه يجب أن يحدث. الفجوة بين جواب الخطة وجواب القاعة هي قائمة ملاحظاتكم."]], ["h2", "إدارة القاعة"], ["ul", ["<b>وزعوا الأدوار الحقيقية.</b> الأشخاص الذين سيقررون يوم الحادث — لا مندوبيهم الأكثر تفرغاً. أسئلة الصلاحية لا تظهر إلا بحضور أصحابها.", "<b>أبقوا الساعة تتحرك.</b> 2-3 ساعات إجمالاً؛ كل نقاش متوقف هو نفسه ملاحظة («لا أحد يملك هذا القرار») — سجلوه وتقدموا.", "<b>الميسر يسأل ولا يجيب أبداً.</b> «ماذا تفعلون الآن؟ من يأذن بذلك؟ أين ذلك الرقم؟» لحظة يساعد الميسر يتوقف الاختبار عن الاختبار.", "<b>دونوا كل شيء.</b> التوقيتات والقرارات والخلافات والمعلومات الناقصة. سجل المدون هو المادة الخام للتقرير."]], ["callout", "مفارقة التمرين الجيد: كلما ازداد انزعاج القاعة ازدادت قيمة التقرير. التمرين السلس يعني أن السيناريو كان سهلاً — أو أن القاعة كانت تتدرب على الاتفاق لا على الاستجابة."], ["h2", "بعده: ملاحظات تغير الأشياء"], ["ul", ["<b>اكتبوا التقرير خلال أسبوع.</b> السيناريو والتوقيتات مقابل أهداف التعافي والملاحظات مرتبة بالعواقب والأصحاب والمواعيد لكل إصلاح. صفحتان إلى أربع.", "<b>أغلقوا أهم ثلاث أولاً.</b> اثنتا عشرة ملاحظة مفتوحة تشيخ إلى ورق جدران؛ وثلاث مغلقة تغير الخطة.", "<b>عدلوا الخطة بشكل مرئي.</b> كل ملاحظة إما تغير وثيقة أو عقداً أو ترتيباً — أو تُقبل رسمياً كخطر من القيادة.", "<b>احفظوا الأدلة.</b> التقرير والحضور والإجراءات المغلقة: هذا تحديداً ما يطلب رؤيته مدققو NCEMA 7000 البند 9 والمادة 7 للمصرف المركزي وISO 22301."]], ["h2", "أسئلة شائعة"], ["faq", [["كم مرة نتمرن؟", "سنوياً على الأقل وفق الحد التنظيمي — إضافة إلى ما بعد أي تغيير جوهري، وجولة ثانية حين ينتج الأولى ملاحظات جدية. البرامج الناضجة تناوب السيناريوهات سنة بسنة."], ["تمرين نظري أم محاكاة كاملة؟", "النظري أولاً دائماً: يجد فجوات القرار والصلاحية بتكلفة شبه معدومة. المحاكاة الكاملة (تحويل فعلي، إخلاء موقع) تأتي بعد أن يتوقف النظري عن إنتاج ملاحظات."], ["من ييسر؟", "شخص من خارج هيكل الاستجابة — التدقيق الداخلي أو محترف استمرارية أو ميسر خارجي. كاتب الخطة المدافع عنها تضارب مصالح لا ميسر."], ["كيف نتمرن على سيناريو مسيرة دون إثارة قلق؟", "أطّروه كما هو تشغيلياً: سيناريو وصول إلى منشأة وحريق — إنتاج متوقف ومنطقة مغلقة ومؤمّن وإعلام يسألان. تخصصات الاستجابة مطابقة لأي حادث منطقة؛ ولا حاجة لأي تأطير عسكري ولا فائدة منه."]]]], "cluster": [["business-continuity-uae.html", "استمرارية الأعمال في الإمارات: الدليل الكامل"], ["business-impact-analysis.html", "تحليل أثر الأعمال: منهجية تبدأ بالمال"], ["iso-22301-implementation-uae.html", "تطبيق ISO 22301 في الإمارات"], ["rto-rpo-explained.html", "شرح RTO وRPO بلغة واضحة"], ["bcp-template-structure.html", "ماذا تحتوي خطة استمرارية أعمال حقيقية"], ["ncema-7000.html", "NCEMA 7000: المعيار الوطني الإماراتي"], ["cbuae-operational-resilience.html", "المرونة التشغيلية للمصرف المركزي: الدليل الكامل"]]}};
+var lang="en";
+function renderSections(secs){
+  var out=[];
+  secs.forEach(function(s){
+    if(s[0]==="h2")out.push("<h2>"+s[1]+"</h2>");
+    else if(s[0]==="p")out.push("<p>"+s[1]+"</p>");
+    else if(s[0]==="ul")out.push("<ul>"+s[1].map(function(x){return "<li>"+x+"</li>";}).join("")+"</ul>");
+    else if(s[0]==="callout")out.push('<div class="callout"><p>'+s[1]+"</p></div>");
+    else if(s[0]==="table"){
+      out.push('<table class="tbl"><thead><tr>'+s[1].map(function(c){return "<th>"+c+"</th>";}).join("")+"</tr></thead><tbody>"+
+        s[2].map(function(r){return "<tr>"+r.map(function(c){return "<td>"+c+"</td>";}).join("")+"</tr>";}).join("")+"</tbody></table>");
+    } else if(s[0]==="faq"){
+      out.push('<div class="faq">'+s[1].map(function(x){return "<details><summary>"+x[0]+"</summary><p>"+x[1]+"</p></details>";}).join("")+"</div>");
+    }
+  });
+  return out.join("\n");
+}
+function setLang(l){
+  lang=l;document.documentElement.lang=l;document.documentElement.dir=(l==="ar")?"rtl":"ltr";
+  var d=C[l];
+  document.querySelectorAll("[data-ui]").forEach(function(el){var k=el.getAttribute("data-ui");if(typeof d[k]==="string")el.innerHTML=d[k];});
+  document.getElementById("art").innerHTML=renderSections(d.sections);
+  document.getElementById("cluster").innerHTML=d.cluster.map(function(x){return '<a href="'+x[0]+'">'+x[1]+"</a>";}).join("");
+  document.getElementById("langbtn").textContent=(l==="ar")?"EN":"AR";
+  try{localStorage.setItem("rp_org_lang",l);}catch(e){}
+}
+function toggleLang(){setLang(lang==="ar"?"en":"ar");}
+(function(){var s=null;try{s=localStorage.getItem("rp_org_lang");}catch(e){}if(s==="ar")setLang("ar");})();
+window.addEventListener('scroll',function(){
+  var el=document.getElementById('stickycta');if(!el)return;
+  var cta=document.querySelector('section.cta');
+  var show=window.scrollY>600&&(!cta||cta.getBoundingClientRect().top>window.innerHeight);
+  el.classList.toggle('on',show);
+},{passive:true});
+</script>
+</body>
+</html>

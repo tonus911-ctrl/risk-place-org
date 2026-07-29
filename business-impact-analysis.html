@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HNF79F1SSN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HNF79F1SSN');</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Business impact analysis (BIA): the money-first method, step by step — risk-place.org</title>
+<meta name="description" content="How to run a business impact analysis that produces numbers a CFO signs: critical activities, cost of downtime, RTO/RPO, single points of failure. Method, outputs and common mistakes.">
+<link rel="canonical" href="https://risk-place.org/business-impact-analysis.html">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:title" content="Business impact analysis (BIA): the money-first method, step by step — risk-place.org">
+<meta property="og:description" content="How to run a business impact analysis that produces numbers a CFO signs: critical activities, cost of downtime, RTO/RPO, single points of failure. Method, outputs and common mistakes.">
+<meta property="og:image" content="https://risk-place.org/hero-dubai.jpg">
+<meta property="og:url" content="https://risk-place.org/business-impact-analysis.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How long does a BIA take?", "acceptedAnswer": {"@type": "Answer", "text": "For a mid-size organisation: 2-4 weeks including interviews, curves and CFO reconciliation. Longer usually means scope creep; shorter usually means questionnaires."}}, {"@type": "Question", "name": "How is cost of downtime calculated?", "acceptedAnswer": {"@type": "Answer", "text": "Per activity: lost revenue and margin, contractual penalties, recovery overtime and expediting, regulatory exposure, and customer attrition risk — over the impact curve, from your own finance data. Precision matters less than honesty; ±20% is fine, adjectives are not."}}, {"@type": "Question", "name": "Who should own the BIA?", "acceptedAnswer": {"@type": "Answer", "text": "The continuity or risk function runs it; activity owners supply the facts; finance validates the money; leadership signs. A BIA owned by IT alone becomes a systems inventory."}}, {"@type": "Question", "name": "BIA or risk assessment first?", "acceptedAnswer": {"@type": "Answer", "text": "In practice, together: the BIA tells you what matters and how fast it must return; the risk assessment tells you what can take it down. NCEMA 7000 and ISO 22301 expect both."}}]}</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#fff;-webkit-font-smoothing:antialiased;font-family:'Figtree','IBM Plex Sans Arabic',system-ui,sans-serif;color:#16181F;line-height:1.55}
+html[dir="rtl"] body{font-family:'IBM Plex Sans Arabic','Figtree',system-ui,sans-serif}
+a{color:#16181F;text-decoration:none}
+::selection{background:#FBE0CB}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+.hdr{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.94);backdrop-filter:blur(14px);border-bottom:1px solid #EAE7E1}
+.hdr .in{height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;flex-direction:column;gap:1px}
+.logo .nm{font-size:26px;font-weight:600;letter-spacing:-0.02em}
+.logo .nm b{color:#C4571C;font-weight:600}
+.logo .tg{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8A8478}
+.hdr .right{display:flex;align-items:center;gap:12px}
+.langbtn{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.08em;background:none;border:1px solid #DCD8D0;border-radius:999px;padding:7px 15px;cursor:pointer;color:#3D4149}
+.langbtn:hover{border-color:#16181F;color:#16181F}
+.backlink{font-size:14.5px;color:#3D4149}
+.backlink:hover{color:#C4571C}
+.hero{background:#0D1117;color:#fff}
+.hero .in{padding-top:64px;padding-bottom:56px}
+.kicker{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#F0A868;margin:0 0 20px}
+.hero h1{font-size:42px;font-weight:300;line-height:1.14;letter-spacing:-0.025em;margin:0 0 16px;max-width:28ch;text-wrap:pretty}
+.hero .sub{font-size:18px;font-weight:300;color:rgba(255,255,255,0.75);margin:0;max-width:62ch;line-height:1.6}
+.btn{display:inline-block;font-size:16.5px;font-weight:600;background:#C4571C;color:#fff !important;padding:15px 32px;border-radius:999px}
+.btn:hover{background:#A03F12}
+.btn2{display:inline-block;font-size:16px;font-weight:400;color:#fff !important;border:1px solid rgba(255,255,255,0.34);padding:14px 28px;border-radius:999px;margin-inline-start:10px}
+.btn2:hover{border-color:#fff}
+.cta{background:#0D1117;color:#fff}
+.cta .in{padding-top:64px;padding-bottom:64px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:22px}
+.cta h2{font-size:30px;font-weight:300;letter-spacing:-0.02em;margin:0;max-width:30ch;text-wrap:pretty}
+.foot{background:#0D1117;color:rgba(255,255,255,0.46);border-top:1px solid rgba(255,255,255,0.12)}
+.foot .in{padding-top:22px;padding-bottom:22px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13.5px;font-weight:300}
+.foot a{color:rgba(255,255,255,0.6)}
+.foot a:hover{color:#fff}
+.stickycta{display:none;position:fixed;left:14px;right:14px;bottom:14px;z-index:70;background:#C4571C;color:#fff !important;text-align:center;font-size:16px;font-weight:600;padding:14px 18px;border-radius:999px;box-shadow:0 10px 28px rgba(13,17,23,0.28)}
+
+.art{padding:64px 0 20px}
+.art h2{font-size:30px;font-weight:300;line-height:1.18;letter-spacing:-0.02em;margin:52px 0 18px;text-wrap:pretty}
+.art h2:first-child{margin-top:0}
+.art p{font-size:16.5px;font-weight:300;line-height:1.72;color:#3D4149;margin:0 0 16px;max-width:76ch}
+.art ul{margin:0 0 18px;padding-inline-start:22px;max-width:76ch}
+.art li{font-size:16.5px;font-weight:300;line-height:1.66;color:#3D4149;margin-bottom:9px}
+.art li b,.art p b{font-weight:600;color:#16181F}
+.callout{background:#F7F4EF;border:1px solid #EAE7E1;border-inline-start:3px solid #C4571C;border-radius:12px;padding:20px 24px;margin:26px 0;max-width:76ch}
+.callout p{margin:0;font-size:16px}
+.tbl{width:100%;border-collapse:collapse;margin:24px 0 30px;font-size:15.5px}
+.tbl th{text-align:start;font-weight:600;padding:12px 14px;border-bottom:2px solid #16181F;font-size:14.5px}
+.tbl td{padding:12px 14px;border-bottom:1px solid #E1DCD3;font-weight:300;color:#3D4149;vertical-align:top;line-height:1.55}
+.tbl td:first-child{font-weight:500;color:#16181F}
+.faq{margin:10px 0 30px;max-width:76ch}
+.faq details{border-bottom:1px solid #E1DCD3;padding:4px 0}
+.faq summary{font-size:17px;font-weight:600;padding:14px 0;cursor:pointer;list-style-position:outside}
+.faq details p{padding:0 0 16px}
+.cluster{background:#F7F4EF;border-top:1px solid #EAE7E1;border-bottom:1px solid #EAE7E1;padding:56px 0}
+.cluster h2{font-size:26px;font-weight:300;margin:0 0 26px}
+.cluster .links{display:grid;grid-template-columns:1fr 1fr;gap:14px 40px}
+.cluster a{display:block;padding:14px 0;border-bottom:1px solid #E1DCD3;font-size:16px;font-weight:500}
+.cluster a:hover{color:#C4571C}
+.src{font-size:13.5px;color:#8A8478;margin-top:30px;max-width:76ch}
+.src a{color:#8A8478;text-decoration:underline}
+@media(max-width:760px){.art h2{font-size:24px}.cluster .links{grid-template-columns:1fr}.tbl{font-size:14px}.tbl th,.tbl td{padding:9px 8px}}
+
+@media(max-width:760px){.hero h1{font-size:30px}}
+@media(max-width:600px){
+  .wrap{padding-left:20px;padding-right:20px}
+  .logo .nm{font-size:22px}
+  .logo .tg{display:none}
+  .backlink{font-size:13px}
+  .hero .in{padding-top:38px;padding-bottom:34px}
+  .hero h1{font-size:25px;line-height:1.2}
+  .art{padding:40px 0 10px}
+  .stickycta.on{display:block}
+}
+</style>
+</head>
+<body>
+<header class="hdr"><div class="wrap in">
+  <a class="logo" href="index.html"><span class="nm">risk-place<b>.org</b></span><span class="tg" data-ui="tagline">Business Continuity &amp; Resilience · GCC</span></a>
+  <div class="right"><a class="backlink" href="business-continuity-uae.html" data-ui="back">← Home</a><button class="langbtn" id="langbtn" onclick="toggleLang()">AR</button></div>
+</div></header>
+
+<section class="hero"><div class="wrap in">
+  <p class="kicker" data-ui="kicker">Guide · Method · BIA</p>
+  <h1 data-ui="h1">Business impact analysis: the money-first method</h1>
+  <p class="sub" data-ui="sub">The BIA is where continuity stops being opinions and becomes numbers: which activities matter most, what a lost day costs, how fast you must recover. Done right, it takes weeks — and pays for every decision that follows.</p>
+</div></section>
+
+<article class="art"><div class="wrap" id="art">
+<h2>What a BIA answers</h2>
+<p>A business impact analysis answers four questions with numbers: <b>Which activities are critical</b> — whose interruption hurts revenue, obligations or safety first? <b>How does the damage grow over time</b> — what does hour four cost versus day three? <b>How fast must each activity recover</b> (RTO) and <b>how much data can you afford to lose</b> (RPO)? And <b>what do those activities depend on</b> — systems, people, suppliers, facilities?</p>
+<p>Everything downstream — plans, alternate sites, technology spend, insurance limits — is priced by these answers. Which is why a BIA built on adjectives («critical», «high impact») instead of dirhams and hours quietly poisons the whole system.</p>
+<h2>The method, step by step</h2>
+<ul><li><b>1 · List activities, not departments.</b> «Issue invoices», «ship orders», «answer regulator» — units of work the business would miss, not boxes on the org chart.</li><li><b>2 · Interview the owners.</b> One hour per activity owner beats any questionnaire. Ask what stops, who notices, and when it becomes irreversible.</li><li><b>3 · Draw the impact curve.</b> For each activity: financial and non-financial impact at 4 hours, 24 hours, 3 days, a week. The curve, not a single number, sets the recovery objective.</li><li><b>4 · Set RTO and RPO from the curve.</b> The RTO sits just before the curve steepens. An RTO chosen by comfort («by end of day sounds right») is a guess wearing a suit.</li><li><b>5 · Map dependencies.</b> Systems, key people, suppliers, facilities per activity — then mark every single point of failure.</li><li><b>6 · Reconcile with the CFO.</b> The cost-of-downtime figures must survive finance review. When the CFO signs the numbers, the BIA becomes an instrument of power.</li></ul>
+<div class="callout"><p>Deliverable test: one table — activity, cost of a lost day, RTO, RPO, top dependencies, single points of failure. If it fits on two pages and the CFO signed it, you have a BIA. If it is forty pages of prose, you have a report.</p></div>
+<h2>The mistakes that sink BIAs</h2>
+<ul><li><b>Questionnaires instead of interviews.</b> Self-assessed importance inflates everything to «critical» and the BIA loses its ranking power.</li><li><b>Averaging the damage.</b> Downtime cost is a curve. Averaging it hides the cliff — the point where clients leave and penalties trigger.</li><li><b>Forgetting non-financial impact.</b> Regulatory breach, safety, reputation: sometimes the activity with modest revenue carries the licence.</li><li><b>One-and-done.</b> The Rulebook and NCEMA 7000 both expect the BIA refreshed as the business changes. A 2023 BIA describes a company that no longer exists.</li><li><b>Skipping suppliers.</b> If one provider can stop a critical activity, their failure is your scenario — model it.</li></ul>
+<h2>Frequently asked questions</h2>
+<div class="faq"><details><summary>How long does a BIA take?</summary><p>For a mid-size organisation: 2-4 weeks including interviews, curves and CFO reconciliation. Longer usually means scope creep; shorter usually means questionnaires.</p></details><details><summary>How is cost of downtime calculated?</summary><p>Per activity: lost revenue and margin, contractual penalties, recovery overtime and expediting, regulatory exposure, and customer attrition risk — over the impact curve, from your own finance data. Precision matters less than honesty; ±20% is fine, adjectives are not.</p></details><details><summary>Who should own the BIA?</summary><p>The continuity or risk function runs it; activity owners supply the facts; finance validates the money; leadership signs. A BIA owned by IT alone becomes a systems inventory.</p></details><details><summary>BIA or risk assessment first?</summary><p>In practice, together: the BIA tells you what matters and how fast it must return; the risk assessment tells you what can take it down. NCEMA 7000 and ISO 22301 expect both.</p></details></div>
+</div></article>
+
+<section class="cluster"><div class="wrap">
+  <h2 data-ui="clusterTitle">More from the continuity hub</h2>
+  <div class="links" id="cluster"><a href="business-continuity-uae.html">Business continuity in the UAE: the complete guide</a><a href="iso-22301-implementation-uae.html">Implementing ISO 22301 in the UAE</a><a href="rto-rpo-explained.html">RTO and RPO explained in plain language</a><a href="bcp-template-structure.html">What a real business continuity plan contains</a><a href="tabletop-exercise-guide.html">How to run a tabletop exercise that finds real gaps</a><a href="ncema-7000.html">NCEMA 7000: the UAE national BCM standard</a><a href="cbuae-operational-resilience.html">CBUAE operational resilience: the complete guide</a></div>
+</div></section>
+
+<section class="cta"><div class="wrap in">
+  <h2 data-ui="ctaTitle">Want your cost of downtime calculated from your own data?</h2>
+  <div><a class="btn" href="gap-assessment.html" data-ui="cta">Request a gap assessment</a><a class="btn2" href="quiz.html" data-ui="cta2">Take the free readiness check</a></div>
+</div></section>
+
+<footer class="foot"><div class="wrap in">
+  <span data-ui="copy">© 2026 risk-place.org · Business Continuity &amp; Resilience</span>
+  <a href="privacy.html" data-ui="privacy">Privacy policy</a>
+</div></footer>
+
+<a class="stickycta" id="stickycta" href="gap-assessment.html" data-ui="sticky">NCEMA-ready gap assessment</a>
+
+<script>
+var C={"en": {"tagline": "Business Continuity &amp; Resilience · GCC", "back": "← NCEMA 7000 hub", "copy": "© 2026 risk-place.org · Business Continuity &amp; Resilience", "privacy": "Privacy policy", "sticky": "NCEMA-ready gap assessment", "cta": "Request a gap assessment", "cta2": "Take the free readiness check", "kicker": "Guide · Method · BIA", "h1": "Business impact analysis: the money-first method", "sub": "The BIA is where continuity stops being opinions and becomes numbers: which activities matter most, what a lost day costs, how fast you must recover. Done right, it takes weeks — and pays for every decision that follows.", "clusterTitle": "More from the continuity hub", "ctaTitle": "Want your cost of downtime calculated from your own data?", "sections": [["h2", "What a BIA answers"], ["p", "A business impact analysis answers four questions with numbers: <b>Which activities are critical</b> — whose interruption hurts revenue, obligations or safety first? <b>How does the damage grow over time</b> — what does hour four cost versus day three? <b>How fast must each activity recover</b> (RTO) and <b>how much data can you afford to lose</b> (RPO)? And <b>what do those activities depend on</b> — systems, people, suppliers, facilities?"], ["p", "Everything downstream — plans, alternate sites, technology spend, insurance limits — is priced by these answers. Which is why a BIA built on adjectives («critical», «high impact») instead of dirhams and hours quietly poisons the whole system."], ["h2", "The method, step by step"], ["ul", ["<b>1 · List activities, not departments.</b> «Issue invoices», «ship orders», «answer regulator» — units of work the business would miss, not boxes on the org chart.", "<b>2 · Interview the owners.</b> One hour per activity owner beats any questionnaire. Ask what stops, who notices, and when it becomes irreversible.", "<b>3 · Draw the impact curve.</b> For each activity: financial and non-financial impact at 4 hours, 24 hours, 3 days, a week. The curve, not a single number, sets the recovery objective.", "<b>4 · Set RTO and RPO from the curve.</b> The RTO sits just before the curve steepens. An RTO chosen by comfort («by end of day sounds right») is a guess wearing a suit.", "<b>5 · Map dependencies.</b> Systems, key people, suppliers, facilities per activity — then mark every single point of failure.", "<b>6 · Reconcile with the CFO.</b> The cost-of-downtime figures must survive finance review. When the CFO signs the numbers, the BIA becomes an instrument of power."]], ["callout", "Deliverable test: one table — activity, cost of a lost day, RTO, RPO, top dependencies, single points of failure. If it fits on two pages and the CFO signed it, you have a BIA. If it is forty pages of prose, you have a report."], ["h2", "The mistakes that sink BIAs"], ["ul", ["<b>Questionnaires instead of interviews.</b> Self-assessed importance inflates everything to «critical» and the BIA loses its ranking power.", "<b>Averaging the damage.</b> Downtime cost is a curve. Averaging it hides the cliff — the point where clients leave and penalties trigger.", "<b>Forgetting non-financial impact.</b> Regulatory breach, safety, reputation: sometimes the activity with modest revenue carries the licence.", "<b>One-and-done.</b> The Rulebook and NCEMA 7000 both expect the BIA refreshed as the business changes. A 2023 BIA describes a company that no longer exists.", "<b>Skipping suppliers.</b> If one provider can stop a critical activity, their failure is your scenario — model it."]], ["h2", "Frequently asked questions"], ["faq", [["How long does a BIA take?", "For a mid-size organisation: 2-4 weeks including interviews, curves and CFO reconciliation. Longer usually means scope creep; shorter usually means questionnaires."], ["How is cost of downtime calculated?", "Per activity: lost revenue and margin, contractual penalties, recovery overtime and expediting, regulatory exposure, and customer attrition risk — over the impact curve, from your own finance data. Precision matters less than honesty; ±20% is fine, adjectives are not."], ["Who should own the BIA?", "The continuity or risk function runs it; activity owners supply the facts; finance validates the money; leadership signs. A BIA owned by IT alone becomes a systems inventory."], ["BIA or risk assessment first?", "In practice, together: the BIA tells you what matters and how fast it must return; the risk assessment tells you what can take it down. NCEMA 7000 and ISO 22301 expect both."]]]], "cluster": [["business-continuity-uae.html", "Business continuity in the UAE: the complete guide"], ["iso-22301-implementation-uae.html", "Implementing ISO 22301 in the UAE"], ["rto-rpo-explained.html", "RTO and RPO explained in plain language"], ["bcp-template-structure.html", "What a real business continuity plan contains"], ["tabletop-exercise-guide.html", "How to run a tabletop exercise that finds real gaps"], ["ncema-7000.html", "NCEMA 7000: the UAE national BCM standard"], ["cbuae-operational-resilience.html", "CBUAE operational resilience: the complete guide"]]}, "ar": {"tagline": "استمرارية الأعمال والمرونة · دول الخليج", "back": "→ دليل NCEMA 7000", "copy": "© ٢٠٢٦ risk-place.org · استمرارية الأعمال والمرونة", "privacy": "سياسة الخصوصية", "sticky": "تقييم فجوات الجاهزية لـ NCEMA", "cta": "اطلبوا تقييم الفجوات", "cta2": "جرّبوا فحص الجاهزية المجاني", "kicker": "دليل · منهجية · تحليل الأثر", "h1": "تحليل أثر الأعمال: منهجية تبدأ بالمال", "sub": "تحليل الأثر هو حيث تتوقف الاستمرارية عن كونها آراء وتصبح أرقاماً: أي الأنشطة أهم، وكم يكلف اليوم الضائع، وبأي سرعة يجب التعافي. حين يُنجز صحيحاً يستغرق أسابيع — ويسدد ثمن كل قرار يليه.", "clusterTitle": "المزيد من مركز الاستمرارية", "ctaTitle": "تريدون حساب تكلفة توقفكم من بياناتكم أنتم؟", "sections": [["h2", "عن ماذا يجيب تحليل الأثر"], ["p", "يجيب تحليل أثر الأعمال عن أربعة أسئلة بأرقام: <b>أي الأنشطة حيوية</b> — أيها يضرب توقفه الإيراد والالتزامات والسلامة أولاً؟ <b>كيف ينمو الضرر عبر الزمن</b> — كم تكلف الساعة الرابعة مقابل اليوم الثالث؟ <b>بأي سرعة يجب أن يتعافى كل نشاط</b> (RTO) و<b>كم من البيانات تحتملون خسارته</b> (RPO)؟ و<b>على ماذا تعتمد تلك الأنشطة</b> — أنظمة وأشخاص وموردون ومنشآت؟"], ["p", "كل ما بعده — الخطط والمواقع البديلة وإنفاق التقنية وحدود التأمين — يُسعّر بهذه الإجابات. ولهذا فإن تحليل أثر مبنياً على صفات («حيوي»، «أثر مرتفع») بدل الدراهم والساعات يسمم النظام كله بصمت."], ["h2", "المنهجية خطوة بخطوة"], ["ul", ["<b>1 · اسردوا الأنشطة لا الإدارات.</b> «إصدار الفواتير»، «شحن الطلبات»، «الرد على المنظم» — وحدات عمل سيفتقدها العمل، لا مربعات في الهيكل التنظيمي.", "<b>2 · قابلوا أصحاب الأنشطة.</b> ساعة مع صاحب كل نشاط تتفوق على أي استبيان. اسألوا ما الذي يتوقف ومن يلاحظ ومتى يصبح غير قابل للعكس.", "<b>3 · ارسموا منحنى الأثر.</b> لكل نشاط: الأثر المالي وغير المالي عند 4 ساعات و24 ساعة و3 أيام وأسبوع. المنحنى، لا رقم واحد، هو ما يحدد هدف التعافي.", "<b>4 · حددوا RTO وRPO من المنحنى.</b> يقع RTO قبيل انحدار المنحنى. أما RTO المختار بالارتياح («قبل نهاية اليوم يبدو مناسباً») فتخمين ببذلة رسمية.", "<b>5 · ارسموا الاعتماديات.</b> الأنظمة والأشخاص المفتاحيون والموردون والمنشآت لكل نشاط — ثم علّموا كل نقطة فشل منفردة.", "<b>6 · وفّقوا مع المدير المالي.</b> أرقام تكلفة التوقف يجب أن تصمد أمام مراجعة المالية. حين يوقع المدير المالي الأرقام يصبح تحليل الأثر أداة قوة."]], ["callout", "اختبار الناتج: جدول واحد — النشاط وتكلفة اليوم الضائع وRTO وRPO وأهم الاعتماديات ونقاط الفشل المنفردة. إن اتسع في صفحتين ووقعه المدير المالي فلديكم تحليل أثر. وإن كان أربعين صفحة نثراً فلديكم تقرير."], ["h2", "الأخطاء التي تُغرق تحليل الأثر"], ["ul", ["<b>استبيانات بدل مقابلات.</b> الأهمية المقيّمة ذاتياً تضخم كل شيء إلى «حيوي» ويفقد التحليل قدرته على الترتيب.", "<b>تسوية الضرر بمتوسط.</b> تكلفة التوقف منحنى. المتوسط يخفي الهاوية — النقطة التي يرحل عندها العملاء وتنطلق الغرامات.", "<b>نسيان الأثر غير المالي.</b> مخالفة تنظيمية وسلامة وسمعة: أحياناً النشاط ذو الإيراد المتواضع يحمل الرخصة.", "<b>مرة واحدة وانتهى.</b> كتاب القواعد وNCEMA 7000 كلاهما يتوقعان تحديث التحليل مع تغير الأعمال. تحليل من 2023 يصف شركة لم تعد موجودة.", "<b>تخطي الموردين.</b> إذا استطاع مزود واحد إيقاف نشاط حيوي فتعطله سيناريوهكم — فلتنمذجوه."]], ["h2", "أسئلة شائعة"], ["faq", [["كم يستغرق تحليل الأثر؟", "لمؤسسة متوسطة: 2-4 أسابيع شاملة المقابلات والمنحنيات والتوفيق مع المالية. الأطول يعني عادة تضخم نطاق؛ والأقصر يعني عادة استبيانات."], ["كيف تُحسب تكلفة التوقف؟", "لكل نشاط: الإيراد والهامش المفقودان، والغرامات التعاقدية، والعمل الإضافي والاستعجال، والتعرض التنظيمي، ومخاطر فقدان العملاء — على منحنى الأثر ومن بيانات ماليتكم. الدقة أقل أهمية من الصدق؛ ±20% مقبول، أما الصفات فلا."], ["من يجب أن يملك تحليل الأثر؟", "وظيفة الاستمرارية أو المخاطر تديره؛ وأصحاب الأنشطة يقدمون الحقائق؛ والمالية تتحقق من المال؛ والقيادة توقع. التحليل الذي تملكه التقنية وحدها يصبح جرد أنظمة."], ["تحليل الأثر أولاً أم تقييم المخاطر؟", "عملياً معاً: التحليل يخبركم ما المهم وبأي سرعة يجب أن يعود؛ والتقييم يخبركم ما الذي قد يسقطه. NCEMA 7000 وISO 22301 يتوقعان الاثنين."]]]], "cluster": [["business-continuity-uae.html", "استمرارية الأعمال في الإمارات: الدليل الكامل"], ["iso-22301-implementation-uae.html", "تطبيق ISO 22301 في الإمارات"], ["rto-rpo-explained.html", "شرح RTO وRPO بلغة واضحة"], ["bcp-template-structure.html", "ماذا تحتوي خطة استمرارية أعمال حقيقية"], ["tabletop-exercise-guide.html", "كيف تديرون تمريناً نظرياً يجد فجوات حقيقية"], ["ncema-7000.html", "NCEMA 7000: المعيار الوطني الإماراتي"], ["cbuae-operational-resilience.html", "المرونة التشغيلية للمصرف المركزي: الدليل الكامل"]]}};
+var lang="en";
+function renderSections(secs){
+  var out=[];
+  secs.forEach(function(s){
+    if(s[0]==="h2")out.push("<h2>"+s[1]+"</h2>");
+    else if(s[0]==="p")out.push("<p>"+s[1]+"</p>");
+    else if(s[0]==="ul")out.push("<ul>"+s[1].map(function(x){return "<li>"+x+"</li>";}).join("")+"</ul>");
+    else if(s[0]==="callout")out.push('<div class="callout"><p>'+s[1]+"</p></div>");
+    else if(s[0]==="table"){
+      out.push('<table class="tbl"><thead><tr>'+s[1].map(function(c){return "<th>"+c+"</th>";}).join("")+"</tr></thead><tbody>"+
+        s[2].map(function(r){return "<tr>"+r.map(function(c){return "<td>"+c+"</td>";}).join("")+"</tr>";}).join("")+"</tbody></table>");
+    } else if(s[0]==="faq"){
+      out.push('<div class="faq">'+s[1].map(function(x){return "<details><summary>"+x[0]+"</summary><p>"+x[1]+"</p></details>";}).join("")+"</div>");
+    }
+  });
+  return out.join("\n");
+}
+function setLang(l){
+  lang=l;document.documentElement.lang=l;document.documentElement.dir=(l==="ar")?"rtl":"ltr";
+  var d=C[l];
+  document.querySelectorAll("[data-ui]").forEach(function(el){var k=el.getAttribute("data-ui");if(typeof d[k]==="string")el.innerHTML=d[k];});
+  document.getElementById("art").innerHTML=renderSections(d.sections);
+  document.getElementById("cluster").innerHTML=d.cluster.map(function(x){return '<a href="'+x[0]+'">'+x[1]+"</a>";}).join("");
+  document.getElementById("langbtn").textContent=(l==="ar")?"EN":"AR";
+  try{localStorage.setItem("rp_org_lang",l);}catch(e){}
+}
+function toggleLang(){setLang(lang==="ar"?"en":"ar");}
+(function(){var s=null;try{s=localStorage.getItem("rp_org_lang");}catch(e){}if(s==="ar")setLang("ar");})();
+window.addEventListener('scroll',function(){
+  var el=document.getElementById('stickycta');if(!el)return;
+  var cta=document.querySelector('section.cta');
+  var show=window.scrollY>600&&(!cta||cta.getBoundingClientRect().top>window.innerHeight);
+  el.classList.toggle('on',show);
+},{passive:true});
+</script>
+</body>
+</html>

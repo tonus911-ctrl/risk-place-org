@@ -107,7 +107,7 @@ html[dir="rtl"] .hero .shade{background:linear-gradient(264deg,rgba(9,12,18,0.93
 .regs .rt{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:0.13em;text-transform:uppercase;color:#8A8478}
 .regs h3{font-size:24px;font-weight:500;line-height:1.24;letter-spacing:-0.015em;margin:0}
 .regs p{font-size:16.5px;font-weight:300;line-height:1.62;color:#5E636D;margin:0}
-.regs button{align-self:flex-start;margin-top:6px;background:none;border:0;padding:0;font-size:16px;font-weight:500;color:#C4571C;cursor:pointer}
+.regs button,.regs a.rlink{align-self:flex-start;margin-top:6px;background:none;border:0;padding:0;font-size:16px;font-weight:500;color:#C4571C;cursor:pointer}
 .regs button:hover{color:#16181F}
 /* results */
 .res{display:grid;grid-template-columns:repeat(4,1fr);gap:36px}
@@ -360,13 +360,13 @@ body.menu-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45de
         <span class="rt" data-k="regs.0.rt">UAE · Government &amp; CNI</span>
         <h3 data-k="regs.0.title">NCEMA 7000</h3>
         <p data-k="regs.0.body">The national BCM standard — mandatory for government entities and critical infrastructure. What it requires and how to comply without bureaucracy.</p>
-        <button onclick="stub()" data-k="regs.0.link">Read the briefing →</button>
+        <a class="rlink" href="ncema-7000.html" data-k="regs.0.link">Read the briefing →</a>
       </div>
       <div class="r" onclick="this.classList.toggle('open')">
         <span class="rt" data-k="regs.1.rt">UAE · Banking deadline</span>
         <h3 data-k="regs.1.title">CBUAE · Decree-Law 6/2025</h3>
         <p data-k="regs.1.body">Operational resilience requirements for banks and financial institutions — with a compliance deadline around September 2026. The clock is running.</p>
-        <button onclick="stub()" data-k="regs.1.link">Check your gap →</button>
+        <a class="rlink" href="cbuae-operational-resilience.html" data-k="regs.1.link">Check your gap →</a>
       </div>
       <div class="r" onclick="this.classList.toggle('open')">
         <span class="rt" data-k="regs.2.rt">DIFC / ADGM · Listed companies</span>

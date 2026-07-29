@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HNF79F1SSN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HNF79F1SSN');</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NCEMA 7000 vs ISO 22301: what is the difference and which to implement first — risk-place.org</title>
+<meta name="description" content="A practical comparison of the UAE NCEMA 7000 standard and ISO 22301: structure, terminology, recovery approach, audits — and how to cover both with one project.">
+<link rel="canonical" href="https://risk-place.org/ncema-7000-vs-iso-22301.html">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:title" content="NCEMA 7000 vs ISO 22301: what is the difference and which to implement first — risk-place.org">
+<meta property="og:description" content="A practical comparison of the UAE NCEMA 7000 standard and ISO 22301: structure, terminology, recovery approach, audits — and how to cover both with one project.">
+<meta property="og:image" content="https://risk-place.org/hero-dubai.jpg">
+<meta property="og:url" content="https://risk-place.org/ncema-7000-vs-iso-22301.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does ISO 22301 certification count as NCEMA 7000 compliance?", "acceptedAnswer": {"@type": "Answer", "text": "No — it helps substantially, because the structures are aligned, but NCEMA 7000 has its own terms, its own emphasis on supplier evaluation and recovery during response, and its own audit practice. Expect to close specific gaps."}}, {"@type": "Question", "name": "Which standard should a UAE private company implement first?", "acceptedAnswer": {"@type": "Answer", "text": "Practically: build one BCM system aligned to NCEMA 7000 and keep it ISO-mappable. Local clients and regulators reference NCEMA; international partners recognise ISO. One system serves both."}}, {"@type": "Question", "name": "Is NCEMA 7000 harder than ISO 22301?", "acceptedAnswer": {"@type": "Answer", "text": "Not harder — more explicit. Because guidance and requirements sit together, auditors can see quickly whether your system is real. Formal, paper-only implementations struggle more under NCEMA 7000."}}]}</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#fff;-webkit-font-smoothing:antialiased;font-family:'Figtree','IBM Plex Sans Arabic',system-ui,sans-serif;color:#16181F;line-height:1.55}
+html[dir="rtl"] body{font-family:'IBM Plex Sans Arabic','Figtree',system-ui,sans-serif}
+a{color:#16181F;text-decoration:none}
+::selection{background:#FBE0CB}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+.hdr{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.94);backdrop-filter:blur(14px);border-bottom:1px solid #EAE7E1}
+.hdr .in{height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;flex-direction:column;gap:1px}
+.logo .nm{font-size:26px;font-weight:600;letter-spacing:-0.02em}
+.logo .nm b{color:#C4571C;font-weight:600}
+.logo .tg{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8A8478}
+.hdr .right{display:flex;align-items:center;gap:12px}
+.langbtn{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.08em;background:none;border:1px solid #DCD8D0;border-radius:999px;padding:7px 15px;cursor:pointer;color:#3D4149}
+.langbtn:hover{border-color:#16181F;color:#16181F}
+.backlink{font-size:14.5px;color:#3D4149}
+.backlink:hover{color:#C4571C}
+.hero{background:#0D1117;color:#fff}
+.hero .in{padding-top:64px;padding-bottom:56px}
+.kicker{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#F0A868;margin:0 0 20px}
+.hero h1{font-size:42px;font-weight:300;line-height:1.14;letter-spacing:-0.025em;margin:0 0 16px;max-width:28ch;text-wrap:pretty}
+.hero .sub{font-size:18px;font-weight:300;color:rgba(255,255,255,0.75);margin:0;max-width:62ch;line-height:1.6}
+.btn{display:inline-block;font-size:16.5px;font-weight:600;background:#C4571C;color:#fff !important;padding:15px 32px;border-radius:999px}
+.btn:hover{background:#A03F12}
+.btn2{display:inline-block;font-size:16px;font-weight:400;color:#fff !important;border:1px solid rgba(255,255,255,0.34);padding:14px 28px;border-radius:999px;margin-inline-start:10px}
+.btn2:hover{border-color:#fff}
+.cta{background:#0D1117;color:#fff}
+.cta .in{padding-top:64px;padding-bottom:64px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:22px}
+.cta h2{font-size:30px;font-weight:300;letter-spacing:-0.02em;margin:0;max-width:30ch;text-wrap:pretty}
+.foot{background:#0D1117;color:rgba(255,255,255,0.46);border-top:1px solid rgba(255,255,255,0.12)}
+.foot .in{padding-top:22px;padding-bottom:22px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13.5px;font-weight:300}
+.foot a{color:rgba(255,255,255,0.6)}
+.foot a:hover{color:#fff}
+.stickycta{display:none;position:fixed;left:14px;right:14px;bottom:14px;z-index:70;background:#C4571C;color:#fff !important;text-align:center;font-size:16px;font-weight:600;padding:14px 18px;border-radius:999px;box-shadow:0 10px 28px rgba(13,17,23,0.28)}
+
+.art{padding:64px 0 20px}
+.art h2{font-size:30px;font-weight:300;line-height:1.18;letter-spacing:-0.02em;margin:52px 0 18px;text-wrap:pretty}
+.art h2:first-child{margin-top:0}
+.art p{font-size:16.5px;font-weight:300;line-height:1.72;color:#3D4149;margin:0 0 16px;max-width:76ch}
+.art ul{margin:0 0 18px;padding-inline-start:22px;max-width:76ch}
+.art li{font-size:16.5px;font-weight:300;line-height:1.66;color:#3D4149;margin-bottom:9px}
+.art li b,.art p b{font-weight:600;color:#16181F}
+.callout{background:#F7F4EF;border:1px solid #EAE7E1;border-inline-start:3px solid #C4571C;border-radius:12px;padding:20px 24px;margin:26px 0;max-width:76ch}
+.callout p{margin:0;font-size:16px}
+.tbl{width:100%;border-collapse:collapse;margin:24px 0 30px;font-size:15.5px}
+.tbl th{text-align:start;font-weight:600;padding:12px 14px;border-bottom:2px solid #16181F;font-size:14.5px}
+.tbl td{padding:12px 14px;border-bottom:1px solid #E1DCD3;font-weight:300;color:#3D4149;vertical-align:top;line-height:1.55}
+.tbl td:first-child{font-weight:500;color:#16181F}
+.faq{margin:10px 0 30px;max-width:76ch}
+.faq details{border-bottom:1px solid #E1DCD3;padding:4px 0}
+.faq summary{font-size:17px;font-weight:600;padding:14px 0;cursor:pointer;list-style-position:outside}
+.faq details p{padding:0 0 16px}
+.cluster{background:#F7F4EF;border-top:1px solid #EAE7E1;border-bottom:1px solid #EAE7E1;padding:56px 0}
+.cluster h2{font-size:26px;font-weight:300;margin:0 0 26px}
+.cluster .links{display:grid;grid-template-columns:1fr 1fr;gap:14px 40px}
+.cluster a{display:block;padding:14px 0;border-bottom:1px solid #E1DCD3;font-size:16px;font-weight:500}
+.cluster a:hover{color:#C4571C}
+.src{font-size:13.5px;color:#8A8478;margin-top:30px;max-width:76ch}
+.src a{color:#8A8478;text-decoration:underline}
+@media(max-width:760px){.art h2{font-size:24px}.cluster .links{grid-template-columns:1fr}.tbl{font-size:14px}.tbl th,.tbl td{padding:9px 8px}}
+
+@media(max-width:760px){.hero h1{font-size:30px}}
+@media(max-width:600px){
+  .wrap{padding-left:20px;padding-right:20px}
+  .logo .nm{font-size:22px}
+  .logo .tg{display:none}
+  .backlink{font-size:13px}
+  .hero .in{padding-top:38px;padding-bottom:34px}
+  .hero h1{font-size:25px;line-height:1.2}
+  .art{padding:40px 0 10px}
+  .stickycta.on{display:block}
+}
+</style>
+</head>
+<body>
+<header class="hdr"><div class="wrap in">
+  <a class="logo" href="index.html"><span class="nm">risk-place<b>.org</b></span><span class="tg" data-ui="tagline">Business Continuity &amp; Resilience · GCC</span></a>
+  <div class="right"><a class="backlink" href="ncema-7000.html" data-ui="back">← Home</a><button class="langbtn" id="langbtn" onclick="toggleLang()">AR</button></div>
+</div></header>
+
+<section class="hero"><div class="wrap in">
+  <p class="kicker" data-ui="kicker">Regulatory watch · UAE · Standards</p>
+  <h1 data-ui="h1">NCEMA 7000 vs ISO 22301: what is actually different?</h1>
+  <p class="sub" data-ui="sub">Both are business continuity management standards. One is international, one is the law of the land in the UAE. Here is what differs in practice — and how to cover both with a single project.</p>
+</div></section>
+
+<article class="art"><div class="wrap" id="art">
+<h2>The short answer</h2>
+<p>If you operate in the UAE, <b>NCEMA 7000 is the standard your auditors and government clients will reference</b>; ISO 22301 is the standard your international partners and certification bodies recognise. The two are deliberately aligned — NCEMA 7000:2021 follows ISO 22301 clauses 3-10 in structure — so a well-built system covers most of both. The differences sit in emphasis, terminology and audit practice.</p>
+<h2>Side-by-side comparison</h2>
+<table class="tbl"><thead><tr><th></th><th>NCEMA 7000:2021</th><th>ISO 22301:2019</th></tr></thead><tbody><tr><td>Issued by</td><td>NCEMA — UAE national authority</td><td>ISO — international</td></tr><tr><td>Legal status in the UAE</td><td>Mandatory for government and critical infrastructure; the local benchmark</td><td>Voluntary; recognised for certification worldwide</td></tr><tr><td>Structure</td><td>Clauses 3-10; 3-7, 9, 10 = management system, 8 = operations</td><td>Clauses 4-10 in ISO harmonised structure</td></tr><tr><td>Format</td><td>Guidance and requirements combined — each clause explains, then requires</td><td>Requirements only; guidance lives in ISO 22313</td></tr><tr><td>Terms and definitions</td><td>Own set, not fully mirroring ISO 22300</td><td>ISO 22300 vocabulary</td></tr><tr><td>Technology recovery</td><td>Part of the response, during the disruption</td><td>Recovery typically framed after the incident</td></tr><tr><td>External providers</td><td>Explicit duty to evaluate critical suppliers' BCM against your dependency</td><td>Addressed, less prescriptive</td></tr><tr><td>Compliance check</td><td>Government audit programmes (e.g. ADCMC in Abu Dhabi)</td><td>Certification audit by accredited bodies</td></tr><tr><td>Document cost</td><td>Free from ncema.gov.ae</td><td>Purchased from ISO / national bodies</td></tr></tbody></table>
+<h2>What this means in practice</h2>
+<ul><li><b>Already ISO 22301 certified?</b> You are most of the way to NCEMA 7000. Close the gaps: NCEMA terminology in your documents, supplier BCM evaluation tied to dependencies, recovery-during-response, and the clause 9 compliance indicators.</li><li><b>Starting from zero in the UAE?</b> Build to NCEMA 7000 first — it is what local audits and clients ask for — and keep the documentation ISO-mappable. Certification against ISO 22301 then becomes an increment, not a second project.</li><li><b>Supplying government clients?</b> They will ask about NCEMA 7000 specifically. An ISO certificate helps but does not answer the question.</li></ul>
+<div class="callout"><p>Our gap assessment maps your organisation against both standards in one pass — one report, two compliance pictures, priced in days of downtime, not abstractions.</p></div>
+<h2>Frequently asked questions</h2>
+<div class="faq"><details><summary>Does ISO 22301 certification count as NCEMA 7000 compliance?</summary><p>No — it helps substantially, because the structures are aligned, but NCEMA 7000 has its own terms, its own emphasis on supplier evaluation and recovery during response, and its own audit practice. Expect to close specific gaps.</p></details><details><summary>Which standard should a UAE private company implement first?</summary><p>Practically: build one BCM system aligned to NCEMA 7000 and keep it ISO-mappable. Local clients and regulators reference NCEMA; international partners recognise ISO. One system serves both.</p></details><details><summary>Is NCEMA 7000 harder than ISO 22301?</summary><p>Not harder — more explicit. Because guidance and requirements sit together, auditors can see quickly whether your system is real. Formal, paper-only implementations struggle more under NCEMA 7000.</p></details></div>
+</div></article>
+
+<section class="cluster"><div class="wrap">
+  <h2 data-ui="clusterTitle">More on NCEMA 7000</h2>
+  <div class="links" id="cluster"><a href="ncema-7000.html">NCEMA 7000: the complete guide</a><a href="ncema-7000-checklist.html">NCEMA 7000 compliance checklist</a><a href="ncema-7000-compliance-steps.html">How NCEMA 7000 compliance and audits work</a><a href="ncema-7000-for-suppliers.html">NCEMA 7000 for suppliers and contractors</a><a href="cbuae-operational-resilience.html">CBUAE operational resilience: the complete guide</a><a href="business-continuity-uae.html">Business continuity in the UAE: the complete guide</a></div>
+</div></section>
+
+<section class="cta"><div class="wrap in">
+  <h2 data-ui="ctaTitle">One project can make you ready for both standards.</h2>
+  <div><a class="btn" href="gap-assessment.html" data-ui="cta">Request a gap assessment</a><a class="btn2" href="quiz.html" data-ui="cta2">Take the free readiness check</a></div>
+</div></section>
+
+<footer class="foot"><div class="wrap in">
+  <span data-ui="copy">© 2026 risk-place.org · Business Continuity &amp; Resilience</span>
+  <a href="privacy.html" data-ui="privacy">Privacy policy</a>
+</div></footer>
+
+<a class="stickycta" id="stickycta" href="gap-assessment.html" data-ui="sticky">NCEMA-ready gap assessment</a>
+
+<script>
+var C={"en": {"tagline": "Business Continuity &amp; Resilience · GCC", "back": "← NCEMA 7000 hub", "copy": "© 2026 risk-place.org · Business Continuity &amp; Resilience", "privacy": "Privacy policy", "sticky": "NCEMA-ready gap assessment", "cta": "Request a gap assessment", "cta2": "Take the free readiness check", "kicker": "Regulatory watch · UAE · Standards", "h1": "NCEMA 7000 vs ISO 22301: what is actually different?", "sub": "Both are business continuity management standards. One is international, one is the law of the land in the UAE. Here is what differs in practice — and how to cover both with a single project.", "clusterTitle": "More on NCEMA 7000", "ctaTitle": "One project can make you ready for both standards.", "sections": [["h2", "The short answer"], ["p", "If you operate in the UAE, <b>NCEMA 7000 is the standard your auditors and government clients will reference</b>; ISO 22301 is the standard your international partners and certification bodies recognise. The two are deliberately aligned — NCEMA 7000:2021 follows ISO 22301 clauses 3-10 in structure — so a well-built system covers most of both. The differences sit in emphasis, terminology and audit practice."], ["h2", "Side-by-side comparison"], ["table", ["", "NCEMA 7000:2021", "ISO 22301:2019"], [["Issued by", "NCEMA — UAE national authority", "ISO — international"], ["Legal status in the UAE", "Mandatory for government and critical infrastructure; the local benchmark", "Voluntary; recognised for certification worldwide"], ["Structure", "Clauses 3-10; 3-7, 9, 10 = management system, 8 = operations", "Clauses 4-10 in ISO harmonised structure"], ["Format", "Guidance and requirements combined — each clause explains, then requires", "Requirements only; guidance lives in ISO 22313"], ["Terms and definitions", "Own set, not fully mirroring ISO 22300", "ISO 22300 vocabulary"], ["Technology recovery", "Part of the response, during the disruption", "Recovery typically framed after the incident"], ["External providers", "Explicit duty to evaluate critical suppliers' BCM against your dependency", "Addressed, less prescriptive"], ["Compliance check", "Government audit programmes (e.g. ADCMC in Abu Dhabi)", "Certification audit by accredited bodies"], ["Document cost", "Free from ncema.gov.ae", "Purchased from ISO / national bodies"]]], ["h2", "What this means in practice"], ["ul", ["<b>Already ISO 22301 certified?</b> You are most of the way to NCEMA 7000. Close the gaps: NCEMA terminology in your documents, supplier BCM evaluation tied to dependencies, recovery-during-response, and the clause 9 compliance indicators.", "<b>Starting from zero in the UAE?</b> Build to NCEMA 7000 first — it is what local audits and clients ask for — and keep the documentation ISO-mappable. Certification against ISO 22301 then becomes an increment, not a second project.", "<b>Supplying government clients?</b> They will ask about NCEMA 7000 specifically. An ISO certificate helps but does not answer the question."]], ["callout", "Our gap assessment maps your organisation against both standards in one pass — one report, two compliance pictures, priced in days of downtime, not abstractions."], ["h2", "Frequently asked questions"], ["faq", [["Does ISO 22301 certification count as NCEMA 7000 compliance?", "No — it helps substantially, because the structures are aligned, but NCEMA 7000 has its own terms, its own emphasis on supplier evaluation and recovery during response, and its own audit practice. Expect to close specific gaps."], ["Which standard should a UAE private company implement first?", "Practically: build one BCM system aligned to NCEMA 7000 and keep it ISO-mappable. Local clients and regulators reference NCEMA; international partners recognise ISO. One system serves both."], ["Is NCEMA 7000 harder than ISO 22301?", "Not harder — more explicit. Because guidance and requirements sit together, auditors can see quickly whether your system is real. Formal, paper-only implementations struggle more under NCEMA 7000."]]]], "cluster": [["ncema-7000.html", "NCEMA 7000: the complete guide"], ["ncema-7000-checklist.html", "NCEMA 7000 compliance checklist"], ["ncema-7000-compliance-steps.html", "How NCEMA 7000 compliance and audits work"], ["ncema-7000-for-suppliers.html", "NCEMA 7000 for suppliers and contractors"], ["cbuae-operational-resilience.html", "CBUAE operational resilience: the complete guide"], ["business-continuity-uae.html", "Business continuity in the UAE: the complete guide"]]}, "ar": {"tagline": "استمرارية الأعمال والمرونة · دول الخليج", "back": "→ دليل NCEMA 7000", "copy": "© ٢٠٢٦ risk-place.org · استمرارية الأعمال والمرونة", "privacy": "سياسة الخصوصية", "sticky": "تقييم فجوات الجاهزية لـ NCEMA", "cta": "اطلبوا تقييم الفجوات", "cta2": "جرّبوا فحص الجاهزية المجاني", "kicker": "المراقبة التنظيمية · الإمارات · المعايير", "h1": "NCEMA 7000 مقابل ISO 22301: ما الذي يختلف فعلاً؟", "sub": "كلاهما معيار لإدارة استمرارية الأعمال. أحدهما دولي، والآخر مرجع الدولة في الإمارات. إليكم الفروق العملية — وكيف تغطون الاثنين بمشروع واحد.", "clusterTitle": "المزيد عن NCEMA 7000", "ctaTitle": "مشروع واحد يمكن أن يجعلكم جاهزين للمعيارين معاً.", "sections": [["h2", "الجواب المختصر"], ["p", "إذا كنتم تعملون في الإمارات فـ<b>NCEMA 7000 هو المعيار الذي سيشير إليه المدققون والعملاء الحكوميون</b>؛ وISO 22301 هو المعيار الذي يعترف به شركاؤكم الدوليون وجهات المنح. المعياران متوافقان عمداً — إذ يتبع NCEMA 7000:2021 بنود ISO 22301 من 3 إلى 10 — لذا فالنظام المبني جيداً يغطي معظم الاثنين. الفروق في التركيز والمصطلحات وممارسة التدقيق."], ["h2", "مقارنة جنباً إلى جنب"], ["table", ["", "NCEMA 7000:2021", "ISO 22301:2019"], [["الجهة المصدرة", "الهيئة الوطنية لإدارة الطوارئ والأزمات والكوارث", "المنظمة الدولية للتوحيد القياسي"], ["الوضع القانوني في الإمارات", "إلزامي للحكومة والبنية التحتية الحيوية؛ المرجع المحلي", "اختياري؛ معترف به للشهادات عالمياً"], ["الهيكل", "البنود 3-10؛ حيث 3-7 و9 و10 نظام الإدارة و8 العمليات", "البنود 4-10 وفق الهيكل الموحد"], ["الصيغة", "إرشادات ومتطلبات معاً — كل بند يشرح ثم يُلزم", "متطلبات فقط؛ الإرشادات في ISO 22313"], ["المصطلحات والتعاريف", "مجموعة خاصة لا تطابق ISO 22300 تماماً", "مفردات ISO 22300"], ["استعادة التقنية", "جزء من الاستجابة أثناء الاضطراب", "التعافي عادة بعد الحادث"], ["الموردون الخارجيون", "واجب صريح بتقييم استمرارية الموردين الحيويين حسب الاعتمادية", "معالَج بدرجة أقل إلزاماً"], ["التحقق من الامتثال", "برامج تدقيق حكومية (مثل ADCMC في أبوظبي)", "تدقيق شهادة من جهات معتمدة"], ["تكلفة الوثيقة", "مجانية من ncema.gov.ae", "تُشترى من ISO أو الجهات الوطنية"]]], ["h2", "ماذا يعني هذا عملياً"], ["ul", ["<b>حاصلون على شهادة ISO 22301؟</b> أنتم قريبون جداً من NCEMA 7000. أغلقوا الفجوات: مصطلحات NCEMA في وثائقكم، وتقييم استمرارية الموردين حسب الاعتمادية، والتعافي أثناء الاستجابة، ومؤشرات الامتثال في البند 9.", "<b>تبدأون من الصفر في الإمارات؟</b> ابنوا وفق NCEMA 7000 أولاً — فهو ما يسأل عنه التدقيق والعملاء محلياً — واجعلوا التوثيق قابلاً للمطابقة مع ISO. عندها تصبح شهادة ISO 22301 خطوة إضافية لا مشروعاً ثانياً.", "<b>توردون لعملاء حكوميين؟</b> سيسألون عن NCEMA 7000 تحديداً. شهادة ISO تساعد لكنها لا تجيب عن السؤال."]], ["callout", "تقييم الفجوات لدينا يقارن مؤسستكم بالمعيارين في جولة واحدة — تقرير واحد وصورتا امتثال، مقيّمتان بأيام التوقف لا بالتجريدات."], ["h2", "أسئلة شائعة"], ["faq", [["هل تُحتسب شهادة ISO 22301 امتثالاً لـ NCEMA 7000؟", "لا — لكنها تساعد كثيراً لأن الهيكلين متوافقان. لـ NCEMA 7000 مصطلحاته وتركيزه الخاص على تقييم الموردين والتعافي أثناء الاستجابة وممارسة تدقيقه. توقعوا إغلاق فجوات محددة."], ["أي معيار تطبق الشركة الخاصة الإماراتية أولاً؟", "عملياً: ابنوا نظاماً واحداً متوافقاً مع NCEMA 7000 واجعلوه قابلاً للمطابقة مع ISO. العملاء والمنظمون المحليون يشيرون إلى NCEMA؛ والشركاء الدوليون يعترفون بـ ISO. نظام واحد يخدم الاثنين."], ["هل NCEMA 7000 أصعب من ISO 22301؟", "ليس أصعب — بل أكثر وضوحاً. ولأن الإرشادات والمتطلبات متجاورتان، يرى المدققون بسرعة إن كان نظامكم حقيقياً. التطبيقات الورقية الشكلية تعاني أكثر تحت NCEMA 7000."]]]], "cluster": [["ncema-7000.html", "NCEMA 7000: الدليل الكامل"], ["ncema-7000-checklist.html", "قائمة التحقق من الامتثال لـ NCEMA 7000"], ["ncema-7000-compliance-steps.html", "كيف يتم الامتثال والتدقيق وفق NCEMA 7000"], ["ncema-7000-for-suppliers.html", "NCEMA 7000 للموردين والمقاولين"], ["cbuae-operational-resilience.html", "المرونة التشغيلية للمصرف المركزي: الدليل الكامل"], ["business-continuity-uae.html", "استمرارية الأعمال في الإمارات: الدليل الكامل"]]}};
+var lang="en";
+function renderSections(secs){
+  var out=[];
+  secs.forEach(function(s){
+    if(s[0]==="h2")out.push("<h2>"+s[1]+"</h2>");
+    else if(s[0]==="p")out.push("<p>"+s[1]+"</p>");
+    else if(s[0]==="ul")out.push("<ul>"+s[1].map(function(x){return "<li>"+x+"</li>";}).join("")+"</ul>");
+    else if(s[0]==="callout")out.push('<div class="callout"><p>'+s[1]+"</p></div>");
+    else if(s[0]==="table"){
+      out.push('<table class="tbl"><thead><tr>'+s[1].map(function(c){return "<th>"+c+"</th>";}).join("")+"</tr></thead><tbody>"+
+        s[2].map(function(r){return "<tr>"+r.map(function(c){return "<td>"+c+"</td>";}).join("")+"</tr>";}).join("")+"</tbody></table>");
+    } else if(s[0]==="faq"){
+      out.push('<div class="faq">'+s[1].map(function(x){return "<details><summary>"+x[0]+"</summary><p>"+x[1]+"</p></details>";}).join("")+"</div>");
+    }
+  });
+  return out.join("\n");
+}
+function setLang(l){
+  lang=l;document.documentElement.lang=l;document.documentElement.dir=(l==="ar")?"rtl":"ltr";
+  var d=C[l];
+  document.querySelectorAll("[data-ui]").forEach(function(el){var k=el.getAttribute("data-ui");if(typeof d[k]==="string")el.innerHTML=d[k];});
+  document.getElementById("art").innerHTML=renderSections(d.sections);
+  document.getElementById("cluster").innerHTML=d.cluster.map(function(x){return '<a href="'+x[0]+'">'+x[1]+"</a>";}).join("");
+  document.getElementById("langbtn").textContent=(l==="ar")?"EN":"AR";
+  try{localStorage.setItem("rp_org_lang",l);}catch(e){}
+}
+function toggleLang(){setLang(lang==="ar"?"en":"ar");}
+(function(){var s=null;try{s=localStorage.getItem("rp_org_lang");}catch(e){}if(s==="ar")setLang("ar");})();
+window.addEventListener('scroll',function(){
+  var el=document.getElementById('stickycta');if(!el)return;
+  var cta=document.querySelector('section.cta');
+  var show=window.scrollY>600&&(!cta||cta.getBoundingClientRect().top>window.innerHeight);
+  el.classList.toggle('on',show);
+},{passive:true});
+</script>
+</body>
+</html>

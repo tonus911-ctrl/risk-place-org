@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HNF79F1SSN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HNF79F1SSN');</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NCEMA 7000 (AE/SCNS/NCEMA 7000:2021): the complete guide to the UAE business continuity standard — risk-place.org</title>
+<meta name="description" content="What NCEMA 7000 is, who must comply in the UAE, how the standard is structured, and the practical steps to compliance. A plain-language guide by business continuity practitioners.">
+<link rel="canonical" href="https://risk-place.org/ncema-7000.html">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:title" content="NCEMA 7000 (AE/SCNS/NCEMA 7000:2021): the complete guide to the UAE business continuity standard — risk-place.org">
+<meta property="og:description" content="What NCEMA 7000 is, who must comply in the UAE, how the standard is structured, and the practical steps to compliance. A plain-language guide by business continuity practitioners.">
+<meta property="og:image" content="https://risk-place.org/hero-dubai.jpg">
+<meta property="og:url" content="https://risk-place.org/ncema-7000.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is NCEMA 7000 mandatory for private companies in the UAE?", "acceptedAnswer": {"@type": "Answer", "text": "Directly, the standard is mandatory for government entities and critical infrastructure. For private companies it is strongly recommended — but if you supply government clients, operate critical services, or fall under sector regulators, compliance expectations reach you through contracts, licensing and tenders."}}, {"@type": "Question", "name": "How is NCEMA 7000 different from ISO 22301?", "acceptedAnswer": {"@type": "Answer", "text": "The structure is aligned (clauses 3-10), but NCEMA 7000 combines guidance with requirements, uses its own terms and definitions, treats technology recovery as part of the response during disruption, and is anchored in UAE law and audit practice. An organisation with a working ISO 22301 system covers most of NCEMA 7000 — the reverse is also largely true. See our detailed comparison."}}, {"@type": "Question", "name": "Where can I get the official NCEMA 7000 document?", "acceptedAnswer": {"@type": "Answer", "text": "NCEMA publishes AE/SCNS/NCEMA 7000:2021 free of charge on ncema.gov.ae in English and Arabic. Beware of paid copies — the original costs nothing."}}, {"@type": "Question", "name": "How long does compliance take?", "acceptedAnswer": {"@type": "Answer", "text": "For a mid-size organisation, 3-6 months from gap assessment to audit-ready is realistic if leadership is engaged. A gap assessment alone takes 2-3 weeks and gives you the full picture."}}, {"@type": "Question", "name": "Does certification exist for NCEMA 7000?", "acceptedAnswer": {"@type": "Answer", "text": "Compliance is confirmed through audits — in Abu Dhabi, ADCMC runs the assessment programme together with NCEMA representatives. The practical goal for most organisations is audit-readiness: a working system with evidence, not a certificate on the wall."}}]}</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#fff;-webkit-font-smoothing:antialiased;font-family:'Figtree','IBM Plex Sans Arabic',system-ui,sans-serif;color:#16181F;line-height:1.55}
+html[dir="rtl"] body{font-family:'IBM Plex Sans Arabic','Figtree',system-ui,sans-serif}
+a{color:#16181F;text-decoration:none}
+::selection{background:#FBE0CB}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+.hdr{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.94);backdrop-filter:blur(14px);border-bottom:1px solid #EAE7E1}
+.hdr .in{height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;flex-direction:column;gap:1px}
+.logo .nm{font-size:26px;font-weight:600;letter-spacing:-0.02em}
+.logo .nm b{color:#C4571C;font-weight:600}
+.logo .tg{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8A8478}
+.hdr .right{display:flex;align-items:center;gap:12px}
+.langbtn{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.08em;background:none;border:1px solid #DCD8D0;border-radius:999px;padding:7px 15px;cursor:pointer;color:#3D4149}
+.langbtn:hover{border-color:#16181F;color:#16181F}
+.backlink{font-size:14.5px;color:#3D4149}
+.backlink:hover{color:#C4571C}
+.hero{background:#0D1117;color:#fff}
+.hero .in{padding-top:64px;padding-bottom:56px}
+.kicker{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#F0A868;margin:0 0 20px}
+.hero h1{font-size:42px;font-weight:300;line-height:1.14;letter-spacing:-0.025em;margin:0 0 16px;max-width:28ch;text-wrap:pretty}
+.hero .sub{font-size:18px;font-weight:300;color:rgba(255,255,255,0.75);margin:0;max-width:62ch;line-height:1.6}
+.btn{display:inline-block;font-size:16.5px;font-weight:600;background:#C4571C;color:#fff !important;padding:15px 32px;border-radius:999px}
+.btn:hover{background:#A03F12}
+.btn2{display:inline-block;font-size:16px;font-weight:400;color:#fff !important;border:1px solid rgba(255,255,255,0.34);padding:14px 28px;border-radius:999px;margin-inline-start:10px}
+.btn2:hover{border-color:#fff}
+.cta{background:#0D1117;color:#fff}
+.cta .in{padding-top:64px;padding-bottom:64px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:22px}
+.cta h2{font-size:30px;font-weight:300;letter-spacing:-0.02em;margin:0;max-width:30ch;text-wrap:pretty}
+.foot{background:#0D1117;color:rgba(255,255,255,0.46);border-top:1px solid rgba(255,255,255,0.12)}
+.foot .in{padding-top:22px;padding-bottom:22px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13.5px;font-weight:300}
+.foot a{color:rgba(255,255,255,0.6)}
+.foot a:hover{color:#fff}
+.stickycta{display:none;position:fixed;left:14px;right:14px;bottom:14px;z-index:70;background:#C4571C;color:#fff !important;text-align:center;font-size:16px;font-weight:600;padding:14px 18px;border-radius:999px;box-shadow:0 10px 28px rgba(13,17,23,0.28)}
+
+.art{padding:64px 0 20px}
+.art h2{font-size:30px;font-weight:300;line-height:1.18;letter-spacing:-0.02em;margin:52px 0 18px;text-wrap:pretty}
+.art h2:first-child{margin-top:0}
+.art p{font-size:16.5px;font-weight:300;line-height:1.72;color:#3D4149;margin:0 0 16px;max-width:76ch}
+.art ul{margin:0 0 18px;padding-inline-start:22px;max-width:76ch}
+.art li{font-size:16.5px;font-weight:300;line-height:1.66;color:#3D4149;margin-bottom:9px}
+.art li b,.art p b{font-weight:600;color:#16181F}
+.callout{background:#F7F4EF;border:1px solid #EAE7E1;border-inline-start:3px solid #C4571C;border-radius:12px;padding:20px 24px;margin:26px 0;max-width:76ch}
+.callout p{margin:0;font-size:16px}
+.tbl{width:100%;border-collapse:collapse;margin:24px 0 30px;font-size:15.5px}
+.tbl th{text-align:start;font-weight:600;padding:12px 14px;border-bottom:2px solid #16181F;font-size:14.5px}
+.tbl td{padding:12px 14px;border-bottom:1px solid #E1DCD3;font-weight:300;color:#3D4149;vertical-align:top;line-height:1.55}
+.tbl td:first-child{font-weight:500;color:#16181F}
+.faq{margin:10px 0 30px;max-width:76ch}
+.faq details{border-bottom:1px solid #E1DCD3;padding:4px 0}
+.faq summary{font-size:17px;font-weight:600;padding:14px 0;cursor:pointer;list-style-position:outside}
+.faq details p{padding:0 0 16px}
+.cluster{background:#F7F4EF;border-top:1px solid #EAE7E1;border-bottom:1px solid #EAE7E1;padding:56px 0}
+.cluster h2{font-size:26px;font-weight:300;margin:0 0 26px}
+.cluster .links{display:grid;grid-template-columns:1fr 1fr;gap:14px 40px}
+.cluster a{display:block;padding:14px 0;border-bottom:1px solid #E1DCD3;font-size:16px;font-weight:500}
+.cluster a:hover{color:#C4571C}
+.src{font-size:13.5px;color:#8A8478;margin-top:30px;max-width:76ch}
+.src a{color:#8A8478;text-decoration:underline}
+@media(max-width:760px){.art h2{font-size:24px}.cluster .links{grid-template-columns:1fr}.tbl{font-size:14px}.tbl th,.tbl td{padding:9px 8px}}
+
+@media(max-width:760px){.hero h1{font-size:30px}}
+@media(max-width:600px){
+  .wrap{padding-left:20px;padding-right:20px}
+  .logo .nm{font-size:22px}
+  .logo .tg{display:none}
+  .backlink{font-size:13px}
+  .hero .in{padding-top:38px;padding-bottom:34px}
+  .hero h1{font-size:25px;line-height:1.2}
+  .art{padding:40px 0 10px}
+  .stickycta.on{display:block}
+}
+</style>
+</head>
+<body>
+<header class="hdr"><div class="wrap in">
+  <a class="logo" href="index.html"><span class="nm">risk-place<b>.org</b></span><span class="tg" data-ui="tagline">Business Continuity &amp; Resilience · GCC</span></a>
+  <div class="right"><a class="backlink" href="index.html#regwatch" data-ui="back">← Home</a><button class="langbtn" id="langbtn" onclick="toggleLang()">AR</button></div>
+</div></header>
+
+<section class="hero"><div class="wrap in">
+  <p class="kicker" data-ui="kicker">Regulatory watch · UAE · NCEMA 7000</p>
+  <h1 data-ui="h1">NCEMA 7000: the UAE national standard for business continuity, explained</h1>
+  <p class="sub" data-ui="sub">AE/SCNS/NCEMA 7000:2021 — what the standard requires, who must comply, and how to get there without drowning in paperwork. Written by practitioners who build these systems, in plain language.</p>
+</div></section>
+
+<article class="art"><div class="wrap" id="art">
+<h2>What is NCEMA 7000?</h2>
+<p>NCEMA 7000 — formally <b>AE/SCNS/NCEMA 7000:2021</b> — is the national standard of the United Arab Emirates for business continuity management (BCM). It is issued by the National Emergency Crisis and Disasters Management Authority (NCEMA) and is now in its third edition: 2012, 2015 and 2021. The standard defines how an organisation must prepare for disruptions — from IT failures and cyber attacks to fires and area-wide emergencies — so that critical services keep running or recover quickly.</p>
+<p>Unlike many international standards, NCEMA 7000 combines <b>guidance and requirements in one document</b>: each clause first explains in plain terms what good practice looks like, then lists what an organisation “shall” do. That makes it unusually readable — and makes vague, checkbox-style implementations easy for auditors to spot.</p>
+<div class="callout"><p>The official standard is published by NCEMA and is free to download from ncema.gov.ae. You do not need to buy it — you need to implement it.</p></div>
+<h2>Who must comply</h2>
+<p>Compliance is <b>mandatory for UAE government entities and critical infrastructure</b> — the sectors whose services the country cannot afford to lose. For private companies the standard is strongly recommended, and in practice it is increasingly pulled into the private sector through three channels:</p>
+<ul><li><b>Government clients.</b> Ministries and government-related entities ask their suppliers and contractors for evidence of business continuity arrangements aligned with NCEMA 7000.</li><li><b>Regulators.</b> Sector regulators reference national BCM expectations — for banks, CBUAE operational resilience requirements run in parallel.</li><li><b>Insurers and tenders.</b> Business-interruption underwriting and large tenders increasingly ask for a working BCM system, and NCEMA 7000 is the local benchmark.</li></ul>
+<p>In Abu Dhabi, the ADCMC (Abu Dhabi Emergency, Crisis and Disasters Management Centre) runs a formal compliance programme: since 2021 it has audited over 90 government bodies and companies against the standard, and by March 2025 <b>89 entities had been confirmed compliant</b>. Other emirates are moving in the same direction.</p>
+<h2>How the standard is structured</h2>
+<p>NCEMA 7000:2021 follows the familiar logic of ISO management system standards. Clauses 3-7, 9 and 10 define the <b>management system</b>; clause 8 contains the <b>operational requirements</b> — the part where continuity actually gets built.</p>
+<table class="tbl"><thead><tr><th>Clause</th><th>What it covers</th><th>What it means in practice</th></tr></thead><tbody><tr><td>3 · Governance framework</td><td>Top management accountability, planning with target dates</td><td>Leadership owns BCM personally — with names and deadlines, not a delegated policy</td></tr><tr><td>4 · Context of the organisation</td><td>Environment, stakeholders, dependencies</td><td>You map what your organisation depends on before writing any plan</td></tr><tr><td>5 · Policy, scope, objectives</td><td>What the BCMS covers and aims to achieve</td><td>A short, signed policy — not a binder</td></tr><tr><td>6 · Support</td><td>Competence, resources, external providers</td><td>People running BCM must be demonstrably competent; suppliers are selected by criteria</td></tr><tr><td>7 · Documented information</td><td>What must be documented and controlled</td><td>A defined list of documents — nothing more, nothing less</td></tr><tr><td>8 · BCMS operations</td><td>BIA, risk assessment, strategies, plans, response structure, exercises</td><td>The core: impact analysis, recovery strategies, plans, command and control, drills</td></tr><tr><td>9 · Review and evaluation</td><td>Performance indicators, internal audit, management review</td><td>You measure the system with defined KPIs — not “we have a plan somewhere”</td></tr><tr><td>10 · Improvement</td><td>Nonconformities and continual improvement</td><td>Findings from exercises and incidents actually change the system</td></tr></tbody></table>
+<p>Two details deserve attention. First, clause 8 requires you to <b>evaluate the continuity arrangements of critical external providers</b> — if one supplier can stop your prioritised activity, their readiness is your problem. Second, “recovery” in NCEMA 7000 happens <b>during</b> the disruption, not after it — the standard expects you to restore technology and operations as part of the response, which is a higher bar than many organisations assume.</p>
+<h2>Five practical steps to compliance</h2>
+<ul><li><b>1 · Gap assessment.</b> Map your current arrangements against every clause. Honest answer in 2-3 weeks: what exists, what is paper, what is missing.</li><li><b>2 · BIA and risk assessment.</b> Identify prioritised activities, the cost of a lost day, recovery time objectives, single points of failure — in money, not adjectives.</li><li><b>3 · Strategies and plans.</b> Alternate facilities and routes, recovery of technology, response structure with named authority for the first hours.</li><li><b>4 · Exercise.</b> Run a realistic scenario — a ransomware event or a facility shutdown — and let the plan break in rehearsal, not in production.</li><li><b>5 · Measure and improve.</b> KPIs from clause 9, an internal audit, a management review — the cycle that keeps the certificate honest.</li></ul>
+<div class="callout"><p>Typical timeline for a mid-size organisation: from first gap assessment to audit-ready in 3-6 months. The gap assessment itself takes 2-3 weeks and shows the real distance in money terms.</p></div>
+<h2>Frequently asked questions</h2>
+<div class="faq"><details><summary>Is NCEMA 7000 mandatory for private companies in the UAE?</summary><p>Directly, the standard is mandatory for government entities and critical infrastructure. For private companies it is strongly recommended — but if you supply government clients, operate critical services, or fall under sector regulators, compliance expectations reach you through contracts, licensing and tenders.</p></details><details><summary>How is NCEMA 7000 different from ISO 22301?</summary><p>The structure is aligned (clauses 3-10), but NCEMA 7000 combines guidance with requirements, uses its own terms and definitions, treats technology recovery as part of the response during disruption, and is anchored in UAE law and audit practice. An organisation with a working ISO 22301 system covers most of NCEMA 7000 — the reverse is also largely true. See our detailed comparison.</p></details><details><summary>Where can I get the official NCEMA 7000 document?</summary><p>NCEMA publishes AE/SCNS/NCEMA 7000:2021 free of charge on ncema.gov.ae in English and Arabic. Beware of paid copies — the original costs nothing.</p></details><details><summary>How long does compliance take?</summary><p>For a mid-size organisation, 3-6 months from gap assessment to audit-ready is realistic if leadership is engaged. A gap assessment alone takes 2-3 weeks and gives you the full picture.</p></details><details><summary>Does certification exist for NCEMA 7000?</summary><p>Compliance is confirmed through audits — in Abu Dhabi, ADCMC runs the assessment programme together with NCEMA representatives. The practical goal for most organisations is audit-readiness: a working system with evidence, not a certificate on the wall.</p></details></div>
+<p><span class="src">Sources: NCEMA — AE/SCNS/NCEMA 7000:2021 (official, ncema.gov.ae) · ADCMC Business Continuity Management programme (adcmc.gov.ae) · ADCMC compliance announcements, March 2025.</span></p>
+</div></article>
+
+<section class="cluster"><div class="wrap">
+  <h2 data-ui="clusterTitle">The NCEMA 7000 knowledge hub</h2>
+  <div class="links" id="cluster"><a href="ncema-7000-vs-iso-22301.html">NCEMA 7000 vs ISO 22301: what is the difference?</a><a href="ncema-7000-checklist.html">NCEMA 7000 compliance checklist</a><a href="ncema-7000-compliance-steps.html">How NCEMA 7000 compliance and audits work</a><a href="ncema-7000-for-suppliers.html">NCEMA 7000 for suppliers and contractors</a><a href="cbuae-operational-resilience.html">CBUAE operational resilience: the complete guide</a><a href="business-continuity-uae.html">Business continuity in the UAE: the complete guide</a></div>
+</div></section>
+
+<section class="cta"><div class="wrap in">
+  <h2 data-ui="ctaTitle">Want to know how far your organisation is from NCEMA 7000 compliance?</h2>
+  <div><a class="btn" href="gap-assessment.html" data-ui="cta">Request a gap assessment</a><a class="btn2" href="quiz.html" data-ui="cta2">Take the free readiness check</a></div>
+</div></section>
+
+<footer class="foot"><div class="wrap in">
+  <span data-ui="copy">© 2026 risk-place.org · Business Continuity &amp; Resilience</span>
+  <a href="privacy.html" data-ui="privacy">Privacy policy</a>
+</div></footer>
+
+<a class="stickycta" id="stickycta" href="gap-assessment.html" data-ui="sticky">NCEMA-ready gap assessment</a>
+
+<script>
+var C={"en": {"tagline": "Business Continuity &amp; Resilience · GCC", "back": "← Home", "copy": "© 2026 risk-place.org · Business Continuity &amp; Resilience", "privacy": "Privacy policy", "sticky": "NCEMA-ready gap assessment", "cta": "Request a gap assessment", "cta2": "Take the free readiness check", "kicker": "Regulatory watch · UAE · NCEMA 7000", "h1": "NCEMA 7000: the UAE national standard for business continuity, explained", "sub": "AE/SCNS/NCEMA 7000:2021 — what the standard requires, who must comply, and how to get there without drowning in paperwork. Written by practitioners who build these systems, in plain language.", "clusterTitle": "The NCEMA 7000 knowledge hub", "ctaTitle": "Want to know how far your organisation is from NCEMA 7000 compliance?", "sections": [["h2", "What is NCEMA 7000?"], ["p", "NCEMA 7000 — formally <b>AE/SCNS/NCEMA 7000:2021</b> — is the national standard of the United Arab Emirates for business continuity management (BCM). It is issued by the National Emergency Crisis and Disasters Management Authority (NCEMA) and is now in its third edition: 2012, 2015 and 2021. The standard defines how an organisation must prepare for disruptions — from IT failures and cyber attacks to fires and area-wide emergencies — so that critical services keep running or recover quickly."], ["p", "Unlike many international standards, NCEMA 7000 combines <b>guidance and requirements in one document</b>: each clause first explains in plain terms what good practice looks like, then lists what an organisation “shall” do. That makes it unusually readable — and makes vague, checkbox-style implementations easy for auditors to spot."], ["callout", "The official standard is published by NCEMA and is free to download from ncema.gov.ae. You do not need to buy it — you need to implement it."], ["h2", "Who must comply"], ["p", "Compliance is <b>mandatory for UAE government entities and critical infrastructure</b> — the sectors whose services the country cannot afford to lose. For private companies the standard is strongly recommended, and in practice it is increasingly pulled into the private sector through three channels:"], ["ul", ["<b>Government clients.</b> Ministries and government-related entities ask their suppliers and contractors for evidence of business continuity arrangements aligned with NCEMA 7000.", "<b>Regulators.</b> Sector regulators reference national BCM expectations — for banks, CBUAE operational resilience requirements run in parallel.", "<b>Insurers and tenders.</b> Business-interruption underwriting and large tenders increasingly ask for a working BCM system, and NCEMA 7000 is the local benchmark."]], ["p", "In Abu Dhabi, the ADCMC (Abu Dhabi Emergency, Crisis and Disasters Management Centre) runs a formal compliance programme: since 2021 it has audited over 90 government bodies and companies against the standard, and by March 2025 <b>89 entities had been confirmed compliant</b>. Other emirates are moving in the same direction."], ["h2", "How the standard is structured"], ["p", "NCEMA 7000:2021 follows the familiar logic of ISO management system standards. Clauses 3-7, 9 and 10 define the <b>management system</b>; clause 8 contains the <b>operational requirements</b> — the part where continuity actually gets built."], ["table", ["Clause", "What it covers", "What it means in practice"], [["3 · Governance framework", "Top management accountability, planning with target dates", "Leadership owns BCM personally — with names and deadlines, not a delegated policy"], ["4 · Context of the organisation", "Environment, stakeholders, dependencies", "You map what your organisation depends on before writing any plan"], ["5 · Policy, scope, objectives", "What the BCMS covers and aims to achieve", "A short, signed policy — not a binder"], ["6 · Support", "Competence, resources, external providers", "People running BCM must be demonstrably competent; suppliers are selected by criteria"], ["7 · Documented information", "What must be documented and controlled", "A defined list of documents — nothing more, nothing less"], ["8 · BCMS operations", "BIA, risk assessment, strategies, plans, response structure, exercises", "The core: impact analysis, recovery strategies, plans, command and control, drills"], ["9 · Review and evaluation", "Performance indicators, internal audit, management review", "You measure the system with defined KPIs — not “we have a plan somewhere”"], ["10 · Improvement", "Nonconformities and continual improvement", "Findings from exercises and incidents actually change the system"]]], ["p", "Two details deserve attention. First, clause 8 requires you to <b>evaluate the continuity arrangements of critical external providers</b> — if one supplier can stop your prioritised activity, their readiness is your problem. Second, “recovery” in NCEMA 7000 happens <b>during</b> the disruption, not after it — the standard expects you to restore technology and operations as part of the response, which is a higher bar than many organisations assume."], ["h2", "Five practical steps to compliance"], ["ul", ["<b>1 · Gap assessment.</b> Map your current arrangements against every clause. Honest answer in 2-3 weeks: what exists, what is paper, what is missing.", "<b>2 · BIA and risk assessment.</b> Identify prioritised activities, the cost of a lost day, recovery time objectives, single points of failure — in money, not adjectives.", "<b>3 · Strategies and plans.</b> Alternate facilities and routes, recovery of technology, response structure with named authority for the first hours.", "<b>4 · Exercise.</b> Run a realistic scenario — a ransomware event or a facility shutdown — and let the plan break in rehearsal, not in production.", "<b>5 · Measure and improve.</b> KPIs from clause 9, an internal audit, a management review — the cycle that keeps the certificate honest."]], ["callout", "Typical timeline for a mid-size organisation: from first gap assessment to audit-ready in 3-6 months. The gap assessment itself takes 2-3 weeks and shows the real distance in money terms."], ["h2", "Frequently asked questions"], ["faq", [["Is NCEMA 7000 mandatory for private companies in the UAE?", "Directly, the standard is mandatory for government entities and critical infrastructure. For private companies it is strongly recommended — but if you supply government clients, operate critical services, or fall under sector regulators, compliance expectations reach you through contracts, licensing and tenders."], ["How is NCEMA 7000 different from ISO 22301?", "The structure is aligned (clauses 3-10), but NCEMA 7000 combines guidance with requirements, uses its own terms and definitions, treats technology recovery as part of the response during disruption, and is anchored in UAE law and audit practice. An organisation with a working ISO 22301 system covers most of NCEMA 7000 — the reverse is also largely true. See our detailed comparison."], ["Where can I get the official NCEMA 7000 document?", "NCEMA publishes AE/SCNS/NCEMA 7000:2021 free of charge on ncema.gov.ae in English and Arabic. Beware of paid copies — the original costs nothing."], ["How long does compliance take?", "For a mid-size organisation, 3-6 months from gap assessment to audit-ready is realistic if leadership is engaged. A gap assessment alone takes 2-3 weeks and gives you the full picture."], ["Does certification exist for NCEMA 7000?", "Compliance is confirmed through audits — in Abu Dhabi, ADCMC runs the assessment programme together with NCEMA representatives. The practical goal for most organisations is audit-readiness: a working system with evidence, not a certificate on the wall."]]], ["p", "<span class=\"src\">Sources: NCEMA — AE/SCNS/NCEMA 7000:2021 (official, ncema.gov.ae) · ADCMC Business Continuity Management programme (adcmc.gov.ae) · ADCMC compliance announcements, March 2025.</span>"]], "cluster": [["ncema-7000-vs-iso-22301.html", "NCEMA 7000 vs ISO 22301: what is the difference?"], ["ncema-7000-checklist.html", "NCEMA 7000 compliance checklist"], ["ncema-7000-compliance-steps.html", "How NCEMA 7000 compliance and audits work"], ["ncema-7000-for-suppliers.html", "NCEMA 7000 for suppliers and contractors"], ["cbuae-operational-resilience.html", "CBUAE operational resilience: the complete guide"], ["business-continuity-uae.html", "Business continuity in the UAE: the complete guide"]]}, "ar": {"tagline": "استمرارية الأعمال والمرونة · دول الخليج", "back": "→ الرئيسية", "copy": "© ٢٠٢٦ risk-place.org · استمرارية الأعمال والمرونة", "privacy": "سياسة الخصوصية", "sticky": "تقييم فجوات الجاهزية لـ NCEMA", "cta": "اطلبوا تقييم الفجوات", "cta2": "جرّبوا فحص الجاهزية المجاني", "kicker": "المراقبة التنظيمية · الإمارات · NCEMA 7000", "h1": "NCEMA 7000: المعيار الوطني الإماراتي لاستمرارية الأعمال — شرح واضح", "sub": "AE/SCNS/NCEMA 7000:2021 — ماذا يتطلب المعيار، ومن يجب أن يمتثل له، وكيف تصلون إلى الامتثال دون الغرق في الأوراق. كتبه ممارسون يبنون هذه الأنظمة فعلياً.", "clusterTitle": "مركز معرفة NCEMA 7000", "ctaTitle": "هل تريدون معرفة المسافة بين مؤسستكم والامتثال لـ NCEMA 7000؟", "sections": [["h2", "ما هو NCEMA 7000؟"], ["p", "NCEMA 7000 — رسمياً <b>AE/SCNS/NCEMA 7000:2021</b> — هو المعيار الوطني لدولة الإمارات لإدارة استمرارية الأعمال، تصدره الهيئة الوطنية لإدارة الطوارئ والأزمات والكوارث. وهو الآن في إصداره الثالث: 2012 و2015 و2021. يحدد المعيار كيف يجب أن تستعد المؤسسة للاضطرابات — من أعطال تقنية المعلومات والهجمات السيبرانية إلى الحرائق وحالات الطوارئ الواسعة — بحيث تستمر الخدمات الحيوية أو تتعافى بسرعة."], ["p", "على خلاف كثير من المعايير الدولية، يجمع NCEMA 7000 بين <b>الإرشادات والمتطلبات في وثيقة واحدة</b>: كل بند يشرح أولاً بلغة واضحة ما هي الممارسة الجيدة، ثم يسرد ما “يجب” على المؤسسة فعله. وهذا يجعله سهل القراءة — ويجعل التطبيقات الشكلية سهلة الاكتشاف أمام المدققين."], ["callout", "الوثيقة الرسمية تنشرها الهيئة الوطنية مجاناً على ncema.gov.ae. لستم بحاجة لشرائها — بل لتطبيقها."], ["h2", "من يجب أن يمتثل"], ["p", "الامتثال <b>إلزامي للجهات الحكومية والبنية التحتية الحيوية</b> في الدولة — القطاعات التي لا يمكن للبلاد أن تفقد خدماتها. أما الشركات الخاصة فالمعيار موصى به بقوة، وعملياً يصل إليها عبر ثلاث قنوات:"], ["ul", ["<b>العملاء الحكوميون.</b> الوزارات والجهات الحكومية تطلب من مورديها ومقاوليها إثبات ترتيبات استمرارية أعمال متوافقة مع NCEMA 7000.", "<b>الجهات التنظيمية.</b> المنظمون القطاعيون يشيرون إلى التوقعات الوطنية لاستمرارية الأعمال — وللبنوك تسري بالتوازي متطلبات المرونة التشغيلية للمصرف المركزي.", "<b>شركات التأمين والمناقصات.</b> اكتتاب تأمين انقطاع الأعمال والمناقصات الكبرى يسألان بشكل متزايد عن نظام استمرارية فعلي، وNCEMA 7000 هو المرجع المحلي."]], ["p", "في أبوظبي يدير مركز إدارة الطوارئ والأزمات والكوارث (ADCMC) برنامج امتثال رسمي: منذ 2021 دقق أكثر من 90 جهة حكومية وشركة وفق المعيار، وبحلول مارس 2025 <b>تأكد امتثال 89 جهة</b>. وبقية الإمارات تسير في الاتجاه نفسه."], ["h2", "كيف يُبنى المعيار"], ["p", "يتبع NCEMA 7000:2021 المنطق المألوف لمعايير أنظمة الإدارة. البنود 3-7 و9 و10 تحدد <b>نظام الإدارة</b>؛ والبند 8 يتضمن <b>المتطلبات التشغيلية</b> — الجزء الذي تُبنى فيه الاستمرارية فعلياً."], ["table", ["البند", "ما يغطيه", "معناه عملياً"], [["3 · إطار الحوكمة", "مساءلة الإدارة العليا والتخطيط بمواعيد مستهدفة", "القيادة تملك استمرارية الأعمال شخصياً — بأسماء ومواعيد، لا بسياسة مفوضة"], ["4 · سياق المؤسسة", "البيئة وأصحاب المصلحة والاعتماديات", "ترسمون ما تعتمد عليه مؤسستكم قبل كتابة أي خطة"], ["5 · السياسة والنطاق والأهداف", "ما يغطيه النظام وما يهدف إليه", "سياسة قصيرة موقعة — لا مجلد ضخم"], ["6 · الدعم", "الكفاءة والموارد والموردون الخارجيون", "القائمون على النظام يجب أن يكونوا أكفاء بشكل مثبت؛ والموردون يُختارون بمعايير"], ["7 · المعلومات الموثقة", "ما يجب توثيقه وضبطه", "قائمة محددة من الوثائق — لا أكثر ولا أقل"], ["8 · عمليات النظام", "تحليل الأثر وتقييم المخاطر والاستراتيجيات والخطط وهيكل الاستجابة والتمارين", "الجوهر: تحليل الأثر، استراتيجيات التعافي، الخطط، القيادة والسيطرة، التدريبات"], ["9 · المراجعة والتقييم", "مؤشرات الأداء والتدقيق الداخلي ومراجعة الإدارة", "تقيسون النظام بمؤشرات محددة — لا “لدينا خطة في مكان ما”"], ["10 · التحسين", "حالات عدم المطابقة والتحسين المستمر", "نتائج التمارين والحوادث تغير النظام فعلاً"]]], ["p", "تفصيلان يستحقان الانتباه. أولاً، البند 8 يلزمكم <b>بتقييم ترتيبات الاستمرارية لدى الموردين الخارجيين الحيويين</b> — إذا كان مورد واحد قادراً على إيقاف نشاطكم ذي الأولوية فجاهزيته مشكلتكم. ثانياً، “التعافي” في NCEMA 7000 يحدث <b>أثناء</b> الاضطراب لا بعده — المعيار يتوقع استعادة التقنية والعمليات كجزء من الاستجابة، وهو سقف أعلى مما تفترضه مؤسسات كثيرة."], ["h2", "خمس خطوات عملية نحو الامتثال"], ["ul", ["<b>1 · تقييم الفجوات.</b> قارنوا ترتيباتكم الحالية بكل بند. جواب صادق خلال 2-3 أسابيع: ما الموجود، وما هو حبر على ورق، وما الناقص.", "<b>2 · تحليل الأثر وتقييم المخاطر.</b> تحديد الأنشطة ذات الأولوية، وتكلفة اليوم الضائع، وأهداف زمن التعافي، ونقاط الفشل المنفردة — بالأرقام لا بالصفات.", "<b>3 · الاستراتيجيات والخطط.</b> منشآت ومسارات بديلة، واستعادة التقنية، وهيكل استجابة بصلاحيات مسماة للساعات الأولى.", "<b>4 · التمرين.</b> نفذوا سيناريو واقعياً — برمجية فدية أو إغلاق منشأة — ودعوا الخطة تنكسر في التدريب لا في الواقع.", "<b>5 · القياس والتحسين.</b> مؤشرات البند 9، تدقيق داخلي، مراجعة إدارة — الدورة التي تُبقي الامتثال صادقاً."]], ["callout", "الجدول الزمني المعتاد لمؤسسة متوسطة: من أول تقييم فجوات إلى الجاهزية للتدقيق خلال 3-6 أشهر. تقييم الفجوات نفسه يستغرق 2-3 أسابيع ويُظهر المسافة الحقيقية بالأرقام."], ["h2", "أسئلة شائعة"], ["faq", [["هل NCEMA 7000 إلزامي للشركات الخاصة في الإمارات؟", "المعيار إلزامي مباشرة للجهات الحكومية والبنية التحتية الحيوية. وللشركات الخاصة موصى به بقوة — لكن إذا كنتم توردون لعملاء حكوميين أو تشغلون خدمات حيوية أو تخضعون لمنظم قطاعي، فتوقعات الامتثال تصلكم عبر العقود والتراخيص والمناقصات."], ["ما الفرق بين NCEMA 7000 وISO 22301؟", "الهيكل متوافق (البنود 3-10)، لكن NCEMA 7000 يجمع الإرشادات مع المتطلبات، ويستخدم مصطلحات خاصة به، ويعامل استعادة التقنية كجزء من الاستجابة أثناء الاضطراب، ويرتكز على القانون الإماراتي وممارسة التدقيق المحلية. راجعوا مقارنتنا التفصيلية."], ["من أين أحصل على وثيقة NCEMA 7000 الرسمية؟", "تنشر الهيئة الوطنية AE/SCNS/NCEMA 7000:2021 مجاناً على ncema.gov.ae بالإنجليزية والعربية. احذروا النسخ المدفوعة — الأصل لا يكلف شيئاً."], ["كم يستغرق الامتثال؟", "لمؤسسة متوسطة، 3-6 أشهر من تقييم الفجوات إلى الجاهزية للتدقيق أمر واقعي إذا كانت القيادة منخرطة. تقييم الفجوات وحده يستغرق 2-3 أسابيع ويمنحكم الصورة الكاملة."], ["هل توجد شهادة لـ NCEMA 7000؟", "يُؤكد الامتثال عبر التدقيق — في أبوظبي يدير ADCMC برنامج التقييم مع ممثلي الهيئة الوطنية. الهدف العملي لمعظم المؤسسات هو الجاهزية للتدقيق: نظام فعلي بأدلة، لا شهادة على الجدار."]]], ["p", "<span class=\"src\">المصادر: الهيئة الوطنية — AE/SCNS/NCEMA 7000:2021 (الوثيقة الرسمية، ncema.gov.ae) · برنامج إدارة استمرارية الأعمال في ADCMC (adcmc.gov.ae) · إعلانات امتثال ADCMC، مارس 2025.</span>"]], "cluster": [["ncema-7000-vs-iso-22301.html", "NCEMA 7000 مقابل ISO 22301: ما الفرق؟"], ["ncema-7000-checklist.html", "قائمة التحقق من الامتثال لـ NCEMA 7000"], ["ncema-7000-compliance-steps.html", "كيف يتم الامتثال والتدقيق وفق NCEMA 7000"], ["ncema-7000-for-suppliers.html", "NCEMA 7000 للموردين والمقاولين"], ["cbuae-operational-resilience.html", "المرونة التشغيلية للمصرف المركزي: الدليل الكامل"], ["business-continuity-uae.html", "استمرارية الأعمال في الإمارات: الدليل الكامل"]]}};
+var lang="en";
+function renderSections(secs){
+  var out=[];
+  secs.forEach(function(s){
+    if(s[0]==="h2")out.push("<h2>"+s[1]+"</h2>");
+    else if(s[0]==="p")out.push("<p>"+s[1]+"</p>");
+    else if(s[0]==="ul")out.push("<ul>"+s[1].map(function(x){return "<li>"+x+"</li>";}).join("")+"</ul>");
+    else if(s[0]==="callout")out.push('<div class="callout"><p>'+s[1]+"</p></div>");
+    else if(s[0]==="table"){
+      out.push('<table class="tbl"><thead><tr>'+s[1].map(function(c){return "<th>"+c+"</th>";}).join("")+"</tr></thead><tbody>"+
+        s[2].map(function(r){return "<tr>"+r.map(function(c){return "<td>"+c+"</td>";}).join("")+"</tr>";}).join("")+"</tbody></table>");
+    } else if(s[0]==="faq"){
+      out.push('<div class="faq">'+s[1].map(function(x){return "<details><summary>"+x[0]+"</summary><p>"+x[1]+"</p></details>";}).join("")+"</div>");
+    }
+  });
+  return out.join("\n");
+}
+function setLang(l){
+  lang=l;document.documentElement.lang=l;document.documentElement.dir=(l==="ar")?"rtl":"ltr";
+  var d=C[l];
+  document.querySelectorAll("[data-ui]").forEach(function(el){var k=el.getAttribute("data-ui");if(typeof d[k]==="string")el.innerHTML=d[k];});
+  document.getElementById("art").innerHTML=renderSections(d.sections);
+  document.getElementById("cluster").innerHTML=d.cluster.map(function(x){return '<a href="'+x[0]+'">'+x[1]+"</a>";}).join("");
+  document.getElementById("langbtn").textContent=(l==="ar")?"EN":"AR";
+  try{localStorage.setItem("rp_org_lang",l);}catch(e){}
+}
+function toggleLang(){setLang(lang==="ar"?"en":"ar");}
+(function(){var s=null;try{s=localStorage.getItem("rp_org_lang");}catch(e){}if(s==="ar")setLang("ar");})();
+window.addEventListener('scroll',function(){
+  var el=document.getElementById('stickycta');if(!el)return;
+  var cta=document.querySelector('section.cta');
+  var show=window.scrollY>600&&(!cta||cta.getBoundingClientRect().top>window.innerHeight);
+  el.classList.toggle('on',show);
+},{passive:true});
+</script>
+</body>
+</html>
