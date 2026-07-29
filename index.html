@@ -142,6 +142,20 @@ html[dir="rtl"] .hero .shade{background:linear-gradient(264deg,rgba(9,12,18,0.93
 .foot .in{padding:24px 36px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;font-size:14.5px;font-weight:300;color:rgba(255,255,255,0.46)}
 .foot button{background:none;border:0;padding:0;font-size:14.5px;font-weight:300;color:rgba(255,255,255,0.46);cursor:pointer}
 .foot button:hover{color:#fff}
+/* burger + mobile menu */
+.burger{display:none;background:none;border:0;cursor:pointer;padding:8px 6px}
+.burger span{display:block;width:22px;height:2px;background:#16181F;margin:5px 0;border-radius:2px;transition:transform .2s,opacity .2s}
+.mobmenu{display:none;position:fixed;top:74px;left:0;right:0;z-index:59;background:#fff;border-bottom:1px solid #EAE7E1;box-shadow:0 18px 40px rgba(13,17,23,0.12);padding:8px 24px 16px}
+.mobmenu a{display:block;padding:13px 4px;font-size:17px;color:#16181F;border-bottom:1px solid #F1EEE8}
+.mobmenu a:last-child{border-bottom:0}
+body.menu-open .mobmenu{display:block}
+body.menu-open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+body.menu-open .burger span:nth-child(2){opacity:0}
+body.menu-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+/* sticky quiz cta (mobile only) */
+.stickycta{display:none;position:fixed;left:14px;right:14px;bottom:14px;z-index:70;background:#C4571C;color:#fff !important;text-align:center;font-size:16.5px;font-weight:600;padding:15px 18px;border-radius:999px;box-shadow:0 10px 28px rgba(13,17,23,0.28)}
+/* mobile read-more */
+.morebtn{display:none;background:none;border:0;cursor:pointer;padding:6px 0 0;font-size:15.5px;font-weight:600;color:#C4571C;font-family:inherit}
 /* responsive */
 @media(max-width:1000px){
   .hero h1{font-size:46px}
@@ -150,11 +164,41 @@ html[dir="rtl"] .hero .shade{background:linear-gradient(264deg,rgba(9,12,18,0.93
   .regs{grid-template-columns:1fr}
   .res{grid-template-columns:1fr 1fr}
   .nav{display:none}
+  .burger{display:block}
+  .hdr .cta-dark{display:none}
 }
 @media(max-width:600px){
   .svc,.res{grid-template-columns:1fr}
-  .hero h1{font-size:38px}
   .wrap{padding-left:20px;padding-right:20px}
+  /* mobile section order: hero -> services -> the rest */
+  body{display:flex;flex-direction:column}
+  .hdr{order:0}.ar-note{order:1}#top{order:2}#services{order:3}#threats{order:4}#experience{order:5}#regwatch{order:6}#results{order:7}#contact{order:8}
+  .hdr .in{height:64px;gap:16px}
+  .logo .nm{font-size:22px}
+  .logo .tg{display:none}
+  .mobmenu{top:64px}
+  /* compact hero = one screen */
+  .hero .in{padding-top:64px;padding-bottom:58px}
+  .hero h1{font-size:29px;line-height:1.16}
+  .hero .accent{font-size:19px;margin-top:14px}
+  .hero .body{display:none}
+  .kicker{font-size:11px;margin-bottom:18px}
+  .hero .ctas{margin-top:26px;flex-direction:column;align-items:stretch;text-align:center}
+  .hero .trust{font-size:11px;margin-top:26px}
+  /* tighter typography and spacing */
+  .sec{padding-top:56px;padding-bottom:52px}
+  .sec-head{margin-bottom:36px !important}
+  .sec-head h2,.exp h2{font-size:27px}
+  .sec-head p{font-size:16.5px}
+  #regwatch>.wrap{padding-top:56px !important;padding-bottom:52px !important}
+  /* accordions */
+  .paras p:nth-of-type(n+2){display:none}
+  .paras.open p{display:block !important}
+  .morebtn{display:inline-block}
+  .regs .r{cursor:pointer}
+  .regs .r p{display:none}
+  .regs .r.open p{display:block}
+  .stickycta.on{display:block}
 }
 </style>
 </head>
@@ -176,9 +220,18 @@ html[dir="rtl"] .hero .shade{background:linear-gradient(264deg,rgba(9,12,18,0.93
     <div class="right">
       <button class="langbtn" id="langbtn" onclick="toggleLang()">AR</button>
       <a href="#contact" class="cta-dark" data-k="navCta">Discuss your task</a>
+      <button class="burger" aria-label="Menu" onclick="toggleMenu()"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
+
+<div class="mobmenu" id="mobmenu">
+  <a href="#services" data-k="nav.2" onclick="closeMenu()">Services</a>
+  <a href="#threats" data-k="nav.0" onclick="closeMenu()">Threats</a>
+  <a href="#experience" data-k="nav.1" onclick="closeMenu()">Why us</a>
+  <a href="#regwatch" data-k="nav.3" onclick="closeMenu()">Regulatory watch</a>
+  <a href="#contact" data-k="nav.4" onclick="closeMenu()">Contact</a>
+</div>
 
 <div class="ar-note" data-k="arNote"></div>
 
@@ -241,6 +294,7 @@ html[dir="rtl"] .hero .shade{background:linear-gradient(264deg,rgba(9,12,18,0.93
         <p data-k="expParas.1">Led by Evgeny Telenkov — Best Risk Manager of Russia 2020, PhD in industrial risk management. Continuity and risk leadership at Nornickel, Rosneft, beeline, EY; 15+ BCM implementations including the national settlement depository (NSD).</p>
         <p data-k="expParas.2">That field experience is now available to GCC companies — turned into metrics, money and working plans.</p>
       </div>
+      <button class="morebtn" data-k="moreLabel" onclick="toggleMore(this)">Read more</button>
     </div>
     <div class="stats">
       <div class="stat"><span class="v" data-k="stats.0.value">15+</span><span class="l" data-k="stats.0.label">BCM systems built in critical industries</span></div>
@@ -302,19 +356,19 @@ html[dir="rtl"] .hero .shade{background:linear-gradient(264deg,rgba(9,12,18,0.93
       <p data-k="regSub">Continuity is no longer optional in the region. Materials and briefings on what applies to you.</p>
     </div>
     <div class="regs">
-      <div class="r">
+      <div class="r" onclick="this.classList.toggle('open')">
         <span class="rt" data-k="regs.0.rt">UAE · Government &amp; CNI</span>
         <h3 data-k="regs.0.title">NCEMA 7000</h3>
         <p data-k="regs.0.body">The national BCM standard — mandatory for government entities and critical infrastructure. What it requires and how to comply without bureaucracy.</p>
         <button onclick="stub()" data-k="regs.0.link">Read the briefing →</button>
       </div>
-      <div class="r">
+      <div class="r" onclick="this.classList.toggle('open')">
         <span class="rt" data-k="regs.1.rt">UAE · Banking deadline</span>
         <h3 data-k="regs.1.title">CBUAE · Decree-Law 6/2025</h3>
         <p data-k="regs.1.body">Operational resilience requirements for banks and financial institutions — with a compliance deadline around September 2026. The clock is running.</p>
         <button onclick="stub()" data-k="regs.1.link">Check your gap →</button>
       </div>
-      <div class="r">
+      <div class="r" onclick="this.classList.toggle('open')">
         <span class="rt" data-k="regs.2.rt">DIFC / ADGM · Listed companies</span>
         <h3 data-k="regs.2.title">Operational risk rulebooks</h3>
         <p data-k="regs.2.body">DFSA and FSRA rulebooks on operational risk and cyber resilience, plus ESG disclosure for SCA / ADX / DFM listed companies.</p>
@@ -324,7 +378,7 @@ html[dir="rtl"] .hero .shade{background:linear-gradient(264deg,rgba(9,12,18,0.93
   </div>
 </section>
 
-<section class="wrap sec">
+<section id="results" class="wrap sec">
   <div class="sec-head" style="margin-bottom:56px">
     <h2 data-k="resTitle">A result you can measure</h2>
     <p data-k="resSub">No binders on a shelf. Numbers the CFO and the board can act on.</p>
@@ -376,6 +430,8 @@ html[dir="rtl"] .hero .shade{background:linear-gradient(264deg,rgba(9,12,18,0.93
   </div>
 </section>
 
+<a class="stickycta" id="stickycta" href="quiz.html" data-k="stickyCta">Free readiness check · 5 min</a>
+
 <script>
 var T = {
 en: {
@@ -390,6 +446,9 @@ en: {
   heroBody: "When the alarm sounds, it is too late to write the plan. We assess how long your business survives and what a day of downtime costs — and build a continuity system that helps you recover faster and return to normal work.",
   heroCta: "Take the free diagnostic →",
   heroCta2: "Discuss your task",
+  stickyCta: "Free readiness check · 5 min",
+  moreLabel: "Read more",
+  lessLabel: "Show less",
   heroTrust: "ISO 22301 · NCEMA 7000 · CBUAE operational resilience · data stays inside your infrastructure",
   threatsTitle: "Two threats we know better than anyone",
   threatsSub: "Both stop the business, not just the IT department. Both are survivable — if the decisions are made before day X.",
@@ -461,6 +520,9 @@ ar: {
   heroBody: "عندما ينطلق الإنذار يكون الأوان قد فات لكتابة الخطة. نقيس قدرة أعمالكم على الصمود وتكلفة يوم التوقف، ونبني نظام استمرارية يساعدكم على التعافي أسرع والعودة إلى العمل الطبيعي.",
   heroCta: "ابدأوا التشخيص المجاني",
   heroCta2: "ناقشوا مهمتكم",
+  stickyCta: "فحص جاهزية مجاني · 5 دقائق",
+  moreLabel: "اقرأوا المزيد",
+  lessLabel: "إخفاء",
   heroTrust: "ISO 22301 · NCEMA 7000 · المرونة التشغيلية للمصرف المركزي · تبقى البيانات داخل بنيتكم التحتية",
   threatsTitle: "تهديدان نعرفهما أفضل من غيرنا",
   threatsSub: "كلاهما يوقف الأعمال لا قسم تقنية المعلومات فقط. وكلاهما يمكن النجاة منه إذا اتُخذت القرارات قبل اليوم س.",
@@ -552,6 +614,21 @@ function setLang(lang){
 }
 function toggleLang(){ setLang(CUR === 'ar' ? 'en' : 'ar'); }
 function stub(){ alert(T[CUR].stubMsg); }
+function toggleMenu(){ document.body.classList.toggle('menu-open'); }
+function closeMenu(){ document.body.classList.remove('menu-open'); }
+function toggleMore(btn){
+  var p = btn.previousElementSibling;
+  p.classList.toggle('open');
+  btn.textContent = p.classList.contains('open') ? (T[CUR].lessLabel || 'Show less') : (T[CUR].moreLabel || 'Read more');
+}
+window.addEventListener('scroll', function(){
+  var el = document.getElementById('stickycta');
+  var hero = document.getElementById('top');
+  var contact = document.getElementById('contact');
+  if (!el || !hero || !contact) return;
+  var show = window.scrollY > hero.offsetHeight * 0.7 && contact.getBoundingClientRect().top > window.innerHeight;
+  el.classList.toggle('on', show);
+}, {passive:true});
 function sendStub(e){
   e.preventDefault();
   var name=document.getElementById('f-name').value.trim();

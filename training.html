@@ -66,6 +66,18 @@ a{color:#16181F;text-decoration:none}
 .foot a{color:rgba(255,255,255,0.6)}
 .foot a:hover{color:#fff}
 @media(max-width:760px){.hero h1{font-size:32px}.grid{grid-template-columns:1fr}.sec h2{font-size:27px}}
+.stickycta{display:none;position:fixed;left:14px;right:14px;bottom:14px;z-index:70;background:#C4571C;color:#fff !important;text-align:center;font-size:16px;font-weight:600;padding:14px 18px;border-radius:999px;box-shadow:0 10px 28px rgba(13,17,23,0.28)}
+@media(max-width:600px){
+  .wrap{padding-left:20px;padding-right:20px}
+  .logo .nm{font-size:22px}
+  .logo .tg{display:none}
+  .backlink{font-size:13px}
+  .hero .in{padding:40px 0 36px}
+  .hero h1{font-size:26px;line-height:1.18}
+  .sec{padding:46px 0 42px}
+  .sec h2{font-size:23px}
+  .stickycta.on{display:block}
+}
 </style>
 </head>
 <body>
@@ -102,8 +114,10 @@ a{color:#16181F;text-decoration:none}
   <a href="privacy.html" data-ui="privacy">Privacy policy</a>
 </div></footer>
 
+<a class="stickycta" id="stickycta" href="index.html#contact" data-ui="sticky">Request a meeting</a>
+
 <script>
-var C={"en": {"tagline": "Business Continuity &amp; Resilience · GCC", "back": "← All services", "copy": "© 2026 risk-place.org · Business Continuity &amp; Resilience", "privacy": "Privacy policy", "cta": "Discuss your task", "cta2": "Take the free quiz first", "getTitle": "What you get", "howTitle": "How it works", "kicker": "Step 4 · Team · online or on-site", "h1": "BCM training for your team", "sub": "Plans do not survive contact with a crisis — trained people do. Executive and specialist tracks built on real cases: who decides what, in which hour, with which authority. Online or in person at your facility.", "price": "from $3,500", "prn": "per group · certificates included", "get": [["Executive briefing (half a day)", "For the CEO, CFO and board: the three decisions that determine the outcome of a drone or ransomware incident — taken before day X."], ["Specialist track (2 days)", "For risk, HSE, IT and operations teams: ISO 22301 and NCEMA 7000 in practice — BIA, plans, exercises, metrics."], ["First-hours decision drill", "A tabletop exercise on your own scenario: UAV impact → fire → downtime, or full encryption. Roles, authority, communications — rehearsed."], ["Materials that stay", "Checklists, playbook templates and the exercise report — your team keeps working tools, not slides."]], "how": [["Pick the audience", "Board, specialists, or both — we adjust depth and language to the room."], ["Tailor the scenario", "We build the drill on your facility and your realistic worst day — not a generic case study."], ["Deliver", "Online, or in person at your site in the UAE. English now; Arabic materials on request."], ["Debrief", "A short written report: what worked, what broke, and the three fixes to make this quarter."]], "ctaTitle": "One trained team is worth more than a shelf of plans."}, "ar": {"tagline": "استمرارية الأعمال والمرونة · دول الخليج", "back": "→ كل الخدمات", "copy": "© ٢٠٢٦ risk-place.org · استمرارية الأعمال والمرونة", "privacy": "سياسة الخصوصية", "cta": "ناقشوا مهمتكم", "cta2": "جرّبوا الفحص المجاني أولاً", "getTitle": "ما الذي تحصلون عليه", "howTitle": "كيف نعمل", "kicker": "الخطوة ٤ · الفريق · عن بُعد أو حضورياً", "h1": "تدريب فريقكم على استمرارية الأعمال", "sub": "الخطط لا تصمد عند أول أزمة — الأشخاص المدربون يصمدون. مساران تنفيذي وتخصصي مبنيان على حالات حقيقية: من يقرر ماذا، وفي أي ساعة، وبأي صلاحية. عن بُعد أو حضورياً في منشأتكم.", "price": "من ٣٥٠٠$", "prn": "لكل مجموعة · تشمل الشهادات", "get": [["إحاطة تنفيذية (نصف يوم)", "للرئيس التنفيذي والمدير المالي والمجلس: القرارات الثلاثة التي تحسم نتيجة حادث مسيرة أو برمجية فدية — وتُتخذ قبل اليوم س."], ["المسار التخصصي (يومان)", "لفرق المخاطر والسلامة وتقنية المعلومات والعمليات: ISO 22301 وNCEMA 7000 عملياً — تحليل الأثر والخطط والتمارين والمقاييس."], ["تمرين قرارات الساعات الأولى", "تمرين نظري على سيناريوهكم: سقوط مسيرة ← حريق ← توقف، أو تشفير كامل. الأدوار والصلاحيات والاتصالات — بالتدريب."], ["مواد تبقى لديكم", "قوائم فحص وقوالب خطط وتقرير التمرين — يحتفظ فريقكم بأدوات عمل لا بشرائح عرض."]], "how": [["اختيار الجمهور", "المجلس أو المتخصصون أو كلاهما — نضبط العمق واللغة على الحضور."], ["تفصيل السيناريو", "نبني التمرين على منشأتكم وأسوأ يوم واقعي لديكم — لا على حالة عامة."], ["التنفيذ", "عن بُعد أو حضورياً في موقعكم بالإمارات. بالإنجليزية الآن، ومواد عربية عند الطلب."], ["الخلاصة", "تقرير مكتوب قصير: ما نجح وما انكسر وأهم ثلاثة إصلاحات لهذا الربع."]], "ctaTitle": "فريق مدرب واحد يساوي أكثر من رف كامل من الخطط."}};
+var C={"en": {"sticky": "Request a meeting", "tagline": "Business Continuity &amp; Resilience · GCC", "back": "← All services", "copy": "© 2026 risk-place.org · Business Continuity &amp; Resilience", "privacy": "Privacy policy", "cta": "Discuss your task", "cta2": "Take the free quiz first", "getTitle": "What you get", "howTitle": "How it works", "kicker": "Step 4 · Team · online or on-site", "h1": "BCM training for your team", "sub": "Plans do not survive contact with a crisis — trained people do. Executive and specialist tracks built on real cases: who decides what, in which hour, with which authority. Online or in person at your facility.", "price": "from $3,500", "prn": "per group · certificates included", "get": [["Executive briefing (half a day)", "For the CEO, CFO and board: the three decisions that determine the outcome of a drone or ransomware incident — taken before day X."], ["Specialist track (2 days)", "For risk, HSE, IT and operations teams: ISO 22301 and NCEMA 7000 in practice — BIA, plans, exercises, metrics."], ["First-hours decision drill", "A tabletop exercise on your own scenario: UAV impact → fire → downtime, or full encryption. Roles, authority, communications — rehearsed."], ["Materials that stay", "Checklists, playbook templates and the exercise report — your team keeps working tools, not slides."]], "how": [["Pick the audience", "Board, specialists, or both — we adjust depth and language to the room."], ["Tailor the scenario", "We build the drill on your facility and your realistic worst day — not a generic case study."], ["Deliver", "Online, or in person at your site in the UAE. English now; Arabic materials on request."], ["Debrief", "A short written report: what worked, what broke, and the three fixes to make this quarter."]], "ctaTitle": "One trained team is worth more than a shelf of plans."}, "ar": {"sticky": "اطلبوا اجتماعاً", "tagline": "استمرارية الأعمال والمرونة · دول الخليج", "back": "→ كل الخدمات", "copy": "© ٢٠٢٦ risk-place.org · استمرارية الأعمال والمرونة", "privacy": "سياسة الخصوصية", "cta": "ناقشوا مهمتكم", "cta2": "جرّبوا الفحص المجاني أولاً", "getTitle": "ما الذي تحصلون عليه", "howTitle": "كيف نعمل", "kicker": "الخطوة ٤ · الفريق · عن بُعد أو حضورياً", "h1": "تدريب فريقكم على استمرارية الأعمال", "sub": "الخطط لا تصمد عند أول أزمة — الأشخاص المدربون يصمدون. مساران تنفيذي وتخصصي مبنيان على حالات حقيقية: من يقرر ماذا، وفي أي ساعة، وبأي صلاحية. عن بُعد أو حضورياً في منشأتكم.", "price": "من ٣٥٠٠$", "prn": "لكل مجموعة · تشمل الشهادات", "get": [["إحاطة تنفيذية (نصف يوم)", "للرئيس التنفيذي والمدير المالي والمجلس: القرارات الثلاثة التي تحسم نتيجة حادث مسيرة أو برمجية فدية — وتُتخذ قبل اليوم س."], ["المسار التخصصي (يومان)", "لفرق المخاطر والسلامة وتقنية المعلومات والعمليات: ISO 22301 وNCEMA 7000 عملياً — تحليل الأثر والخطط والتمارين والمقاييس."], ["تمرين قرارات الساعات الأولى", "تمرين نظري على سيناريوهكم: سقوط مسيرة ← حريق ← توقف، أو تشفير كامل. الأدوار والصلاحيات والاتصالات — بالتدريب."], ["مواد تبقى لديكم", "قوائم فحص وقوالب خطط وتقرير التمرين — يحتفظ فريقكم بأدوات عمل لا بشرائح عرض."]], "how": [["اختيار الجمهور", "المجلس أو المتخصصون أو كلاهما — نضبط العمق واللغة على الحضور."], ["تفصيل السيناريو", "نبني التمرين على منشأتكم وأسوأ يوم واقعي لديكم — لا على حالة عامة."], ["التنفيذ", "عن بُعد أو حضورياً في موقعكم بالإمارات. بالإنجليزية الآن، ومواد عربية عند الطلب."], ["الخلاصة", "تقرير مكتوب قصير: ما نجح وما انكسر وأهم ثلاثة إصلاحات لهذا الربع."]], "ctaTitle": "فريق مدرب واحد يساوي أكثر من رف كامل من الخطط."}};
 var lang="en";
 function setLang(l){
   lang=l;document.documentElement.lang=l;document.documentElement.dir=(l==="ar")?"rtl":"ltr";
@@ -118,6 +132,14 @@ function setLang(l){
 }
 function toggleLang(){setLang(lang==="ar"?"en":"ar");}
 (function(){var s=null;try{s=localStorage.getItem("rp_org_lang");}catch(e){}setLang(s==="ar"?"ar":"en");})();
+</script>
+<script>
+window.addEventListener('scroll',function(){
+  var el=document.getElementById('stickycta');if(!el)return;
+  var cta=document.querySelector('section.cta');
+  var show=window.scrollY>500&&(!cta||cta.getBoundingClientRect().top>window.innerHeight);
+  el.classList.toggle('on',show);
+},{passive:true});
 </script>
 </body>
 </html>
