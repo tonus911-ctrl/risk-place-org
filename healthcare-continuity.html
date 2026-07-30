@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HNF79F1SSN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HNF79F1SSN');</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Business continuity for healthcare providers: care does not pause for your outage — risk-place.org</title>
+<meta name="description" content="Continuity planning for hospitals and clinics: EMR downtime procedures, utility resilience, ransomware and patient data, supply continuity, regulator expectations in the UAE.">
+<link rel="canonical" href="https://risk-place.org/healthcare-continuity.html">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:title" content="Business continuity for healthcare providers: care does not pause for your outage — risk-place.org">
+<meta property="og:description" content="Continuity planning for hospitals and clinics: EMR downtime procedures, utility resilience, ransomware and patient data, supply continuity, regulator expectations in the UAE.">
+<meta property="og:image" content="https://risk-place.org/hero-dubai.jpg">
+<meta property="og:url" content="https://risk-place.org/healthcare-continuity.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Where should a clinic with limited resources start?", "acceptedAnswer": {"@type": "Answer", "text": "EMR downtime procedures at the point of care, restore-tested backups, and the utility check — generator, fuel, cooling. Those three cover the incidents that actually occur, and all fit within weeks."}}, {"@type": "Question", "name": "How often should downtime procedures be drilled?", "acceptedAnswer": {"@type": "Answer", "text": "At least annually for the full scenario, plus short ward-level refreshers each quarter — new staff join continuously, and the paper path only works if the newest nurse on the shift knows it."}}, {"@type": "Question", "name": "Does ISO 22301 apply to hospitals?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — and it maps well onto accreditation requirements. For UAE providers the pragmatic route is one continuity system designed against clinical risk, documented to satisfy accreditor, regulator and — where applicable — NCEMA logic together."}}]}</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#fff;-webkit-font-smoothing:antialiased;font-family:'Figtree','IBM Plex Sans Arabic',system-ui,sans-serif;color:#16181F;line-height:1.55}
+html[dir="rtl"] body{font-family:'IBM Plex Sans Arabic','Figtree',system-ui,sans-serif}
+a{color:#16181F;text-decoration:none}
+::selection{background:#FBE0CB}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+.hdr{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.94);backdrop-filter:blur(14px);border-bottom:1px solid #EAE7E1}
+.hdr .in{height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;flex-direction:column;gap:1px}
+.logo .nm{font-size:26px;font-weight:600;letter-spacing:-0.02em}
+.logo .nm b{color:#C4571C;font-weight:600}
+.logo .tg{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8A8478}
+.hdr .right{display:flex;align-items:center;gap:12px}
+.langbtn{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.08em;background:none;border:1px solid #DCD8D0;border-radius:999px;padding:7px 15px;cursor:pointer;color:#3D4149}
+.langbtn:hover{border-color:#16181F;color:#16181F}
+.backlink{font-size:14.5px;color:#3D4149}
+.backlink:hover{color:#C4571C}
+.hero{background:#0D1117;color:#fff}
+.hero .in{padding-top:64px;padding-bottom:56px}
+.kicker{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#F0A868;margin:0 0 20px}
+.hero h1{font-size:42px;font-weight:300;line-height:1.14;letter-spacing:-0.025em;margin:0 0 16px;max-width:28ch;text-wrap:pretty}
+.hero .sub{font-size:18px;font-weight:300;color:rgba(255,255,255,0.75);margin:0;max-width:62ch;line-height:1.6}
+.btn{display:inline-block;font-size:16.5px;font-weight:600;background:#C4571C;color:#fff !important;padding:15px 32px;border-radius:999px}
+.btn:hover{background:#A03F12}
+.btn2{display:inline-block;font-size:16px;font-weight:400;color:#fff !important;border:1px solid rgba(255,255,255,0.34);padding:14px 28px;border-radius:999px;margin-inline-start:10px}
+.btn2:hover{border-color:#fff}
+.cta{background:#0D1117;color:#fff}
+.cta .in{padding-top:64px;padding-bottom:64px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:22px}
+.cta h2{font-size:30px;font-weight:300;letter-spacing:-0.02em;margin:0;max-width:30ch;text-wrap:pretty}
+.foot{background:#0D1117;color:rgba(255,255,255,0.46);border-top:1px solid rgba(255,255,255,0.12)}
+.foot .in{padding-top:22px;padding-bottom:22px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13.5px;font-weight:300}
+.foot a{color:rgba(255,255,255,0.6)}
+.foot a:hover{color:#fff}
+.stickycta{display:none;position:fixed;left:14px;right:14px;bottom:14px;z-index:70;background:#C4571C;color:#fff !important;text-align:center;font-size:16px;font-weight:600;padding:14px 18px;border-radius:999px;box-shadow:0 10px 28px rgba(13,17,23,0.28)}
+
+.art{padding:64px 0 20px}
+.art h2{font-size:30px;font-weight:300;line-height:1.18;letter-spacing:-0.02em;margin:52px 0 18px;text-wrap:pretty}
+.art h2:first-child{margin-top:0}
+.art p{font-size:16.5px;font-weight:300;line-height:1.72;color:#3D4149;margin:0 0 16px;max-width:76ch}
+.art ul{margin:0 0 18px;padding-inline-start:22px;max-width:76ch}
+.art li{font-size:16.5px;font-weight:300;line-height:1.66;color:#3D4149;margin-bottom:9px}
+.art li b,.art p b{font-weight:600;color:#16181F}
+.callout{background:#F7F4EF;border:1px solid #EAE7E1;border-inline-start:3px solid #C4571C;border-radius:12px;padding:20px 24px;margin:26px 0;max-width:76ch}
+.callout p{margin:0;font-size:16px}
+.tbl{width:100%;border-collapse:collapse;margin:24px 0 30px;font-size:15.5px}
+.tbl th{text-align:start;font-weight:600;padding:12px 14px;border-bottom:2px solid #16181F;font-size:14.5px}
+.tbl td{padding:12px 14px;border-bottom:1px solid #E1DCD3;font-weight:300;color:#3D4149;vertical-align:top;line-height:1.55}
+.tbl td:first-child{font-weight:500;color:#16181F}
+.faq{margin:10px 0 30px;max-width:76ch}
+.faq details{border-bottom:1px solid #E1DCD3;padding:4px 0}
+.faq summary{font-size:17px;font-weight:600;padding:14px 0;cursor:pointer;list-style-position:outside}
+.faq details p{padding:0 0 16px}
+.cluster{background:#F7F4EF;border-top:1px solid #EAE7E1;border-bottom:1px solid #EAE7E1;padding:56px 0}
+.cluster h2{font-size:26px;font-weight:300;margin:0 0 26px}
+.cluster .links{display:grid;grid-template-columns:1fr 1fr;gap:14px 40px}
+.cluster a{display:block;padding:14px 0;border-bottom:1px solid #E1DCD3;font-size:16px;font-weight:500}
+.cluster a:hover{color:#C4571C}
+.src{font-size:13.5px;color:#8A8478;margin-top:30px;max-width:76ch}
+.src a{color:#8A8478;text-decoration:underline}
+@media(max-width:760px){.art h2{font-size:24px}.cluster .links{grid-template-columns:1fr}.tbl{font-size:14px}.tbl th,.tbl td{padding:9px 8px}}
+
+@media(max-width:760px){.hero h1{font-size:30px}}
+@media(max-width:600px){
+  .wrap{padding-left:20px;padding-right:20px}
+  .logo .nm{font-size:22px}
+  .logo .tg{display:none}
+  .backlink{font-size:13px}
+  .hero .in{padding-top:38px;padding-bottom:34px}
+  .hero h1{font-size:25px;line-height:1.2}
+  .art{padding:40px 0 10px}
+  .stickycta.on{display:block}
+}
+</style>
+</head>
+<body>
+<header class="hdr"><div class="wrap in">
+  <a class="logo" href="index.html"><span class="nm">risk-place<b>.org</b></span><span class="tg" data-ui="tagline">Business Continuity &amp; Resilience · GCC</span></a>
+  <div class="right"><a class="backlink" href="adnoc-supplier-resilience.html" data-ui="back">← Home</a><button class="langbtn" id="langbtn" onclick="toggleLang()">AR</button></div>
+</div></header>
+
+<section class="hero"><div class="wrap in">
+  <p class="kicker" data-ui="kicker">Industry · Healthcare</p>
+  <h1 data-ui="h1">Healthcare continuity: care does not pause for your outage</h1>
+  <p class="sub" data-ui="sub">A hospital's disruption is measured in clinical risk before it is measured in money. That ordering changes the plan — and raises the standard of proof for every arrangement in it.</p>
+</div></section>
+
+<article class="art"><div class="wrap" id="art">
+<h2>What is different when the service is care</h2>
+<p>In healthcare, continuity failures convert directly into clinical risk: a delayed result, an unavailable record, a postponed procedure. The BIA therefore ranks activities not only by revenue but by <b>patient-harm potential over time</b> — and recovery objectives are set by clinical tolerance, not commercial preference. That is a higher bar, and regulators, accreditors and insurers all read against it.</p>
+<h2>The five scenarios that define readiness</h2>
+<table class="tbl"><thead><tr><th>Scenario</th><th>The healthcare-specific stakes</th><th>The test of readiness</th></tr></thead><tbody><tr><td>EMR / HIS downtime</td><td>Orders, results, allergies, medication lists inaccessible</td><td>Downtime forms and read-only mirrors at ward level; staff trained on the paper path</td></tr><tr><td>Ransomware</td><td>An outage plus a patient-data breach in one event</td><td>Segmentation, offline backups tested by restore, a notification path that satisfies UAE data law</td></tr><tr><td>Utility failure</td><td>Power and cooling carry life-support load</td><td>Generator autostart tested under load; fuel contracts with delivery SLAs</td></tr><tr><td>Supply interruption</td><td>Pharmaceuticals, consumables, oxygen, blood products</td><td>Stock policies per criticality class; alternate suppliers pre-qualified</td></tr><tr><td>Area incident / access restriction</td><td>Staff cannot reach the facility; patients keep arriving</td><td>Shift extension protocols, staff accommodation plan, transfer agreements</td></tr></tbody></table>
+<h2>The plan, clinical edition</h2>
+<ul><li><b>Ward-level downtime kits.</b> Paper forms, procedures and contact sheets physically present where care happens — a plan on the intranet is unavailable in precisely the scenario it exists for.</li><li><b>Clinical prioritisation logic.</b> Which services degrade first, which never: decided by clinical governance in advance, so the 2 a.m. decision is an application, not a debate.</li><li><b>Restore-tested backups.</b> For clinical systems the RPO conversation is about safety; a backup proven only by its existence protects no one.</li><li><b>Transfer and diversion agreements.</b> Which patients go where when capacity or capability drops — agreed with receiving facilities before the day.</li><li><b>Communication that keeps trust.</b> Patients, families, staff, regulator, media — pre-drafted, honest, and clinically reviewed.</li></ul>
+<div class="callout"><p>The sector's hardest lesson, repeated globally: hospitals that rehearse EMR downtime treat it as an inconvenience; hospitals that do not, treat it as an emergency. The difference is a few drills a year.</p></div>
+<h2>The UAE regulatory frame</h2>
+<p>Healthcare operators in the Emirates work under health-authority licensing and inspection regimes, with hospital accreditation standards requiring emergency and continuity management — and public healthcare entities and designated critical facilities fall within the NCEMA 7000 perimeter. Patient data protection under UAE law adds a legal clock to any cyber incident. The practical consequence: continuity evidence in healthcare must satisfy clinical, regulatory and data-protection readers at once.</p>
+<h2>Frequently asked questions</h2>
+<div class="faq"><details><summary>Where should a clinic with limited resources start?</summary><p>EMR downtime procedures at the point of care, restore-tested backups, and the utility check — generator, fuel, cooling. Those three cover the incidents that actually occur, and all fit within weeks.</p></details><details><summary>How often should downtime procedures be drilled?</summary><p>At least annually for the full scenario, plus short ward-level refreshers each quarter — new staff join continuously, and the paper path only works if the newest nurse on the shift knows it.</p></details><details><summary>Does ISO 22301 apply to hospitals?</summary><p>Yes — and it maps well onto accreditation requirements. For UAE providers the pragmatic route is one continuity system designed against clinical risk, documented to satisfy accreditor, regulator and — where applicable — NCEMA logic together.</p></details></div>
+</div></article>
+
+<section class="cluster"><div class="wrap">
+  <h2 data-ui="clusterTitle">The supplier and industry hub</h2>
+  <div class="links" id="cluster"><a href="adnoc-supplier-resilience.html">ADNOC supplier qualification: the resilience dimension</a><a href="logistics-ports-continuity.html">Business continuity for logistics and ports</a><a href="manufacturing-continuity-gcc.html">Business continuity for manufacturers in the GCC</a><a href="hospitality-continuity.html">Business continuity for hotels and hospitality</a><a href="ncema-7000-for-suppliers.html">NCEMA 7000 for suppliers and contractors</a><a href="business-continuity-uae.html">Business continuity in the UAE: the complete guide</a></div>
+</div></section>
+
+<section class="cta"><div class="wrap in">
+  <h2 data-ui="ctaTitle">If the EMR went down mid-shift — does every ward know its paper procedure?</h2>
+  <div><a class="btn" href="gap-assessment.html" data-ui="cta">Request a gap assessment</a><a class="btn2" href="quiz.html" data-ui="cta2">Take the free readiness check</a></div>
+</div></section>
+
+<footer class="foot"><div class="wrap in">
+  <span data-ui="copy">© 2026 risk-place.org · Business Continuity &amp; Resilience</span>
+  <a href="privacy.html" data-ui="privacy">Privacy policy</a>
+</div></footer>
+
+<a class="stickycta" id="stickycta" href="gap-assessment.html" data-ui="sticky">NCEMA-ready gap assessment</a>
+
+<script>
+var C={"en": {"tagline": "Business Continuity &amp; Resilience · GCC", "back": "← NCEMA 7000 hub", "copy": "© 2026 risk-place.org · Business Continuity &amp; Resilience", "privacy": "Privacy policy", "sticky": "NCEMA-ready gap assessment", "cta": "Request a gap assessment", "cta2": "Take the free readiness check", "kicker": "Industry · Healthcare", "h1": "Healthcare continuity: care does not pause for your outage", "sub": "A hospital's disruption is measured in clinical risk before it is measured in money. That ordering changes the plan — and raises the standard of proof for every arrangement in it.", "clusterTitle": "The supplier and industry hub", "ctaTitle": "If the EMR went down mid-shift — does every ward know its paper procedure?", "sections": [["h2", "What is different when the service is care"], ["p", "In healthcare, continuity failures convert directly into clinical risk: a delayed result, an unavailable record, a postponed procedure. The BIA therefore ranks activities not only by revenue but by <b>patient-harm potential over time</b> — and recovery objectives are set by clinical tolerance, not commercial preference. That is a higher bar, and regulators, accreditors and insurers all read against it."], ["h2", "The five scenarios that define readiness"], ["table", ["Scenario", "The healthcare-specific stakes", "The test of readiness"], [["EMR / HIS downtime", "Orders, results, allergies, medication lists inaccessible", "Downtime forms and read-only mirrors at ward level; staff trained on the paper path"], ["Ransomware", "An outage plus a patient-data breach in one event", "Segmentation, offline backups tested by restore, a notification path that satisfies UAE data law"], ["Utility failure", "Power and cooling carry life-support load", "Generator autostart tested under load; fuel contracts with delivery SLAs"], ["Supply interruption", "Pharmaceuticals, consumables, oxygen, blood products", "Stock policies per criticality class; alternate suppliers pre-qualified"], ["Area incident / access restriction", "Staff cannot reach the facility; patients keep arriving", "Shift extension protocols, staff accommodation plan, transfer agreements"]]], ["h2", "The plan, clinical edition"], ["ul", ["<b>Ward-level downtime kits.</b> Paper forms, procedures and contact sheets physically present where care happens — a plan on the intranet is unavailable in precisely the scenario it exists for.", "<b>Clinical prioritisation logic.</b> Which services degrade first, which never: decided by clinical governance in advance, so the 2 a.m. decision is an application, not a debate.", "<b>Restore-tested backups.</b> For clinical systems the RPO conversation is about safety; a backup proven only by its existence protects no one.", "<b>Transfer and diversion agreements.</b> Which patients go where when capacity or capability drops — agreed with receiving facilities before the day.", "<b>Communication that keeps trust.</b> Patients, families, staff, regulator, media — pre-drafted, honest, and clinically reviewed."]], ["callout", "The sector's hardest lesson, repeated globally: hospitals that rehearse EMR downtime treat it as an inconvenience; hospitals that do not, treat it as an emergency. The difference is a few drills a year."], ["h2", "The UAE regulatory frame"], ["p", "Healthcare operators in the Emirates work under health-authority licensing and inspection regimes, with hospital accreditation standards requiring emergency and continuity management — and public healthcare entities and designated critical facilities fall within the NCEMA 7000 perimeter. Patient data protection under UAE law adds a legal clock to any cyber incident. The practical consequence: continuity evidence in healthcare must satisfy clinical, regulatory and data-protection readers at once."], ["h2", "Frequently asked questions"], ["faq", [["Where should a clinic with limited resources start?", "EMR downtime procedures at the point of care, restore-tested backups, and the utility check — generator, fuel, cooling. Those three cover the incidents that actually occur, and all fit within weeks."], ["How often should downtime procedures be drilled?", "At least annually for the full scenario, plus short ward-level refreshers each quarter — new staff join continuously, and the paper path only works if the newest nurse on the shift knows it."], ["Does ISO 22301 apply to hospitals?", "Yes — and it maps well onto accreditation requirements. For UAE providers the pragmatic route is one continuity system designed against clinical risk, documented to satisfy accreditor, regulator and — where applicable — NCEMA logic together."]]]], "cluster": [["adnoc-supplier-resilience.html", "ADNOC supplier qualification: the resilience dimension"], ["logistics-ports-continuity.html", "Business continuity for logistics and ports"], ["manufacturing-continuity-gcc.html", "Business continuity for manufacturers in the GCC"], ["hospitality-continuity.html", "Business continuity for hotels and hospitality"], ["ncema-7000-for-suppliers.html", "NCEMA 7000 for suppliers and contractors"], ["business-continuity-uae.html", "Business continuity in the UAE: the complete guide"]]}, "ar": {"tagline": "استمرارية الأعمال والمرونة · دول الخليج", "back": "→ دليل NCEMA 7000", "copy": "© ٢٠٢٦ risk-place.org · استمرارية الأعمال والمرونة", "privacy": "سياسة الخصوصية", "sticky": "تقييم فجوات الجاهزية لـ NCEMA", "cta": "اطلبوا تقييم الفجوات", "cta2": "جرّبوا فحص الجاهزية المجاني", "kicker": "قطاع · الرعاية الصحية", "h1": "استمرارية الرعاية الصحية: العلاج لا يتوقف لانقطاعكم", "sub": "اضطراب المستشفى يُقاس بالخطر السريري قبل أن يُقاس بالمال. هذا الترتيب يغير الخطة — ويرفع سقف الإثبات لكل ترتيب فيها.", "clusterTitle": "مركز الموردين والقطاعات", "ctaTitle": "لو تعطل السجل الطبي منتصف الوردية — هل يعرف كل جناح إجراءه الورقي؟", "sections": [["h2", "ما المختلف حين تكون الخدمة رعاية"], ["p", "في الرعاية الصحية تتحول إخفاقات الاستمرارية مباشرة إلى خطر سريري: نتيجة متأخرة وسجل غير متاح وإجراء مؤجل. لذا يرتب تحليل الأثر الأنشطة ليس بالإيراد فحسب بل بـ<b>احتمال ضرر المريض عبر الزمن</b> — وتوضع أهداف التعافي بالتحمل السريري لا بالتفضيل التجاري. سقف أعلى، والمنظمون وجهات الاعتماد وشركات التأمين يقرأون جميعاً مقابله."], ["h2", "السيناريوهات الخمسة التي تحدد الجاهزية"], ["table", ["السيناريو", "الرهان الصحي الخاص", "اختبار الجاهزية"], [["تعطل السجل الطبي الإلكتروني", "الطلبات والنتائج والحساسيات وقوائم الأدوية غير متاحة", "نماذج التعطل ومرايا للقراءة فقط على مستوى الجناح؛ وطاقم مدرب على المسار الورقي"], ["برمجية فدية", "انقطاع واختراق بيانات مرضى في حدث واحد", "تقسيم شبكي ونسخ دون اتصال مختبرة بالاستعادة ومسار إخطار يلبي قانون البيانات الإماراتي"], ["فشل مرافق", "الكهرباء والتبريد يحملان أجهزة دعم الحياة", "تشغيل تلقائي للمولد مختبر تحت الحمل؛ وعقود وقود باتفاقيات تسليم"], ["انقطاع إمداد", "أدوية ومستهلكات وأكسجين ومشتقات دم", "سياسات مخزون بفئة الحرج؛ وموردون بدلاء مؤهلون مسبقاً"], ["حادث منطقة / تقييد وصول", "الطاقم لا يصل المنشأة؛ والمرضى يواصلون الوصول", "بروتوكولات تمديد ورديات وخطة إسكان طاقم واتفاقيات تحويل"]]], ["h2", "الخطة بالنسخة السريرية"], ["ul", ["<b>حقائب تعطل على مستوى الجناح.</b> نماذج ورقية وإجراءات وقوائم اتصال حاضرة مادياً حيث تحدث الرعاية — الخطة على الشبكة الداخلية غير متاحة في السيناريو الذي وُجدت له تحديداً.", "<b>منطق أولويات سريري.</b> أي الخدمات تتدهور أولاً وأيها أبداً: تقرره الحوكمة السريرية سلفاً، فيصبح قرار الثانية فجراً تطبيقاً لا نقاشاً.", "<b>نسخ مختبرة بالاستعادة.</b> للأنظمة السريرية حديث RPO حديث سلامة؛ والنسخة المثبتة بوجودها فقط لا تحمي أحداً.", "<b>اتفاقيات تحويل وتوجيه.</b> أي المرضى يذهبون إلى أين حين تنخفض السعة أو القدرة — متفق عليها مع المنشآت المستقبلة قبل اليوم.", "<b>تواصل يحفظ الثقة.</b> المرضى والأهالي والطاقم والمنظم والإعلام — مسودات جاهزة وصادقة ومراجعة سريرياً."]], ["callout", "أقسى دروس القطاع، المتكرر عالمياً: المستشفيات التي تتدرب على تعطل السجل الإلكتروني تعامله كإزعاج؛ والتي لا تتدرب تعامله كطارئ. الفرق بضعة تدريبات في السنة."], ["h2", "الإطار التنظيمي الإماراتي"], ["p", "يعمل مشغلو الرعاية الصحية في الإمارات تحت أنظمة ترخيص وتفتيش الهيئات الصحية، ومعايير اعتماد المستشفيات تتطلب إدارة طوارئ واستمرارية — وتقع جهات الرعاية العامة والمنشآت الحيوية المصنفة داخل محيط NCEMA 7000. وحماية بيانات المرضى بموجب القانون الإماراتي تضيف ساعة قانونية لأي حادث سيبراني. النتيجة العملية: أدلة الاستمرارية في الصحة يجب أن تُرضي القارئ السريري والتنظيمي وقارئ حماية البيانات معاً."], ["h2", "أسئلة شائعة"], ["faq", [["من أين تبدأ عيادة محدودة الموارد؟", "إجراءات تعطل السجل عند نقطة الرعاية، ونسخ مختبرة بالاستعادة، وفحص المرافق — المولد والوقود والتبريد. الثلاثة تغطي الحوادث التي تقع فعلاً، وكلها تتم في أسابيع."], ["كم مرة يُتدرب على إجراءات التعطل؟", "سنوياً على الأقل للسيناريو الكامل، مع تنشيط قصير على مستوى الجناح كل ربع — الطاقم الجديد ينضم باستمرار، والمسار الورقي لا يعمل إلا إذا عرفته أحدث ممرضة في الوردية."], ["هل يسري ISO 22301 على المستشفيات؟", "نعم — ويتطابق جيداً مع متطلبات الاعتماد. لمزودي الإمارات المسار العملي نظام استمرارية واحد مصمم مقابل الخطر السريري وموثق ليلبي جهة الاعتماد والمنظم — وحيث ينطبق — منطق NCEMA معاً."]]]], "cluster": [["adnoc-supplier-resilience.html", "تأهيل موردي أدنوك: بُعد المرونة"], ["logistics-ports-continuity.html", "استمرارية الأعمال للوجستيات والموانئ"], ["manufacturing-continuity-gcc.html", "استمرارية الأعمال للمصنعين في الخليج"], ["hospitality-continuity.html", "استمرارية الأعمال للفنادق والضيافة"], ["ncema-7000-for-suppliers.html", "NCEMA 7000 للموردين والمقاولين"], ["business-continuity-uae.html", "استمرارية الأعمال في الإمارات: الدليل الكامل"]]}};
+var lang="en";
+function renderSections(secs){
+  var out=[];
+  secs.forEach(function(s){
+    if(s[0]==="h2")out.push("<h2>"+s[1]+"</h2>");
+    else if(s[0]==="p")out.push("<p>"+s[1]+"</p>");
+    else if(s[0]==="ul")out.push("<ul>"+s[1].map(function(x){return "<li>"+x+"</li>";}).join("")+"</ul>");
+    else if(s[0]==="callout")out.push('<div class="callout"><p>'+s[1]+"</p></div>");
+    else if(s[0]==="table"){
+      out.push('<table class="tbl"><thead><tr>'+s[1].map(function(c){return "<th>"+c+"</th>";}).join("")+"</tr></thead><tbody>"+
+        s[2].map(function(r){return "<tr>"+r.map(function(c){return "<td>"+c+"</td>";}).join("")+"</tr>";}).join("")+"</tbody></table>");
+    } else if(s[0]==="faq"){
+      out.push('<div class="faq">'+s[1].map(function(x){return "<details><summary>"+x[0]+"</summary><p>"+x[1]+"</p></details>";}).join("")+"</div>");
+    }
+  });
+  return out.join("\n");
+}
+function setLang(l){
+  lang=l;document.documentElement.lang=l;document.documentElement.dir=(l==="ar")?"rtl":"ltr";
+  var d=C[l];
+  document.querySelectorAll("[data-ui]").forEach(function(el){var k=el.getAttribute("data-ui");if(typeof d[k]==="string")el.innerHTML=d[k];});
+  document.getElementById("art").innerHTML=renderSections(d.sections);
+  document.getElementById("cluster").innerHTML=d.cluster.map(function(x){return '<a href="'+x[0]+'">'+x[1]+"</a>";}).join("");
+  document.getElementById("langbtn").textContent=(l==="ar")?"EN":"AR";
+  try{localStorage.setItem("rp_org_lang",l);}catch(e){}
+}
+function toggleLang(){setLang(lang==="ar"?"en":"ar");}
+(function(){var s=null;try{s=localStorage.getItem("rp_org_lang");}catch(e){}if(s==="ar")setLang("ar");})();
+window.addEventListener('scroll',function(){
+  var el=document.getElementById('stickycta');if(!el)return;
+  var cta=document.querySelector('section.cta');
+  var show=window.scrollY>600&&(!cta||cta.getBoundingClientRect().top>window.innerHeight);
+  el.classList.toggle('on',show);
+},{passive:true});
+</script>
+</body>
+</html>

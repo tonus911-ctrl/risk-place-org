@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HNF79F1SSN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HNF79F1SSN');</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drone incident readiness for facilities: a business-interruption guide, not an air-defence one — risk-place.org</title>
+<meta name="description" content="How businesses prepare for drone incidents: the loss chain (impact, fire, downtime), passive facility protection, 72-hour recovery planning, insurance evidence. No military framing — operational discipline.">
+<link rel="canonical" href="https://risk-place.org/drone-incident-readiness.html">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:title" content="Drone incident readiness for facilities: a business-interruption guide, not an air-defence one — risk-place.org">
+<meta property="og:description" content="How businesses prepare for drone incidents: the loss chain (impact, fire, downtime), passive facility protection, 72-hour recovery planning, insurance evidence. No military framing — operational discipline.">
+<meta property="og:image" content="https://risk-place.org/hero-dubai.jpg">
+<meta property="og:url" content="https://risk-place.org/drone-incident-readiness.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is preparing for drone incidents alarmist?", "acceptedAnswer": {"@type": "Answer", "text": "The opposite: it is the same discipline as preparing for any area incident — fire, closure, recovery. Companies that fold the scenario into standard continuity planning treat it with less drama, not more."}}, {"@type": "Question", "name": "We are not near any obvious target. Does this apply to us?", "acceptedAnswer": {"@type": "Answer", "text": "Closure zones and airspace restrictions do not follow target maps — regional experience shows ordinary facilities losing days to incidents that never touched them. The «intact but inaccessible» scenario applies to almost everyone."}}, {"@type": "Question", "name": "What is the single cheapest high-value step?", "acceptedAnswer": {"@type": "Answer", "text": "Written first-hours authority: who stops production, who evacuates, who talks to whom — decided before the day. It costs a workshop and changes the outcome more than any hardware."}}, {"@type": "Question", "name": "Do passive measures like mesh screens actually help?", "acceptedAnswer": {"@type": "Answer", "text": "Against the loss chain, yes: their function is not to stop what flies but to keep an ignition source away from what burns. That is classic fire protection — proportionate, insurable, and quiet."}}]}</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#fff;-webkit-font-smoothing:antialiased;font-family:'Figtree','IBM Plex Sans Arabic',system-ui,sans-serif;color:#16181F;line-height:1.55}
+html[dir="rtl"] body{font-family:'IBM Plex Sans Arabic','Figtree',system-ui,sans-serif}
+a{color:#16181F;text-decoration:none}
+::selection{background:#FBE0CB}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+.hdr{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.94);backdrop-filter:blur(14px);border-bottom:1px solid #EAE7E1}
+.hdr .in{height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;flex-direction:column;gap:1px}
+.logo .nm{font-size:26px;font-weight:600;letter-spacing:-0.02em}
+.logo .nm b{color:#C4571C;font-weight:600}
+.logo .tg{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8A8478}
+.hdr .right{display:flex;align-items:center;gap:12px}
+.langbtn{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.08em;background:none;border:1px solid #DCD8D0;border-radius:999px;padding:7px 15px;cursor:pointer;color:#3D4149}
+.langbtn:hover{border-color:#16181F;color:#16181F}
+.backlink{font-size:14.5px;color:#3D4149}
+.backlink:hover{color:#C4571C}
+.hero{background:#0D1117;color:#fff}
+.hero .in{padding-top:64px;padding-bottom:56px}
+.kicker{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#F0A868;margin:0 0 20px}
+.hero h1{font-size:42px;font-weight:300;line-height:1.14;letter-spacing:-0.025em;margin:0 0 16px;max-width:28ch;text-wrap:pretty}
+.hero .sub{font-size:18px;font-weight:300;color:rgba(255,255,255,0.75);margin:0;max-width:62ch;line-height:1.6}
+.btn{display:inline-block;font-size:16.5px;font-weight:600;background:#C4571C;color:#fff !important;padding:15px 32px;border-radius:999px}
+.btn:hover{background:#A03F12}
+.btn2{display:inline-block;font-size:16px;font-weight:400;color:#fff !important;border:1px solid rgba(255,255,255,0.34);padding:14px 28px;border-radius:999px;margin-inline-start:10px}
+.btn2:hover{border-color:#fff}
+.cta{background:#0D1117;color:#fff}
+.cta .in{padding-top:64px;padding-bottom:64px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:22px}
+.cta h2{font-size:30px;font-weight:300;letter-spacing:-0.02em;margin:0;max-width:30ch;text-wrap:pretty}
+.foot{background:#0D1117;color:rgba(255,255,255,0.46);border-top:1px solid rgba(255,255,255,0.12)}
+.foot .in{padding-top:22px;padding-bottom:22px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13.5px;font-weight:300}
+.foot a{color:rgba(255,255,255,0.6)}
+.foot a:hover{color:#fff}
+.stickycta{display:none;position:fixed;left:14px;right:14px;bottom:14px;z-index:70;background:#C4571C;color:#fff !important;text-align:center;font-size:16px;font-weight:600;padding:14px 18px;border-radius:999px;box-shadow:0 10px 28px rgba(13,17,23,0.28)}
+
+.art{padding:64px 0 20px}
+.art h2{font-size:30px;font-weight:300;line-height:1.18;letter-spacing:-0.02em;margin:52px 0 18px;text-wrap:pretty}
+.art h2:first-child{margin-top:0}
+.art p{font-size:16.5px;font-weight:300;line-height:1.72;color:#3D4149;margin:0 0 16px;max-width:76ch}
+.art ul{margin:0 0 18px;padding-inline-start:22px;max-width:76ch}
+.art li{font-size:16.5px;font-weight:300;line-height:1.66;color:#3D4149;margin-bottom:9px}
+.art li b,.art p b{font-weight:600;color:#16181F}
+.callout{background:#F7F4EF;border:1px solid #EAE7E1;border-inline-start:3px solid #C4571C;border-radius:12px;padding:20px 24px;margin:26px 0;max-width:76ch}
+.callout p{margin:0;font-size:16px}
+.tbl{width:100%;border-collapse:collapse;margin:24px 0 30px;font-size:15.5px}
+.tbl th{text-align:start;font-weight:600;padding:12px 14px;border-bottom:2px solid #16181F;font-size:14.5px}
+.tbl td{padding:12px 14px;border-bottom:1px solid #E1DCD3;font-weight:300;color:#3D4149;vertical-align:top;line-height:1.55}
+.tbl td:first-child{font-weight:500;color:#16181F}
+.faq{margin:10px 0 30px;max-width:76ch}
+.faq details{border-bottom:1px solid #E1DCD3;padding:4px 0}
+.faq summary{font-size:17px;font-weight:600;padding:14px 0;cursor:pointer;list-style-position:outside}
+.faq details p{padding:0 0 16px}
+.cluster{background:#F7F4EF;border-top:1px solid #EAE7E1;border-bottom:1px solid #EAE7E1;padding:56px 0}
+.cluster h2{font-size:26px;font-weight:300;margin:0 0 26px}
+.cluster .links{display:grid;grid-template-columns:1fr 1fr;gap:14px 40px}
+.cluster a{display:block;padding:14px 0;border-bottom:1px solid #E1DCD3;font-size:16px;font-weight:500}
+.cluster a:hover{color:#C4571C}
+.src{font-size:13.5px;color:#8A8478;margin-top:30px;max-width:76ch}
+.src a{color:#8A8478;text-decoration:underline}
+@media(max-width:760px){.art h2{font-size:24px}.cluster .links{grid-template-columns:1fr}.tbl{font-size:14px}.tbl th,.tbl td{padding:9px 8px}}
+
+@media(max-width:760px){.hero h1{font-size:30px}}
+@media(max-width:600px){
+  .wrap{padding-left:20px;padding-right:20px}
+  .logo .nm{font-size:22px}
+  .logo .tg{display:none}
+  .backlink{font-size:13px}
+  .hero .in{padding-top:38px;padding-bottom:34px}
+  .hero h1{font-size:25px;line-height:1.2}
+  .art{padding:40px 0 10px}
+  .stickycta.on{display:block}
+}
+</style>
+</head>
+<body>
+<header class="hdr"><div class="wrap in">
+  <a class="logo" href="index.html"><span class="nm">risk-place<b>.org</b></span><span class="tg" data-ui="tagline">Business Continuity &amp; Resilience · GCC</span></a>
+  <div class="right"><a class="backlink" href="index.html#threats" data-ui="back">← Home</a><button class="langbtn" id="langbtn" onclick="toggleLang()">AR</button></div>
+</div></header>
+
+<section class="hero"><div class="wrap in">
+  <p class="kicker" data-ui="kicker">Signature scenario · Drone incident</p>
+  <h1 data-ui="h1">Drone incident readiness: a business problem with a business answer</h1>
+  <p class="sub" data-ui="sub">For an operating company, a drone incident is not an air-defence question. It is a business-interruption event with a known anatomy — and a fixed facility is the easiest asset class to protect. The practical guide.</p>
+</div></section>
+
+<article class="art"><div class="wrap" id="art">
+<h2>Reframing the problem</h2>
+<p>The public debate about drones is about interception. The business reality is simpler and more tractable: whatever happens in the air, what reaches your company is <b>an ignition source and an access restriction</b>. The loss chain is impact, then fire, then downtime — and two of those three links are risks industry has managed for a century. The airspace layer belongs to the state. The fire and continuity layers belong to you, and they are where the losses are decided.</p>
+<p>For several months, airspace incidents have been part of normal operating life across the wider region: diverted flights, paused ports, facilities standing idle for hours with zero physical damage. Treating the scenario as exotic no longer reflects the operating environment — and readiness for it is now a differentiator in tenders, insurance conversations and board discussions.</p>
+<h2>The four questions that define your exposure</h2>
+<ul><li><b>What burns, and what is next to it?</b> Fuel storage, solvents, packaging, dust — mapped against isolation distances and compartments.</li><li><b>What does one closed day cost?</b> Per facility, in money — the number that prices every protective measure.</li><li><b>Can you operate with the facility inaccessible for 72 hours?</b> Orders, shipping, client communication — the «intact but closed zone» scenario.</li><li><b>Will your insurer pay?</b> Business-interruption wording for external-impact fire, and the evidence discipline a claim requires.</li></ul>
+<h2>The readiness stack, from cheap to capital</h2>
+<table class="tbl"><thead><tr><th>Layer</th><th>Measures</th><th>Cost profile</th></tr></thead><tbody><tr><td>Organisational</td><td>First-hours authority in writing, evacuation and shutdown playbooks, a tested 72-hour continuity plan</td><td>Days of work; mostly internal time</td></tr><tr><td>Passive physical</td><td>Mesh screens over open fuel and critical storage, compartmentation, isolation distances, roof and skylight review</td><td>Engineering budget; one-off</td></tr><tr><td>Detection and response</td><td>Early notification arrangements, shelter and muster procedures, fire suppression rated for intense fuel fires</td><td>Moderate; often upgrades of existing systems</td></tr><tr><td>Financial</td><td>BI insurance wording review, deductible and waiting-period alignment with your real recovery time, evidence protocol</td><td>Advisory time; changes at renewal</td></tr></tbody></table>
+<div class="callout"><p>The paradox that should encourage executives: unlike a ship or an aircraft, a fixed facility can be hardened passively — compartments, distances, screens. The scenario feels new; the protective toolbox is a century old.</p></div>
+<h2>What we test in the readiness check</h2>
+<p>Our free 13-question check runs the drone track against exactly this stack: detection and notification, first-hours authority, evacuation and shutdown, fire physics around your storage, the 72-hour continuity question, insurance evidence. Five minutes, result on screen with your three biggest gaps — no email asked.</p>
+<h2>Frequently asked questions</h2>
+<div class="faq"><details><summary>Is preparing for drone incidents alarmist?</summary><p>The opposite: it is the same discipline as preparing for any area incident — fire, closure, recovery. Companies that fold the scenario into standard continuity planning treat it with less drama, not more.</p></details><details><summary>We are not near any obvious target. Does this apply to us?</summary><p>Closure zones and airspace restrictions do not follow target maps — regional experience shows ordinary facilities losing days to incidents that never touched them. The «intact but inaccessible» scenario applies to almost everyone.</p></details><details><summary>What is the single cheapest high-value step?</summary><p>Written first-hours authority: who stops production, who evacuates, who talks to whom — decided before the day. It costs a workshop and changes the outcome more than any hardware.</p></details><details><summary>Do passive measures like mesh screens actually help?</summary><p>Against the loss chain, yes: their function is not to stop what flies but to keep an ignition source away from what burns. That is classic fire protection — proportionate, insurable, and quiet.</p></details></div>
+</div></article>
+
+<section class="cluster"><div class="wrap">
+  <h2 data-ui="clusterTitle">The signature scenarios hub</h2>
+  <div class="links" id="cluster"><a href="drone-fire-downtime.html">Impact, fire, downtime: the real loss chain of a drone incident</a><a href="business-interruption-insurance-evidence.html">Business interruption insurance: the evidence that gets claims paid</a><a href="ransomware-first-hours.html">Ransomware: the first hours decide the losses</a><a href="ransomware-pay-or-recover.html">Pay or recover? The ransomware decision, examined</a><a href="business-continuity-uae.html">Business continuity in the UAE: the complete guide</a><a href="manufacturing-continuity-gcc.html">Business continuity for manufacturers in the GCC</a></div>
+</div></section>
+
+<section class="cta"><div class="wrap in">
+  <h2 data-ui="ctaTitle">Thirteen questions show whether your facility survives this scenario.</h2>
+  <div><a class="btn" href="quiz.html" data-ui="cta">Request a gap assessment</a><a class="btn2" href="gap-assessment.html" data-ui="cta2">Take the free readiness check</a></div>
+</div></section>
+
+<footer class="foot"><div class="wrap in">
+  <span data-ui="copy">© 2026 risk-place.org · Business Continuity &amp; Resilience</span>
+  <a href="privacy.html" data-ui="privacy">Privacy policy</a>
+</div></footer>
+
+<a class="stickycta" id="stickycta" href="quiz.html" data-ui="sticky">NCEMA-ready gap assessment</a>
+
+<script>
+var C={"en": {"tagline": "Business Continuity &amp; Resilience · GCC", "back": "← NCEMA 7000 hub", "copy": "© 2026 risk-place.org · Business Continuity &amp; Resilience", "privacy": "Privacy policy", "sticky": "Free readiness check · 5 min", "cta": "Take the free readiness check (5 min)", "cta2": "Request a gap assessment", "kicker": "Signature scenario · Drone incident", "h1": "Drone incident readiness: a business problem with a business answer", "sub": "For an operating company, a drone incident is not an air-defence question. It is a business-interruption event with a known anatomy — and a fixed facility is the easiest asset class to protect. The practical guide.", "clusterTitle": "The signature scenarios hub", "ctaTitle": "Thirteen questions show whether your facility survives this scenario.", "sections": [["h2", "Reframing the problem"], ["p", "The public debate about drones is about interception. The business reality is simpler and more tractable: whatever happens in the air, what reaches your company is <b>an ignition source and an access restriction</b>. The loss chain is impact, then fire, then downtime — and two of those three links are risks industry has managed for a century. The airspace layer belongs to the state. The fire and continuity layers belong to you, and they are where the losses are decided."], ["p", "For several months, airspace incidents have been part of normal operating life across the wider region: diverted flights, paused ports, facilities standing idle for hours with zero physical damage. Treating the scenario as exotic no longer reflects the operating environment — and readiness for it is now a differentiator in tenders, insurance conversations and board discussions."], ["h2", "The four questions that define your exposure"], ["ul", ["<b>What burns, and what is next to it?</b> Fuel storage, solvents, packaging, dust — mapped against isolation distances and compartments.", "<b>What does one closed day cost?</b> Per facility, in money — the number that prices every protective measure.", "<b>Can you operate with the facility inaccessible for 72 hours?</b> Orders, shipping, client communication — the «intact but closed zone» scenario.", "<b>Will your insurer pay?</b> Business-interruption wording for external-impact fire, and the evidence discipline a claim requires."]], ["h2", "The readiness stack, from cheap to capital"], ["table", ["Layer", "Measures", "Cost profile"], [["Organisational", "First-hours authority in writing, evacuation and shutdown playbooks, a tested 72-hour continuity plan", "Days of work; mostly internal time"], ["Passive physical", "Mesh screens over open fuel and critical storage, compartmentation, isolation distances, roof and skylight review", "Engineering budget; one-off"], ["Detection and response", "Early notification arrangements, shelter and muster procedures, fire suppression rated for intense fuel fires", "Moderate; often upgrades of existing systems"], ["Financial", "BI insurance wording review, deductible and waiting-period alignment with your real recovery time, evidence protocol", "Advisory time; changes at renewal"]]], ["callout", "The paradox that should encourage executives: unlike a ship or an aircraft, a fixed facility can be hardened passively — compartments, distances, screens. The scenario feels new; the protective toolbox is a century old."], ["h2", "What we test in the readiness check"], ["p", "Our free 13-question check runs the drone track against exactly this stack: detection and notification, first-hours authority, evacuation and shutdown, fire physics around your storage, the 72-hour continuity question, insurance evidence. Five minutes, result on screen with your three biggest gaps — no email asked."], ["h2", "Frequently asked questions"], ["faq", [["Is preparing for drone incidents alarmist?", "The opposite: it is the same discipline as preparing for any area incident — fire, closure, recovery. Companies that fold the scenario into standard continuity planning treat it with less drama, not more."], ["We are not near any obvious target. Does this apply to us?", "Closure zones and airspace restrictions do not follow target maps — regional experience shows ordinary facilities losing days to incidents that never touched them. The «intact but inaccessible» scenario applies to almost everyone."], ["What is the single cheapest high-value step?", "Written first-hours authority: who stops production, who evacuates, who talks to whom — decided before the day. It costs a workshop and changes the outcome more than any hardware."], ["Do passive measures like mesh screens actually help?", "Against the loss chain, yes: their function is not to stop what flies but to keep an ignition source away from what burns. That is classic fire protection — proportionate, insurable, and quiet."]]]], "cluster": [["drone-fire-downtime.html", "Impact, fire, downtime: the real loss chain of a drone incident"], ["business-interruption-insurance-evidence.html", "Business interruption insurance: the evidence that gets claims paid"], ["ransomware-first-hours.html", "Ransomware: the first hours decide the losses"], ["ransomware-pay-or-recover.html", "Pay or recover? The ransomware decision, examined"], ["business-continuity-uae.html", "Business continuity in the UAE: the complete guide"], ["manufacturing-continuity-gcc.html", "Business continuity for manufacturers in the GCC"]]}, "ar": {"tagline": "استمرارية الأعمال والمرونة · دول الخليج", "back": "→ دليل NCEMA 7000", "copy": "© ٢٠٢٦ risk-place.org · استمرارية الأعمال والمرونة", "privacy": "سياسة الخصوصية", "sticky": "فحص جاهزية مجاني · 5 دقائق", "cta": "جرّبوا فحص الجاهزية المجاني (5 دقائق)", "cta2": "اطلبوا تقييم الفجوات", "kicker": "سيناريو مميز · حادث مسيرة", "h1": "جاهزية حوادث المسيرات: مشكلة أعمال ولها جواب أعمال", "sub": "لشركة عاملة، حادث الطائرة المسيرة ليس سؤال دفاع جوي. إنه حدث انقطاع أعمال بتشريح معروف — والمنشأة الثابتة أسهل فئات الأصول حماية. الدليل العملي.", "clusterTitle": "مركز السيناريوهات المميزة", "ctaTitle": "ثلاثة عشر سؤالاً تُظهر هل تنجو منشأتكم من هذا السيناريو.", "sections": [["h2", "إعادة تأطير المشكلة"], ["p", "النقاش العام عن المسيرات نقاش اعتراض. أما واقع الأعمال فأبسط وأكثر قابلية للإدارة: مهما حدث في الجو، ما يصل شركتكم هو <b>مصدر اشتعال وقيد وصول</b>. سلسلة الخسارة: ارتطام فحريق فتوقف — واثنان من الحلقات الثلاث خطران أدارتهما الصناعة قرناً كاملاً. طبقة المجال الجوي للدولة. وطبقتا الحريق والاستمرارية لكم، وفيهما تتقرر الخسائر."], ["p", "منذ أشهر أصبحت حوادث المجال الجوي جزءاً من حياة التشغيل الطبيعية في المنطقة الأوسع: رحلات محولة وموانئ متوقفة ومنشآت واقفة ساعات دون أي ضرر مادي. اعتبار السيناريو غريباً لم يعد يعكس بيئة التشغيل — والجاهزية له باتت ميزة في المناقصات وحوارات التأمين ونقاشات المجالس."], ["h2", "الأسئلة الأربعة التي تحدد تعرضكم"], ["ul", ["<b>ما الذي يحترق وما الذي بجانبه؟</b> تخزين الوقود والمذيبات والتغليف والغبار — مرسومة مقابل مسافات العزل والأقسام.", "<b>كم يكلف يوم إغلاق واحد؟</b> لكل منشأة، بالمال — الرقم الذي يسعّر كل إجراء وقائي.", "<b>هل تعملون والمنشأة متعذر الوصول إليها 72 ساعة؟</b> الطلبات والشحن وتواصل العملاء — سيناريو «سليمة لكن المنطقة مغلقة».", "<b>هل سيدفع مؤمّنكم؟</b> صياغة انقطاع الأعمال لحريق الارتطام الخارجي، وانضباط الأدلة الذي تتطلبه المطالبة."]], ["h2", "حزمة الجاهزية من الرخيص إلى الرأسمالي"], ["table", ["الطبقة", "الإجراءات", "ملف التكلفة"], [["التنظيمية", "صلاحيات الساعات الأولى كتابة، وكتيبات الإخلاء والإيقاف، وخطة استمرارية 72 ساعة مختبرة", "أيام عمل؛ وقت داخلي غالباً"], ["المادية السلبية", "سواتر شبكية فوق الوقود المكشوف والتخزين الحيوي، وتقسيم، ومسافات عزل، ومراجعة الأسقف والمناور", "ميزانية هندسية؛ مرة واحدة"], ["الكشف والاستجابة", "ترتيبات إخطار مبكر وإجراءات احتماء وتجمع وإطفاء بمعيار حرائق الوقود الشديدة", "معتدلة؛ غالباً ترقية أنظمة قائمة"], ["المالية", "مراجعة صياغة تأمين الانقطاع، ومواءمة التحمل وفترة الانتظار مع زمن تعافيكم الحقيقي، وبروتوكول أدلة", "وقت استشاري؛ تعديلات عند التجديد"]]], ["callout", "المفارقة التي ينبغي أن تشجع التنفيذيين: على خلاف سفينة أو طائرة، يمكن تحصين المنشأة الثابتة سلبياً — أقسام ومسافات وسواتر. السيناريو يبدو جديداً؛ وصندوق أدوات الحماية عمره قرن."], ["h2", "ما الذي نختبره في فحص الجاهزية"], ["p", "فحصنا المجاني من 13 سؤالاً يمرر مسار المسيرة على هذه الحزمة تحديداً: الكشف والإخطار، وصلاحيات الساعات الأولى، والإخلاء والإيقاف، وفيزياء الحريق حول تخزينكم، وسؤال 72 ساعة، وأدلة التأمين. خمس دقائق ونتيجة على الشاشة مع أكبر ثلاث فجوات — دون طلب بريد."], ["h2", "أسئلة شائعة"], ["faq", [["هل الاستعداد لحوادث المسيرات مبالغة مثيرة للقلق؟", "العكس: إنه الانضباط نفسه للاستعداد لأي حادث منطقة — حريق وإغلاق وتعافٍ. الشركات التي تدمج السيناريو في تخطيط الاستمرارية القياسي تتعامل معه بدراما أقل لا أكثر."], ["لسنا قرب أي هدف واضح. هل ينطبق هذا علينا؟", "مناطق الإغلاق وقيود المجال الجوي لا تتبع خرائط الأهداف — التجربة الإقليمية تُظهر منشآت عادية تخسر أياماً لحوادث لم تمسها. سيناريو «سليمة لكن متعذر الوصول» ينطبق على الجميع تقريباً."], ["ما أرخص خطوة عالية القيمة؟", "صلاحيات الساعات الأولى كتابة: من يوقف الإنتاج ومن يخلي ومن يكلم من — مقررة قبل اليوم. تكلفتها ورشة واحدة وتغير النتيجة أكثر من أي عتاد."], ["هل تفيد الإجراءات السلبية كالسواتر الشبكية فعلاً؟", "مقابل سلسلة الخسارة، نعم: وظيفتها ليست إيقاف ما يطير بل إبعاد مصدر اشتعال عما يحترق. هذه حماية حرائق كلاسيكية — متناسبة وقابلة للتأمين وهادئة."]]]], "cluster": [["drone-fire-downtime.html", "الارتطام فالحريق فالتوقف: سلسلة الخسارة الحقيقية لحادث مسيرة"], ["business-interruption-insurance-evidence.html", "تأمين انقطاع الأعمال: الأدلة التي تُدفع بها المطالبات"], ["ransomware-first-hours.html", "برمجية الفدية: الساعات الأولى تقرر الخسائر"], ["ransomware-pay-or-recover.html", "الدفع أم التعافي؟ قرار برمجية الفدية تحت الفحص"], ["business-continuity-uae.html", "استمرارية الأعمال في الإمارات: الدليل الكامل"], ["manufacturing-continuity-gcc.html", "استمرارية الأعمال للمصنعين في الخليج"]]}};
+var lang="en";
+function renderSections(secs){
+  var out=[];
+  secs.forEach(function(s){
+    if(s[0]==="h2")out.push("<h2>"+s[1]+"</h2>");
+    else if(s[0]==="p")out.push("<p>"+s[1]+"</p>");
+    else if(s[0]==="ul")out.push("<ul>"+s[1].map(function(x){return "<li>"+x+"</li>";}).join("")+"</ul>");
+    else if(s[0]==="callout")out.push('<div class="callout"><p>'+s[1]+"</p></div>");
+    else if(s[0]==="table"){
+      out.push('<table class="tbl"><thead><tr>'+s[1].map(function(c){return "<th>"+c+"</th>";}).join("")+"</tr></thead><tbody>"+
+        s[2].map(function(r){return "<tr>"+r.map(function(c){return "<td>"+c+"</td>";}).join("")+"</tr>";}).join("")+"</tbody></table>");
+    } else if(s[0]==="faq"){
+      out.push('<div class="faq">'+s[1].map(function(x){return "<details><summary>"+x[0]+"</summary><p>"+x[1]+"</p></details>";}).join("")+"</div>");
+    }
+  });
+  return out.join("\n");
+}
+function setLang(l){
+  lang=l;document.documentElement.lang=l;document.documentElement.dir=(l==="ar")?"rtl":"ltr";
+  var d=C[l];
+  document.querySelectorAll("[data-ui]").forEach(function(el){var k=el.getAttribute("data-ui");if(typeof d[k]==="string")el.innerHTML=d[k];});
+  document.getElementById("art").innerHTML=renderSections(d.sections);
+  document.getElementById("cluster").innerHTML=d.cluster.map(function(x){return '<a href="'+x[0]+'">'+x[1]+"</a>";}).join("");
+  document.getElementById("langbtn").textContent=(l==="ar")?"EN":"AR";
+  try{localStorage.setItem("rp_org_lang",l);}catch(e){}
+}
+function toggleLang(){setLang(lang==="ar"?"en":"ar");}
+(function(){var s=null;try{s=localStorage.getItem("rp_org_lang");}catch(e){}if(s==="ar")setLang("ar");})();
+window.addEventListener('scroll',function(){
+  var el=document.getElementById('stickycta');if(!el)return;
+  var cta=document.querySelector('section.cta');
+  var show=window.scrollY>600&&(!cta||cta.getBoundingClientRect().top>window.innerHeight);
+  el.classList.toggle('on',show);
+},{passive:true});
+</script>
+</body>
+</html>

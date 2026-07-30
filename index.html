@@ -142,6 +142,13 @@ html[dir="rtl"] .hero .shade{background:linear-gradient(264deg,rgba(9,12,18,0.93
 .foot .in{padding-top:24px;padding-bottom:24px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;font-size:14.5px;font-weight:300;color:rgba(255,255,255,0.46)}
 .foot button{background:none;border:0;padding:0;font-size:14.5px;font-weight:300;color:rgba(255,255,255,0.46);cursor:pointer}
 .foot button:hover{color:#fff}
+/* guides catalog */
+.gcols{display:grid;grid-template-columns:repeat(3,1fr);gap:44px}
+.gcol h3{font-family:'IBM Plex Mono',monospace;font-size:12.5px;font-weight:500;letter-spacing:0.13em;text-transform:uppercase;color:#8A8478;margin:0 0 14px}
+.gcol a{display:block;padding:11px 0;border-bottom:1px solid #E1DCD3;font-size:15.5px;font-weight:400;color:#3D4149;line-height:1.4}
+.gcol a:hover{color:#C4571C}
+.svc .glink{display:block;margin-top:10px;font-size:14px;font-weight:500;color:#C4571C;text-align:center}
+.svc .glink:hover{text-decoration:underline}
 /* burger + mobile menu */
 .burger{display:none;background:none;border:0;cursor:pointer;padding:8px 6px}
 .burger span{display:block;width:22px;height:2px;background:#16181F;margin:5px 0;border-radius:2px;transition:transform .2s,opacity .2s}
@@ -172,7 +179,7 @@ body.menu-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45de
   .wrap{padding-left:20px;padding-right:20px}
   /* mobile section order: hero -> services -> the rest */
   body{display:flex;flex-direction:column}
-  .hdr{order:0}.ar-note{order:1}#top{order:2}#services{order:3}#threats{order:4}#experience{order:5}#regwatch{order:6}#results{order:7}#contact{order:8}
+  .hdr{order:0}.ar-note{order:1}#top{order:2}#services{order:3}#threats{order:4}#experience{order:5}#regwatch{order:6}#results{order:7}#guides{order:8}#contact{order:9}
   .hdr .in{height:64px;gap:16px}
   .logo .nm{font-size:22px}
   .logo .tg{display:none}
@@ -196,6 +203,7 @@ body.menu-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45de
   .paras.open p{display:block !important}
   .morebtn{display:inline-block}
   .regs .r{cursor:pointer}
+  .gcols{grid-template-columns:1fr;gap:28px}
   .regs .r p{display:none}
   .regs .r.open p{display:block}
   .stickycta.on{display:block}
@@ -215,6 +223,7 @@ body.menu-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45de
       <a href="#experience" data-k="nav.1">Why us</a>
       <a href="#services" data-k="nav.2">Services</a>
       <a href="#regwatch" data-k="nav.3">Regulatory watch</a>
+      <a href="#guides" data-k="nav.5">Guides</a>
       <a href="#contact" data-k="nav.4">Contact</a>
     </nav>
     <div class="right">
@@ -230,6 +239,7 @@ body.menu-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45de
   <a href="#threats" data-k="nav.0" onclick="closeMenu()">Threats</a>
   <a href="#experience" data-k="nav.1" onclick="closeMenu()">Why us</a>
   <a href="#regwatch" data-k="nav.3" onclick="closeMenu()">Regulatory watch</a>
+  <a href="#guides" data-k="nav.5" onclick="closeMenu()">Guides</a>
   <a href="#contact" data-k="nav.4" onclick="closeMenu()">Contact</a>
 </div>
 
@@ -319,6 +329,7 @@ body.menu-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45de
       <div class="pr" data-k="products.0.price">Free</div>
       <div class="prn" data-k="products.0.priceNote"></div>
       <a class="qbtn" href="quiz.html" data-k="products.0.cta">Take the quiz</a>
+      <a class="glink" href="drone-incident-readiness.html" data-k="products.0.guide">Guide: drone incident readiness →</a>
     </div>
     <div class="p">
       <span class="step" data-k="products.1.step">Step 2 · Remote</span>
@@ -327,6 +338,7 @@ body.menu-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45de
       <div class="pr" data-k="products.1.price">from $4,900</div>
       <div class="prn" data-k="products.1.priceNote">fixed scope · 2-3 weeks</div>
       <a class="qbtn" href="gap-assessment.html" data-k="products.1.cta">Request assessment</a>
+      <a class="glink" href="ncema-7000.html" data-k="products.1.guide">Guide: NCEMA 7000 compliance →</a>
     </div>
     <div class="p flag">
       <span class="flagbadge" data-k="flagBadge">Flagship</span>
@@ -336,6 +348,7 @@ body.menu-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45de
       <div class="pr" data-k="products.2.price">from $2,900</div>
       <div class="prn" data-k="products.2.priceNote">setup · then from $300/mo support</div>
       <a class="qbtn" href="dashboard.html" data-k="products.2.cta">See a live demo</a>
+      <a class="glink" href="operational-resilience-board-reporting.html" data-k="products.2.guide">Guide: resilience reporting for the board →</a>
     </div>
     <div class="p">
       <span class="step" data-k="products.3.step">Step 4 · Team</span>
@@ -344,6 +357,7 @@ body.menu-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45de
       <div class="pr" data-k="products.3.price">from $3,500</div>
       <div class="prn" data-k="products.3.priceNote">per group</div>
       <a class="qbtn" href="training.html" data-k="products.3.cta">Request program</a>
+      <a class="glink" href="tabletop-exercise-guide.html" data-k="products.3.guide">Guide: running a tabletop exercise →</a>
     </div>
   </div>
   </div>
@@ -372,7 +386,45 @@ body.menu-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45de
         <span class="rt" data-k="regs.2.rt">DIFC / ADGM · Listed companies</span>
         <h3 data-k="regs.2.title">Operational risk rulebooks</h3>
         <p data-k="regs.2.body">DFSA and FSRA rulebooks on operational risk and cyber resilience, plus ESG disclosure for SCA / ADX / DFM listed companies.</p>
-        <button onclick="stub()" data-k="regs.2.link">What applies to you →</button>
+        <a class="rlink" href="operational-resilience-board-reporting.html" data-k="regs.2.link">What applies to you →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="guides" class="beige">
+  <div class="wrap" style="padding-top:88px;padding-bottom:88px">
+    <div class="sec-head" style="margin-bottom:44px">
+      <h2 data-k="guidesTitle">Guides &amp; briefings</h2>
+      <p data-k="guidesSub">Plain-language guides by practitioners: regulation, method and the scenarios that matter in the region. No email walls.</p>
+    </div>
+    <div class="gcols">
+      <div class="gcol">
+        <h3 data-k="gcat.0.t">Regulation · UAE</h3>
+        <a href="ncema-7000.html" data-k="gcat.0.i.0">NCEMA 7000: the complete guide</a>
+        <a href="ncema-7000-checklist.html" data-k="gcat.0.i.1">NCEMA 7000 compliance checklist</a>
+        <a href="ncema-7000-vs-iso-22301.html" data-k="gcat.0.i.2">NCEMA 7000 vs ISO 22301</a>
+        <a href="cbuae-operational-resilience.html" data-k="gcat.0.i.3">CBUAE operational resilience</a>
+        <a href="cbuae-deadline-timeline.html" data-k="gcat.0.i.4">The 16 September 2026 deadline</a>
+      </div>
+      <div class="gcol">
+        <h3 data-k="gcat.1.t">Method</h3>
+        <a href="business-continuity-uae.html" data-k="gcat.1.i.0">Business continuity in the UAE</a>
+        <a href="business-impact-analysis.html" data-k="gcat.1.i.1">Business impact analysis: money first</a>
+        <a href="rto-rpo-explained.html" data-k="gcat.1.i.2">RTO and RPO in plain language</a>
+        <a href="bcp-template-structure.html" data-k="gcat.1.i.3">What a real BCP contains</a>
+        <a href="tabletop-exercise-guide.html" data-k="gcat.1.i.4">Running a tabletop exercise</a>
+        <a href="iso-22301-implementation-uae.html" data-k="gcat.1.i.5">Implementing ISO 22301</a>
+      </div>
+      <div class="gcol">
+        <h3 data-k="gcat.2.t">Scenarios &amp; sectors</h3>
+        <a href="drone-incident-readiness.html" data-k="gcat.2.i.0">Drone incident readiness</a>
+        <a href="ransomware-first-hours.html" data-k="gcat.2.i.1">Ransomware: the first hours</a>
+        <a href="ransomware-pay-or-recover.html" data-k="gcat.2.i.2">Pay or recover?</a>
+        <a href="business-interruption-insurance-evidence.html" data-k="gcat.2.i.3">BI insurance: evidence that pays</a>
+        <a href="adnoc-supplier-resilience.html" data-k="gcat.2.i.4">ADNOC supplier qualification</a>
+        <a href="manufacturing-continuity-gcc.html" data-k="gcat.2.i.5">Manufacturing continuity</a>
       </div>
     </div>
   </div>
@@ -437,7 +489,14 @@ var T = {
 en: {
   tagline: "Business Continuity & Resilience · GCC",
   navCta: "Discuss your task",
-  nav: ["Threats", "Why us", "Services", "Regulatory watch", "Contact"],
+  nav: ["Threats", "Why us", "Services", "Regulatory watch", "Contact", "Guides"],
+  guidesTitle: "Guides & briefings",
+  guidesSub: "Plain-language guides by practitioners: regulation, method and the scenarios that matter in the region. No email walls.",
+  gcat: [
+    { t: "Regulation · UAE", i: ["NCEMA 7000: the complete guide", "NCEMA 7000 compliance checklist", "NCEMA 7000 vs ISO 22301", "CBUAE operational resilience", "The 16 September 2026 deadline"] },
+    { t: "Method", i: ["Business continuity in the UAE", "Business impact analysis: money first", "RTO and RPO in plain language", "What a real BCP contains", "Running a tabletop exercise", "Implementing ISO 22301"] },
+    { t: "Scenarios & sectors", i: ["Drone incident readiness", "Ransomware: the first hours", "Pay or recover?", "BI insurance: evidence that pays", "ADNOC supplier qualification", "Manufacturing continuity"] }
+  ],
   arNote: "",
   flagBadge: "Flagship",
   heroKicker: "Drone & ransomware readiness — measured in money",
@@ -478,10 +537,10 @@ en: {
   servicesTitle: "Four steps from unknown risk to managed resilience",
   servicesSub: "Start free, see the gaps in money terms, then decide how far to go. Every step is a complete result on its own.",
   products: [
-    { step: "Step 1 · Free", title: "Readiness check: drone & ransomware", body: "Two scenarios — a drone incident and a ransomware attack. 13 questions, 5 minutes. You will see: can the business survive, where your three biggest gaps are, and what to fix first. Result on screen, no email.", price: "Free", priceNote: "", cta: "Take the quiz" },
-    { step: "Step 2 · Remote", title: "Continuity gap assessment", body: "Remote diagnostic against ISO 22301 and NCEMA 7000 / CBUAE requirements. Cost of a downtime day, single points of failure, 90-day action plan.", price: "from $4,900", priceNote: "fixed scope · 2-3 weeks", cta: "Request assessment" },
-    { step: "Step 3 · Flagship", title: "Continuity & risk dashboard", body: "One board-level screen: resilience index 0-100, cost of downtime, recovery status of critical processes. Deployed on-premise — data never leaves your infrastructure.", price: "from $2,900", priceNote: "setup · then from $300/mo support", cta: "See a live demo" },
-    { step: "Step 4 · Team", title: "BCM training for your team", body: "Executive and specialist tracks: ISO 22301 in practice, crisis roles, first-hours decision drills for drone and cyber scenarios. Online or in person at your facility.", price: "from $3,500", priceNote: "per group", cta: "Request program" }
+    { step: "Step 1 · Free", title: "Readiness check: drone & ransomware", body: "Two scenarios — a drone incident and a ransomware attack. 13 questions, 5 minutes. You will see: can the business survive, where your three biggest gaps are, and what to fix first. Result on screen, no email.", price: "Free", priceNote: "", cta: "Take the quiz", guide: "Guide: drone incident readiness →" },
+    { step: "Step 2 · Remote", title: "Continuity gap assessment", body: "Remote diagnostic against ISO 22301 and NCEMA 7000 / CBUAE requirements. Cost of a downtime day, single points of failure, 90-day action plan.", price: "from $4,900", priceNote: "fixed scope · 2-3 weeks", cta: "Request assessment", guide: "Guide: NCEMA 7000 compliance →" },
+    { step: "Step 3 · Flagship", title: "Continuity & risk dashboard", body: "One board-level screen: resilience index 0-100, cost of downtime, recovery status of critical processes. Deployed on-premise — data never leaves your infrastructure.", price: "from $2,900", priceNote: "setup · then from $300/mo support", cta: "See a live demo", guide: "Guide: resilience reporting for the board →" },
+    { step: "Step 4 · Team", title: "BCM training for your team", body: "Executive and specialist tracks: ISO 22301 in practice, crisis roles, first-hours decision drills for drone and cyber scenarios. Online or in person at your facility.", price: "from $3,500", priceNote: "per group", cta: "Request program", guide: "Guide: running a tabletop exercise →" }
   ],
   regTitle: "Regulatory watch · GCC",
   regSub: "Continuity is no longer optional in the region. Materials and briefings on what applies to you.",
@@ -511,7 +570,14 @@ en: {
 ar: {
   tagline: "استمرارية الأعمال والمرونة · دول الخليج",
   navCta: "ناقشوا مهمتكم",
-  nav: ["التهديدات", "لماذا نحن", "الخدمات", "المراقبة التنظيمية", "اتصل بنا"],
+  nav: ["التهديدات", "لماذا نحن", "الخدمات", "المراقبة التنظيمية", "اتصل بنا", "الأدلة"],
+  guidesTitle: "أدلة وإحاطات",
+  guidesSub: "أدلة بلغة واضحة من ممارسين: التنظيم والمنهجية والسيناريوهات المهمة في المنطقة. دون جدران بريد إلكتروني.",
+  gcat: [
+    { t: "التنظيم · الإمارات", i: ["NCEMA 7000: الدليل الكامل", "قائمة التحقق من الامتثال لـ NCEMA 7000", "NCEMA 7000 مقابل ISO 22301", "المرونة التشغيلية للمصرف المركزي", "الموعد النهائي 16 سبتمبر 2026"] },
+    { t: "المنهجية", i: ["استمرارية الأعمال في الإمارات", "تحليل أثر الأعمال: المال أولاً", "RTO وRPO بلغة واضحة", "ماذا تحتوي خطة استمرارية حقيقية", "إدارة تمرين نظري", "تطبيق ISO 22301"] },
+    { t: "السيناريوهات والقطاعات", i: ["جاهزية حوادث المسيرات", "برمجية الفدية: الساعات الأولى", "الدفع أم التعافي؟", "تأمين انقطاع الأعمال: أدلة تُدفع", "تأهيل موردي أدنوك", "استمرارية التصنيع"] }
+  ],
   flagBadge: "الرائد",
   arNote: "النسخة العربية قيد الإعداد — بعض المصطلحات التقنية تظهر بالإنجليزية",
   heroKicker: "الجاهزية لحوادث الطائرات المسيرة وبرمجيات الفدية — مقاسة بالمال",
@@ -552,10 +618,10 @@ ar: {
   servicesTitle: "أربع خطوات من مخاطر مجهولة إلى مرونة مُدارة",
   servicesSub: "ابدأ مجاناً، وشاهد الفجوات بلغة المال، ثم قرر مدى التقدم. كل خطوة نتيجة كاملة بحد ذاتها.",
   products: [
-    { step: "الخطوة ١ · مجاناً", title: "فحص الجاهزية: المسيرات وبرمجيات الفدية", body: "سيناريوهان — حادث طائرة مسيرة وهجوم برمجية فدية. ١٣ سؤالاً في ٥ دقائق. سترون: هل يصمد العمل، وأين أكبر ثلاث فجوات، وما الذي يُصلح أولاً. النتيجة على الشاشة دون بريد إلكتروني.", price: "مجاناً", priceNote: "", cta: "ابدأوا الفحص" },
-    { step: "الخطوة ٢ · عن بُعد", title: "تقييم فجوات الاستمرارية", body: "تشخيص عن بُعد وفق ISO 22301 وNCEMA 7000 ومتطلبات المصرف المركزي. تكلفة يوم التوقف ونقاط الفشل وخطة ٩٠ يوماً.", price: "من ٤٩٠٠$", priceNote: "نطاق ثابت · ٢-٣ أسابيع", cta: "اطلب التقييم" },
-    { step: "الخطوة ٣ · الرائد", title: "لوحة الاستمرارية والمخاطر", body: "شاشة واحدة لمجلس الإدارة: مؤشر المرونة ٠-١٠٠ وتكلفة التوقف وحالة تعافي العمليات الحرجة. تُنشر داخلياً ولا تغادر البيانات بنيتكم.", price: "من ٢٩٠٠$", priceNote: "التأسيس · ثم من ٣٠٠$ شهرياً", cta: "شاهد عرضاً حياً" },
-    { step: "الخطوة ٤ · الفريق", title: "تدريب فريقكم على استمرارية الأعمال", body: "مسارات تنفيذية وتخصصية: ISO 22301 عملياً وأدوار الأزمات وتمارين قرارات الساعات الأولى — عن بُعد أو حضورياً في منشأتكم.", price: "من ٣٥٠٠$", priceNote: "لكل مجموعة", cta: "اطلب البرنامج" }
+    { step: "الخطوة ١ · مجاناً", title: "فحص الجاهزية: المسيرات وبرمجيات الفدية", body: "سيناريوهان — حادث طائرة مسيرة وهجوم برمجية فدية. ١٣ سؤالاً في ٥ دقائق. سترون: هل يصمد العمل، وأين أكبر ثلاث فجوات، وما الذي يُصلح أولاً. النتيجة على الشاشة دون بريد إلكتروني.", price: "مجاناً", priceNote: "", cta: "ابدأوا الفحص", guide: "دليل: جاهزية حوادث المسيرات ←" },
+    { step: "الخطوة ٢ · عن بُعد", title: "تقييم فجوات الاستمرارية", body: "تشخيص عن بُعد وفق ISO 22301 وNCEMA 7000 ومتطلبات المصرف المركزي. تكلفة يوم التوقف ونقاط الفشل وخطة ٩٠ يوماً.", price: "من ٤٩٠٠$", priceNote: "نطاق ثابت · ٢-٣ أسابيع", cta: "اطلب التقييم", guide: "دليل: الامتثال لـ NCEMA 7000 ←" },
+    { step: "الخطوة ٣ · الرائد", title: "لوحة الاستمرارية والمخاطر", body: "شاشة واحدة لمجلس الإدارة: مؤشر المرونة ٠-١٠٠ وتكلفة التوقف وحالة تعافي العمليات الحرجة. تُنشر داخلياً ولا تغادر البيانات بنيتكم.", price: "من ٢٩٠٠$", priceNote: "التأسيس · ثم من ٣٠٠$ شهرياً", cta: "شاهد عرضاً حياً", guide: "دليل: تقارير المرونة للمجلس ←" },
+    { step: "الخطوة ٤ · الفريق", title: "تدريب فريقكم على استمرارية الأعمال", body: "مسارات تنفيذية وتخصصية: ISO 22301 عملياً وأدوار الأزمات وتمارين قرارات الساعات الأولى — عن بُعد أو حضورياً في منشأتكم.", price: "من ٣٥٠٠$", priceNote: "لكل مجموعة", cta: "اطلب البرنامج", guide: "دليل: إدارة تمرين نظري ←" }
   ],
   regTitle: "المراقبة التنظيمية · الخليج",
   regSub: "لم تعد الاستمرارية اختيارية في المنطقة. مواد وإحاطات عما ينطبق عليكم.",

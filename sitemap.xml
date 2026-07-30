@@ -20,5 +20,15 @@
   <url><loc>https://risk-place.org/rto-rpo-explained.html</loc><priority>0.7</priority></url>
   <url><loc>https://risk-place.org/bcp-template-structure.html</loc><priority>0.7</priority></url>
   <url><loc>https://risk-place.org/tabletop-exercise-guide.html</loc><priority>0.7</priority></url>
+  <url><loc>https://risk-place.org/adnoc-supplier-resilience.html</loc><priority>0.9</priority></url>
+  <url><loc>https://risk-place.org/logistics-ports-continuity.html</loc><priority>0.7</priority></url>
+  <url><loc>https://risk-place.org/manufacturing-continuity-gcc.html</loc><priority>0.7</priority></url>
+  <url><loc>https://risk-place.org/hospitality-continuity.html</loc><priority>0.7</priority></url>
+  <url><loc>https://risk-place.org/healthcare-continuity.html</loc><priority>0.7</priority></url>
+  <url><loc>https://risk-place.org/drone-incident-readiness.html</loc><priority>0.9</priority></url>
+  <url><loc>https://risk-place.org/drone-fire-downtime.html</loc><priority>0.7</priority></url>
+  <url><loc>https://risk-place.org/business-interruption-insurance-evidence.html</loc><priority>0.7</priority></url>
+  <url><loc>https://risk-place.org/ransomware-first-hours.html</loc><priority>0.8</priority></url>
+  <url><loc>https://risk-place.org/ransomware-pay-or-recover.html</loc><priority>0.7</priority></url>
   <url><loc>https://risk-place.org/privacy.html</loc><priority>0.3</priority></url>
 </urlset>

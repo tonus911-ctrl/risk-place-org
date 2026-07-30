@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HNF79F1SSN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HNF79F1SSN');</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ransomware: the first hours decide the losses — a decision guide for leadership — risk-place.org</title>
+<meta name="description" content="What actually happens in the first hours of a ransomware event: isolation, authority, communications, evidence. The decisions that shrink or multiply the loss, prepared in advance.">
+<link rel="canonical" href="https://risk-place.org/ransomware-first-hours.html">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:title" content="Ransomware: the first hours decide the losses — a decision guide for leadership — risk-place.org">
+<meta property="og:description" content="What actually happens in the first hours of a ransomware event: isolation, authority, communications, evidence. The decisions that shrink or multiply the loss, prepared in advance.">
+<meta property="og:image" content="https://risk-place.org/hero-dubai.jpg">
+<meta property="og:url" content="https://risk-place.org/ransomware-first-hours.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Should we call the authorities?", "acceptedAnswer": {"@type": "Answer", "text": "Prepare the answer before the event with counsel: which notifications are mandatory for you (data protection, sector regulators), which are advisable, and who makes the call. The wrong answer is discovering the obligations afterwards."}}, {"@type": "Question", "name": "When do we involve the insurer?", "acceptedAnswer": {"@type": "Answer", "text": "Early — most cyber policies require prompt notification and some specify approved responders. Late notification is a classic ground for coverage disputes. The insurer's hotline belongs on the first-hours card."}}, {"@type": "Question", "name": "Do we need external incident response on retainer?", "acceptedAnswer": {"@type": "Answer", "text": "At mid-size and above, a pre-agreed responder shortens the worst day materially — no procurement in a crisis, known rates, familiarity with your environment. At minimum: have the shortlist and contract template ready."}}]}</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#fff;-webkit-font-smoothing:antialiased;font-family:'Figtree','IBM Plex Sans Arabic',system-ui,sans-serif;color:#16181F;line-height:1.55}
+html[dir="rtl"] body{font-family:'IBM Plex Sans Arabic','Figtree',system-ui,sans-serif}
+a{color:#16181F;text-decoration:none}
+::selection{background:#FBE0CB}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+.hdr{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.94);backdrop-filter:blur(14px);border-bottom:1px solid #EAE7E1}
+.hdr .in{height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;flex-direction:column;gap:1px}
+.logo .nm{font-size:26px;font-weight:600;letter-spacing:-0.02em}
+.logo .nm b{color:#C4571C;font-weight:600}
+.logo .tg{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8A8478}
+.hdr .right{display:flex;align-items:center;gap:12px}
+.langbtn{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.08em;background:none;border:1px solid #DCD8D0;border-radius:999px;padding:7px 15px;cursor:pointer;color:#3D4149}
+.langbtn:hover{border-color:#16181F;color:#16181F}
+.backlink{font-size:14.5px;color:#3D4149}
+.backlink:hover{color:#C4571C}
+.hero{background:#0D1117;color:#fff}
+.hero .in{padding-top:64px;padding-bottom:56px}
+.kicker{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#F0A868;margin:0 0 20px}
+.hero h1{font-size:42px;font-weight:300;line-height:1.14;letter-spacing:-0.025em;margin:0 0 16px;max-width:28ch;text-wrap:pretty}
+.hero .sub{font-size:18px;font-weight:300;color:rgba(255,255,255,0.75);margin:0;max-width:62ch;line-height:1.6}
+.btn{display:inline-block;font-size:16.5px;font-weight:600;background:#C4571C;color:#fff !important;padding:15px 32px;border-radius:999px}
+.btn:hover{background:#A03F12}
+.btn2{display:inline-block;font-size:16px;font-weight:400;color:#fff !important;border:1px solid rgba(255,255,255,0.34);padding:14px 28px;border-radius:999px;margin-inline-start:10px}
+.btn2:hover{border-color:#fff}
+.cta{background:#0D1117;color:#fff}
+.cta .in{padding-top:64px;padding-bottom:64px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:22px}
+.cta h2{font-size:30px;font-weight:300;letter-spacing:-0.02em;margin:0;max-width:30ch;text-wrap:pretty}
+.foot{background:#0D1117;color:rgba(255,255,255,0.46);border-top:1px solid rgba(255,255,255,0.12)}
+.foot .in{padding-top:22px;padding-bottom:22px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13.5px;font-weight:300}
+.foot a{color:rgba(255,255,255,0.6)}
+.foot a:hover{color:#fff}
+.stickycta{display:none;position:fixed;left:14px;right:14px;bottom:14px;z-index:70;background:#C4571C;color:#fff !important;text-align:center;font-size:16px;font-weight:600;padding:14px 18px;border-radius:999px;box-shadow:0 10px 28px rgba(13,17,23,0.28)}
+
+.art{padding:64px 0 20px}
+.art h2{font-size:30px;font-weight:300;line-height:1.18;letter-spacing:-0.02em;margin:52px 0 18px;text-wrap:pretty}
+.art h2:first-child{margin-top:0}
+.art p{font-size:16.5px;font-weight:300;line-height:1.72;color:#3D4149;margin:0 0 16px;max-width:76ch}
+.art ul{margin:0 0 18px;padding-inline-start:22px;max-width:76ch}
+.art li{font-size:16.5px;font-weight:300;line-height:1.66;color:#3D4149;margin-bottom:9px}
+.art li b,.art p b{font-weight:600;color:#16181F}
+.callout{background:#F7F4EF;border:1px solid #EAE7E1;border-inline-start:3px solid #C4571C;border-radius:12px;padding:20px 24px;margin:26px 0;max-width:76ch}
+.callout p{margin:0;font-size:16px}
+.tbl{width:100%;border-collapse:collapse;margin:24px 0 30px;font-size:15.5px}
+.tbl th{text-align:start;font-weight:600;padding:12px 14px;border-bottom:2px solid #16181F;font-size:14.5px}
+.tbl td{padding:12px 14px;border-bottom:1px solid #E1DCD3;font-weight:300;color:#3D4149;vertical-align:top;line-height:1.55}
+.tbl td:first-child{font-weight:500;color:#16181F}
+.faq{margin:10px 0 30px;max-width:76ch}
+.faq details{border-bottom:1px solid #E1DCD3;padding:4px 0}
+.faq summary{font-size:17px;font-weight:600;padding:14px 0;cursor:pointer;list-style-position:outside}
+.faq details p{padding:0 0 16px}
+.cluster{background:#F7F4EF;border-top:1px solid #EAE7E1;border-bottom:1px solid #EAE7E1;padding:56px 0}
+.cluster h2{font-size:26px;font-weight:300;margin:0 0 26px}
+.cluster .links{display:grid;grid-template-columns:1fr 1fr;gap:14px 40px}
+.cluster a{display:block;padding:14px 0;border-bottom:1px solid #E1DCD3;font-size:16px;font-weight:500}
+.cluster a:hover{color:#C4571C}
+.src{font-size:13.5px;color:#8A8478;margin-top:30px;max-width:76ch}
+.src a{color:#8A8478;text-decoration:underline}
+@media(max-width:760px){.art h2{font-size:24px}.cluster .links{grid-template-columns:1fr}.tbl{font-size:14px}.tbl th,.tbl td{padding:9px 8px}}
+
+@media(max-width:760px){.hero h1{font-size:30px}}
+@media(max-width:600px){
+  .wrap{padding-left:20px;padding-right:20px}
+  .logo .nm{font-size:22px}
+  .logo .tg{display:none}
+  .backlink{font-size:13px}
+  .hero .in{padding-top:38px;padding-bottom:34px}
+  .hero h1{font-size:25px;line-height:1.2}
+  .art{padding:40px 0 10px}
+  .stickycta.on{display:block}
+}
+</style>
+</head>
+<body>
+<header class="hdr"><div class="wrap in">
+  <a class="logo" href="index.html"><span class="nm">risk-place<b>.org</b></span><span class="tg" data-ui="tagline">Business Continuity &amp; Resilience · GCC</span></a>
+  <div class="right"><a class="backlink" href="index.html#threats" data-ui="back">← Home</a><button class="langbtn" id="langbtn" onclick="toggleLang()">AR</button></div>
+</div></header>
+
+<section class="hero"><div class="wrap in">
+  <p class="kicker" data-ui="kicker">Signature scenario · Ransomware</p>
+  <h1 data-ui="h1">Ransomware: the first hours decide the losses</h1>
+  <p class="sub" data-ui="sub">By the time the ransom note appears, the technical battle is mostly over. What remains is a management battle — and it is won or lost on decisions that should have been written down long before.</p>
+</div></section>
+
+<article class="art"><div class="wrap" id="art">
+<h2>What the first hours actually look like</h2>
+<p>Detection is rarely a clean alarm: a server behaves oddly, a share becomes unreadable, a supplier reports strange mail from your domain. Then the cascade: <b>systems freeze one by one, phones fill, nobody is sure what still works, and every minute of indecision widens the encryption</b>. The organisations that come out with survivable losses are not the ones with the best firewalls — they are the ones where the next five decisions had names attached before the day.</p>
+<h2>The five decisions, prepared in advance</h2>
+<table class="tbl"><thead><tr><th>Decision</th><th>The question</th><th>Who must hold the pen</th></tr></thead><tbody><tr><td>Isolate</td><td>Disconnect networks and sites — accepting operational stop — yes or no, when?</td><td>A named person reachable 24/7, with written authority</td></tr><tr><td>Declare</td><td>Trigger the continuity plan and crisis structure — on what threshold?</td><td>Duty leadership; the threshold defined, not debated</td></tr><tr><td>Operate degraded</td><td>Which activities continue manually, which stop safely?</td><td>Operations, from the pre-built manual-mode plans</td></tr><tr><td>Communicate</td><td>Staff, clients, regulator, insurer — who says what, when?</td><td>One voice; holding statements drafted in peacetime</td></tr><tr><td>Preserve evidence</td><td>Images, logs, timelines — before restoring anything</td><td>IT with the incident scribe; the insurer and any investigation depend on it</td></tr></tbody></table>
+<h2>The mistakes that multiply the loss</h2>
+<ul><li><b>Waiting for certainty before isolating.</b> Encryption spreads while the meeting assembles. The isolation decision is bought in advance with written authority — or paid for in scope.</li><li><b>Restoring before preserving.</b> Wiping systems destroys the evidence your insurer, lawyers and any regulator will ask for — and can reinstall the attacker's access.</li><li><b>Trusting backups untested by restore.</b> The worst possible moment to discover a backup does not restore is the moment you need it. Restore-tested is the only «tested».</li><li><b>Silence toward clients.</b> Hours of silence cost more trust than the incident. A holding statement within the first hours keeps the relationship survivable.</li><li><b>Improvised negotiation contact.</b> Any contact with the attackers — if it happens at all — belongs to specialists and counsel, not to the night-shift admin. See our pay-or-recover analysis.</li></ul>
+<div class="callout"><p>The one-page artefact that changes everything: the first-hours card — five decisions, named holders, deputies, thresholds, contact numbers. Laminated, offline, at three locations. Cost: a workshop. Value on the day: the difference between an incident and a catastrophe.</p></div>
+<h2>The UAE layer</h2>
+<p>For UAE organisations the event carries legal clocks alongside the operational ones: personal-data breach obligations, sector notification expectations (for financial institutions, prompt customer notification under the Central Bank framework), and evidence standards your insurer and — where relevant — authorities will apply. The notification decision path belongs in the plan with counsel's number on it, because the clock starts at detection, not at your first meeting.</p>
+<h2>Frequently asked questions</h2>
+<div class="faq"><details><summary>Should we call the authorities?</summary><p>Prepare the answer before the event with counsel: which notifications are mandatory for you (data protection, sector regulators), which are advisable, and who makes the call. The wrong answer is discovering the obligations afterwards.</p></details><details><summary>When do we involve the insurer?</summary><p>Early — most cyber policies require prompt notification and some specify approved responders. Late notification is a classic ground for coverage disputes. The insurer's hotline belongs on the first-hours card.</p></details><details><summary>Do we need external incident response on retainer?</summary><p>At mid-size and above, a pre-agreed responder shortens the worst day materially — no procurement in a crisis, known rates, familiarity with your environment. At minimum: have the shortlist and contract template ready.</p></details></div>
+</div></article>
+
+<section class="cluster"><div class="wrap">
+  <h2 data-ui="clusterTitle">The signature scenarios hub</h2>
+  <div class="links" id="cluster"><a href="drone-incident-readiness.html">Drone incident readiness for facilities: the business guide</a><a href="drone-fire-downtime.html">Impact, fire, downtime: the real loss chain of a drone incident</a><a href="business-interruption-insurance-evidence.html">Business interruption insurance: the evidence that gets claims paid</a><a href="ransomware-pay-or-recover.html">Pay or recover? The ransomware decision, examined</a><a href="business-continuity-uae.html">Business continuity in the UAE: the complete guide</a><a href="manufacturing-continuity-gcc.html">Business continuity for manufacturers in the GCC</a></div>
+</div></section>
+
+<section class="cta"><div class="wrap in">
+  <h2 data-ui="ctaTitle">Thirteen questions show whether your first hours are ready.</h2>
+  <div><a class="btn" href="quiz.html" data-ui="cta">Request a gap assessment</a><a class="btn2" href="gap-assessment.html" data-ui="cta2">Take the free readiness check</a></div>
+</div></section>
+
+<footer class="foot"><div class="wrap in">
+  <span data-ui="copy">© 2026 risk-place.org · Business Continuity &amp; Resilience</span>
+  <a href="privacy.html" data-ui="privacy">Privacy policy</a>
+</div></footer>
+
+<a class="stickycta" id="stickycta" href="quiz.html" data-ui="sticky">NCEMA-ready gap assessment</a>
+
+<script>
+var C={"en": {"tagline": "Business Continuity &amp; Resilience · GCC", "back": "← NCEMA 7000 hub", "copy": "© 2026 risk-place.org · Business Continuity &amp; Resilience", "privacy": "Privacy policy", "sticky": "Free readiness check · 5 min", "cta": "Take the free readiness check (5 min)", "cta2": "Request a gap assessment", "kicker": "Signature scenario · Ransomware", "h1": "Ransomware: the first hours decide the losses", "sub": "By the time the ransom note appears, the technical battle is mostly over. What remains is a management battle — and it is won or lost on decisions that should have been written down long before.", "clusterTitle": "The signature scenarios hub", "ctaTitle": "Thirteen questions show whether your first hours are ready.", "sections": [["h2", "What the first hours actually look like"], ["p", "Detection is rarely a clean alarm: a server behaves oddly, a share becomes unreadable, a supplier reports strange mail from your domain. Then the cascade: <b>systems freeze one by one, phones fill, nobody is sure what still works, and every minute of indecision widens the encryption</b>. The organisations that come out with survivable losses are not the ones with the best firewalls — they are the ones where the next five decisions had names attached before the day."], ["h2", "The five decisions, prepared in advance"], ["table", ["Decision", "The question", "Who must hold the pen"], [["Isolate", "Disconnect networks and sites — accepting operational stop — yes or no, when?", "A named person reachable 24/7, with written authority"], ["Declare", "Trigger the continuity plan and crisis structure — on what threshold?", "Duty leadership; the threshold defined, not debated"], ["Operate degraded", "Which activities continue manually, which stop safely?", "Operations, from the pre-built manual-mode plans"], ["Communicate", "Staff, clients, regulator, insurer — who says what, when?", "One voice; holding statements drafted in peacetime"], ["Preserve evidence", "Images, logs, timelines — before restoring anything", "IT with the incident scribe; the insurer and any investigation depend on it"]]], ["h2", "The mistakes that multiply the loss"], ["ul", ["<b>Waiting for certainty before isolating.</b> Encryption spreads while the meeting assembles. The isolation decision is bought in advance with written authority — or paid for in scope.", "<b>Restoring before preserving.</b> Wiping systems destroys the evidence your insurer, lawyers and any regulator will ask for — and can reinstall the attacker's access.", "<b>Trusting backups untested by restore.</b> The worst possible moment to discover a backup does not restore is the moment you need it. Restore-tested is the only «tested».", "<b>Silence toward clients.</b> Hours of silence cost more trust than the incident. A holding statement within the first hours keeps the relationship survivable.", "<b>Improvised negotiation contact.</b> Any contact with the attackers — if it happens at all — belongs to specialists and counsel, not to the night-shift admin. See our pay-or-recover analysis."]], ["callout", "The one-page artefact that changes everything: the first-hours card — five decisions, named holders, deputies, thresholds, contact numbers. Laminated, offline, at three locations. Cost: a workshop. Value on the day: the difference between an incident and a catastrophe."], ["h2", "The UAE layer"], ["p", "For UAE organisations the event carries legal clocks alongside the operational ones: personal-data breach obligations, sector notification expectations (for financial institutions, prompt customer notification under the Central Bank framework), and evidence standards your insurer and — where relevant — authorities will apply. The notification decision path belongs in the plan with counsel's number on it, because the clock starts at detection, not at your first meeting."], ["h2", "Frequently asked questions"], ["faq", [["Should we call the authorities?", "Prepare the answer before the event with counsel: which notifications are mandatory for you (data protection, sector regulators), which are advisable, and who makes the call. The wrong answer is discovering the obligations afterwards."], ["When do we involve the insurer?", "Early — most cyber policies require prompt notification and some specify approved responders. Late notification is a classic ground for coverage disputes. The insurer's hotline belongs on the first-hours card."], ["Do we need external incident response on retainer?", "At mid-size and above, a pre-agreed responder shortens the worst day materially — no procurement in a crisis, known rates, familiarity with your environment. At minimum: have the shortlist and contract template ready."]]]], "cluster": [["drone-incident-readiness.html", "Drone incident readiness for facilities: the business guide"], ["drone-fire-downtime.html", "Impact, fire, downtime: the real loss chain of a drone incident"], ["business-interruption-insurance-evidence.html", "Business interruption insurance: the evidence that gets claims paid"], ["ransomware-pay-or-recover.html", "Pay or recover? The ransomware decision, examined"], ["business-continuity-uae.html", "Business continuity in the UAE: the complete guide"], ["manufacturing-continuity-gcc.html", "Business continuity for manufacturers in the GCC"]]}, "ar": {"tagline": "استمرارية الأعمال والمرونة · دول الخليج", "back": "→ دليل NCEMA 7000", "copy": "© ٢٠٢٦ risk-place.org · استمرارية الأعمال والمرونة", "privacy": "سياسة الخصوصية", "sticky": "فحص جاهزية مجاني · 5 دقائق", "cta": "جرّبوا فحص الجاهزية المجاني (5 دقائق)", "cta2": "اطلبوا تقييم الفجوات", "kicker": "سيناريو مميز · برمجية الفدية", "h1": "برمجية الفدية: الساعات الأولى تقرر الخسائر", "sub": "حين تظهر رسالة الفدية تكون المعركة التقنية قد انتهت في معظمها. ما يتبقى معركة إدارية — تُكسب أو تُخسر بقرارات كان يجب أن تُكتب قبل اليوم بزمن.", "clusterTitle": "مركز السيناريوهات المميزة", "ctaTitle": "ثلاثة عشر سؤالاً تُظهر هل ساعاتكم الأولى جاهزة.", "sections": [["h2", "كيف تبدو الساعات الأولى فعلاً"], ["p", "الاكتشاف نادراً ما يكون إنذاراً نظيفاً: خادم يتصرف بغرابة، مجلد مشترك يصبح غير مقروء، مورد يبلغ عن بريد غريب من نطاقكم. ثم الشلال: <b>الأنظمة تتجمد واحداً واحداً والهواتف تمتلئ ولا أحد متأكد مما يعمل بعد، وكل دقيقة تردد توسع التشفير</b>. المؤسسات التي تخرج بخسائر قابلة للنجاة ليست صاحبة أفضل جدر حماية — بل التي كانت القرارات الخمسة التالية فيها بأسماء أصحابها قبل اليوم."], ["h2", "القرارات الخمسة، معدة سلفاً"], ["table", ["القرار", "السؤال", "من يجب أن يمسك القلم"], [["العزل", "فصل الشبكات والمواقع — بقبول توقف تشغيلي — نعم أم لا ومتى؟", "شخص مسمى متاح على مدار الساعة بصلاحية مكتوبة"], ["الإعلان", "تفعيل خطة الاستمرارية وهيكل الأزمة — عند أي عتبة؟", "قيادة المناوبة؛ العتبة محددة لا مُناقشة"], ["التشغيل المتدهور", "أي أنشطة تستمر يدوياً وأيها يتوقف بأمان؟", "العمليات، من خطط الوضع اليدوي المبنية سلفاً"], ["التواصل", "الموظفون والعملاء والمنظم والمؤمّن — من يقول ماذا ومتى؟", "صوت واحد؛ بيانات جاهزة صيغت في السلم"], ["حفظ الأدلة", "صور الأنظمة والسجلات والجداول الزمنية — قبل استعادة أي شيء", "التقنية مع مدون الحادث؛ المؤمّن وأي تحقيق يعتمدان عليها"]]], ["h2", "الأخطاء التي تضاعف الخسارة"], ["ul", ["<b>انتظار اليقين قبل العزل.</b> التشفير ينتشر بينما يجتمع الاجتماع. قرار العزل يُشترى سلفاً بصلاحية مكتوبة — أو يُدفع ثمنه اتساعاً.", "<b>الاستعادة قبل الحفظ.</b> مسح الأنظمة يدمر الأدلة التي سيطلبها المؤمّن والمحامون وأي منظم — وقد يعيد تثبيت وصول المهاجم.", "<b>الثقة بنسخ لم تُختبر بالاستعادة.</b> أسوأ لحظة لاكتشاف أن النسخة لا تُستعاد هي لحظة حاجتكم إليها. المختبر بالاستعادة هو «المختبر» الوحيد.", "<b>الصمت تجاه العملاء.</b> ساعات الصمت تكلف ثقة أكثر من الحادث. بيان أولي خلال الساعات الأولى يبقي العلاقة قابلة للنجاة.", "<b>تواصل تفاوضي مرتجل.</b> أي تواصل مع المهاجمين — إن حدث أصلاً — عمل مختصين ومستشار قانوني لا مدير مناوبة الليل. راجعوا تحليلنا «الدفع أم التعافي»."]], ["callout", "الناتج ذو الصفحة الواحدة الذي يغير كل شيء: بطاقة الساعات الأولى — خمسة قرارات وأصحاب مسمون ونواب وعتبات وأرقام اتصال. مغلفة ودون اتصال وفي ثلاثة مواقع. التكلفة: ورشة. القيمة يوم الحادث: الفرق بين حادث وكارثة."], ["h2", "الطبقة الإماراتية"], ["p", "للمؤسسات الإماراتية يحمل الحدث ساعات قانونية إلى جانب التشغيلية: التزامات اختراق البيانات الشخصية، وتوقعات الإخطار القطاعية (للمؤسسات المالية إخطار العملاء الفوري وفق إطار المصرف المركزي)، ومعايير أدلة سيطبقها مؤمّنكم — وحيث ينطبق — السلطات. مسار قرار الإخطار مكانه في الخطة وعليه رقم المستشار القانوني، لأن الساعة تبدأ بالاكتشاف لا باجتماعكم الأول."], ["h2", "أسئلة شائعة"], ["faq", [["هل نتصل بالسلطات؟", "جهزوا الجواب قبل الحدث مع المستشار القانوني: أي إخطارات إلزامية عليكم (حماية البيانات، المنظمون القطاعيون) وأيها مستحسن ومن يتخذ القرار. الجواب الخاطئ هو اكتشاف الالتزامات بعد الواقعة."], ["متى نُشرك المؤمّن؟", "مبكراً — معظم بوالص السيبراني تشترط إخطاراً فورياً وبعضها يحدد مستجيبين معتمدين. الإخطار المتأخر سبب كلاسيكي لنزاعات التغطية. خط المؤمّن الساخن مكانه على بطاقة الساعات الأولى."], ["هل نحتاج استجابة خارجية للحوادث بعقد مسبق؟", "من الحجم المتوسط فصاعداً، مستجيب متفق عليه سلفاً يقصّر أسوأ يوم بشكل ملموس — لا مشتريات في أزمة، وأسعار معروفة، وألفة ببيئتكم. كحد أدنى: قائمة مختصرة وقالب عقد جاهزان."]]]], "cluster": [["drone-incident-readiness.html", "جاهزية المنشآت لحوادث الطائرات المسيرة: دليل الأعمال"], ["drone-fire-downtime.html", "الارتطام فالحريق فالتوقف: سلسلة الخسارة الحقيقية لحادث مسيرة"], ["business-interruption-insurance-evidence.html", "تأمين انقطاع الأعمال: الأدلة التي تُدفع بها المطالبات"], ["ransomware-pay-or-recover.html", "الدفع أم التعافي؟ قرار برمجية الفدية تحت الفحص"], ["business-continuity-uae.html", "استمرارية الأعمال في الإمارات: الدليل الكامل"], ["manufacturing-continuity-gcc.html", "استمرارية الأعمال للمصنعين في الخليج"]]}};
+var lang="en";
+function renderSections(secs){
+  var out=[];
+  secs.forEach(function(s){
+    if(s[0]==="h2")out.push("<h2>"+s[1]+"</h2>");
+    else if(s[0]==="p")out.push("<p>"+s[1]+"</p>");
+    else if(s[0]==="ul")out.push("<ul>"+s[1].map(function(x){return "<li>"+x+"</li>";}).join("")+"</ul>");
+    else if(s[0]==="callout")out.push('<div class="callout"><p>'+s[1]+"</p></div>");
+    else if(s[0]==="table"){
+      out.push('<table class="tbl"><thead><tr>'+s[1].map(function(c){return "<th>"+c+"</th>";}).join("")+"</tr></thead><tbody>"+
+        s[2].map(function(r){return "<tr>"+r.map(function(c){return "<td>"+c+"</td>";}).join("")+"</tr>";}).join("")+"</tbody></table>");
+    } else if(s[0]==="faq"){
+      out.push('<div class="faq">'+s[1].map(function(x){return "<details><summary>"+x[0]+"</summary><p>"+x[1]+"</p></details>";}).join("")+"</div>");
+    }
+  });
+  return out.join("\n");
+}
+function setLang(l){
+  lang=l;document.documentElement.lang=l;document.documentElement.dir=(l==="ar")?"rtl":"ltr";
+  var d=C[l];
+  document.querySelectorAll("[data-ui]").forEach(function(el){var k=el.getAttribute("data-ui");if(typeof d[k]==="string")el.innerHTML=d[k];});
+  document.getElementById("art").innerHTML=renderSections(d.sections);
+  document.getElementById("cluster").innerHTML=d.cluster.map(function(x){return '<a href="'+x[0]+'">'+x[1]+"</a>";}).join("");
+  document.getElementById("langbtn").textContent=(l==="ar")?"EN":"AR";
+  try{localStorage.setItem("rp_org_lang",l);}catch(e){}
+}
+function toggleLang(){setLang(lang==="ar"?"en":"ar");}
+(function(){var s=null;try{s=localStorage.getItem("rp_org_lang");}catch(e){}if(s==="ar")setLang("ar");})();
+window.addEventListener('scroll',function(){
+  var el=document.getElementById('stickycta');if(!el)return;
+  var cta=document.querySelector('section.cta');
+  var show=window.scrollY>600&&(!cta||cta.getBoundingClientRect().top>window.innerHeight);
+  el.classList.toggle('on',show);
+},{passive:true});
+</script>
+</body>
+</html>

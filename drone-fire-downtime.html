@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HNF79F1SSN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HNF79F1SSN');</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Impact, fire, downtime: the real loss chain of a drone incident — risk-place.org</title>
+<meta name="description" content="Where the money is actually lost in a drone incident: rarely the impact itself — the fire that follows and the days of downtime after. How each link is broken with classic disciplines.">
+<link rel="canonical" href="https://risk-place.org/drone-fire-downtime.html">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:title" content="Impact, fire, downtime: the real loss chain of a drone incident — risk-place.org">
+<meta property="og:description" content="Where the money is actually lost in a drone incident: rarely the impact itself — the fire that follows and the days of downtime after. How each link is broken with classic disciplines.">
+<meta property="og:image" content="https://risk-place.org/hero-dubai.jpg">
+<meta property="og:url" content="https://risk-place.org/drone-fire-downtime.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is there data on drone incident losses?", "acceptedAnswer": {"@type": "Answer", "text": "Public loss data for the region is sparse and often anonymised — which is precisely why the chain logic matters: each link is governed by disciplines with abundant loss history (fire, business interruption). You do not need incident statistics to engineer against fire and downtime."}}, {"@type": "Question", "name": "Our facility survived a nearby incident with no damage. Are we fine?", "acceptedAnswer": {"@type": "Answer", "text": "You experienced link three without links one and two — closure without fire. The question your own event answered: how many days did access take, and what did they cost? That number is your continuity case."}}, {"@type": "Question", "name": "Who should own this analysis internally?", "acceptedAnswer": {"@type": "Answer", "text": "Jointly: HSE owns the fire layer, operations and continuity own the downtime layer, finance prices both. A drone-readiness review that lives only in security stays in link one — where you have the least leverage."}}]}</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#fff;-webkit-font-smoothing:antialiased;font-family:'Figtree','IBM Plex Sans Arabic',system-ui,sans-serif;color:#16181F;line-height:1.55}
+html[dir="rtl"] body{font-family:'IBM Plex Sans Arabic','Figtree',system-ui,sans-serif}
+a{color:#16181F;text-decoration:none}
+::selection{background:#FBE0CB}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+.hdr{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.94);backdrop-filter:blur(14px);border-bottom:1px solid #EAE7E1}
+.hdr .in{height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;flex-direction:column;gap:1px}
+.logo .nm{font-size:26px;font-weight:600;letter-spacing:-0.02em}
+.logo .nm b{color:#C4571C;font-weight:600}
+.logo .tg{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8A8478}
+.hdr .right{display:flex;align-items:center;gap:12px}
+.langbtn{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.08em;background:none;border:1px solid #DCD8D0;border-radius:999px;padding:7px 15px;cursor:pointer;color:#3D4149}
+.langbtn:hover{border-color:#16181F;color:#16181F}
+.backlink{font-size:14.5px;color:#3D4149}
+.backlink:hover{color:#C4571C}
+.hero{background:#0D1117;color:#fff}
+.hero .in{padding-top:64px;padding-bottom:56px}
+.kicker{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#F0A868;margin:0 0 20px}
+.hero h1{font-size:42px;font-weight:300;line-height:1.14;letter-spacing:-0.025em;margin:0 0 16px;max-width:28ch;text-wrap:pretty}
+.hero .sub{font-size:18px;font-weight:300;color:rgba(255,255,255,0.75);margin:0;max-width:62ch;line-height:1.6}
+.btn{display:inline-block;font-size:16.5px;font-weight:600;background:#C4571C;color:#fff !important;padding:15px 32px;border-radius:999px}
+.btn:hover{background:#A03F12}
+.btn2{display:inline-block;font-size:16px;font-weight:400;color:#fff !important;border:1px solid rgba(255,255,255,0.34);padding:14px 28px;border-radius:999px;margin-inline-start:10px}
+.btn2:hover{border-color:#fff}
+.cta{background:#0D1117;color:#fff}
+.cta .in{padding-top:64px;padding-bottom:64px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:22px}
+.cta h2{font-size:30px;font-weight:300;letter-spacing:-0.02em;margin:0;max-width:30ch;text-wrap:pretty}
+.foot{background:#0D1117;color:rgba(255,255,255,0.46);border-top:1px solid rgba(255,255,255,0.12)}
+.foot .in{padding-top:22px;padding-bottom:22px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13.5px;font-weight:300}
+.foot a{color:rgba(255,255,255,0.6)}
+.foot a:hover{color:#fff}
+.stickycta{display:none;position:fixed;left:14px;right:14px;bottom:14px;z-index:70;background:#C4571C;color:#fff !important;text-align:center;font-size:16px;font-weight:600;padding:14px 18px;border-radius:999px;box-shadow:0 10px 28px rgba(13,17,23,0.28)}
+
+.art{padding:64px 0 20px}
+.art h2{font-size:30px;font-weight:300;line-height:1.18;letter-spacing:-0.02em;margin:52px 0 18px;text-wrap:pretty}
+.art h2:first-child{margin-top:0}
+.art p{font-size:16.5px;font-weight:300;line-height:1.72;color:#3D4149;margin:0 0 16px;max-width:76ch}
+.art ul{margin:0 0 18px;padding-inline-start:22px;max-width:76ch}
+.art li{font-size:16.5px;font-weight:300;line-height:1.66;color:#3D4149;margin-bottom:9px}
+.art li b,.art p b{font-weight:600;color:#16181F}
+.callout{background:#F7F4EF;border:1px solid #EAE7E1;border-inline-start:3px solid #C4571C;border-radius:12px;padding:20px 24px;margin:26px 0;max-width:76ch}
+.callout p{margin:0;font-size:16px}
+.tbl{width:100%;border-collapse:collapse;margin:24px 0 30px;font-size:15.5px}
+.tbl th{text-align:start;font-weight:600;padding:12px 14px;border-bottom:2px solid #16181F;font-size:14.5px}
+.tbl td{padding:12px 14px;border-bottom:1px solid #E1DCD3;font-weight:300;color:#3D4149;vertical-align:top;line-height:1.55}
+.tbl td:first-child{font-weight:500;color:#16181F}
+.faq{margin:10px 0 30px;max-width:76ch}
+.faq details{border-bottom:1px solid #E1DCD3;padding:4px 0}
+.faq summary{font-size:17px;font-weight:600;padding:14px 0;cursor:pointer;list-style-position:outside}
+.faq details p{padding:0 0 16px}
+.cluster{background:#F7F4EF;border-top:1px solid #EAE7E1;border-bottom:1px solid #EAE7E1;padding:56px 0}
+.cluster h2{font-size:26px;font-weight:300;margin:0 0 26px}
+.cluster .links{display:grid;grid-template-columns:1fr 1fr;gap:14px 40px}
+.cluster a{display:block;padding:14px 0;border-bottom:1px solid #E1DCD3;font-size:16px;font-weight:500}
+.cluster a:hover{color:#C4571C}
+.src{font-size:13.5px;color:#8A8478;margin-top:30px;max-width:76ch}
+.src a{color:#8A8478;text-decoration:underline}
+@media(max-width:760px){.art h2{font-size:24px}.cluster .links{grid-template-columns:1fr}.tbl{font-size:14px}.tbl th,.tbl td{padding:9px 8px}}
+
+@media(max-width:760px){.hero h1{font-size:30px}}
+@media(max-width:600px){
+  .wrap{padding-left:20px;padding-right:20px}
+  .logo .nm{font-size:22px}
+  .logo .tg{display:none}
+  .backlink{font-size:13px}
+  .hero .in{padding-top:38px;padding-bottom:34px}
+  .hero h1{font-size:25px;line-height:1.2}
+  .art{padding:40px 0 10px}
+  .stickycta.on{display:block}
+}
+</style>
+</head>
+<body>
+<header class="hdr"><div class="wrap in">
+  <a class="logo" href="index.html"><span class="nm">risk-place<b>.org</b></span><span class="tg" data-ui="tagline">Business Continuity &amp; Resilience · GCC</span></a>
+  <div class="right"><a class="backlink" href="drone-incident-readiness.html" data-ui="back">← Home</a><button class="langbtn" id="langbtn" onclick="toggleLang()">AR</button></div>
+</div></header>
+
+<section class="hero"><div class="wrap in">
+  <p class="kicker" data-ui="kicker">Signature scenario · The loss chain</p>
+  <h1 data-ui="h1">Impact, fire, downtime: where the losses actually live</h1>
+  <p class="sub" data-ui="sub">In the loss records of area incidents, the impact is rarely the expensive part. The fire that follows and the downtime after it carry the cost — and both have century-old disciplines against them.</p>
+</div></section>
+
+<article class="art"><div class="wrap" id="art">
+<h2>Link one: impact — the smallest loss, the loudest headline</h2>
+<p>Direct impact damage is bounded: a roof section, a tank, a vehicle, a stretch of piping. Painful, insurable, repairable in weeks. If the event ended there, it would rank far below an ordinary warehouse fire in any loss database. The impact matters because of what it starts, not what it breaks — it is an <b>ignition source delivered to a random point of your facility</b>. That reframing is the whole game: you cannot choose the point, but you decide what is waiting there.</p>
+<h2>Link two: fire — where damage multiplies</h2>
+<p>Whether an impact becomes a catastrophe is decided by fire physics you control: <b>what is stored near what, which compartments contain spread, which distances isolate fuel, how fast suppression arrives</b>. A facility with honest compartmentation loses a bay; a facility with fuel next to production loses the plant. None of this is drone-specific — it is the fire discipline your insurer has audited for decades, applied with fresh eyes to open-air storage, roofs and skylights that older audits treated as low-risk.</p>
+<ul><li>Review open-air fuel and solvent storage first — the highest energy at the least protection.</li><li>Check compartment integrity where later modifications cut walls and routed cables.</li><li>Rate suppression against an intense fuel fire, not an office fire.</li><li>Screen what cannot be moved: mesh and covers keep an ignition source from what burns.</li></ul>
+<h2>Link three: downtime — the silent majority of the loss</h2>
+<p>Then the fire is out — and the loss keeps running. The zone stays closed for investigation; access needs permits; clients need answers; penalties accrue. In business-interruption claims across industries, <b>the interruption routinely outweighs the property damage</b> — and it is governed not by the event but by your recovery arrangements: the 72-hour plan, alternate routes and facilities, first-hours authority, communication discipline, and the evidence your insurer will accept.</p>
+<table class="tbl"><thead><tr><th>Chain link</th><th>What decides the outcome</th><th>Discipline that breaks it</th></tr></thead><tbody><tr><td>Impact</td><td>Random point of arrival</td><td>You cannot break this link — plan around it</td></tr><tr><td>Fire</td><td>Storage layout, compartments, suppression</td><td>Classic fire protection engineering</td></tr><tr><td>Downtime</td><td>Recovery arrangements, authority, evidence</td><td>Business continuity management</td></tr></tbody></table>
+<div class="callout"><p>Read your own exposure in this order: what burns → what spreads → what stops. Companies instinctively invest in the first link they can see (the airspace) — the only link they cannot influence. The leverage is entirely in links two and three.</p></div>
+<h2>Frequently asked questions</h2>
+<div class="faq"><details><summary>Is there data on drone incident losses?</summary><p>Public loss data for the region is sparse and often anonymised — which is precisely why the chain logic matters: each link is governed by disciplines with abundant loss history (fire, business interruption). You do not need incident statistics to engineer against fire and downtime.</p></details><details><summary>Our facility survived a nearby incident with no damage. Are we fine?</summary><p>You experienced link three without links one and two — closure without fire. The question your own event answered: how many days did access take, and what did they cost? That number is your continuity case.</p></details><details><summary>Who should own this analysis internally?</summary><p>Jointly: HSE owns the fire layer, operations and continuity own the downtime layer, finance prices both. A drone-readiness review that lives only in security stays in link one — where you have the least leverage.</p></details></div>
+</div></article>
+
+<section class="cluster"><div class="wrap">
+  <h2 data-ui="clusterTitle">The signature scenarios hub</h2>
+  <div class="links" id="cluster"><a href="drone-incident-readiness.html">Drone incident readiness for facilities: the business guide</a><a href="business-interruption-insurance-evidence.html">Business interruption insurance: the evidence that gets claims paid</a><a href="ransomware-first-hours.html">Ransomware: the first hours decide the losses</a><a href="ransomware-pay-or-recover.html">Pay or recover? The ransomware decision, examined</a><a href="business-continuity-uae.html">Business continuity in the UAE: the complete guide</a><a href="manufacturing-continuity-gcc.html">Business continuity for manufacturers in the GCC</a></div>
+</div></section>
+
+<section class="cta"><div class="wrap in">
+  <h2 data-ui="ctaTitle">Which link of the chain is your weakest? Five minutes to find out.</h2>
+  <div><a class="btn" href="quiz.html" data-ui="cta">Request a gap assessment</a><a class="btn2" href="gap-assessment.html" data-ui="cta2">Take the free readiness check</a></div>
+</div></section>
+
+<footer class="foot"><div class="wrap in">
+  <span data-ui="copy">© 2026 risk-place.org · Business Continuity &amp; Resilience</span>
+  <a href="privacy.html" data-ui="privacy">Privacy policy</a>
+</div></footer>
+
+<a class="stickycta" id="stickycta" href="quiz.html" data-ui="sticky">NCEMA-ready gap assessment</a>
+
+<script>
+var C={"en": {"tagline": "Business Continuity &amp; Resilience · GCC", "back": "← NCEMA 7000 hub", "copy": "© 2026 risk-place.org · Business Continuity &amp; Resilience", "privacy": "Privacy policy", "sticky": "Free readiness check · 5 min", "cta": "Take the free readiness check (5 min)", "cta2": "Request a gap assessment", "kicker": "Signature scenario · The loss chain", "h1": "Impact, fire, downtime: where the losses actually live", "sub": "In the loss records of area incidents, the impact is rarely the expensive part. The fire that follows and the downtime after it carry the cost — and both have century-old disciplines against them.", "clusterTitle": "The signature scenarios hub", "ctaTitle": "Which link of the chain is your weakest? Five minutes to find out.", "sections": [["h2", "Link one: impact — the smallest loss, the loudest headline"], ["p", "Direct impact damage is bounded: a roof section, a tank, a vehicle, a stretch of piping. Painful, insurable, repairable in weeks. If the event ended there, it would rank far below an ordinary warehouse fire in any loss database. The impact matters because of what it starts, not what it breaks — it is an <b>ignition source delivered to a random point of your facility</b>. That reframing is the whole game: you cannot choose the point, but you decide what is waiting there."], ["h2", "Link two: fire — where damage multiplies"], ["p", "Whether an impact becomes a catastrophe is decided by fire physics you control: <b>what is stored near what, which compartments contain spread, which distances isolate fuel, how fast suppression arrives</b>. A facility with honest compartmentation loses a bay; a facility with fuel next to production loses the plant. None of this is drone-specific — it is the fire discipline your insurer has audited for decades, applied with fresh eyes to open-air storage, roofs and skylights that older audits treated as low-risk."], ["ul", ["Review open-air fuel and solvent storage first — the highest energy at the least protection.", "Check compartment integrity where later modifications cut walls and routed cables.", "Rate suppression against an intense fuel fire, not an office fire.", "Screen what cannot be moved: mesh and covers keep an ignition source from what burns."]], ["h2", "Link three: downtime — the silent majority of the loss"], ["p", "Then the fire is out — and the loss keeps running. The zone stays closed for investigation; access needs permits; clients need answers; penalties accrue. In business-interruption claims across industries, <b>the interruption routinely outweighs the property damage</b> — and it is governed not by the event but by your recovery arrangements: the 72-hour plan, alternate routes and facilities, first-hours authority, communication discipline, and the evidence your insurer will accept."], ["table", ["Chain link", "What decides the outcome", "Discipline that breaks it"], [["Impact", "Random point of arrival", "You cannot break this link — plan around it"], ["Fire", "Storage layout, compartments, suppression", "Classic fire protection engineering"], ["Downtime", "Recovery arrangements, authority, evidence", "Business continuity management"]]], ["callout", "Read your own exposure in this order: what burns → what spreads → what stops. Companies instinctively invest in the first link they can see (the airspace) — the only link they cannot influence. The leverage is entirely in links two and three."], ["h2", "Frequently asked questions"], ["faq", [["Is there data on drone incident losses?", "Public loss data for the region is sparse and often anonymised — which is precisely why the chain logic matters: each link is governed by disciplines with abundant loss history (fire, business interruption). You do not need incident statistics to engineer against fire and downtime."], ["Our facility survived a nearby incident with no damage. Are we fine?", "You experienced link three without links one and two — closure without fire. The question your own event answered: how many days did access take, and what did they cost? That number is your continuity case."], ["Who should own this analysis internally?", "Jointly: HSE owns the fire layer, operations and continuity own the downtime layer, finance prices both. A drone-readiness review that lives only in security stays in link one — where you have the least leverage."]]]], "cluster": [["drone-incident-readiness.html", "Drone incident readiness for facilities: the business guide"], ["business-interruption-insurance-evidence.html", "Business interruption insurance: the evidence that gets claims paid"], ["ransomware-first-hours.html", "Ransomware: the first hours decide the losses"], ["ransomware-pay-or-recover.html", "Pay or recover? The ransomware decision, examined"], ["business-continuity-uae.html", "Business continuity in the UAE: the complete guide"], ["manufacturing-continuity-gcc.html", "Business continuity for manufacturers in the GCC"]]}, "ar": {"tagline": "استمرارية الأعمال والمرونة · دول الخليج", "back": "→ دليل NCEMA 7000", "copy": "© ٢٠٢٦ risk-place.org · استمرارية الأعمال والمرونة", "privacy": "سياسة الخصوصية", "sticky": "فحص جاهزية مجاني · 5 دقائق", "cta": "جرّبوا فحص الجاهزية المجاني (5 دقائق)", "cta2": "اطلبوا تقييم الفجوات", "kicker": "سيناريو مميز · سلسلة الخسارة", "h1": "ارتطام فحريق فتوقف: أين تعيش الخسائر فعلاً", "sub": "في سجلات خسائر حوادث المناطق، الارتطام نادراً ما يكون الجزء الغالي. الحريق الذي يليه والتوقف بعده يحملان التكلفة — ولكليهما تخصصات عمرها قرن.", "clusterTitle": "مركز السيناريوهات المميزة", "ctaTitle": "أي حلقة من السلسلة أضعف حلقاتكم؟ خمس دقائق لمعرفة ذلك.", "sections": [["h2", "الحلقة الأولى: الارتطام — أصغر خسارة وأعلى عنوان"], ["p", "ضرر الارتطام المباشر محدود: قسم سقف أو خزان أو مركبة أو مقطع أنابيب. مؤلم وقابل للتأمين وقابل للإصلاح في أسابيع. لو انتهى الحدث هناك لصُنف أدنى بكثير من حريق مستودع عادي في أي قاعدة خسائر. الارتطام مهم بما يبدأه لا بما يكسره — إنه <b>مصدر اشتعال يُسلَّم إلى نقطة عشوائية من منشأتكم</b>. إعادة التأطير هذه هي اللعبة كلها: لا تختارون النقطة، لكنكم تقررون ما ينتظر هناك."], ["h2", "الحلقة الثانية: الحريق — حيث يتضاعف الضرر"], ["p", "هل يتحول الارتطام إلى كارثة؟ تقرره فيزياء حريق تتحكمون بها: <b>ما المخزن بجوار ماذا، وأي أقسام تحتوي الانتشار، وأي مسافات تعزل الوقود، وبأي سرعة يصل الإطفاء</b>. المنشأة ذات التقسيم الصادق تخسر جناحاً؛ والمنشأة التي وقودها بجانب الإنتاج تخسر المصنع. لا شيء من هذا خاص بالمسيرات — إنه انضباط الحريق الذي دققه مؤمّنكم عقوداً، مطبقاً بعين جديدة على التخزين المكشوف والأسقف والمناور التي عاملتها التدقيقات القديمة كمنخفضة الخطر."], ["ul", ["راجعوا تخزين الوقود والمذيبات المكشوف أولاً — أعلى طاقة بأقل حماية.", "افحصوا سلامة الأقسام حيث قطعت التعديلات اللاحقة جدراناً ومررت كابلات.", "قيّموا الإطفاء مقابل حريق وقود شديد لا حريق مكاتب.", "استروا ما لا يمكن نقله: الشبكات والأغطية تبعد مصدر الاشتعال عما يحترق."]], ["h2", "الحلقة الثالثة: التوقف — الأغلبية الصامتة من الخسارة"], ["p", "ثم يُطفأ الحريق — والخسارة تواصل الجريان. تبقى المنطقة مغلقة للتحقيق؛ والوصول يحتاج تصاريح؛ والعملاء يحتاجون أجوبة؛ والغرامات تتراكم. في مطالبات انقطاع الأعمال عبر القطاعات، <b>يفوق الانقطاع الضرر المادي بانتظام</b> — ويحكمه ليس الحدث بل ترتيبات تعافيكم: خطة 72 ساعة والمسارات والمنشآت البديلة وصلاحيات الساعات الأولى وانضباط التواصل والأدلة التي سيقبلها مؤمّنكم."], ["table", ["حلقة السلسلة", "ما يقرر النتيجة", "التخصص الذي يكسرها"], [["الارتطام", "نقطة وصول عشوائية", "لا تستطيعون كسر هذه الحلقة — خططوا حولها"], ["الحريق", "تخطيط التخزين والأقسام والإطفاء", "هندسة حماية الحرائق الكلاسيكية"], ["التوقف", "ترتيبات التعافي والصلاحيات والأدلة", "إدارة استمرارية الأعمال"]]], ["callout", "اقرأوا تعرضكم بهذا الترتيب: ما يحترق ← ما ينتشر ← ما يتوقف. الشركات تستثمر غريزياً في الحلقة الأولى المرئية (المجال الجوي) — الحلقة الوحيدة التي لا تملك التأثير عليها. الرافعة كلها في الحلقتين الثانية والثالثة."], ["h2", "أسئلة شائعة"], ["faq", [["هل توجد بيانات عن خسائر حوادث المسيرات؟", "بيانات الخسائر العلنية للمنطقة شحيحة وغالباً مجهولة المصدر — ولهذا تحديداً يهم منطق السلسلة: كل حلقة يحكمها تخصص له تاريخ خسائر وافر (الحريق وانقطاع الأعمال). لا تحتاجون إحصاءات حوادث لتهندسوا ضد الحريق والتوقف."], ["نجت منشأتنا من حادث قريب دون ضرر. هل نحن بخير؟", "عشتم الحلقة الثالثة دون الأولى والثانية — إغلاق دون حريق. السؤال الذي أجاب عنه حدثكم: كم يوماً استغرق الوصول وكم كلفت؟ ذلك الرقم هو حجتكم للاستمرارية."], ["من يملك هذا التحليل داخلياً؟", "بالاشتراك: السلامة تملك طبقة الحريق، والعمليات والاستمرارية طبقة التوقف، والمالية تسعّر الاثنتين. مراجعة جاهزية تعيش في الأمن وحده تبقى في الحلقة الأولى — حيث رافعتكم الأقل."]]]], "cluster": [["drone-incident-readiness.html", "جاهزية المنشآت لحوادث الطائرات المسيرة: دليل الأعمال"], ["business-interruption-insurance-evidence.html", "تأمين انقطاع الأعمال: الأدلة التي تُدفع بها المطالبات"], ["ransomware-first-hours.html", "برمجية الفدية: الساعات الأولى تقرر الخسائر"], ["ransomware-pay-or-recover.html", "الدفع أم التعافي؟ قرار برمجية الفدية تحت الفحص"], ["business-continuity-uae.html", "استمرارية الأعمال في الإمارات: الدليل الكامل"], ["manufacturing-continuity-gcc.html", "استمرارية الأعمال للمصنعين في الخليج"]]}};
+var lang="en";
+function renderSections(secs){
+  var out=[];
+  secs.forEach(function(s){
+    if(s[0]==="h2")out.push("<h2>"+s[1]+"</h2>");
+    else if(s[0]==="p")out.push("<p>"+s[1]+"</p>");
+    else if(s[0]==="ul")out.push("<ul>"+s[1].map(function(x){return "<li>"+x+"</li>";}).join("")+"</ul>");
+    else if(s[0]==="callout")out.push('<div class="callout"><p>'+s[1]+"</p></div>");
+    else if(s[0]==="table"){
+      out.push('<table class="tbl"><thead><tr>'+s[1].map(function(c){return "<th>"+c+"</th>";}).join("")+"</tr></thead><tbody>"+
+        s[2].map(function(r){return "<tr>"+r.map(function(c){return "<td>"+c+"</td>";}).join("")+"</tr>";}).join("")+"</tbody></table>");
+    } else if(s[0]==="faq"){
+      out.push('<div class="faq">'+s[1].map(function(x){return "<details><summary>"+x[0]+"</summary><p>"+x[1]+"</p></details>";}).join("")+"</div>");
+    }
+  });
+  return out.join("\n");
+}
+function setLang(l){
+  lang=l;document.documentElement.lang=l;document.documentElement.dir=(l==="ar")?"rtl":"ltr";
+  var d=C[l];
+  document.querySelectorAll("[data-ui]").forEach(function(el){var k=el.getAttribute("data-ui");if(typeof d[k]==="string")el.innerHTML=d[k];});
+  document.getElementById("art").innerHTML=renderSections(d.sections);
+  document.getElementById("cluster").innerHTML=d.cluster.map(function(x){return '<a href="'+x[0]+'">'+x[1]+"</a>";}).join("");
+  document.getElementById("langbtn").textContent=(l==="ar")?"EN":"AR";
+  try{localStorage.setItem("rp_org_lang",l);}catch(e){}
+}
+function toggleLang(){setLang(lang==="ar"?"en":"ar");}
+(function(){var s=null;try{s=localStorage.getItem("rp_org_lang");}catch(e){}if(s==="ar")setLang("ar");})();
+window.addEventListener('scroll',function(){
+  var el=document.getElementById('stickycta');if(!el)return;
+  var cta=document.querySelector('section.cta');
+  var show=window.scrollY>600&&(!cta||cta.getBoundingClientRect().top>window.innerHeight);
+  el.classList.toggle('on',show);
+},{passive:true});
+</script>
+</body>
+</html>
