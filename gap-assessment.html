@@ -6,11 +6,12 @@
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HNF79F1SSN');</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Continuity assessment &amp; implementation — risk-place.org</title>
-<meta name="description" content="Audit, business impact analysis, BCP/DRP plans, crisis exercises and support for GCC companies. ISO 22301 and NCEMA 7000 aligned. From $4,900.">
+<title>Resilience Uplift Program — audit and raise your survival metrics — risk-place.org</title>
+<meta name="description" content="A 1-2 month program for GCC companies: readiness audit for ransomware and drone-and-fire scenarios, desk-based stress-test, recovery design — and raised survival metrics. From $4,900, free fixes included.">
+<link rel="canonical" href="https://risk-place.org/gap-assessment.html">
 <link rel="icon" type="image/png" href="favicon.png">
-<meta property="og:title" content="Continuity assessment &amp; implementation — risk-place.org">
-<meta property="og:description" content="Not a folder of templates — a working continuity system: audit, plans, exercises, support. Measured in money.">
+<meta property="og:title" content="Resilience Uplift Program — risk-place.org">
+<meta property="og:description" content="Audit is one third of the work. Two thirds is raising your survival metrics: ransomware downtime 7 days to 2, drone-and-fire interruption 6 months to 1. From $4,900.">
 <meta property="og:image" content="https://risk-place.org/hero-dubai.jpg">
 <meta property="og:url" content="https://risk-place.org/gap-assessment.html">
 <meta property="og:type" content="website">
@@ -36,43 +37,76 @@ a{color:#16181F;text-decoration:none}
 .backlink{font-size:14.5px;color:#3D4149}
 .backlink:hover{color:#C4571C}
 .hero{background:#0D1117;color:#fff}
-.hero .in{padding-top:72px;padding-bottom:64px}
+.hero .in{padding-top:64px;padding-bottom:58px}
 .kicker{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#F0A868;margin:0 0 20px}
-.hero h1{font-size:44px;font-weight:300;line-height:1.12;letter-spacing:-0.025em;margin:0 0 16px;max-width:24ch;text-wrap:pretty}
-.hero .sub{font-size:18px;font-weight:300;color:rgba(255,255,255,0.75);margin:0 0 30px;max-width:62ch}
+.hero h1{font-size:46px;font-weight:300;line-height:1.1;letter-spacing:-0.025em;margin:0 0 16px;max-width:22ch;text-wrap:pretty}
+.hero .sub{font-size:18.5px;font-weight:300;color:rgba(255,255,255,0.78);margin:0 0 28px;max-width:64ch;line-height:1.62}
 .hero .price{font-size:26px;font-weight:600;letter-spacing:-0.02em;margin-bottom:6px}
-.hero .prn{font-size:14.5px;font-weight:300;color:rgba(255,255,255,0.55);margin-bottom:28px}
+.hero .prn{font-size:14px;font-weight:300;color:rgba(255,255,255,0.55);margin-bottom:26px}
 .btn{display:inline-block;font-size:16.5px;font-weight:600;background:#C4571C;color:#fff !important;padding:15px 32px;border-radius:999px}
 .btn:hover{background:#A03F12}
 .btn2{display:inline-block;font-size:16px;font-weight:400;color:#fff !important;border:1px solid rgba(255,255,255,0.34);padding:14px 28px;border-radius:999px;margin-inline-start:10px}
 .btn2:hover{border-color:#fff}
 .sec{padding:72px 0 64px}
 .sec.beige{background:#F7F4EF;border-top:1px solid #EAE7E1;border-bottom:1px solid #EAE7E1}
-.sec h2{font-size:34px;font-weight:300;line-height:1.16;letter-spacing:-0.02em;margin:0 0 34px;text-wrap:pretty}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:30px 44px}
-.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:26px}
-.it{display:flex;flex-direction:column;gap:8px;padding-top:16px;border-top:2px solid #16181F}
-.it b{font-size:18.5px;font-weight:600;letter-spacing:-0.01em}
-.it p{font-size:15.5px;font-weight:300;color:#5E636D;margin:0;line-height:1.6}
+.sec h2{font-size:33px;font-weight:300;line-height:1.16;letter-spacing:-0.02em;margin:0 0 14px;text-wrap:pretty}
+.sec .ssub{font-size:16.5px;font-weight:300;color:#5E636D;margin:0 0 40px;max-width:70ch;line-height:1.6}
+/* value tiles */
+.vals{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:34px}
+.val{background:#fff;border:1px solid #EAE7E1;border-radius:16px;padding:26px 22px;display:flex;flex-direction:column;gap:10px}
+.val .v{font-size:30px;font-weight:600;letter-spacing:-0.02em;color:#C4571C;white-space:nowrap}
+.val .l{font-size:14px;font-weight:300;line-height:1.55;color:#5E636D}
+/* artifacts */
+.acards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.acard{display:flex;flex-direction:column;gap:8px}
+.acard b{font-size:16px;font-weight:600;line-height:1.35;margin-top:6px}
+.acard p{font-size:13.5px;font-weight:300;line-height:1.55;color:#5E636D;margin:0}
+.mock{background:#fff;border:1px solid #DCD8D0;border-radius:10px;padding:12px;height:150px;display:flex;flex-direction:column;gap:8px;box-shadow:0 8px 22px rgba(13,17,23,0.07);overflow:hidden;direction:ltr}
+.mk-head{display:flex;align-items:center;gap:6px}
+.mk-dot{width:8px;height:8px;border-radius:50%;background:#C4571C;flex-shrink:0}
+.mk-line{display:block;height:7px;border-radius:4px;background:#EAE7E1}
+.w40{width:40%}.w50{width:50%}.w55{width:55%}.w60{width:60%}.w70{width:70%}.w75{width:75%}.w80{width:80%}.w85{width:85%}.w88{width:88%}.w90{width:90%}
+.mk-row{display:block;height:11px;border-radius:4px;background:#F1EEE8}
+.mk-row.hot{background:#FBE0CB}
+.mk-gauge{width:74px;height:37px;border-radius:74px 74px 0 0;background:conic-gradient(from 270deg at 50% 100%, #C4571C 0 60deg, #F0A868 60deg 110deg, #EAE7E1 110deg 180deg);align-self:center;position:relative;margin-top:4px}
+.mk-needle{position:absolute;left:50%;bottom:0;width:2px;height:28px;background:#16181F;transform:rotate(28deg);transform-origin:bottom}
+.mk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;flex:1}
+.mk-grid i{border-radius:4px}
+.mk-grid .g1{background:#EAE7E1}.mk-grid .g2{background:#F0A868}.mk-grid .g3{background:#C4571C}
+.mk-bars{display:flex;align-items:flex-end;gap:7px;flex:1;padding:2px 4px}
+.mk-bars i{width:16px;background:#DCD8D0;border-radius:3px 3px 0 0}
+.mk-bars i.hot{background:#C4571C}
+.mk-time{display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9px;color:#8A8478;padding:2px 0}
+.mk-flow{display:flex;align-items:center;gap:5px;flex:1}
+.mk-flow i{flex:1;height:26px;border-radius:6px;background:#EAE7E1}
+.mk-flow i.hot{background:#C4571C}
+.mk-flow em{color:#8A8478;font-style:normal;font-size:11px}
+.mk-kpis{display:flex;gap:6px}
+.mk-kpis b{flex:1;background:#F7F4EF;border:1px solid #EAE7E1;border-radius:6px;text-align:center;font-size:13px;padding:7px 0;color:#16181F}
+.mk-kpis b.hot{background:#C4571C;color:#fff;border-color:#C4571C}
+/* steps */
 .steps{display:flex;flex-direction:column}
 .step{display:grid;grid-template-columns:60px 1fr;gap:20px;padding:22px 0;border-bottom:1px solid #E1DCD3;align-items:baseline}
 .step .n{font-family:'IBM Plex Mono',monospace;font-size:24px;font-weight:500;color:#C4571C}
-.step b{font-size:18.5px;font-weight:600;display:block;margin-bottom:4px}
-.step p{font-size:15.5px;font-weight:300;color:#5E636D;margin:0}
-.doc{background:#fff;border:1px solid #EAE7E1;border-radius:16px;padding:24px 26px;display:flex;flex-direction:column;gap:8px}
-.doc b{font-size:17.5px;font-weight:600}
-.doc p{font-size:14.5px;font-weight:300;color:#5E636D;margin:0;line-height:1.6}
-.docgrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+.step b{font-size:18px;font-weight:600;display:block;margin-bottom:4px}
+.step p{font-size:15.5px;font-weight:300;color:#5E636D;margin:0;line-height:1.62;max-width:78ch}
+/* example callout */
+.excall{background:#F7F4EF;border:1px solid #EAE7E1;border-inline-start:3px solid #C4571C;border-radius:14px;padding:26px 30px;margin-top:44px}
+.excall h3{font-size:17px;font-weight:600;margin:0 0 10px}
+.excall p{font-size:15.5px;font-weight:300;line-height:1.65;color:#3D4149;margin:0;max-width:82ch}
+/* faq */
+.faq details{border-bottom:1px solid #E1DCD3;padding:4px 0}
+.faq summary{font-size:17px;font-weight:600;padding:14px 0;cursor:pointer}
+.faq p{font-size:15.5px;font-weight:300;line-height:1.65;color:#3D4149;margin:0;padding:0 0 16px;max-width:80ch}
 .cta{background:#0D1117;color:#fff}
-.cta .in{padding-top:64px;padding-bottom:64px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px}
-.cta h2{font-size:30px;font-weight:300;letter-spacing:-0.02em;margin:0 0 10px;max-width:26ch;text-wrap:pretty}
-.cta p{font-size:15.5px;font-weight:300;color:rgba(255,255,255,0.65);margin:0;max-width:52ch}
+.cta .in{padding-top:64px;padding-bottom:64px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:22px}
+.cta h2{font-size:29px;font-weight:300;letter-spacing:-0.02em;margin:0;max-width:32ch;text-wrap:pretty}
 .foot{background:#0D1117;color:rgba(255,255,255,0.46);border-top:1px solid rgba(255,255,255,0.12)}
 .foot .in{padding-top:22px;padding-bottom:22px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13.5px;font-weight:300}
 .foot a{color:rgba(255,255,255,0.6)}
 .foot a:hover{color:#fff}
-@media(max-width:860px){.hero h1{font-size:32px}.grid2,.grid3,.docgrid{grid-template-columns:1fr}.sec h2{font-size:27px}}
 .stickycta{display:none;position:fixed;left:14px;right:14px;bottom:14px;z-index:70;background:#C4571C;color:#fff !important;text-align:center;font-size:16px;font-weight:600;padding:14px 18px;border-radius:999px;box-shadow:0 10px 28px rgba(13,17,23,0.28)}
+@media(max-width:860px){.hero h1{font-size:32px}.vals{grid-template-columns:1fr 1fr}.acards{grid-template-columns:1fr 1fr}.sec h2{font-size:27px}}
 @media(max-width:600px){
   .wrap{padding-left:20px;padding-right:20px}
   .logo .nm{font-size:22px}
@@ -82,73 +116,159 @@ a{color:#16181F;text-decoration:none}
   .hero h1{font-size:26px;line-height:1.18}
   .sec{padding:46px 0 42px}
   .sec h2{font-size:23px}
+  .vals{grid-template-columns:1fr}
+  .acards{grid-template-columns:1fr 1fr;gap:14px}
   .stickycta.on{display:block}
 }
 </style>
 </head>
 <body>
 <header class="hdr"><div class="wrap in">
-  <a class="logo" href="index.html"><span class="nm">risk-place<b>.org</b></span><span class="tg" data-ui="tagline"></span></a>
-  <div class="right"><a class="backlink" href="index.html#services" data-ui="back"></a><button class="langbtn" id="langbtn" onclick="toggleLang()">AR</button></div>
+  <a class="logo" href="index.html"><span class="nm">risk-place<b>.org</b></span><span class="tg" data-ui="tagline">Business Continuity &amp; Resilience · GCC</span></a>
+  <div class="right"><a class="backlink" href="index.html#services" data-ui="back">← All services</a><button class="langbtn" id="langbtn" onclick="toggleLang()">AR</button></div>
 </div></header>
 
 <section class="hero"><div class="wrap in">
-  <p class="kicker" data-ui="kicker"></p>
-  <h1 data-ui="h1"></h1>
-  <p class="sub" data-ui="sub"></p>
-  <div class="price" data-ui="price"></div>
-  <div class="prn" data-ui="prn"></div>
-  <div><a class="btn" href="index.html#contact" data-ui="cta"></a><a class="btn2" href="quiz.html" data-ui="cta2"></a></div>
-</div></section>
-
-<section class="sec"><div class="wrap">
-  <h2 data-ui="whoT"></h2><div class="grid2" id="who"></div>
+  <p class="kicker" data-ui="kicker">Step 2 · From $4,900 · 1-2 months</p>
+  <h1 data-ui="h1">Resilience Uplift Program</h1>
+  <p class="sub" data-ui="sub">We audit your readiness for two critical scenarios — a ransomware attack and a drone incident with fire — and then raise your survival metrics. The audit is one third of the work. Two thirds is fixing: new plans, new arrangements, measurable recovery.</p>
+  <div class="price" data-ui="price">from $4,900</div>
+  <div class="prn" data-ui="prn">fixed scope · 1-2 months · free fixes included</div>
+  <div><a class="btn" href="index.html#contact" data-ui="cta">Request the program</a><a class="btn2" href="quiz.html" data-ui="cta2">Take the free quiz first</a></div>
 </div></section>
 
 <section class="sec beige"><div class="wrap">
-  <h2 data-ui="stagesT"></h2><div class="steps" id="stages"></div>
+  <h2 data-ui="valTitle">The value, in numbers</h2>
+  <div class="vals">
+    <div class="val"><span class="v" data-ui="val0v">7 days → 2</span><span class="l" data-ui="val0l">typical ransomware downtime, cut by tested recovery — based on industry loss statistics</span></div>
+    <div class="val"><span class="v" data-ui="val1v">6 months → 1</span><span class="l" data-ui="val1l">business interruption after a drone-and-fire event — based on our experience running continuity in heavy industry</span></div>
+    <div class="val"><span class="v" data-ui="val2v">$4,900</span><span class="l" data-ui="val2l">the program — against months of protected revenue; we prove the risk economics to your CFO in your own numbers</span></div>
+    <div class="val"><span class="v" data-ui="val3v">2/3</span><span class="l" data-ui="val3l">of the work is fixing and raising metrics, not writing a report</span></div>
+  </div>
 </div></section>
 
 <section class="sec"><div class="wrap">
-  <h2 data-ui="reportT"></h2><div class="docgrid" id="report"></div>
+  <h2 data-ui="artTitle">What you receive — the artefacts</h2>
+  <p class="ssub" data-ui="artSub">Every element below is a working document you keep. This is what you are paying for — and what your board, insurer and auditors will see.</p>
+  <div class="acards">
+    <div class="acard">
+      <div class="mock m-gauge" aria-hidden="true">
+        <div class="mk-head"><span class="mk-dot"></span><span class="mk-line w60"></span></div>
+        <div class="mk-gauge"><div class="mk-needle"></div></div><span class="mk-line w80"></span><span class="mk-line w50"></span>
+      </div>
+      <b data-ui="a0">Readiness audit report</b>
+      <p data-ui="a0d">Your position against both scenarios — honest, scored, with the three loudest gaps on top</p>
+    </div>
+    <div class="acard">
+      <div class="mock m-grid" aria-hidden="true">
+        <div class="mk-head"><span class="mk-dot"></span><span class="mk-line w60"></span></div>
+        <div class="mk-grid"><i class="g1"></i><i class="g2"></i><i class="g3"></i><i class="g2"></i><i class="g1"></i><i class="g3"></i><i class="g2"></i><i class="g1"></i><i class="g2"></i></div>
+      </div>
+      <b data-ui="a1">Risk map of key processes</b>
+      <p data-ui="a1d">Which process carries which scenario risk, and what one lost day costs — per process</p>
+    </div>
+    <div class="acard">
+      <div class="mock m-list" aria-hidden="true">
+        <div class="mk-head"><span class="mk-dot"></span><span class="mk-line w60"></span></div>
+        <span class="mk-row"></span><span class="mk-row hot"></span><span class="mk-row"></span><span class="mk-row hot"></span><span class="mk-row"></span>
+      </div>
+      <b data-ui="a2">Single points of failure register</b>
+      <p data-ui="a2d">One supplier, one system, one person, one site — found, priced, with the fix decision recorded</p>
+    </div>
+    <div class="acard">
+      <div class="mock m-bars" aria-hidden="true">
+        <div class="mk-head"><span class="mk-dot"></span><span class="mk-line w60"></span></div>
+        <div class="mk-bars"><i style="height:34px"></i><i style="height:26px"></i><i style="height:18px"></i><i class="hot" style="height:10px"></i></div><span class="mk-line w70"></span>
+      </div>
+      <b data-ui="a3">Revenue → EBITDA resilience model</b>
+      <p data-ui="a3d">How your revenue is actually made, what costs create it, and where a disruption cuts into EBITDA</p>
+    </div>
+    <div class="acard">
+      <div class="mock m-clock" aria-hidden="true">
+        <div class="mk-head"><span class="mk-dot"></span><span class="mk-line w60"></span></div>
+        <span class="mk-line w90"></span><span class="mk-line w80"></span><div class="mk-time"><span>T+0</span><span>T+4h</span><span>T+72h</span></div><span class="mk-row hot"></span>
+      </div>
+      <b data-ui="a4">Stress-test protocol</b>
+      <p data-ui="a4d">The tabletop day, documented: what broke when CRM/ERP went dark and the site closed — with timings</p>
+    </div>
+    <div class="acard">
+      <div class="mock m-doc" aria-hidden="true">
+        <div class="mk-head"><span class="mk-dot"></span><span class="mk-line w60"></span></div>
+        <span class="mk-line w90"></span><span class="mk-line w85"></span><span class="mk-line w70"></span><span class="mk-line w88"></span><span class="mk-line w40"></span>
+      </div>
+      <b data-ui="a5">BCM plan + DRP</b>
+      <p data-ui="a5d">The continuity plan and technology recovery plan — short, executable, written for your worst day</p>
+    </div>
+    <div class="acard">
+      <div class="mock m-flow" aria-hidden="true">
+        <div class="mk-head"><span class="mk-dot"></span><span class="mk-line w60"></span></div>
+        <div class="mk-flow"><i></i><em>→</em><i></i><em>→</em><i class="hot"></i></div><span class="mk-line w75"></span><span class="mk-line w55"></span>
+      </div>
+      <b data-ui="a6">Recovery scheme</b>
+      <p data-ui="a6d">Who does what, in which hour, with which authority — from disruption back to normal operations</p>
+    </div>
+    <div class="acard">
+      <div class="mock m-kpi" aria-hidden="true">
+        <div class="mk-head"><span class="mk-dot"></span><span class="mk-line w60"></span></div>
+        <div class="mk-kpis"><b>2d</b><b>1mo</b><b class="hot">68</b></div><span class="mk-row"></span><span class="mk-row"></span>
+      </div>
+      <b data-ui="a7">Survival metrics + 90-day action plan</b>
+      <p data-ui="a7d">The dashboard-ready metrics and the plan that raises them — free fixes done, paid ones proven by risk economics</p>
+    </div>
+  </div>
 </div></section>
 
 <section class="sec beige"><div class="wrap">
-  <h2 data-ui="resT"></h2><div class="grid2" id="res"></div>
+  <h2 data-ui="howTitle">How we get there</h2>
+  <div class="steps">
+    <div class="step"><span class="n">01</span><span><b data-ui="s0">Two scenarios, chosen with you</b><p data-ui="s0d">By default: a ransomware attack and a drone incident with fire. Depending on your industry we swap in what threatens you most — loss of a key supplier, departure of key executives, failure of a cornerstone contract.</p></span></div>
+    <div class="step"><span class="n">02</span><span><b data-ui="s1">Facts and economics</b><p data-ui="s1d">How much the company earns and from where; financing sources; concentration of clients, suppliers and contractors; technology and raw-material dependence; single points of failure and bottlenecks.</p></span></div>
+    <div class="step"><span class="n">03</span><span><b data-ui="s2">Business model deep-dive</b><p data-ui="s2d">How revenue is formed, which costs create it, how it becomes EBITDA and net profit. Continuity planning that skips this step protects the wrong things.</p></span></div>
+    <div class="step"><span class="n">04</span><span><b data-ui="s3">Interviews with the people who make the money</b><p data-ui="s3d">We find who is actually key, how they generate revenue, and by which principles they work today.</p></span></div>
+    <div class="step"><span class="n">05</span><span><b data-ui="s4">Then we break those principles — on paper</b><p data-ui="s4d">A desk-based stress-test: CRM or ERP goes dark, the warehouse or production block is closed by fire. Nothing is switched off in reality — but the company lives the day in the room, and we watch what it is capable of, in detail.</p></span></div>
+    <div class="step"><span class="n">06</span><span><b data-ui="s5">Recovery, designed together</b><p data-ui="s5d">We build the recovery scheme with your team — not for them. People execute plans they helped write.</p></span></div>
+    <div class="step"><span class="n">07</span><span><b data-ui="s6">Metrics — and the uplift</b><p data-ui="s6d">We implement survival metrics, then raise them: new plans, new contract clauses, offline backups, fallback registers and channels. Everything fixable for free we fix together immediately; what needs investment we prove through risk economics — and leave you with a working plan.</p></span></div>
+  </div>
+  <div class="excall">
+    <h3 data-ui="exTitle">A small example from the program</h3>
+    <p data-ui="exBody">Your client registry lives in the CRM — which is exactly what the ransomware encrypts. So during the program we export it to a simple offline file, stored away from the office, and agree a fallback channel: a Telegram contact for every key client, collected in advance, with message templates ready. Cost: zero. Effect on day X: sales keep talking to clients while IT recovers. The program is full of fixes like this.</p>
+  </div>
 </div></section>
 
 <section class="sec"><div class="wrap">
-  <h2 data-ui="faqT"></h2><div class="grid2" id="faq"></div>
+  <h2 data-ui="faqTitle">Frequently asked questions</h2>
+  <div class="faq">
+    <details><summary data-ui="q0">Does the price include the fixes?</summary><p data-ui="q0a">Everything fixable without capital spend is fixed together during the program — plans, registers, fallback channels, contract wording, drills. Measures that need investment come with a risk-economics case proving they pay back; the decision stays yours.</p></details>
+    <details><summary data-ui="q1">Will you really switch off our systems?</summary><p data-ui="q1a">No. The stress-test is desk-based: we simulate the loss of CRM/ERP or the closure of a site in a structured exercise. Production is never touched — but the decisions, gaps and timings the day produces are real.</p></details>
+    <details><summary data-ui="q2">Our biggest risk is not ransomware or drones. Does the program fit?</summary><p data-ui="q2a">Yes — the two default scenarios are starting points. For a trading house it may be the failure of a cornerstone contract; for a family business, the departure of key executives; for a manufacturer, a key supplier. We agree the two scenarios that genuinely threaten you at the start.</p></details>
+    <details><summary data-ui="q3">How much of our team's time does it take?</summary><p data-ui="q3a">Leadership: the scenario session, the stress-test day and two reviews. Key people: one interview each, about an hour. The heavy lifting — analysis, modelling, documents — is ours.</p></details>
+    <details><summary data-ui="q4">What happens after the two months?</summary><p data-ui="q4a">You keep the artefacts, the raised metrics and the 90-day plan. Many clients continue with the continuity dashboard — the same metrics, live, on one board-level screen — and an annual exercise. Both are optional.</p></details>
+  </div>
 </div></section>
 
 <section class="cta"><div class="wrap in">
-  <div><h2 data-ui="ctaT"></h2><p data-ui="ctaS"></p></div>
-  <a class="btn" href="index.html#contact" data-ui="cta"></a>
+  <h2 data-ui="ctaTitle">Two months from now, your survival metrics can be different numbers.</h2>
+  <a class="btn" href="index.html#contact" data-ui="cta">Request the program</a>
 </div></section>
 <footer class="foot"><div class="wrap in">
-  <span data-ui="copy"></span><a href="privacy.html" data-ui="privacy"></a>
+  <span data-ui="copy">© 2026 risk-place.org · Business Continuity &amp; Resilience</span>
+  <a href="privacy.html" data-ui="privacy">Privacy policy</a>
 </div></footer>
 
 <a class="stickycta" id="stickycta" href="index.html#contact" data-ui="sticky">Request a meeting</a>
 
 <script>
-var C={"en":{"sticky": "Request a meeting", "tagline": "Business Continuity &amp; Resilience · GCC", "back": "← All services", "copy": "© 2026 risk-place.org · Business Continuity &amp; Resilience", "privacy": "Privacy policy", "kicker": "Step 2 · Assessment &amp; implementation", "h1": "Continuity assessment &amp; implementation", "sub": "Not a lecture and not a folder of templates — a working continuity system for your business: audit, plans, exercises and support. Aligned with ISO 22301 and NCEMA 7000 / CBUAE requirements. Everything is measured in money: what a day of downtime costs and what each measure protects.", "price": "from $4,900", "prn": "remote-first · scope fixed after the audit · support optional", "cta": "Discuss your task", "cta2": "Take the free quiz first", "whoT": "Who this is for", "who": [["No dedicated risk manager", "Companies without their own continuity function — we close the whole cycle and can carry the function for you."], ["Compliance is coming", "You need to show maturity to a regulator (NCEMA 7000, CBUAE), a bank, a tender or an insurer — with documents and numbers."], ["After a wake-up call", "A recent incident — yours or a neighbour's — showed that a folder of plans is not a system."], ["Before the dashboard", "The assessment collects the baseline data the continuity dashboard is later built on."]], "stagesT": "How the work is structured", "stages": [["Continuity audit", "Maturity assessment across six domains, critical processes, single points of failure. Cost of a downtime day calculated from your management data."], ["Business impact analysis", "Which processes stop first, what each hour costs, recovery priorities. RTO and RPO agreed with the business, not just IT."], ["Plans: BCP &amp; DRP", "Documents built for your business model — roles, scenarios, first-hours actions, recovery steps. Short enough to be used, complete enough to work."], ["Crisis exercise", "A tabletop drill on your worst realistic day — drone incident, ransomware or your own scenario. The plan is tested and corrected by practice."], ["Support", "We keep the system alive: reviews on changes, repeat exercises, the continuity function as a service if you need it."]], "reportT": "What you receive: the deliverables", "report": [["Executive report", "A short document for the CEO and the board: where you stand, gaps in money terms, decisions required — no jargon."], ["Maturity map — six domains", "Processes, IT &amp; data, people, suppliers, plans, finance: a score and a finding for each domain."], ["Cost of downtime &amp; SPOF register", "The price of a lost day per facility and process, and the register of single points of failure with owners."], ["Compliance map", "Your position against ISO 22301 and NCEMA 7000 / CBUAE — what passes an audit today and what does not."], ["BCP / DRP documents", "Continuity and IT recovery plans, crisis team roles and authority, communication templates."], ["90-day action plan", "Prioritised: what your team fixes at no cost, what needs budget, what we recommend to do together."]], "resT": "The result", "res": [["A working system, not a shelf document", "Plans are tested by an exercise, roles are rehearsed, the team knows the first hours."], ["Numbers for the board", "Cost of downtime, risk exposure, readiness level — the language executives and insurers understand."], ["Compliance basis", "A foundation for ISO 22301 alignment and NCEMA / CBUAE conversations — documents and evidence."], ["Lower real losses", "Faster recovery and rehearsed decisions mean the incident costs less — that is the point."]], "faqT": "FAQ", "faq": [["How long does it take?", "The assessment — 2-3 weeks. Plans and the exercise — depending on scale; we agree the schedule after the audit."], ["Do you work fully remotely?", "Yes, the whole cycle can be delivered remotely. On-site work in the UAE — by agreement, when the facility requires it."], ["We are a small company. Is this for us?", "Yes — the scope adapts to the size and budget. The methodology is the same, the volume is different."], ["What about our data?", "All work runs under NDA; results stay inside your perimeter. We do not need access to production systems for the assessment."], ["Where do we start?", "With an online meeting: we discuss your situation and agree the scope. Or start with the free readiness quiz — it takes 5 minutes."]], "ctaT": "Ready to see where your business really stands?", "ctaS": "Write to us — we will meet on Zoom, go through your situation and propose the scope. We take as much time as the conversation needs."},"ar":{"sticky": "اطلبوا اجتماعاً", "tagline": "استمرارية الأعمال والمرونة · دول الخليج", "back": "→ كل الخدمات", "copy": "© ٢٠٢٦ risk-place.org · استمرارية الأعمال والمرونة", "privacy": "سياسة الخصوصية", "kicker": "الخطوة ٢ · تقييم وتنفيذ", "h1": "تقييم الاستمرارية وتنفيذها", "sub": "ليست محاضرة ولا مجلد قوالب — بل منظومة استمرارية عاملة لأعمالكم: تدقيق وخطط وتمارين ودعم. متوافقة مع ISO 22301 وNCEMA 7000 ومتطلبات المصرف المركزي. كل شيء يقاس بالمال: كم يكلف يوم التوقف وما الذي يحميه كل إجراء.", "price": "من ٤٩٠٠$", "prn": "عن بُعد أولاً · يُثبت النطاق بعد التدقيق · الدعم اختياري", "cta": "ناقشوا مهمتكم", "cta2": "جرّبوا الفحص المجاني أولاً", "whoT": "لمن هذه الخدمة", "who": [["لا مدير مخاطر متفرغ", "للشركات بلا وظيفة استمرارية خاصة — نغلق الدورة كاملة ويمكننا حمل الوظيفة عنكم."], ["الامتثال قادم", "تحتاجون إظهار النضج لمنظم (NCEMA 7000، المصرف المركزي) أو بنك أو مناقصة أو شركة تأمين — بوثائق وأرقام."], ["بعد جرس الإنذار", "حادث قريب — لديكم أو لدى جيرانكم — أظهر أن مجلد الخطط ليس منظومة."], ["قبل اللوحة", "التقييم يجمع بيانات الأساس التي تُبنى عليها لوحة الاستمرارية لاحقاً."]], "stagesT": "كيف يُنظم العمل", "stages": [["تدقيق الاستمرارية", "تقييم النضج في ستة مجالات، والعمليات الحرجة، ونقاط الفشل الأحادية. وتُحسب تكلفة يوم التوقف من بياناتكم الإدارية."], ["تحليل الأثر على الأعمال", "أي العمليات تتوقف أولاً وكم تكلف كل ساعة وأولويات التعافي. أهداف RTO وRPO تُتفق مع إدارة الأعمال لا مع التقنية فقط."], ["الخطط: BCP وDRP", "وثائق مبنية على نموذج أعمالكم — أدوار وسيناريوهات وإجراءات الساعات الأولى وخطوات التعافي. قصيرة لتُستخدم وكاملة لتعمل."], ["تمرين أزمة", "تمرين نظري على أسوأ يوم واقعي لديكم — حادث مسيرة أو برمجية فدية أو سيناريوهكم الخاص. تُختبر الخطة وتُصحح بالممارسة."], ["الدعم", "نبقي المنظومة حية: مراجعات عند التغييرات وتمارين متكررة، ووظيفة الاستمرارية كخدمة إن احتجتم."]], "reportT": "ما تستلمونه: المخرجات", "report": [["تقرير تنفيذي", "وثيقة قصيرة للرئيس التنفيذي والمجلس: أين تقفون، والفجوات بلغة المال، والقرارات المطلوبة — بلا مصطلحات متخصصة."], ["خريطة النضج — ستة مجالات", "العمليات، التقنية والبيانات، الأشخاص، الموردون، الخطط، المالية: درجة ونتيجة لكل مجال."], ["تكلفة التوقف وسجل نقاط الفشل", "ثمن اليوم الضائع لكل منشأة وعملية، وسجل نقاط الفشل الأحادية مع المسؤولين."], ["خريطة الامتثال", "موقعكم من ISO 22301 وNCEMA 7000 والمصرف المركزي — ما يجتاز التدقيق اليوم وما لا يجتازه."], ["وثائق BCP / DRP", "خطط الاستمرارية وتعافي التقنية، وأدوار فريق الأزمة وصلاحياته، وقوالب الاتصالات."], ["خطة عمل ٩٠ يوماً", "بالأولوية: ما يصلحه فريقكم دون تكلفة، وما يحتاج ميزانية، وما ننصح بتنفيذه معاً."]], "resT": "النتيجة", "res": [["منظومة عاملة لا وثيقة على الرف", "الخطط مختبرة بتمرين، والأدوار مُتدرب عليها، والفريق يعرف الساعات الأولى."], ["أرقام لمجلس الإدارة", "تكلفة التوقف والتعرض للمخاطر ومستوى الجاهزية — اللغة التي يفهمها التنفيذيون وشركات التأمين."], ["أساس الامتثال", "قاعدة للتوافق مع ISO 22301 وحوارات NCEMA والمصرف المركزي — وثائق وأدلة."], ["خسائر فعلية أقل", "تعافٍ أسرع وقرارات مُتدرب عليها تعني حادثاً أقل كلفة — وهذا هو المقصود."]], "faqT": "أسئلة شائعة", "faq": [["كم يستغرق العمل؟", "التقييم أسبوعان إلى ثلاثة. الخطط والتمرين بحسب الحجم؛ نتفق على الجدول بعد التدقيق."], ["هل تعملون عن بُعد كلياً؟", "نعم، يمكن تنفيذ الدورة كاملة عن بُعد. الحضور في الإمارات — بالاتفاق حين تتطلبه المنشأة."], ["نحن شركة صغيرة، هل يناسبنا هذا؟", "نعم — النطاق يتكيف مع الحجم والميزانية. المنهجية واحدة والحجم مختلف."], ["ماذا عن بياناتنا؟", "العمل كله باتفاقية سرية، والنتائج تبقى داخل نطاقكم. ولا نحتاج وصولاً لأنظمة الإنتاج لأجل التقييم."], ["من أين نبدأ؟", "بلقاء عبر الإنترنت: نناقش وضعكم ونتفق على النطاق. أو ابدأوا بفحص الجاهزية المجاني — خمس دقائق."]], "ctaT": "مستعدون لمعرفة أين تقف أعمالكم فعلاً؟", "ctaS": "اكتبوا لنا — نلتقي عبر Zoom ونمر على وضعكم ونقترح النطاق. ونأخذ من الوقت ما يحتاجه الحوار."}};
+var C={"en": {"tagline": "Business Continuity &amp; Resilience · GCC", "back": "← All services", "copy": "© 2026 risk-place.org · Business Continuity &amp; Resilience", "privacy": "Privacy policy", "sticky": "Request a meeting", "kicker": "Step 2 · From $4,900 · 1-2 months", "h1": "Resilience Uplift Program", "sub": "We audit your readiness for two critical scenarios — a ransomware attack and a drone incident with fire — and then raise your survival metrics. The audit is one third of the work. Two thirds is fixing: new plans, new arrangements, measurable recovery.", "price": "from $4,900", "prn": "fixed scope · 1-2 months · free fixes included", "cta": "Request the program", "cta2": "Take the free quiz first", "valTitle": "The value, in numbers", "val0v": "7 days → 2", "val0l": "typical ransomware downtime, cut by tested recovery — based on industry loss statistics", "val1v": "6 months → 1", "val1l": "business interruption after a drone-and-fire event — based on our experience running continuity in heavy industry", "val2v": "$4,900", "val2l": "the program — against months of protected revenue; we prove the risk economics to your CFO in your own numbers", "val3v": "2/3", "val3l": "of the work is fixing and raising metrics, not writing a report", "artTitle": "What you receive — the artefacts", "artSub": "Every element below is a working document you keep. This is what you are paying for — and what your board, insurer and auditors will see.", "a0": "Readiness audit report", "a0d": "Your position against both scenarios — honest, scored, with the three loudest gaps on top", "a1": "Risk map of key processes", "a1d": "Which process carries which scenario risk, and what one lost day costs — per process", "a2": "Single points of failure register", "a2d": "One supplier, one system, one person, one site — found, priced, with the fix decision recorded", "a3": "Revenue → EBITDA resilience model", "a3d": "How your revenue is actually made, what costs create it, and where a disruption cuts into EBITDA", "a4": "Stress-test protocol", "a4d": "The tabletop day, documented: what broke when CRM/ERP went dark and the site closed — with timings", "a5": "BCM plan + DRP", "a5d": "The continuity plan and technology recovery plan — short, executable, written for your worst day", "a6": "Recovery scheme", "a6d": "Who does what, in which hour, with which authority — from disruption back to normal operations", "a7": "Survival metrics + 90-day action plan", "a7d": "The dashboard-ready metrics and the plan that raises them — free fixes done, paid ones proven by risk economics", "howTitle": "How we get there", "s0": "Two scenarios, chosen with you", "s0d": "By default: a ransomware attack and a drone incident with fire. Depending on your industry we swap in what threatens you most — loss of a key supplier, departure of key executives, failure of a cornerstone contract.", "s1": "Facts and economics", "s1d": "How much the company earns and from where; financing sources; concentration of clients, suppliers and contractors; technology and raw-material dependence; single points of failure and bottlenecks.", "s2": "Business model deep-dive", "s2d": "How revenue is formed, which costs create it, how it becomes EBITDA and net profit. Continuity planning that skips this step protects the wrong things.", "s3": "Interviews with the people who make the money", "s3d": "We find who is actually key, how they generate revenue, and by which principles they work today.", "s4": "Then we break those principles — on paper", "s4d": "A desk-based stress-test: CRM or ERP goes dark, the warehouse or production block is closed by fire. Nothing is switched off in reality — but the company lives the day in the room, and we watch what it is capable of, in detail.", "s5": "Recovery, designed together", "s5d": "We build the recovery scheme with your team — not for them. People execute plans they helped write.", "s6": "Metrics — and the uplift", "s6d": "We implement survival metrics, then raise them: new plans, new contract clauses, offline backups, fallback registers and channels. Everything fixable for free we fix together immediately; what needs investment we prove through risk economics — and leave you with a working plan.", "exTitle": "A small example from the program", "exBody": "Your client registry lives in the CRM — which is exactly what the ransomware encrypts. So during the program we export it to a simple offline file, stored away from the office, and agree a fallback channel: a Telegram contact for every key client, collected in advance, with message templates ready. Cost: zero. Effect on day X: sales keep talking to clients while IT recovers. The program is full of fixes like this.", "faqTitle": "Frequently asked questions", "q0": "Does the price include the fixes?", "q0a": "Everything fixable without capital spend is fixed together during the program — plans, registers, fallback channels, contract wording, drills. Measures that need investment come with a risk-economics case proving they pay back; the decision stays yours.", "q1": "Will you really switch off our systems?", "q1a": "No. The stress-test is desk-based: we simulate the loss of CRM/ERP or the closure of a site in a structured exercise. Production is never touched — but the decisions, gaps and timings the day produces are real.", "q2": "Our biggest risk is not ransomware or drones. Does the program fit?", "q2a": "Yes — the two default scenarios are starting points. For a trading house it may be the failure of a cornerstone contract; for a family business, the departure of key executives; for a manufacturer, a key supplier. We agree the two scenarios that genuinely threaten you at the start.", "q3": "How much of our team's time does it take?", "q3a": "Leadership: the scenario session, the stress-test day and two reviews. Key people: one interview each, about an hour. The heavy lifting — analysis, modelling, documents — is ours.", "q4": "What happens after the two months?", "q4a": "You keep the artefacts, the raised metrics and the 90-day plan. Many clients continue with the continuity dashboard — the same metrics, live, on one board-level screen — and an annual exercise. Both are optional.", "ctaTitle": "Two months from now, your survival metrics can be different numbers."}, "ar": {"tagline": "استمرارية الأعمال والمرونة · دول الخليج", "back": "→ كل الخدمات", "copy": "© ٢٠٢٦ risk-place.org · استمرارية الأعمال والمرونة", "privacy": "سياسة الخصوصية", "sticky": "اطلبوا اجتماعاً", "kicker": "الخطوة ٢ · من ٤٩٠٠$ · شهر إلى شهرين", "h1": "برنامج رفع المرونة", "sub": "نُدقق جاهزيتكم لسيناريوهين حرجين — هجوم برمجية فدية وحادث طائرة مسيرة مع حريق — ثم نرفع مؤشرات بقاء شركتكم. التدقيق ثلث العمل. والثلثان إصلاح: خطط جديدة وترتيبات جديدة وتعافٍ قابل للقياس.", "price": "من ٤٩٠٠$", "prn": "نطاق ثابت · شهر إلى شهرين · الإصلاحات المجانية مشمولة", "cta": "اطلبوا البرنامج", "cta2": "جرّبوا الفحص المجاني أولاً", "valTitle": "القيمة بالأرقام", "val0v": "٧ أيام ← يومان", "val0l": "التوقف المعتاد من برمجية فدية، يُقلص بتعافٍ مختبر — استناداً إلى إحصاءات الخسائر في القطاع", "val1v": "٦ أشهر ← شهر", "val1l": "انقطاع الأعمال بعد حادث مسيرة وحريق — استناداً إلى خبرتنا في إدارة الاستمرارية في الصناعات الثقيلة", "val2v": "٤٩٠٠$", "val2l": "ثمن البرنامج — مقابل شهور من الإيراد المحمي؛ نثبت اقتصاد المخاطر لمديركم المالي بأرقامكم أنتم", "val3v": "٢/٣", "val3l": "من العمل إصلاح ورفع مؤشرات، لا كتابة تقرير", "artTitle": "ما تستلمونه — النواتج", "artSub": "كل عنصر أدناه وثيقة عمل تبقى لديكم. هذا ما تدفعون مقابله — وما سيراه مجلسكم ومؤمّنكم ومدققوكم.", "a0": "تقرير تدقيق الجاهزية", "a0d": "موقفكم مقابل السيناريوهين — بصدق وبتقييم، وأعلى ثلاث فجوات في المقدمة", "a1": "خريطة مخاطر العمليات الرئيسية", "a1d": "أي عملية تحمل أي خطر، وكم يكلف اليوم الضائع — لكل عملية", "a2": "سجل نقاط الفشل المنفردة", "a2d": "مورد واحد، نظام واحد، شخص واحد، موقع واحد — مكتشفة ومسعّرة مع قرار المعالجة", "a3": "نموذج مرونة الإيراد ← EBITDA", "a3d": "كيف يتكون إيرادكم فعلاً، وأي تكاليف تصنعه، وأين يقتطع الاضطراب من EBITDA", "a4": "محضر اختبار الضغط", "a4d": "يوم التمرين موثقاً: ما انكسر حين أظلم CRM/ERP وأُغلق الموقع — بالتوقيتات", "a5": "خطة استمرارية الأعمال + خطة التعافي التقني", "a5d": "خطة الاستمرارية وخطة استعادة التقنية — قصيرتان وقابلتان للتنفيذ ومكتوبتان ليومكم الأسوأ", "a6": "مخطط التعافي", "a6d": "من يفعل ماذا وفي أي ساعة وبأي صلاحية — من الاضطراب إلى التشغيل الطبيعي", "a7": "مؤشرات البقاء + خطة ٩٠ يوماً", "a7d": "مؤشرات جاهزة للوحة المتابعة والخطة التي ترفعها — الإصلاحات المجانية منفذة والمدفوعة مثبتة باقتصاد المخاطر", "howTitle": "كيف نصل إلى ذلك", "s0": "سيناريوهان يُختاران معكم", "s0d": "افتراضياً: هجوم برمجية فدية وحادث مسيرة مع حريق. وحسب قطاعكم نستبدل بهما ما يهددكم أكثر — فقدان مورد رئيسي، رحيل قيادات مفتاحية، انهيار عقد جوهري.", "s1": "الحقائق والاقتصاد", "s1d": "كم تكسب الشركة ومن أين؛ مصادر التمويل؛ تركز العملاء والموردين والمقاولين؛ الاعتماد على التقنية والمواد الخام؛ نقاط الفشل المنفردة والاختناقات.", "s2": "الغوص في نموذج الأعمال", "s2d": "كيف يتكون الإيراد، وأي تكاليف تصنعه، وكيف يصبح EBITDA وصافي ربح. تخطيط الاستمرارية الذي يتخطى هذه الخطوة يحمي الأشياء الخطأ.", "s3": "مقابلات مع من يصنعون المال", "s3d": "نكتشف من هم المفتاحيون فعلاً، وكيف يولدون الإيراد، وبأي مبادئ يعملون اليوم.", "s4": "ثم نكسر تلك المبادئ — على الورق", "s4d": "اختبار ضغط مكتبي: يُظلم CRM أو ERP، ويُغلق المستودع أو مجمع الإنتاج بحريق. لا شيء يُطفأ في الواقع — لكن الشركة تعيش اليوم داخل القاعة ونراقب بدقة ما تقدر عليه.", "s5": "التعافي، مصمم معاً", "s5d": "نبني مخطط التعافي مع فريقكم — لا بالنيابة عنه. الناس ينفذون الخطط التي شاركوا في كتابتها.", "s6": "المؤشرات — والرفع", "s6d": "نطبق مؤشرات البقاء ثم نرفعها: خطط جديدة وبنود عقود جديدة ونسخ احتياطية معزولة وسجلات وقنوات بديلة. كل ما يُصلح مجاناً نصلحه معاً فوراً؛ وما يحتاج استثماراً نثبته باقتصاد المخاطر — ونترككم بخطة عاملة.", "exTitle": "مثال صغير من البرنامج", "exBody": "سجل عملائكم يعيش في CRM — وهو بالضبط ما تشفره برمجية الفدية. لذلك خلال البرنامج نصدّره إلى ملف بسيط دون اتصال يُحفظ بعيداً عن المكتب، ونتفق على قناة بديلة: جهة اتصال تلغرام لكل عميل رئيسي، مجموعة سلفاً، مع قوالب رسائل جاهزة. التكلفة: صفر. الأثر يوم الحادث: المبيعات تواصل الحديث مع العملاء بينما تتعافى التقنية. البرنامج مليء بإصلاحات كهذه.", "faqTitle": "أسئلة شائعة", "q0": "هل يشمل السعر الإصلاحات؟", "q0a": "كل ما يُصلح دون إنفاق رأسمالي يُصلح معاً خلال البرنامج — الخطط والسجلات والقنوات البديلة وصياغات العقود والتدريبات. أما الإجراءات التي تحتاج استثماراً فتأتي بحجة اقتصاد مخاطر تثبت أنها تسدد نفسها؛ والقرار يبقى لكم.", "q1": "هل ستطفئون أنظمتنا فعلاً؟", "q1a": "لا. اختبار الضغط مكتبي: نحاكي فقدان CRM/ERP أو إغلاق موقع في تمرين منظم. الإنتاج لا يُمس أبداً — لكن القرارات والفجوات والتوقيتات التي ينتجها اليوم حقيقية.", "q2": "خطرنا الأكبر ليس برمجية فدية ولا مسيرات. هل يناسبنا البرنامج؟", "q2a": "نعم — السيناريوهان الافتراضيان نقطتا انطلاق. لبيت تجاري قد يكون انهيار عقد جوهري؛ ولشركة عائلية رحيل قيادات مفتاحية؛ ولمصنع مورد رئيسي. نتفق في البداية على السيناريوهين اللذين يهددانكم حقاً.", "q3": "كم يستغرق من وقت فريقكم؟", "q3a": "القيادة: جلسة السيناريوهات ويوم اختبار الضغط ومراجعتان. الأشخاص المفتاحيون: مقابلة واحدة لكل منهم، نحو ساعة. أما العمل الثقيل — التحليل والنمذجة والوثائق — فعلينا.", "q4": "ماذا بعد الشهرين؟", "q4a": "تحتفظون بالنواتج والمؤشرات المرفوعة وخطة التسعين يوماً. كثير من العملاء يواصلون بلوحة الاستمرارية — المؤشرات نفسها حية على شاشة واحدة بمستوى المجلس — وبتمرين سنوي. وكلاهما اختياري.", "ctaTitle": "بعد شهرين من الآن يمكن أن تكون مؤشرات بقائكم أرقاماً مختلفة."}};
 var lang="en";
-function fill(id,items,cls){var g=document.getElementById(id);g.innerHTML="";items.forEach(function(x){var v=document.createElement("div");v.className=cls||"it";v.innerHTML="<b>"+x[0]+"</b><p>"+x[1]+"</p>";g.appendChild(v);});}
 function setLang(l){
   lang=l;document.documentElement.lang=l;document.documentElement.dir=(l==="ar")?"rtl":"ltr";
   var d=C[l];
   document.querySelectorAll("[data-ui]").forEach(function(el){var k=el.getAttribute("data-ui");if(typeof d[k]==="string")el.innerHTML=d[k];});
-  fill("who",d.who);fill("report",d.report,"doc");fill("res",d.res);fill("faq",d.faq);
-  var st=document.getElementById("stages");st.innerHTML="";
-  d.stages.forEach(function(x,i){var v=document.createElement("div");v.className="step";v.innerHTML='<span class="n">'+String(i+1).padStart(2,"0")+'</span><span><b>'+x[0]+"</b><p>"+x[1]+"</p></span>";st.appendChild(v);});
   document.getElementById("langbtn").textContent=(l==="ar")?"EN":"AR";
   try{localStorage.setItem("rp_org_lang",l);}catch(e){}
 }
 function toggleLang(){setLang(lang==="ar"?"en":"ar");}
-(function(){var s=null;try{s=localStorage.getItem("rp_org_lang");}catch(e){}setLang(s==="ar"?"ar":"en");})();
-</script>
-<script>
+(function(){var s=null;try{s=localStorage.getItem("rp_org_lang");}catch(e){}if(s==="ar")setLang("ar");})();
 window.addEventListener('scroll',function(){
   var el=document.getElementById('stickycta');if(!el)return;
   var cta=document.querySelector('section.cta');
