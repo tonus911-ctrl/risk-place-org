@@ -61,28 +61,37 @@ a{color:#16181F;text-decoration:none}
 .acard{display:flex;flex-direction:column;gap:8px}
 .acard b{font-size:16px;font-weight:600;line-height:1.35;margin-top:6px}
 .acard p{font-size:13.5px;font-weight:300;line-height:1.55;color:#5E636D;margin:0}
-.mock{background:#fff;border:1px solid #DCD8D0;border-radius:10px;padding:12px;height:150px;display:flex;flex-direction:column;gap:8px;box-shadow:0 8px 22px rgba(13,17,23,0.07);overflow:hidden;direction:ltr}
+.mock{background:#fff;border:1px solid #DCD8D0;border-radius:10px;padding:11px 12px;height:168px;display:flex;flex-direction:column;gap:7px;box-shadow:0 8px 22px rgba(13,17,23,0.07);overflow:hidden;direction:ltr;text-align:left}
 .mk-head{display:flex;align-items:center;gap:6px}
 .mk-dot{width:8px;height:8px;border-radius:50%;background:#C4571C;flex-shrink:0}
 .mk-line{display:block;height:7px;border-radius:4px;background:#EAE7E1}
-.w40{width:40%}.w50{width:50%}.w55{width:55%}.w60{width:60%}.w70{width:70%}.w75{width:75%}.w80{width:80%}.w85{width:85%}.w88{width:88%}.w90{width:90%}
-.mk-row{display:block;height:11px;border-radius:4px;background:#F1EEE8}
-.mk-row.hot{background:#FBE0CB}
-.mk-gauge{width:74px;height:37px;border-radius:74px 74px 0 0;background:conic-gradient(from 270deg at 50% 100%, #C4571C 0 60deg, #F0A868 60deg 110deg, #EAE7E1 110deg 180deg);align-self:center;position:relative;margin-top:4px}
-.mk-needle{position:absolute;left:50%;bottom:0;width:2px;height:28px;background:#16181F;transform:rotate(28deg);transform-origin:bottom}
-.mk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;flex:1}
-.mk-grid i{border-radius:4px}
-.mk-grid .g1{background:#EAE7E1}.mk-grid .g2{background:#F0A868}.mk-grid .g3{background:#C4571C}
-.mk-bars{display:flex;align-items:flex-end;gap:7px;flex:1;padding:2px 4px}
-.mk-bars i{width:16px;background:#DCD8D0;border-radius:3px 3px 0 0}
-.mk-bars i.hot{background:#C4571C}
-.mk-time{display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9px;color:#8A8478;padding:2px 0}
-.mk-flow{display:flex;align-items:center;gap:5px;flex:1}
-.mk-flow i{flex:1;height:26px;border-radius:6px;background:#EAE7E1}
-.mk-flow i.hot{background:#C4571C}
-.mk-flow em{color:#8A8478;font-style:normal;font-size:11px}
-.mk-kpis{display:flex;gap:6px}
-.mk-kpis b{flex:1;background:#F7F4EF;border:1px solid #EAE7E1;border-radius:6px;text-align:center;font-size:13px;padding:7px 0;color:#16181F}
+.w60{width:60%}
+.mk-title{font-family:'IBM Plex Mono',monospace;font-size:8.5px;font-weight:500;letter-spacing:0.09em;color:#8A8478}
+.mk-kv{display:flex;justify-content:space-between;align-items:center;gap:6px;background:#F7F4EF;border-radius:5px;padding:4px 7px}
+.mk-kv span{font-size:9.5px;color:#3D4149;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mk-kv b{font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500;color:#16181F;flex-shrink:0}
+.mk-kv b.hot{color:#C4571C}
+.mk-gwrap{display:flex;align-items:center;gap:12px;justify-content:center}
+.mk-gauge{width:64px;height:32px;border-radius:64px 64px 0 0;background:conic-gradient(from 270deg at 50% 100%, #C4571C 0 60deg, #F0A868 60deg 110deg, #EAE7E1 110deg 180deg);position:relative}
+.mk-needle{position:absolute;left:50%;bottom:0;width:2px;height:24px;background:#16181F;transform:rotate(28deg);transform-origin:bottom}
+.mk-gnum{font-size:21px;font-weight:600;color:#16181F;letter-spacing:-0.02em}
+.mk-gnum small{font-size:10px;color:#8A8478;font-weight:400}
+.mk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;flex:1}
+.mk-grid i{border-radius:4px;font-style:normal;font-size:8.5px;display:flex;align-items:center;justify-content:center;color:#16181F;padding:1px}
+.mk-grid .g1{background:#EAE7E1}.mk-grid .g2{background:#F0A868}.mk-grid .g3{background:#C4571C;color:#fff}
+.mk-axis{display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:7.5px;color:#8A8478}
+.mk-bars{display:flex;align-items:flex-end;gap:8px;flex:1;padding:0 2px}
+.mk-bar{display:flex;flex-direction:column;align-items:center;gap:2px;flex:1}
+.mk-bar i{width:100%;background:#DCD8D0;border-radius:3px 3px 0 0;display:block}
+.mk-bar i.hot{background:#C4571C}
+.mk-bar em{font-style:normal;font-family:'IBM Plex Mono',monospace;font-size:7.5px;color:#5E636D;white-space:nowrap}
+.mk-note{font-size:9px;color:#8A8478;font-style:italic;text-align:center}
+.mk-flow{display:flex;align-items:center;gap:4px}
+.mk-flow i{flex:1;height:26px;border-radius:6px;background:#EAE7E1;font-style:normal;font-size:8.5px;display:flex;align-items:center;justify-content:center;color:#16181F}
+.mk-flow i.hot{background:#C4571C;color:#fff}
+.mk-flow em{color:#8A8478;font-style:normal;font-size:10px}
+.mk-kpis{display:flex;gap:5px}
+.mk-kpis b{flex:1;background:#F7F4EF;border:1px solid #EAE7E1;border-radius:6px;text-align:center;font-size:9.5px;line-height:1.3;padding:5px 0;color:#16181F;font-weight:600}
 .mk-kpis b.hot{background:#C4571C;color:#fff;border-color:#C4571C}
 /* steps */
 .steps{display:flex;flex-direction:column}
@@ -154,7 +163,10 @@ a{color:#16181F;text-decoration:none}
     <div class="acard">
       <div class="mock m-gauge" aria-hidden="true">
         <div class="mk-head"><span class="mk-dot"></span><span class="mk-line w60"></span></div>
-        <div class="mk-gauge"><div class="mk-needle"></div></div><span class="mk-line w80"></span><span class="mk-line w50"></span>
+        <div class="mk-title">READINESS SCORE</div>
+   <div class="mk-gwrap"><div class="mk-gauge"><div class="mk-needle"></div></div><div class="mk-gnum">46<small>/100</small></div></div>
+   <div class="mk-kv"><span>Ransomware track</span><b>52</b></div>
+   <div class="mk-kv"><span>Drone &amp; fire track</span><b class="hot">41</b></div>
       </div>
       <b data-ui="a0">Readiness audit report</b>
       <p data-ui="a0d">Your position against both scenarios — honest, scored, with the three loudest gaps on top</p>
@@ -162,7 +174,13 @@ a{color:#16181F;text-decoration:none}
     <div class="acard">
       <div class="mock m-grid" aria-hidden="true">
         <div class="mk-head"><span class="mk-dot"></span><span class="mk-line w60"></span></div>
-        <div class="mk-grid"><i class="g1"></i><i class="g2"></i><i class="g3"></i><i class="g2"></i><i class="g1"></i><i class="g3"></i><i class="g2"></i><i class="g1"></i><i class="g2"></i></div>
+        <div class="mk-title">PROCESS × IMPACT</div>
+   <div class="mk-grid">
+     <i class="g1">HR</i><i class="g2">Logistics</i><i class="g3">Sales</i>
+     <i class="g2">Finance</i><i class="g1">Legal</i><i class="g3">ERP</i>
+     <i class="g2">Procure</i><i class="g1">Admin</i><i class="g2">Warehouse</i>
+   </div>
+   <div class="mk-axis"><span>← low impact</span><span>critical →</span></div>
       </div>
       <b data-ui="a1">Risk map of key processes</b>
       <p data-ui="a1d">Which process carries which scenario risk, and what one lost day costs — per process</p>
@@ -170,7 +188,11 @@ a{color:#16181F;text-decoration:none}
     <div class="acard">
       <div class="mock m-list" aria-hidden="true">
         <div class="mk-head"><span class="mk-dot"></span><span class="mk-line w60"></span></div>
-        <span class="mk-row"></span><span class="mk-row hot"></span><span class="mk-row"></span><span class="mk-row hot"></span><span class="mk-row"></span>
+        <div class="mk-title">SINGLE POINTS OF FAILURE</div>
+   <div class="mk-kv"><span>1 supplier · key resin</span><b class="hot">$85k/day</b></div>
+   <div class="mk-kv"><span>1 system · ERP</span><b class="hot">$60k/day</b></div>
+   <div class="mk-kv"><span>1 person · chief engineer</span><b>risk</b></div>
+   <div class="mk-kv"><span>1 route · port access</span><b>risk</b></div>
       </div>
       <b data-ui="a2">Single points of failure register</b>
       <p data-ui="a2d">One supplier, one system, one person, one site — found, priced, with the fix decision recorded</p>
@@ -178,7 +200,14 @@ a{color:#16181F;text-decoration:none}
     <div class="acard">
       <div class="mock m-bars" aria-hidden="true">
         <div class="mk-head"><span class="mk-dot"></span><span class="mk-line w60"></span></div>
-        <div class="mk-bars"><i style="height:34px"></i><i style="height:26px"></i><i style="height:18px"></i><i class="hot" style="height:10px"></i></div><span class="mk-line w70"></span>
+        <div class="mk-title">REVENUE → EBITDA</div>
+   <div class="mk-bars">
+     <div class="mk-bar"><i style="height:40px"></i><em>Rev 100</em></div>
+     <div class="mk-bar"><i style="height:26px"></i><em>-COGS</em></div>
+     <div class="mk-bar"><i style="height:18px"></i><em>-Opex</em></div>
+     <div class="mk-bar"><i class="hot" style="height:14px"></i><em>EBITDA 38</em></div>
+   </div>
+   <div class="mk-note">where a lost day actually bites</div>
       </div>
       <b data-ui="a3">Revenue → EBITDA resilience model</b>
       <p data-ui="a3d">How your revenue is actually made, what costs create it, and where a disruption cuts into EBITDA</p>
@@ -186,7 +215,11 @@ a{color:#16181F;text-decoration:none}
     <div class="acard">
       <div class="mock m-clock" aria-hidden="true">
         <div class="mk-head"><span class="mk-dot"></span><span class="mk-line w60"></span></div>
-        <span class="mk-line w90"></span><span class="mk-line w80"></span><div class="mk-time"><span>T+0</span><span>T+4h</span><span>T+72h</span></div><span class="mk-row hot"></span>
+        <div class="mk-title">STRESS-TEST DAY · LOG</div>
+   <div class="mk-kv"><span>T+0 · ERP goes dark</span><b class="hot">start</b></div>
+   <div class="mk-kv"><span>T+40m · manual mode on</span><b>ok</b></div>
+   <div class="mk-kv"><span>T+2h · orders resume</span><b>ok</b></div>
+   <div class="mk-kv"><span>Findings logged</span><b class="hot">7</b></div>
       </div>
       <b data-ui="a4">Stress-test protocol</b>
       <p data-ui="a4d">The tabletop day, documented: what broke when CRM/ERP went dark and the site closed — with timings</p>
@@ -194,7 +227,11 @@ a{color:#16181F;text-decoration:none}
     <div class="acard">
       <div class="mock m-doc" aria-hidden="true">
         <div class="mk-head"><span class="mk-dot"></span><span class="mk-line w60"></span></div>
-        <span class="mk-line w90"></span><span class="mk-line w85"></span><span class="mk-line w70"></span><span class="mk-line w88"></span><span class="mk-line w40"></span>
+        <div class="mk-title">BCM PLAN · DRP</div>
+   <div class="mk-kv"><span>1 · Activation &amp; triggers</span><b>p.1</b></div>
+   <div class="mk-kv"><span>2 · Roles &amp; authority</span><b>p.3</b></div>
+   <div class="mk-kv"><span>3 · First hours checklist</span><b>p.5</b></div>
+   <div class="mk-kv"><span>4 · IT recovery (DRP)</span><b>p.9</b></div>
       </div>
       <b data-ui="a5">BCM plan + DRP</b>
       <p data-ui="a5d">The continuity plan and technology recovery plan — short, executable, written for your worst day</p>
@@ -202,7 +239,10 @@ a{color:#16181F;text-decoration:none}
     <div class="acard">
       <div class="mock m-flow" aria-hidden="true">
         <div class="mk-head"><span class="mk-dot"></span><span class="mk-line w60"></span></div>
-        <div class="mk-flow"><i></i><em>→</em><i></i><em>→</em><i class="hot"></i></div><span class="mk-line w75"></span><span class="mk-line w55"></span>
+        <div class="mk-title">RECOVERY SCHEME</div>
+   <div class="mk-flow"><i>declare</i><em>→</em><i>workaround</i><em>→</em><i class="hot">restore</i></div>
+   <div class="mk-kv"><span>Target: back to normal</span><b class="hot">72h</b></div>
+   <div class="mk-kv"><span>Owner per step</span><b>named</b></div>
       </div>
       <b data-ui="a6">Recovery scheme</b>
       <p data-ui="a6d">Who does what, in which hour, with which authority — from disruption back to normal operations</p>
@@ -210,7 +250,10 @@ a{color:#16181F;text-decoration:none}
     <div class="acard">
       <div class="mock m-kpi" aria-hidden="true">
         <div class="mk-head"><span class="mk-dot"></span><span class="mk-line w60"></span></div>
-        <div class="mk-kpis"><b>2d</b><b>1mo</b><b class="hot">68</b></div><span class="mk-row"></span><span class="mk-row"></span>
+        <div class="mk-title">SURVIVAL METRICS · 90 DAYS</div>
+   <div class="mk-kpis"><b>RTO<br>2d</b><b>Fire<br>1mo</b><b class="hot">Index<br>68</b></div>
+   <div class="mk-kv"><span>Weeks 1-2 · free fixes</span><b>done</b></div>
+   <div class="mk-kv"><span>Weeks 3-12 · invest plan</span><b class="hot">$ case</b></div>
       </div>
       <b data-ui="a7">Survival metrics + 90-day action plan</b>
       <p data-ui="a7d">The dashboard-ready metrics and the plan that raises them — free fixes done, paid ones proven by risk economics</p>
