@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HNF79F1SSN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HNF79F1SSN');</script>
+<script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");ym(110579884,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});</script><noscript><div><img src="https://mc.yandex.ru/watch/110579884" style="position:absolute;left:-9999px;" alt=""/></div></noscript>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>تحليل أثر الأعمال (BIA): منهجية تبدأ بالمال، خطوة بخطوة — risk-place.org</title>
+<meta name="description" content="كيف تنفذون تحليل أثر أعمال يخرج بأرقام يوقعها المدير المالي: الأنشطة الحيوية وتكلفة التوقف وRTO/RPO ونقاط الفشل المنفردة. المنهجية والنواتج والأخطاء الشائعة.">
+<link rel="canonical" href="https://risk-place.org/business-impact-analysis-ar.html">
+<link rel="alternate" hreflang="en" href="https://risk-place.org/business-impact-analysis.html">
+<link rel="alternate" hreflang="ar" href="https://risk-place.org/business-impact-analysis-ar.html">
+<link rel="alternate" hreflang="x-default" href="https://risk-place.org/business-impact-analysis.html">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:title" content="تحليل أثر الأعمال (BIA): منهجية تبدأ بالمال، خطوة بخطوة — risk-place.org">
+<meta property="og:description" content="كيف تنفذون تحليل أثر أعمال يخرج بأرقام يوقعها المدير المالي: الأنشطة الحيوية وتكلفة التوقف وRTO/RPO ونقاط الفشل المنفردة. المنهجية والنواتج والأخطاء الشائعة.">
+<meta property="og:image" content="https://risk-place.org/hero-dubai.jpg">
+<meta property="og:url" content="https://risk-place.org/business-impact-analysis-ar.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "ar", "mainEntity": [{"@type": "Question", "name": "كم يستغرق تحليل الأثر؟", "acceptedAnswer": {"@type": "Answer", "text": "لمؤسسة متوسطة: 2-4 أسابيع شاملة المقابلات والمنحنيات والتوفيق مع المدير المالي. الأطول يعني عادة تضخم النطاق؛ والأقصر يعني عادة استبيانات."}}, {"@type": "Question", "name": "كيف تُحسب تكلفة التوقف؟", "acceptedAnswer": {"@type": "Answer", "text": "لكل نشاط: الإيراد والهامش المفقودان، والغرامات التعاقدية، والعمل الإضافي وتكاليف الاستعجال في التعافي، والتعرض التنظيمي، ومخاطر فقدان العملاء — على امتداد منحنى الأثر ومن بياناتكم المالية أنتم. الدقة أقل أهمية من الصدق؛ ±20% مقبول، أما الصفات فلا."}}, {"@type": "Question", "name": "من يجب أن يملك تحليل الأثر؟", "acceptedAnswer": {"@type": "Answer", "text": "وظيفة الاستمرارية أو المخاطر تديره؛ وأصحاب الأنشطة يقدمون الحقائق؛ والمالية تتحقق من الأرقام؛ والقيادة توقع. التحليل الذي تملكه تقنية المعلومات وحدها يتحول إلى جرد أنظمة."}}, {"@type": "Question", "name": "تحليل الأثر أولاً أم تقييم المخاطر؟", "acceptedAnswer": {"@type": "Answer", "text": "عملياً معاً: التحليل يخبركم ما المهم وبأي سرعة يجب أن يعود؛ والتقييم يخبركم ما الذي قد يسقطه. NCEMA 7000 وISO 22301 يتوقعان الاثنين."}}]}</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#fff;-webkit-font-smoothing:antialiased;font-family:'Figtree','IBM Plex Sans Arabic',system-ui,sans-serif;color:#16181F;line-height:1.55}
+html[dir="rtl"] body{font-family:'IBM Plex Sans Arabic','Figtree',system-ui,sans-serif}
+a{color:#16181F;text-decoration:none}
+::selection{background:#FBE0CB}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+.hdr{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.94);backdrop-filter:blur(14px);border-bottom:1px solid #EAE7E1}
+.hdr .in{height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;flex-direction:column;gap:1px}
+.logo .nm{font-size:26px;font-weight:600;letter-spacing:-0.02em}
+.logo .nm b{color:#C4571C;font-weight:600}
+.logo .tg{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8A8478}
+.hdr .right{display:flex;align-items:center;gap:12px}
+.langbtn{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.08em;background:none;border:1px solid #DCD8D0;border-radius:999px;padding:7px 15px;cursor:pointer;color:#3D4149;display:inline-block}
+.langbtn:hover{border-color:#16181F;color:#16181F}
+.backlink{font-size:14.5px;color:#3D4149}
+.backlink:hover{color:#C4571C}
+.hero{background:#0D1117;color:#fff}
+.hero .in{padding-top:64px;padding-bottom:56px}
+.kicker{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#F0A868;margin:0 0 20px}
+.hero h1{font-size:42px;font-weight:300;line-height:1.14;letter-spacing:-0.025em;margin:0 0 16px;max-width:28ch;text-wrap:pretty}
+.hero .sub{font-size:18px;font-weight:300;color:rgba(255,255,255,0.75);margin:0;max-width:62ch;line-height:1.6}
+.btn{display:inline-block;font-size:16.5px;font-weight:600;background:#C4571C;color:#fff !important;padding:15px 32px;border-radius:999px}
+.btn:hover{background:#A03F12}
+.btn2{display:inline-block;font-size:16px;font-weight:400;color:#fff !important;border:1px solid rgba(255,255,255,0.34);padding:14px 28px;border-radius:999px;margin-inline-start:10px}
+.btn2:hover{border-color:#fff}
+.cta{background:#0D1117;color:#fff}
+.cta .in{padding-top:64px;padding-bottom:64px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:22px}
+.cta h2{font-size:30px;font-weight:300;letter-spacing:-0.02em;margin:0;max-width:30ch;text-wrap:pretty}
+.foot{background:#0D1117;color:rgba(255,255,255,0.46);border-top:1px solid rgba(255,255,255,0.12)}
+.foot .in{padding-top:22px;padding-bottom:22px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13.5px;font-weight:300}
+.foot a{color:rgba(255,255,255,0.6)}
+.foot a:hover{color:#fff}
+.stickycta{display:none;position:fixed;left:14px;right:14px;bottom:14px;z-index:70;background:#C4571C;color:#fff !important;text-align:center;font-size:16px;font-weight:600;padding:14px 18px;border-radius:999px;box-shadow:0 10px 28px rgba(13,17,23,0.28)}
+
+.art{padding:64px 0 20px}
+.art h2{font-size:30px;font-weight:300;line-height:1.18;letter-spacing:-0.02em;margin:52px 0 18px;text-wrap:pretty}
+.art h2:first-child{margin-top:0}
+.art p{font-size:16.5px;font-weight:300;line-height:1.72;color:#3D4149;margin:0 0 16px;max-width:76ch}
+.art ul{margin:0 0 18px;padding-inline-start:22px;max-width:76ch}
+.art li{font-size:16.5px;font-weight:300;line-height:1.66;color:#3D4149;margin-bottom:9px}
+.art li b,.art p b{font-weight:600;color:#16181F}
+.callout{background:#F7F4EF;border:1px solid #EAE7E1;border-inline-start:3px solid #C4571C;border-radius:12px;padding:20px 24px;margin:26px 0;max-width:76ch}
+.callout p{margin:0;font-size:16px}
+.tbl{width:100%;border-collapse:collapse;margin:24px 0 30px;font-size:15.5px}
+.tbl th{text-align:start;font-weight:600;padding:12px 14px;border-bottom:2px solid #16181F;font-size:14.5px}
+.tbl td{padding:12px 14px;border-bottom:1px solid #E1DCD3;font-weight:300;color:#3D4149;vertical-align:top;line-height:1.55}
+.tbl td:first-child{font-weight:500;color:#16181F}
+.faq{margin:10px 0 30px;max-width:76ch}
+.faq details{border-bottom:1px solid #E1DCD3;padding:4px 0}
+.faq summary{font-size:17px;font-weight:600;padding:14px 0;cursor:pointer;list-style-position:outside}
+.faq details p{padding:0 0 16px}
+.cluster{background:#F7F4EF;border-top:1px solid #EAE7E1;border-bottom:1px solid #EAE7E1;padding:56px 0}
+.cluster h2{font-size:26px;font-weight:300;margin:0 0 26px}
+.cluster .links{display:grid;grid-template-columns:1fr 1fr;gap:14px 40px}
+.cluster a{display:block;padding:14px 0;border-bottom:1px solid #E1DCD3;font-size:16px;font-weight:500}
+.cluster a:hover{color:#C4571C}
+.src{font-size:13.5px;color:#8A8478;margin-top:30px;max-width:76ch}
+.src a{color:#8A8478;text-decoration:underline}
+html[dir="rtl"] .logo .tg,html[dir="rtl"] .kicker{letter-spacing:0}
+html[dir="rtl"] .hero h1,html[dir="rtl"] .art h2,html[dir="rtl"] .cta h2,html[dir="rtl"] .cluster h2{letter-spacing:0}
+@media(max-width:760px){.art h2{font-size:24px}.cluster .links{grid-template-columns:1fr}.tbl{font-size:14px}.tbl th,.tbl td{padding:9px 8px}}
+
+@media(max-width:760px){.hero h1{font-size:30px}}
+@media(max-width:600px){
+  .wrap{padding-left:20px;padding-right:20px}
+  .logo .nm{font-size:22px}
+  .logo .tg{display:none}
+  .backlink{font-size:13px}
+  .hero .in{padding-top:38px;padding-bottom:34px}
+  .hero h1{font-size:25px;line-height:1.2}
+  .art{padding:40px 0 10px}
+  .stickycta.on{display:block}
+}
+</style>
+</head>
+<body>
+<header class="hdr"><div class="wrap in">
+  <a class="logo" href="index.html"><span class="nm">risk-place<b>.org</b></span><span class="tg">استمرارية الأعمال والمرونة · دول الخليج</span></a>
+  <div class="right"><a class="backlink" href="business-continuity-uae.html">→ دليل الاستمرارية في الإمارات</a><a class="langbtn" href="business-impact-analysis.html">English →</a></div>
+</div></header>
+
+<section class="hero"><div class="wrap in">
+  <p class="kicker">دليل · منهجية · BIA</p>
+  <h1>تحليل أثر الأعمال: منهجية تبدأ بالمال</h1>
+  <p class="sub">تحليل الأثر هو حيث تتوقف الاستمرارية عن كونها آراء وتصبح أرقاماً: أي الأنشطة أهم، وكم يكلف اليوم الضائع، وبأي سرعة يجب التعافي. حين يُنجز صحيحاً يستغرق أسابيع — ويسدد ثمن كل قرار يليه.</p>
+</div></section>
+
+<article class="art"><div class="wrap" id="art">
+<h2>عن ماذا يجيب تحليل الأثر</h2>
+<p>يجيب تحليل أثر الأعمال (BIA) عن أربعة أسئلة بأرقام: <b>أي الأنشطة حيوية</b> — أيها يضرب توقفه الإيراد والالتزامات والسلامة أولاً؟ <b>كيف ينمو الضرر عبر الزمن</b> — كم تكلف الساعة الرابعة مقابل اليوم الثالث؟ <b>بأي سرعة يجب أن يتعافى كل نشاط</b> (RTO) و<b>كم من البيانات تحتملون خسارته</b> (RPO)؟ و<b>على ماذا تعتمد تلك الأنشطة</b> — أنظمة وأشخاص وموردون ومنشآت؟</p>
+<p>كل ما يأتي بعده — الخطط والمواقع البديلة وإنفاق التقنية وحدود التأمين — يُسعّر بهذه الإجابات. ولهذا فإن تحليل أثر مبنياً على صفات (&laquo;حيوي&raquo;، &laquo;أثر مرتفع&raquo;) بدل الدراهم والساعات يسمم النظام كله بصمت.</p>
+<h2>المنهجية خطوة بخطوة</h2>
+<ul><li><b>1 · اسردوا الأنشطة لا الإدارات.</b> &laquo;إصدار الفواتير&raquo;، &laquo;شحن الطلبات&raquo;، &laquo;الرد على المنظم&raquo; — وحدات عمل سيفتقدها العمل، لا مربعات في الهيكل التنظيمي.</li><li><b>2 · قابلوا أصحاب الأنشطة.</b> ساعة واحدة مع صاحب كل نشاط تتفوق على أي استبيان. اسألوا ما الذي يتوقف، ومن يلاحظ، ومتى يصبح الضرر غير قابل للعكس.</li><li><b>3 · ارسموا منحنى الأثر.</b> لكل نشاط: الأثر المالي وغير المالي عند 4 ساعات و24 ساعة و3 أيام وأسبوع. المنحنى، لا رقم واحد، هو ما يحدد هدف التعافي.</li><li><b>4 · حددوا RTO وRPO من المنحنى.</b> يقع RTO قبيل انحدار المنحنى. أما RTO المختار بالارتياح (&laquo;قبل نهاية اليوم يبدو مناسباً&raquo;) فتخمين ببذلة رسمية.</li><li><b>5 · ارسموا الاعتماديات.</b> الأنظمة والأشخاص المفتاحيون والموردون والمنشآت لكل نشاط — ثم علّموا كل نقطة فشل منفردة.</li><li><b>6 · وفّقوا مع المدير المالي.</b> أرقام تكلفة التوقف يجب أن تصمد أمام مراجعة المالية. حين يوقع المدير المالي الأرقام يصبح تحليل الأثر أداة قوة.</li></ul>
+<div class="callout"><p>اختبار الناتج: جدول واحد — النشاط وتكلفة اليوم الضائع وRTO وRPO وأهم الاعتماديات ونقاط الفشل المنفردة. إن اتسع في صفحتين ووقعه المدير المالي فلديكم تحليل أثر. وإن كان أربعين صفحة نثراً فلديكم تقرير.</p></div>
+<h2>الأخطاء التي تُغرق تحليل الأثر</h2>
+<ul><li><b>استبيانات بدل مقابلات.</b> الأهمية المقيّمة ذاتياً تضخم كل شيء إلى &laquo;حيوي&raquo; فيفقد التحليل قدرته على ترتيب الأولويات.</li><li><b>تسوية الضرر بمتوسط.</b> تكلفة التوقف منحنى. والمتوسط يخفي الهاوية — النقطة التي يرحل عندها العملاء وتنطلق الغرامات.</li><li><b>نسيان الأثر غير المالي.</b> مخالفة تنظيمية وسلامة وسمعة: أحياناً النشاط ذو الإيراد المتواضع هو من يحمل الرخصة.</li><li><b>مرة واحدة وانتهى.</b> كتاب القواعد وNCEMA 7000 كلاهما يتوقعان تحديث التحليل مع تغير الأعمال. تحليل من 2023 يصف شركة لم تعد موجودة.</li><li><b>تخطي الموردين.</b> إذا استطاع مزود واحد إيقاف نشاط حيوي فتعطله هو سيناريوهكم — فلتنمذجوه.</li></ul>
+<h2>أسئلة شائعة</h2>
+<div class="faq"><details><summary>كم يستغرق تحليل الأثر؟</summary><p>لمؤسسة متوسطة: 2-4 أسابيع شاملة المقابلات والمنحنيات والتوفيق مع المدير المالي. الأطول يعني عادة تضخم النطاق؛ والأقصر يعني عادة استبيانات.</p></details><details><summary>كيف تُحسب تكلفة التوقف؟</summary><p>لكل نشاط: الإيراد والهامش المفقودان، والغرامات التعاقدية، والعمل الإضافي وتكاليف الاستعجال في التعافي، والتعرض التنظيمي، ومخاطر فقدان العملاء — على امتداد منحنى الأثر ومن بياناتكم المالية أنتم. الدقة أقل أهمية من الصدق؛ ±20% مقبول، أما الصفات فلا.</p></details><details><summary>من يجب أن يملك تحليل الأثر؟</summary><p>وظيفة الاستمرارية أو المخاطر تديره؛ وأصحاب الأنشطة يقدمون الحقائق؛ والمالية تتحقق من الأرقام؛ والقيادة توقع. التحليل الذي تملكه تقنية المعلومات وحدها يتحول إلى جرد أنظمة.</p></details><details><summary>تحليل الأثر أولاً أم تقييم المخاطر؟</summary><p>عملياً معاً: التحليل يخبركم ما المهم وبأي سرعة يجب أن يعود؛ والتقييم يخبركم ما الذي قد يسقطه. NCEMA 7000 وISO 22301 يتوقعان الاثنين.</p></details></div>
+</div></article>
+
+<section class="cluster"><div class="wrap">
+  <h2>المزيد من مركز الاستمرارية</h2>
+  <div class="links" id="cluster"><a href="business-continuity-uae.html">استمرارية الأعمال في الإمارات: الدليل الكامل</a><a href="iso-22301-implementation-uae.html">تطبيق ISO 22301 في الإمارات</a><a href="rto-rpo-explained.html">شرح RTO وRPO بلغة واضحة</a><a href="bcp-template-structure.html">ماذا تحتوي خطة استمرارية أعمال حقيقية</a><a href="tabletop-exercise-guide.html">كيف تديرون تمريناً نظرياً يجد فجوات حقيقية</a><a href="ncema-7000-ar.html">NCEMA 7000: المعيار الوطني الإماراتي لاستمرارية الأعمال</a><a href="cbuae-operational-resilience.html">المرونة التشغيلية للمصرف المركزي: الدليل الكامل</a></div>
+</div></section>
+
+<section class="cta"><div class="wrap in">
+  <h2>تريدون حساب تكلفة توقفكم من بياناتكم أنتم؟</h2>
+  <div><a class="btn" href="gap-assessment.html">اطلبوا تقييم الفجوات</a><a class="btn2" href="quiz.html">جرّبوا فحص الجاهزية المجاني</a></div>
+</div></section>
+
+<footer class="foot"><div class="wrap in">
+  <span>© 2026 risk-place.org · استمرارية الأعمال والمرونة</span>
+  <a href="privacy.html">سياسة الخصوصية</a>
+</div></footer>
+
+<a class="stickycta" id="stickycta" href="gap-assessment.html">تقييم فجوات الجاهزية لـ NCEMA</a>
+
+<script>
+window.addEventListener('scroll',function(){
+  var el=document.getElementById('stickycta');if(!el)return;
+  var cta=document.querySelector('section.cta');
+  var show=window.scrollY>600&&(!cta||cta.getBoundingClientRect().top>window.innerHeight);
+  el.classList.toggle('on',show);
+},{passive:true});
+</script>
+</body>
+</html>

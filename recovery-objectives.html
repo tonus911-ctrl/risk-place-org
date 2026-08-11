@@ -1,0 +1,75 @@
+<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RTO, RPO, MAO, MBCO: Recovery Objectives Explained with Examples | risk-place.org</title>
+<meta name="description" content="The four recovery objectives — MAO, RTO, RPO and MBCO — explained with a worked numeric example of a payment service, a relation table and the mistakes that make the numbers fiction.">
+<link rel="canonical" href="https://risk-place.org/recovery-objectives.html">
+<link rel="alternate" hreflang="en" href="https://risk-place.org/recovery-objectives.html">
+<link rel="alternate" hreflang="ar" href="https://risk-place.org/recovery-objectives-ar.html">
+<link rel="alternate" hreflang="x-default" href="https://risk-place.org/recovery-objectives.html">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "RTO, RPO, MAO, MBCO: Recovery Objectives Explained with Examples", "inLanguage": "en", "author": {"@type": "Organization", "name": "risk-place.org"}, "publisher": {"@type": "Organization", "name": "risk-place.org"}, "mainEntityOfPage": "https://risk-place.org/recovery-objectives.html", "image": "https://risk-place.org/assets/figures/rto-inside-mao-en.png", "datePublished": "2026-08-11"}</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HNF79F1SSN"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HNF79F1SSN');</script><script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");ym(110579884,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});</script><noscript><div><img src="https://mc.yandex.ru/watch/110579884" style="position:absolute;left:-9999px;" alt=""/></div></noscript>
+<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:Georgia,'Times New Roman',serif;background:#FDFBF7;color:#16181F;line-height:1.75}
+.top{background:#0D1117;color:#fff;padding:14px 24px;display:flex;justify-content:space-between;align-items:center}
+.top a{color:#fff;text-decoration:none}.lg b{color:#C4571C}.tg{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.55);font-family:Consolas,monospace}
+.wrap{max-width:760px;margin:0 auto;padding:40px 22px 60px}
+.crumb{font-size:13px;color:#8A8578;margin-bottom:22px}.crumb a{color:#C4571C;text-decoration:none}
+.tagchip{display:inline-block;font-family:Consolas,monospace;font-size:12px;letter-spacing:.1em;color:#C4571C;border:1.5px solid #C4571C;border-radius:6px;padding:2px 10px;margin-bottom:14px}
+h1{font-size:34px;line-height:1.2;margin-bottom:6px}.alt{font-size:17px;color:#5B564A;margin-bottom:22px;font-style:italic}
+h2{font-size:24px;margin:28px 0 12px;color:#16181F}
+.def{background:#F1EEE8;border-right:4px solid #C4571C;border-radius:10px;padding:18px 20px;font-size:17.5px;margin-bottom:28px}
+[dir="ltr"] .def{border-right:none;border-left:4px solid #C4571C}
+p.b{font-size:16.5px;margin-bottom:18px}
+ul,ol{padding-inline-start:24px;margin-bottom:18px;font-size:16.5px}li{margin-bottom:8px}
+img{max-width:100%;height:auto;border:1px solid #E1DCD3;border-radius:10px;margin:8px 0}
+figure{margin:22px 0}figcaption{font-size:13.5px;color:#8A8578;margin-top:6px}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
+.rel{margin:30px 0;padding:16px 20px;background:#fff;border:1px solid #E1DCD3;border-radius:10px;font-size:15px}
+.rel b{display:block;margin-bottom:8px}.rel a{color:#C4571C;text-decoration:none;margin-inline-end:16px}
+.cta{background:#0D1117;color:#fff;border-radius:14px;padding:26px 26px;margin-top:36px}
+.cta p{font-size:15.5px;color:rgba(255,255,255,.85);margin-bottom:14px}
+.cta a{display:inline-block;background:#C4571C;color:#fff;text-decoration:none;padding:10px 22px;border-radius:8px;font-size:15px}
+.langsw{font-size:13px;margin-bottom:18px}.langsw a{color:#C4571C;text-decoration:none;border:1px solid #C4571C;border-radius:6px;padding:3px 12px}
+footer{border-top:1px solid #E1DCD3;margin-top:48px;padding-top:18px;font-size:13px;color:#8A8578}footer a{color:#8A8578}</style></head><body>
+<div class="top"><a href="index.html"><span class="lg">risk-place<b>.org</b></span><div class="tg">Business Continuity &amp; Resilience · GCC</div></a>
+<div class="langsw"><a href="recovery-objectives-ar.html">العربية ←</a></div></div>
+<div class="wrap">
+<div class="crumb"><a href="index.html">Home</a> · <a href="glossary.html">Glossary</a> · Recovery objectives</div>
+<div class="tagchip">Business continuity guide</div>
+<h1>RTO, RPO, MAO, MBCO: recovery objectives on real examples</h1>
+<div class="def">Four numbers turn "recover quickly" into a requirement that can be engineered, budgeted and tested: MAO, RTO, RPO and MBCO. Set together, they define how much disruption your company can actually survive.</div>
+<h2>Why four numbers, and who approves them</h2>
+<p class="b">"We will recover as fast as possible" is not a plan — it is a hope. Recovery becomes manageable when it is expressed as targets: how long the business survives an outage (MAO), how fast a process must be restored (RTO), how much data may be lost (RPO), and what minimum level of service must be kept during recovery (MBCO). Process owners propose the numbers based on the <a href="terms/en/bia.html">Business Impact Analysis (BIA)</a>, finance checks them against the cost of downtime, executive management approves them, and the board sees the aggregate picture. The approved numbers then flow into architecture decisions, supplier SLAs and test plans.</p>
+<h2>MAO: the boundary of the unacceptable</h2>
+<p class="b">The <a href="terms/en/mao.html">Maximum Acceptable Outage</a> is the longest a process can stand still before the damage becomes unacceptable: contract penalties, regulatory breach, patient safety, irreversible loss of clients. Some standards call the same boundary <a href="terms/en/mtpd.html">MTPD</a> — the Maximum Tolerable Period of Disruption. Beyond this line you are no longer managing an incident; you are managing the survival of the business. The MAO comes from business analysis, not from IT: it reflects what customers, contracts and regulators will tolerate.</p>
+<figure><img src="assets/figures/mao-boundary-en.png" alt="Timeline diagram showing the Maximum Acceptable Outage (MAO) as the boundary where disruption damage becomes unacceptable" loading="lazy"><figcaption>The MAO marks the point where disruption damage becomes unacceptable.</figcaption></figure>
+<h2>RTO: inside the MAO, with margin</h2>
+<p class="b">The <a href="terms/en/rto.html">Recovery Time Objective</a> is the target time to restore the process. It must sit inside the MAO with a margin, because real recoveries slip: a key person is unreachable, a step fails, a dependency surprises you. A margin of 30-50% of the MAO is a reasonable rule of thumb. Speed is bought, not declared — the shorter the RTO, the more expensive the standby architecture behind it, which is why an RTO is approved together with its price.</p>
+<figure><img src="assets/figures/rto-inside-mao-en.png" alt="Recovery timeline showing the Recovery Time Objective (RTO) positioned inside the MAO with a safety margin" loading="lazy"><figcaption>The RTO sits inside the MAO, leaving a safety margin for slippage.</figcaption></figure>
+<h2>RPO: how much data you may lose</h2>
+<p class="b">The <a href="terms/en/rpo.html">Recovery Point Objective</a> limits data loss, measured in time. An RPO of 5 minutes means the last usable copy of the data is never older than 5 minutes — which dictates replication or backup at least that frequent. RTO and RPO answer different questions: RTO is about when customers are served again, RPO is about how much of their data survived. And a backup that has never been restored in a test does not count as a backup.</p>
+<h2>MBCO: the minimum level of service</h2>
+<p class="b">The <a href="terms/en/mbco.html">Minimum Business Continuity Objective</a> defines the level of service the company commits to deliver while recovery is under way — for example, 50% of normal throughput, priority customers first. Without an MBCO, recovery implicitly aims at 100% from the first minute, which inflates cost and blocks realistic decisions about what to restore first.</p>
+<h2>A worked example: a payment service</h2>
+<p class="b">Consider a payment processor whose merchant contracts trigger penalties after 6 hours of outage, and whose clients begin switching providers after roughly a working day. The company sets the MAO at 6 hours. The RTO is set at 4 hours, leaving a 2-hour margin; the last failover test came in at 3 hours 10 minutes, so the chain holds — tested time under RTO, RTO under MAO. Replication to the standby site runs every 5 minutes, matching an approved RPO of 5 minutes. The MBCO states that during recovery the company keeps at least 50% of normal transaction throughput, with card authorisation prioritised over reporting services. Every number has an owner, an approval and a test behind it.</p>
+<h2>How the four numbers relate</h2>
+<table><thead><tr><th>Objective</th><th>Question it answers</th><th>Example value</th></tr></thead>
+<tbody>
+<tr><td>MAO (MTPD)</td><td>How long can we survive an outage?</td><td>6 hours</td></tr>
+<tr><td>RTO</td><td>How fast must the process be restored?</td><td>4 hours (margin 2 hours)</td></tr>
+<tr><td>RPO</td><td>How much data may we lose?</td><td>5 minutes</td></tr>
+<tr><td>MBCO</td><td>What minimum service do we keep meanwhile?</td><td>50% of throughput</td></tr>
+</tbody></table>
+<h2>Common mistakes</h2>
+<ul>
+<li>Round numbers from the ceiling — an RTO chosen without the cost of downtime is either ruinously expensive or uselessly slow.</li>
+<li>RTO equal to MAO, leaving zero margin for the slippage every real recovery has.</li>
+<li>An RPO promised on paper while backup restores are never tested.</li>
+<li>No MBCO, so every recovery aims at 100% at once.</li>
+<li>Targets set by IT alone, without the process owners who feel the business impact.</li>
+<li>Numbers never revisited after the business, its suppliers or its BIA change.</li>
+</ul>
+<p class="b">How these targets are derived from impact analysis — and what they cost — is the subject of module M3 of the ERGP programme. For the method itself, start with our guide to the <a href="business-impact-analysis.html">Business Impact Analysis</a>.</p>
+<div class="rel"><b>Related terms</b><a href="terms/en/rto.html">RTO · Recovery Time Objective</a> <a href="terms/en/rpo.html">RPO · Recovery Point Objective</a> <a href="terms/en/mao.html">MAO · Maximum Acceptable Outage</a> <a href="terms/en/mbco.html">MBCO · Minimum Business Continuity Objective</a> <a href="terms/en/mtpd.html">MTPD · Maximum Tolerable Period of Disruption</a> <a href="terms/en/bia.html">BIA · Business Impact Analysis</a></div>
+<div class="cta"><p>These objectives are part of the working language of ERGP — the first resilience governance certification fully available in Arabic, also in English. 94 chapters, six modules, a verifiable certificate.</p><a href="resilience-governance-certificate.html">Explore the ERGP programme</a></div>
+<footer>© 2026 risk-place.org · Business Continuity & Resilience · <a href="glossary.html">Glossary</a></footer>
+</div></body></html>
