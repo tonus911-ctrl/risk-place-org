@@ -107,6 +107,9 @@ html[dir="rtl"] .sec .kick{font-family:'IBM Plex Sans Arabic',sans-serif;letter-
 .facts li b{color:#16181F;font-weight:600}
 .facts .dot{color:#C4571C;font-weight:700;flex-shrink:0}
 .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.cards2{grid-template-columns:repeat(2,1fr);margin-top:34px}
+@media(max-width:560px){.cards2{grid-template-columns:1fr}}
+.ptitle{margin:0 0 16px;font-size:23px;font-weight:600;letter-spacing:-0.01em}
 @media(max-width:1000px){.cards{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.cards{grid-template-columns:1fr}}
 .card{border:1px solid #EAE7E1;border-radius:18px;padding:24px 24px 22px;background:#fff;display:flex;flex-direction:column;gap:9px}
@@ -117,8 +120,6 @@ html[dir="rtl"] .card .k{font-family:'IBM Plex Sans Arabic',sans-serif;letter-sp
 .card p{margin:0;font-size:14px;color:#3D4149;line-height:1.58;flex-grow:1}
 .card .go{font-size:14.5px;font-weight:600;color:#C4571C}
 .card .go:hover{color:#A8490F}
-.card .go2{font-size:13px;color:#8A8478}
-.card .go2:hover{color:#C4571C}
 .lib{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .lib>*{min-width:0}
 .cards>.card{min-width:0}
@@ -136,17 +137,7 @@ html[dir="rtl"] .card .k{font-family:'IBM Plex Sans Arabic',sans-serif;letter-sp
 .clu .t{font-size:16px;font-weight:600}
 .clu .c{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#8A8478;letter-spacing:0.06em;flex-shrink:0}
 html[dir="rtl"] .clu .c{font-family:'IBM Plex Sans Arabic',sans-serif}
-.form{max-width:640px}
-.form .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-@media(max-width:560px){.form .row{grid-template-columns:1fr}}
-.form input,.form select,.form textarea{width:100%;border:1px solid #DCD8D0;border-radius:12px;padding:13px 16px;font-size:15px;background:#fff;margin-bottom:12px;color:#16181F}
-.form input:focus,.form select:focus,.form textarea:focus{outline:none;border-color:#C4571C}
-.form textarea{resize:vertical}
-.flabel{display:block;font-size:13px;color:#3D4149;margin:0 0 6px;font-weight:600}
-.sentnote{font-size:14.5px;color:#1E7A46;min-height:20px;margin:6px 0 0}
-.sentnote.err{color:#A03F12}
-.formnote{font-size:13px;color:#8A8478;margin-top:14px}
-.formnote a{color:#3D4149;text-decoration:underline}
+@media(max-width:560px){}
 .ftr{border-top:1px solid #EAE7E1;background:#fff}
 .ftr .in{padding:28px 0;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:13px;color:#8A8478}
 .ftr a{color:#3D4149}
@@ -166,7 +157,7 @@ html[dir="rtl"] .clu .c{font-family:'IBM Plex Sans Arabic',sans-serif}
     <a class="hm" href="resilience-governance-certificate.html"><span class="en-only">Certification</span><span class="ar-only">الشهادة</span></a>
     <a class="hm" href="#services"><span class="en-only">Services</span><span class="ar-only">الخدمات</span></a>
     <a class="hm" href="resilience-governance-certificate.html#verify"><span class="en-only">Verify a certificate</span><span class="ar-only">التحقق من شهادة</span></a>
-    <a class="hm" href="#contact"><span class="en-only">Contact</span><span class="ar-only">اتصلوا بنا</span></a>
+    <a class="hm" href="mailto:info@risk-place.org"><span class="en-only">Contact</span><span class="ar-only">اتصلوا بنا</span></a>
     <button class="langbtn" id="langbtn" onclick="toggleLang()">AR</button>
   </nav>
 </div></header>
@@ -202,7 +193,7 @@ html[dir="rtl"] .clu .c{font-family:'IBM Plex Sans Arabic',sans-serif}
         <li><span class="dot">●</span><span><b><span class="en-only">A certificate you can verify</span><span class="ar-only">شهادة قابلة للتحقق</span></b> — <span class="en-only">a unique number and QR resolving to the public register</span><span class="ar-only">رقم فريد وQR يقود إلى السجل العلني</span></span></li>
       </ul>
       <div class="cta-row">
-        <a class="btn" href="#contact" onclick="pickProduct('ergp');ev('home_ergp_demo')"><span class="en-only">Request a demo</span><span class="ar-only">اطلبوا عرضاً توضيحياً</span></a>
+        <a class="btn" href="resilience-governance-certificate.html#demo" onclick="ev('home_ergp_demo')"><span class="en-only">Request a demo</span><span class="ar-only">اطلبوا عرضاً توضيحياً</span></a>
         <a class="btn ghost2" href="resilience-governance-certificate.html"><span class="en-only">Programme details</span><span class="ar-only">تفاصيل البرنامج</span></a>
       </div>
     </div>
@@ -235,64 +226,40 @@ html[dir="rtl"] .clu .c{font-family:'IBM Plex Sans Arabic',sans-serif}
 </div></section>
 
 <section class="sec" id="services"><div class="wrap">
-  <p class="kick"><span class="en-only">What we offer</span><span class="ar-only">ما نقدمه</span></p>
-  <h2><span class="en-only">Four ways to work with us — one of them is free</span><span class="ar-only">أربع طرق للعمل معنا — إحداها مجانية</span></h2>
-  <div class="cards" style="margin-top:26px">
-    <div class="card">
-      <span class="k free"><span class="en-only">Free · Ten minutes</span><span class="ar-only">مجاني · عشر دقائق</span></span>
-      <h3><span class="en-only">Readiness self-assessment</span><span class="ar-only">التقييم الذاتي للجاهزية</span></h3>
-      <p><span class="en-only">A scenario-based check of your continuity system against a drone incident or ransomware. Honest questions, an immediate picture of where you stand.</span><span class="ar-only">فحص قائم على السيناريوهات لنظام الاستمرارية لديكم أمام حادث مسيرة أو هجوم فدية. أسئلة صريحة وصورة فورية لموقفكم.</span></p>
-      <a class="go" href="quiz.html" onclick="ev('home_card_quiz')"><span class="en-only">Start the free check →</span><span class="ar-only">ابدأوا الفحص المجاني ←</span></a>
+  <p class="kick"><span class="en-only">Products and services</span><span class="ar-only">المنتجات والخدمات</span></p>
+  <h2><span class="en-only">Tools for your continuity practice</span><span class="ar-only">أدوات لممارسة الاستمرارية لديكم</span></h2>
+  <p class="sd"><span class="en-only">The library teaches. These tools put that knowledge to work in your organisation.</span><span class="ar-only">المكتبة تعلم. وهذه الأدوات تضع تلك المعرفة موضع التنفيذ في مؤسستكم.</span></p>
+  <div class="ergp">
+    <div>
+      <h3 class="ptitle"><span class="en-only">Continuity &amp; risk dashboard</span><span class="ar-only">لوحة الاستمرارية والمخاطر</span></h3>
+      <ul class="facts">
+        <li><span class="dot">●</span><span><b><span class="en-only">One live picture of resilience</span><span class="ar-only">صورة حية واحدة للمرونة</span></b> — <span class="en-only">a single index, the cost of a downtime day, recovery targets against reality</span><span class="ar-only">مؤشر واحد وتكلفة يوم التوقف وأهداف التعافي مقابل الواقع</span></span></li>
+        <li><span class="dot">●</span><span><b><span class="en-only">Built for the board and the audit committee</span><span class="ar-only">مصممة لمجلس الإدارة ولجنة التدقيق</span></b> — <span class="en-only">decisions and money, not engineering detail</span><span class="ar-only">قرارات وأموال، لا تفاصيل هندسية</span></span></li>
+        <li><span class="dot">●</span><span><b><span class="en-only">Fed by your own numbers</span><span class="ar-only">تتغذى بأرقامكم أنتم</span></b> — <span class="en-only">built from your processes, refreshed on your cadence</span><span class="ar-only">تبنى من عملياتكم وتحدث بإيقاعكم</span></span></li>
+      </ul>
+      <div class="cta-row">
+        <a class="btn" href="dashboard.html" onclick="ev('home_card_dashboard')"><span class="en-only">Explore the dashboard</span><span class="ar-only">اكتشفوا اللوحة</span></a>
+      </div>
     </div>
-    <div class="card">
-      <span class="k"><span class="en-only">Certification</span><span class="ar-only">الشهادة</span></span>
-      <h3><span class="en-only">ERGP executive certificate</span><span class="ar-only">شهادة ERGP التنفيذية</span></h3>
-      <p><span class="en-only">The first resilience governance certification fully in Arabic. Self-paced, assessed, publicly verifiable.</span><span class="ar-only">أول شهادة في حوكمة المرونة بالعربية بالكامل. بإيقاع حر، مقيمة، وقابلة للتحقق علناً.</span></p>
-      <a class="go" href="#contact" onclick="pickProduct('ergp');ev('home_card_ergp')"><span class="en-only">Request a demo →</span><span class="ar-only">اطلبوا عرضاً ←</span></a>
-      <a class="go2" href="resilience-governance-certificate.html"><span class="en-only">Programme details</span><span class="ar-only">تفاصيل البرنامج</span></a>
-    </div>
-    <div class="card">
-      <span class="k"><span class="en-only">Product</span><span class="ar-only">منتج</span></span>
-      <h3><span class="en-only">Continuity &amp; risk dashboard</span><span class="ar-only">لوحة الاستمرارية والمخاطر</span></h3>
-      <p><span class="en-only">A live view of your continuity posture for the board and the audit committee: metrics, exercises, findings — in one place.</span><span class="ar-only">صورة حية لوضع الاستمرارية لديكم لمجلس الإدارة ولجنة التدقيق: المقاييس والتمارين والملاحظات — في مكان واحد.</span></p>
-      <a class="go" href="#contact" onclick="pickProduct('dashboard');ev('home_card_dashboard')"><span class="en-only">Request a demo →</span><span class="ar-only">اطلبوا عرضاً ←</span></a>
-      <a class="go2" href="demo.html"><span class="en-only">Open the live demo</span><span class="ar-only">افتحوا العرض الحي</span></a>
-    </div>
+    <a href="dashboard.html" onclick="ev('home_card_dashboard')"><img src="assets/dashboard-preview.jpg" alt="Continuity and risk dashboard — a live demo screenshot with the resilience index and key metrics" loading="lazy"></a>
+  </div>
+  <div class="cards cards2">
     <div class="card">
       <span class="k"><span class="en-only">Service</span><span class="ar-only">خدمة</span></span>
       <h3><span class="en-only">Consulting and audit</span><span class="ar-only">الاستشارات والتدقيق</span></h3>
       <p><span class="en-only">The Resilience Uplift Program: we audit your continuity system against NCEMA 7000 and ISO 22301 and raise the metrics that decide survival.</span><span class="ar-only">برنامج رفع المرونة: ندقق نظام الاستمرارية لديكم مقابل NCEMA 7000 وISO 22301 ونرفع المقاييس التي تقرر البقاء.</span></p>
-      <a class="go" href="#contact" onclick="pickProduct('consulting');ev('home_card_consulting')"><span class="en-only">Discuss your case →</span><span class="ar-only">ناقشوا حالتكم ←</span></a>
-      <a class="go2" href="gap-assessment.html"><span class="en-only">How the audit works</span><span class="ar-only">كيف يعمل التدقيق</span></a>
+      <a class="go" href="gap-assessment.html" onclick="ev('home_card_consulting')"><span class="en-only">How the audit works →</span><span class="ar-only">كيف يعمل التدقيق ←</span></a>
+    </div>
+    <div class="card">
+      <span class="k free"><span class="en-only">Free · Ten minutes</span><span class="ar-only">مجاني · عشر دقائق</span></span>
+      <h3><span class="en-only">Readiness self-assessment</span><span class="ar-only">التقييم الذاتي للجاهزية</span></h3>
+      <p><span class="en-only">Answer honest scenario questions — a drone incident or ransomware — and see right now where your continuity system stands.</span><span class="ar-only">أجيبوا عن أسئلة سيناريوهات صريحة — حادث مسيرة أو هجوم فدية — وشاهدوا الآن أين يقف نظام الاستمرارية لديكم.</span></p>
+      <a class="go" href="quiz.html" onclick="ev('home_card_quiz')"><span class="en-only">Start the free check →</span><span class="ar-only">ابدأوا الفحص المجاني ←</span></a>
     </div>
   </div>
 </div></section>
 
-<section class="sec beige" id="contact"><div class="wrap">
-  <p class="kick"><span class="en-only">One form for everything</span><span class="ar-only">نموذج واحد لكل شيء</span></p>
-  <h2><span class="en-only">Request a demonstration or ask a question</span><span class="ar-only">اطلبوا عرضاً توضيحياً أو اطرحوا سؤالاً</span></h2>
-  <p class="sd"><span class="en-only">Pick the product, leave your details and we reply by email — usually the same day.</span><span class="ar-only">اختاروا المنتج واتركوا بياناتكم ونرد عبر البريد — عادة في اليوم نفسه.</span></p>
-  <form class="form" id="leadForm">
-    <label class="flabel" for="f-product"><span class="en-only">What are you interested in?</span><span class="ar-only">ما الذي يهمكم؟</span></label>
-    <select id="f-product">
-      <option value="ergp" data-en="ERGP certification — demo" data-ar="شهادة ERGP — عرض توضيحي">ERGP certification — demo</option>
-      <option value="dashboard" data-en="Continuity &amp; risk dashboard — demo" data-ar="لوحة الاستمرارية والمخاطر — عرض توضيحي">Continuity &amp; risk dashboard — demo</option>
-      <option value="consulting" data-en="Consulting and audit" data-ar="الاستشارات والتدقيق">Consulting and audit</option>
-    </select>
-    <div class="row">
-      <input id="f-name" data-en="Name" data-ar="الاسم" placeholder="Name" required>
-      <input id="f-email" type="email" data-en="Work email" data-ar="البريد المهني" placeholder="Work email" required>
-    </div>
-    <div class="row">
-      <input id="f-org" data-en="Organisation" data-ar="المؤسسة" placeholder="Organisation">
-      <input id="f-role" data-en="Role" data-ar="الدور" placeholder="Role">
-    </div>
-    <textarea id="f-msg" rows="4" data-en="Message (optional)" data-ar="رسالة (اختياري)" placeholder="Message (optional)"></textarea>
-    <button type="submit" class="btn"><span class="en-only">Send the request</span><span class="ar-only">أرسلوا الطلب</span></button>
-    <p class="sentnote" id="fnote"></p>
-  </form>
-  <p class="formnote"><span class="en-only">Prefer email? Write to <a href="mailto:info@risk-place.org">info@risk-place.org</a>.</span><span class="ar-only">تفضلون البريد؟ راسلوا <a href="mailto:info@risk-place.org">info@risk-place.org</a>.</span></p>
-</div></section>
+
 
 <footer class="ftr"><div class="wrap in">
   <span>© 2026 risk-place.org · <span class="en-only">Business Continuity &amp; Resilience</span><span class="ar-only">استمرارية الأعمال والمرونة</span></span>
@@ -324,10 +291,6 @@ function ev(name){
   try{gtag('event',name,{page:'home'});}catch(e){}
   try{ym(110579884,'reachGoal',name);}catch(e){}
 }
-function pickProduct(p){
-  var s=document.getElementById("f-product");
-  if(s)s.value=p;
-}
 function goSearch(e){
   e.preventDefault();
   var q=(document.getElementById("hq").value||"").trim();
@@ -335,31 +298,6 @@ function goSearch(e){
   location.href="library.html"+(q?"?q="+encodeURIComponent(q):"");
   return false;
 }
-document.getElementById("leadForm").addEventListener("submit",function(e){
-  e.preventDefault();
-  var note=document.getElementById("fnote");
-  var body={
-    type:"demo",
-    product:document.getElementById("f-product").value,
-    name:document.getElementById("f-name").value,
-    email:document.getElementById("f-email").value,
-    org:document.getElementById("f-org").value,
-    role:document.getElementById("f-role").value,
-    message:document.getElementById("f-msg").value,
-    lang:lang,page:"home"
-  };
-  fetch("https://ergp.risk-place.org/api/lead",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)})
-    .then(function(r){
-      if(!r.ok)throw 0;
-      note.textContent=(lang==="ar")?"شكراً — سنرد عبر البريد قريباً.":"Thank you — we will reply by email shortly.";
-      note.classList.remove("err");
-      ev('home_lead_submit');
-    })
-    .catch(function(){
-      note.textContent=(lang==="ar")?"تعذر الإرسال. راسلوا info@risk-place.org":"Could not send. Please email info@risk-place.org";
-      note.classList.add("err");
-    });
-});
 (function(){var s=null;try{s=localStorage.getItem("rp_org_lang");}catch(e){}if(s==="ar")setLang("ar");})();
 </script>
 </body>
