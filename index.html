@@ -4,17 +4,52 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HNF79F1SSN"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HNF79F1SSN');</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(110579884,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/110579884" style="position:absolute;left:-9999px;" alt=""></div></noscript>
+<!-- /Yandex.Metrika counter -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>risk-place.org — Business Continuity &amp; Resilience · GCC</title>
-<meta name="description" content="Drone incident and ransomware readiness for GCC companies. We turn business resilience into measurable metrics and money: gap assessment, continuity dashboard, training.">
+<title>risk-place.org — Business Continuity &amp; Resilience in Arabic and English · GCC</title>
+<meta name="description" content="The largest Arabic-English knowledge library on business continuity and operational resilience in the Gulf, the first resilience governance certification fully in Arabic (ERGP), continuity consulting and a live risk dashboard.">
+<link rel="canonical" href="https://risk-place.org/">
 <link rel="icon" type="image/png" href="favicon.png">
-<meta property="og:title" content="risk-place.org — Business Continuity &amp; Resilience · GCC">
-<meta property="og:description" content="Drone incident and ransomware readiness for GCC companies. Free 13-question readiness check, gap assessment, continuity dashboard, training.">
-<meta property="og:image" content="https://risk-place.org/hero-dubai.jpg">
+<meta property="og:title" content="risk-place.org — Business Continuity &amp; Resilience in Arabic and English">
+<meta property="og:description" content="The largest Arabic-English resilience library in the Gulf, the first fully-Arabic resilience certification (ERGP), consulting and a live continuity dashboard.">
 <meta property="og:url" content="https://risk-place.org/">
 <meta property="og:type" content="website">
-<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://risk-place.org/#org",
+      "name": "risk-place.org",
+      "url": "https://risk-place.org/",
+      "email": "info@risk-place.org",
+      "description": "Business continuity and resilience: an Arabic-English knowledge library, the ERGP executive certification, consulting and a continuity dashboard for the GCC.",
+      "areaServed": "GCC"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://risk-place.org/#site",
+      "url": "https://risk-place.org/",
+      "name": "risk-place.org",
+      "inLanguage": ["en", "ar"],
+      "publisher": {"@id": "https://risk-place.org/#org"},
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {"@type": "EntryPoint", "urlTemplate": "https://risk-place.org/library.html?q={search_term_string}"},
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -23,721 +58,306 @@ body{margin:0;background:#fff;-webkit-font-smoothing:antialiased;font-family:'Fi
 html[dir="rtl"] body{font-family:'IBM Plex Sans Arabic','Figtree',system-ui,sans-serif}
 a{color:#16181F;text-decoration:none}
 ::selection{background:#FBE0CB}
-input,textarea,button{font-family:inherit}
-.mono{font-family:'IBM Plex Mono',monospace}
-.wrap{max-width:1280px;margin:0 auto;padding:0 36px}
-/* header */
+input,button,select,textarea{font-family:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+html[lang="en"] .ar-only{display:none !important}
+html[lang="ar"] .en-only{display:none !important}
 .hdr{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.94);backdrop-filter:blur(14px);border-bottom:1px solid #EAE7E1}
-.hdr .in{height:74px;display:flex;align-items:center;gap:44px}
-.logo{flex-shrink:0;display:flex;flex-direction:column;gap:1px}
-.logo .nm{font-size:27px;font-weight:600;letter-spacing:-0.02em}
+.hdr .in{height:70px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.logo{display:flex;flex-direction:column;gap:1px}
+.logo .nm{font-size:26px;font-weight:600;letter-spacing:-0.02em;font-family:'Figtree',sans-serif}
 .logo .nm b{color:#C4571C;font-weight:600}
-.logo .tg{font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.12em;text-transform:uppercase;color:#8A8478}
-.nav{display:flex;align-items:center;gap:28px;font-size:16px;font-weight:400;flex:1}
-.nav a{padding:26px 0 25px;border-bottom:2px solid transparent;color:#3D4149}
-.nav a:hover{border-bottom-color:#C4571C;color:#16181F}
-.hdr .right{display:flex;align-items:center;gap:16px;flex-shrink:0}
+.logo .tg{font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#8A8478}
+.logo .tg.en-only{font-family:'IBM Plex Mono',monospace;letter-spacing:0.12em}
+.nav{display:flex;align-items:center;gap:22px}
+.nav a{font-size:14.5px;color:#3D4149}
+.nav a:hover{color:#C4571C}
 .langbtn{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.08em;background:none;border:1px solid #DCD8D0;border-radius:999px;padding:7px 15px;cursor:pointer;color:#3D4149}
 .langbtn:hover{border-color:#16181F;color:#16181F}
-.cta-dark{font-size:16px;font-weight:500;background:#16181F;color:#fff !important;padding:11px 22px;border-radius:999px}
-.cta-dark:hover{background:#C4571C}
-.ar-note{display:none;background:#FBE0CB;color:#5A2E10;text-align:center;font-size:15px;font-weight:500;padding:10px 24px}
-html[dir="rtl"] .ar-note{display:block}
-/* hero */
-.hero{position:relative;background:#0D1117;overflow:hidden}
-.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% top}
-.hero .shade{position:absolute;inset:0;background:linear-gradient(96deg,rgba(9,12,18,0.93) 0%,rgba(9,12,18,0.78) 38%,rgba(9,12,18,0.24) 72%,rgba(9,12,18,0.08) 100%)}
-html[dir="rtl"] .hero .shade{background:linear-gradient(264deg,rgba(9,12,18,0.93) 0%,rgba(9,12,18,0.78) 38%,rgba(9,12,18,0.24) 72%,rgba(9,12,18,0.08) 100%)}
-.hero .in{position:relative;padding-top:128px;padding-bottom:116px}
-.kicker{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:#F0A868;margin:0 0 30px}
-.hero h1{font-size:66px;font-weight:300;line-height:1.08;letter-spacing:-0.03em;color:#fff;margin:0;max-width:20ch;text-wrap:pretty}
-.hero .accent{font-size:27px;font-weight:300;line-height:1.32;color:#F0A868;margin:22px 0 0;max-width:24ch;letter-spacing:-0.01em}
-.hero .body{font-size:19.5px;font-weight:300;line-height:1.62;color:rgba(255,255,255,0.72);margin:32px 0 0;max-width:56ch}
-.hero .ctas{display:flex;gap:12px;margin-top:40px;flex-wrap:wrap}
-.btn-w{font-size:17px;font-weight:500;background:#fff;color:#16181F;padding:15px 30px;border-radius:999px;border:0;cursor:pointer}
-.btn-w:hover{background:#F0A868}
-.btn-o{font-size:17px;font-weight:400;color:#fff !important;border:1px solid rgba(255,255,255,0.34);padding:15px 30px;border-radius:999px;display:inline-block}
-.btn-o:hover{border-color:#fff}
-.hero .trust{font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.06em;color:rgba(255,255,255,0.5);margin:44px 0 0;max-width:72ch;line-height:1.7}
-/* sections */
-.sec{padding-top:104px;padding-bottom:96px}
-.sec-head{display:grid;grid-template-columns:6fr 5fr;gap:72px;align-items:end;margin-bottom:64px}
-.sec-head h2{font-size:44px;font-weight:300;line-height:1.14;letter-spacing:-0.025em;margin:0;text-wrap:pretty}
-.sec-head p{font-size:19px;font-weight:300;line-height:1.62;color:#5E636D;margin:0}
-/* threats */
-.thr{display:grid;grid-template-columns:1fr 1fr;gap:64px}
-.thr .card{display:flex;flex-direction:column;gap:18px;padding-top:26px;border-top:2px solid #16181F}
-.thr .tag{font-family:'IBM Plex Mono',monospace;font-size:12.5px;font-weight:500;letter-spacing:0.13em;text-transform:uppercase;color:#C4571C}
-.thr h3{font-size:29px;font-weight:400;line-height:1.2;letter-spacing:-0.02em;margin:0}
-.thr .body{font-size:17.5px;font-weight:300;line-height:1.62;color:#5E636D;margin:0}
-.thr ul{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;gap:12px}
-.thr li{display:grid;grid-template-columns:18px 1fr;gap:12px;font-size:17px;font-weight:400;line-height:1.5}
-.thr li .d{color:#C4571C}
-.thr .q{margin:18px 0 0;font-size:19px;font-weight:400;line-height:1.5;color:#16181F;border-inline-start:3px solid #F0A868;padding-inline-start:18px}
-/* experience */
-.beige{background:#F7F4EF;border-top:1px solid #EAE7E1;border-bottom:1px solid #EAE7E1}
-.exp{display:grid;grid-template-columns:7fr 5fr;gap:88px;padding-top:96px;padding-bottom:96px}
-.exp h2{font-size:44px;font-weight:300;line-height:1.14;letter-spacing:-0.025em;margin:0 0 8px;text-wrap:pretty}
-.exp .acc{font-size:44px;font-weight:400;line-height:1.14;letter-spacing:-0.025em;margin:0 0 32px;color:#C4571C}
-.exp .paras{display:flex;flex-direction:column;gap:18px;max-width:62ch}
-.exp .paras p{font-size:18px;font-weight:300;line-height:1.66;color:#3D4149;margin:0}
-.stats{display:flex;flex-direction:column}
-.stat{display:grid;grid-template-columns:128px 1fr;gap:20px;align-items:baseline;padding:22px 0;border-bottom:1px solid #E1DCD3}
-.stat .v{font-size:38px;font-weight:300;letter-spacing:-0.03em;color:#16181F}
-.stat .l{font-size:16px;font-weight:300;line-height:1.5;color:#5E636D}
-/* services — визуальный якорь лендинга */
-.svc-sec{background:#0D1117}
-.svc-sec .sec-head h2{color:#fff}
-.svc-sec .sec-head p{color:rgba(255,255,255,0.68)}
-.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.svc .p{background:#fff;border-radius:18px;padding:34px 30px 30px;display:flex;flex-direction:column;gap:13px;min-height:400px;transition:transform .18s ease, box-shadow .18s ease;position:relative}
-.svc .p:hover{transform:translateY(-5px);box-shadow:0 18px 44px rgba(0,0,0,0.35)}
-.svc .p.flag{border:2px solid #C4571C}
-.flagbadge{position:absolute;top:-14px;inset-inline-end:22px;background:#C4571C;color:#fff;font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;border-radius:999px;padding:5px 14px}
-.svc .step{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:0.13em;text-transform:uppercase;color:#C4571C}
-.svc h3{font-size:24px;font-weight:600;line-height:1.24;letter-spacing:-0.015em;margin:0}
-.svc .b{font-size:16px;font-weight:300;line-height:1.6;color:#5E636D;margin:0;flex:1}
-.svc .pr{font-size:26px;font-weight:600;letter-spacing:-0.02em;margin-top:auto;padding-top:14px;color:#16181F}
-.svc .prn{font-size:14px;font-weight:300;color:#8A8478;min-height:44px}
-.svc button,.svc a.qbtn{margin-top:12px;width:100%;font-size:16.5px;font-weight:600;background:#C4571C;border:0;border-radius:12px;padding:15px 20px;cursor:pointer;color:#fff !important;display:block;text-align:center}
-.svc button:hover,.svc a.qbtn:hover{background:#A03F12}
-/* regwatch */
-.regs{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
-.regs .r{display:flex;flex-direction:column;gap:14px;padding-top:22px;border-top:1px solid #D6D0C6}
-.regs .rt{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:0.13em;text-transform:uppercase;color:#8A8478}
-.regs h3{font-size:24px;font-weight:500;line-height:1.24;letter-spacing:-0.015em;margin:0}
-.regs p{font-size:16.5px;font-weight:300;line-height:1.62;color:#5E636D;margin:0}
-.regs button,.regs a.rlink{align-self:flex-start;margin-top:6px;background:none;border:0;padding:0;font-size:16px;font-weight:500;color:#C4571C;cursor:pointer}
-.regs button:hover{color:#16181F}
-/* results */
-.res{display:grid;grid-template-columns:repeat(4,1fr);gap:36px}
-.res .r{display:flex;flex-direction:column;gap:12px;padding-top:20px;border-top:2px solid #16181F}
-.res .v{font-size:34px;font-weight:300;letter-spacing:-0.03em}
-.res .l{font-size:16px;font-weight:300;line-height:1.55;color:#5E636D}
-/* contact */
-.dark{background:#0D1117;color:#fff}
-.cont{display:grid;grid-template-columns:6fr 5fr;gap:88px;padding-top:96px;padding-bottom:96px}
-.cont h2{font-size:44px;font-weight:300;line-height:1.14;letter-spacing:-0.025em;margin:0 0 18px;text-wrap:pretty}
-.cont .sub{font-size:19px;font-weight:300;line-height:1.62;color:rgba(255,255,255,0.66);margin:0 0 48px;max-width:50ch}
-.person{display:grid;grid-template-columns:104px 1fr;gap:26px;align-items:start}
-.person img{width:104px;height:104px;border-radius:50%;object-fit:cover;filter:grayscale(0.15)}
-.person h3{font-size:23px;font-weight:500;letter-spacing:-0.015em;margin:0}
-.person .role{font-size:16px;font-weight:300;color:rgba(255,255,255,0.6);margin:5px 0 16px}
-.person ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px}
-.person li{font-size:16px;font-weight:300;color:rgba(255,255,255,0.82)}
-.plinks{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap}
-.plinks a{font-size:15px;border-radius:999px;padding:8px 16px}
-.plinks a.em{color:#F0A868;border:1px solid rgba(240,168,104,0.4)}
-.plinks a.em:hover{background:#F0A868;color:#0D1117}
-.plinks a.soc{color:rgba(255,255,255,0.8);border:1px solid rgba(255,255,255,0.22)}
-.plinks a.soc:hover{border-color:#fff;color:#fff}
-.form{display:flex;flex-direction:column;gap:4px}
-.form input,.form textarea{background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,0.24);padding:15px 2px;font-size:17px;font-weight:300;color:#fff;outline:none;resize:none}
-.form input:focus,.form textarea:focus{border-bottom-color:#F0A868}
-.form ::placeholder{color:rgba(255,255,255,0.45)}
-.form button{margin-top:26px;align-self:flex-start;font-size:17px;font-weight:500;background:#fff;color:#16181F;border:0;padding:14px 30px;border-radius:999px;cursor:pointer}
-.form button:hover{background:#F0A868}
-.sentnote{font-size:15px;font-weight:400;color:#7BD6A0;margin:16px 0 0;min-height:20px}
-.foot{border-top:1px solid rgba(255,255,255,0.12)}
-.foot .in{padding-top:24px;padding-bottom:24px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;font-size:14.5px;font-weight:300;color:rgba(255,255,255,0.46)}
-.foot button{background:none;border:0;padding:0;font-size:14.5px;font-weight:300;color:rgba(255,255,255,0.46);cursor:pointer}
-.foot button:hover{color:#fff}
-/* founding cohort promo band */
-.promo{background:#FBE0CB;border-bottom:1px solid #EAE7E1}
-.promo .in{display:flex;align-items:center;gap:14px;padding:13px 0;flex-wrap:wrap}
-.promo .ptag{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;background:#C4571C;color:#fff;border-radius:999px;padding:5px 12px;white-space:nowrap}
-.promo a{font-size:15.5px;font-weight:500;color:#5A2E10;line-height:1.4}
-.promo a:hover{color:#C4571C}
-@media(max-width:600px){.promo .in{padding:11px 0}.promo a{font-size:14px}}
-/* guides catalog */
-.gcols{display:grid;grid-template-columns:repeat(3,1fr);gap:44px}
-.gcol h3{font-family:'IBM Plex Mono',monospace;font-size:12.5px;font-weight:500;letter-spacing:0.13em;text-transform:uppercase;color:#8A8478;margin:0 0 14px}
-.gcol a{display:block;padding:11px 0;border-bottom:1px solid #E1DCD3;font-size:15.5px;font-weight:400;color:#3D4149;line-height:1.4}
-.gcol a:hover{color:#C4571C}
-.svc .glink{display:block;margin-top:10px;font-size:14px;font-weight:500;color:#C4571C;text-align:center;min-height:40px}
-.svc .glink:hover{text-decoration:underline}
-/* burger + mobile menu */
-.burger{display:none;background:none;border:0;cursor:pointer;padding:8px 6px}
-.burger span{display:block;width:22px;height:2px;background:#16181F;margin:5px 0;border-radius:2px;transition:transform .2s,opacity .2s}
-.mobmenu{display:none;position:fixed;top:74px;left:0;right:0;z-index:59;background:#fff;border-bottom:1px solid #EAE7E1;box-shadow:0 18px 40px rgba(13,17,23,0.12);padding:8px 24px 16px}
-.mobmenu a{display:block;padding:13px 4px;font-size:17px;color:#16181F;border-bottom:1px solid #F1EEE8}
-.mobmenu a:last-child{border-bottom:0}
-body.menu-open .mobmenu{display:block}
-body.menu-open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-body.menu-open .burger span:nth-child(2){opacity:0}
-body.menu-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-/* sticky quiz cta (mobile only) */
-.stickycta{display:none;position:fixed;left:14px;right:14px;bottom:14px;z-index:70;background:#C4571C;color:#fff !important;text-align:center;font-size:16.5px;font-weight:600;padding:15px 18px;border-radius:999px;box-shadow:0 10px 28px rgba(13,17,23,0.28)}
-/* mobile read-more */
-.morebtn{display:none;background:none;border:0;cursor:pointer;padding:6px 0 0;font-size:15.5px;font-weight:600;color:#C4571C;font-family:inherit}
-/* responsive */
-@media(max-width:1000px){
-  .hero h1{font-size:46px}
-  .sec-head,.thr,.exp,.cont{grid-template-columns:1fr;gap:32px}
-  .svc{grid-template-columns:1fr 1fr}
-  .regs{grid-template-columns:1fr}
-  .res{grid-template-columns:1fr 1fr}
-  .nav{display:none}
-  .burger{display:block}
-  .hdr .cta-dark{display:none}
-}
-@media(max-width:600px){
-  .svc,.res{grid-template-columns:1fr}
-  .wrap{padding-left:20px;padding-right:20px}
-  /* mobile section order: hero -> services -> the rest */
-  body{display:flex;flex-direction:column}
-  .hdr{order:0}.ar-note{order:1}#top{order:2}.promo{order:2}#services{order:3}#threats{order:4}#experience{order:5}#regwatch{order:6}#results{order:7}#guides{order:8}#contact{order:9}
-  .hdr .in{height:64px;gap:16px}
-  .logo .nm{font-size:22px}
-  .logo .tg{display:none}
-  .mobmenu{top:64px}
-  /* compact hero = one screen */
-  .hero .in{padding-top:64px;padding-bottom:58px}
-  .hero h1{font-size:29px;line-height:1.16}
-  .hero .accent{font-size:19px;margin-top:14px}
-  .hero .body{display:none}
-  .kicker{font-size:11px;margin-bottom:18px}
-  .hero .ctas{margin-top:26px;flex-direction:column;align-items:stretch;text-align:center}
-  .hero .trust{font-size:11px;margin-top:26px}
-  /* tighter typography and spacing */
-  .sec{padding-top:56px;padding-bottom:52px}
-  .sec-head{margin-bottom:36px !important}
-  .sec-head h2,.exp h2{font-size:27px}
-  .sec-head p{font-size:16.5px}
-  #regwatch>.wrap{padding-top:56px !important;padding-bottom:52px !important}
-  /* accordions */
-  .paras p:nth-of-type(n+2){display:none}
-  .paras.open p{display:block !important}
-  .morebtn{display:inline-block}
-  .regs .r{cursor:pointer}
-  .gcols{grid-template-columns:1fr;gap:28px}
-  .regs .r p{display:none}
-  .regs .r.open p{display:block}
-  .stickycta.on{display:block}
-}
+@media(max-width:900px){.nav a.hm{display:none}}
+.hero{background:#0D1117;color:#fff}
+.hero .in{padding-top:64px;padding-bottom:56px}
+.kicker{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#F0A868;margin:0 0 18px}
+html[dir="rtl"] .kicker{font-family:'IBM Plex Sans Arabic',sans-serif;letter-spacing:0.04em}
+.hero h1{font-size:42px;font-weight:300;line-height:1.14;letter-spacing:-0.02em;margin:0 0 16px;max-width:21ch;text-wrap:pretty}
+@media(max-width:700px){.hero h1{font-size:32px}}
+.hero .sub{font-size:17.5px;font-weight:300;color:rgba(255,255,255,0.78);margin:0 0 28px;max-width:64ch;line-height:1.64}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;background:#C4571C;color:#fff;border:none;border-radius:999px;padding:14px 28px;font-size:15.5px;font-weight:600;cursor:pointer}
+.btn:hover{background:#A8490F}
+.btn.ghost{background:none;border:1px solid rgba(255,255,255,0.35);color:#fff}
+.btn.ghost:hover{border-color:#F0A868;color:#F0A868}
+.btn.ghost2{background:none;border:1px solid #DCD8D0;color:#16181F}
+.btn.ghost2:hover{border-color:#C4571C;color:#C4571C}
+.trust{background:#0D1117;color:#fff;border-top:1px solid rgba(255,255,255,0.09)}
+.trust .in{padding:22px 0;display:flex;flex-wrap:wrap;gap:14px 40px}
+.trust .t .n{font-size:22px;font-weight:600;color:#F0A868;font-family:'Figtree',sans-serif}
+.trust .t .l{font-size:12px;color:rgba(255,255,255,0.6);letter-spacing:0.04em;text-transform:uppercase}
+.sec{padding:64px 0;scroll-margin-top:86px}
+.sec.beige{background:#F7F4EF;border-top:1px solid #EAE7E1;border-bottom:1px solid #EAE7E1}
+.sec .kick{font-family:'IBM Plex Mono',monospace;font-size:11.5px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#C4571C;margin:0 0 12px}
+html[dir="rtl"] .sec .kick{font-family:'IBM Plex Sans Arabic',sans-serif;letter-spacing:0.04em}
+.sec h2{font-size:30px;font-weight:300;letter-spacing:-0.015em;margin:0 0 10px;text-wrap:pretty}
+.sec .sd{font-size:16px;color:#3D4149;margin:0 0 30px;max-width:70ch;line-height:1.62}
+.ergp{display:grid;grid-template-columns:1.15fr 1fr;gap:44px;align-items:center}
+@media(max-width:860px){.ergp{grid-template-columns:1fr}}
+.ergp img{width:100%;border-radius:14px;border:1px solid #EAE7E1;box-shadow:0 18px 50px rgba(13,17,23,0.14)}
+.facts{list-style:none;margin:0 0 26px;padding:0;display:flex;flex-direction:column;gap:12px}
+.facts li{display:flex;gap:12px;font-size:15.5px;line-height:1.55;color:#3D4149}
+.facts li b{color:#16181F;font-weight:600}
+.facts .dot{color:#C4571C;font-weight:700;flex-shrink:0}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media(max-width:1000px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.cards{grid-template-columns:1fr}}
+.card{border:1px solid #EAE7E1;border-radius:18px;padding:24px 24px 22px;background:#fff;display:flex;flex-direction:column;gap:9px}
+.card .k{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#8A8478}
+html[dir="rtl"] .card .k{font-family:'IBM Plex Sans Arabic',sans-serif;letter-spacing:0.04em}
+.card .k.free{color:#1E7A46;font-weight:600}
+.card h3{margin:0;font-size:18.5px;font-weight:600;letter-spacing:-0.01em;line-height:1.3}
+.card p{margin:0;font-size:14px;color:#3D4149;line-height:1.58;flex-grow:1}
+.card .go{font-size:14.5px;font-weight:600;color:#C4571C}
+.card .go:hover{color:#A8490F}
+.card .go2{font-size:13px;color:#8A8478}
+.card .go2:hover{color:#C4571C}
+.lib{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:760px){.lib{grid-template-columns:1fr}}
+.lib .big{grid-column:1 / -1;border:1px solid #EAE7E1;background:#0D1117;color:#fff;border-radius:18px;padding:30px 32px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
+.lib .big h3{margin:0 0 6px;font-size:22px;font-weight:500}
+.lib .big p{margin:0;font-size:14.5px;color:rgba(255,255,255,0.72);max-width:58ch;line-height:1.6}
+.libsearch{display:flex;gap:8px;width:100%;max-width:520px}
+.libsearch input{flex-grow:1;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.3);border-radius:999px;padding:12px 20px;font-size:15px;color:#fff;min-width:0}
+.libsearch input::placeholder{color:rgba(255,255,255,0.45)}
+.libsearch input:focus{outline:none;border-color:#F0A868}
+.clu{border:1px solid #EAE7E1;border-radius:16px;padding:20px 22px;background:#F7F4EF;display:flex;align-items:baseline;justify-content:space-between;gap:14px}
+.clu:hover{border-color:#C4571C}
+.clu .t{font-size:16px;font-weight:600}
+.clu .c{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#8A8478;letter-spacing:0.06em;flex-shrink:0}
+html[dir="rtl"] .clu .c{font-family:'IBM Plex Sans Arabic',sans-serif}
+.form{max-width:640px}
+.form .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:560px){.form .row{grid-template-columns:1fr}}
+.form input,.form select,.form textarea{width:100%;border:1px solid #DCD8D0;border-radius:12px;padding:13px 16px;font-size:15px;background:#fff;margin-bottom:12px;color:#16181F}
+.form input:focus,.form select:focus,.form textarea:focus{outline:none;border-color:#C4571C}
+.form textarea{resize:vertical}
+.flabel{display:block;font-size:13px;color:#3D4149;margin:0 0 6px;font-weight:600}
+.sentnote{font-size:14.5px;color:#1E7A46;min-height:20px;margin:6px 0 0}
+.sentnote.err{color:#A03F12}
+.formnote{font-size:13px;color:#8A8478;margin-top:14px}
+.formnote a{color:#3D4149;text-decoration:underline}
+.ftr{border-top:1px solid #EAE7E1;background:#fff}
+.ftr .in{padding:28px 0;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:13px;color:#8A8478}
+.ftr a{color:#3D4149}
+.ftr a:hover{color:#C4571C}
 </style>
 </head>
 <body>
 
-<header class="hdr">
-  <div class="wrap in">
-    <a href="#top" class="logo">
-      <span class="nm">risk-place<b>.org</b></span>
-      <span class="tg" data-k="tagline">Business Continuity &amp; Resilience · GCC</span>
-    </a>
-    <nav class="nav">
-      <a href="#threats" data-k="nav.0">Threats</a>
-      <a href="#experience" data-k="nav.1">Why us</a>
-      <a href="#services" data-k="nav.2">Services</a>
-      <a href="#regwatch" data-k="nav.3">Regulatory watch</a>
-      <a href="#guides" data-k="nav.5">Guides</a>
-      <a href="#contact" data-k="nav.4">Contact</a>
-    </nav>
-    <div class="right">
-      <button class="langbtn" id="langbtn" onclick="toggleLang()">AR</button>
-      <a href="#contact" class="cta-dark" data-k="navCta">Discuss your task</a>
-      <button class="burger" aria-label="Menu" onclick="toggleMenu()"><span></span><span></span><span></span></button>
-    </div>
+<header class="hdr"><div class="wrap in">
+  <a class="logo" href="index.html">
+    <span class="nm">risk-<b>place</b>.org</span>
+    <span class="tg en-only">Business Continuity &amp; Resilience · GCC</span>
+    <span class="tg ar-only">استمرارية الأعمال والمرونة · دول الخليج</span>
+  </a>
+  <nav class="nav">
+    <a class="hm" href="library.html"><span class="en-only">Library</span><span class="ar-only">المكتبة</span></a>
+    <a class="hm" href="resilience-governance-certificate.html"><span class="en-only">Certification</span><span class="ar-only">الشهادة</span></a>
+    <a class="hm" href="#services"><span class="en-only">Services</span><span class="ar-only">الخدمات</span></a>
+    <a class="hm" href="resilience-governance-certificate.html#verify"><span class="en-only">Verify a certificate</span><span class="ar-only">التحقق من شهادة</span></a>
+    <a class="hm" href="#contact"><span class="en-only">Contact</span><span class="ar-only">اتصلوا بنا</span></a>
+    <button class="langbtn" id="langbtn" onclick="toggleLang()">AR</button>
+  </nav>
+</div></header>
+
+<section class="hero"><div class="wrap in">
+  <p class="kicker"><span class="en-only">Knowledge · Certification · Consulting — GCC</span><span class="ar-only">المعرفة · الشهادات · الاستشارات — دول الخليج</span></p>
+  <h1><span class="en-only">The Gulf's resilience library — and the first certification fully in Arabic</span><span class="ar-only">مكتبة المرونة في الخليج — وأول شهادة مهنية بالعربية بالكامل</span></h1>
+  <p class="sub"><span class="en-only">risk-place.org is the largest specialised Arabic-English library on business continuity, operational resilience and crisis governance — free and open. Built from it: ERGP, the first resilience governance certification you can complete entirely in Arabic, plus consulting and a live continuity dashboard for organisations.</span><span class="ar-only">‏risk-place.org هي أكبر مكتبة متخصصة بالعربية والإنجليزية في استمرارية الأعمال والمرونة التشغيلية وحوكمة الأزمات — مجانية ومفتوحة. وبنيت منها ERGP، أول شهادة في حوكمة المرونة يمكن إتمامها بالعربية بالكامل، إلى جانب الاستشارات ولوحة استمرارية حية للمؤسسات.</span></p>
+  <div class="cta-row">
+    <a class="btn" href="library.html" onclick="ev('home_cta_library')"><span class="en-only">Open the library</span><span class="ar-only">افتحوا المكتبة</span></a>
+    <a class="btn ghost" href="resilience-governance-certificate.html" onclick="ev('home_cta_ergp')"><span class="en-only">Explore the ERGP certification</span><span class="ar-only">اكتشفوا شهادة ERGP</span></a>
   </div>
-</header>
+</div></section>
 
-<div class="mobmenu" id="mobmenu">
-  <a href="#services" data-k="nav.2" onclick="closeMenu()">Services</a>
-  <a href="#threats" data-k="nav.0" onclick="closeMenu()">Threats</a>
-  <a href="#experience" data-k="nav.1" onclick="closeMenu()">Why us</a>
-  <a href="#regwatch" data-k="nav.3" onclick="closeMenu()">Regulatory watch</a>
-  <a href="#guides" data-k="nav.5" onclick="closeMenu()">Guides</a>
-  <a href="#contact" data-k="nav.4" onclick="closeMenu()">Contact</a>
-</div>
+<section class="trust"><div class="wrap in">
+  <div class="t"><div class="n">180</div><div class="l"><span class="en-only">Library pages, AR-EN</span><span class="ar-only">صفحة معرفية بلغتين</span></div></div>
+  <div class="t"><div class="n">69</div><div class="l"><span class="en-only">Glossary terms</span><span class="ar-only">مصطلحاً في المسرد</span></div></div>
+  <div class="t"><div class="n">94</div><div class="l"><span class="en-only">Chapters in the ERGP programme</span><span class="ar-only">فصلاً في برنامج ERGP</span></div></div>
+  <div class="t"><div class="n">15+</div><div class="l"><span class="en-only">Years leading risk functions</span><span class="ar-only">عاماً في قيادة وظائف المخاطر</span></div></div>
+  <div class="t"><div class="n">QR</div><div class="l"><span class="en-only">Public register of certificates</span><span class="ar-only">سجل علني للشهادات</span></div></div>
+</div></section>
 
-<div class="ar-note" data-k="arNote"></div>
-
-<section id="top" class="hero">
-  <img class="bg" src="hero-dubai.jpg" alt="Dubai skyline at sunrise">
-  <div class="shade"></div>
-  <div class="wrap in">
-    <p class="kicker" data-k="heroKicker">Drone &amp; ransomware readiness — measured in money</p>
-    <h1 data-k="heroTitle">A drone incident stops your production. Ransomware stops your revenue.</h1>
-    <p class="accent" data-k="heroAccent">Are you ready for either?</p>
-    <p class="body" data-k="heroBody">When the alarm sounds, it is too late to write the plan. We assess how long your business survives and what a day of downtime costs — and build a continuity system that helps you recover faster and return to normal work.</p>
-    <div class="ctas">
-      <a class="btn-w" style="display:inline-block" href="quiz.html" data-k="heroCta">Take the free diagnostic →</a>
-      <a href="#contact" class="btn-o" data-k="heroCta2">Discuss your task</a>
-    </div>
-    <p class="trust" data-k="heroTrust">ISO 22301 · NCEMA 7000 · CBUAE operational resilience · data stays inside your infrastructure</p>
-  </div>
-</section>
-
-<div class="promo"><div class="wrap in">
-  <span class="ptag" data-k="promoTag">Founding cohort · open</span>
-  <a href="resilience-governance-certificate.html" data-k="promoText">Executive Certificate in Enterprise Resilience Governance — founding-cohort enrolment at special terms →</a>
-</div></div>
-
-<section id="threats" class="wrap sec">
-  <div class="sec-head">
-    <h2 data-k="threatsTitle">Two threats we know better than anyone</h2>
-    <p data-k="threatsSub">Both stop the business, not just the IT department. Both are survivable — if the decisions are made before day X.</p>
-  </div>
-  <div class="thr">
-    <div class="card">
-      <span class="tag" data-k="threats.0.tag">Physical threat</span>
-      <h3 data-k="threats.0.title">Drone / UAV incident readiness</h3>
-      <p class="body" data-k="threats.0.body">An airspace incident near your facility means evacuation, site shutdown, supply disruption and insurance questions — even if nothing touches your fence.</p>
-      <ul>
-        <li><span class="d">—</span><span data-k="threats.0.items.0">Facility shutdown &amp; evacuation playbooks, tested with your team</span></li>
-        <li><span class="d">—</span><span data-k="threats.0.items.1">Cost of a lost day per facility — calculated from your own data</span></li>
-        <li><span class="d">—</span><span data-k="threats.0.items.2">Alternate logistics, suppliers and communication channels</span></li>
-        <li><span class="d">—</span><span data-k="threats.0.items.3">Business-interruption evidence your insurer will accept</span></li>
-      </ul>
-      <p class="q" data-k="threats.0.q">If your main facility is closed for 72 hours — who sells, who ships, who talks to clients?</p>
-    </div>
-    <div class="card">
-      <span class="tag" data-k="threats.1.tag">Cyber threat</span>
-      <h3 data-k="threats.1.title">Ransomware &amp; cyber resilience</h3>
-      <p class="body" data-k="threats.1.body">Encryption is not an IT incident — it is a CEO exam. The three decisions that decide the outcome are taken before the attack, outside the IT department.</p>
-      <ul>
-        <li><span class="d">—</span><span data-k="threats.1.items.0">Isolated, restore-tested backups — budgeted by the CFO, not hoped for</span></li>
-        <li><span class="d">—</span><span data-k="threats.1.items.1">First-hours playbook: who shuts the network, who talks to clients</span></li>
-        <li><span class="d">—</span><span data-k="threats.1.items.2">Emergency-mode revenue: selling and serving at 30% capacity</span></li>
-        <li><span class="d">—</span><span data-k="threats.1.items.3">Team roles and first steps rehearsed in advance — no confusion on day X</span></li>
-      </ul>
-      <p class="q" data-k="threats.1.q">Average public-case downtime is about a week. What does a week without systems cost you?</p>
-    </div>
-  </div>
-</section>
-
-<section id="experience" class="beige">
-  <div class="wrap exp">
+<section class="sec" id="ergp"><div class="wrap">
+  <p class="kick"><span class="en-only">The flagship · ERGP</span><span class="ar-only">البرنامج الرئيسي · ERGP</span></p>
+  <h2><span class="en-only">The first resilience governance certification fully available in Arabic</span><span class="ar-only">أول شهادة في حوكمة المرونة متاحة بالعربية بالكامل</span></h2>
+  <p class="sd"><span class="en-only">ERGP — the Executive Certificate in Enterprise Resilience Governance — is a self-paced programme for executives who answer for resilience before the board and the regulator. Fully in Arabic, also available in English.</span><span class="ar-only">‏ERGP — الشهادة التنفيذية في حوكمة مرونة المؤسسات — برنامج بإيقاع حر للتنفيذيين الذين يجيبون عن المرونة أمام مجلس الإدارة والمنظم. بالعربية بالكامل، ومتوفر أيضاً بالإنجليزية.</span></p>
+  <div class="ergp">
     <div>
-      <h2 data-k="expTitle">We did not read about these risks.</h2>
-      <p class="acc" data-k="expTitleAccent">We lived them.</p>
-      <div class="paras">
-        <p data-k="expParas.0">Our team built and ran business continuity under real, sustained drone and ransomware pressure — in heavy industry, energy, telecom and financial infrastructure, where these scenarios have been operational reality for years.</p>
-        <p data-k="expParas.1">Led by Evgeny Telenkov — Best Risk Manager of Russia 2020, PhD in industrial risk management. Continuity and risk leadership at Nornickel, Rosneft, beeline, EY; 15+ BCM implementations including the national settlement depository (NSD).</p>
-        <p data-k="expParas.2">That field experience is now available to GCC companies — turned into metrics, money and working plans.</p>
+      <ul class="facts">
+        <li><span class="dot">●</span><span><b><span class="en-only">94 chapters in six modules</span><span class="ar-only">94 فصلاً في ست وحدات</span></b> — <span class="en-only">from board risk appetite to the auditor's report, with six working artefacts you keep</span><span class="ar-only">من شهية المخاطر في المجلس إلى تقرير المدقق، مع ستة نواتج عمل تبقى لكم</span></span></li>
+        <li><span class="dot">●</span><span><b><span class="en-only">Assessed, not attended</span><span class="ar-only">تقييم لا مجرد حضور</span></b> — <span class="en-only">checkpoint questions, six module tests and a capstone defended before the examiner</span><span class="ar-only">أسئلة تحقق وستة اختبارات وحدات وعمل ختامي يناقش أمام الممتحن</span></span></li>
+        <li><span class="dot">●</span><span><b><span class="en-only">The regulatory layer of the Gulf</span><span class="ar-only">الطبقة التنظيمية الخليجية</span></b> — <span class="en-only">NCEMA 7000, CBUAE, ISO 22301, DORA — read as one system</span><span class="ar-only">‏NCEMA 7000 وCBUAE وISO 22301 وDORA — تقرأ كنظام واحد</span></span></li>
+        <li><span class="dot">●</span><span><b><span class="en-only">A certificate you can verify</span><span class="ar-only">شهادة قابلة للتحقق</span></b> — <span class="en-only">a unique number and QR resolving to the public register</span><span class="ar-only">رقم فريد وQR يقود إلى السجل العلني</span></span></li>
+      </ul>
+      <div class="cta-row">
+        <a class="btn" href="#contact" onclick="pickProduct('ergp');ev('home_ergp_demo')"><span class="en-only">Request a demo</span><span class="ar-only">اطلبوا عرضاً توضيحياً</span></a>
+        <a class="btn ghost2" href="resilience-governance-certificate.html"><span class="en-only">Programme details</span><span class="ar-only">تفاصيل البرنامج</span></a>
       </div>
-      <button class="morebtn" data-k="moreLabel" onclick="toggleMore(this)">Read more</button>
     </div>
-    <div class="stats">
-      <div class="stat"><span class="v" data-k="stats.0.value">15+</span><span class="l" data-k="stats.0.label">BCM systems built in critical industries</span></div>
-      <div class="stat"><span class="v" data-k="stats.1.value">300+</span><span class="l" data-k="stats.1.label">risk &amp; continuity specialists trained</span></div>
-      <div class="stat"><span class="v" data-k="stats.2.value">2020</span><span class="l" data-k="stats.2.label">Best Risk Manager of Russia (RusRisk)</span></div>
-      <div class="stat"><span class="v" data-k="stats.3.value">26</span><span class="l" data-k="stats.3.label">metrics in the resilience index model</span></div>
-    </div>
+    <img src="ergp-certificate-sample.jpg" alt="ERGP certificate sample — Executive Certificate in Enterprise Resilience Governance" loading="lazy">
   </div>
-</section>
+</div></section>
 
-<section id="services" class="svc-sec">
-  <div class="wrap sec">
-  <div class="sec-head" style="margin-bottom:60px">
-    <h2 data-k="servicesTitle">Four steps from unknown risk to managed resilience</h2>
-    <p data-k="servicesSub">Start free, see the gaps in money terms, then decide how far to go. Every step is a complete result on its own.</p>
+<section class="sec beige" id="library"><div class="wrap">
+  <p class="kick"><span class="en-only">The Knowledge Library · Free and open</span><span class="ar-only">مكتبة المعرفة · مجانية ومفتوحة</span></p>
+  <h2><span class="en-only">Read the library: six topics, two languages, no paywall</span><span class="ar-only">اقرأوا المكتبة: ستة مواضيع بلغتين دون مقابل</span></h2>
+  <p class="sd"><span class="en-only">Everything we certify and consult on, we also publish — the only specialised Arabic-English glossary online and practical guides from BIA methodology to NCEMA 7000 clause by clause.</span><span class="ar-only">كل ما نمنح فيه الشهادات ونقدم فيه الاستشارات ننشره أيضاً — المسرد العربي-الإنجليزي المتخصص الوحيد على الإنترنت وأدلة عملية من منهجية تحليل الأثر إلى NCEMA 7000 بنداً بنداً.</span></p>
+  <div class="lib">
+    <div class="big">
+      <div>
+        <h3><span class="en-only">Arabic-English glossary — 69 terms</span><span class="ar-only">المسرد العربي-الإنجليزي — 69 مصطلحاً</span></h3>
+        <p><span class="en-only">Concise definitions in both languages, each with a detail page: practice, examples and common mistakes.</span><span class="ar-only">تعريفات موجزة باللغتين، ولكل مصطلح صفحة تفصيل بالتطبيق والأمثلة والأخطاء الشائعة.</span></p>
+      </div>
+      <form class="libsearch" onsubmit="return goSearch(event)">
+        <input id="hq" type="search" autocomplete="off" placeholder="RTO, NCEMA, شهية المخاطر…">
+        <button class="btn" type="submit"><span class="en-only">Search</span><span class="ar-only">ابحثوا</span></button>
+      </form>
+    </div>
+    <a class="clu" href="library.html#c1"><span class="t"><span class="en-only">Foundations of continuity</span><span class="ar-only">أساسيات الاستمرارية</span></span><span class="c">01</span></a>
+    <a class="clu" href="library.html#c2"><span class="t"><span class="en-only">Impact analysis and recovery</span><span class="ar-only">تحليل الأثر والتعافي</span></span><span class="c">02</span></a>
+    <a class="clu" href="library.html#c3"><span class="t"><span class="en-only">Governance and the board</span><span class="ar-only">الحوكمة ومجلس الإدارة</span></span><span class="c">03</span></a>
+    <a class="clu" href="library.html#c4"><span class="t"><span class="en-only">Gulf regulation: NCEMA, CBUAE</span><span class="ar-only">التنظيم الخليجي: NCEMA وCBUAE</span></span><span class="c">04</span></a>
+    <a class="clu" href="library.html#c5"><span class="t"><span class="en-only">Crisis scenarios</span><span class="ar-only">سيناريوهات الأزمات</span></span><span class="c">05</span></a>
+    <a class="clu" href="library.html#c6"><span class="t"><span class="en-only">Industries of the GCC</span><span class="ar-only">قطاعات الخليج</span></span><span class="c">06</span></a>
   </div>
-  <div class="svc">
-    <div class="p">
-      <span class="step" data-k="products.0.step">Step 1 · Free</span>
-      <h3 data-k="products.0.title">Readiness check: drone &amp; ransomware</h3>
-      <p class="b" data-k="products.0.body">Two scenarios — a drone incident and a ransomware attack. 13 questions, 5 minutes. You will see: can the business survive, where your three biggest gaps are, and what to fix first. Result on screen, no email.</p>
-      <div class="pr" data-k="products.0.price">Free</div>
-      <div class="prn" data-k="products.0.priceNote"></div>
-      <a class="qbtn" href="quiz.html" data-k="products.0.cta">Take the quiz</a>
-      <a class="glink" href="drone-incident-readiness.html" data-k="products.0.guide">Guide: drone incident readiness →</a>
-    </div>
-    <div class="p">
-      <span class="step" data-k="products.1.step">Step 2 · Audit + uplift</span>
-      <h3 data-k="products.1.title">Resilience Uplift Program</h3>
-      <p class="b" data-k="products.1.body">Readiness audit for two critical scenarios — then we raise your survival metrics: ransomware downtime 7 days to 2, drone-and-fire interruption 6 months to 1. Free fixes done during the program.</p>
-      <div class="pr" data-k="products.1.price">from $4,900</div>
-      <div class="prn" data-k="products.1.priceNote">fixed scope · 1-2 months · free fixes included</div>
-      <a class="qbtn" href="gap-assessment.html" data-k="products.1.cta">Explore the program</a>
-      <a class="glink" href="ncema-7000.html" data-k="products.1.guide">Guide: NCEMA 7000 compliance →</a>
-    </div>
-    <div class="p flag">
-      <span class="flagbadge" data-k="flagBadge">Flagship</span>
-      <span class="step" data-k="products.2.step">Step 3 · Flagship</span>
-      <h3 data-k="products.2.title">Continuity &amp; risk dashboard</h3>
-      <p class="b" data-k="products.2.body">One board-level screen: resilience index 0-100, cost of downtime, recovery status of critical processes. Deployed on-premise — data never leaves your infrastructure.</p>
-      <div class="pr" data-k="products.2.price">from $2,900</div>
-      <div class="prn" data-k="products.2.priceNote">setup · then from $300/mo support</div>
-      <a class="qbtn" href="dashboard.html" data-k="products.2.cta">See a live demo</a>
-      <a class="glink" href="operational-resilience-board-reporting.html" data-k="products.2.guide">Guide: board-level reporting →</a>
-    </div>
-    <div class="p">
-      <span class="step" data-k="products.3.step">Step 4 · Executive certification</span>
-      <h3 data-k="products.3.title">Executive Certificate in Enterprise Resilience Governance</h3>
-      <p class="b" data-k="products.3.body">An executive credential aligned to ISO 22301, ISO 31000 and NCEMA 7000: six modules, six working artefacts, exam and defended capstone, a publicly verifiable certificate. Online, self-paced.</p>
-      <div class="pr" data-k="products.3.price">from AED 9,500</div>
-      <div class="prn" data-k="products.3.priceNote">founding cohort · individual or in-house</div>
-      <a class="qbtn" href="resilience-governance-certificate.html" data-k="products.3.cta">Explore the programme</a>
-      <a class="glink" href="tabletop-exercise-guide.html" data-k="products.3.guide">Guide: tabletop exercises →</a>
-    </div>
-  </div>
-  </div>
-</section>
+</div></section>
 
-<section id="regwatch" class="beige">
-  <div class="wrap" style="padding-top:96px;padding-bottom:96px">
-    <div class="sec-head" style="margin-bottom:56px">
-      <h2 data-k="regTitle">Regulatory watch · GCC</h2>
-      <p data-k="regSub">Continuity is no longer optional in the region. Materials and briefings on what applies to you.</p>
+<section class="sec" id="services"><div class="wrap">
+  <p class="kick"><span class="en-only">What we offer</span><span class="ar-only">ما نقدمه</span></p>
+  <h2><span class="en-only">Four ways to work with us — one of them is free</span><span class="ar-only">أربع طرق للعمل معنا — إحداها مجانية</span></h2>
+  <div class="cards" style="margin-top:26px">
+    <div class="card">
+      <span class="k free"><span class="en-only">Free · Ten minutes</span><span class="ar-only">مجاني · عشر دقائق</span></span>
+      <h3><span class="en-only">Readiness self-assessment</span><span class="ar-only">التقييم الذاتي للجاهزية</span></h3>
+      <p><span class="en-only">A scenario-based check of your continuity system against a drone incident or ransomware. Honest questions, an immediate picture of where you stand.</span><span class="ar-only">فحص قائم على السيناريوهات لنظام الاستمرارية لديكم أمام حادث مسيرة أو هجوم فدية. أسئلة صريحة وصورة فورية لموقفكم.</span></p>
+      <a class="go" href="quiz.html" onclick="ev('home_card_quiz')"><span class="en-only">Start the free check →</span><span class="ar-only">ابدأوا الفحص المجاني ←</span></a>
     </div>
-    <div class="regs">
-      <div class="r" onclick="this.classList.toggle('open')">
-        <span class="rt" data-k="regs.0.rt">UAE · Government &amp; CNI</span>
-        <h3 data-k="regs.0.title">NCEMA 7000</h3>
-        <p data-k="regs.0.body">The national BCM standard — mandatory for government entities and critical infrastructure. What it requires and how to comply without bureaucracy.</p>
-        <a class="rlink" href="ncema-7000.html" data-k="regs.0.link">Read the briefing →</a>
-      </div>
-      <div class="r" onclick="this.classList.toggle('open')">
-        <span class="rt" data-k="regs.1.rt">UAE · Banking deadline</span>
-        <h3 data-k="regs.1.title">CBUAE · Decree-Law 6/2025</h3>
-        <p data-k="regs.1.body">Operational resilience requirements for banks and financial institutions — with a compliance deadline around September 2026. The clock is running.</p>
-        <a class="rlink" href="cbuae-operational-resilience.html" data-k="regs.1.link">Check your gap →</a>
-      </div>
-      <div class="r" onclick="this.classList.toggle('open')">
-        <span class="rt" data-k="regs.2.rt">DIFC / ADGM · Listed companies</span>
-        <h3 data-k="regs.2.title">Operational risk rulebooks</h3>
-        <p data-k="regs.2.body">DFSA and FSRA rulebooks on operational risk and cyber resilience, plus ESG disclosure for SCA / ADX / DFM listed companies.</p>
-        <a class="rlink" href="operational-resilience-board-reporting.html" data-k="regs.2.link">What applies to you →</a>
-      </div>
+    <div class="card">
+      <span class="k"><span class="en-only">Certification</span><span class="ar-only">الشهادة</span></span>
+      <h3><span class="en-only">ERGP executive certificate</span><span class="ar-only">شهادة ERGP التنفيذية</span></h3>
+      <p><span class="en-only">The first resilience governance certification fully in Arabic. Self-paced, assessed, publicly verifiable.</span><span class="ar-only">أول شهادة في حوكمة المرونة بالعربية بالكامل. بإيقاع حر، مقيمة، وقابلة للتحقق علناً.</span></p>
+      <a class="go" href="#contact" onclick="pickProduct('ergp');ev('home_card_ergp')"><span class="en-only">Request a demo →</span><span class="ar-only">اطلبوا عرضاً ←</span></a>
+      <a class="go2" href="resilience-governance-certificate.html"><span class="en-only">Programme details</span><span class="ar-only">تفاصيل البرنامج</span></a>
+    </div>
+    <div class="card">
+      <span class="k"><span class="en-only">Product</span><span class="ar-only">منتج</span></span>
+      <h3><span class="en-only">Continuity &amp; risk dashboard</span><span class="ar-only">لوحة الاستمرارية والمخاطر</span></h3>
+      <p><span class="en-only">A live view of your continuity posture for the board and the audit committee: metrics, exercises, findings — in one place.</span><span class="ar-only">صورة حية لوضع الاستمرارية لديكم لمجلس الإدارة ولجنة التدقيق: المقاييس والتمارين والملاحظات — في مكان واحد.</span></p>
+      <a class="go" href="#contact" onclick="pickProduct('dashboard');ev('home_card_dashboard')"><span class="en-only">Request a demo →</span><span class="ar-only">اطلبوا عرضاً ←</span></a>
+      <a class="go2" href="demo.html"><span class="en-only">Open the live demo</span><span class="ar-only">افتحوا العرض الحي</span></a>
+    </div>
+    <div class="card">
+      <span class="k"><span class="en-only">Service</span><span class="ar-only">خدمة</span></span>
+      <h3><span class="en-only">Consulting and audit</span><span class="ar-only">الاستشارات والتدقيق</span></h3>
+      <p><span class="en-only">The Resilience Uplift Program: we audit your continuity system against NCEMA 7000 and ISO 22301 and raise the metrics that decide survival.</span><span class="ar-only">برنامج رفع المرونة: ندقق نظام الاستمرارية لديكم مقابل NCEMA 7000 وISO 22301 ونرفع المقاييس التي تقرر البقاء.</span></p>
+      <a class="go" href="#contact" onclick="pickProduct('consulting');ev('home_card_consulting')"><span class="en-only">Discuss your case →</span><span class="ar-only">ناقشوا حالتكم ←</span></a>
+      <a class="go2" href="gap-assessment.html"><span class="en-only">How the audit works</span><span class="ar-only">كيف يعمل التدقيق</span></a>
     </div>
   </div>
-</section>
+</div></section>
 
-
-<section id="guides" class="beige">
-  <div class="wrap" style="padding-top:88px;padding-bottom:88px">
-    <div class="sec-head" style="margin-bottom:44px">
-      <h2 data-k="guidesTitle">Guides &amp; briefings</h2>
-      <p data-k="guidesSub">Plain-language guides by practitioners: regulation, method and the scenarios that matter in the region. No email walls.</p>
+<section class="sec beige" id="contact"><div class="wrap">
+  <p class="kick"><span class="en-only">One form for everything</span><span class="ar-only">نموذج واحد لكل شيء</span></p>
+  <h2><span class="en-only">Request a demonstration or ask a question</span><span class="ar-only">اطلبوا عرضاً توضيحياً أو اطرحوا سؤالاً</span></h2>
+  <p class="sd"><span class="en-only">Pick the product, leave your details and we reply by email — usually the same day.</span><span class="ar-only">اختاروا المنتج واتركوا بياناتكم ونرد عبر البريد — عادة في اليوم نفسه.</span></p>
+  <form class="form" id="leadForm">
+    <label class="flabel" for="f-product"><span class="en-only">What are you interested in?</span><span class="ar-only">ما الذي يهمكم؟</span></label>
+    <select id="f-product">
+      <option value="ergp" data-en="ERGP certification — demo" data-ar="شهادة ERGP — عرض توضيحي">ERGP certification — demo</option>
+      <option value="dashboard" data-en="Continuity &amp; risk dashboard — demo" data-ar="لوحة الاستمرارية والمخاطر — عرض توضيحي">Continuity &amp; risk dashboard — demo</option>
+      <option value="consulting" data-en="Consulting and audit" data-ar="الاستشارات والتدقيق">Consulting and audit</option>
+    </select>
+    <div class="row">
+      <input id="f-name" data-en="Name" data-ar="الاسم" placeholder="Name" required>
+      <input id="f-email" type="email" data-en="Work email" data-ar="البريد المهني" placeholder="Work email" required>
     </div>
-    <div class="gcols">
-      <div class="gcol">
-        <h3 data-k="gcat.0.t">Regulation · UAE</h3>
-        <a href="ncema-7000.html" data-k="gcat.0.i.0">NCEMA 7000: the complete guide</a>
-        <a href="ncema-7000-checklist.html" data-k="gcat.0.i.1">NCEMA 7000 compliance checklist</a>
-        <a href="ncema-7000-vs-iso-22301.html" data-k="gcat.0.i.2">NCEMA 7000 vs ISO 22301</a>
-        <a href="cbuae-operational-resilience.html" data-k="gcat.0.i.3">CBUAE operational resilience</a>
-        <a href="cbuae-deadline-timeline.html" data-k="gcat.0.i.4">The 16 September 2026 deadline</a>
-      </div>
-      <div class="gcol">
-        <h3 data-k="gcat.1.t">Method</h3>
-        <a href="business-continuity-uae.html" data-k="gcat.1.i.0">Business continuity in the UAE</a>
-        <a href="business-impact-analysis.html" data-k="gcat.1.i.1">Business impact analysis: money first</a>
-        <a href="rto-rpo-explained.html" data-k="gcat.1.i.2">RTO and RPO in plain language</a>
-        <a href="bcp-template-structure.html" data-k="gcat.1.i.3">What a real BCP contains</a>
-        <a href="tabletop-exercise-guide.html" data-k="gcat.1.i.4">Running a tabletop exercise</a>
-        <a href="iso-22301-implementation-uae.html" data-k="gcat.1.i.5">Implementing ISO 22301</a>
-      </div>
-      <div class="gcol">
-        <h3 data-k="gcat.2.t">Scenarios &amp; sectors</h3>
-        <a href="drone-incident-readiness.html" data-k="gcat.2.i.0">Drone incident readiness</a>
-        <a href="ransomware-first-hours.html" data-k="gcat.2.i.1">Ransomware: the first hours</a>
-        <a href="ransomware-pay-or-recover.html" data-k="gcat.2.i.2">Pay or recover?</a>
-        <a href="business-interruption-insurance-evidence.html" data-k="gcat.2.i.3">BI insurance: evidence that pays</a>
-        <a href="adnoc-supplier-resilience.html" data-k="gcat.2.i.4">ADNOC supplier qualification</a>
-        <a href="manufacturing-continuity-gcc.html" data-k="gcat.2.i.5">Manufacturing continuity</a>
-      </div>
+    <div class="row">
+      <input id="f-org" data-en="Organisation" data-ar="المؤسسة" placeholder="Organisation">
+      <input id="f-role" data-en="Role" data-ar="الدور" placeholder="Role">
     </div>
-  </div>
-</section>
+    <textarea id="f-msg" rows="4" data-en="Message (optional)" data-ar="رسالة (اختياري)" placeholder="Message (optional)"></textarea>
+    <button type="submit" class="btn"><span class="en-only">Send the request</span><span class="ar-only">أرسلوا الطلب</span></button>
+    <p class="sentnote" id="fnote"></p>
+  </form>
+  <p class="formnote"><span class="en-only">Prefer email? Write to <a href="mailto:info@risk-place.org">info@risk-place.org</a>.</span><span class="ar-only">تفضلون البريد؟ راسلوا <a href="mailto:info@risk-place.org">info@risk-place.org</a>.</span></p>
+</div></section>
 
-<section id="results" class="wrap sec">
-  <div class="sec-head" style="margin-bottom:56px">
-    <h2 data-k="resTitle">A result you can measure</h2>
-    <p data-k="resSub">No binders on a shelf. Numbers the CFO and the board can act on.</p>
-  </div>
-  <div class="res">
-    <div class="r"><span class="v" data-k="results.0.value">$ / day</span><span class="l" data-k="results.0.label">cost of downtime per facility and process — from your own data</span></div>
-    <div class="r"><span class="v" data-k="results.1.value">0-100</span><span class="l" data-k="results.1.label">resilience index — one number for the board, tracked monthly</span></div>
-    <div class="r"><span class="v" data-k="results.2.value">RTO / RPO</span><span class="l" data-k="results.2.label">recovery targets vs actuals for every critical process</span></div>
-    <div class="r"><span class="v" data-k="results.3.value">SPOF list</span><span class="l" data-k="results.3.label">single points of failure found and diversified — before day X</span></div>
-  </div>
-</section>
-
-<section id="contact" class="dark">
-  <div class="wrap cont">
-    <div>
-      <h2 data-k="contactTitle">Book a consultation</h2>
-      <p class="sub" data-k="contactSub">You talk to the expert, not a sales team. We meet on Zoom, go through your biggest continuity gaps and what they cost — and take as much time as the conversation needs.</p>
-      <div class="person">
-        <img src="evgeny.jpg" alt="Evgeny Telenkov">
-        <div>
-          <h3>Evgeny Telenkov</h3>
-          <p class="role" data-k="role">Partner · Head of Business Continuity Practice</p>
-          <ul>
-            <li data-k="bio.0">Best Risk Manager of Russia 2020 (RusRisk)</li>
-            <li data-k="bio.1">PhD in industrial risk management</li>
-            <li data-k="bio.2">Nornickel · Rosneft · beeline · EY · NSD</li>
-          </ul>
-          <div class="plinks">
-            <a class="em" href="mailto:evgeny@risk-place.org">evgeny@risk-place.org</a>
-            <a class="soc" href="https://t.me/JhonsonTel" target="_blank" rel="noopener">Telegram</a>
-            <a class="soc" href="https://www.linkedin.com/in/evgeny-telenkov-6992b952" target="_blank" rel="noopener">LinkedIn</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <form class="form" onsubmit="return sendStub(event)">
-      <input id="f-name" data-kp="fName" placeholder="Name" required>
-      <input id="f-email" data-kp="fEmail" type="email" placeholder="Work email" required>
-      <textarea id="f-msg" data-kp="fMsg" rows="3" placeholder="What worries you most — drones, ransomware, regulation?"></textarea>
-      <button type="submit" data-k="fSend">Request a meeting</button>
-      <p class="sentnote" id="sentnote"></p>
-    </form>
-  </div>
-  <div class="foot">
-    <div class="wrap in">
-      <span data-k="copyright">© 2026 risk-place.org · Business Continuity &amp; Resilience</span>
-      <a href="glossary.html" style="color:rgba(255,255,255,0.46);margin-right:14px" data-k="glossary">Glossary AR-EN</a> <a href="privacy.html" style="color:rgba(255,255,255,0.46)" data-k="privacy">Privacy policy</a>
-    </div>
-  </div>
-</section>
-
-<a class="stickycta" id="stickycta" href="quiz.html" data-k="stickyCta">Free readiness check · 5 min</a>
+<footer class="ftr"><div class="wrap in">
+  <span>© 2026 risk-place.org · <span class="en-only">Business Continuity &amp; Resilience</span><span class="ar-only">استمرارية الأعمال والمرونة</span></span>
+  <span>
+    <a href="library.html"><span class="en-only">Library</span><span class="ar-only">المكتبة</span></a> ·
+    <a href="glossary.html"><span class="en-only">Glossary</span><span class="ar-only">المسرد</span></a> ·
+    <a href="resilience-governance-certificate.html">ERGP</a> ·
+    <a href="dashboard.html"><span class="en-only">Dashboard</span><span class="ar-only">اللوحة</span></a> ·
+    <a href="privacy.html"><span class="en-only">Privacy policy</span><span class="ar-only">سياسة الخصوصية</span></a> ·
+    <a href="mailto:info@risk-place.org">info@risk-place.org</a>
+  </span>
+</div></footer>
 
 <script>
-var T = {
-en: {
-  tagline: "Business Continuity & Resilience · GCC",
-  navCta: "Discuss your task",
-  nav: ["Threats", "Why us", "Services", "Regulatory watch", "Contact", "Guides"],
-  promoTag: "Founding cohort · open",
-  promoText: "Executive Certificate in Enterprise Resilience Governance — founding-cohort enrolment at special terms →",
-  guidesTitle: "Guides & briefings",
-  guidesSub: "Plain-language guides by practitioners: regulation, method and the scenarios that matter in the region. No email walls.",
-  gcat: [
-    { t: "Regulation · UAE", i: ["NCEMA 7000: the complete guide", "NCEMA 7000 compliance checklist", "NCEMA 7000 vs ISO 22301", "CBUAE operational resilience", "The 16 September 2026 deadline"] },
-    { t: "Method", i: ["Business continuity in the UAE", "Business impact analysis: money first", "RTO and RPO in plain language", "What a real BCP contains", "Running a tabletop exercise", "Implementing ISO 22301"] },
-    { t: "Scenarios & sectors", i: ["Drone incident readiness", "Ransomware: the first hours", "Pay or recover?", "BI insurance: evidence that pays", "ADNOC supplier qualification", "Manufacturing continuity"] }
-  ],
-  arNote: "",
-  flagBadge: "Flagship",
-  heroKicker: "Drone & ransomware readiness — measured in money",
-  heroTitle: "A drone incident stops your production. Ransomware stops your revenue.",
-  heroAccent: "Are you ready for either?",
-  heroBody: "When the alarm sounds, it is too late to write the plan. We assess how long your business survives and what a day of downtime costs — and build a continuity system that helps you recover faster and return to normal work.",
-  heroCta: "Take the free diagnostic →",
-  heroCta2: "Discuss your task",
-  stickyCta: "Free readiness check · 5 min",
-  moreLabel: "Read more",
-  lessLabel: "Show less",
-  heroTrust: "ISO 22301 · NCEMA 7000 · CBUAE operational resilience · data stays inside your infrastructure",
-  threatsTitle: "Two threats we know better than anyone",
-  threatsSub: "Both stop the business, not just the IT department. Both are survivable — if the decisions are made before day X.",
-  threats: [
-    { tag: "Physical threat", title: "Drone / UAV incident readiness",
-      body: "An airspace incident near your facility means evacuation, site shutdown, supply disruption and insurance questions — even if nothing touches your fence.",
-      items: ["Facility shutdown & evacuation playbooks, tested with your team","Cost of a lost day per facility — calculated from your own data","Alternate logistics, suppliers and communication channels","Business-interruption evidence your insurer will accept"],
-      q: "If your main facility is closed for 72 hours — who sells, who ships, who talks to clients?" },
-    { tag: "Cyber threat", title: "Ransomware & cyber resilience",
-      body: "Encryption is not an IT incident — it is a CEO exam. The three decisions that decide the outcome are taken before the attack, outside the IT department.",
-      items: ["Isolated, restore-tested backups — budgeted by the CFO, not hoped for","First-hours playbook: who shuts the network, who talks to clients","Emergency-mode revenue: selling and serving at 30% capacity","Team roles and first steps rehearsed in advance — no confusion on day X"],
-      q: "Average public-case downtime is about a week. What does a week without systems cost you?" }
-  ],
-  expTitle: "We did not read about these risks.",
-  expTitleAccent: "We lived them.",
-  expParas: [
-    "Our team built and ran business continuity under real, sustained drone and ransomware pressure — in heavy industry, energy, telecom and financial infrastructure, where these scenarios have been operational reality for years.",
-    "Led by Evgeny Telenkov — Best Risk Manager of Russia 2020, PhD in industrial risk management. Continuity and risk leadership at Nornickel, Rosneft, beeline, EY; 15+ BCM implementations including the national settlement depository (NSD).",
-    "That field experience is now available to GCC companies — turned into metrics, money and working plans."
-  ],
-  stats: [
-    { value: "15+", label: "BCM systems built in critical industries" },
-    { value: "300+", label: "risk & continuity specialists trained" },
-    { value: "2020", label: "Best Risk Manager of Russia (RusRisk)" },
-    { value: "26", label: "metrics in the resilience index model" }
-  ],
-  servicesTitle: "Four steps from unknown risk to managed resilience",
-  servicesSub: "Start free, see the gaps in money terms, then decide how far to go. Every step is a complete result on its own.",
-  products: [
-    { step: "Step 1 · Free", title: "Readiness check: drone & ransomware", body: "Two scenarios — a drone incident and a ransomware attack. 13 questions, 5 minutes. You will see: can the business survive, where your three biggest gaps are, and what to fix first. Result on screen, no email.", price: "Free", priceNote: "", cta: "Take the quiz", guide: "Guide: drone incident readiness →" },
-    { step: "Step 2 · Audit + uplift", title: "Resilience Uplift Program", body: "Readiness audit for two critical scenarios — then we raise your survival metrics: ransomware downtime 7 days to 2, drone-and-fire interruption 6 months to 1. Free fixes done during the program.", price: "from $4,900", priceNote: "fixed scope · 1-2 months · free fixes included", cta: "Explore the program", guide: "Guide: NCEMA 7000 compliance →" },
-    { step: "Step 3 · Flagship", title: "Continuity & risk dashboard", body: "One board-level screen: resilience index 0-100, cost of downtime, recovery status of critical processes. Deployed on-premise — data never leaves your infrastructure.", price: "from $2,900", priceNote: "setup · then from $300/mo support", cta: "See a live demo", guide: "Guide: board-level reporting →" },
-    { step: "Step 4 · Executive certification", title: "Executive Certificate in Enterprise Resilience Governance", body: "An executive credential aligned to ISO 22301, ISO 31000 and NCEMA 7000: six modules, six working artefacts, exam and defended capstone, a publicly verifiable certificate. Online, self-paced.", price: "from AED 9,500", priceNote: "founding cohort · individual or in-house", cta: "Explore the programme", guide: "Guide: tabletop exercises →" }
-  ],
-  regTitle: "Regulatory watch · GCC",
-  regSub: "Continuity is no longer optional in the region. Materials and briefings on what applies to you.",
-  regs: [
-    { rt: "UAE · Government & CNI", title: "NCEMA 7000", body: "The national BCM standard — mandatory for government entities and critical infrastructure. What it requires and how to comply without bureaucracy.", link: "Read the briefing →" },
-    { rt: "UAE · Banking deadline", title: "CBUAE · Decree-Law 6/2025", body: "Operational resilience requirements for banks and financial institutions — with a compliance deadline around September 2026. The clock is running.", link: "Check your gap →" },
-    { rt: "DIFC / ADGM · Listed companies", title: "Operational risk rulebooks", body: "DFSA and FSRA rulebooks on operational risk and cyber resilience, plus ESG disclosure for SCA / ADX / DFM listed companies.", link: "What applies to you →" }
-  ],
-  resTitle: "A result you can measure",
-  resSub: "No binders on a shelf. Numbers the CFO and the board can act on.",
-  results: [
-    { value: "$ / day", label: "cost of downtime per facility and process — from your own data" },
-    { value: "0-100", label: "resilience index — one number for the board, tracked monthly" },
-    { value: "RTO / RPO", label: "recovery targets vs actuals for every critical process" },
-    { value: "SPOF list", label: "single points of failure found and diversified — before day X" }
-  ],
-  contactTitle: "Book a consultation",
-  contactSub: "You talk to the expert, not a sales team. We meet on Zoom, go through your biggest continuity gaps and what they cost — and take as much time as the conversation needs.",
-  role: "Partner · Head of Business Continuity Practice",
-  bio: ["Best Risk Manager of Russia 2020 (RusRisk)", "PhD in industrial risk management", "Nornickel · Rosneft · beeline · EY · NSD"],
-  fName: "Name", fEmail: "Work email", fMsg: "What worries you most — drones, ransomware, regulation?", fSend: "Request a meeting",
-  sent: "Thank you. We will reply within one business day.",
-  stubMsg: "Coming soon — this section is in development.",
-  copyright: "© 2026 risk-place.org · Business Continuity & Resilience",
-  glossary: "Glossary AR-EN", privacy: "Privacy policy"
-},
-ar: {
-  tagline: "استمرارية الأعمال والمرونة · دول الخليج",
-  navCta: "ناقشوا مهمتكم",
-  nav: ["التهديدات", "لماذا نحن", "الخدمات", "المراقبة التنظيمية", "اتصل بنا", "الأدلة"],
-  promoTag: "الدفعة التأسيسية · التسجيل مفتوح",
-  promoText: "الشهادة التنفيذية في حوكمة مرونة المؤسسات — التحاق الدفعة التأسيسية بشروط خاصة ←",
-  guidesTitle: "أدلة وإحاطات",
-  guidesSub: "أدلة بلغة واضحة من ممارسين: التنظيم والمنهجية والسيناريوهات المهمة في المنطقة. دون جدران بريد إلكتروني.",
-  gcat: [
-    { t: "التنظيم · الإمارات", i: ["NCEMA 7000: الدليل الكامل", "قائمة التحقق من الامتثال لـ NCEMA 7000", "NCEMA 7000 مقابل ISO 22301", "المرونة التشغيلية للمصرف المركزي", "الموعد النهائي 16 سبتمبر 2026"] },
-    { t: "المنهجية", i: ["استمرارية الأعمال في الإمارات", "تحليل أثر الأعمال: المال أولاً", "RTO وRPO بلغة واضحة", "ماذا تحتوي خطة استمرارية حقيقية", "إدارة تمرين نظري", "تطبيق ISO 22301"] },
-    { t: "السيناريوهات والقطاعات", i: ["جاهزية حوادث المسيرات", "برمجية الفدية: الساعات الأولى", "الدفع أم التعافي؟", "تأمين انقطاع الأعمال: أدلة تُدفع", "تأهيل موردي أدنوك", "استمرارية التصنيع"] }
-  ],
-  flagBadge: "الرائد",
-  arNote: "النسخة العربية قيد الإعداد — بعض المصطلحات التقنية تظهر بالإنجليزية",
-  heroKicker: "الجاهزية لحوادث الطائرات المسيرة وبرمجيات الفدية — مقاسة بالمال",
-  heroTitle: "حادث طائرة مسيرة يوقف إنتاجكم. برمجية فدية توقف إيراداتكم.",
-  heroAccent: "هل أنتم مستعدون لأيٍّ منهما؟",
-  heroBody: "عندما ينطلق الإنذار يكون الأوان قد فات لكتابة الخطة. نقيس قدرة أعمالكم على الصمود وتكلفة يوم التوقف، ونبني نظام استمرارية يساعدكم على التعافي أسرع والعودة إلى العمل الطبيعي.",
-  heroCta: "ابدأوا التشخيص المجاني",
-  heroCta2: "ناقشوا مهمتكم",
-  stickyCta: "فحص جاهزية مجاني · 5 دقائق",
-  moreLabel: "اقرأوا المزيد",
-  lessLabel: "إخفاء",
-  heroTrust: "ISO 22301 · NCEMA 7000 · المرونة التشغيلية للمصرف المركزي · تبقى البيانات داخل بنيتكم التحتية",
-  threatsTitle: "تهديدان نعرفهما أفضل من غيرنا",
-  threatsSub: "كلاهما يوقف الأعمال لا قسم تقنية المعلومات فقط. وكلاهما يمكن النجاة منه إذا اتُخذت القرارات قبل اليوم س.",
-  threats: [
-    { tag: "تهديد مادي", title: "الجاهزية لحوادث الطائرات المسيرة",
-      body: "حادث في المجال الجوي قرب منشأتكم يعني الإخلاء وإغلاق الموقع وتعطل الإمداد وأسئلة التأمين — حتى إن لم يمس شيء سياجكم.",
-      items: ["خطط إغلاق المنشأة والإخلاء، مختبرة مع فريقكم","تكلفة يوم التوقف لكل منشأة — محسوبة من بياناتكم","بدائل اللوجستيات والموردين وقنوات الاتصال","أدلة انقطاع الأعمال المقبولة لدى شركة التأمين"],
-      q: "إذا أُغلقت منشأتكم الرئيسية ٧٢ ساعة — من يبيع ومن يشحن ومن يتحدث مع العملاء؟" },
-    { tag: "تهديد سيبراني", title: "برمجيات الفدية والمرونة السيبرانية",
-      body: "التشفير ليس حادثة تقنية بل اختبار للرئيس التنفيذي. القرارات الثلاثة الحاسمة تُتخذ قبل الهجوم وخارج قسم تقنية المعلومات.",
-      items: ["نسخ احتياطية معزولة ومختبرة الاستعادة — بميزانية معتمدة","خطة الساعات الأولى: من يعزل الشبكة ومن يخاطب العملاء","إيرادات وضع الطوارئ: البيع والخدمة بطاقة ٣٠٪","أدوار الفريق والخطوات الأولى مُتدرَّب عليها مسبقاً — لا ارتباك في اليوم س"],
-      q: "متوسط التوقف في الحالات المعلنة أسبوع تقريباً. كم يكلفكم أسبوع دون أنظمة؟" }
-  ],
-  expTitle: "لم نقرأ عن هذه المخاطر —",
-  expTitleAccent: "بل عشناها.",
-  expParas: [
-    "بنى فريقنا استمرارية الأعمال وأدارها تحت ضغط حقيقي ومستمر من المسيرات وبرمجيات الفدية، في الصناعة الثقيلة والطاقة والاتصالات والبنية المالية حيث كانت هذه السيناريوهات واقعاً تشغيلياً لسنوات.",
-    "بقيادة يفغيني تيلينكوف — أفضل مدير مخاطر في روسيا ٢٠٢٠، دكتوراه في إدارة المخاطر الصناعية. قاد الاستمرارية والمخاطر في نورنيكل وروسنفت وبيلاين وEY، ونفّذ أكثر من ١٥ نظام استمرارية بينها مركز الإيداع الوطني.",
-    "هذه الخبرة الميدانية متاحة الآن لشركات الخليج — محوّلة إلى مقاييس وأموال وخطط عملية."
-  ],
-  stats: [
-    { value: "+١٥", label: "نظام استمرارية في صناعات حرجة" },
-    { value: "+٣٠٠", label: "متخصص مخاطر واستمرارية تم تدريبهم" },
-    { value: "٢٠٢٠", label: "أفضل مدير مخاطر في روسيا (RusRisk)" },
-    { value: "٢٦", label: "مقياساً في نموذج مؤشر المرونة" }
-  ],
-  servicesTitle: "أربع خطوات من مخاطر مجهولة إلى مرونة مُدارة",
-  servicesSub: "ابدأ مجاناً، وشاهد الفجوات بلغة المال، ثم قرر مدى التقدم. كل خطوة نتيجة كاملة بحد ذاتها.",
-  products: [
-    { step: "الخطوة ١ · مجاناً", title: "فحص الجاهزية: المسيرات وبرمجيات الفدية", body: "سيناريوهان — حادث طائرة مسيرة وهجوم برمجية فدية. ١٣ سؤالاً في ٥ دقائق. سترون: هل يصمد العمل، وأين أكبر ثلاث فجوات، وما الذي يُصلح أولاً. النتيجة على الشاشة دون بريد إلكتروني.", price: "مجاناً", priceNote: "", cta: "ابدأوا الفحص", guide: "دليل: جاهزية حوادث المسيرات ←" },
-    { step: "الخطوة ٢ · تدقيق + رفع", title: "برنامج رفع المرونة", body: "تدقيق جاهزية لسيناريوهين حرجين — ثم نرفع مؤشرات بقائكم: توقف برمجية الفدية من ٧ أيام إلى يومين، وانقطاع المسيرة والحريق من ٦ أشهر إلى شهر. الإصلاحات المجانية تُنفذ خلال البرنامج.", price: "من ٤٩٠٠$", priceNote: "نطاق ثابت · شهر إلى شهرين · الإصلاحات المجانية مشمولة", cta: "استكشفوا البرنامج", guide: "دليل: الامتثال لـ NCEMA 7000 ←" },
-    { step: "الخطوة ٣ · الرائد", title: "لوحة الاستمرارية والمخاطر", body: "شاشة واحدة لمجلس الإدارة: مؤشر المرونة ٠-١٠٠ وتكلفة التوقف وحالة تعافي العمليات الحرجة. تُنشر داخلياً ولا تغادر البيانات بنيتكم.", price: "من ٢٩٠٠$", priceNote: "التأسيس · ثم من ٣٠٠$ شهرياً", cta: "شاهد عرضاً حياً", guide: "دليل: تقارير المرونة للمجلس ←" },
-    { step: "الخطوة ٤ · شهادة تنفيذية", title: "الشهادة التنفيذية في حوكمة مرونة المؤسسات", body: "اعتماد تنفيذي متوائم مع ISO 22301 وISO 31000 وNCEMA 7000: ست وحدات وستة نواتج عمل وامتحان ومناقشة عمل ختامي وشهادة قابلة للتحقق علناً. عن بُعد وبإيقاع حر.", price: "من 9500 درهم", priceNote: "الدفعة التأسيسية · فردي أو داخل الشركة", cta: "استكشفوا البرنامج", guide: "دليل: إدارة تمرين نظري ←" }
-  ],
-  regTitle: "المراقبة التنظيمية · الخليج",
-  regSub: "لم تعد الاستمرارية اختيارية في المنطقة. مواد وإحاطات عما ينطبق عليكم.",
-  regs: [
-    { rt: "الإمارات · الحكومة والبنية الحرجة", title: "NCEMA 7000", body: "المعيار الوطني لاستمرارية الأعمال — إلزامي للجهات الحكومية والبنية التحتية الحرجة. ما يطلبه وكيف تمتثلون له دون بيروقراطية.", link: "اقرأ الإحاطة ←" },
-    { rt: "الإمارات · مهلة القطاع المصرفي", title: "المصرف المركزي · مرسوم بقانون ٦/٢٠٢٥", body: "متطلبات المرونة التشغيلية للبنوك والمؤسسات المالية — بمهلة امتثال نحو سبتمبر ٢٠٢٦. الوقت يمضي.", link: "افحص فجوتكم ←" },
-    { rt: "مركز دبي المالي / سوق أبوظبي", title: "قواعد المخاطر التشغيلية", body: "قواعد DFSA وFSRA للمخاطر التشغيلية والمرونة السيبرانية، وإفصاحات ESG للشركات المدرجة في SCA / ADX / DFM.", link: "ما ينطبق عليكم ←" }
-  ],
-  resTitle: "نتيجة يمكن قياسها",
-  resSub: "لا ملفات على الرف — أرقام يعمل بها المدير المالي ومجلس الإدارة.",
-  results: [
-    { value: "$ / يوم", label: "تكلفة التوقف لكل منشأة وعملية — من بياناتكم" },
-    { value: "٠-١٠٠", label: "مؤشر المرونة — رقم واحد لمجلس الإدارة يُتابع شهرياً" },
-    { value: "RTO / RPO", label: "أهداف التعافي مقابل الواقع لكل عملية حرجة" },
-    { value: "قائمة نقاط الفشل", label: "نقاط الفشل الأحادية مكتشفة ومعالجة قبل اليوم س" }
-  ],
-  contactTitle: "احجزوا استشارة",
-  contactSub: "تتحدثون إلى الخبير مباشرة لا إلى فريق مبيعات. نلتقي عبر Zoom ونمر على أكبر فجوات استمراريتكم وتكلفتها — ونأخذ من الوقت ما يحتاجه الحوار.",
-  role: "شريك · رئيس ممارسة استمرارية الأعمال",
-  bio: ["أفضل مدير مخاطر في روسيا ٢٠٢٠ (RusRisk)", "دكتوراه في إدارة المخاطر الصناعية", "نورنيكل · روسنفت · بيلاين · EY · NSD"],
-  fName: "الاسم", fEmail: "البريد الإلكتروني للعمل", fMsg: "ما الذي يقلقكم أكثر — المسيرات أم الفدية أم التنظيم؟", fSend: "اطلبوا لقاء",
-  sent: "شكراً لكم. سنرد خلال يوم عمل واحد.",
-  stubMsg: "قريباً — هذا القسم قيد التطوير.",
-  copyright: "© ٢٠٢٦ risk-place.org · استمرارية الأعمال والمرونة",
-  glossary: "المسرد عربي-إنجليزي", privacy: "سياسة الخصوصية"
-}
-};
-
-function pick(obj, path){
-  var parts = path.split('.');
-  var cur = obj;
-  for (var i = 0; i < parts.length; i++){
-    if (cur === undefined || cur === null) return undefined;
-    cur = cur[parts[i]];
-  }
-  return cur;
-}
-var CUR = 'en';
-function setLang(lang){
-  CUR = lang;
-  var dict = T[lang];
-  document.documentElement.lang = lang;
-  document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
-  document.querySelectorAll('[data-k]').forEach(function(el){
-    var v = pick(dict, el.getAttribute('data-k'));
-    if (v === undefined) v = pick(T.en, el.getAttribute('data-k'));
-    if (v !== undefined) el.textContent = v;
+var lang="en";
+function setLang(l){
+  lang=l;document.documentElement.lang=l;document.documentElement.dir=(l==="ar")?"rtl":"ltr";
+  document.getElementById("langbtn").textContent=(l==="ar")?"EN":"AR";
+  document.querySelectorAll("[data-en]").forEach(function(el){
+    var v=el.getAttribute(l==="ar"?"data-ar":"data-en");
+    if(!v)return;
+    if(el.tagName==="OPTION"){el.textContent=v.replace(/&amp;/g,"&");}
+    else{el.setAttribute("placeholder",v.replace(/&amp;/g,"&"));}
   });
-  document.querySelectorAll('[data-kp]').forEach(function(el){
-    var v = pick(dict, el.getAttribute('data-kp'));
-    if (v === undefined) v = pick(T.en, el.getAttribute('data-kp'));
-    if (v !== undefined) el.setAttribute('placeholder', v);
-  });
-  document.getElementById('langbtn').textContent = (lang === 'ar') ? 'EN' : 'AR';
-  try { localStorage.setItem('rp_org_lang', lang); } catch(e){}
+  try{localStorage.setItem("rp_org_lang",l);}catch(e){}
 }
-function toggleLang(){ setLang(CUR === 'ar' ? 'en' : 'ar'); }
-function stub(){ alert(T[CUR].stubMsg); }
-function toggleMenu(){ document.body.classList.toggle('menu-open'); }
-function closeMenu(){ document.body.classList.remove('menu-open'); }
-function toggleMore(btn){
-  var p = btn.previousElementSibling;
-  p.classList.toggle('open');
-  btn.textContent = p.classList.contains('open') ? (T[CUR].lessLabel || 'Show less') : (T[CUR].moreLabel || 'Read more');
+function toggleLang(){setLang(lang==="ar"?"en":"ar");}
+function ev(name){
+  try{gtag('event',name,{page:'home'});}catch(e){}
+  try{ym(110579884,'reachGoal',name);}catch(e){}
 }
-window.addEventListener('scroll', function(){
-  var el = document.getElementById('stickycta');
-  var hero = document.getElementById('top');
-  var contact = document.getElementById('contact');
-  if (!el || !hero || !contact) return;
-  var show = window.scrollY > hero.offsetHeight * 0.7 && contact.getBoundingClientRect().top > window.innerHeight;
-  el.classList.toggle('on', show);
-}, {passive:true});
-function sendStub(e){
+function pickProduct(p){
+  var s=document.getElementById("f-product");
+  if(s)s.value=p;
+}
+function goSearch(e){
   e.preventDefault();
-  var name=document.getElementById('f-name').value.trim();
-  var email=document.getElementById('f-email').value.trim();
-  var msg=document.getElementById('f-msg').value.trim();
-  var payload=JSON.stringify({
-    formTitle:"ЗАЯВКА risk-place.org — форма Discuss your task",
-    name:name||"—", email:email||"—", company:"—",
-    comment:msg||"—", language:CUR.toUpperCase(),
-    product:"risk-place.org · contact form"
-  });
-  var send=function(tries){
-    fetch("https://risk-place-quiz.tonus911.workers.dev",{method:"POST",headers:{"Content-Type":"text/plain"},body:payload,keepalive:true})
-      .then(function(r){ if(!r.ok && tries>0) setTimeout(function(){send(tries-1);},900); })
-      .catch(function(){ if(tries>0) setTimeout(function(){send(tries-1);},900); });
-  };
-  send(2);
-  try{gtag('event','lead_form_submit');}catch(e2){}
-  document.getElementById('sentnote').textContent = T[CUR].sent;
-  document.getElementById('f-name').value=''; document.getElementById('f-email').value=''; document.getElementById('f-msg').value='';
+  var q=(document.getElementById("hq").value||"").trim();
+  ev('home_library_search');
+  location.href="library.html"+(q?"?q="+encodeURIComponent(q):"");
   return false;
 }
-(function(){
-  var saved = null;
-  try { saved = localStorage.getItem('rp_org_lang'); } catch(e){}
-  if (saved === 'ar') setLang('ar');
-})();
+document.getElementById("leadForm").addEventListener("submit",function(e){
+  e.preventDefault();
+  var note=document.getElementById("fnote");
+  var body={
+    type:"demo",
+    product:document.getElementById("f-product").value,
+    name:document.getElementById("f-name").value,
+    email:document.getElementById("f-email").value,
+    org:document.getElementById("f-org").value,
+    role:document.getElementById("f-role").value,
+    message:document.getElementById("f-msg").value,
+    lang:lang,page:"home"
+  };
+  fetch("https://ergp.risk-place.org/api/lead",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)})
+    .then(function(r){
+      if(!r.ok)throw 0;
+      note.textContent=(lang==="ar")?"شكراً — سنرد عبر البريد قريباً.":"Thank you — we will reply by email shortly.";
+      note.classList.remove("err");
+      ev('home_lead_submit');
+    })
+    .catch(function(){
+      note.textContent=(lang==="ar")?"تعذر الإرسال. راسلوا info@risk-place.org":"Could not send. Please email info@risk-place.org";
+      note.classList.add("err");
+    });
+});
+(function(){var s=null;try{s=localStorage.getItem("rp_org_lang");}catch(e){}if(s==="ar")setLang("ar");})();
 </script>
 </body>
 </html>
