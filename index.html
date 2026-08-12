@@ -120,11 +120,14 @@ html[dir="rtl"] .card .k{font-family:'IBM Plex Sans Arabic',sans-serif;letter-sp
 .card .go2{font-size:13px;color:#8A8478}
 .card .go2:hover{color:#C4571C}
 .lib{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.lib>*{min-width:0}
+.cards>.card{min-width:0}
+.ergp>*{min-width:0}
 @media(max-width:760px){.lib{grid-template-columns:1fr}}
 .lib .big{grid-column:1 / -1;border:1px solid #EAE7E1;background:#0D1117;color:#fff;border-radius:18px;padding:30px 32px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
 .lib .big h3{margin:0 0 6px;font-size:22px;font-weight:500}
 .lib .big p{margin:0;font-size:14.5px;color:rgba(255,255,255,0.72);max-width:58ch;line-height:1.6}
-.libsearch{display:flex;gap:8px;width:100%;max-width:520px}
+.libsearch{display:flex;flex-wrap:wrap;gap:8px;width:100%;max-width:520px}
 .libsearch input{flex-grow:1;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.3);border-radius:999px;padding:12px 20px;font-size:15px;color:#fff;min-width:0}
 .libsearch input::placeholder{color:rgba(255,255,255,0.45)}
 .libsearch input:focus{outline:none;border-color:#F0A868}
