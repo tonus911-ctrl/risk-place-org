@@ -21,7 +21,9 @@ h2{font-size:24px;margin:28px 0 12px;color:#16181F}
 p.b{font-size:16.5px;margin-bottom:18px}
 ul,ol{padding-inline-start:24px;margin-bottom:18px;font-size:16.5px}li{margin-bottom:8px}
 img{max-width:100%;height:auto;border:1px solid #E1DCD3;border-radius:10px;margin:8px 0}
-figure{margin:22px 0}figcaption{font-size:13.5px;color:#8A8578;margin-top:6px}
+figure{margin:22px 0}figcaption{font-size:14.5px;color:#5B564A;margin-top:8px;text-align:center}
+figure.wide{width:1060px;max-width:calc(100vw - 36px);margin-left:50%;transform:translateX(-50%)}
+@media(max-width:1120px){figure.wide{width:calc(100vw - 36px)}}
 table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
 .rel{margin:30px 0;padding:16px 20px;background:#fff;border:1px solid #E1DCD3;border-radius:10px;font-size:15px}
 .rel b{display:block;margin-bottom:8px}.rel a{color:#C4571C;text-decoration:none;margin-inline-end:16px}
@@ -41,10 +43,10 @@ footer{border-top:1px solid #E1DCD3;margin-top:48px;padding-top:18px;font-size:1
 <p class="b">عبارة "سنستعيد الخدمة بأسرع ما يمكن" ليست خطة بل أمنية. يصبح التعافي قابلا للإدارة عندما يصاغ كأهداف رقمية: كم تتحمل الشركة من الانقطاع (MAO)، وبأي سرعة يجب استعادة العملية (RTO)، وكم من البيانات يمكن فقدانه (RPO)، وما الحد الأدنى من الخدمة الواجب تقديمه أثناء التعافي (MBCO). يقترح مالكو العمليات هذه الأرقام استنادا إلى <a href="terms/ar/bia.html">تحليل أثر الأعمال (BIA)</a>، وتراجعها الإدارة المالية مقابل كلفة التوقف، وتعتمدها الإدارة التنفيذية، ويرى مجلس الإدارة الصورة الإجمالية. ثم تنعكس الأرقام المعتمدة في قرارات البنية التقنية واتفاقيات مستوى الخدمة مع الموردين وخطط الاختبار.</p>
 <h2>MAO، حدود ما لا يمكن قبوله</h2>
 <p class="b"><a href="terms/ar/mao.html">الحد الأقصى المقبول للانقطاع</a> هو أطول مدة يمكن أن تتوقف فيها العملية قبل أن يصبح الضرر غير مقبول: غرامات تعاقدية، مخالفة تنظيمية، خطر على سلامة المرضى، فقدان عملاء لا يعودون. وتسمي بعض المعايير الحد نفسه <a href="terms/ar/mtpd.html">MTPD</a>، أي الفترة القصوى المحتملة للاضطراب. بعد هذا الخط لم تعد تدير حادثا، بل تدير بقاء الشركة. ويأتي MAO من تحليل الأعمال لا من إدارة التقنية، لأنه يعكس ما يتحمله العملاء والعقود والجهات الرقابية.</p>
-<figure><img src="assets/figures/mao-boundary-ar.png" alt="رسم زمني يوضح الحد الأقصى المقبول للانقطاع MAO كحد يصبح بعده ضرر التوقف غير مقبول" loading="lazy"><figcaption>يحدد MAO النقطة التي يتحول عندها ضرر الانقطاع إلى ضرر غير مقبول.</figcaption></figure>
+<figure class="wide"><img src="assets/figures/mao-boundary-ar.png" alt="رسم زمني يوضح الحد الأقصى المقبول للانقطاع MAO كحد يصبح بعده ضرر التوقف غير مقبول" loading="lazy"><figcaption>يحدد MAO النقطة التي يتحول عندها ضرر الانقطاع إلى ضرر غير مقبول.</figcaption></figure>
 <h2>RTO داخل MAO وبهامش أمان</h2>
 <p class="b"><a href="terms/ar/rto.html">الهدف الزمني للتعافي</a> هو الزمن المستهدف لاستعادة العملية، ويجب أن يقع داخل MAO وبهامش، لأن التعافي الحقيقي يتأخر دائما: شخص أساسي لا يمكن الوصول إليه، خطوة تفشل، اعتماد خفي يفاجئك. وهامش يعادل 30-50% من MAO قاعدة عملية معقولة. السرعة تشترى ولا تعلن، فكلما قصر RTO ارتفعت كلفة البنية الاحتياطية خلفه، ولهذا يعتمد RTO مع سعره في القرار نفسه.</p>
-<figure><img src="assets/figures/rto-inside-mao-ar.png" alt="رسم زمني للتعافي يظهر الهدف الزمني للتعافي RTO داخل الحد الأقصى المقبول للانقطاع MAO مع هامش أمان" loading="lazy"><figcaption>يقع RTO داخل MAO تاركا هامش أمان للتأخر.</figcaption></figure>
+<figure class="wide"><img src="assets/figures/rto-inside-mao-ar.png" alt="رسم زمني للتعافي يظهر الهدف الزمني للتعافي RTO داخل الحد الأقصى المقبول للانقطاع MAO مع هامش أمان" loading="lazy"><figcaption>يقع RTO داخل MAO تاركا هامش أمان للتأخر.</figcaption></figure>
 <h2>RPO وتواتر النسخ</h2>
 <p class="b"><a href="terms/ar/rpo.html">هدف نقطة الاستعادة</a> يحدد سقف فقدان البيانات مقاسا بالزمن. فالقول إن RPO يساوي 5 دقائق يعني أن آخر نسخة صالحة من البيانات لا يزيد عمرها على 5 دقائق، وهو ما يفرض نسخا أو مزامنة بهذا التواتر على الأقل. ويجيب RTO وRPO عن سؤالين مختلفين: RTO عن موعد عودة الخدمة للعملاء، وRPO عن حجم بياناتهم الذي نجا. والنسخة الاحتياطية التي لم تسترجع يوما في اختبار لا تحسب نسخة احتياطية.</p>
 <h2>MBCO، الحد الأدنى من مستوى الخدمة</h2>

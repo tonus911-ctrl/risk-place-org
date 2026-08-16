@@ -1,69 +1,73 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760" role="img" aria-label="The seven sections of a business continuity plan, what each one contains and the quality test each one has to pass">
-<rect x="0" y="0" width="1200" height="760" fill="#FDFBF7"/>
-<text x="600" y="48" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="27" fill="#16181F">Seven sections, and the test each one has to pass</text>
-<text x="600" y="82" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15.5" fill="#5B564A">Action first, reference later, nothing that does not help tonight</text>
-<rect x="40" y="104" width="1120" height="46" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="1.5"/>
-<text x="600" y="133" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14.5" fill="#16181F">The 2 a.m. test — a duty manager must find the next thirty minutes within ninety seconds</text>
-<text x="112" y="178" text-anchor="start" font-family="Consolas, monospace" font-size="11.5" fill="#8A8578">SECTION</text>
-<text x="412" y="178" text-anchor="start" font-family="Consolas, monospace" font-size="11.5" fill="#8A8578">WHAT IT CONTAINS</text>
-<text x="772" y="178" text-anchor="start" font-family="Consolas, monospace" font-size="11.5" fill="#8A8578">THE QUALITY TEST</text>
-<rect x="40" y="192" width="1120" height="56" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="1.5"/>
-<circle cx="76" cy="220" r="15" fill="#C4571C"/>
-<text x="76" y="225" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">1</text>
-<text x="112" y="225" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="15.5" fill="#16181F">Activation</text>
-<line x1="396" y1="204" x2="396" y2="236" stroke="#E1DCD3" stroke-width="1"/>
-<text x="412" y="225" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Who declares an incident and on what triggers</text>
-<line x1="756" y1="204" x2="756" y2="236" stroke="#E1DCD3" stroke-width="1"/>
-<text x="772" y="225" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#8A8578">One page, applied alone at night</text>
-<rect x="40" y="256" width="1120" height="56" rx="10" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="76" cy="284" r="15" fill="#C4571C"/>
-<text x="76" y="289" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">2</text>
-<text x="112" y="289" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="15.5" fill="#16181F">Roles and authority</text>
-<line x1="396" y1="268" x2="396" y2="300" stroke="#E1DCD3" stroke-width="1"/>
-<text x="412" y="289" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Stop operations, spend money, speak externally</text>
-<line x1="756" y1="268" x2="756" y2="300" stroke="#E1DCD3" stroke-width="1"/>
-<text x="772" y="289" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#8A8578">Every role has a deputy, no step needs a meeting</text>
-<rect x="40" y="320" width="1120" height="56" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="76" cy="348" r="15" fill="#C4571C"/>
-<text x="76" y="353" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">3</text>
-<text x="112" y="353" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="15.5" fill="#16181F">First hours</text>
-<line x1="396" y1="332" x2="396" y2="364" stroke="#E1DCD3" stroke-width="1"/>
-<text x="412" y="353" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Checklists for the first 1 to 4 hours</text>
-<line x1="756" y1="332" x2="756" y2="364" stroke="#E1DCD3" stroke-width="1"/>
-<text x="772" y="353" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#8A8578">Verbs and owners, not policy prose</text>
-<rect x="40" y="384" width="1120" height="56" rx="10" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="76" cy="412" r="15" fill="#C4571C"/>
-<text x="76" y="417" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">4</text>
-<text x="112" y="417" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="15.5" fill="#16181F">Workarounds</text>
-<line x1="396" y1="396" x2="396" y2="428" stroke="#E1DCD3" stroke-width="1"/>
-<text x="412" y="417" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Manual processes, alternate suppliers and site</text>
-<line x1="756" y1="396" x2="756" y2="428" stroke="#E1DCD3" stroke-width="1"/>
-<text x="772" y="417" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#8A8578">Each one names trigger, capacity, time limit</text>
-<rect x="40" y="448" width="1120" height="56" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="76" cy="476" r="15" fill="#C4571C"/>
-<text x="76" y="481" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">5</text>
-<text x="112" y="481" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="15.5" fill="#16181F">Recovery</text>
-<line x1="396" y1="460" x2="396" y2="492" stroke="#E1DCD3" stroke-width="1"/>
-<text x="412" y="481" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Back to normal against RTO and RPO, in order</text>
-<line x1="756" y1="460" x2="756" y2="492" stroke="#E1DCD3" stroke-width="1"/>
-<text x="772" y="481" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#8A8578">Consistent with the BIA, shown in a test</text>
-<rect x="40" y="512" width="1120" height="56" rx="10" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="76" cy="540" r="15" fill="#C4571C"/>
-<text x="76" y="545" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">6</text>
-<text x="112" y="545" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="15.5" fill="#16181F">Communications</text>
-<line x1="396" y1="524" x2="396" y2="556" stroke="#E1DCD3" stroke-width="1"/>
-<text x="412" y="545" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Staff, clients, authorities, media, statements</text>
-<line x1="756" y1="524" x2="756" y2="556" stroke="#E1DCD3" stroke-width="1"/>
-<text x="772" y="545" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#8A8578">First statement ready within the hour</text>
-<rect x="40" y="576" width="1120" height="56" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="1.5"/>
-<circle cx="76" cy="604" r="15" fill="#C4571C"/>
-<text x="76" y="609" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">7</text>
-<text x="112" y="609" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="15.5" fill="#16181F">Contacts and resources</text>
-<line x1="396" y1="588" x2="396" y2="620" stroke="#E1DCD3" stroke-width="1"/>
-<text x="412" y="609" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">People, suppliers, insurers, regulators</text>
-<line x1="756" y1="588" x2="756" y2="620" stroke="#E1DCD3" stroke-width="1"/>
-<text x="772" y="609" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#8A8578">Dated, verified quarterly, available offline</text>
-<rect x="40" y="646" width="1120" height="46" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
-<text x="600" y="675" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#16181F">Sections 1 to 3 — the part used under stress — fit in 10 to 15 pages. Everything else is appendix.</text>
-<text x="600" y="730" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#8A8578">A 120-page monolith is not a plan, it is a filing cabinet with a cover · risk-place.org</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 1550" width="1060" height="1550" role="img" aria-label="The seven sections of a business continuity plan, what each one contains and the quality test each one has to pass">
+<rect x="0" y="0" width="1060" height="1550" fill="#FDFBF7"/>
+<text x="530" y="48" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="28" fill="#16181F">Seven sections, and the test each one has to pass</text>
+<text x="530" y="82" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#5B564A">Action first, reference later, nothing that does not help tonight</text>
+<rect x="8" y="112" width="1044" height="64" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="2"/>
+<text x="530" y="152" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#16181F">The 2 a.m. test — a duty manager must find the next thirty minutes within ninety seconds</text>
+<rect x="8" y="200" width="1044" height="152" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="2"/>
+<circle cx="52" cy="238" r="25" fill="#C4571C"/>
+<text x="52" y="246" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">1</text>
+<text x="100" y="246" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Activation</text>
+<line x1="32" y1="266" x2="1028" y2="266" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="32" y="298" font-family="Consolas, monospace" font-size="15" fill="#A34D19">WHAT IT CONTAINS</text>
+<text x="260" y="298" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Who declares an incident and on what triggers</text>
+<text x="32" y="330" font-family="Consolas, monospace" font-size="15" fill="#A34D19">THE QUALITY TEST</text>
+<text x="260" y="330" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">One page, applied alone at night</text>
+<rect x="8" y="368" width="1044" height="152" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="52" cy="406" r="25" fill="#C4571C"/>
+<text x="52" y="414" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">2</text>
+<text x="100" y="414" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Roles and authority</text>
+<line x1="32" y1="434" x2="1028" y2="434" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="32" y="466" font-family="Consolas, monospace" font-size="15" fill="#A34D19">WHAT IT CONTAINS</text>
+<text x="260" y="466" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Stop operations, spend money, speak externally</text>
+<text x="32" y="498" font-family="Consolas, monospace" font-size="15" fill="#A34D19">THE QUALITY TEST</text>
+<text x="260" y="498" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Every role has a deputy, no step needs a meeting</text>
+<rect x="8" y="536" width="1044" height="152" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="52" cy="574" r="25" fill="#C4571C"/>
+<text x="52" y="582" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">3</text>
+<text x="100" y="582" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">First hours</text>
+<line x1="32" y1="602" x2="1028" y2="602" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="32" y="634" font-family="Consolas, monospace" font-size="15" fill="#A34D19">WHAT IT CONTAINS</text>
+<text x="260" y="634" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Checklists for the first 1 to 4 hours</text>
+<text x="32" y="666" font-family="Consolas, monospace" font-size="15" fill="#A34D19">THE QUALITY TEST</text>
+<text x="260" y="666" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Verbs and owners, not policy prose</text>
+<rect x="8" y="704" width="1044" height="152" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="52" cy="742" r="25" fill="#C4571C"/>
+<text x="52" y="750" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">4</text>
+<text x="100" y="750" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Workarounds</text>
+<line x1="32" y1="770" x2="1028" y2="770" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="32" y="802" font-family="Consolas, monospace" font-size="15" fill="#A34D19">WHAT IT CONTAINS</text>
+<text x="260" y="802" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Manual processes, alternate suppliers and site</text>
+<text x="32" y="834" font-family="Consolas, monospace" font-size="15" fill="#A34D19">THE QUALITY TEST</text>
+<text x="260" y="834" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Each one names trigger, capacity, time limit</text>
+<rect x="8" y="872" width="1044" height="152" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="52" cy="910" r="25" fill="#C4571C"/>
+<text x="52" y="918" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">5</text>
+<text x="100" y="918" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Recovery</text>
+<line x1="32" y1="938" x2="1028" y2="938" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="32" y="970" font-family="Consolas, monospace" font-size="15" fill="#A34D19">WHAT IT CONTAINS</text>
+<text x="260" y="970" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Back to normal against RTO and RPO, in order</text>
+<text x="32" y="1002" font-family="Consolas, monospace" font-size="15" fill="#A34D19">THE QUALITY TEST</text>
+<text x="260" y="1002" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Consistent with the BIA, shown in a test</text>
+<rect x="8" y="1040" width="1044" height="152" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="52" cy="1078" r="25" fill="#C4571C"/>
+<text x="52" y="1086" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">6</text>
+<text x="100" y="1086" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Communications</text>
+<line x1="32" y1="1106" x2="1028" y2="1106" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="32" y="1138" font-family="Consolas, monospace" font-size="15" fill="#A34D19">WHAT IT CONTAINS</text>
+<text x="260" y="1138" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Staff, clients, authorities, media, statements</text>
+<text x="32" y="1170" font-family="Consolas, monospace" font-size="15" fill="#A34D19">THE QUALITY TEST</text>
+<text x="260" y="1170" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">First statement ready within the hour</text>
+<rect x="8" y="1208" width="1044" height="152" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="2"/>
+<circle cx="52" cy="1246" r="25" fill="#C4571C"/>
+<text x="52" y="1254" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">7</text>
+<text x="100" y="1254" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Contacts and resources</text>
+<line x1="32" y1="1274" x2="1028" y2="1274" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="32" y="1306" font-family="Consolas, monospace" font-size="15" fill="#A34D19">WHAT IT CONTAINS</text>
+<text x="260" y="1306" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">People, suppliers, insurers, regulators</text>
+<text x="32" y="1338" font-family="Consolas, monospace" font-size="15" fill="#A34D19">THE QUALITY TEST</text>
+<text x="260" y="1338" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Dated, verified quarterly, available offline</text>
+<rect x="8" y="1400" width="1044" height="64" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="2"/>
+<text x="530" y="1440" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#16181F">Sections 1 to 3 — the part used under stress — fit in 10 to 15 pages. Everything else is appendix.</text>
+<text x="530" y="1512" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#5B564A">A 120-page monolith is not a plan, it is a filing cabinet with a cover · risk-place.org</text>
 </svg>

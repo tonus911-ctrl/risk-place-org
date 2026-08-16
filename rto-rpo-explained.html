@@ -100,6 +100,9 @@ a{color:#16181F;text-decoration:none}
   .art{padding:40px 0 10px}
   .stickycta.on{display:block}
 }
+
+figure.wide{width:1060px;max-width:calc(100vw - 36px);margin-left:50%;transform:translateX(-50%)}
+@media(max-width:1120px){figure.wide{width:calc(100vw - 36px)}}
 </style>
 </head>
 <body>
@@ -122,7 +125,7 @@ a{color:#16181F;text-decoration:none}
 <ul><li><b>From the impact curve, not from comfort.</b> The BIA draws how damage grows over hours and days; the RTO sits just before the curve steepens. If you have no curve, you have no basis for the number.</li><li><b>Per activity, not per company.</b> «Our RTO is 4 hours» is meaningless across a whole business. Invoicing, production, regulatory reporting each earn their own numbers.</li><li><b>Check feasibility against arrangements.</b> An RTO of 4 hours with nightly-restore-only backups is fiction. Either invest to close the gap or state the honest, longer RTO.</li><li><b>Mind the chain.</b> An activity's real recovery time is the longest path across its dependencies — system restore plus data check plus people in place. RTOs set per system, ignoring the chain, understate reality.</li></ul>
 <table class="tbl"><thead><tr><th>Example activity</th><th>Typical RTO</th><th>Typical RPO</th><th>What usually sets the limit</th></tr></thead><tbody><tr><td>Online sales / payments</td><td>Minutes to 4 hours</td><td>Near zero</td><td>Revenue per hour; replication cost rises steeply near zero</td></tr><tr><td>Production line control</td><td>2-24 hours</td><td>Last shift</td><td>Restart procedures and safety checks, not IT alone</td></tr><tr><td>Invoicing and payroll</td><td>24-72 hours</td><td>1-24 hours</td><td>Contractual dates and staff trust</td></tr><tr><td>Regulatory reporting</td><td>Before the deadline</td><td>Last submission</td><td>The calendar, not the technology</td></tr></tbody></table>
 <div class="callout"><p>The tell of a fictional RTO: it has never been demonstrated. An objective that has not survived a timed test is a wish. Auditors — and incidents — treat it accordingly.</p></div>
-<figure><img src="assets/figures/rto-rpo-timeline-en.svg" alt="A timeline around the moment of disruption showing RPO before it, RTO after it, and the maximum tolerable period of disruption above both" loading="lazy"><figcaption>RPO looks backwards and is measured in data, RTO looks forwards and is measured in time. Both sit under the MTPD.</figcaption></figure>
+<figure class="wide"><img src="assets/figures/rto-rpo-timeline-en.svg" alt="A timeline around the moment of disruption showing RPO before it, RTO after it, and the maximum tolerable period of disruption above both" loading="lazy"><figcaption>RPO looks backwards and is measured in data, RTO looks forwards and is measured in time. Both sit under the MTPD.</figcaption></figure>
 <h2>The classic mistakes</h2>
 <ul><li><b>Copying vendor numbers.</b> A platform's advertised recovery speed is not your activity's RTO — your data volumes, procedures and people set the real time.</li><li><b>Zero-everything ambitions.</b> RTO zero and RPO zero exist — at a price few activities justify. The BIA tells you which ones.</li><li><b>Confusing RPO with backup schedule.</b> Backups nightly does not make RPO 24 hours — a failed restore makes it infinity. RPO lives or dies with tested restores.</li><li><b>Setting once, forgetting.</b> Volumes grow, systems change; last year's demonstrated 6 hours may be 14 today. Objectives age like the BIA they came from.</li></ul>
 <h2>Frequently asked questions</h2>

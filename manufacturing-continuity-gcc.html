@@ -100,6 +100,9 @@ a{color:#16181F;text-decoration:none}
   .art{padding:40px 0 10px}
   .stickycta.on{display:block}
 }
+
+figure.wide{width:1060px;max-width:calc(100vw - 36px);margin-left:50%;transform:translateX(-50%)}
+@media(max-width:1120px){figure.wide{width:calc(100vw - 36px)}}
 </style>
 </head>
 <body>
@@ -121,7 +124,7 @@ a{color:#16181F;text-decoration:none}
 <h2>The manufacturing continuity plan, in five artefacts</h2>
 <ul><li><b>Downtime cost per line.</b> Lost margin, contract penalties, restart cost, scrap — per hour and per day. The number that prices every other decision.</li><li><b>Safe-shutdown and restart runbooks.</b> Who stops the line, in what order things come back, which checks are non-negotiable. Written for the shift that has never done it.</li><li><b>Manual-mode for OT/IT loss.</b> Which operations can run without the ERP or MES, on what paper records, for how long — tested once a year.</li><li><b>Single-source register.</b> Every input with one supplier, one route or one tank — with the mitigation decision recorded: stock, second source, or accepted risk with a name on it.</li><li><b>First-hours authority.</b> Stopping a line costs money; not stopping it can cost the facility. The authority to decide, in writing, at shift-supervisor reach.</li></ul>
 <div class="callout"><p>The pattern from regional incidents: facilities rarely die of the event itself — they die of the uncontrolled restart, the missing second source, or the week nobody could enter the zone. All three are plannable.</p></div>
-<figure><img src="assets/figures/manufacturing-downtime-chain-en.svg" alt="The manufacturing downtime chain in five links, from the event to the first approved output, with the break point and the fix under each link" loading="lazy"><figcaption>Five links from the event to first approved output, and where each one usually breaks.</figcaption></figure>
+<figure class="wide"><img src="assets/figures/manufacturing-downtime-chain-en.svg" alt="The manufacturing downtime chain in five links, from the event to the first approved output, with the break point and the fix under each link" loading="lazy"><figcaption>Five links from the event to first approved output, and where each one usually breaks.</figcaption></figure>
 <h2>The GCC context</h2>
 <p>Industrial facilities in the Emirates sit close to the NCEMA 7000 perimeter — directly if designated critical infrastructure, indirectly as suppliers to those who are. Insurers have sharpened business-interruption questions after recent regional loss events; large buyers run supplier continuity audits. A manufacturer with a tested plan and a priced downtime number answers all three conversations from the same folder.</p>
 <h2>Frequently asked questions</h2>

@@ -1,80 +1,75 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 730" width="1200" height="730" role="img" aria-label="The manufacturing downtime chain from the event to first approved output, and where each link breaks">
-<rect x="0" y="0" width="1200" height="730" fill="#FDFBF7"/>
-<text x="600" y="48" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="27" fill="#16181F">The manufacturing downtime chain, and where it breaks</text>
-<text x="600" y="82" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="15.5" fill="#5B564A">From the event to first approved output — five links, each with a known break point</text>
-<rect x="40" y="118" width="205" height="120" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
-<text x="142.5" y="150" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#C4571C">1</text>
-<text x="142.5" y="180" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="15" fill="#16181F">The event</text>
-<text x="142.5" y="208" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="11.5" fill="#5B564A">Fire, utilities, ransomware, supplier</text>
-<line x1="247" y1="178" x2="255" y2="178" stroke="#C4571C" stroke-width="2"/>
-<polygon points="255,171 267,178 255,185" fill="#C4571C"/>
-<rect x="269" y="118" width="205" height="120" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="371.5" y="150" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#C4571C">2</text>
-<text x="371.5" y="180" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="15" fill="#16181F">Safe shutdown</text>
-<text x="371.5" y="208" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#5B564A">Who stops the line</text>
-<line x1="476" y1="178" x2="484" y2="178" stroke="#C4571C" stroke-width="2"/>
-<polygon points="484,171 496,178 484,185" fill="#C4571C"/>
-<rect x="498" y="118" width="205" height="120" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="600.5" y="150" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#C4571C">3</text>
-<text x="600.5" y="180" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="15" fill="#16181F">Inaccessibility</text>
-<text x="600.5" y="208" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#5B564A">Nobody can enter the site</text>
-<line x1="705" y1="178" x2="713" y2="178" stroke="#C4571C" stroke-width="2"/>
-<polygon points="713,171 725,178 713,185" fill="#C4571C"/>
-<rect x="727" y="118" width="205" height="120" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="829.5" y="150" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#C4571C">4</text>
-<text x="829.5" y="180" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="15" fill="#16181F">Sequenced restart</text>
-<text x="829.5" y="208" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#5B564A">Unit after unit</text>
-<line x1="934" y1="178" x2="942" y2="178" stroke="#C4571C" stroke-width="2"/>
-<polygon points="942,171 954,178 942,185" fill="#C4571C"/>
-<rect x="956" y="118" width="205" height="120" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="1058.5" y="150" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#C4571C">5</text>
-<text x="1058.5" y="180" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#16181F">First approved output</text>
-<text x="1058.5" y="208" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#5B564A">After quality checks</text>
-<rect x="40" y="290" width="205" height="200" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="142.5" y="320" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#C4571C">Where it breaks</text>
-<line x1="56" y1="338" x2="229" y2="338" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="142.5" y="366" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13.5" fill="#16181F">Reporting is late</text>
-<text x="142.5" y="390" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13.5" fill="#16181F">the shift waits for permission</text>
-<line x1="56" y1="418" x2="229" y2="418" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="142.5" y="446" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#8A8578">Fix — written escalation</text>
-<rect x="269" y="290" width="205" height="200" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="371.5" y="320" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#C4571C">Where it breaks</text>
-<line x1="285" y1="338" x2="458" y2="338" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="371.5" y="366" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13.5" fill="#16181F">Shutdown authority</text>
-<text x="371.5" y="390" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13.5" fill="#16181F">is in nobody's name</text>
-<line x1="285" y1="418" x2="458" y2="418" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="371.5" y="446" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#8A8578">Fix — a named delegation</text>
-<rect x="498" y="290" width="205" height="200" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="600.5" y="320" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#C4571C">Where it breaks</text>
-<line x1="514" y1="338" x2="687" y2="338" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="600.5" y="366" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13.5" fill="#16181F">No inaccessibility plan</text>
-<text x="600.5" y="390" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13.5" fill="#16181F">and no remote monitoring</text>
-<line x1="514" y1="418" x2="687" y2="418" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="600.5" y="442" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#8A8578">Fix — permits,</text>
-<text x="600.5" y="464" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#8A8578">skeleton crew</text>
-<rect x="727" y="290" width="205" height="200" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="829.5" y="320" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#C4571C">Where it breaks</text>
-<line x1="743" y1="338" x2="916" y2="338" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="829.5" y="366" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13.5" fill="#16181F">The runbook lives in one</text>
-<text x="829.5" y="390" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13.5" fill="#16181F">engineer's head, who travels</text>
-<line x1="743" y1="418" x2="916" y2="418" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="829.5" y="442" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#8A8578">Fix — a runbook for</text>
-<text x="829.5" y="464" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#8A8578">the shift</text>
-<rect x="956" y="290" width="205" height="200" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="1058.5" y="320" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#C4571C">Where it breaks</text>
-<line x1="972" y1="338" x2="1145" y2="338" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="1058.5" y="366" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13.5" fill="#16181F">A single-source input</text>
-<text x="1058.5" y="390" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13.5" fill="#16181F">misses, first batch rejected</text>
-<line x1="972" y1="418" x2="1145" y2="418" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="1058.5" y="442" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#8A8578">Fix — single-source</text>
-<text x="1058.5" y="464" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#8A8578">register</text>
-<rect x="40" y="520" width="1120" height="160" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
-<rect x="41" y="534" width="5" height="132" rx="2.5" fill="#C4571C"/>
-<text x="600" y="552" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#C4571C">The gap that budget reviews leave out</text>
-<rect x="80" y="570" width="276" height="28" rx="6" fill="#E7E2DA" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="218" y="590" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#16181F">Event — six hours</text>
-<rect x="80" y="610" width="920" height="28" rx="6" fill="#C4571C" stroke="#C4571C" stroke-width="1.5"/>
-<text x="540" y="630" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#FFFFFF">Return to output — twenty hours</text>
-<text x="600" y="664" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#5B564A">Restart is a sequence, not a switch, which is why the return outlasts the event</text>
-<text x="600" y="706" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#8A8578">Source — manufacturing continuity in the GCC · risk-place.org</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 1376" width="1060" height="1376" role="img" aria-label="The manufacturing downtime chain from the event to first approved output, and where each link breaks">
+<rect x="0" y="0" width="1060" height="1376" rx="0" fill="#FDFBF7"/>
+
+<text x="530" y="48" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="28" fill="#16181F">The manufacturing downtime chain, and where it breaks</text>
+<text x="530" y="82" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#5B564A">From the event to first approved output — five links, each with a known break point</text>
+
+<rect x="8" y="112" width="1044" height="168" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="60" cy="196" r="25" fill="#C4571C"/>
+<text x="60" y="204" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">1</text>
+<text x="108" y="154" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">The event</text>
+<text x="108" y="186" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#5B564A">Fire, utilities, ransomware, supplier</text>
+<text x="108" y="224" font-family="Consolas, monospace" font-size="15" fill="#A34D19">WHERE IT BREAKS</text>
+<text x="290" y="224" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Reporting is late, the shift waits for permission</text>
+<text x="108" y="258" font-family="Consolas, monospace" font-size="15" fill="#A34D19">FIX</text>
+<text x="290" y="258" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">written escalation</text>
+
+<polygon points="53,286 67,286 60,298" fill="#C4571C"/>
+
+<rect x="8" y="306" width="1044" height="168" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="60" cy="390" r="25" fill="#C4571C"/>
+<text x="60" y="398" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">2</text>
+<text x="108" y="348" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Safe shutdown</text>
+<text x="108" y="380" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#5B564A">Who stops the line</text>
+<text x="108" y="418" font-family="Consolas, monospace" font-size="15" fill="#A34D19">WHERE IT BREAKS</text>
+<text x="290" y="418" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Shutdown authority is in nobody's name</text>
+<text x="108" y="452" font-family="Consolas, monospace" font-size="15" fill="#A34D19">FIX</text>
+<text x="290" y="452" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">a named delegation</text>
+
+<polygon points="53,480 67,480 60,492" fill="#C4571C"/>
+
+<rect x="8" y="500" width="1044" height="168" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="60" cy="584" r="25" fill="#C4571C"/>
+<text x="60" y="592" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">3</text>
+<text x="108" y="542" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Inaccessibility</text>
+<text x="108" y="574" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#5B564A">Nobody can enter the site</text>
+<text x="108" y="612" font-family="Consolas, monospace" font-size="15" fill="#A34D19">WHERE IT BREAKS</text>
+<text x="290" y="612" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">No inaccessibility plan and no remote monitoring</text>
+<text x="108" y="646" font-family="Consolas, monospace" font-size="15" fill="#A34D19">FIX</text>
+<text x="290" y="646" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">permits, skeleton crew</text>
+
+<polygon points="53,674 67,674 60,686" fill="#C4571C"/>
+
+<rect x="8" y="694" width="1044" height="168" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="60" cy="778" r="25" fill="#C4571C"/>
+<text x="60" y="786" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">4</text>
+<text x="108" y="736" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Sequenced restart</text>
+<text x="108" y="768" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#5B564A">Unit after unit</text>
+<text x="108" y="806" font-family="Consolas, monospace" font-size="15" fill="#A34D19">WHERE IT BREAKS</text>
+<text x="290" y="806" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">The runbook lives in one engineer's head, who travels</text>
+<text x="108" y="840" font-family="Consolas, monospace" font-size="15" fill="#A34D19">FIX</text>
+<text x="290" y="840" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">a runbook for the shift</text>
+
+<polygon points="53,868 67,868 60,880" fill="#C4571C"/>
+
+<rect x="8" y="888" width="1044" height="168" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="2"/>
+<circle cx="60" cy="972" r="25" fill="#C4571C"/>
+<text x="60" y="980" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">5</text>
+<text x="108" y="930" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">First approved output</text>
+<text x="108" y="962" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#5B564A">After quality checks</text>
+<text x="108" y="1000" font-family="Consolas, monospace" font-size="15" fill="#A34D19">WHERE IT BREAKS</text>
+<text x="290" y="1000" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">A single-source input misses, first batch rejected</text>
+<text x="108" y="1034" font-family="Consolas, monospace" font-size="15" fill="#A34D19">FIX</text>
+<text x="290" y="1034" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">single-source register</text>
+
+<rect x="8" y="1088" width="1044" height="224" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
+<rect x="9" y="1102" width="5" height="196" rx="2.5" fill="#C4571C"/>
+<text x="530" y="1128" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#C4571C">The gap that budget reviews leave out</text>
+<rect x="52" y="1150" width="282" height="36" rx="8" fill="#E7E2DA" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="193" y="1174" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#16181F">Event — six hours</text>
+<rect x="52" y="1200" width="940" height="36" rx="8" fill="#C4571C"/>
+<text x="522" y="1224" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#FFFFFF">Return to output — twenty hours</text>
+<text x="530" y="1276" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#5B564A">Restart is a sequence, not a switch, which is why the return outlasts the event</text>
+
+<text x="530" y="1348" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#5B564A">Source — manufacturing continuity in the GCC · risk-place.org</text>
 </svg>

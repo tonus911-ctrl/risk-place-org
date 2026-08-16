@@ -1,68 +1,84 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760" role="img" aria-label="Comparison of a key performance indicator and a key risk indicator, with an amber and a red threshold on a scale and the escalation that each state requires">
-<rect x="0" y="0" width="1200" height="760" fill="#FDFBF7"/>
-<text x="600" y="48" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="27" fill="#16181F">Two indicators, two different questions</text>
-<text x="600" y="82" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15.5" fill="#5B564A">A KPI reports how the business performed. A KRI warns that a risk is moving while there is still time to act.</text>
-<rect x="40" y="108" width="555" height="250" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="317.5" y="138" text-anchor="middle" font-family="Consolas, monospace" font-size="12.5" fill="#8A8578">KPI · PERFORMANCE INDICATOR</text>
-<text x="317.5" y="174" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#16181F">Did we deliver what we promised?</text>
-<line x1="60" y1="194" x2="575" y2="194" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="64" y="224" text-anchor="start" font-family="Consolas, monospace" font-size="11" fill="#8A8578">MEASURES</text>
-<text x="204" y="224" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#5B564A">Output the business already produced</text>
-<text x="64" y="258" text-anchor="start" font-family="Consolas, monospace" font-size="11" fill="#8A8578">HORIZON</text>
-<text x="204" y="258" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#5B564A">Mostly lagging, it confirms the past</text>
-<text x="64" y="292" text-anchor="start" font-family="Consolas, monospace" font-size="11" fill="#8A8578">OWNED BY</text>
-<text x="204" y="292" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#5B564A">The manager accountable for delivery</text>
-<text x="64" y="326" text-anchor="start" font-family="Consolas, monospace" font-size="11" fill="#8A8578">WHEN IT MOVES</text>
-<text x="204" y="326" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#5B564A">The variance is explained in review</text>
-<rect x="605" y="108" width="555" height="250" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="1.5"/>
-<text x="882.5" y="138" text-anchor="middle" font-family="Consolas, monospace" font-size="12.5" fill="#C4571C">KRI · KEY RISK INDICATOR</text>
-<text x="882.5" y="174" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#16181F">Is a risk moving toward its limit?</text>
-<line x1="625" y1="194" x2="1140" y2="194" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="629" y="224" text-anchor="start" font-family="Consolas, monospace" font-size="11" fill="#8A8578">MEASURES</text>
-<text x="769" y="224" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#5B564A">Risk drivers and the health of controls</text>
-<text x="629" y="258" text-anchor="start" font-family="Consolas, monospace" font-size="11" fill="#8A8578">HORIZON</text>
-<text x="769" y="258" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#5B564A">Leading, it has to move before the loss</text>
-<text x="629" y="292" text-anchor="start" font-family="Consolas, monospace" font-size="11" fill="#8A8578">OWNED BY</text>
-<text x="769" y="292" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#5B564A">The named owner of a risk in the register</text>
-<text x="629" y="326" text-anchor="start" font-family="Consolas, monospace" font-size="11" fill="#8A8578">WHEN IT MOVES</text>
-<text x="769" y="326" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#5B564A">A pre-agreed action fires at the threshold</text>
-<rect x="40" y="378" width="1120" height="54" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
-<text x="600" y="400" text-anchor="middle" font-family="Consolas, monospace" font-size="11.5" fill="#C4571C">THE SAME NUMBER CAN BE BOTH</text>
-<text x="600" y="422" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#16181F">Late deliveries from one supplier at 12 percent — a KPI for procurement, a KRI for the service that stops without them</text>
-<text x="600" y="462" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#16181F">Thresholds and escalation — what turns a number into a control</text>
-<text x="450" y="492" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#8A8578">Amber threshold</text>
-<line x1="450" y1="498" x2="450" y2="512" stroke="#C4571C" stroke-width="2"/>
-<text x="760" y="492" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#8A8578">Red threshold</text>
-<line x1="760" y1="498" x2="760" y2="512" stroke="#C4571C" stroke-width="2"/>
-<rect x="140" y="510" width="310" height="26" rx="13" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
-<rect x="450" y="510" width="310" height="26" rx="13" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<rect x="760" y="510" width="300" height="26" rx="13" fill="#C4571C" stroke="#C4571C" stroke-width="1.5"/>
-<text x="295" y="532" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#5B564A">Within appetite</text>
-<text x="605" y="532" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#5B564A">Watch and act</text>
-<text x="910" y="532" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#FFFFFF">Breach</text>
-<line x1="295" y1="542" x2="295" y2="548" stroke="#C4571C" stroke-width="2"/>
-<polygon points="288,547 295,562 302,547" fill="#C4571C"/>
-<line x1="605" y1="542" x2="605" y2="548" stroke="#C4571C" stroke-width="2"/>
-<polygon points="598,547 605,562 612,547" fill="#C4571C"/>
-<line x1="910" y1="542" x2="910" y2="548" stroke="#C4571C" stroke-width="2"/>
-<polygon points="903,547 910,562 917,547" fill="#C4571C"/>
-<rect x="140" y="570" width="300" height="132" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="290" y="602" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#16181F">Nothing to escalate</text>
-<line x1="156" y1="618" x2="424" y2="618" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="290" y="642" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">Owner reviews it in the monthly cycle</text>
-<text x="290" y="664" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">The trend is recorded, no action due</text>
-<text x="290" y="686" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">It stays on the dashboard, not in minutes</text>
-<rect x="450" y="570" width="300" height="132" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="600" y="602" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#16181F">Act, do not wait</text>
-<line x1="466" y1="618" x2="734" y2="618" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="600" y="642" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">Risk owner responds in 5 working days</text>
-<text x="600" y="664" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">Cause and action logged against the risk</text>
-<text x="600" y="686" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">Risk committee sees it at its next meeting</text>
-<rect x="760" y="570" width="300" height="132" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="1.5"/>
-<text x="910" y="602" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#16181F">Appetite is breached</text>
-<line x1="776" y1="618" x2="1044" y2="618" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="910" y="642" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">Committee informed within 24 hours</text>
-<text x="910" y="664" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">Mitigation plan with dates and names</text>
-<text x="910" y="686" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">If nothing is done, acceptance is recorded</text>
-<text x="600" y="734" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#8A8578">A threshold without a named owner and a pre-agreed action is decoration · risk-place.org</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 1590" width="1060" height="1590" role="img" aria-label="Comparison of a key performance indicator and a key risk indicator, with an amber and a red threshold on a scale and the escalation that each state requires">
+<rect x="0" y="0" width="1060" height="1590" fill="#FDFBF7"/>
+
+<text x="530" y="48" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="28" fill="#16181F">Two indicators, two different questions</text>
+<text x="530" y="82" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#5B564A">A KPI reports how the business performed. A KRI warns that a risk is moving while there is still time to act.</text>
+
+<!-- KPI panel -->
+<rect x="8" y="112" width="1044" height="248" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="32" y="146" font-family="Consolas, monospace" font-size="15" fill="#5B564A">KPI · PERFORMANCE INDICATOR</text>
+<text x="32" y="186" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Did we deliver what we promised?</text>
+<line x1="32" y1="206" x2="1028" y2="206" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="32" y="238" font-family="Consolas, monospace" font-size="15" fill="#A34D19">MEASURES</text>
+<text x="250" y="238" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Output the business already produced</text>
+<text x="32" y="270" font-family="Consolas, monospace" font-size="15" fill="#A34D19">HORIZON</text>
+<text x="250" y="270" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Mostly lagging, it confirms the past</text>
+<text x="32" y="302" font-family="Consolas, monospace" font-size="15" fill="#A34D19">OWNED BY</text>
+<text x="250" y="302" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">The manager accountable for delivery</text>
+<text x="32" y="334" font-family="Consolas, monospace" font-size="15" fill="#A34D19">WHEN IT MOVES</text>
+<text x="250" y="334" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">The variance is explained in review</text>
+
+<!-- KRI panel -->
+<rect x="8" y="380" width="1044" height="248" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="2"/>
+<text x="32" y="414" font-family="Consolas, monospace" font-size="15" fill="#C4571C">KRI · KEY RISK INDICATOR</text>
+<text x="32" y="454" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Is a risk moving toward its limit?</text>
+<line x1="32" y1="474" x2="1028" y2="474" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="32" y="506" font-family="Consolas, monospace" font-size="15" fill="#A34D19">MEASURES</text>
+<text x="250" y="506" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Risk drivers and the health of controls</text>
+<text x="32" y="538" font-family="Consolas, monospace" font-size="15" fill="#A34D19">HORIZON</text>
+<text x="250" y="538" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Leading, it has to move before the loss</text>
+<text x="32" y="570" font-family="Consolas, monospace" font-size="15" fill="#A34D19">OWNED BY</text>
+<text x="250" y="570" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">The named owner of a risk in the register</text>
+<text x="32" y="602" font-family="Consolas, monospace" font-size="15" fill="#A34D19">WHEN IT MOVES</text>
+<text x="250" y="602" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">A pre-agreed action fires at the threshold</text>
+
+<!-- the same number can be both -->
+<rect x="8" y="656" width="1044" height="96" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="2"/>
+<text x="530" y="692" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#C4571C">THE SAME NUMBER CAN BE BOTH</text>
+<text x="530" y="726" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#16181F">Late deliveries from one supplier at 12 percent — a KPI for procurement, a KRI for the service that stops without them</text>
+
+<text x="530" y="812" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Thresholds and escalation — what turns a number into a control</text>
+
+<!-- the scale -->
+<text x="360" y="856" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#5B564A">Amber threshold</text>
+<line x1="360" y1="864" x2="360" y2="876" stroke="#C4571C" stroke-width="2.5"/>
+<text x="706" y="856" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#5B564A">Red threshold</text>
+<line x1="706" y1="864" x2="706" y2="876" stroke="#C4571C" stroke-width="2.5"/>
+<rect x="8" y="874" width="352" height="38" rx="19" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<rect x="360" y="874" width="346" height="38" rx="19" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<rect x="706" y="874" width="346" height="38" rx="19" fill="#C4571C" stroke="#C4571C" stroke-width="1.5"/>
+<text x="184" y="900" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Within appetite</text>
+<text x="533" y="900" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Watch and act</text>
+<text x="879" y="900" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#FFFFFF">Breach</text>
+
+<line x1="530" y1="920" x2="530" y2="936" stroke="#C4571C" stroke-width="2.5"/><polygon points="523,934 530,948 537,934" fill="#C4571C"/>
+
+<!-- escalation card 1 -->
+<rect x="8" y="960" width="1044" height="170" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="32" y="1004" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Nothing to escalate</text>
+<text x="1028" y="1004" text-anchor="end" font-family="Consolas, monospace" font-size="15" fill="#A34D19">WITHIN APPETITE</text>
+<line x1="32" y1="1024" x2="1028" y2="1024" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="32" y="1056" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Owner reviews it in the monthly cycle</text>
+<text x="32" y="1082" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">The trend is recorded, no action due</text>
+<text x="32" y="1108" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">It stays on the dashboard, not in minutes</text>
+
+<!-- escalation card 2 -->
+<rect x="8" y="1150" width="1044" height="170" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="32" y="1194" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Act, do not wait</text>
+<text x="1028" y="1194" text-anchor="end" font-family="Consolas, monospace" font-size="15" fill="#A34D19">WATCH AND ACT</text>
+<line x1="32" y1="1214" x2="1028" y2="1214" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="32" y="1246" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Risk owner responds in 5 working days</text>
+<text x="32" y="1272" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Cause and action logged against the risk</text>
+<text x="32" y="1298" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Risk committee sees it at its next meeting</text>
+
+<!-- escalation card 3 -->
+<rect x="8" y="1340" width="1044" height="170" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="2"/>
+<text x="32" y="1384" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Appetite is breached</text>
+<text x="1028" y="1384" text-anchor="end" font-family="Consolas, monospace" font-size="15" fill="#A34D19">BREACH</text>
+<line x1="32" y1="1404" x2="1028" y2="1404" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="32" y="1436" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Committee informed within 24 hours</text>
+<text x="32" y="1462" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Mitigation plan with dates and names</text>
+<text x="32" y="1488" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">If nothing is done, acceptance is recorded</text>
+
+<text x="530" y="1560" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#5B564A">A threshold without a named owner and a pre-agreed action is decoration · risk-place.org</text>
 </svg>

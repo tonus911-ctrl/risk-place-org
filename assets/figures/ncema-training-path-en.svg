@@ -1,91 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" width="1200" height="660" role="img" aria-label="Five stages from NCEMA 7000 training to proven competence: ground in the standard, work on your own processes, working artefacts, assessment, proven competence">
-<rect x="0" y="0" width="1200" height="660" fill="#FDFBF7"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 1056" width="1060" height="1056" role="img" aria-label="Five stages from NCEMA 7000 training to proven competence: ground in the standard, work on your own processes, working artefacts, assessment, proven competence">
+<rect x="0" y="0" width="1060" height="1056" fill="#FDFBF7"/>
 
-<text x="600" y="50" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="27" fill="#16181F">From training to proven competence</text>
-<text x="600" y="82" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15.5" fill="#5B564A">Five stages, and the evidence each one leaves behind</text>
+<text x="530" y="48" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="28" fill="#16181F">From training to proven competence</text>
+<text x="530" y="82" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#5B564A">Five stages, and the evidence each one leaves behind</text>
 
 <!-- stage 1 -->
-<rect x="40" y="112" width="180" height="250" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="130" cy="148" r="17" fill="#C4571C"/>
-<text x="130" y="154" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#FFFFFF">1</text>
-<text x="130" y="196" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#16181F">Ground in</text>
-<text x="130" y="217" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#16181F">the standard</text>
-<text x="130" y="250" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Clauses, terms, scope.</text>
-<text x="130" y="269" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">What is guidance and</text>
-<text x="130" y="288" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">what is a shall.</text>
-<line x1="56" y1="308" x2="204" y2="308" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="130" y="330" text-anchor="middle" font-family="Consolas, monospace" font-size="12" fill="#8A8578">3-4 hours</text>
+<rect x="8" y="112" width="1044" height="108" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="60" cy="166" r="25" fill="#C4571C"/>
+<text x="60" y="174" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">1</text>
+<text x="108" y="156" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Ground in the standard</text>
+<text x="108" y="190" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Clauses, terms, scope. What is guidance and what is a shall.</text>
+<text x="1028" y="190" text-anchor="end" font-family="Consolas, monospace" font-size="15" fill="#A34D19">3-4 hours</text>
+<polygon points="53,226 67,226 60,238" fill="#C4571C"/>
 
 <!-- stage 2 -->
-<rect x="275" y="112" width="180" height="250" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="365" cy="148" r="17" fill="#C4571C"/>
-<text x="365" y="154" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#FFFFFF">2</text>
-<text x="365" y="196" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#16181F">Your own</text>
-<text x="365" y="217" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#16181F">processes</text>
-<text x="365" y="250" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Impact analysis on</text>
-<text x="365" y="269" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">real activity, real</text>
-<text x="365" y="288" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">dependencies.</text>
-<line x1="291" y1="308" x2="439" y2="308" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="365" y="330" text-anchor="middle" font-family="Consolas, monospace" font-size="12" fill="#8A8578">8-10 hours</text>
+<rect x="8" y="246" width="1044" height="108" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="60" cy="300" r="25" fill="#C4571C"/>
+<text x="60" y="308" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">2</text>
+<text x="108" y="290" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Your own processes</text>
+<text x="108" y="324" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Impact analysis on real activity, real dependencies.</text>
+<text x="1028" y="324" text-anchor="end" font-family="Consolas, monospace" font-size="15" fill="#A34D19">8-10 hours</text>
+<polygon points="53,360 67,360 60,372" fill="#C4571C"/>
 
 <!-- stage 3 -->
-<rect x="510" y="112" width="180" height="250" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="600" cy="148" r="17" fill="#C4571C"/>
-<text x="600" y="154" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#FFFFFF">3</text>
-<text x="600" y="196" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#16181F">Working</text>
-<text x="600" y="217" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#16181F">artefacts</text>
-<text x="600" y="250" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Targets in money.</text>
-<text x="600" y="269" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Plan skeleton with</text>
-<text x="600" y="288" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">names. One scenario.</text>
-<line x1="526" y1="308" x2="674" y2="308" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="600" y="330" text-anchor="middle" font-family="Consolas, monospace" font-size="12" fill="#8A8578">20-30 hours of work</text>
+<rect x="8" y="380" width="1044" height="108" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="60" cy="434" r="25" fill="#C4571C"/>
+<text x="60" y="442" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">3</text>
+<text x="108" y="424" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Working artefacts</text>
+<text x="108" y="458" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Targets in money. Plan skeleton with names. One scenario.</text>
+<text x="1028" y="458" text-anchor="end" font-family="Consolas, monospace" font-size="15" fill="#A34D19">20-30 hours of work</text>
+<polygon points="53,494 67,494 60,506" fill="#C4571C"/>
 
 <!-- stage 4 -->
-<rect x="745" y="112" width="180" height="250" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="835" cy="148" r="17" fill="#C4571C"/>
-<text x="835" y="154" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#FFFFFF">4</text>
-<text x="835" y="196" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#16181F">Assessment</text>
-<text x="835" y="217" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#16181F">with a threshold</text>
-<text x="835" y="250" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">A test that can be</text>
-<text x="835" y="269" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">failed, plus your own</text>
-<text x="835" y="288" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">work defended.</text>
-<line x1="761" y1="308" x2="909" y2="308" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="835" y="330" text-anchor="middle" font-family="Consolas, monospace" font-size="12" fill="#8A8578">2-3 hours</text>
+<rect x="8" y="514" width="1044" height="108" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="60" cy="568" r="25" fill="#C4571C"/>
+<text x="60" y="576" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">4</text>
+<text x="108" y="558" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Assessment with a threshold</text>
+<text x="108" y="592" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">A test that can be failed, plus your own work defended.</text>
+<text x="1028" y="592" text-anchor="end" font-family="Consolas, monospace" font-size="15" fill="#A34D19">2-3 hours</text>
+<polygon points="53,628 67,628 60,640" fill="#C4571C"/>
 
 <!-- stage 5 -->
-<rect x="980" y="112" width="180" height="250" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="1.5"/>
-<circle cx="1070" cy="148" r="17" fill="#C4571C"/>
-<text x="1070" y="154" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#FFFFFF">5</text>
-<text x="1070" y="196" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#16181F">Proven</text>
-<text x="1070" y="217" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#16181F">competence</text>
-<text x="1070" y="250" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Named person, dated</text>
-<text x="1070" y="269" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">record, credential</text>
-<text x="1070" y="288" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">a third party checks.</text>
-<line x1="996" y1="308" x2="1144" y2="308" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="1070" y="330" text-anchor="middle" font-family="Consolas, monospace" font-size="12" fill="#8A8578">revisited annually</text>
-
-<!-- arrows, left to right -->
-<line x1="232" y1="237" x2="259" y2="237" stroke="#C4571C" stroke-width="2"/><polygon points="258,231 271,237 258,243" fill="#C4571C"/>
-<line x1="467" y1="237" x2="494" y2="237" stroke="#C4571C" stroke-width="2"/><polygon points="493,231 506,237 493,243" fill="#C4571C"/>
-<line x1="702" y1="237" x2="729" y2="237" stroke="#C4571C" stroke-width="2"/><polygon points="728,231 741,237 728,243" fill="#C4571C"/>
-<line x1="937" y1="237" x2="964" y2="237" stroke="#C4571C" stroke-width="2"/><polygon points="963,231 976,237 963,243" fill="#C4571C"/>
+<rect x="8" y="648" width="1044" height="108" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="2"/>
+<circle cx="60" cy="702" r="25" fill="#C4571C"/>
+<text x="60" y="710" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">5</text>
+<text x="108" y="692" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Proven competence</text>
+<text x="108" y="726" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Named person, dated record, credential a third party checks.</text>
+<text x="1028" y="726" text-anchor="end" font-family="Consolas, monospace" font-size="15" fill="#A34D19">revisited annually</text>
 
 <!-- evidence panel -->
-<rect x="40" y="406" width="1120" height="150" rx="10" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
-<rect x="41" y="418" width="5" height="126" rx="2.5" fill="#C4571C"/>
-<text x="600" y="446" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#16181F">What the path leaves behind</text>
+<rect x="8" y="782" width="1044" height="214" rx="10" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<rect x="9" y="796" width="5" height="186" rx="2.5" fill="#C4571C"/>
+<text x="530" y="818" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">What the path leaves behind</text>
 
-<text x="227" y="482" text-anchor="middle" font-family="Consolas, monospace" font-size="12" letter-spacing="1.4" fill="#C4571C">FOR THE AUDITOR</text>
-<text x="227" y="508" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#5B564A">Competence records with names,</text>
-<text x="227" y="529" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#5B564A">dates, syllabus and result</text>
+<text x="44" y="866" font-family="Consolas, monospace" font-size="15" letter-spacing="1.4" fill="#C4571C">FOR THE AUDITOR</text>
+<text x="380" y="866" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Competence records with names, dates, syllabus and result</text>
 
-<text x="600" y="482" text-anchor="middle" font-family="Consolas, monospace" font-size="12" letter-spacing="1.4" fill="#C4571C">FOR THE ORGANISATION</text>
-<text x="600" y="508" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#5B564A">Impact analysis, recovery targets,</text>
-<text x="600" y="529" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#5B564A">plan and exercise report in use</text>
+<text x="44" y="914" font-family="Consolas, monospace" font-size="15" letter-spacing="1.4" fill="#C4571C">FOR THE ORGANISATION</text>
+<text x="380" y="914" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Impact analysis, recovery targets, plan and exercise report in use</text>
 
-<text x="973" y="482" text-anchor="middle" font-family="Consolas, monospace" font-size="12" letter-spacing="1.4" fill="#C4571C">FOR THE PERSON</text>
-<text x="973" y="508" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#5B564A">A credential a third party can</text>
-<text x="973" y="529" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#5B564A">check, not a PDF with a border</text>
+<text x="44" y="962" font-family="Consolas, monospace" font-size="15" letter-spacing="1.4" fill="#C4571C">FOR THE PERSON</text>
+<text x="380" y="962" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">A credential a third party can check, not a PDF with a border</text>
 
-<text x="600" y="602" text-anchor="middle" font-family="Consolas, monospace" font-size="12.5" fill="#8A8578">Awareness 1.5 h per person / practitioner 16-24 contact hours / 6-10 weeks elapsed for one practitioner</text>
+<text x="530" y="1030" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#5B564A">Awareness 1.5 h per person / practitioner 16-24 contact hours / 6-10 weeks elapsed for one practitioner</text>
 </svg>

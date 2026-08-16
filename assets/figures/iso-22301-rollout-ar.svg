@@ -1,108 +1,108 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" direction="rtl" role="img" aria-label="سبع مراحل لتطبيق ISO 22301 على مدى ستة وعشرين أسبوعا، ولكل مرحلة مخرجها ومدتها ومن يقودها">
-<rect x="0" y="0" width="1200" height="750" fill="#FDFBF7"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 1200" width="1060" height="1200" direction="rtl" role="img" aria-label="سبع مراحل لتطبيق ISO 22301 على مدى ستة وعشرين أسبوعا، ولكل مرحلة مخرجها ومدتها ومن يقودها">
+<rect x="0" y="0" width="1060" height="1200" fill="#FDFBF7"/>
 
-<text x="600" y="44" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="27" fill="#16181F">سبع مراحل في ستة وعشرين أسبوعا</text>
-<text x="600" y="76" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15.5" fill="#5B564A">تطبيق ISO 22301 في الإمارات، ولكل مرحلة مخرج واحد ومالك واحد</text>
+<text x="530" y="44" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="28" fill="#16181F">سبع مراحل في ستة وعشرين أسبوعا</text>
+<text x="530" y="78" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="18" fill="#5B564A">تطبيق ISO 22301 في الإمارات، ولكل مرحلة مخرج واحد ومالك واحد</text>
 
-<rect x="40" y="96" width="1120" height="62" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<rect x="1154" y="108" width="5" height="38" rx="2.5" fill="#C4571C"/>
-<text x="600" y="120" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#C4571C">ستة وعشرون أسبوعا حتى الجاهزية للشهادة</text>
-<text x="600" y="145" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="16.5" fill="#16181F">المدد لمؤسسة متوسطة الحجم، والضغط دون أربعة أشهر ينتج نظاما ورقيا تكشفه المرحلة الثانية</text>
+<rect x="8" y="104" width="1044" height="104" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<rect x="1046" y="118" width="5" height="76" rx="2.5" fill="#C4571C"/>
+<text x="530" y="138" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#A34D19">ستة وعشرون أسبوعا حتى الجاهزية للشهادة</text>
+<text x="530" y="176" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">المدد لمؤسسة متوسطة الحجم، والضغط دون أربعة أشهر ينتج نظاما ورقيا تكشفه المرحلة الثانية</text>
 
-<text x="935" y="182" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#8A8578">المرحلة</text>
-<text x="590" y="182" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#8A8578">المخرج</text>
-<text x="230" y="182" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#8A8578">المدة والمالك</text>
-<line x1="40" y1="192" x2="1160" y2="192" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="767" y="248" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#5B564A">المرحلة</text>
+<text x="401" y="248" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#5B564A">المخرج</text>
+<text x="120" y="248" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#5B564A">المدة والمالك</text>
+<line x1="8" y1="260" x2="1052" y2="260" stroke="#E1DCD3" stroke-width="1.5"/>
 
 <!-- 1 -->
-<rect x="40" y="200" width="1120" height="62" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="1120" cy="231" r="17" fill="#C4571C"/>
-<text x="1120" y="237" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#FFFFFF">1</text>
-<line x1="770" y1="212" x2="770" y2="250" stroke="#E1DCD3" stroke-width="1.5"/>
-<line x1="410" y1="212" x2="410" y2="250" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="935" y="226" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="16" fill="#16181F">النطاق وتقييم الفجوات</text>
-<text x="935" y="247" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">مقابل كل بنود المعيار</text>
-<text x="590" y="237" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">سجل فجوات مسعر بالجهد وبمخاطر التوقف</text>
-<text x="230" y="226" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#C4571C">الأسابيع 1 إلى 3</text>
-<text x="230" y="247" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">منسق الاستمرارية</text>
-<polygon points="1113,264 1127,264 1120,273" fill="#C4571C"/>
+<rect x="8" y="272" width="1044" height="112" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="1004" cy="328" r="25" fill="#C4571C"/>
+<text x="1004" y="336" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">1</text>
+<line x1="570" y1="288" x2="570" y2="368" stroke="#E1DCD3" stroke-width="1.5"/>
+<line x1="232" y1="288" x2="232" y2="368" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="767" y="320" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">النطاق وتقييم الفجوات</text>
+<text x="767" y="352" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#5B564A">مقابل كل بنود المعيار</text>
+<text x="401" y="334" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">سجل فجوات مسعر بالجهد وبمخاطر التوقف</text>
+<text x="120" y="320" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#A34D19">الأسابيع من 1 إلى 3</text>
+<text x="120" y="352" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#5B564A">منسق الاستمرارية</text>
+<polygon points="997,386 1011,386 1004,394" fill="#C4571C"/>
 
 <!-- 2 -->
-<rect x="40" y="274" width="1120" height="62" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="1120" cy="305" r="17" fill="#C4571C"/>
-<text x="1120" y="311" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#FFFFFF">2</text>
-<line x1="770" y1="286" x2="770" y2="324" stroke="#E1DCD3" stroke-width="1.5"/>
-<line x1="410" y1="286" x2="410" y2="324" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="935" y="300" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="16" fill="#16181F">القيادة والسياسة</text>
-<text x="935" y="321" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">البند 5، والتدقيق يبدأ من القمة</text>
-<text x="590" y="311" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">سياسة موقعة وأدوار مسماة وأهداف</text>
-<text x="230" y="300" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#C4571C">الأسبوع 4</text>
-<text x="230" y="321" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">الرئيس التنفيذي</text>
-<polygon points="1113,338 1127,338 1120,347" fill="#C4571C"/>
+<rect x="8" y="396" width="1044" height="112" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="1004" cy="452" r="25" fill="#C4571C"/>
+<text x="1004" y="460" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">2</text>
+<line x1="570" y1="412" x2="570" y2="492" stroke="#E1DCD3" stroke-width="1.5"/>
+<line x1="232" y1="412" x2="232" y2="492" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="767" y="444" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">القيادة والسياسة</text>
+<text x="767" y="476" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#5B564A">البند 5، والتدقيق يبدأ من القمة</text>
+<text x="401" y="458" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">سياسة موقعة وأدوار مسماة وأهداف</text>
+<text x="120" y="444" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#A34D19">الأسبوع 4</text>
+<text x="120" y="476" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#5B564A">الرئيس التنفيذي</text>
+<polygon points="997,510 1011,510 1004,518" fill="#C4571C"/>
 
 <!-- 3 -->
-<rect x="40" y="348" width="1120" height="62" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="1120" cy="379" r="17" fill="#C4571C"/>
-<text x="1120" y="385" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#FFFFFF">3</text>
-<line x1="770" y1="360" x2="770" y2="398" stroke="#E1DCD3" stroke-width="1.5"/>
-<line x1="410" y1="360" x2="410" y2="398" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="935" y="374" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="16" fill="#16181F">تحليل الأثر وتقييم المخاطر</text>
-<text x="935" y="395" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">الثنائي الذي يحمل النظام كله</text>
-<text x="590" y="385" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">أنشطة ذات أولوية وأهداف تعاف</text>
-<text x="230" y="374" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#C4571C">الأسابيع 5 إلى 8</text>
-<text x="230" y="395" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">أصحاب الأنشطة</text>
-<polygon points="1113,412 1127,412 1120,421" fill="#C4571C"/>
+<rect x="8" y="520" width="1044" height="112" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="1004" cy="576" r="25" fill="#C4571C"/>
+<text x="1004" y="584" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">3</text>
+<line x1="570" y1="536" x2="570" y2="616" stroke="#E1DCD3" stroke-width="1.5"/>
+<line x1="232" y1="536" x2="232" y2="616" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="767" y="568" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">تحليل الأثر وتقييم المخاطر</text>
+<text x="767" y="600" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#5B564A">الثنائي الذي يحمل النظام كله</text>
+<text x="401" y="582" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">أنشطة ذات أولوية وأهداف تعاف</text>
+<text x="120" y="568" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#A34D19">الأسابيع من 5 إلى 8</text>
+<text x="120" y="600" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#5B564A">أصحاب الأنشطة</text>
+<polygon points="997,634 1011,634 1004,642" fill="#C4571C"/>
 
 <!-- 4 -->
-<rect x="40" y="422" width="1120" height="62" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="1120" cy="453" r="17" fill="#C4571C"/>
-<text x="1120" y="459" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#FFFFFF">4</text>
-<line x1="770" y1="434" x2="770" y2="472" stroke="#E1DCD3" stroke-width="1.5"/>
-<line x1="410" y1="434" x2="410" y2="472" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="935" y="448" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="16" fill="#16181F">الاستراتيجيات والخطط</text>
-<text x="935" y="469" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">لكل نشاط ذي أولوية</text>
-<text x="590" y="459" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">خطة وتعاف تقني وصلاحيات مكتوبة</text>
-<text x="230" y="448" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#C4571C">الأسابيع 9 إلى 14</text>
-<text x="230" y="469" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">التشغيل والتقنية</text>
-<polygon points="1113,486 1127,486 1120,495" fill="#C4571C"/>
+<rect x="8" y="644" width="1044" height="112" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="1004" cy="700" r="25" fill="#C4571C"/>
+<text x="1004" y="708" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">4</text>
+<line x1="570" y1="660" x2="570" y2="740" stroke="#E1DCD3" stroke-width="1.5"/>
+<line x1="232" y1="660" x2="232" y2="740" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="767" y="692" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">الاستراتيجيات والخطط</text>
+<text x="767" y="724" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#5B564A">لكل نشاط ذي أولوية</text>
+<text x="401" y="706" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">خطة وتعاف تقني وصلاحيات مكتوبة</text>
+<text x="120" y="692" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#A34D19">الأسابيع من 9 إلى 14</text>
+<text x="120" y="724" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#5B564A">التشغيل والتقنية</text>
+<polygon points="997,758 1011,758 1004,766" fill="#C4571C"/>
 
 <!-- 5 -->
-<rect x="40" y="496" width="1120" height="62" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="1120" cy="527" r="17" fill="#C4571C"/>
-<text x="1120" y="533" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#FFFFFF">5</text>
-<line x1="770" y1="508" x2="770" y2="546" stroke="#E1DCD3" stroke-width="1.5"/>
-<line x1="410" y1="508" x2="410" y2="546" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="935" y="522" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="16" fill="#16181F">التمرين والتصحيح</text>
-<text x="935" y="543" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">يقرؤه المدقق قبل الخطط</text>
-<text x="590" y="533" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">تقرير تمرين بإجراءات مغلقة</text>
-<text x="230" y="522" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#C4571C">الأسابيع 15 إلى 18</text>
-<text x="230" y="543" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">منسق الاستمرارية</text>
-<polygon points="1113,560 1127,560 1120,569" fill="#C4571C"/>
+<rect x="8" y="768" width="1044" height="112" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="1004" cy="824" r="25" fill="#C4571C"/>
+<text x="1004" y="832" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">5</text>
+<line x1="570" y1="784" x2="570" y2="864" stroke="#E1DCD3" stroke-width="1.5"/>
+<line x1="232" y1="784" x2="232" y2="864" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="767" y="816" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">التمرين والتصحيح</text>
+<text x="767" y="848" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#5B564A">يقرؤه المدقق قبل الخطط</text>
+<text x="401" y="830" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">تقرير تمرين بإجراءات مغلقة</text>
+<text x="120" y="816" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#A34D19">الأسابيع من 15 إلى 18</text>
+<text x="120" y="848" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#5B564A">منسق الاستمرارية</text>
+<polygon points="997,882 1011,882 1004,890" fill="#C4571C"/>
 
 <!-- 6 -->
-<rect x="40" y="570" width="1120" height="62" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="1120" cy="601" r="17" fill="#C4571C"/>
-<text x="1120" y="607" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#FFFFFF">6</text>
-<line x1="770" y1="582" x2="770" y2="620" stroke="#E1DCD3" stroke-width="1.5"/>
-<line x1="410" y1="582" x2="410" y2="620" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="935" y="596" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="16" fill="#16181F">التدقيق الداخلي ومراجعة الإدارة</text>
-<text x="935" y="617" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">البند 9 عمليا</text>
-<text x="590" y="607" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">ملاحظات مستقلة وقرارات مسجلة</text>
-<text x="230" y="596" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#C4571C">الأسابيع 19 إلى 22</text>
-<text x="230" y="617" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">التدقيق الداخلي</text>
-<polygon points="1113,634 1127,634 1120,643" fill="#C4571C"/>
+<rect x="8" y="892" width="1044" height="112" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="1004" cy="948" r="25" fill="#C4571C"/>
+<text x="1004" y="956" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">6</text>
+<line x1="570" y1="908" x2="570" y2="988" stroke="#E1DCD3" stroke-width="1.5"/>
+<line x1="232" y1="908" x2="232" y2="988" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="767" y="940" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">التدقيق الداخلي ومراجعة الإدارة</text>
+<text x="767" y="972" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#5B564A">البند 9 عمليا</text>
+<text x="401" y="954" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">ملاحظات مستقلة وقرارات مسجلة</text>
+<text x="120" y="940" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#A34D19">الأسابيع من 19 إلى 22</text>
+<text x="120" y="972" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#5B564A">التدقيق الداخلي</text>
+<polygon points="997,1006 1011,1006 1004,1014" fill="#C4571C"/>
 
 <!-- 7 -->
-<rect x="40" y="644" width="1120" height="62" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
-<circle cx="1120" cy="675" r="17" fill="#C4571C"/>
-<text x="1120" y="681" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#FFFFFF">7</text>
-<line x1="770" y1="656" x2="770" y2="694" stroke="#E1DCD3" stroke-width="1.5"/>
-<line x1="410" y1="656" x2="410" y2="694" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="935" y="670" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="16" fill="#16181F">الشهادة على مرحلتين</text>
-<text x="935" y="691" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">توثيق أولا ثم فعالية ميدانية</text>
-<text x="590" y="681" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">شهادة ثم تدقيقات مراقبة سنوية</text>
-<text x="230" y="670" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#C4571C">الأسابيع 23 إلى 26</text>
-<text x="230" y="691" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">جهة منح الشهادة</text>
+<rect x="8" y="1016" width="1044" height="112" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="2"/>
+<circle cx="1004" cy="1072" r="25" fill="#C4571C"/>
+<text x="1004" y="1080" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">7</text>
+<line x1="570" y1="1032" x2="570" y2="1112" stroke="#E1DCD3" stroke-width="1.5"/>
+<line x1="232" y1="1032" x2="232" y2="1112" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="767" y="1064" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">الشهادة على مرحلتين</text>
+<text x="767" y="1096" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#5B564A">توثيق أولا ثم فعالية ميدانية</text>
+<text x="401" y="1078" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">شهادة ثم تدقيقات مراقبة سنوية</text>
+<text x="120" y="1064" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#A34D19">الأسابيع من 23 إلى 26</text>
+<text x="120" y="1096" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#5B564A">جهة منح الشهادة</text>
 
-<text x="600" y="734" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#8A8578">المصدر، معيار ISO 22301 إصدار 2019 والبنود من 4 إلى 10. والمدد تقديرات عمل لمؤسسة متوسطة الحجم</text>
+<text x="530" y="1172" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#5B564A">المصدر، معيار ISO 22301 إصدار 2019 والبنود من 4 إلى 10. والمدد تقديرات عمل لمؤسسة متوسطة الحجم</text>
 </svg>

@@ -1,49 +1,61 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 740" width="1200" height="740" direction="rtl" role="img" aria-label="الخدمات السريرية الحرجة وأقصى مدة غياب يتحملها المريض">
-<rect x="0" y="0" width="1200" height="740" fill="#FDFBF7"/>
-<text x="600" y="48" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="27" fill="#16181F">الخدمات الحرجة وزمن غيابها المسموح</text>
-<text x="600" y="82" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15.5" fill="#5B564A">سبع خدمات مرتبة بالمدة التي يتحملها المريض قبل أن يتحول التأخير إلى ضرر</text>
-<text x="1025" y="116" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#8A8578">الخدمة الحرجة</text>
-<text x="566" y="116" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#8A8578">أقصى غياب مقبول، يزداد كلما اتجهنا يسارا</text>
-<line x1="870" y1="130" x2="262" y2="130" stroke="#E1DCD3" stroke-width="1.5"/>
-<polygon points="250,130 262,124 262,136" fill="#C4571C"/>
-<rect x="890" y="140" width="270" height="48" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="1025" y="170" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="14.5" fill="#16181F">الطوارئ والإنعاش</text>
-<rect x="800" y="153" width="70" height="22" rx="6" fill="#C4571C"/>
-<rect x="642" y="150" width="150" height="28" rx="6" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="717" y="169" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#16181F">دقائق معدودة</text>
-<rect x="890" y="200" width="270" height="48" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="1025" y="230" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="14.5" fill="#16181F">العناية المركزة ودعم الحياة</text>
-<rect x="800" y="213" width="70" height="22" rx="6" fill="#C4571C"/>
-<rect x="642" y="210" width="150" height="28" rx="6" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="717" y="229" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#16181F">دقائق معدودة</text>
-<rect x="890" y="260" width="270" height="48" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="1025" y="290" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="14.5" fill="#16181F">غرف العمليات والتخدير</text>
-<rect x="700" y="273" width="170" height="22" rx="6" fill="#C4571C"/>
-<rect x="542" y="270" width="150" height="28" rx="6" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="617" y="289" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#16181F">ساعة واحدة</text>
-<rect x="890" y="320" width="270" height="48" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="1025" y="350" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="14.5" fill="#16181F">السجل الطبي، وصول للقراءة</text>
-<rect x="640" y="333" width="230" height="22" rx="6" fill="#C4571C"/>
-<rect x="482" y="330" width="150" height="28" rx="6" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="557" y="349" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#16181F">ساعتان</text>
-<rect x="890" y="380" width="270" height="48" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="1025" y="410" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="14.5" fill="#16181F">المختبر وبنك الدم</text>
-<rect x="560" y="393" width="310" height="22" rx="6" fill="#C4571C"/>
-<rect x="402" y="390" width="150" height="28" rx="6" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="477" y="409" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#16181F">أربع ساعات</text>
-<rect x="890" y="440" width="270" height="48" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="1025" y="470" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="14.5" fill="#16181F">الصيدلية وصرف الأدوية</text>
-<rect x="470" y="453" width="400" height="22" rx="6" fill="#C4571C"/>
-<rect x="312" y="450" width="150" height="28" rx="6" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="387" y="469" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#16181F">ثماني ساعات</text>
-<rect x="890" y="500" width="270" height="48" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="1025" y="530" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="14.5" fill="#16181F">العيادات الخارجية والفوترة</text>
-<rect x="310" y="513" width="560" height="22" rx="6" fill="#C4571C"/>
-<rect x="152" y="510" width="150" height="28" rx="6" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="227" y="529" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#16181F">يومان</text>
-<rect x="40" y="580" width="1120" height="96" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
-<rect x="1154" y="594" width="5" height="68" rx="2.5" fill="#C4571C"/>
-<text x="600" y="612" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#C4571C">الأرقام أمثلة للنقاش لا معايير</text>
-<text x="600" y="644" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#16181F">كل منشأة تحسب أرقامها في تحليل أثر الأعمال، ثم تعتمدها الحوكمة السريرية وتوقعها الإدارة الطبية</text>
-<text x="600" y="712" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#8A8578">المصدر، استمرارية الرعاية الصحية · risk-place.org</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 886" width="1060" height="886" direction="rtl" role="img" aria-label="الخدمات السريرية الحرجة وأقصى مدة غياب يتحملها المريض">
+<rect x="0" y="0" width="1060" height="886" rx="0" fill="#FDFBF7"/>
+
+<text x="530" y="48" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="28" fill="#16181F">الخدمات الحرجة وزمن غيابها المسموح</text>
+<text x="530" y="82" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="18" fill="#5B564A">سبع خدمات مرتبة بالمدة التي يتحملها المريض قبل أن يتحول التأخير إلى ضرر</text>
+
+<text x="862" y="126" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#5B564A">الخدمة الحرجة</text>
+<text x="332" y="126" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#5B564A">أقصى غياب مقبول، يزداد كلما اتجهنا يسارا</text>
+<line x1="36" y1="144" x2="656" y2="144" stroke="#E1DCD3" stroke-width="1.5"/>
+<polygon points="24,144 36,138 36,150" fill="#C4571C"/>
+
+<rect x="672" y="162" width="380" height="56" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="862" y="197" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">الطوارئ والإنعاش</text>
+<rect x="600" y="179" width="56" height="22" rx="6" fill="#C4571C"/>
+<rect x="418" y="176" width="170" height="28" rx="6" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="503" y="196" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">دقائق معدودة</text>
+
+<rect x="672" y="232" width="380" height="56" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="862" y="267" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">العناية المركزة ودعم الحياة</text>
+<rect x="600" y="249" width="56" height="22" rx="6" fill="#C4571C"/>
+<rect x="418" y="246" width="170" height="28" rx="6" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="503" y="266" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">دقائق معدودة</text>
+
+<rect x="672" y="302" width="380" height="56" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="862" y="337" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">غرف العمليات والتخدير</text>
+<rect x="519" y="319" width="137" height="22" rx="6" fill="#C4571C"/>
+<rect x="337" y="316" width="170" height="28" rx="6" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="422" y="336" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">ساعة واحدة</text>
+
+<rect x="672" y="372" width="380" height="56" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="862" y="407" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">السجل الطبي، وصول للقراءة</text>
+<rect x="471" y="389" width="185" height="22" rx="6" fill="#C4571C"/>
+<rect x="289" y="386" width="170" height="28" rx="6" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="374" y="406" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">ساعتان</text>
+
+<rect x="672" y="442" width="380" height="56" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="862" y="477" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">المختبر وبنك الدم</text>
+<rect x="407" y="459" width="249" height="22" rx="6" fill="#C4571C"/>
+<rect x="225" y="456" width="170" height="28" rx="6" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="310" y="476" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">أربع ساعات</text>
+
+<rect x="672" y="512" width="380" height="56" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="862" y="547" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">الصيدلية وصرف الأدوية</text>
+<rect x="335" y="529" width="321" height="22" rx="6" fill="#C4571C"/>
+<rect x="153" y="526" width="170" height="28" rx="6" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="238" y="546" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">ثماني ساعات</text>
+
+<rect x="672" y="582" width="380" height="56" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="862" y="617" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">العيادات الخارجية والفوترة</text>
+<rect x="206" y="599" width="450" height="22" rx="6" fill="#C4571C"/>
+<rect x="24" y="596" width="170" height="28" rx="6" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="109" y="616" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">يومان</text>
+
+<rect x="8" y="666" width="1044" height="154" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
+<rect x="1046" y="680" width="5" height="126" rx="2.5" fill="#C4571C"/>
+<text x="530" y="708" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#C4571C">الأرقام أمثلة للنقاش لا معايير</text>
+<text x="530" y="748" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">كل منشأة تحسب أرقامها في تحليل أثر الأعمال،</text>
+<text x="530" y="780" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">ثم تعتمدها الحوكمة السريرية وتوقعها الإدارة الطبية</text>
+
+<text x="530" y="858" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#5B564A">المصدر، استمرارية الرعاية الصحية · risk-place.org</text>
 </svg>

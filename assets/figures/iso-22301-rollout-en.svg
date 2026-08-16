@@ -1,108 +1,108 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Seven stages of an ISO 22301 implementation across twenty-six weeks, each with its output, its timing and its owner">
-<rect x="0" y="0" width="1200" height="750" fill="#FDFBF7"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 1200" width="1060" height="1200" role="img" aria-label="Seven stages of an ISO 22301 implementation across twenty-six weeks, each with its output, its timing and its owner">
+<rect x="0" y="0" width="1060" height="1200" fill="#FDFBF7"/>
 
-<text x="600" y="44" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="27" fill="#16181F">Seven stages, twenty-six weeks</text>
-<text x="600" y="76" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15.5" fill="#5B564A">Implementing ISO 22301 in the UAE — one output and one owner per stage</text>
+<text x="530" y="44" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="28" fill="#16181F">Seven stages, twenty-six weeks</text>
+<text x="530" y="78" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#5B564A">Implementing ISO 22301 in the UAE — one output and one owner per stage</text>
 
-<rect x="40" y="96" width="1120" height="62" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<rect x="41" y="108" width="5" height="38" rx="2.5" fill="#C4571C"/>
-<text x="600" y="120" text-anchor="middle" font-family="Consolas, monospace" font-size="12.5" fill="#C4571C">TWENTY-SIX WEEKS TO CERTIFICATION-READY</text>
-<text x="600" y="145" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#16181F">Timings are for a mid-size organisation — compressing below four months produces a paper system</text>
+<rect x="8" y="104" width="1044" height="104" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<rect x="9" y="118" width="5" height="76" rx="2.5" fill="#C4571C"/>
+<text x="40" y="138" font-family="Consolas, monospace" font-size="15" letter-spacing="1.4" fill="#A34D19">TWENTY-SIX WEEKS TO CERTIFICATION-READY</text>
+<text x="40" y="176" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Timings are for a mid-size organisation — compressing below four months produces a paper system</text>
 
-<text x="265" y="182" text-anchor="middle" font-family="Consolas, monospace" font-size="12" fill="#8A8578">STAGE</text>
-<text x="610" y="182" text-anchor="middle" font-family="Consolas, monospace" font-size="12" fill="#8A8578">OUTPUT</text>
-<text x="970" y="182" text-anchor="middle" font-family="Consolas, monospace" font-size="12" fill="#8A8578">TIMING AND OWNER</text>
-<line x1="40" y1="192" x2="1160" y2="192" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="96" y="248" font-family="Consolas, monospace" font-size="15" fill="#5B564A">STAGE</text>
+<text x="450" y="248" font-family="Consolas, monospace" font-size="15" fill="#5B564A">OUTPUT</text>
+<text x="878" y="248" font-family="Consolas, monospace" font-size="15" fill="#5B564A">TIMING AND OWNER</text>
+<line x1="8" y1="260" x2="1052" y2="260" stroke="#E1DCD3" stroke-width="1.5"/>
 
 <!-- 1 -->
-<rect x="40" y="200" width="1120" height="62" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="80" cy="231" r="17" fill="#C4571C"/>
-<text x="80" y="237" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#FFFFFF">1</text>
-<line x1="430" y1="212" x2="430" y2="250" stroke="#E1DCD3" stroke-width="1.5"/>
-<line x1="790" y1="212" x2="790" y2="250" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="265" y="226" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" fill="#16181F">Scope and gap assessment</text>
-<text x="265" y="247" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">Against every clause</text>
-<text x="610" y="237" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#5B564A">Gap register priced in effort and downtime</text>
-<text x="970" y="226" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#C4571C">Weeks 1-3</text>
-<text x="970" y="247" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Continuity lead</text>
-<polygon points="73,264 87,264 80,273" fill="#C4571C"/>
+<rect x="8" y="272" width="1044" height="112" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="56" cy="328" r="25" fill="#C4571C"/>
+<text x="56" y="336" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">1</text>
+<line x1="430" y1="288" x2="430" y2="368" stroke="#E1DCD3" stroke-width="1.5"/>
+<line x1="858" y1="288" x2="858" y2="368" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="96" y="320" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Scope and gap assessment</text>
+<text x="96" y="352" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#5B564A">Against every clause</text>
+<text x="450" y="334" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Gap register priced in effort and downtime</text>
+<text x="878" y="320" font-family="Consolas, monospace" font-size="15" fill="#A34D19">Weeks 1-3</text>
+<text x="878" y="352" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#5B564A">Continuity lead</text>
+<polygon points="49,386 63,386 56,394" fill="#C4571C"/>
 
 <!-- 2 -->
-<rect x="40" y="274" width="1120" height="62" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="80" cy="305" r="17" fill="#C4571C"/>
-<text x="80" y="311" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#FFFFFF">2</text>
-<line x1="430" y1="286" x2="430" y2="324" stroke="#E1DCD3" stroke-width="1.5"/>
-<line x1="790" y1="286" x2="790" y2="324" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="265" y="300" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" fill="#16181F">Leadership and policy</text>
-<text x="265" y="321" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">Clause 5 — audits start at the top</text>
-<text x="610" y="311" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#5B564A">Signed policy, named accountability</text>
-<text x="970" y="300" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#C4571C">Week 4</text>
-<text x="970" y="321" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Chief executive</text>
-<polygon points="73,338 87,338 80,347" fill="#C4571C"/>
+<rect x="8" y="396" width="1044" height="112" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="56" cy="452" r="25" fill="#C4571C"/>
+<text x="56" y="460" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">2</text>
+<line x1="430" y1="412" x2="430" y2="492" stroke="#E1DCD3" stroke-width="1.5"/>
+<line x1="858" y1="412" x2="858" y2="492" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="96" y="444" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Leadership and policy</text>
+<text x="96" y="476" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#5B564A">Clause 5 — audits start at the top</text>
+<text x="450" y="458" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Signed policy, named accountability</text>
+<text x="878" y="444" font-family="Consolas, monospace" font-size="15" fill="#A34D19">Week 4</text>
+<text x="878" y="476" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#5B564A">Chief executive</text>
+<polygon points="49,510 63,510 56,518" fill="#C4571C"/>
 
 <!-- 3 -->
-<rect x="40" y="348" width="1120" height="62" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="80" cy="379" r="17" fill="#C4571C"/>
-<text x="80" y="385" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#FFFFFF">3</text>
-<line x1="430" y1="360" x2="430" y2="398" stroke="#E1DCD3" stroke-width="1.5"/>
-<line x1="790" y1="360" x2="790" y2="398" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="265" y="374" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" fill="#16181F">BIA and risk assessment</text>
-<text x="265" y="395" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">The pair that carries the system</text>
-<text x="610" y="385" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#5B564A">Priority activities and recovery objectives</text>
-<text x="970" y="374" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#C4571C">Weeks 5-8</text>
-<text x="970" y="395" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Activity owners</text>
-<polygon points="73,412 87,412 80,421" fill="#C4571C"/>
+<rect x="8" y="520" width="1044" height="112" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="56" cy="576" r="25" fill="#C4571C"/>
+<text x="56" y="584" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">3</text>
+<line x1="430" y1="536" x2="430" y2="616" stroke="#E1DCD3" stroke-width="1.5"/>
+<line x1="858" y1="536" x2="858" y2="616" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="96" y="568" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">BIA and risk assessment</text>
+<text x="96" y="600" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#5B564A">The pair that carries the system</text>
+<text x="450" y="582" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Priority activities and recovery objectives</text>
+<text x="878" y="568" font-family="Consolas, monospace" font-size="15" fill="#A34D19">Weeks 5-8</text>
+<text x="878" y="600" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#5B564A">Activity owners</text>
+<polygon points="49,634 63,634 56,642" fill="#C4571C"/>
 
 <!-- 4 -->
-<rect x="40" y="422" width="1120" height="62" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="80" cy="453" r="17" fill="#C4571C"/>
-<text x="80" y="459" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#FFFFFF">4</text>
-<line x1="430" y1="434" x2="430" y2="472" stroke="#E1DCD3" stroke-width="1.5"/>
-<line x1="790" y1="434" x2="790" y2="472" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="265" y="448" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" fill="#16181F">Strategies and plans</text>
-<text x="265" y="469" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">One per prioritised activity</text>
-<text x="610" y="459" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#5B564A">Plans, technology recovery, written authority</text>
-<text x="970" y="448" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#C4571C">Weeks 9-14</text>
-<text x="970" y="469" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Operations and IT</text>
-<polygon points="73,486 87,486 80,495" fill="#C4571C"/>
+<rect x="8" y="644" width="1044" height="112" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="56" cy="700" r="25" fill="#C4571C"/>
+<text x="56" y="708" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">4</text>
+<line x1="430" y1="660" x2="430" y2="740" stroke="#E1DCD3" stroke-width="1.5"/>
+<line x1="858" y1="660" x2="858" y2="740" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="96" y="692" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Strategies and plans</text>
+<text x="96" y="724" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#5B564A">One per prioritised activity</text>
+<text x="450" y="706" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Plans, technology recovery, written authority</text>
+<text x="878" y="692" font-family="Consolas, monospace" font-size="15" fill="#A34D19">Weeks 9-14</text>
+<text x="878" y="724" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#5B564A">Operations and IT</text>
+<polygon points="49,758 63,758 56,766" fill="#C4571C"/>
 
 <!-- 5 -->
-<rect x="40" y="496" width="1120" height="62" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="80" cy="527" r="17" fill="#C4571C"/>
-<text x="80" y="533" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#FFFFFF">5</text>
-<line x1="430" y1="508" x2="430" y2="546" stroke="#E1DCD3" stroke-width="1.5"/>
-<line x1="790" y1="508" x2="790" y2="546" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="265" y="522" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" fill="#16181F">Exercise and correct</text>
-<text x="265" y="543" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">Auditors read it before the plans</text>
-<text x="610" y="533" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#5B564A">Exercise report with closed actions</text>
-<text x="970" y="522" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#C4571C">Weeks 15-18</text>
-<text x="970" y="543" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Continuity lead</text>
-<polygon points="73,560 87,560 80,569" fill="#C4571C"/>
+<rect x="8" y="768" width="1044" height="112" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="56" cy="824" r="25" fill="#C4571C"/>
+<text x="56" y="832" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">5</text>
+<line x1="430" y1="784" x2="430" y2="864" stroke="#E1DCD3" stroke-width="1.5"/>
+<line x1="858" y1="784" x2="858" y2="864" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="96" y="816" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Exercise and correct</text>
+<text x="96" y="848" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#5B564A">Auditors read it before the plans</text>
+<text x="450" y="830" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Exercise report with closed actions</text>
+<text x="878" y="816" font-family="Consolas, monospace" font-size="15" fill="#A34D19">Weeks 15-18</text>
+<text x="878" y="848" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#5B564A">Continuity lead</text>
+<polygon points="49,882 63,882 56,890" fill="#C4571C"/>
 
 <!-- 6 -->
-<rect x="40" y="570" width="1120" height="62" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="80" cy="601" r="17" fill="#C4571C"/>
-<text x="80" y="607" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#FFFFFF">6</text>
-<line x1="430" y1="582" x2="430" y2="620" stroke="#E1DCD3" stroke-width="1.5"/>
-<line x1="790" y1="582" x2="790" y2="620" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="265" y="596" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" fill="#16181F">Internal audit and review</text>
-<text x="265" y="617" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">Clause 9 in action</text>
-<text x="610" y="607" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#5B564A">Independent findings, recorded decisions</text>
-<text x="970" y="596" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#C4571C">Weeks 19-22</text>
-<text x="970" y="617" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Internal audit</text>
-<polygon points="73,634 87,634 80,643" fill="#C4571C"/>
+<rect x="8" y="892" width="1044" height="112" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="56" cy="948" r="25" fill="#C4571C"/>
+<text x="56" y="956" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">6</text>
+<line x1="430" y1="908" x2="430" y2="988" stroke="#E1DCD3" stroke-width="1.5"/>
+<line x1="858" y1="908" x2="858" y2="988" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="96" y="940" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Internal audit and review</text>
+<text x="96" y="972" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#5B564A">Clause 9 in action</text>
+<text x="450" y="954" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Independent findings, recorded decisions</text>
+<text x="878" y="940" font-family="Consolas, monospace" font-size="15" fill="#A34D19">Weeks 19-22</text>
+<text x="878" y="972" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#5B564A">Internal audit</text>
+<polygon points="49,1006 63,1006 56,1014" fill="#C4571C"/>
 
 <!-- 7 -->
-<rect x="40" y="644" width="1120" height="62" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
-<circle cx="80" cy="675" r="17" fill="#C4571C"/>
-<text x="80" y="681" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#FFFFFF">7</text>
-<line x1="430" y1="656" x2="430" y2="694" stroke="#E1DCD3" stroke-width="1.5"/>
-<line x1="790" y1="656" x2="790" y2="694" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="265" y="670" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" fill="#16181F">Certification, two stages</text>
-<text x="265" y="691" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">Documents first, then the floor</text>
-<text x="610" y="681" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#5B564A">Certificate, then annual surveillance</text>
-<text x="970" y="670" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#C4571C">Weeks 23-26</text>
-<text x="970" y="691" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Certification body</text>
+<rect x="8" y="1016" width="1044" height="112" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="2"/>
+<circle cx="56" cy="1072" r="25" fill="#C4571C"/>
+<text x="56" y="1080" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">7</text>
+<line x1="430" y1="1032" x2="430" y2="1112" stroke="#E1DCD3" stroke-width="1.5"/>
+<line x1="858" y1="1032" x2="858" y2="1112" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="96" y="1064" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Certification, two stages</text>
+<text x="96" y="1096" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#5B564A">Documents first, then the floor</text>
+<text x="450" y="1078" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Certificate, then annual surveillance</text>
+<text x="878" y="1064" font-family="Consolas, monospace" font-size="15" fill="#A34D19">Weeks 23-26</text>
+<text x="878" y="1096" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#5B564A">Certification body</text>
 
-<text x="600" y="734" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#8A8578">Source — ISO 22301:2019, clauses 4 to 10 · timings are working estimates for a mid-size organisation</text>
+<text x="530" y="1172" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#5B564A">Source — ISO 22301:2019, clauses 4 to 10 · timings are working estimates for a mid-size organisation</text>
 </svg>

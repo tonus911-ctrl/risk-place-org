@@ -1,87 +1,72 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" role="img" aria-label="A sixty minute risk mapping session in four timed blocks, framing, surfacing, scoring and assigning, with the three outputs the hour produces">
-<rect x="0" y="0" width="1200" height="700" fill="#FDFBF7"/>
-<text x="600" y="48" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="27" fill="#16181F">Sixty minutes, four blocks, one honest first map</text>
-<text x="600" y="82" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15.5" fill="#5B564A">The clock does half the work. Each block has one job and produces one thing the next block needs.</text>
-
-<rect x="40" y="112" width="250" height="270" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<rect x="110" y="132" width="110" height="24" rx="12" fill="#C4571C"/>
-<text x="165" y="149" text-anchor="middle" font-family="Consolas, monospace" font-size="11.5" fill="#FFFFFF">MINUTES 0–10</text>
-<text x="165" y="192" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17.5" fill="#16181F">Frame the question</text>
-<line x1="56" y1="214" x2="274" y2="214" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="165" y="242" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Name the objective at stake</text>
-<text x="165" y="268" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Nobody defends their area</text>
-<text x="165" y="294" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">One sentence form on the wall</text>
-<text x="165" y="320" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">cause, event, effect</text>
-<line x1="56" y1="338" x2="274" y2="338" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="165" y="362" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#C4571C">A rule and a clock everyone accepts</text>
-
-<line x1="292" y1="247" x2="316" y2="247" stroke="#C4571C" stroke-width="2"/>
-<polygon points="315,240 330,247 315,254" fill="#C4571C"/>
-
-<rect x="330" y="112" width="250" height="270" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<rect x="400" y="132" width="110" height="24" rx="12" fill="#C4571C"/>
-<text x="455" y="149" text-anchor="middle" font-family="Consolas, monospace" font-size="11.5" fill="#FFFFFF">MINUTES 10–35</text>
-<text x="455" y="192" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17.5" fill="#16181F">Surface the risks</text>
-<line x1="346" y1="214" x2="564" y2="214" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="455" y="242" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Four questions, asked in order</text>
-<text x="455" y="268" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Written on cards, then read</text>
-<text x="455" y="294" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Split risk from problem</text>
-<text x="455" y="320" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Aim for 15 to 25 entries</text>
-<line x1="346" y1="338" x2="564" y2="338" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="455" y="362" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#C4571C">A raw list, deduplicated</text>
-
-<line x1="582" y1="247" x2="606" y2="247" stroke="#C4571C" stroke-width="2"/>
-<polygon points="605,240 620,247 605,254" fill="#C4571C"/>
-
-<rect x="620" y="112" width="250" height="270" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<rect x="690" y="132" width="110" height="24" rx="12" fill="#C4571C"/>
-<text x="745" y="149" text-anchor="middle" font-family="Consolas, monospace" font-size="11.5" fill="#FFFFFF">MINUTES 35–50</text>
-<text x="745" y="192" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17.5" fill="#16181F">Score in bands</text>
-<line x1="636" y1="214" x2="854" y2="214" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="745" y="242" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Likelihood in anchored bands</text>
-<text x="745" y="268" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Impact in money or in hours</text>
-<text x="745" y="294" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Score today, not after the plan</text>
-<text x="745" y="320" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Log disagreement, never average</text>
-<line x1="636" y1="338" x2="854" y2="338" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="745" y="362" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#C4571C">A ranked map that keeps the dispute</text>
-
-<line x1="872" y1="247" x2="896" y2="247" stroke="#C4571C" stroke-width="2"/>
-<polygon points="895,240 910,247 895,254" fill="#C4571C"/>
-
-<rect x="910" y="112" width="250" height="270" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="1.5"/>
-<rect x="980" y="132" width="110" height="24" rx="12" fill="#C4571C"/>
-<text x="1035" y="149" text-anchor="middle" font-family="Consolas, monospace" font-size="11.5" fill="#FFFFFF">MINUTES 50–60</text>
-<text x="1035" y="192" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17.5" fill="#16181F">Assign and diarise</text>
-<line x1="926" y1="214" x2="1144" y2="214" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="1035" y="242" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">A named owner on every line</text>
-<text x="1035" y="268" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Top five get an indicator</text>
-<text x="1035" y="294" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Corrections due in five days</text>
-<text x="1035" y="320" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Quarterly review booked</text>
-<line x1="926" y1="338" x2="1144" y2="338" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="1035" y="362" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#C4571C">Owners, thresholds, two dates</text>
-
-<rect x="40" y="404" width="1120" height="180" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="1.5"/>
-<text x="600" y="430" text-anchor="middle" font-family="Consolas, monospace" font-size="12" fill="#C4571C">AT THE END OF SIXTY MINUTES</text>
-
-<rect x="60" y="446" width="350" height="118" rx="10" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="235" y="478" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#16181F">A draft map, not a register</text>
-<line x1="76" y1="494" x2="394" y2="494" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="235" y="520" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">15 to 25 risks written as events</text>
-<text x="235" y="544" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Each with a cause and an effect</text>
-
-<rect x="425" y="446" width="350" height="118" rx="10" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="600" y="478" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#16181F">A name against every line</text>
-<line x1="441" y1="494" x2="759" y2="494" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="600" y="520" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Owners who can change the exposure</text>
-<text x="600" y="544" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Unowned risks escalated that week</text>
-
-<rect x="790" y="446" width="350" height="118" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
-<text x="965" y="478" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#16181F">Two dates in the calendar</text>
-<line x1="806" y1="494" x2="1124" y2="494" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="965" y="520" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Corrections closed in five days</text>
-<text x="965" y="544" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">The first quarterly review booked</text>
-
-<text x="600" y="616" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#5B564A">A risk map says what could happen and how likely. How fast harm accumulates is a different question — that is impact analysis.</text>
-<text x="600" y="644" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#8A8578">The 5×5 matrix only ranks. Add speed of onset, an early indicator and control confidence before you decide.</text>
-<text x="600" y="676" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#8A8578">Sixty minutes buys a first honest picture, not a risk management system · risk-place.org</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 1962" width="1060" height="1962" role="img" aria-label="A sixty minute risk mapping session in four timed blocks, framing, surfacing, scoring and assigning, with the three outputs the hour produces">
+<rect x="0" y="0" width="1060" height="1962" fill="#FDFBF7"/>
+<text x="530" y="48" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="28" fill="#16181F">Sixty minutes, four blocks, one honest first map</text>
+<text x="530" y="82" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#5B564A">The clock does half the work. Each block has one job and produces one thing the next block needs.</text>
+<rect x="8" y="112" width="1044" height="244" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<rect x="32" y="130" width="170" height="32" rx="16" fill="#C4571C"/>
+<text x="117" y="153" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#FFFFFF">MINUTES 0–10</text>
+<text x="226" y="154" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Frame the question</text>
+<line x1="32" y1="176" x2="1028" y2="176" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="32" y="206" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Name the objective at stake</text>
+<text x="32" y="232" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Nobody defends their area</text>
+<text x="32" y="258" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">One sentence form on the wall</text>
+<text x="32" y="284" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">cause, event, effect</text>
+<line x1="32" y1="304" x2="1028" y2="304" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="32" y="332" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#A34D19">A rule and a clock everyone accepts</text>
+<line x1="530" y1="362" x2="530" y2="376" stroke="#C4571C" stroke-width="2.5"/><polygon points="523,374 530,388 537,374" fill="#C4571C"/>
+<rect x="8" y="396" width="1044" height="244" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<rect x="32" y="414" width="170" height="32" rx="16" fill="#C4571C"/>
+<text x="117" y="437" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#FFFFFF">MINUTES 10–35</text>
+<text x="226" y="438" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Surface the risks</text>
+<line x1="32" y1="460" x2="1028" y2="460" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="32" y="490" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Four questions, asked in order</text>
+<text x="32" y="516" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Written on cards, then read</text>
+<text x="32" y="542" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Split risk from problem</text>
+<text x="32" y="568" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Aim for 15 to 25 entries</text>
+<line x1="32" y1="588" x2="1028" y2="588" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="32" y="616" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#A34D19">A raw list, deduplicated</text>
+<line x1="530" y1="646" x2="530" y2="660" stroke="#C4571C" stroke-width="2.5"/><polygon points="523,658 530,672 537,658" fill="#C4571C"/>
+<rect x="8" y="680" width="1044" height="244" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<rect x="32" y="698" width="170" height="32" rx="16" fill="#C4571C"/>
+<text x="117" y="721" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#FFFFFF">MINUTES 35–50</text>
+<text x="226" y="722" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Score in bands</text>
+<line x1="32" y1="744" x2="1028" y2="744" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="32" y="774" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Likelihood in anchored bands</text>
+<text x="32" y="800" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Impact in money or in hours</text>
+<text x="32" y="826" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Score today, not after the plan</text>
+<text x="32" y="852" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Log disagreement, never average</text>
+<line x1="32" y1="872" x2="1028" y2="872" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="32" y="900" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#A34D19">A ranked map that keeps the dispute</text>
+<line x1="530" y1="930" x2="530" y2="944" stroke="#C4571C" stroke-width="2.5"/><polygon points="523,942 530,956 537,942" fill="#C4571C"/>
+<rect x="8" y="964" width="1044" height="244" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="2"/>
+<rect x="32" y="982" width="170" height="32" rx="16" fill="#C4571C"/>
+<text x="117" y="1005" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#FFFFFF">MINUTES 50–60</text>
+<text x="226" y="1006" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Assign and diarise</text>
+<line x1="32" y1="1028" x2="1028" y2="1028" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="32" y="1058" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">A named owner on every line</text>
+<text x="32" y="1084" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Top five get an indicator</text>
+<text x="32" y="1110" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Corrections due in five days</text>
+<text x="32" y="1136" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Quarterly review booked</text>
+<line x1="32" y1="1156" x2="1028" y2="1156" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="32" y="1184" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#A34D19">Owners, thresholds, two dates</text>
+<text x="530" y="1258" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#C4571C">AT THE END OF SIXTY MINUTES</text>
+<rect x="8" y="1280" width="1044" height="144" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="32" y="1324" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">A draft map, not a register</text>
+<line x1="32" y1="1344" x2="1028" y2="1344" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="32" y="1376" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">15 to 25 risks written as events</text>
+<text x="32" y="1402" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Each with a cause and an effect</text>
+<rect x="8" y="1444" width="1044" height="144" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="32" y="1488" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">A name against every line</text>
+<line x1="32" y1="1508" x2="1028" y2="1508" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="32" y="1540" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Owners who can change the exposure</text>
+<text x="32" y="1566" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Unowned risks escalated that week</text>
+<rect x="8" y="1608" width="1044" height="144" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="2"/>
+<text x="32" y="1652" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Two dates in the calendar</text>
+<line x1="32" y1="1672" x2="1028" y2="1672" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="32" y="1704" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Corrections closed in five days</text>
+<text x="32" y="1730" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">The first quarterly review booked</text>
+<text x="530" y="1812" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#5B564A">A risk map says what could happen and how likely.</text>
+<text x="530" y="1842" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#5B564A">How fast harm accumulates is a different question — that is impact analysis.</text>
+<text x="530" y="1886" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#5B564A">The 5×5 matrix only ranks. Add speed of onset, an early indicator and control confidence before you decide.</text>
+<text x="530" y="1926" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#5B564A">Sixty minutes buys a first honest picture, not a risk management system · risk-place.org</text>
 </svg>

@@ -100,6 +100,9 @@ a{color:#16181F;text-decoration:none}
   .art{padding:40px 0 10px}
   .stickycta.on{display:block}
 }
+
+figure.wide{width:1060px;max-width:calc(100vw - 36px);margin-left:50%;transform:translateX(-50%)}
+@media(max-width:1120px){figure.wide{width:calc(100vw - 36px)}}
 </style>
 </head>
 <body>
@@ -120,7 +123,7 @@ a{color:#16181F;text-decoration:none}
 <h2>The structure, section by section</h2>
 <table class="tbl"><thead><tr><th>Section</th><th>What it contains</th><th>The quality test</th></tr></thead><tbody><tr><td>1 · Activation</td><td>Who declares an incident, on what triggers, and how the plan is invoked</td><td>One page; a duty manager can apply it alone at night</td></tr><tr><td>2 · Roles and authority</td><td>Named roles with written authority: stop operations, spend money, speak externally</td><td>Every role has a deputy; no step requires a meeting</td></tr><tr><td>3 · First hours (checklists)</td><td>Scenario checklists for the first 1-4 hours: life safety, containment, notification</td><td>Verbs and owners, not policy prose</td></tr><tr><td>4 · Workarounds</td><td>How priority activities run degraded: manual processes, alternate suppliers, alternate facility</td><td>Each workaround names its trigger, capacity and time limit</td></tr><tr><td>5 · Recovery</td><td>Restoring activities to normal against RTO/RPO, in dependency order</td><td>Consistent with the BIA numbers, demonstrated in a test</td></tr><tr><td>6 · Communications</td><td>Who informs staff, clients, authorities, media — with pre-drafted holding statements</td><td>First statement ready within the hour without legal drafting from scratch</td></tr><tr><td>7 · Contacts and resources</td><td>People, suppliers, insurers, regulators; access codes location, alternate-site details</td><td>Dated, verified quarterly, available offline</td></tr></tbody></table>
 <div class="callout"><p>Length discipline: sections 1-3 — the part used under stress — should fit in 10-15 pages. Everything else is appendix. A 120-page monolith is not a plan; it is a filing cabinet with a cover.</p></div>
-<figure><img src="assets/figures/bcp-structure-en.svg" alt="Seven sections of a business continuity plan, what each section contains and the quality test each one has to pass" loading="lazy"><figcaption>Seven sections, and the test each one has to pass at two in the morning.</figcaption></figure>
+<figure class="wide"><img src="assets/figures/bcp-structure-en.svg" alt="Seven sections of a business continuity plan, what each section contains and the quality test each one has to pass" loading="lazy"><figcaption>Seven sections, and the test each one has to pass at two in the morning.</figcaption></figure>
 <h2>Why downloaded templates fail</h2>
 <ul><li><b>They start from documents, not from the BIA.</b> A template cannot know your critical activities, downtime costs or recovery objectives — and without them every section is furniture.</li><li><b>Generic roles.</b> «The crisis manager coordinates response» assigns nothing. A real plan names people, deputies and the limits of their authority in dirhams and decisions.</li><li><b>No workarounds.</b> Templates recover systems; businesses survive on workarounds while systems recover. The manual-process section is usually the difference between inconvenience and shutdown.</li><li><b>Never exercised.</b> A template that has not been tested against a realistic scenario — ransomware, facility closure — is unproven by definition. The first real test should not be the incident.</li></ul>
 <h2>Keeping it alive</h2>

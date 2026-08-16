@@ -21,7 +21,9 @@ h2{font-size:24px;margin:28px 0 12px;color:#16181F}
 p.b{font-size:16.5px;margin-bottom:18px}
 ul,ol{padding-inline-start:24px;margin-bottom:18px;font-size:16.5px}li{margin-bottom:8px}
 img{max-width:100%;height:auto;border:1px solid #E1DCD3;border-radius:10px;margin:8px 0}
-figure{margin:22px 0}figcaption{font-size:13.5px;color:#8A8578;margin-top:6px}
+figure{margin:22px 0}figcaption{font-size:14.5px;color:#5B564A;margin-top:8px;text-align:center}
+figure.wide{width:1060px;max-width:calc(100vw - 36px);margin-left:50%;transform:translateX(-50%)}
+@media(max-width:1120px){figure.wide{width:calc(100vw - 36px)}}
 table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
 .rel{margin:30px 0;padding:16px 20px;background:#fff;border:1px solid #E1DCD3;border-radius:10px;font-size:15px}
 .rel b{display:block;margin-bottom:8px}.rel a{color:#C4571C;text-decoration:none;margin-inline-end:16px}
@@ -41,10 +43,10 @@ footer{border-top:1px solid #E1DCD3;margin-top:48px;padding-top:18px;font-size:1
 <p class="b">"We will recover as fast as possible" is not a plan — it is a hope. Recovery becomes manageable when it is expressed as targets: how long the business survives an outage (MAO), how fast a process must be restored (RTO), how much data may be lost (RPO), and what minimum level of service must be kept during recovery (MBCO). Process owners propose the numbers based on the <a href="terms/en/bia.html">Business Impact Analysis (BIA)</a>, finance checks them against the cost of downtime, executive management approves them, and the board sees the aggregate picture. The approved numbers then flow into architecture decisions, supplier SLAs and test plans.</p>
 <h2>MAO: the boundary of the unacceptable</h2>
 <p class="b">The <a href="terms/en/mao.html">Maximum Acceptable Outage</a> is the longest a process can stand still before the damage becomes unacceptable: contract penalties, regulatory breach, patient safety, irreversible loss of clients. Some standards call the same boundary <a href="terms/en/mtpd.html">MTPD</a> — the Maximum Tolerable Period of Disruption. Beyond this line you are no longer managing an incident; you are managing the survival of the business. The MAO comes from business analysis, not from IT: it reflects what customers, contracts and regulators will tolerate.</p>
-<figure><img src="assets/figures/mao-boundary-en.png" alt="Timeline diagram showing the Maximum Acceptable Outage (MAO) as the boundary where disruption damage becomes unacceptable" loading="lazy"><figcaption>The MAO marks the point where disruption damage becomes unacceptable.</figcaption></figure>
+<figure class="wide"><img src="assets/figures/mao-boundary-en.png" alt="Timeline diagram showing the Maximum Acceptable Outage (MAO) as the boundary where disruption damage becomes unacceptable" loading="lazy"><figcaption>The MAO marks the point where disruption damage becomes unacceptable.</figcaption></figure>
 <h2>RTO: inside the MAO, with margin</h2>
 <p class="b">The <a href="terms/en/rto.html">Recovery Time Objective</a> is the target time to restore the process. It must sit inside the MAO with a margin, because real recoveries slip: a key person is unreachable, a step fails, a dependency surprises you. A margin of 30-50% of the MAO is a reasonable rule of thumb. Speed is bought, not declared — the shorter the RTO, the more expensive the standby architecture behind it, which is why an RTO is approved together with its price.</p>
-<figure><img src="assets/figures/rto-inside-mao-en.png" alt="Recovery timeline showing the Recovery Time Objective (RTO) positioned inside the MAO with a safety margin" loading="lazy"><figcaption>The RTO sits inside the MAO, leaving a safety margin for slippage.</figcaption></figure>
+<figure class="wide"><img src="assets/figures/rto-inside-mao-en.png" alt="Recovery timeline showing the Recovery Time Objective (RTO) positioned inside the MAO with a safety margin" loading="lazy"><figcaption>The RTO sits inside the MAO, leaving a safety margin for slippage.</figcaption></figure>
 <h2>RPO: how much data you may lose</h2>
 <p class="b">The <a href="terms/en/rpo.html">Recovery Point Objective</a> limits data loss, measured in time. An RPO of 5 minutes means the last usable copy of the data is never older than 5 minutes — which dictates replication or backup at least that frequent. RTO and RPO answer different questions: RTO is about when customers are served again, RPO is about how much of their data survived. And a backup that has never been restored in a test does not count as a backup.</p>
 <h2>MBCO: the minimum level of service</h2>

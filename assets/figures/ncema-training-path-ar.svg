@@ -1,91 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" width="1200" height="660" direction="rtl" role="img" aria-label="خمس مراحل من التدريب على المعيار 7000 إلى كفاءة مثبتة، الأساس في المعيار ثم التطبيق على عملياتك ثم مخرجات العمل ثم التقييم ثم الكفاءة المثبتة">
-<rect x="0" y="0" width="1200" height="660" fill="#FDFBF7"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 1056" width="1060" height="1056" direction="rtl" role="img" aria-label="خمس مراحل من التدريب على المعيار 7000 إلى كفاءة مثبتة، الأساس في المعيار ثم التطبيق على عملياتك ثم مخرجات العمل ثم التقييم ثم الكفاءة المثبتة">
+<rect x="0" y="0" width="1060" height="1056" fill="#FDFBF7"/>
 
-<text x="600" y="50" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="27" fill="#16181F">من التدريب إلى كفاءة مثبتة</text>
-<text x="600" y="84" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15.5" fill="#5B564A">خمس مراحل، وما تتركه كل مرحلة من أثر موثق</text>
+<text x="530" y="48" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="28" fill="#16181F">من التدريب إلى كفاءة مثبتة</text>
+<text x="530" y="82" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="18" fill="#5B564A">خمس مراحل، وما تتركه كل مرحلة من أثر موثق</text>
 
 <!-- المرحلة 1 -->
-<rect x="980" y="112" width="180" height="250" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="1070" cy="148" r="17" fill="#C4571C"/>
-<text x="1070" y="154" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#FFFFFF">1</text>
-<text x="1070" y="197" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">الأساس</text>
-<text x="1070" y="219" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">في المعيار</text>
-<text x="1070" y="252" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">البنود والمصطلحات</text>
-<text x="1070" y="272" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">والفرق بين الإرشاد</text>
-<text x="1070" y="292" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">وبين الإلزام</text>
-<line x1="996" y1="310" x2="1144" y2="310" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="1070" y="332" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">3 إلى 4 ساعات</text>
+<rect x="8" y="112" width="1044" height="108" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="1000" cy="166" r="25" fill="#C4571C"/>
+<text x="1000" y="174" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">1</text>
+<text x="586" y="156" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">الأساس في المعيار</text>
+<text x="586" y="190" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">البنود والمصطلحات والفرق بين الإرشاد وبين الإلزام</text>
+<text x="116" y="190" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#A34D19">من 3 إلى 4 ساعات</text>
+<polygon points="993,226 1007,226 1000,238" fill="#C4571C"/>
 
 <!-- المرحلة 2 -->
-<rect x="745" y="112" width="180" height="250" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="835" cy="148" r="17" fill="#C4571C"/>
-<text x="835" y="154" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#FFFFFF">2</text>
-<text x="835" y="197" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">التطبيق على</text>
-<text x="835" y="219" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">عملياتك أنت</text>
-<text x="835" y="252" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">تحليل أثر لأنشطتك أنت</text>
-<text x="835" y="272" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">واعتماديات وموردين</text>
-<text x="835" y="292" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">وكلفة يوم توقف</text>
-<line x1="761" y1="310" x2="909" y2="310" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="835" y="332" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">8 إلى 10 ساعات</text>
+<rect x="8" y="246" width="1044" height="108" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="1000" cy="300" r="25" fill="#C4571C"/>
+<text x="1000" y="308" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">2</text>
+<text x="586" y="290" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">التطبيق على عملياتك أنت</text>
+<text x="586" y="324" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">تحليل أثر لأنشطتك أنت واعتماديات وموردين وكلفة يوم توقف</text>
+<text x="116" y="324" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#A34D19">من 8 إلى 10 ساعات</text>
+<polygon points="993,360 1007,360 1000,372" fill="#C4571C"/>
 
 <!-- المرحلة 3 -->
-<rect x="510" y="112" width="180" height="250" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="600" cy="148" r="17" fill="#C4571C"/>
-<text x="600" y="154" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#FFFFFF">3</text>
-<text x="600" y="197" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">مخرجات</text>
-<text x="600" y="219" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">عمل حقيقية</text>
-<text x="600" y="252" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">أهداف تعاف بالمال</text>
-<text x="600" y="272" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">وهيكل خطة بأسماء</text>
-<text x="600" y="292" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">وسيناريو تمرين</text>
-<line x1="526" y1="310" x2="674" y2="310" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="600" y="332" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">20 إلى 30 ساعة</text>
+<rect x="8" y="380" width="1044" height="108" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="1000" cy="434" r="25" fill="#C4571C"/>
+<text x="1000" y="442" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">3</text>
+<text x="586" y="424" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">مخرجات عمل حقيقية</text>
+<text x="586" y="458" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">أهداف تعاف بالمال وهيكل خطة بأسماء وسيناريو تمرين</text>
+<text x="116" y="458" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#A34D19">من 20 إلى 30 ساعة</text>
+<polygon points="993,494 1007,494 1000,506" fill="#C4571C"/>
 
 <!-- المرحلة 4 -->
-<rect x="275" y="112" width="180" height="250" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="365" cy="148" r="17" fill="#C4571C"/>
-<text x="365" y="154" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#FFFFFF">4</text>
-<text x="365" y="197" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">تقييم</text>
-<text x="365" y="219" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">بعتبة نجاح</text>
-<text x="365" y="252" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">اختبار يمكن الرسوب فيه</text>
-<text x="365" y="272" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">ومناقشة عمل من إعدادك</text>
-<text x="365" y="292" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">لا تسليم ملف فقط</text>
-<line x1="291" y1="310" x2="439" y2="310" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="365" y="332" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">ساعتان إلى ثلاث</text>
+<rect x="8" y="514" width="1044" height="108" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="1000" cy="568" r="25" fill="#C4571C"/>
+<text x="1000" y="576" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">4</text>
+<text x="586" y="558" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">تقييم بعتبة نجاح</text>
+<text x="586" y="592" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">اختبار يمكن الرسوب فيه ومناقشة عمل من إعدادك لا تسليم ملف فقط</text>
+<text x="116" y="592" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#A34D19">ساعتان إلى ثلاث</text>
+<polygon points="993,628 1007,628 1000,640" fill="#C4571C"/>
 
 <!-- المرحلة 5 -->
-<rect x="40" y="112" width="180" height="250" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="1.5"/>
-<circle cx="130" cy="148" r="17" fill="#C4571C"/>
-<text x="130" y="154" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#FFFFFF">5</text>
-<text x="130" y="197" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">كفاءة</text>
-<text x="130" y="219" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">مثبتة وموثقة</text>
-<text x="130" y="252" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">شخص مسمى وتاريخ</text>
-<text x="130" y="272" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">وسجل يتحقق منه</text>
-<text x="130" y="292" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">طرف ثالث</text>
-<line x1="56" y1="310" x2="204" y2="310" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="130" y="332" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">تحديث سنوي</text>
-
-<!-- الأسهم من اليمين إلى اليسار -->
-<line x1="968" y1="237" x2="941" y2="237" stroke="#C4571C" stroke-width="2"/><polygon points="942,231 929,237 942,243" fill="#C4571C"/>
-<line x1="733" y1="237" x2="706" y2="237" stroke="#C4571C" stroke-width="2"/><polygon points="707,231 694,237 707,243" fill="#C4571C"/>
-<line x1="498" y1="237" x2="471" y2="237" stroke="#C4571C" stroke-width="2"/><polygon points="472,231 459,237 472,243" fill="#C4571C"/>
-<line x1="263" y1="237" x2="236" y2="237" stroke="#C4571C" stroke-width="2"/><polygon points="237,231 224,237 237,243" fill="#C4571C"/>
+<rect x="8" y="648" width="1044" height="108" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="2"/>
+<circle cx="1000" cy="702" r="25" fill="#C4571C"/>
+<text x="1000" y="710" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">5</text>
+<text x="586" y="692" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">كفاءة مثبتة وموثقة</text>
+<text x="586" y="726" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">شخص مسمى وتاريخ وسجل يتحقق منه طرف ثالث</text>
+<text x="116" y="726" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#A34D19">تحديث سنوي</text>
 
 <!-- لوحة الأثر الموثق -->
-<rect x="40" y="406" width="1120" height="150" rx="10" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
-<rect x="1154" y="418" width="5" height="126" rx="2.5" fill="#C4571C"/>
-<text x="600" y="448" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="19" fill="#16181F">ما يبقى في الملف بعد انتهاء المسار</text>
+<rect x="8" y="782" width="1044" height="214" rx="10" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<rect x="1046" y="796" width="5" height="186" rx="2.5" fill="#C4571C"/>
+<text x="530" y="818" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">ما يبقى في الملف بعد انتهاء المسار</text>
 
-<text x="973" y="484" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#C4571C">للمدقق</text>
-<text x="973" y="511" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="14" fill="#5B564A">سجلات كفاءة بأسماء وتواريخ</text>
-<text x="973" y="533" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="14" fill="#5B564A">ومنهج تدريب ونتيجة تقييم</text>
+<text x="918" y="866" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#C4571C">للمدقق</text>
+<text x="430" y="866" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">سجلات كفاءة بأسماء وتواريخ ومنهج تدريب ونتيجة تقييم</text>
 
-<text x="600" y="484" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#C4571C">للمؤسسة</text>
-<text x="600" y="511" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="14" fill="#5B564A">تحليل أثر وأهداف تعاف وخطة</text>
-<text x="600" y="533" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="14" fill="#5B564A">وتقرير تمرين قيد الاستخدام</text>
+<text x="918" y="914" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#C4571C">للمؤسسة</text>
+<text x="430" y="914" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">تحليل أثر وأهداف تعاف وخطة وتقرير تمرين قيد الاستخدام</text>
 
-<text x="227" y="484" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#C4571C">للشخص</text>
-<text x="227" y="511" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="14" fill="#5B564A">شهادة يستطيع طرف ثالث</text>
-<text x="227" y="533" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="14" fill="#5B564A">التحقق من صحتها</text>
+<text x="918" y="962" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#C4571C">للشخص</text>
+<text x="430" y="962" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">شهادة يستطيع طرف ثالث التحقق من صحتها</text>
 
-<text x="600" y="604" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#8A8578">توعية ساعة ونصف للفرد · ممارس 16 إلى 24 ساعة اتصال · 6 إلى 10 أسابيع لكل ممارس</text>
+<text x="530" y="1030" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#5B564A">توعية ساعة ونصف للفرد · ممارس من 16 إلى 24 ساعة اتصال · من 6 إلى 10 أسابيع لكل ممارس</text>
 </svg>

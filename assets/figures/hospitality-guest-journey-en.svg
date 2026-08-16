@@ -1,85 +1,78 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760" role="img" aria-label="The hotel guest journey, its points of failure and the manual fallback at each stage">
-<rect x="0" y="0" width="1200" height="760" fill="#FDFBF7"/>
-<text x="600" y="48" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="27" fill="#16181F">The guest journey, five stages and five failure points</text>
-<text x="600" y="82" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="15.5" fill="#5B564A">At every stage a system can fail, and a manual fallback must be written and rehearsed first</text>
-<rect x="39" y="118" width="205" height="120" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
-<text x="141.5" y="150" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#C4571C">1</text>
-<text x="141.5" y="180" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="15" fill="#16181F">Booking and rates</text>
-<text x="141.5" y="208" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#5B564A">Distribution channels</text>
-<line x1="246" y1="178" x2="254" y2="178" stroke="#C4571C" stroke-width="2"/>
-<polygon points="254,171 266,178 254,185" fill="#C4571C"/>
-<rect x="39" y="288" width="205" height="200" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="141.5" y="318" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#C4571C">Point of failure</text>
-<line x1="55" y1="336" x2="228" y2="336" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="141.5" y="364" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13.5" fill="#16181F">Booking channel down,</text>
-<text x="141.5" y="388" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13.5" fill="#16181F">rates frozen</text>
-<line x1="55" y1="416" x2="228" y2="416" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="141.5" y="442" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#8A8578">Fallback, approved</text>
-<text x="141.5" y="464" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#8A8578">paper rate sheet</text>
-<rect x="268" y="118" width="205" height="120" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="370.5" y="150" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#C4571C">2</text>
-<text x="370.5" y="180" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="15" fill="#16181F">Arrival and check-in</text>
-<text x="370.5" y="208" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#5B564A">Property management</text>
-<line x1="475" y1="178" x2="483" y2="178" stroke="#C4571C" stroke-width="2"/>
-<polygon points="483,171 495,178 483,185" fill="#C4571C"/>
-<rect x="268" y="288" width="205" height="200" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="370.5" y="318" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#C4571C">Point of failure</text>
-<line x1="284" y1="336" x2="457" y2="336" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="370.5" y="364" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13.5" fill="#16181F">PMS cannot assign</text>
-<text x="370.5" y="388" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13.5" fill="#16181F">or bill rooms</text>
-<line x1="284" y1="416" x2="457" y2="416" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="370.5" y="442" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#8A8578">Fallback, paper</text>
-<text x="370.5" y="464" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#8A8578">registration cards</text>
-<rect x="497" y="118" width="205" height="120" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="599.5" y="150" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#C4571C">3</text>
-<text x="599.5" y="180" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="15" fill="#16181F">Stay and room</text>
-<text x="599.5" y="208" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#5B564A">Key cards and cooling</text>
-<line x1="704" y1="178" x2="712" y2="178" stroke="#C4571C" stroke-width="2"/>
-<polygon points="712,171 724,178 712,185" fill="#C4571C"/>
-<rect x="497" y="288" width="205" height="200" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="599.5" y="318" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#C4571C">Point of failure</text>
-<line x1="513" y1="336" x2="686" y2="336" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="599.5" y="364" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13.5" fill="#16181F">Key cards dead,</text>
-<text x="599.5" y="388" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13.5" fill="#16181F">cooling lost</text>
-<line x1="513" y1="416" x2="686" y2="416" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="599.5" y="442" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#8A8578">Fallback, generator</text>
-<text x="599.5" y="464" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#8A8578">load priorities</text>
-<rect x="726" y="118" width="205" height="120" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="828.5" y="150" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#C4571C">4</text>
-<text x="828.5" y="180" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#16181F">Restaurants and facilities</text>
-<text x="828.5" y="208" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#5B564A">Point of sale and supply</text>
-<line x1="933" y1="178" x2="941" y2="178" stroke="#C4571C" stroke-width="2"/>
-<polygon points="941,171 953,178 941,185" fill="#C4571C"/>
-<rect x="726" y="288" width="205" height="200" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="828.5" y="318" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#C4571C">Point of failure</text>
-<line x1="742" y1="336" x2="915" y2="336" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="828.5" y="364" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13.5" fill="#16181F">Point of sale, laundry</text>
-<text x="828.5" y="388" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13.5" fill="#16181F">and supply interrupted</text>
-<line x1="742" y1="416" x2="915" y2="416" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="828.5" y="442" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#8A8578">Fallback, pre-qualified</text>
-<text x="828.5" y="464" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#8A8578">alternate suppliers</text>
-<rect x="955" y="118" width="205" height="120" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="1057.5" y="150" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#C4571C">5</text>
-<text x="1057.5" y="180" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="15" fill="#16181F">Departure and payment</text>
-<text x="1057.5" y="208" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#5B564A">Checkout and settlement</text>
-<rect x="955" y="288" width="205" height="200" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="1057.5" y="318" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#C4571C">Point of failure</text>
-<line x1="971" y1="336" x2="1144" y2="336" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="1057.5" y="364" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13.5" fill="#16181F">Billing and payment</text>
-<text x="1057.5" y="388" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13.5" fill="#16181F">gateway offline</text>
-<line x1="971" y1="416" x2="1144" y2="416" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="1057.5" y="442" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#8A8578">Fallback, manual ledger</text>
-<text x="1057.5" y="464" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#8A8578">and later settlement</text>
-<rect x="40" y="520" width="1120" height="170" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
-<rect x="41" y="534" width="5" height="142" rx="2.5" fill="#C4571C"/>
-<text x="600" y="552" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#C4571C">What the guest actually remembers</text>
-<text x="600" y="588" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="15" fill="#16181F">Guests rarely remember the incident, they remember whether staff knew what they were doing</text>
-<rect x="70" y="612" width="330" height="30" rx="6" fill="#E7E2DA" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="235" y="632" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#16181F">First-hours card per department</text>
-<rect x="435" y="612" width="330" height="30" rx="6" fill="#E7E2DA" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="600" y="632" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#16181F">One voice for the property</text>
-<rect x="800" y="612" width="330" height="30" rx="6" fill="#E7E2DA" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="965" y="632" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#16181F">Paper rates and registration</text>
-<text x="600" y="672" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#5B564A">Manual fallbacks are written and rehearsed on a quiet shift, not invented at full occupancy</text>
-<text x="600" y="728" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#8A8578">Source, hospitality continuity · risk-place.org</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 1376" width="1060" height="1376" role="img" aria-label="The hotel guest journey, its points of failure and the manual fallback at each stage">
+<rect x="0" y="0" width="1060" height="1376" rx="0" fill="#FDFBF7"/>
+
+<text x="530" y="48" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="28" fill="#16181F">The guest journey, five stages and five failure points</text>
+<text x="530" y="82" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#5B564A">At every stage a system can fail, and a manual fallback must be written and rehearsed first</text>
+
+<rect x="8" y="112" width="1044" height="168" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="60" cy="196" r="25" fill="#C4571C"/>
+<text x="60" y="204" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">1</text>
+<text x="108" y="154" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Booking and rates</text>
+<text x="108" y="186" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#5B564A">Distribution channels</text>
+<text x="108" y="224" font-family="Consolas, monospace" font-size="15" fill="#A34D19">POINT OF FAILURE</text>
+<text x="290" y="224" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Booking channel down, rates frozen</text>
+<text x="108" y="258" font-family="Consolas, monospace" font-size="15" fill="#A34D19">FALLBACK</text>
+<text x="290" y="258" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">approved paper rate sheet</text>
+
+<polygon points="53,286 67,286 60,298" fill="#C4571C"/>
+
+<rect x="8" y="306" width="1044" height="168" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="60" cy="390" r="25" fill="#C4571C"/>
+<text x="60" y="398" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">2</text>
+<text x="108" y="348" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Arrival and check-in</text>
+<text x="108" y="380" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#5B564A">Property management</text>
+<text x="108" y="418" font-family="Consolas, monospace" font-size="15" fill="#A34D19">POINT OF FAILURE</text>
+<text x="290" y="418" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">PMS cannot assign or bill rooms</text>
+<text x="108" y="452" font-family="Consolas, monospace" font-size="15" fill="#A34D19">FALLBACK</text>
+<text x="290" y="452" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">paper registration cards</text>
+
+<polygon points="53,480 67,480 60,492" fill="#C4571C"/>
+
+<rect x="8" y="500" width="1044" height="168" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="60" cy="584" r="25" fill="#C4571C"/>
+<text x="60" y="592" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">3</text>
+<text x="108" y="542" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Stay and room</text>
+<text x="108" y="574" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#5B564A">Key cards and cooling</text>
+<text x="108" y="612" font-family="Consolas, monospace" font-size="15" fill="#A34D19">POINT OF FAILURE</text>
+<text x="290" y="612" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Key cards dead, cooling lost</text>
+<text x="108" y="646" font-family="Consolas, monospace" font-size="15" fill="#A34D19">FALLBACK</text>
+<text x="290" y="646" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">generator load priorities</text>
+
+<polygon points="53,674 67,674 60,686" fill="#C4571C"/>
+
+<rect x="8" y="694" width="1044" height="168" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="60" cy="778" r="25" fill="#C4571C"/>
+<text x="60" y="786" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">4</text>
+<text x="108" y="736" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Restaurants and facilities</text>
+<text x="108" y="768" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#5B564A">Point of sale and supply</text>
+<text x="108" y="806" font-family="Consolas, monospace" font-size="15" fill="#A34D19">POINT OF FAILURE</text>
+<text x="290" y="806" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Point of sale, laundry and supply interrupted</text>
+<text x="108" y="840" font-family="Consolas, monospace" font-size="15" fill="#A34D19">FALLBACK</text>
+<text x="290" y="840" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">pre-qualified alternate suppliers</text>
+
+<polygon points="53,868 67,868 60,880" fill="#C4571C"/>
+
+<rect x="8" y="888" width="1044" height="168" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="60" cy="972" r="25" fill="#C4571C"/>
+<text x="60" y="980" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">5</text>
+<text x="108" y="930" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Departure and payment</text>
+<text x="108" y="962" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#5B564A">Checkout and settlement</text>
+<text x="108" y="1000" font-family="Consolas, monospace" font-size="15" fill="#A34D19">POINT OF FAILURE</text>
+<text x="290" y="1000" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Billing and payment gateway offline</text>
+<text x="108" y="1034" font-family="Consolas, monospace" font-size="15" fill="#A34D19">FALLBACK</text>
+<text x="290" y="1034" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">manual ledger and later settlement</text>
+
+<rect x="8" y="1088" width="1044" height="224" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
+<rect x="9" y="1102" width="5" height="196" rx="2.5" fill="#C4571C"/>
+<text x="530" y="1128" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#C4571C">What the guest actually remembers</text>
+<text x="530" y="1166" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#16181F">Guests rarely remember the incident, they remember whether staff knew what they were doing</text>
+<rect x="40" y="1194" width="316" height="40" rx="8" fill="#E7E2DA" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="198" y="1220" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#16181F">First-hours card per department</text>
+<rect x="372" y="1194" width="316" height="40" rx="8" fill="#E7E2DA" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="530" y="1220" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#16181F">One voice for the property</text>
+<rect x="704" y="1194" width="316" height="40" rx="8" fill="#E7E2DA" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="862" y="1220" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#16181F">Paper rates and registration</text>
+<text x="530" y="1284" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#5B564A">Manual fallbacks are written and rehearsed on a quiet shift, not invented at full occupancy</text>
+
+<text x="530" y="1348" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#5B564A">Source, hospitality continuity · risk-place.org</text>
 </svg>

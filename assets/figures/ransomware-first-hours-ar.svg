@@ -1,80 +1,71 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" direction="rtl" role="img" aria-label="اليوم الأول لهجوم برمجية الفدية موزعا على الساعات، ومعه القرارات الخمسة التي تحتاج صاحبا مسمى">
-<rect x="0" y="0" width="1200" height="680" fill="#FDFBF7"/>
-<text x="600" y="48" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="27" fill="#16181F">اليوم الأول، بالترتيب الذي تصل به القرارات</text>
-<text x="600" y="82" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15.5" fill="#5B564A">العزل والإعلان والتشغيل المتدهور والتواصل وحفظ الأدلة، ولكل واحد منها صاحب قبل اليوم لا فيه</text>
-<rect x="907" y="116" width="253" height="244" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="1033.5" y="144" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">الساعة الأولى</text>
-<text x="1033.5" y="176" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17.5" fill="#16181F">التأكد والتصنيف</text>
-<line x1="1144" y1="192" x2="923" y2="192" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="1033.5" y="220" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">نقطة اتصال مناوبة تستلم البلاغ</text>
-<text x="1033.5" y="242" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">فتح سجل القرارات بالتوقيتات</text>
-<text x="1033.5" y="264" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">لا بريد جماعي ولا شائعات</text>
-<text x="1033.5" y="286" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">الساعة الأولى العامة</text>
-<text x="1033.5" y="308" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">بروتوكول مستقل</text>
-<line x1="901" y1="238" x2="892" y2="238" stroke="#C4571C" stroke-width="2"/>
-<polygon points="892,231 877,238 892,245" fill="#C4571C"/>
-<rect x="618" y="116" width="253" height="244" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="744.5" y="144" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">الساعات من 1 إلى 4</text>
-<text x="744.5" y="176" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17.5" fill="#16181F">العزل والإعلان</text>
-<line x1="855" y1="192" x2="634" y2="192" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="744.5" y="220" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">فصل الشبكات والمواقع</text>
-<text x="744.5" y="242" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">بصلاحية مكتوبة</text>
-<text x="744.5" y="264" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">تفعيل خطة الاستمرارية</text>
-<text x="744.5" y="286" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">عند عتبتها المكتوبة</text>
-<text x="744.5" y="308" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">تجميد الاستعادة</text>
-<text x="744.5" y="330" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">حتى تحفظ الأدلة</text>
-<line x1="612" y1="238" x2="603" y2="238" stroke="#C4571C" stroke-width="2"/>
-<polygon points="603,231 588,238 603,245" fill="#C4571C"/>
-<rect x="329" y="116" width="253" height="244" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="455.5" y="144" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">الساعات من 4 إلى 12</text>
-<text x="455.5" y="176" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17.5" fill="#16181F">التشغيل والتواصل</text>
-<line x1="566" y1="192" x2="345" y2="192" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="455.5" y="220" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">الأنشطة ذات الأولوية</text>
-<text x="455.5" y="242" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">تنتقل إلى الوضع اليدوي</text>
-<text x="455.5" y="264" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">بيان أولي للموظفين</text>
-<text x="455.5" y="286" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">وللعملاء</text>
-<text x="455.5" y="308" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">المؤمن والمستشار القانوني</text>
-<text x="455.5" y="330" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">على الخط بالفعل</text>
-<line x1="323" y1="238" x2="314" y2="238" stroke="#C4571C" stroke-width="2"/>
-<polygon points="314,231 299,238 314,245" fill="#C4571C"/>
-<rect x="40" y="116" width="253" height="244" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="166.5" y="144" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">الساعات من 12 إلى 24</text>
-<text x="166.5" y="176" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17.5" fill="#16181F">الإخطار وإعادة البناء</text>
-<line x1="277" y1="192" x2="56" y2="192" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="166.5" y="220" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">مسار الإخطار مع المستشار</text>
-<text x="166.5" y="242" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">والساعة تبدأ بالاكتشاف</text>
-<text x="166.5" y="264" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">الاستعادة من نسخة</text>
-<text x="166.5" y="286" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">أثبتها اختبار استعادة</text>
-<text x="166.5" y="308" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">أي تواصل مع المهاجمين</text>
-<text x="166.5" y="330" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">متروك للمختصين</text>
-<rect x="40" y="388" width="1120" height="150" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="1.5"/>
-<text x="600" y="416" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#C4571C">خمسة قرارات تحتاج اسما لا اجتماعا</text>
-<rect x="932" y="432" width="208" height="84" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
-<circle cx="1036" cy="454" r="13" fill="#C4571C"/>
-<text x="1036" y="459" text-anchor="middle" direction="rtl" font-family="Consolas, monospace" font-size="13" fill="#FFFFFF">1</text>
-<text x="1036" y="485" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#16181F">العزل</text>
-<text x="1036" y="506" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="11.5" fill="#8A8578">صلاحية مكتوبة على مدار الساعة</text>
-<rect x="704" y="432" width="208" height="84" rx="10" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="808" cy="454" r="13" fill="#C4571C"/>
-<text x="808" y="459" text-anchor="middle" direction="rtl" font-family="Consolas, monospace" font-size="13" fill="#FFFFFF">2</text>
-<text x="808" y="485" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#16181F">الإعلان</text>
-<text x="808" y="506" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="11.5" fill="#8A8578">عتبة محددة لا نقاش</text>
-<rect x="476" y="432" width="208" height="84" rx="10" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="580" cy="454" r="13" fill="#C4571C"/>
-<text x="580" y="459" text-anchor="middle" direction="rtl" font-family="Consolas, monospace" font-size="13" fill="#FFFFFF">3</text>
-<text x="580" y="485" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#16181F">التشغيل المتدهور</text>
-<text x="580" y="506" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="11.5" fill="#8A8578">من خطط الوضع اليدوي</text>
-<rect x="248" y="432" width="208" height="84" rx="10" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="352" cy="454" r="13" fill="#C4571C"/>
-<text x="352" y="459" text-anchor="middle" direction="rtl" font-family="Consolas, monospace" font-size="13" fill="#FFFFFF">4</text>
-<text x="352" y="485" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#16181F">التواصل</text>
-<text x="352" y="506" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="11.5" fill="#8A8578">صوت واحد وبيانات معدة سلفا</text>
-<rect x="20" y="432" width="208" height="84" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
-<circle cx="124" cy="454" r="13" fill="#C4571C"/>
-<text x="124" y="459" text-anchor="middle" direction="rtl" font-family="Consolas, monospace" font-size="13" fill="#FFFFFF">5</text>
-<text x="124" y="485" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#16181F">حفظ الأدلة</text>
-<text x="124" y="506" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="11.5" fill="#8A8578">قبل استعادة أي شيء</text>
-<rect x="40" y="558" width="1120" height="54" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
-<text x="600" y="590" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="14" fill="#16181F">بطاقة من صفحة واحدة، خمسة قرارات وأصحاب ونواب وعتبات وأرقام، مغلفة ودون اتصال وفي ثلاثة مواقع</text>
-<text x="600" y="650" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">الساعة تبدأ بالاكتشاف لا باجتماعكم الأول · risk-place.org</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 1766" width="1060" height="1766" direction="rtl" role="img" aria-label="اليوم الأول لهجوم برمجية الفدية موزعا على الساعات، ومعه القرارات الخمسة التي تحتاج صاحبا مسمى">
+<rect x="0" y="0" width="1060" height="1766" fill="#FDFBF7"/>
+<text x="530" y="48" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="28" fill="#16181F">اليوم الأول، بالترتيب الذي تصل به القرارات</text>
+<text x="530" y="82" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="18" fill="#5B564A">العزل والإعلان والتشغيل المتدهور والتواصل وحفظ الأدلة،</text>
+<text x="530" y="108" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="18" fill="#5B564A">ولكل واحد منها صاحب قبل اليوم لا فيه</text>
+<rect x="8" y="138" width="1044" height="200" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<rect x="840" y="156" width="192" height="32" rx="16" fill="#C4571C"/>
+<text x="936" y="179" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#FFFFFF">الساعة الأولى</text>
+<text x="733.7" y="180" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">التأكد والتصنيف</text>
+<line x1="32" y1="202" x2="1028" y2="202" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="905.4" y="232" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">نقطة اتصال مناوبة تستلم البلاغ</text>
+<text x="911.0" y="258" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">فتح سجل القرارات بالتوقيتات</text>
+<text x="927.2" y="284" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">لا بريد جماعي ولا شائعات</text>
+<text x="876.2" y="310" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">الساعة الأولى العامة بروتوكول مستقل</text>
+<line x1="530" y1="344" x2="530" y2="358" stroke="#C4571C" stroke-width="2.5"/><polygon points="523,356 530,370 537,356" fill="#C4571C"/>
+<rect x="8" y="378" width="1044" height="200" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<rect x="840" y="396" width="192" height="32" rx="16" fill="#C4571C"/>
+<text x="936" y="419" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#FFFFFF">الساعات من 1 إلى 4</text>
+<text x="739.8" y="420" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">العزل والإعلان</text>
+<line x1="32" y1="442" x2="1028" y2="442" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="872.9" y="472" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">فصل الشبكات والمواقع بصلاحية مكتوبة</text>
+<text x="860.0" y="498" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">تفعيل خطة الاستمرارية عند عتبتها المكتوبة</text>
+<text x="898.1" y="524" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">تجميد الاستعادة حتى تحفظ الأدلة</text>
+<line x1="530" y1="584" x2="530" y2="598" stroke="#C4571C" stroke-width="2.5"/><polygon points="523,596 530,610 537,596" fill="#C4571C"/>
+<rect x="8" y="618" width="1044" height="200" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<rect x="840" y="636" width="192" height="32" rx="16" fill="#C4571C"/>
+<text x="936" y="659" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#FFFFFF">الساعات من 4 إلى 12</text>
+<text x="720.8" y="660" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">التشغيل والتواصل</text>
+<line x1="32" y1="682" x2="1028" y2="682" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="850.5" y="712" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">الأنشطة ذات الأولوية تنتقل إلى الوضع اليدوي</text>
+<text x="915.4" y="738" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">بيان أولي للموظفين وللعملاء</text>
+<text x="847.7" y="764" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">المؤمن والمستشار القانوني على الخط بالفعل</text>
+<line x1="530" y1="824" x2="530" y2="838" stroke="#C4571C" stroke-width="2.5"/><polygon points="523,836 530,850 537,836" fill="#C4571C"/>
+<rect x="8" y="858" width="1044" height="200" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="2"/>
+<rect x="840" y="876" width="192" height="32" rx="16" fill="#C4571C"/>
+<text x="936" y="899" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#FFFFFF">الساعات من 12 إلى 24</text>
+<text x="709.0" y="900" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">الإخطار وإعادة البناء</text>
+<line x1="32" y1="922" x2="1028" y2="922" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="825.8" y="952" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">مسار الإخطار مع المستشار والساعة تبدأ بالاكتشاف</text>
+<text x="872.3" y="978" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">الاستعادة من نسخة أثبتها اختبار استعادة</text>
+<text x="862.8" y="1004" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">أي تواصل مع المهاجمين متروك للمختصين</text>
+<text x="530" y="1120" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">خمسة قرارات تحتاج اسما لا اجتماعا</text>
+<rect x="8" y="1146" width="1044" height="76" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="2"/>
+<circle cx="1008" cy="1184" r="25" fill="#C4571C"/>
+<text x="1008" y="1192" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">1</text>
+<text x="929.8" y="1192" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">العزل</text>
+<text x="144.6" y="1192" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#A34D19">صلاحية مكتوبة على مدار الساعة</text>
+<rect x="8" y="1234" width="1044" height="76" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="1008" cy="1272" r="25" fill="#C4571C"/>
+<text x="1008" y="1280" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">2</text>
+<text x="924.2" y="1280" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">الإعلان</text>
+<text x="101.4" y="1280" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#A34D19">عتبة محددة لا نقاش</text>
+<rect x="8" y="1322" width="1044" height="76" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="1008" cy="1360" r="25" fill="#C4571C"/>
+<text x="1008" y="1368" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">3</text>
+<text x="867.6" y="1368" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">التشغيل المتدهور</text>
+<text x="114.3" y="1368" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#A34D19">من خطط الوضع اليدوي</text>
+<rect x="8" y="1410" width="1044" height="76" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="1008" cy="1448" r="25" fill="#C4571C"/>
+<text x="1008" y="1456" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">4</text>
+<text x="917.4" y="1456" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">التواصل</text>
+<text x="136.2" y="1456" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#A34D19">صوت واحد وبيانات معدة سلفا</text>
+<rect x="8" y="1498" width="1044" height="76" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="2"/>
+<circle cx="1008" cy="1536" r="25" fill="#C4571C"/>
+<text x="1008" y="1544" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">5</text>
+<text x="901.8" y="1544" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">حفظ الأدلة</text>
+<text x="106.5" y="1544" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#A34D19">قبل استعادة أي شيء</text>
+<rect x="8" y="1602" width="1044" height="80" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="2"/>
+<text x="530" y="1650" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">بطاقة من صفحة واحدة، خمسة قرارات وأصحاب ونواب وعتبات وأرقام، مغلفة ودون اتصال وفي ثلاثة مواقع</text>
+<text x="530" y="1726" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#5B564A">الساعة تبدأ بالاكتشاف لا باجتماعكم الأول · risk-place.org</text>
 </svg>

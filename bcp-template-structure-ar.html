@@ -21,7 +21,9 @@ h2{font-size:24px;margin:28px 0 12px;color:#16181F}
 p.b{font-size:16.5px;margin-bottom:18px}
 ul,ol{padding-inline-start:24px;margin-bottom:18px;font-size:16.5px}li{margin-bottom:8px}
 img{max-width:100%;height:auto;border:1px solid #E1DCD3;border-radius:10px;margin:8px 0}
-figure{margin:22px 0}figcaption{font-size:13.5px;color:#8A8578;margin-top:6px}
+figure{margin:22px 0}figcaption{font-size:14.5px;color:#5B564A;margin-top:8px;text-align:center}
+figure.wide{width:1060px;max-width:calc(100vw - 36px);margin-left:50%;transform:translateX(-50%)}
+@media(max-width:1120px){figure.wide{width:calc(100vw - 36px)}}
 table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
 .rel{margin:30px 0;padding:16px 20px;background:#fff;border:1px solid #E1DCD3;border-radius:10px;font-size:15px}
 .rel b{display:block;margin-bottom:8px}.rel a{color:#C4571C;text-decoration:none;margin-inline-end:16px}
@@ -50,7 +52,7 @@ footer{border-top:1px solid #E1DCD3;margin-top:48px;padding-top:18px;font-size:1
 <tr><td>7 · جهات الاتصال والموارد</td><td>أشخاص وموردون ومؤمنون ومنظمون، وموضع رموز الوصول وتفاصيل الموقع البديل</td><td>مؤرخة ومتحقق منها كل ربع ومتاحة دون اتصال بالشبكة</td></tr>
 </tbody></table>
 <p class="b">اقرؤوا العمود الثالث قبل الثاني. اختبار الجودة هو ما يحول القسم من عنوان إلى ضابط، وهو مصاغ عمدا بحيث يجاب عنه بنعم أو لا دون نقاش. والقسمان اللذان يفشلان أكثر من غيرهما هما الرابع والخامس. فالحلول المؤقتة تكتب عادة بصيغة النية دون طاقة قصوى ولا حد زمني، فتبدو حلا وهي في الحقيقة أمنية. والتعافي يكتب دون ربط بأرقام <a href="terms/ar/rto.html">هدف زمن التعافي</a> و<a href="terms/ar/rpo.html">هدف نقطة الاستعادة</a> الخارجة من <a href="terms/ar/bia.html">تحليل أثر الأعمال</a>، فتظهر في الخطة أرقام لم يوافق عليها أحد ولم تختبر قط. ومعنى الرقمين وكيفية وضعهما بصدق في صفحة <a href="rto-rpo-explained-ar.html">شرح RTO وRPO</a>.</p>
-<figure><img src="assets/figures/bcp-structure-ar.svg" alt="رسم للأقسام السبعة لخطة استمرارية الأعمال وماذا يحتوي كل قسم واختبار الجودة الذي يجب أن يجتازه" loading="lazy"><figcaption>سبعة أقسام، ولكل قسم اختبار جودة واحد يقال بجملة واحدة ويجاب عنه بنعم أو لا.</figcaption></figure>
+<figure class="wide"><img src="assets/figures/bcp-structure-ar.svg" alt="رسم للأقسام السبعة لخطة استمرارية الأعمال وماذا يحتوي كل قسم واختبار الجودة الذي يجب أن يجتازه" loading="lazy"><figcaption>سبعة أقسام، ولكل قسم اختبار جودة واحد يقال بجملة واحدة ويجاب عنه بنعم أو لا.</figcaption></figure>
 <h2>انضباط الطول، وهو ضابط لا ذوق</h2>
 <p class="b">الأقسام من 1 إلى 3، وهي الجزء المستخدم فعليا تحت الضغط، ينبغي أن تسع من 10 إلى 15 صفحة، وكل ما عداها ملاحق. الكتلة المؤلفة من 120 صفحة ليست خطة بل خزانة ملفات لها غلاف، وهي تفشل لسبب مادي بسيط، لأن أحدا لن يتصفحها بحثا عن رقم هاتف بينما الهاتف يرن. والقاعدة العملية أن كل صفحة إضافية في الجزء الأول يجب أن تدفع ثمنها بقرار تسرعه، وإلا فمكانها الملحق. ولا تكرروا المحتوى بين الوثائق، فالمحتوى المشترك يعيش مرة واحدة ويشار إليه من كل مكان، والتكرار هو ما يجعل التحديث مستحيلا بعد سنة.</p>
 <h2>لماذا تفشل القوالب الجاهزة</h2>

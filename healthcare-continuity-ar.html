@@ -21,7 +21,9 @@ h2{font-size:24px;margin:28px 0 12px;color:#16181F}
 p.b{font-size:16.5px;margin-bottom:18px}
 ul,ol{padding-inline-start:24px;margin-bottom:18px;font-size:16.5px}li{margin-bottom:8px}
 img{max-width:100%;height:auto;border:1px solid #E1DCD3;border-radius:10px;margin:8px 0}
-figure{margin:22px 0}figcaption{font-size:13.5px;color:#8A8578;margin-top:6px}
+figure{margin:22px 0}figcaption{font-size:14.5px;color:#5B564A;margin-top:8px;text-align:center}
+figure.wide{width:1060px;max-width:calc(100vw - 36px);margin-left:50%;transform:translateX(-50%)}
+@media(max-width:1120px){figure.wide{width:calc(100vw - 36px)}}
 table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
 .rel{margin:30px 0;padding:16px 20px;background:#fff;border:1px solid #E1DCD3;border-radius:10px;font-size:15px}
 .rel b{display:block;margin-bottom:8px}.rel a{color:#C4571C;text-decoration:none;margin-inline-end:16px}
@@ -41,7 +43,7 @@ footer{border-top:1px solid #E1DCD3;margin-top:48px;padding-top:18px;font-size:1
 <p class="b">في أغلب القطاعات يتحول التعطل إلى إيراد مؤجل، وفي المستشفى يتحول مباشرة إلى خطر سريري، نتيجة مخبرية تتأخر عن قرار علاجي، وسجل مريض غير متاح لحظة وصف الدواء، وإجراء جراحي يؤجل. لذلك لا يرتب <a href="business-impact-analysis-ar.html">تحليل أثر الأعمال</a> في الصحة الأنشطة بالإيراد وحده، بل باحتمال ضرر المريض عبر الزمن، وهو معيار يقلب الترتيب أحيانا رأسا على عقب، فقد يسبق مختبر صغير خدمة تدر أضعاف إيراده. وتوضع أهداف التعافي بالتحمل السريري لا بالتفضيل التجاري، أي أن الرقم يخرج من الحوكمة السريرية ثم تصادق عليه الإدارة، لا العكس. وهذا سقف إثبات أعلى مما تعتاده القطاعات الأخرى، لأن المنظم الصحي وجهة الاعتماد وشركة التأمين يقرأون الملف نفسه. والأساس الإداري وراء هذه اللغة في <a href="what-is-bcm-ar.html">صفحة تعريف استمرارية الأعمال</a> وفي مصطلح <a href="terms/ar/bia.html">تحليل الأثر</a>.</p>
 <h2>الخدمات الحرجة وزمن غيابها المسموح</h2>
 <p class="b">الناتج الأول الذي يستحق الجهد قائمة قصيرة بالخدمات السريرية الحرجة، ولكل خدمة أقصى مدة غياب يتحملها المريض قبل أن يتحول التأخير إلى ضرر. الطوارئ والعناية المركزة تقاس بالدقائق، وغرف العمليات بالساعة، والمختبر وبنك الدم بساعات قليلة، والصيدلية بساعات أطول ما دام مخزون الجناح قائما، والعيادات الخارجية والفوترة بأيام. هذه المسافة بين الدقائق والأيام كل ما تحتاجه لتوزيع ميزانية الاستمرارية بلا جدال، فالمولد المزدوج والمسار الورقي يذهبان إلى صدر القائمة لا إلى الخدمة التي رفع مديرها صوته. وتترجم الأرقام إلى ثلاثة مفاهيم عملية، <a href="terms/ar/mtpd.html">أقصى مدة توقف محتملة</a> لكل خدمة، و<a href="terms/ar/mbco.html">الحد الأدنى المقبول من الخدمة</a> الذي يبقي الرعاية آمنة بنصف الطاقة، وهدف زمن التعافي لكل نظام يسند تلك الخدمة، وصياغتها مشروحة في <a href="recovery-objectives-ar.html">صفحة أهداف التعافي</a>. ولا تكتمل الأرقام إلا باعتماد الحوكمة السريرية ومراجعتها سنويا.</p>
-<figure><img src="assets/figures/healthcare-critical-services-ar.svg" alt="رسم للخدمات السريرية الحرجة في المستشفى وأقصى مدة غياب يتحملها المريض لكل خدمة" loading="lazy"><figcaption>الخدمات الحرجة مرتبة بزمن الغياب المسموح، من دقائق الطوارئ إلى أيام الفوترة.</figcaption></figure>
+<figure class="wide"><img src="assets/figures/healthcare-critical-services-ar.svg" alt="رسم للخدمات السريرية الحرجة في المستشفى وأقصى مدة غياب يتحملها المريض لكل خدمة" loading="lazy"><figcaption>الخدمات الحرجة مرتبة بزمن الغياب المسموح، من دقائق الطوارئ إلى أيام الفوترة.</figcaption></figure>
 <h2>خمسة سيناريوهات تحدد جاهزية المستشفى</h2>
 <p class="b">خمسة سيناريوهات تغطي أغلب ما يعطل مستشفى في المنطقة، ولكل واحد رهانه السريري واختبار جاهزية لا يقبل إجابة ورقية.</p>
 <table>

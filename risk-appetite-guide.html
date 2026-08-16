@@ -21,7 +21,9 @@ h2{font-size:24px;margin:28px 0 12px;color:#16181F}
 p.b{font-size:16.5px;margin-bottom:18px}
 ul,ol{padding-inline-start:24px;margin-bottom:18px;font-size:16.5px}li{margin-bottom:8px}
 img{max-width:100%;height:auto;border:1px solid #E1DCD3;border-radius:10px;margin:8px 0}
-figure{margin:22px 0}figcaption{font-size:13.5px;color:#8A8578;margin-top:6px}
+figure{margin:22px 0}figcaption{font-size:14.5px;color:#5B564A;margin-top:8px;text-align:center}
+figure.wide{width:1060px;max-width:calc(100vw - 36px);margin-left:50%;transform:translateX(-50%)}
+@media(max-width:1120px){figure.wide{width:calc(100vw - 36px)}}
 table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
 .rel{margin:30px 0;padding:16px 20px;background:#fff;border:1px solid #E1DCD3;border-radius:10px;font-size:15px}
 .rel b{display:block;margin-bottom:8px}.rel a{color:#C4571C;text-decoration:none;margin-inline-end:16px}
@@ -41,7 +43,7 @@ footer{border-top:1px solid #E1DCD3;margin-top:48px;padding-top:18px;font-size:1
 <p class="b">Most companies own a sentence such as "we take a prudent approach to risk". That is a motto, not an appetite. A working <a href="terms/en/risk-appetite.html">risk appetite</a> statement is a governance instrument in the sense of ISO 31000 and COSO ERM: the board debates it, approves it, and reviews performance against it. It makes real choices — which risks the company deliberately seeks, which it accepts as the cost of doing business, and which it refuses at any price. And it is written so that it can be breached, because a boundary nobody can cross controls nothing. The practical test takes ten seconds: could a manager use this document to decline a deal, a vendor or a shortcut? If nothing in the business would change after the statement was rewritten, it is decoration.</p>
 <h2>Capacity, appetite, tolerance: three nested levels</h2>
 <p class="b">The three words are often used interchangeably; they should not be. Risk capacity is the outer wall — the maximum loss the organisation can absorb without breaching solvency, liquidity, covenants or licence conditions. Risk appetite sits inside capacity: the share of that capacity the board consciously puts at risk to execute the strategy, always leaving a buffer for the surprises no register predicted. Risk tolerances sit inside appetite: measurable boundaries for individual categories and objectives — no single counterparty above USD 25 million, no more than 4 hours of disruption to the payments service, no audit finding open beyond 90 days. Each level must fit inside the previous one. An appetite that exceeds capacity is not ambition; it is a gamble with the balance sheet.</p>
-<figure><img src="assets/figures/capacity-appetite-tolerance-en.png" alt="Diagram of risk capacity, risk appetite and risk tolerance as three nested levels" loading="lazy"><figcaption>Capacity, appetite, tolerance: each level fits inside the one before.</figcaption></figure>
+<figure class="wide"><img src="assets/figures/capacity-appetite-tolerance-en.png" alt="Diagram of risk capacity, risk appetite and risk tolerance as three nested levels" loading="lazy"><figcaption>Capacity, appetite, tolerance: each level fits inside the one before.</figcaption></figure>
 <h2>What a risk appetite statement consists of</h2>
 <p class="b">A usable statement runs two to four pages and contains five blocks.</p>
 <ul>
@@ -53,7 +55,7 @@ footer{border-top:1px solid #E1DCD3;margin-top:48px;padding-top:18px;font-size:1
 </ul>
 <h2>Cascade down into limits, escalate up</h2>
 <p class="b">A statement that stays in the board pack controls nothing. Downwards runs the <a href="terms/en/appetite-cascade.html">appetite cascade</a>: board figures become category tolerances, tolerances become business unit limits, limits become operational thresholds and KRIs on management dashboards. Credit appetite turns into counterparty limits; continuity appetite turns into recovery targets per service. Upwards runs escalation: an amber threshold buys management attention, a red breach reaches the risk committee or the board within a defined number of hours — not at the next quarterly meeting. The two directions form one loop, and the loop, not the prose, is what converts a declaration into control. Designing this architecture — statement, cascade, escalation — is covered in module M1 of the ERGP programme.</p>
-<figure><img src="assets/figures/appetite-cascade-en.png" alt="Diagram of the risk appetite cascade from board statement to limits, thresholds and KRIs, with escalation flowing back up" loading="lazy"><figcaption>Downwards, appetite becomes limits and thresholds. Upwards, breaches escalate.</figcaption></figure>
+<figure class="wide"><img src="assets/figures/appetite-cascade-en.png" alt="Diagram of the risk appetite cascade from board statement to limits, thresholds and KRIs, with escalation flowing back up" loading="lazy"><figcaption>Downwards, appetite becomes limits and thresholds. Upwards, breaches escalate.</figcaption></figure>
 <h2>Defending it at the board: five questions to prepare for</h2>
 <ol>
 <li><b>"Why these numbers and not others?"</b> Anchor every figure to capacity. Show the arithmetic from equity, liquidity and covenants downwards — not from last year's limit plus 10 percent.</li>

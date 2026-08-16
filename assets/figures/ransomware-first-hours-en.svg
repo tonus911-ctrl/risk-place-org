@@ -1,80 +1,71 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" role="img" aria-label="The first day of a ransomware event laid out by hour, with the five decisions that need a named owner">
-<rect x="0" y="0" width="1200" height="680" fill="#FDFBF7"/>
-<text x="600" y="48" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="27" fill="#16181F">The first day, in the order the decisions arrive</text>
-<text x="600" y="82" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15.5" fill="#5B564A">Isolation, declaration, degraded operation, communication and evidence — each one owned before the day, not during it</text>
-<rect x="40" y="116" width="253" height="244" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="166.5" y="144" text-anchor="middle" font-family="Consolas, monospace" font-size="12.5" fill="#C4571C">HOUR 1</text>
-<text x="166.5" y="176" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17.5" fill="#16181F">Confirm and classify</text>
-<line x1="56" y1="192" x2="277" y2="192" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="166.5" y="220" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">One duty contact takes the call</text>
-<text x="166.5" y="242" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">The decision log is opened</text>
-<text x="166.5" y="264" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">No mass mail and no rumours</text>
-<text x="166.5" y="286" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">The generic first hour is</text>
-<text x="166.5" y="308" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">a separate protocol</text>
-<line x1="299" y1="238" x2="308" y2="238" stroke="#C4571C" stroke-width="2"/>
-<polygon points="308,231 323,238 308,245" fill="#C4571C"/>
-<rect x="329" y="116" width="253" height="244" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="455.5" y="144" text-anchor="middle" font-family="Consolas, monospace" font-size="12.5" fill="#C4571C">HOURS 1 TO 4</text>
-<text x="455.5" y="176" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17.5" fill="#16181F">Isolate and declare</text>
-<line x1="345" y1="192" x2="566" y2="192" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="455.5" y="220" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Networks and sites cut on</text>
-<text x="455.5" y="242" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">written authority</text>
-<text x="455.5" y="264" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">The continuity plan is invoked</text>
-<text x="455.5" y="286" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">at its written threshold</text>
-<text x="455.5" y="308" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Restoration frozen until</text>
-<text x="455.5" y="330" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">the evidence is taken</text>
-<line x1="588" y1="238" x2="597" y2="238" stroke="#C4571C" stroke-width="2"/>
-<polygon points="597,231 612,238 597,245" fill="#C4571C"/>
-<rect x="618" y="116" width="253" height="244" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="744.5" y="144" text-anchor="middle" font-family="Consolas, monospace" font-size="12.5" fill="#C4571C">HOURS 4 TO 12</text>
-<text x="744.5" y="176" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17.5" fill="#16181F">Run degraded and speak</text>
-<line x1="634" y1="192" x2="855" y2="192" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="744.5" y="220" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Priority activities move to</text>
-<text x="744.5" y="242" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">their manual mode</text>
-<text x="744.5" y="264" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">A holding statement to staff</text>
-<text x="744.5" y="286" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">and to clients</text>
-<text x="744.5" y="308" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Insurer and counsel are</text>
-<text x="744.5" y="330" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">already on the line</text>
-<line x1="877" y1="238" x2="886" y2="238" stroke="#C4571C" stroke-width="2"/>
-<polygon points="886,231 901,238 886,245" fill="#C4571C"/>
-<rect x="907" y="116" width="253" height="244" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="1033.5" y="144" text-anchor="middle" font-family="Consolas, monospace" font-size="12.5" fill="#C4571C">HOURS 12 TO 24</text>
-<text x="1033.5" y="176" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17.5" fill="#16181F">Notify and rebuild</text>
-<line x1="923" y1="192" x2="1144" y2="192" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="1033.5" y="220" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">The notification path walked</text>
-<text x="1033.5" y="242" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">with counsel, from detection</text>
-<text x="1033.5" y="264" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Recovery only from a copy</text>
-<text x="1033.5" y="286" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">proven by a restore test</text>
-<text x="1033.5" y="308" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Any contact with attackers</text>
-<text x="1033.5" y="330" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">left to specialists</text>
-<rect x="40" y="388" width="1120" height="150" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="1.5"/>
-<text x="600" y="416" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#C4571C">Five decisions that need a name, not a meeting</text>
-<rect x="60" y="432" width="208" height="84" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
-<circle cx="164" cy="454" r="13" fill="#C4571C"/>
-<text x="164" y="459" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#FFFFFF">1</text>
-<text x="164" y="485" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#16181F">Isolate</text>
-<text x="164" y="506" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11.5" fill="#8A8578">Written authority, 24/7 reach</text>
-<rect x="288" y="432" width="208" height="84" rx="10" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="392" cy="454" r="13" fill="#C4571C"/>
-<text x="392" y="459" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#FFFFFF">2</text>
-<text x="392" y="485" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#16181F">Declare</text>
-<text x="392" y="506" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11.5" fill="#8A8578">A threshold, not a debate</text>
-<rect x="516" y="432" width="208" height="84" rx="10" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="620" cy="454" r="13" fill="#C4571C"/>
-<text x="620" y="459" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#FFFFFF">3</text>
-<text x="620" y="485" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#16181F">Operate degraded</text>
-<text x="620" y="506" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11.5" fill="#8A8578">From the manual-mode plans</text>
-<rect x="744" y="432" width="208" height="84" rx="10" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="848" cy="454" r="13" fill="#C4571C"/>
-<text x="848" y="459" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#FFFFFF">4</text>
-<text x="848" y="485" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#16181F">Communicate</text>
-<text x="848" y="506" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11.5" fill="#8A8578">One voice, statements ready</text>
-<rect x="972" y="432" width="208" height="84" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
-<circle cx="1076" cy="454" r="13" fill="#C4571C"/>
-<text x="1076" y="459" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#FFFFFF">5</text>
-<text x="1076" y="485" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#16181F">Preserve evidence</text>
-<text x="1076" y="506" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11.5" fill="#8A8578">Before restoring anything</text>
-<rect x="40" y="558" width="1120" height="54" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
-<text x="600" y="590" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#16181F">The one-page card — five decisions, owners, deputies, thresholds, numbers — laminated, offline, at three locations</text>
-<text x="600" y="650" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#8A8578">The clock starts at detection, not at your first meeting · risk-place.org</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 1766" width="1060" height="1766" role="img" aria-label="The first day of a ransomware event laid out by hour, with the five decisions that need a named owner">
+<rect x="0" y="0" width="1060" height="1766" fill="#FDFBF7"/>
+<text x="530" y="48" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="28" fill="#16181F">The first day, in the order the decisions arrive</text>
+<text x="530" y="82" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#5B564A">Isolation, declaration, degraded operation, communication and evidence —</text>
+<text x="530" y="108" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#5B564A">each one owned before the day, not during it</text>
+<rect x="8" y="138" width="1044" height="200" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<rect x="32" y="156" width="188" height="32" rx="16" fill="#C4571C"/>
+<text x="126" y="179" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#FFFFFF">HOUR 1</text>
+<text x="244" y="180" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Confirm and classify</text>
+<line x1="32" y1="202" x2="1028" y2="202" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="32" y="232" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">One duty contact takes the call</text>
+<text x="32" y="258" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">The decision log is opened</text>
+<text x="32" y="284" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">No mass mail and no rumours</text>
+<text x="32" y="310" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">The generic first hour is a separate protocol</text>
+<line x1="530" y1="344" x2="530" y2="358" stroke="#C4571C" stroke-width="2.5"/><polygon points="523,356 530,370 537,356" fill="#C4571C"/>
+<rect x="8" y="378" width="1044" height="200" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<rect x="32" y="396" width="188" height="32" rx="16" fill="#C4571C"/>
+<text x="126" y="419" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#FFFFFF">HOURS 1 TO 4</text>
+<text x="244" y="420" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Isolate and declare</text>
+<line x1="32" y1="442" x2="1028" y2="442" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="32" y="472" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Networks and sites cut on written authority</text>
+<text x="32" y="498" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">The continuity plan is invoked at its written threshold</text>
+<text x="32" y="524" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Restoration frozen until the evidence is taken</text>
+<line x1="530" y1="584" x2="530" y2="598" stroke="#C4571C" stroke-width="2.5"/><polygon points="523,596 530,610 537,596" fill="#C4571C"/>
+<rect x="8" y="618" width="1044" height="200" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<rect x="32" y="636" width="188" height="32" rx="16" fill="#C4571C"/>
+<text x="126" y="659" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#FFFFFF">HOURS 4 TO 12</text>
+<text x="244" y="660" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Run degraded and speak</text>
+<line x1="32" y1="682" x2="1028" y2="682" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="32" y="712" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Priority activities move to their manual mode</text>
+<text x="32" y="738" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">A holding statement to staff and to clients</text>
+<text x="32" y="764" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Insurer and counsel are already on the line</text>
+<line x1="530" y1="824" x2="530" y2="838" stroke="#C4571C" stroke-width="2.5"/><polygon points="523,836 530,850 537,836" fill="#C4571C"/>
+<rect x="8" y="858" width="1044" height="200" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="2"/>
+<rect x="32" y="876" width="188" height="32" rx="16" fill="#C4571C"/>
+<text x="126" y="899" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#FFFFFF">HOURS 12 TO 24</text>
+<text x="244" y="900" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Notify and rebuild</text>
+<line x1="32" y1="922" x2="1028" y2="922" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="32" y="952" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">The notification path walked with counsel, from detection</text>
+<text x="32" y="978" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Recovery only from a copy proven by a restore test</text>
+<text x="32" y="1004" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Any contact with attackers left to specialists</text>
+<text x="530" y="1120" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Five decisions that need a name, not a meeting</text>
+<rect x="8" y="1146" width="1044" height="76" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="2"/>
+<circle cx="52" cy="1184" r="25" fill="#C4571C"/>
+<text x="52" y="1192" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">1</text>
+<text x="100" y="1192" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Isolate</text>
+<text x="1028" y="1192" text-anchor="end" font-family="Consolas, monospace" font-size="15" fill="#A34D19">Written authority, 24/7 reach</text>
+<rect x="8" y="1234" width="1044" height="76" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="52" cy="1272" r="25" fill="#C4571C"/>
+<text x="52" y="1280" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">2</text>
+<text x="100" y="1280" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Declare</text>
+<text x="1028" y="1280" text-anchor="end" font-family="Consolas, monospace" font-size="15" fill="#A34D19">A threshold, not a debate</text>
+<rect x="8" y="1322" width="1044" height="76" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="52" cy="1360" r="25" fill="#C4571C"/>
+<text x="52" y="1368" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">3</text>
+<text x="100" y="1368" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Operate degraded</text>
+<text x="1028" y="1368" text-anchor="end" font-family="Consolas, monospace" font-size="15" fill="#A34D19">From the manual-mode plans</text>
+<rect x="8" y="1410" width="1044" height="76" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="52" cy="1448" r="25" fill="#C4571C"/>
+<text x="52" y="1456" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">4</text>
+<text x="100" y="1456" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Communicate</text>
+<text x="1028" y="1456" text-anchor="end" font-family="Consolas, monospace" font-size="15" fill="#A34D19">One voice, statements ready</text>
+<rect x="8" y="1498" width="1044" height="76" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="2"/>
+<circle cx="52" cy="1536" r="25" fill="#C4571C"/>
+<text x="52" y="1544" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">5</text>
+<text x="100" y="1544" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Preserve evidence</text>
+<text x="1028" y="1544" text-anchor="end" font-family="Consolas, monospace" font-size="15" fill="#A34D19">Before restoring anything</text>
+<rect x="8" y="1602" width="1044" height="80" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="2"/>
+<text x="530" y="1650" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#16181F">The one-page card — five decisions, owners, deputies, thresholds, numbers — laminated, offline, at three locations</text>
+<text x="530" y="1726" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#5B564A">The clock starts at detection, not at your first meeting · risk-place.org</text>
 </svg>

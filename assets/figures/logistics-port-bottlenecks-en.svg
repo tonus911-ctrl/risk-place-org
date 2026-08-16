@@ -1,89 +1,77 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 740" width="1200" height="740" role="img" aria-label="The logistics delivery chain, its four bottlenecks, what opens each of them and the commitment clock">
-<rect x="0" y="0" width="1200" height="740" fill="#FDFBF7"/>
-<text x="600" y="48" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="27" fill="#16181F">Where the delivery chain chokes, and what opens it</text>
-<text x="600" y="82" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="15.5" fill="#5B564A">The sector loses access, not assets — a corridor, a system or a permit is missing</text>
-<rect x="214" y="110" width="190" height="64" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
-<text x="309" y="134" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#C4571C">Area closure</text>
-<text x="309" y="156" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#5B564A">or a road corridor shut</text>
-<line x1="309" y1="176" x2="309" y2="196" stroke="#C4571C" stroke-width="2"/>
-<polygon points="302,196 309,208 316,196" fill="#C4571C"/>
-<rect x="408" y="110" width="190" height="64" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
-<text x="503" y="134" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#C4571C">Port congestion</text>
-<text x="503" y="156" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#5B564A">or airspace closure</text>
-<line x1="503" y1="176" x2="503" y2="196" stroke="#C4571C" stroke-width="2"/>
-<polygon points="496,196 503,208 510,196" fill="#C4571C"/>
-<rect x="602" y="110" width="190" height="64" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
-<text x="697" y="134" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#C4571C">Systems down</text>
-<text x="697" y="156" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#5B564A">and customs platforms</text>
-<line x1="697" y1="176" x2="697" y2="196" stroke="#C4571C" stroke-width="2"/>
-<polygon points="690,196 697,208 704,196" fill="#C4571C"/>
-<rect x="796" y="110" width="190" height="64" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
-<text x="891" y="134" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#C4571C">Partner failure</text>
-<text x="891" y="156" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#5B564A">carrier, broker, operator</text>
-<line x1="891" y1="176" x2="891" y2="196" stroke="#C4571C" stroke-width="2"/>
-<polygon points="884,196 891,208 898,196" fill="#C4571C"/>
-<rect x="30" y="210" width="170" height="92" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="115.0" y="248" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13.5" fill="#16181F">Origin or plant</text>
-<text x="115.0" y="276" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#8A8578">1</text>
-<line x1="202" y1="256" x2="210" y2="256" stroke="#C4571C" stroke-width="2"/>
-<polygon points="210,249 222,256 210,263" fill="#C4571C"/>
-<rect x="224" y="210" width="170" height="92" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="309.0" y="248" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13.5" fill="#16181F">Road haulage</text>
-<text x="309.0" y="276" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#8A8578">2</text>
-<line x1="396" y1="256" x2="404" y2="256" stroke="#C4571C" stroke-width="2"/>
-<polygon points="404,249 416,256 404,263" fill="#C4571C"/>
-<rect x="418" y="210" width="170" height="92" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="503.0" y="248" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13.5" fill="#16181F">Port or airport</text>
-<text x="503.0" y="276" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#8A8578">3</text>
-<line x1="590" y1="256" x2="598" y2="256" stroke="#C4571C" stroke-width="2"/>
-<polygon points="598,249 610,256 598,263" fill="#C4571C"/>
-<rect x="612" y="210" width="170" height="92" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="697.0" y="248" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13.5" fill="#16181F">Customs clearance</text>
-<text x="697.0" y="276" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#8A8578">4</text>
-<line x1="784" y1="256" x2="792" y2="256" stroke="#C4571C" stroke-width="2"/>
-<polygon points="792,249 804,256 792,263" fill="#C4571C"/>
-<rect x="806" y="210" width="170" height="92" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="891.0" y="248" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13.5" fill="#16181F">Warehouse</text>
-<text x="891.0" y="276" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#8A8578">5</text>
-<line x1="978" y1="256" x2="986" y2="256" stroke="#C4571C" stroke-width="2"/>
-<polygon points="986,249 998,256 986,263" fill="#C4571C"/>
-<rect x="1000" y="210" width="170" height="92" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="1085.0" y="248" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13.5" fill="#16181F">Delivery to client</text>
-<text x="1085.0" y="276" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#8A8578">6</text>
-<rect x="214" y="340" width="190" height="140" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="309" y="368" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#C4571C">What opens it</text>
-<line x1="230" y1="384" x2="388" y2="384" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="309" y="412" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#16181F">A priced road alternate</text>
-<text x="309" y="436" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#16181F">and a written trigger</text>
-<rect x="408" y="340" width="190" height="140" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="503" y="368" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#C4571C">What opens it</text>
-<line x1="424" y1="384" x2="582" y2="384" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="503" y="412" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#16181F">A second gateway</text>
-<text x="503" y="436" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#16181F">under contract, not intent</text>
-<rect x="602" y="340" width="190" height="140" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="697" y="368" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#C4571C">What opens it</text>
-<line x1="618" y1="384" x2="776" y2="384" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="697" y="412" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#16181F">Degraded mode on paper</text>
-<text x="697" y="436" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#16181F">and an offline data copy</text>
-<rect x="796" y="340" width="190" height="140" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="891" y="368" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#C4571C">What opens it</text>
-<line x1="812" y1="384" x2="970" y2="384" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="891" y="412" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#16181F">A qualified second partner</text>
-<text x="891" y="436" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#16181F">with the contract ready</text>
-<rect x="40" y="516" width="1120" height="150" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
-<rect x="41" y="530" width="5" height="122" rx="2.5" fill="#C4571C"/>
-<text x="600" y="542" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#C4571C">The commitment clock — what breaks and when</text>
-<rect x="60" y="558" width="340" height="92" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="230" y="586" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="14" fill="#C4571C">After 12 hours</text>
-<text x="230" y="610" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#16181F">cold chain</text>
-<text x="230" y="632" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#16181F">and express freight</text>
-<rect x="430" y="558" width="340" height="92" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="600" y="586" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="14" fill="#C4571C">After 24 hours</text>
-<text x="600" y="610" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#16181F">project cargo</text>
-<text x="600" y="632" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#16181F">carrying penalties</text>
-<rect x="800" y="558" width="340" height="92" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="970" y="586" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="14" fill="#C4571C">After 72 hours</text>
-<text x="970" y="610" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#16181F">the whole flow is</text>
-<text x="970" y="632" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#16181F">re-priced and re-routed</text>
-<text x="600" y="700" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#8A8578">Source — continuity for logistics and ports · risk-place.org</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 1394" width="1060" height="1394" role="img" aria-label="The logistics delivery chain, its four bottlenecks, what opens each of them and the commitment clock">
+<rect x="0" y="0" width="1060" height="1394" rx="0" fill="#FDFBF7"/>
+
+<text x="530" y="48" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="28" fill="#16181F">Where the delivery chain chokes, and what opens it</text>
+<text x="530" y="82" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#5B564A">The sector loses access, not assets — a corridor, a system or a permit is missing</text>
+
+<rect x="8" y="112" width="1044" height="88" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="60" cy="156" r="25" fill="#C4571C"/>
+<text x="60" y="164" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">1</text>
+<text x="108" y="166" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Origin or plant</text>
+
+<polygon points="53,206 67,206 60,218" fill="#C4571C"/>
+
+<rect x="8" y="226" width="1044" height="152" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="60" cy="302" r="25" fill="#C4571C"/>
+<text x="60" y="310" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">2</text>
+<text x="108" y="274" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Road haulage</text>
+<text x="108" y="314" font-family="Consolas, monospace" font-size="15" fill="#A34D19">BOTTLENECK</text>
+<text x="290" y="314" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Area closure or a road corridor shut</text>
+<text x="108" y="350" font-family="Consolas, monospace" font-size="15" fill="#A34D19">WHAT OPENS IT</text>
+<text x="290" y="350" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">A priced road alternate and a written trigger</text>
+
+<polygon points="53,384 67,384 60,396" fill="#C4571C"/>
+
+<rect x="8" y="404" width="1044" height="152" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="60" cy="480" r="25" fill="#C4571C"/>
+<text x="60" y="488" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">3</text>
+<text x="108" y="452" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Port or airport</text>
+<text x="108" y="492" font-family="Consolas, monospace" font-size="15" fill="#A34D19">BOTTLENECK</text>
+<text x="290" y="492" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Port congestion or airspace closure</text>
+<text x="108" y="528" font-family="Consolas, monospace" font-size="15" fill="#A34D19">WHAT OPENS IT</text>
+<text x="290" y="528" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">A second gateway under contract, not intent</text>
+
+<polygon points="53,562 67,562 60,574" fill="#C4571C"/>
+
+<rect x="8" y="582" width="1044" height="152" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="60" cy="658" r="25" fill="#C4571C"/>
+<text x="60" y="666" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">4</text>
+<text x="108" y="630" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Customs clearance</text>
+<text x="108" y="670" font-family="Consolas, monospace" font-size="15" fill="#A34D19">BOTTLENECK</text>
+<text x="290" y="670" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Systems down and customs platforms</text>
+<text x="108" y="706" font-family="Consolas, monospace" font-size="15" fill="#A34D19">WHAT OPENS IT</text>
+<text x="290" y="706" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Degraded mode on paper and an offline data copy</text>
+
+<polygon points="53,740 67,740 60,752" fill="#C4571C"/>
+
+<rect x="8" y="760" width="1044" height="152" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="60" cy="836" r="25" fill="#C4571C"/>
+<text x="60" y="844" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">5</text>
+<text x="108" y="808" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Warehouse</text>
+<text x="108" y="848" font-family="Consolas, monospace" font-size="15" fill="#A34D19">BOTTLENECK</text>
+<text x="290" y="848" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Partner failure, carrier, broker, operator</text>
+<text x="108" y="884" font-family="Consolas, monospace" font-size="15" fill="#A34D19">WHAT OPENS IT</text>
+<text x="290" y="884" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">A qualified second partner with the contract ready</text>
+
+<polygon points="53,918 67,918 60,930" fill="#C4571C"/>
+
+<rect x="8" y="938" width="1044" height="88" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="60" cy="982" r="25" fill="#C4571C"/>
+<text x="60" y="990" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">6</text>
+<text x="108" y="992" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Delivery to client</text>
+
+<rect x="8" y="1058" width="1044" height="272" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
+<rect x="9" y="1072" width="5" height="244" rx="2.5" fill="#C4571C"/>
+<text x="530" y="1098" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#C4571C">The commitment clock — what breaks and when</text>
+<rect x="36" y="1124" width="210" height="46" rx="8" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="141" y="1153" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#C4571C">After 12 hours</text>
+<text x="278" y="1153" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">cold chain and express freight</text>
+<rect x="36" y="1186" width="210" height="46" rx="8" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="141" y="1215" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#C4571C">After 24 hours</text>
+<text x="278" y="1215" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">project cargo carrying penalties</text>
+<rect x="36" y="1248" width="210" height="46" rx="8" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="141" y="1277" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#C4571C">After 72 hours</text>
+<text x="278" y="1277" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">the whole flow is re-priced and re-routed</text>
+
+<text x="530" y="1366" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#5B564A">Source — continuity for logistics and ports · risk-place.org</text>
 </svg>

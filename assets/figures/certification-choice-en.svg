@@ -6,25 +6,25 @@
 
 <!-- panel: the person -->
 <rect x="8" y="112" width="508" height="266" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="32" y="148" font-family="Consolas, monospace" font-size="14" letter-spacing="1.4" fill="#A34D19">CERTIFIES A PERSON</text>
+<text x="32" y="148" font-family="Consolas, monospace" font-size="15" letter-spacing="1.4" fill="#A34D19">CERTIFIES A PERSON</text>
 <text x="32" y="188" font-family="Georgia, 'Times New Roman', serif" font-size="24" fill="#16181F">A qualification you carry</text>
 <text x="32" y="226" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#3F3B33">Issued to a named individual by a professional</text>
 <text x="32" y="250" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#3F3B33">institute, a scheme owner or a training provider.</text>
 <text x="32" y="284" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#3F3B33">Proves a syllabus was covered and an exam passed.</text>
 <text x="32" y="308" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#3F3B33">Sometimes years of practice are verified too.</text>
 <line x1="32" y1="330" x2="492" y2="330" stroke="#D6D0C4" stroke-width="1.5"/>
-<text x="32" y="358" font-family="Consolas, monospace" font-size="14.5" fill="#5B564A">IT DOES NOT PROVE YOUR PLANS WORK</text>
+<text x="32" y="358" font-family="Consolas, monospace" font-size="15" fill="#5B564A">IT DOES NOT PROVE YOUR PLANS WORK</text>
 
 <!-- panel: the organisation -->
 <rect x="544" y="112" width="508" height="266" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="568" y="148" font-family="Consolas, monospace" font-size="14" letter-spacing="1.4" fill="#A34D19">CERTIFIES AN ORGANISATION</text>
+<text x="568" y="148" font-family="Consolas, monospace" font-size="15" letter-spacing="1.4" fill="#A34D19">CERTIFIES AN ORGANISATION</text>
 <text x="568" y="188" font-family="Georgia, 'Times New Roman', serif" font-size="24" fill="#16181F">A certificate the company holds</text>
 <text x="568" y="226" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#3F3B33">Issued to a legal entity after an audit by a</text>
 <text x="568" y="250" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#3F3B33">certification body, for a defined scope and period.</text>
 <text x="568" y="284" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#3F3B33">Proves the management system was examined</text>
 <text x="568" y="308" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#3F3B33">against a standard, and is re-checked later.</text>
 <line x1="568" y1="330" x2="1028" y2="330" stroke="#D6D0C4" stroke-width="1.5"/>
-<text x="568" y="358" font-family="Consolas, monospace" font-size="14.5" fill="#5B564A">IT DOES NOT PROVE ANY PERSON IS COMPETENT</text>
+<text x="568" y="358" font-family="Consolas, monospace" font-size="15" fill="#5B564A">IT DOES NOT PROVE ANY PERSON IS COMPETENT</text>
 
 <!-- arrows down into the test band -->
 <line x1="262" y1="390" x2="262" y2="414" stroke="#C4571C" stroke-width="2.5"/><polygon points="255,412 262,426 269,412" fill="#C4571C"/>

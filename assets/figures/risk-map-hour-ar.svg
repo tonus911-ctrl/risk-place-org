@@ -1,87 +1,72 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" direction="rtl" role="img" aria-label="جلسة رسم خريطة المخاطر في ستين دقيقة عبر أربع كتل موقوتة، التأطير ثم الاستخراج ثم التقدير ثم إسناد الملكية، مع المخرجات الثلاثة للساعة">
-<rect x="0" y="0" width="1200" height="700" fill="#FDFBF7"/>
-<text x="600" y="48" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="27" fill="#16181F">ستون دقيقة وأربع كتل وخريطة أولى صادقة</text>
-<text x="600" y="82" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15.5" fill="#5B564A">المؤقت يؤدي نصف العمل، ولكل كتلة مهمة واحدة ومخرج واحد تحتاجه الكتلة التالية</text>
-
-<rect x="910" y="112" width="250" height="270" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<rect x="959" y="132" width="152" height="24" rx="12" fill="#C4571C"/>
-<text x="1035" y="150" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="11.5" fill="#FFFFFF">من 0 إلى 10 دقيقة</text>
-<text x="1035" y="192" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17.5" fill="#16181F">تأطير السؤال</text>
-<line x1="1144" y1="214" x2="926" y2="214" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="1035" y="242" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">تسمية الهدف المعرض للخطر</text>
-<text x="1035" y="268" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">لا أحد يدافع عن إدارته</text>
-<text x="1035" y="294" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">صيغة الجملة الواحدة</text>
-<text x="1035" y="320" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">سبب ثم حدث ثم أثر</text>
-<line x1="1144" y1="338" x2="926" y2="338" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="1035" y="362" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">قاعدة وساعة يقبلهما الجميع</text>
-
-<line x1="908" y1="247" x2="884" y2="247" stroke="#C4571C" stroke-width="2"/>
-<polygon points="885,240 870,247 885,254" fill="#C4571C"/>
-
-<rect x="620" y="112" width="250" height="270" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<rect x="669" y="132" width="152" height="24" rx="12" fill="#C4571C"/>
-<text x="745" y="150" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="11.5" fill="#FFFFFF">من 10 إلى 35 دقيقة</text>
-<text x="745" y="192" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17.5" fill="#16181F">استخراج المخاطر</text>
-<line x1="854" y1="214" x2="636" y2="214" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="745" y="242" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">أربعة أسئلة بترتيبها</text>
-<text x="745" y="268" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">تكتب على بطاقات ثم تقرأ</text>
-<text x="745" y="294" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">فصل الخطر عن المشكلة</text>
-<text x="745" y="320" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">من 15 إلى 25 بندا</text>
-<line x1="854" y1="338" x2="636" y2="338" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="745" y="362" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">قائمة أولية بلا تكرار</text>
-
-<line x1="618" y1="247" x2="594" y2="247" stroke="#C4571C" stroke-width="2"/>
-<polygon points="595,240 580,247 595,254" fill="#C4571C"/>
-
-<rect x="330" y="112" width="250" height="270" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<rect x="379" y="132" width="152" height="24" rx="12" fill="#C4571C"/>
-<text x="455" y="150" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="11.5" fill="#FFFFFF">من 35 إلى 50 دقيقة</text>
-<text x="455" y="192" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17.5" fill="#16181F">التقدير بالنطاقات</text>
-<line x1="564" y1="214" x2="346" y2="214" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="455" y="242" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">الاحتمال بنطاقات مثبتة</text>
-<text x="455" y="268" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">الأثر بالمال أو بالساعات</text>
-<text x="455" y="294" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">التقدير اليوم لا بعد الخطة</text>
-<text x="455" y="320" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">تسجيل الخلاف بلا متوسط</text>
-<line x1="564" y1="338" x2="346" y2="338" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="455" y="362" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">خريطة مرتبة تحفظ الخلاف</text>
-
-<line x1="328" y1="247" x2="304" y2="247" stroke="#C4571C" stroke-width="2"/>
-<polygon points="305,240 290,247 305,254" fill="#C4571C"/>
-
-<rect x="40" y="112" width="250" height="270" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="1.5"/>
-<rect x="89" y="132" width="152" height="24" rx="12" fill="#C4571C"/>
-<text x="165" y="150" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="11.5" fill="#FFFFFF">من 50 إلى 60 دقيقة</text>
-<text x="165" y="192" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17.5" fill="#16181F">الملكية والمواعيد</text>
-<line x1="274" y1="214" x2="56" y2="214" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="165" y="242" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">مالك مسمى على كل سطر</text>
-<text x="165" y="268" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">الخمسة الأولى تنال مؤشرا</text>
-<text x="165" y="294" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">تصحيحات خلال خمسة أيام</text>
-<text x="165" y="320" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">حجز المراجعة الفصلية</text>
-<line x1="274" y1="338" x2="56" y2="338" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="165" y="362" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">ملاك وعتبات وموعدان</text>
-
-<rect x="40" y="404" width="1120" height="180" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="1.5"/>
-<text x="600" y="431" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">عند نهاية الستين دقيقة</text>
-
-<rect x="790" y="446" width="350" height="118" rx="10" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="965" y="478" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="16.5" fill="#16181F">مسودة خريطة لا سجل</text>
-<line x1="1124" y1="494" x2="806" y2="494" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="965" y="520" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">من 15 إلى 25 خطرا مكتوبا كأحداث</text>
-<text x="965" y="544" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">لكل منها سبب وأثر واضحان</text>
-
-<rect x="425" y="446" width="350" height="118" rx="10" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="600" y="478" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="16.5" fill="#16181F">اسم مقابل كل سطر</text>
-<line x1="759" y1="494" x2="441" y2="494" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="600" y="520" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">ملاك يستطيعون تغيير التعرض</text>
-<text x="600" y="544" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">البنود بلا مالك تصعد في الأسبوع نفسه</text>
-
-<rect x="60" y="446" width="350" height="118" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
-<text x="235" y="478" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="16.5" fill="#16181F">موعدان في التقويم</text>
-<line x1="394" y1="494" x2="76" y2="494" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="235" y="520" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">تصحيحات تغلق خلال خمسة أيام</text>
-<text x="235" y="544" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">أول مراجعة فصلية محجوزة</text>
-
-<text x="600" y="616" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">الخريطة تقول ماذا قد يقع وما احتماله، ولا تقول بأي سرعة يتراكم الضرر، فذاك سؤال تحليل الأثر</text>
-<text x="600" y="644" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#8A8578">مصفوفة خمسة في خمسة ترتب فقط، فأضيفوا سرعة الظهور والمؤشر المبكر والثقة بالضابط</text>
-<text x="600" y="676" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">ستون دقيقة تشتري أول صورة صادقة لا منظومة إدارة مخاطر · risk-place.org</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 1962" width="1060" height="1962" direction="rtl" role="img" aria-label="جلسة رسم خريطة المخاطر في ستين دقيقة عبر أربع كتل موقوتة، التأطير ثم الاستخراج ثم التقدير ثم إسناد الملكية، مع المخرجات الثلاثة للساعة">
+<rect x="0" y="0" width="1060" height="1962" fill="#FDFBF7"/>
+<text x="530" y="48" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="28" fill="#16181F">ستون دقيقة وأربع كتل وخريطة أولى صادقة</text>
+<text x="530" y="82" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="18" fill="#5B564A">المؤقت يؤدي نصف العمل، ولكل كتلة مهمة واحدة ومخرج واحد تحتاجه الكتلة التالية</text>
+<rect x="8" y="112" width="1044" height="244" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<rect x="848" y="130" width="180" height="32" rx="16" fill="#C4571C"/>
+<text x="938" y="153" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#FFFFFF">من 0 إلى 10 دقيقة</text>
+<text x="752.3" y="154" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">تأطير السؤال</text>
+<line x1="32" y1="176" x2="1028" y2="176" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="911.0" y="206" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">تسمية الهدف المعرض للخطر</text>
+<text x="942.3" y="232" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">لا أحد يدافع عن إدارته</text>
+<text x="946.8" y="258" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">صيغة الجملة الواحدة</text>
+<text x="946.8" y="284" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">سبب ثم حدث ثم أثر</text>
+<line x1="32" y1="304" x2="1028" y2="304" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="918.2" y="332" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#A34D19">قاعدة وساعة يقبلهما الجميع</text>
+<line x1="530" y1="362" x2="530" y2="376" stroke="#C4571C" stroke-width="2.5"/><polygon points="523,374 530,388 537,374" fill="#C4571C"/>
+<rect x="8" y="396" width="1044" height="244" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<rect x="848" y="414" width="180" height="32" rx="16" fill="#C4571C"/>
+<text x="938" y="437" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#FFFFFF">من 10 إلى 35 دقيقة</text>
+<text x="729.4" y="438" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">استخراج المخاطر</text>
+<line x1="32" y1="460" x2="1028" y2="460" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="954.1" y="490" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">أربعة أسئلة بترتيبها</text>
+<text x="925.0" y="516" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">تكتب على بطاقات ثم تقرأ</text>
+<text x="928.3" y="542" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">فصل الخطر عن المشكلة</text>
+<text x="952.4" y="568" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">من 15 إلى 25 بندا</text>
+<line x1="32" y1="588" x2="1028" y2="588" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="950.7" y="616" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#A34D19">قائمة أولية بلا تكرار</text>
+<line x1="530" y1="646" x2="530" y2="660" stroke="#C4571C" stroke-width="2.5"/><polygon points="523,658 530,672 537,658" fill="#C4571C"/>
+<rect x="8" y="680" width="1044" height="244" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<rect x="848" y="698" width="180" height="32" rx="16" fill="#C4571C"/>
+<text x="938" y="721" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#FFFFFF">من 35 إلى 50 دقيقة</text>
+<text x="732.7" y="722" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">التقدير بالنطاقات</text>
+<line x1="32" y1="744" x2="1028" y2="744" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="938.4" y="774" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">الاحتمال بنطاقات مثبتة</text>
+<text x="934.5" y="800" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">الأثر بالمال أو بالساعات</text>
+<text x="928.3" y="826" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">التقدير اليوم لا بعد الخطة</text>
+<text x="926.1" y="852" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">تسجيل الخلاف بلا متوسط</text>
+<line x1="32" y1="872" x2="1028" y2="872" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="921.6" y="900" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#A34D19">خريطة مرتبة تحفظ الخلاف</text>
+<line x1="530" y1="930" x2="530" y2="944" stroke="#C4571C" stroke-width="2.5"/><polygon points="523,942 530,956 537,942" fill="#C4571C"/>
+<rect x="8" y="964" width="1044" height="244" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="2"/>
+<rect x="848" y="982" width="180" height="32" rx="16" fill="#C4571C"/>
+<text x="938" y="1005" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#FFFFFF">من 50 إلى 60 دقيقة</text>
+<text x="733.3" y="1006" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">الملكية والمواعيد</text>
+<line x1="32" y1="1028" x2="1028" y2="1028" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="919.9" y="1058" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">مالك مسمى على كل سطر</text>
+<text x="923.3" y="1084" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">الخمسة الأولى تنال مؤشرا</text>
+<text x="923.3" y="1110" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">تصحيحات خلال خمسة أيام</text>
+<text x="940.6" y="1136" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">حجز المراجعة الفصلية</text>
+<line x1="32" y1="1156" x2="1028" y2="1156" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="940.6" y="1184" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#A34D19">ملاك وعتبات وموعدان</text>
+<text x="530" y="1258" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#C4571C">عند نهاية الستين دقيقة</text>
+<rect x="8" y="1280" width="1044" height="144" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="905.9" y="1324" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">مسودة خريطة لا سجل</text>
+<line x1="32" y1="1344" x2="1028" y2="1344" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="884.6" y="1376" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">من 15 إلى 25 خطرا مكتوبا كأحداث</text>
+<text x="918.8" y="1402" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">لكل منها سبب وأثر واضحان</text>
+<rect x="8" y="1444" width="1044" height="144" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="917.1" y="1488" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">اسم مقابل كل سطر</text>
+<line x1="32" y1="1508" x2="1028" y2="1508" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="911.0" y="1540" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">ملاك يستطيعون تغيير التعرض</text>
+<text x="878.5" y="1566" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">البنود بلا مالك تصعد في الأسبوع نفسه</text>
+<rect x="8" y="1608" width="1044" height="144" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="2"/>
+<text x="925.0" y="1652" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">موعدان في التقويم</text>
+<line x1="32" y1="1672" x2="1028" y2="1672" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="902.0" y="1704" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">تصحيحات تغلق خلال خمسة أيام</text>
+<text x="920.5" y="1730" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">أول مراجعة فصلية محجوزة</text>
+<text x="530" y="1812" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#5B564A">الخريطة تقول ماذا قد يقع وما احتماله، ولا تقول بأي سرعة يتراكم الضرر،</text>
+<text x="530" y="1842" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#5B564A">فذاك سؤال تحليل الأثر</text>
+<text x="530" y="1886" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#5B564A">مصفوفة خمسة في خمسة ترتب فقط، فأضيفوا سرعة الظهور والمؤشر المبكر والثقة بالضابط</text>
+<text x="530" y="1926" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#5B564A">ستون دقيقة تشتري أول صورة صادقة لا منظومة إدارة مخاطر · risk-place.org</text>
 </svg>

@@ -21,7 +21,9 @@ h2{font-size:24px;margin:28px 0 12px;color:#16181F}
 p.b{font-size:16.5px;margin-bottom:18px}
 ul,ol{padding-inline-start:24px;margin-bottom:18px;font-size:16.5px}li{margin-bottom:8px}
 img{max-width:100%;height:auto;border:1px solid #E1DCD3;border-radius:10px;margin:8px 0}
-figure{margin:22px 0}figcaption{font-size:13.5px;color:#8A8578;margin-top:6px}
+figure{margin:22px 0}figcaption{font-size:14.5px;color:#5B564A;margin-top:8px;text-align:center}
+figure.wide{width:1060px;max-width:calc(100vw - 36px);margin-left:50%;transform:translateX(-50%)}
+@media(max-width:1120px){figure.wide{width:calc(100vw - 36px)}}
 table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
 .rel{margin:30px 0;padding:16px 20px;background:#fff;border:1px solid #E1DCD3;border-radius:10px;font-size:15px}
 .rel b{display:block;margin-bottom:8px}.rel a{color:#C4571C;text-decoration:none;margin-inline-end:16px}
@@ -48,7 +50,7 @@ footer{border-top:1px solid #E1DCD3;margin-top:48px;padding-top:18px;font-size:1
 <tr><td>توقف الأنظمة</td><td>أنظمة النقل والمستودعات ومنصات الجمارك تتجمد، ومعها الحجوزات والتتبع والبيانات الجمركية</td><td>هل تعملون بوضع متدهور ببيانات ورقية وتأكيدات هاتفية، ولكم من الوقت</td></tr>
 <tr><td>تعثر شريك مفتاحي</td><td>ناقل أو مخلص جمركي أو مشغل مستودع يتوقف فجأة</td><td>من المصدر الثاني المتفق عليه سلفا، وهل العقد جاهز للتوقيع أم مجرد نية</td></tr>
 </table>
-<figure><img src="assets/figures/logistics-port-bottlenecks-ar.svg" alt="سلسلة التسليم اللوجستي من المنشأ إلى العميل، ومواضع الاختناق الأربعة وما يفتح كل اختناق" loading="lazy"><figcaption>مواضع الاختناق على سلسلة التسليم، وما يفتح كل اختناق منها.</figcaption></figure>
+<figure class="wide"><img src="assets/figures/logistics-port-bottlenecks-ar.svg" alt="سلسلة التسليم اللوجستي من المنشأ إلى العميل، ومواضع الاختناق الأربعة وما يفتح كل اختناق" loading="lazy"><figcaption>مواضع الاختناق على سلسلة التسليم، وما يفتح كل اختناق منها.</figcaption></figure>
 <h2>فرز الالتزامات قبل أن يفرزها الحدث</h2>
 <p class="b">في يوم الاضطراب تصبح السعة النادرة هي القرار، لا الشحنة. ومن لم يرتب التزاماته مسبقا سيرتبها الحدث نيابة عنه، غالبا بمنطق من اتصل أولا. وليست الشحنات سواء، فالحاوية المبردة تفقد قيمتها بالساعة وقد تفقدها كلها، وشحنة المشروع تحمل غرامة تأخير يومية منصوصا عليها في العقد، والشحن العادي يحتمل يوما أو يومين دون أثر تجاري يذكر. والأداة التي ترتب هذه الفروق هي <a href="business-impact-analysis-ar.html">تحليل أثر الأعمال</a>، وهو هنا لا يرتب الأقسام بل يرتب الالتزامات بكلفة التأخير للساعة الواحدة، وهذا الترتيب بالذات هو ما يقود كل قرار إعادة توجيه لاحق. ومن الترتيب نفسه تشتق <a href="terms/ar/rto.html">أهداف زمن التعافي</a> للخدمات المساندة التي تحمل هذه الالتزامات، من نظام الحجز إلى غرفة التحكم، وتفصيلها في <a href="recovery-objectives-ar.html">صفحة أهداف التعافي</a>. والفرز مكتوب مسبقا يوفر ساعات ثمينة في اليوم الذي لا يملك فيه أحد وقتا للنقاش.</p>
 <h2>البدائل تسعر في وقت السلم</h2>

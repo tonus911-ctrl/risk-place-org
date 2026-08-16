@@ -1,86 +1,71 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 730" width="1200" height="730" direction="rtl" role="img" aria-label="طبقتا التنظيم في الإمارات، كتاب قواعد المصرف المركزي والمادة 7، والمرسوم بقانون اتحادي رقم 6 لسنة 2025، ثم خمس محطات لملف الأدلة من السياسة الموثقة إلى التقرير المرفوع إلى المجلس">
-<rect x="0" y="0" width="1200" height="730" fill="#FDFBF7"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 1272" width="1060" height="1272" direction="rtl" role="img" aria-label="طبقتا التنظيم في الإمارات، كتاب قواعد المصرف المركزي والمادة 7، والمرسوم بقانون اتحادي رقم 6 لسنة 2025، ثم خمس محطات لملف الأدلة من السياسة الموثقة إلى التقرير المرفوع إلى المجلس">
+<rect x="0" y="0" width="1060" height="1272" fill="#FDFBF7"/>
 
-<text x="600" y="48" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="27" fill="#16181F">طبقتا التنظيم، ومسار الأدلة تحتهما</text>
-<text x="600" y="82" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15.5" fill="#5B564A">ما الذي ينظم المرونة التشغيلية في الإمارات، وما الذي يجب أن يجده الفاحص في الملف</text>
+<text x="530" y="48" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="28" fill="#16181F">طبقتا التنظيم، ومسار الأدلة تحتهما</text>
+<text x="530" y="82" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="18" fill="#5B564A">ما الذي ينظم المرونة التشغيلية في الإمارات، وما الذي يجب أن يجده الفاحص في الملف</text>
 
 <!-- الطبقة الأولى -->
-<rect x="40" y="104" width="1120" height="112" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<rect x="1154" y="116" width="5" height="88" rx="2.5" fill="#C4571C"/>
-<text x="600" y="132" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#C4571C">الطبقة الأولى · سارية الآن</text>
-<text x="600" y="163" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="19.5" fill="#16181F">كتاب قواعد المصرف المركزي، نظام ومعايير المخاطر التشغيلية</text>
-<text x="600" y="193" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="14" fill="#5B564A">المادة 7، التعافي من الكوارث وإدارة استمرارية الأعمال · تنطبق على البنوك المرخصة</text>
+<rect x="8" y="112" width="1044" height="124" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<rect x="1046" y="126" width="5" height="96" rx="2.5" fill="#C4571C"/>
+<text x="530" y="146" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#A34D19">الطبقة الأولى · سارية الآن</text>
+<text x="530" y="184" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">كتاب قواعد المصرف المركزي، نظام ومعايير المخاطر التشغيلية</text>
+<text x="530" y="216" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">المادة 7، التعافي من الكوارث وإدارة استمرارية الأعمال · تنطبق على البنوك المرخصة</text>
 
 <!-- الطبقة الثانية -->
-<rect x="40" y="228" width="1120" height="112" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<rect x="1154" y="240" width="5" height="88" rx="2.5" fill="#C4571C"/>
-<text x="600" y="256" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#C4571C">الطبقة الثانية · مهلة انتقالية حتى 16 سبتمبر 2026</text>
-<text x="600" y="287" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="19.5" fill="#16181F">المرسوم بقانون اتحادي رقم 6 لسنة 2025</text>
-<text x="600" y="317" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="14" fill="#5B564A">صدر في 8 سبتمبر 2025 ونفذ من 16 سبتمبر 2025 · المادة 149 · المادة 184</text>
+<rect x="8" y="252" width="1044" height="124" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<rect x="1046" y="266" width="5" height="96" rx="2.5" fill="#C4571C"/>
+<text x="530" y="286" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#A34D19">الطبقة الثانية · مهلة انتقالية حتى 16 سبتمبر 2026</text>
+<text x="530" y="324" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">المرسوم بقانون اتحادي رقم 6 لسنة 2025</text>
+<text x="530" y="356" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">صدر في 8 سبتمبر 2025 ونفذ من 16 سبتمبر 2025 · المادة 149 · المادة 184</text>
 
-<text x="600" y="368" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="19" fill="#16181F">ما يتوقع الفاحص أن يجده في الملف</text>
+<text x="530" y="422" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">ما يتوقع الفاحص أن يجده في الملف</text>
 
 <!-- المحطة 1 -->
-<rect x="980" y="396" width="180" height="176" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="1070" cy="428" r="16" fill="#C4571C"/>
-<text x="1070" y="434" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#FFFFFF">1</text>
-<text x="1070" y="468" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="16.5" fill="#16181F">سياسة موثقة</text>
-<text x="1070" y="489" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="16.5" fill="#16181F">بأدوار وصلاحيات</text>
-<line x1="996" y1="509" x2="1144" y2="509" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="1070" y="531" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">موقعة وسارية</text>
-<text x="1070" y="549" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">ويعرفها أصحابها</text>
+<rect x="8" y="446" width="1044" height="108" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="1000" cy="500" r="25" fill="#C4571C"/>
+<text x="1000" y="508" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">1</text>
+<text x="492" y="490" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">سياسة موثقة بأدوار وصلاحيات</text>
+<text x="492" y="524" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">موقعة وسارية ويعرفها أصحابها</text>
+<polygon points="993,558 1007,558 1000,568" fill="#C4571C"/>
 
 <!-- المحطة 2 -->
-<rect x="745" y="396" width="180" height="176" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="835" cy="428" r="16" fill="#C4571C"/>
-<text x="835" y="434" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#FFFFFF">2</text>
-<text x="835" y="468" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="16.5" fill="#16181F">تحليل أثر</text>
-<text x="835" y="489" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="16.5" fill="#16181F">وتقييم مخاطر</text>
-<line x1="761" y1="509" x2="909" y2="509" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="835" y="531" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">مستمران ومحدثان</text>
-<text x="835" y="549" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">مع تغير الأعمال</text>
+<rect x="8" y="570" width="1044" height="108" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="1000" cy="624" r="25" fill="#C4571C"/>
+<text x="1000" y="632" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">2</text>
+<text x="492" y="614" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">تحليل أثر وتقييم مخاطر</text>
+<text x="492" y="648" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">مستمران ومحدثان مع تغير الأعمال</text>
+<polygon points="993,682 1007,682 1000,692" fill="#C4571C"/>
 
 <!-- المحطة 3 -->
-<rect x="510" y="396" width="180" height="176" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="600" cy="428" r="16" fill="#C4571C"/>
-<text x="600" y="434" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#FFFFFF">3</text>
-<text x="600" y="468" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="16.5" fill="#16181F">خطة استمرارية</text>
-<text x="600" y="489" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="16.5" fill="#16181F">وتعاف تقني</text>
-<line x1="526" y1="509" x2="674" y2="509" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="600" y="531" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">تغطي الوظائف</text>
-<text x="600" y="549" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">الحيوية كاملة</text>
+<rect x="8" y="694" width="1044" height="108" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="1000" cy="748" r="25" fill="#C4571C"/>
+<text x="1000" y="756" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">3</text>
+<text x="492" y="738" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">خطة استمرارية وتعاف تقني</text>
+<text x="492" y="772" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">تغطي الوظائف الحيوية كاملة</text>
+<polygon points="993,806 1007,806 1000,816" fill="#C4571C"/>
 
 <!-- المحطة 4 -->
-<rect x="275" y="396" width="180" height="176" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="365" cy="428" r="16" fill="#C4571C"/>
-<text x="365" y="434" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#FFFFFF">4</text>
-<text x="365" y="468" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="16.5" fill="#16181F">اختبار سنوي</text>
-<text x="365" y="489" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="16.5" fill="#16181F">على الأقل</text>
-<line x1="291" y1="509" x2="439" y2="509" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="365" y="531" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">أو عند أي تغيير</text>
-<text x="365" y="549" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">جوهري في العمليات</text>
+<rect x="8" y="818" width="1044" height="108" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="1000" cy="872" r="25" fill="#C4571C"/>
+<text x="1000" y="880" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">4</text>
+<text x="492" y="862" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">اختبار سنوي على الأقل</text>
+<text x="492" y="896" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">أو عند أي تغيير جوهري في العمليات</text>
+<polygon points="993,930 1007,930 1000,940" fill="#C4571C"/>
 
 <!-- المحطة 5 -->
-<rect x="40" y="396" width="180" height="176" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="1.5"/>
-<circle cx="130" cy="428" r="16" fill="#C4571C"/>
-<text x="130" y="434" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#FFFFFF">5</text>
-<text x="130" y="468" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="16.5" fill="#16181F">أدلة وتقرير</text>
-<text x="130" y="489" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="16.5" fill="#16181F">إلى المجلس</text>
-<line x1="56" y1="509" x2="204" y2="509" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="130" y="531" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">ملف مؤرخ جاهز</text>
-<text x="130" y="549" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">للفحص في أي وقت</text>
-
-<!-- الأسهم من اليمين إلى اليسار -->
-<line x1="968" y1="484" x2="941" y2="484" stroke="#C4571C" stroke-width="2"/><polygon points="942,478 929,484 942,490" fill="#C4571C"/>
-<line x1="733" y1="484" x2="706" y2="484" stroke="#C4571C" stroke-width="2"/><polygon points="707,478 694,484 707,490" fill="#C4571C"/>
-<line x1="498" y1="484" x2="471" y2="484" stroke="#C4571C" stroke-width="2"/><polygon points="472,478 459,484 472,490" fill="#C4571C"/>
-<line x1="263" y1="484" x2="236" y2="484" stroke="#C4571C" stroke-width="2"/><polygon points="237,478 224,484 237,490" fill="#C4571C"/>
+<rect x="8" y="942" width="1044" height="108" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="2"/>
+<circle cx="1000" cy="996" r="25" fill="#C4571C"/>
+<text x="1000" y="1004" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">5</text>
+<text x="492" y="986" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">أدلة وتقرير إلى المجلس</text>
+<text x="492" y="1020" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">ملف مؤرخ جاهز للفحص في أي وقت</text>
 
 <!-- مبدأ التناسب -->
-<rect x="40" y="600" width="1120" height="60" rx="10" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
-<rect x="1154" y="612" width="5" height="36" rx="2.5" fill="#C4571C"/>
-<text x="600" y="626" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#C4571C">مبدأ التناسب</text>
-<text x="600" y="649" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="14.5" fill="#5B564A">تتدرج كل هذه المتطلبات مع حجم المؤسسة وتعقيدها وطبيعة مخاطرها، والصغر لا يعني الإعفاء بل الحجم الصحيح</text>
+<rect x="8" y="1074" width="1044" height="116" rx="10" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<rect x="1046" y="1088" width="5" height="88" rx="2.5" fill="#C4571C"/>
+<text x="530" y="1108" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#A34D19">مبدأ التناسب</text>
+<text x="530" y="1142" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">تتدرج كل هذه المتطلبات مع حجم المؤسسة وتعقيدها وطبيعة مخاطرها،</text>
+<text x="530" y="1168" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">والصغر لا يعني الإعفاء بل الحجم الصحيح</text>
 
-<text x="600" y="698" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#8A8578">المصدر، كتاب قواعد المصرف المركزي، المادة 7 · المرسوم بقانون اتحادي رقم 6 لسنة 2025، المادتان 149 و184</text>
+<text x="530" y="1224" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#5B564A">المصدر، كتاب قواعد المصرف المركزي، المادة 7</text>
+<text x="530" y="1248" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#5B564A">المرسوم بقانون اتحادي رقم 6 لسنة 2025، المادتان 149 و184</text>
 </svg>

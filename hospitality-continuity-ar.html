@@ -21,7 +21,9 @@ h2{font-size:24px;margin:28px 0 12px;color:#16181F}
 p.b{font-size:16.5px;margin-bottom:18px}
 ul,ol{padding-inline-start:24px;margin-bottom:18px;font-size:16.5px}li{margin-bottom:8px}
 img{max-width:100%;height:auto;border:1px solid #E1DCD3;border-radius:10px;margin:8px 0}
-figure{margin:22px 0}figcaption{font-size:13.5px;color:#8A8578;margin-top:6px}
+figure{margin:22px 0}figcaption{font-size:14.5px;color:#5B564A;margin-top:8px;text-align:center}
+figure.wide{width:1060px;max-width:calc(100vw - 36px);margin-left:50%;transform:translateX(-50%)}
+@media(max-width:1120px){figure.wide{width:calc(100vw - 36px)}}
 table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
 .rel{margin:30px 0;padding:16px 20px;background:#fff;border:1px solid #E1DCD3;border-radius:10px;font-size:15px}
 .rel b{display:block;margin-bottom:8px}.rel a{color:#C4571C;text-decoration:none;margin-inline-end:16px}
@@ -41,7 +43,7 @@ footer{border-top:1px solid #E1DCD3;margin-top:48px;padding-top:18px;font-size:1
 <p class="b">في أغلب القطاعات يوقف الاضطراب الخدمة ثم تستأنف لاحقا. وفي الضيافة يبقى جمهور الخدمة في الموقع بتوقعات كاملة بينما تفشل الأنظمة أو المرافق أو المحيط، فالضيف الذي وصل الليلة لا يعنيه سبب العطل ولا مقدم الخدمة الذي تأخر. لذلك تفتح جبهتان في اللحظة نفسها، جبهة تبقي الضيوف آمنين ومطلعين، وجبهة تبقي المحرك التجاري دائرا من حجوزات وفوترة ومشتريات، وغالبا بوضع يدوي وبطاقم يشتغل بنصف أدواته. والخطط التي تغطي الإخلاء وحده تفوت نصف المشكلة، فالإخلاء حدث نادر بينما تعطل الأنظمة وفشل التبريد حوادث شبه سنوية. والأساس الإداري خلف <a href="terms/ar/business-continuity.html">استمرارية الأعمال</a> بوصفها انضباطا إداريا في <a href="what-is-bcm-ar.html">صفحة التعريف</a>.</p>
 <h2>رحلة الضيف ونقاط انكسارها</h2>
 <p class="b">أنفع تمرين في هذا القطاع ليس قراءة معيار، بل المشي في رحلة الضيف مرحلة بعد مرحلة وسؤال واحد عند كل محطة، ماذا يحدث إذا سقط النظام الذي تعتمد عليه هذه المحطة. الحجز والتسعير يعتمدان على قنوات التوزيع، والوصول وتسجيل الدخول على نظام إدارة الفندق، والإقامة على المفاتيح الإلكترونية والتبريد، والمطاعم والمرافق على نقاط البيع وسلسلة التوريد، والمغادرة على الفوترة وبوابة الدفع. وخمس محطات تعني خمس نقاط انكسار وخمسة بدائل يدوية يجب أن تكون مكتوبة ومجربة، لا أن تخترع ليلة الحادث. ومن هذا التمرين يخرج <a href="terms/ar/rto.html">هدف زمن التعافي</a> لكل نظام، مبنيا على أثر الانقطاع على الضيف لا على تفضيل قسم تقنية المعلومات، وصياغته في <a href="recovery-objectives-ar.html">صفحة أهداف التعافي</a>.</p>
-<figure><img src="assets/figures/hospitality-guest-journey-ar.svg" alt="رسم لرحلة الضيف في الفندق من الحجز إلى المغادرة، ونقطة الانكسار والبديل اليدوي عند كل محطة" loading="lazy"><figcaption>رحلة الضيف في خمس محطات، ولكل محطة نقطة انكسار وبديل يدوي مكتوب.</figcaption></figure>
+<figure class="wide"><img src="assets/figures/hospitality-guest-journey-ar.svg" alt="رسم لرحلة الضيف في الفندق من الحجز إلى المغادرة، ونقطة الانكسار والبديل اليدوي عند كل محطة" loading="lazy"><figcaption>رحلة الضيف في خمس محطات، ولكل محطة نقطة انكسار وبديل يدوي مكتوب.</figcaption></figure>
 <h2>خمسة سيناريوهات تقرر ليلتكم</h2>
 <p class="b">خمسة سيناريوهات تغطي أغلب ما يعطل فندقا في المنطقة، ولكل واحد خصوصية فندقية واختبار جاهزية يجاب عنه بالتجربة لا بالوثيقة.</p>
 <table>

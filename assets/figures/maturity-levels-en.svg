@@ -1,70 +1,57 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760" role="img" aria-label="The five levels of resilience maturity from initial to optimising, each with a short description and the evidence an assessor should be able to see">
-<rect x="0" y="0" width="1200" height="760" fill="#FDFBF7"/>
-<text x="600" y="48" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="27" fill="#16181F">Five levels of resilience maturity</text>
-<text x="600" y="82" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15.5" fill="#5B564A">Each level is reached by removing a dependency that the level below still tolerates.</text>
-
-<rect x="40" y="108" width="1120" height="96" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="88" cy="156" r="19" fill="#C4571C"/>
-<text x="88" y="163" text-anchor="middle" font-family="Consolas, monospace" font-size="17" fill="#FFFFFF">1</text>
-<text x="124" y="148" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#16181F">Initial</text>
-<text x="124" y="174" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">It depends on who is on shift that day</text>
-<line x1="520" y1="126" x2="520" y2="186" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="544" y="138" text-anchor="start" font-family="Consolas, monospace" font-size="10.5" fill="#8A8578">WHAT AN ASSESSOR SHOULD SEE</text>
-<text x="544" y="164" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">No register, no impact analysis, plans copied from a template</text>
-<text x="544" y="186" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Recovery has never been run end to end, and nobody claims it has</text>
-
-<line x1="88" y1="205" x2="88" y2="214" stroke="#C4571C" stroke-width="2"/>
-<polygon points="81,213 88,225 95,213" fill="#C4571C"/>
-
-<rect x="40" y="226" width="1120" height="96" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="88" cy="274" r="19" fill="#C4571C"/>
-<text x="88" y="281" text-anchor="middle" font-family="Consolas, monospace" font-size="17" fill="#FFFFFF">2</text>
-<text x="124" y="266" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#16181F">Repeatable</text>
-<text x="124" y="292" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">It works when the same people do it</text>
-<line x1="520" y1="244" x2="520" y2="304" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="544" y="256" text-anchor="start" font-family="Consolas, monospace" font-size="10.5" fill="#8A8578">WHAT AN ASSESSOR SHOULD SEE</text>
-<text x="544" y="282" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Some services analysed, plans exist for the obvious failures</text>
-<text x="544" y="304" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Exercises happen, findings are not tracked to closure</text>
-
-<line x1="88" y1="323" x2="88" y2="332" stroke="#C4571C" stroke-width="2"/>
-<polygon points="81,331 88,343 95,331" fill="#C4571C"/>
-
-<rect x="40" y="344" width="1120" height="96" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="88" cy="392" r="19" fill="#C4571C"/>
-<text x="88" y="399" text-anchor="middle" font-family="Consolas, monospace" font-size="17" fill="#FFFFFF">3</text>
-<text x="124" y="384" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#16181F">Defined</text>
-<text x="124" y="410" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">A system on paper, applied unevenly</text>
-<line x1="520" y1="362" x2="520" y2="422" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="544" y="374" text-anchor="start" font-family="Consolas, monospace" font-size="10.5" fill="#8A8578">WHAT AN ASSESSOR SHOULD SEE</text>
-<text x="544" y="400" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Policy, method and exercise calendar approved and actually followed</text>
-<text x="544" y="422" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">The second line challenges, but evidence is still assembled by hand</text>
-
-<line x1="88" y1="441" x2="88" y2="450" stroke="#C4571C" stroke-width="2"/>
-<polygon points="81,449 88,461 95,449" fill="#C4571C"/>
-
-<rect x="40" y="462" width="1120" height="96" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="1.5"/>
-<circle cx="88" cy="510" r="19" fill="#C4571C"/>
-<text x="88" y="517" text-anchor="middle" font-family="Consolas, monospace" font-size="17" fill="#FFFFFF">4</text>
-<text x="124" y="502" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#16181F">Managed and measured</text>
-<text x="124" y="528" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">The numbers are believed because they were tested</text>
-<line x1="520" y1="480" x2="520" y2="540" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="544" y="492" text-anchor="start" font-family="Consolas, monospace" font-size="10.5" fill="#C4571C">THE TARGET FOR MOST ORGANISATIONS</text>
-<text x="544" y="518" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Recovery proven within target by exercise, not asserted in a document</text>
-<text x="544" y="540" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Independent opinion from the third line, findings dated and owned</text>
-
-<line x1="88" y1="559" x2="88" y2="568" stroke="#C4571C" stroke-width="2"/>
-<polygon points="81,567 88,579 95,567" fill="#C4571C"/>
-
-<rect x="40" y="580" width="1120" height="96" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
-<circle cx="88" cy="628" r="19" fill="#C4571C"/>
-<text x="88" y="635" text-anchor="middle" font-family="Consolas, monospace" font-size="17" fill="#FFFFFF">5</text>
-<text x="124" y="620" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#16181F">Optimising</text>
-<text x="124" y="646" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">It changes the business, not just the paperwork</text>
-<line x1="520" y1="598" x2="520" y2="658" stroke="#E1DCD3" stroke-width="1.5"/>
-<text x="544" y="610" text-anchor="start" font-family="Consolas, monospace" font-size="10.5" fill="#8A8578">WHAT AN ASSESSOR SHOULD SEE</text>
-<text x="544" y="636" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">Disruption data feeds architecture, supplier and investment decisions</text>
-<text x="544" y="658" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#5B564A">The board sees trend and cost, and appetite moves with the evidence</text>
-
-<text x="600" y="708" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#5B564A">Set the target per service, not for the company. Level five costs more than it returns unless disruption is your core commercial risk.</text>
-<text x="600" y="736" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#8A8578">A level claimed in a self-assessment and a level evidenced in an audit are different numbers · risk-place.org</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 1340" width="1060" height="1340" role="img" aria-label="The five levels of resilience maturity from initial to optimising, each with a short description and the evidence an assessor should be able to see">
+<rect x="0" y="0" width="1060" height="1340" fill="#FDFBF7"/>
+<text x="530" y="48" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="28" fill="#16181F">Five levels of resilience maturity</text>
+<text x="530" y="82" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#5B564A">Each level is reached by removing a dependency that the level below still tolerates.</text>
+<rect x="8" y="112" width="1044" height="180" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="60" cy="162" r="25" fill="#C4571C"/>
+<text x="60" y="170" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">1</text>
+<text x="108" y="154" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Initial</text>
+<text x="1028" y="154" text-anchor="end" font-family="Consolas, monospace" font-size="15" fill="#A34D19">WHAT AN ASSESSOR SHOULD SEE</text>
+<text x="108" y="184" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#5B564A">It depends on who is on shift that day</text>
+<line x1="108" y1="204" x2="1028" y2="204" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="108" y="236" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">No register, no impact analysis, plans copied from a template</text>
+<text x="108" y="262" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Recovery has never been run end to end, and nobody claims it has</text>
+<line x1="530" y1="298" x2="530" y2="312" stroke="#C4571C" stroke-width="2.5"/><polygon points="523,310 530,324 537,310" fill="#C4571C"/>
+<rect x="8" y="332" width="1044" height="180" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="60" cy="382" r="25" fill="#C4571C"/>
+<text x="60" y="390" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">2</text>
+<text x="108" y="374" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Repeatable</text>
+<text x="1028" y="374" text-anchor="end" font-family="Consolas, monospace" font-size="15" fill="#A34D19">WHAT AN ASSESSOR SHOULD SEE</text>
+<text x="108" y="404" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#5B564A">It works when the same people do it</text>
+<line x1="108" y1="424" x2="1028" y2="424" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="108" y="456" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Some services analysed, plans exist for the obvious failures</text>
+<text x="108" y="482" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Exercises happen, findings are not tracked to closure</text>
+<line x1="530" y1="518" x2="530" y2="532" stroke="#C4571C" stroke-width="2.5"/><polygon points="523,530 530,544 537,530" fill="#C4571C"/>
+<rect x="8" y="552" width="1044" height="180" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="60" cy="602" r="25" fill="#C4571C"/>
+<text x="60" y="610" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">3</text>
+<text x="108" y="594" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Defined</text>
+<text x="1028" y="594" text-anchor="end" font-family="Consolas, monospace" font-size="15" fill="#A34D19">WHAT AN ASSESSOR SHOULD SEE</text>
+<text x="108" y="624" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#5B564A">A system on paper, applied unevenly</text>
+<line x1="108" y1="644" x2="1028" y2="644" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="108" y="676" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Policy, method and exercise calendar approved and actually followed</text>
+<text x="108" y="702" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">The second line challenges, but evidence is still assembled by hand</text>
+<line x1="530" y1="738" x2="530" y2="752" stroke="#C4571C" stroke-width="2.5"/><polygon points="523,750 530,764 537,750" fill="#C4571C"/>
+<rect x="8" y="772" width="1044" height="180" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="2"/>
+<circle cx="60" cy="822" r="25" fill="#C4571C"/>
+<text x="60" y="830" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">4</text>
+<text x="108" y="814" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Managed and measured</text>
+<text x="1028" y="814" text-anchor="end" font-family="Consolas, monospace" font-size="15" fill="#C4571C">THE TARGET FOR MOST ORGANISATIONS</text>
+<text x="108" y="844" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#5B564A">The numbers are believed because they were tested</text>
+<line x1="108" y1="864" x2="1028" y2="864" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="108" y="896" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Recovery proven within target by exercise, not asserted in a document</text>
+<text x="108" y="922" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Independent opinion from the third line, findings dated and owned</text>
+<line x1="530" y1="958" x2="530" y2="972" stroke="#C4571C" stroke-width="2.5"/><polygon points="523,970 530,984 537,970" fill="#C4571C"/>
+<rect x="8" y="992" width="1044" height="180" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="60" cy="1042" r="25" fill="#C4571C"/>
+<text x="60" y="1050" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">5</text>
+<text x="108" y="1034" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#16181F">Optimising</text>
+<text x="1028" y="1034" text-anchor="end" font-family="Consolas, monospace" font-size="15" fill="#A34D19">WHAT AN ASSESSOR SHOULD SEE</text>
+<text x="108" y="1064" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#5B564A">It changes the business, not just the paperwork</text>
+<line x1="108" y1="1084" x2="1028" y2="1084" stroke="#D6D0C4" stroke-width="1.5"/>
+<text x="108" y="1116" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">Disruption data feeds architecture, supplier and investment decisions</text>
+<text x="108" y="1142" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#3F3B33">The board sees trend and cost, and appetite moves with the evidence</text>
+<text x="530" y="1232" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#5B564A">Set the target per service, not for the company.</text>
+<text x="530" y="1264" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#5B564A">Level five costs more than it returns unless disruption is your core commercial risk.</text>
+<text x="530" y="1306" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#5B564A">A level claimed in a self-assessment and a level evidenced in an audit are different numbers · risk-place.org</text>
 </svg>

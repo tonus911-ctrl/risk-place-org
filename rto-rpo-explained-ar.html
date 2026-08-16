@@ -21,7 +21,9 @@ h2{font-size:24px;margin:28px 0 12px;color:#16181F}
 p.b{font-size:16.5px;margin-bottom:18px}
 ul,ol{padding-inline-start:24px;margin-bottom:18px;font-size:16.5px}li{margin-bottom:8px}
 img{max-width:100%;height:auto;border:1px solid #E1DCD3;border-radius:10px;margin:8px 0}
-figure{margin:22px 0}figcaption{font-size:13.5px;color:#8A8578;margin-top:6px}
+figure{margin:22px 0}figcaption{font-size:14.5px;color:#5B564A;margin-top:8px;text-align:center}
+figure.wide{width:1060px;max-width:calc(100vw - 36px);margin-left:50%;transform:translateX(-50%)}
+@media(max-width:1120px){figure.wide{width:calc(100vw - 36px)}}
 table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
 .rel{margin:30px 0;padding:16px 20px;background:#fff;border:1px solid #E1DCD3;border-radius:10px;font-size:15px}
 .rel b{display:block;margin-bottom:8px}.rel a{color:#C4571C;text-decoration:none;margin-inline-end:16px}
@@ -47,7 +49,7 @@ footer{border-top:1px solid #E1DCD3;margin-top:48px;padding-top:18px;font-size:1
 <li><b>الجدوى تقاس على الترتيبات القائمة.</b> هدف بأربع ساعات مع نسخ احتياطية لا تستعاد إلا ليلا هو خيال مكتوب. إما أن تستثمروا لإغلاق الفجوة، وإما أن تعلنوا الرقم الأطول الصادق. والرقم الصادق الطويل أفضل من الرقم القصير الجميل، لأن الثاني يوقع باسم القيادة ثم يسقط أمام أول حادث.</li>
 <li><b>انتبهوا إلى السلسلة.</b> زمن التعافي الحقيقي لأي نشاط هو أطول مسار عبر اعتمادياته، استعادة النظام ثم فحص سلامة البيانات ثم وجود الأشخاص في أماكنهم. والأهداف التي توضع لكل نظام على حدة، وتتجاهل السلسلة، تعطي صورة أفضل من الواقع بمقدار ساعات.</li>
 </ul>
-<figure><img src="assets/figures/rto-rpo-timeline-ar.svg" alt="رسم زمني حول لحظة التعطل يبين نقطة RPO قبلها وهدف RTO بعدها وفوقهما أقصى فترة تعطل مقبولة" loading="lazy"><figcaption>RPO ينظر إلى الوراء ويقاس بالبيانات، وRTO ينظر إلى الأمام ويقاس بالوقت، ويوضع تحت الحد الأقصى المقبول بهامش أمان.</figcaption></figure>
+<figure class="wide"><img src="assets/figures/rto-rpo-timeline-ar.svg" alt="رسم زمني حول لحظة التعطل يبين نقطة RPO قبلها وهدف RTO بعدها وفوقهما أقصى فترة تعطل مقبولة" loading="lazy"><figcaption>RPO ينظر إلى الوراء ويقاس بالبيانات، وRTO ينظر إلى الأمام ويقاس بالوقت، ويوضع تحت الحد الأقصى المقبول بهامش أمان.</figcaption></figure>
 <h2>أرقام نموذجية، وما الذي يحدد السقف فعلا</h2>
 <p class="b">الجدول التالي يعطي مدى شائعا في السوق لا وصفة، والغرض منه أن تعرفوا ما الذي يحدد الرقم في كل حالة، لأن العامل الحاكم كثيرا ما لا يكون تقنيا أصلا.</p>
 <table><thead><tr><th>مثال على النشاط</th><th>RTO المعتاد</th><th>RPO المعتاد</th><th>ما الذي يحدد السقف</th></tr></thead><tbody>
