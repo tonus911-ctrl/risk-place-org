@@ -473,7 +473,7 @@ function postLead(body,note,okMsg,errMsg,goal){
       if(!r.ok)throw 0;
       note.textContent=okMsg;
       note.classList.remove("err");
-      try{gtag('event',goal,{page:'ergp-ar'});}catch(e){}
+      try{gtag('event',goal,{page:'ergp-ar',product:body.product||'ergp'});}catch(e){}
       try{ym(111613223,'reachGoal',goal);}catch(e){}
     })
     .catch(function(){
