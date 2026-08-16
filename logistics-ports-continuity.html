@@ -9,6 +9,9 @@
 <title>Business continuity for logistics and ports: when the route is the product — risk-place.org</title>
 <meta name="description" content="Continuity planning for logistics operators, forwarders and port-dependent businesses in the GCC: route alternatives, airspace and port disruptions, systems failure, customer communication.">
 <link rel="canonical" href="https://risk-place.org/logistics-ports-continuity.html">
+<link rel="alternate" hreflang="en" href="https://risk-place.org/logistics-ports-continuity.html">
+<link rel="alternate" hreflang="ar" href="https://risk-place.org/logistics-ports-continuity-ar.html">
+<link rel="alternate" hreflang="x-default" href="https://risk-place.org/logistics-ports-continuity.html">
 <link rel="icon" type="image/png" href="favicon.png">
 <meta property="og:title" content="Business continuity for logistics and ports: when the route is the product — risk-place.org">
 <meta property="og:description" content="Continuity planning for logistics operators, forwarders and port-dependent businesses in the GCC: route alternatives, airspace and port disruptions, systems failure, customer communication.">
@@ -16,7 +19,7 @@
 <meta property="og:url" content="https://risk-place.org/logistics-ports-continuity.html">
 <meta property="og:type" content="article">
 <meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What should we do first with a small planning budget?", "acceptedAnswer": {"@type": "Answer", "text": "The commitment triage and one pre-contracted alternate for your highest-penalty flow. Those two artefacts absorb most of the sector's realistic disruptions — and both fit in weeks, not months."}}, {"@type": "Question", "name": "How do we plan for airspace disruptions specifically?", "acceptedAnswer": {"@type": "Answer", "text": "As an access scenario, not an aviation debate: define the trigger («zone closed, ETA slip beyond X hours»), the pre-priced road or sea alternate, and who authorises the switch. Regional operators have executed exactly this repeatedly in recent years — the mechanics are proven."}}, {"@type": "Question", "name": "Our systems are cloud-based. Is ransomware still our scenario?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — via your operators' endpoints, your integrations and your partners. Degraded-mode operations and an offline copy of critical operational data remain your responsibility even when the platform is someone else's."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "What should we do first with a small planning budget?", "acceptedAnswer": {"@type": "Answer", "text": "The commitment triage and one pre-contracted alternate for your highest-penalty flow. Those two artefacts absorb most of the sector's realistic disruptions — and both fit in weeks, not months."}}, {"@type": "Question", "name": "How do we plan for airspace disruptions specifically?", "acceptedAnswer": {"@type": "Answer", "text": "As an access scenario, not an aviation debate: define the trigger («zone closed, ETA slip beyond X hours»), the pre-priced road or sea alternate, and who authorises the switch. Regional operators have executed exactly this repeatedly in recent years — the mechanics are proven."}}, {"@type": "Question", "name": "Our systems are cloud-based. Is ransomware still our scenario?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — via your operators' endpoints, your integrations and your partners. Degraded-mode operations and an offline copy of critical operational data remain your responsibility even when the platform is someone else's."}}]}</script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -33,8 +36,9 @@ a{color:#16181F;text-decoration:none}
 .logo .nm b{color:#C4571C;font-weight:600}
 .logo .tg{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8A8478}
 .hdr .right{display:flex;align-items:center;gap:12px}
-.langbtn{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.08em;background:none;border:1px solid #DCD8D0;border-radius:999px;padding:7px 15px;cursor:pointer;color:#3D4149}
-.langbtn:hover{border-color:#16181F;color:#16181F}
+.langsw{font-size:13px}
+.langsw a{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.08em;color:#3D4149;border:1px solid #DCD8D0;border-radius:999px;padding:7px 15px;display:inline-block}
+.langsw a:hover{border-color:#16181F;color:#16181F}
 .backlink{font-size:14.5px;color:#3D4149}
 .backlink:hover{color:#C4571C}
 .hero{background:#0D1117;color:#fff}
@@ -62,6 +66,9 @@ a{color:#16181F;text-decoration:none}
 .art ul{margin:0 0 18px;padding-inline-start:22px;max-width:76ch}
 .art li{font-size:16.5px;font-weight:300;line-height:1.66;color:#3D4149;margin-bottom:9px}
 .art li b,.art p b{font-weight:600;color:#16181F}
+.art figure{margin:30px 0;max-width:76ch}
+.art figure img{width:100%;height:auto;display:block;border:1px solid #EAE7E1;border-radius:12px}
+.art figcaption{font-size:14px;font-weight:300;color:#8A8478;margin-top:8px;line-height:1.55}
 .callout{background:#F7F4EF;border:1px solid #EAE7E1;border-inline-start:3px solid #C4571C;border-radius:12px;padding:20px 24px;margin:26px 0;max-width:76ch}
 .callout p{margin:0;font-size:16px}
 .tbl{width:100%;border-collapse:collapse;margin:24px 0 30px;font-size:15.5px}
@@ -87,6 +94,7 @@ a{color:#16181F;text-decoration:none}
   .logo .nm{font-size:22px}
   .logo .tg{display:none}
   .backlink{font-size:13px}
+  .hdr .in{height:auto;min-height:64px;padding-top:10px;padding-bottom:10px;flex-wrap:wrap;row-gap:8px;gap:12px}
   .hero .in{padding-top:38px;padding-bottom:34px}
   .hero h1{font-size:25px;line-height:1.2}
   .art{padding:40px 0 10px}
@@ -97,11 +105,11 @@ a{color:#16181F;text-decoration:none}
 <body>
 <header class="hdr"><div class="wrap in">
   <a class="logo" href="index.html"><span class="nm">risk-place<b>.org</b></span><span class="tg" data-ui="tagline">Business Continuity &amp; Resilience · GCC</span></a>
-  <div class="right"><a class="backlink" href="adnoc-supplier-resilience.html" data-ui="back">← Home</a><button class="langbtn" id="langbtn" onclick="toggleLang()">AR</button></div>
+  <div class="right"><a class="backlink" href="business-continuity-uae.html" data-ui="back">← Business continuity in the UAE</a><div class="langsw"><a href="logistics-ports-continuity-ar.html">العربية ←</a></div></div>
 </div></header>
 
 <section class="hero"><div class="wrap in">
-  <p class="kicker" data-ui="kicker">Industry · Logistics & ports</p>
+  <p class="kicker" data-ui="kicker">Industry · Logistics &amp; ports</p>
   <h1 data-ui="h1">Continuity for logistics: when the route is the product</h1>
   <p class="sub" data-ui="sub">A logistics business sells arrival on time. Its continuity plan is therefore not an annex to operations — it is the operation, rehearsed for the day the route, the port or the system is not there.</p>
 </div></section>
@@ -113,6 +121,7 @@ a{color:#16181F;text-decoration:none}
 <h2>What a logistics continuity plan actually contains</h2>
 <ul><li><b>Commitment triage.</b> Not all shipments are equal: cold chain, project cargo with penalties, standard freight. The BIA ranks commitments by cost of delay per hour — that ranking drives every re-routing decision.</li><li><b>Pre-designed alternates.</b> Second gateway, second carrier, road-for-air substitutions — with costs and lead times computed in advance, because during the event nobody has time to price options.</li><li><b>Degraded-mode operations.</b> The paper-and-phone version of your booking, tracking and customs processes, tested at least once. The difference between «systems down» and «business down».</li><li><b>Customer communication discipline.</b> Clients forgive delay faster than silence: who calls the top twenty accounts, with what re-estimate, within which hour.</li><li><b>First-hours authority.</b> Re-routing costs money before it saves it. A named person must be able to commit spend at 3 a.m. without a committee.</li></ul>
 <div class="callout"><p>Sector rule of thumb: the value of a logistics continuity plan is decided by the quality of its alternates. A plan whose alternate route was never priced, contracted or tested is a wish with a table of contents.</p></div>
+<figure><img src="assets/figures/logistics-port-bottlenecks-en.svg" alt="Six stages of the delivery chain from origin to client, with four disruption points and what opens each bottleneck" loading="lazy"><figcaption>The sector loses access, not assets: the chokepoints, and what actually opens them.</figcaption></figure>
 <h2>Regulatory and client context in the Gulf</h2>
 <p>Ports, airports and major logistics hubs sit inside the critical-infrastructure perimeter where NCEMA 7000 applies; large shippers and government-linked clients push continuity questionnaires down to their forwarders and 3PLs. If your clients include critical-infrastructure operators, expect your continuity arrangements to be evaluated as part of <b>their</b> compliance — the supplier-evaluation duty in the national standard reaches you by contract.</p>
 <h2>Frequently asked questions</h2>
@@ -137,35 +146,6 @@ a{color:#16181F;text-decoration:none}
 <a class="stickycta" id="stickycta" href="gap-assessment.html" data-ui="sticky">NCEMA-ready gap assessment</a>
 
 <script>
-var C={"en": {"tagline": "Business Continuity &amp; Resilience · GCC", "back": "← NCEMA 7000 hub", "copy": "© 2026 risk-place.org · Business Continuity &amp; Resilience", "privacy": "Privacy policy", "sticky": "NCEMA-ready gap assessment", "cta": "Request a gap assessment", "cta2": "Take the free readiness check", "kicker": "Industry · Logistics & ports", "h1": "Continuity for logistics: when the route is the product", "sub": "A logistics business sells arrival on time. Its continuity plan is therefore not an annex to operations — it is the operation, rehearsed for the day the route, the port or the system is not there.", "clusterTitle": "The supplier and industry hub", "ctaTitle": "How many hours of route disruption can your commitments absorb?", "sections": [["h2", "The four scenarios that define the sector"], ["table", ["Scenario", "What actually stops", "The continuity question"], [["Airspace or area closure", "Flights divert, a zone closes — cargo and crews are fine but elsewhere", "Which commitments break at 12, 24, 72 hours, and what re-routes them?"], ["Port congestion or closure", "Vessels wait or divert; containers sit", "Which alternate gateway, at what cost, triggered by whom?"], ["Systems down (TMS/WMS, customs platforms, ransomware)", "Bookings, tracking, customs filings freeze", "Can you run degraded — paper manifests, phone confirmations — and for how long?"], ["Key partner failure", "A carrier, a customs broker, a warehouse operator stops", "Who is the pre-agreed second source, and is the contract ready?"]]], ["p", "Notice what is absent: total asset loss. Logistics disruptions are mostly <b>access and information problems</b> — the trucks exist, the cargo exists, but a corridor or a system does not. That is good news: access problems have workarounds if they are designed before the day."], ["h2", "What a logistics continuity plan actually contains"], ["ul", ["<b>Commitment triage.</b> Not all shipments are equal: cold chain, project cargo with penalties, standard freight. The BIA ranks commitments by cost of delay per hour — that ranking drives every re-routing decision.", "<b>Pre-designed alternates.</b> Second gateway, second carrier, road-for-air substitutions — with costs and lead times computed in advance, because during the event nobody has time to price options.", "<b>Degraded-mode operations.</b> The paper-and-phone version of your booking, tracking and customs processes, tested at least once. The difference between «systems down» and «business down».", "<b>Customer communication discipline.</b> Clients forgive delay faster than silence: who calls the top twenty accounts, with what re-estimate, within which hour.", "<b>First-hours authority.</b> Re-routing costs money before it saves it. A named person must be able to commit spend at 3 a.m. without a committee."]], ["callout", "Sector rule of thumb: the value of a logistics continuity plan is decided by the quality of its alternates. A plan whose alternate route was never priced, contracted or tested is a wish with a table of contents."], ["h2", "Regulatory and client context in the Gulf"], ["p", "Ports, airports and major logistics hubs sit inside the critical-infrastructure perimeter where NCEMA 7000 applies; large shippers and government-linked clients push continuity questionnaires down to their forwarders and 3PLs. If your clients include critical-infrastructure operators, expect your continuity arrangements to be evaluated as part of <b>their</b> compliance — the supplier-evaluation duty in the national standard reaches you by contract."], ["h2", "Frequently asked questions"], ["faq", [["What should we do first with a small planning budget?", "The commitment triage and one pre-contracted alternate for your highest-penalty flow. Those two artefacts absorb most of the sector's realistic disruptions — and both fit in weeks, not months."], ["How do we plan for airspace disruptions specifically?", "As an access scenario, not an aviation debate: define the trigger («zone closed, ETA slip beyond X hours»), the pre-priced road or sea alternate, and who authorises the switch. Regional operators have executed exactly this repeatedly in recent years — the mechanics are proven."], ["Our systems are cloud-based. Is ransomware still our scenario?", "Yes — via your operators' endpoints, your integrations and your partners. Degraded-mode operations and an offline copy of critical operational data remain your responsibility even when the platform is someone else's."]]]], "cluster": [["adnoc-supplier-resilience.html", "ADNOC supplier qualification: the resilience dimension"], ["manufacturing-continuity-gcc.html", "Business continuity for manufacturers in the GCC"], ["hospitality-continuity.html", "Business continuity for hotels and hospitality"], ["healthcare-continuity.html", "Business continuity for healthcare providers"], ["ncema-7000-for-suppliers.html", "NCEMA 7000 for suppliers and contractors"], ["business-continuity-uae.html", "Business continuity in the UAE: the complete guide"], ["drone-incident-readiness.html", "Drone incident readiness for facilities: the business guide"]]}, "ar": {"tagline": "استمرارية الأعمال والمرونة · دول الخليج", "back": "→ دليل NCEMA 7000", "copy": "© ٢٠٢٦ risk-place.org · استمرارية الأعمال والمرونة", "privacy": "سياسة الخصوصية", "sticky": "تقييم فجوات الجاهزية لـ NCEMA", "cta": "اطلبوا تقييم الفجوات", "cta2": "جرّبوا فحص الجاهزية المجاني", "kicker": "قطاع · اللوجستيات والموانئ", "h1": "الاستمرارية في اللوجستيات: حين يكون المسار هو المنتج", "sub": "شركة اللوجستيات تبيع الوصول في الموعد. لذا فخطة استمراريتها ليست ملحقاً بالعمليات — إنها العمليات نفسها، متدربة ليوم لا يكون فيه المسار أو الميناء أو النظام موجوداً.", "clusterTitle": "مركز الموردين والقطاعات", "ctaTitle": "كم ساعة من تعطل المسار تحتمل التزاماتكم؟", "sections": [["h2", "السيناريوهات الأربعة التي تحدد القطاع"], ["table", ["السيناريو", "ما يتوقف فعلاً", "سؤال الاستمرارية"], [["إغلاق مجال جوي أو منطقة", "تتحول الرحلات وتُغلق منطقة — البضائع والطواقم سليمة لكن في مكان آخر", "أي التزامات تنكسر عند 12 و24 و72 ساعة، وما الذي يعيد توجيهها؟"], ["ازدحام أو إغلاق ميناء", "تنتظر السفن أو تتحول؛ والحاويات تجلس", "أي بوابة بديلة وبأي تكلفة ومن يطلق القرار؟"], ["توقف الأنظمة (إدارة النقل والمستودعات، منصات الجمارك، برمجية فدية)", "تتجمد الحجوزات والتتبع والبيانات الجمركية", "هل تعملون بوضع متدهور — بيانات ورقية وتأكيدات هاتفية — ولكم من الوقت؟"], ["فشل شريك مفتاحي", "يتوقف ناقل أو مخلص جمركي أو مشغل مستودع", "من المصدر الثاني المتفق عليه مسبقاً وهل العقد جاهز؟"]]], ["p", "لاحظوا الغائب: الخسارة الكلية للأصول. اضطرابات اللوجستيات في معظمها <b>مشكلات وصول ومعلومات</b> — الشاحنات موجودة والبضاعة موجودة، لكن ممراً أو نظاماً غير موجود. وهذا خبر جيد: مشكلات الوصول لها حلول التفاف إذا صُممت قبل اليوم."], ["h2", "ماذا تحتوي خطة استمرارية لوجستية فعلاً"], ["ul", ["<b>فرز الالتزامات.</b> ليست كل الشحنات سواء: سلسلة تبريد وبضائع مشاريع بغرامات وشحن عادي. تحليل الأثر يرتب الالتزامات بتكلفة التأخير للساعة — وهذا الترتيب يقود كل قرار إعادة توجيه.", "<b>بدائل مصممة مسبقاً.</b> بوابة ثانية وناقل ثانٍ واستبدال بري للجوي — بتكاليف ومهل محسوبة سلفاً، لأن أثناء الحدث لا وقت لأحد لتسعير الخيارات.", "<b>عمليات الوضع المتدهور.</b> النسخة الورقية والهاتفية من حجوزاتكم وتتبعكم وإجراءاتكم الجمركية، مختبرة مرة على الأقل. الفرق بين «الأنظمة متوقفة» و«الأعمال متوقفة».", "<b>انضباط التواصل مع العملاء.</b> يغفر العملاء التأخير أسرع من الصمت: من يتصل بأهم عشرين حساباً وبأي تقدير جديد وخلال أي ساعة.", "<b>صلاحيات الساعات الأولى.</b> إعادة التوجيه تكلف مالاً قبل أن توفره. شخص مسمى يجب أن يستطيع الالتزام بالإنفاق في الثالثة فجراً دون لجنة."]], ["callout", "قاعدة القطاع: قيمة خطة الاستمرارية اللوجستية تحددها جودة بدائلها. الخطة التي لم يُسعّر بديلها ولم يُتعاقد عليه ولم يُختبر أمنية بفهرس محتويات."], ["h2", "السياق التنظيمي والعملاء في الخليج"], ["p", "الموانئ والمطارات ومراكز اللوجستيات الكبرى داخل محيط البنية التحتية الحيوية حيث يسري NCEMA 7000؛ وكبار الشاحنين والعملاء المرتبطون بالحكومة يدفعون استبيانات الاستمرارية نزولاً إلى وكلاء الشحن ومزودي الطرف الثالث. إذا كان عملاؤكم يشملون مشغلي بنية تحتية حيوية فتوقعوا تقييم ترتيباتكم كجزء من امتثالهم <b>هم</b> — واجب تقييم الموردين في المعيار الوطني يصلكم بالعقد."], ["h2", "أسئلة شائعة"], ["faq", [["بماذا نبدأ بميزانية تخطيط صغيرة؟", "فرز الالتزامات وبديل واحد متعاقد عليه مسبقاً لتدفقكم الأعلى غرامة. هذان الناتجان يمتصان معظم اضطرابات القطاع الواقعية — وكلاهما يتم في أسابيع لا شهور."], ["كيف نخطط لاضطرابات المجال الجوي تحديداً؟", "كسيناريو وصول لا نقاش طيران: حددوا المحفز («منطقة مغلقة، انزلاق الوصول فوق X ساعة»)، والبديل البري أو البحري المسعّر مسبقاً، ومن يأذن بالتحويل. المشغلون الإقليميون نفذوا هذا بعينه مراراً في السنوات الأخيرة — الآلية مثبتة."], ["أنظمتنا سحابية. هل ما زالت برمجية الفدية سيناريوهنا؟", "نعم — عبر أجهزة مشغليكم وتكاملاتكم وشركائكم. عمليات الوضع المتدهور ونسخة دون اتصال من البيانات التشغيلية الحيوية تبقيان مسؤوليتكم حتى حين تكون المنصة ملك غيركم."]]]], "cluster": [["adnoc-supplier-resilience.html", "تأهيل موردي أدنوك: بُعد المرونة"], ["manufacturing-continuity-gcc.html", "استمرارية الأعمال للمصنعين في الخليج"], ["hospitality-continuity.html", "استمرارية الأعمال للفنادق والضيافة"], ["healthcare-continuity.html", "استمرارية الأعمال لمزودي الرعاية الصحية"], ["ncema-7000-for-suppliers.html", "NCEMA 7000 للموردين والمقاولين"], ["business-continuity-uae.html", "استمرارية الأعمال في الإمارات: الدليل الكامل"], ["drone-incident-readiness.html", "جاهزية المنشآت لحوادث الطائرات المسيرة: دليل الأعمال"]]}};
-var lang="en";
-function renderSections(secs){
-  var out=[];
-  secs.forEach(function(s){
-    if(s[0]==="h2")out.push("<h2>"+s[1]+"</h2>");
-    else if(s[0]==="p")out.push("<p>"+s[1]+"</p>");
-    else if(s[0]==="ul")out.push("<ul>"+s[1].map(function(x){return "<li>"+x+"</li>";}).join("")+"</ul>");
-    else if(s[0]==="callout")out.push('<div class="callout"><p>'+s[1]+"</p></div>");
-    else if(s[0]==="table"){
-      out.push('<table class="tbl"><thead><tr>'+s[1].map(function(c){return "<th>"+c+"</th>";}).join("")+"</tr></thead><tbody>"+
-        s[2].map(function(r){return "<tr>"+r.map(function(c){return "<td>"+c+"</td>";}).join("")+"</tr>";}).join("")+"</tbody></table>");
-    } else if(s[0]==="faq"){
-      out.push('<div class="faq">'+s[1].map(function(x){return "<details><summary>"+x[0]+"</summary><p>"+x[1]+"</p></details>";}).join("")+"</div>");
-    }
-  });
-  return out.join("\n");
-}
-function setLang(l){
-  lang=l;document.documentElement.lang=l;document.documentElement.dir=(l==="ar")?"rtl":"ltr";
-  var d=C[l];
-  document.querySelectorAll("[data-ui]").forEach(function(el){var k=el.getAttribute("data-ui");if(typeof d[k]==="string")el.innerHTML=d[k];});
-  document.getElementById("art").innerHTML=renderSections(d.sections);
-  document.getElementById("cluster").innerHTML=d.cluster.map(function(x){return '<a href="'+x[0]+'">'+x[1]+"</a>";}).join("");
-  document.getElementById("langbtn").textContent=(l==="ar")?"EN":"AR";
-  try{localStorage.setItem("rp_org_lang",l);}catch(e){}
-}
-function toggleLang(){setLang(lang==="ar"?"en":"ar");}
-(function(){var s=null;try{s=localStorage.getItem("rp_org_lang");}catch(e){}if(s==="ar")setLang("ar");})();
 window.addEventListener('scroll',function(){
   var el=document.getElementById('stickycta');if(!el)return;
   var cta=document.querySelector('section.cta');

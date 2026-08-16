@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760" direction="rtl" role="img" aria-label="رحلة الضيف في الفندق ونقاط انكسارها والبديل اليدوي عند كل محطة">
+<rect x="0" y="0" width="1200" height="760" fill="#FDFBF7"/>
+<text x="600" y="48" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="27" fill="#16181F">رحلة الضيف، خمس محطات وخمس نقاط انكسار</text>
+<text x="600" y="82" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15.5" fill="#5B564A">عند كل محطة نظام قد يسقط، وبديل يدوي يجب أن يكون مكتوبا ومجربا قبل الحادث</text>
+<rect x="955" y="118" width="205" height="120" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
+<text x="1057.5" y="150" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">1</text>
+<text x="1057.5" y="180" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#16181F">الحجز والتسعير</text>
+<text x="1057.5" y="208" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">قنوات التوزيع والأسعار</text>
+<line x1="953" y1="178" x2="945" y2="178" stroke="#C4571C" stroke-width="2"/>
+<polygon points="945,171 933,178 945,185" fill="#C4571C"/>
+<rect x="955" y="288" width="205" height="200" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="1057.5" y="318" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#C4571C">نقطة الانكسار</text>
+<line x1="971" y1="336" x2="1144" y2="336" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="1057.5" y="364" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#16181F">قناة الحجز تتوقف</text>
+<text x="1057.5" y="388" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#16181F">والأسعار تتجمد</text>
+<line x1="971" y1="416" x2="1144" y2="416" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="1057.5" y="442" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">البديل، قائمة أسعار</text>
+<text x="1057.5" y="464" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">ورقية معتمدة</text>
+<rect x="726" y="118" width="205" height="120" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="828.5" y="150" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">2</text>
+<text x="828.5" y="180" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#16181F">الوصول وتسجيل الدخول</text>
+<text x="828.5" y="208" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">المكتب الأمامي</text>
+<line x1="724" y1="178" x2="716" y2="178" stroke="#C4571C" stroke-width="2"/>
+<polygon points="716,171 704,178 716,185" fill="#C4571C"/>
+<rect x="726" y="288" width="205" height="200" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="828.5" y="318" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#C4571C">نقطة الانكسار</text>
+<line x1="742" y1="336" x2="915" y2="336" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="828.5" y="364" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#16181F">نظام إدارة الفندق</text>
+<text x="828.5" y="388" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#16181F">لا يوزع الغرف</text>
+<line x1="742" y1="416" x2="915" y2="416" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="828.5" y="442" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">البديل، بطاقات</text>
+<text x="828.5" y="464" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">تسجيل ورقية</text>
+<rect x="497" y="118" width="205" height="120" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="599.5" y="150" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">3</text>
+<text x="599.5" y="180" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#16181F">الإقامة والغرفة</text>
+<text x="599.5" y="208" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">المفاتيح والتبريد</text>
+<line x1="495" y1="178" x2="487" y2="178" stroke="#C4571C" stroke-width="2"/>
+<polygon points="487,171 475,178 487,185" fill="#C4571C"/>
+<rect x="497" y="288" width="205" height="200" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="599.5" y="318" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#C4571C">نقطة الانكسار</text>
+<line x1="513" y1="336" x2="686" y2="336" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="599.5" y="364" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#16181F">مفاتيح إلكترونية</text>
+<text x="599.5" y="388" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#16181F">وتبريد متوقف</text>
+<line x1="513" y1="416" x2="686" y2="416" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="599.5" y="442" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">البديل، أولويات</text>
+<text x="599.5" y="464" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">حمل المولد</text>
+<rect x="268" y="118" width="205" height="120" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="370.5" y="150" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">4</text>
+<text x="370.5" y="180" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#16181F">المطاعم والمرافق</text>
+<text x="370.5" y="208" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">نقاط البيع والإمداد</text>
+<line x1="266" y1="178" x2="258" y2="178" stroke="#C4571C" stroke-width="2"/>
+<polygon points="258,171 246,178 258,185" fill="#C4571C"/>
+<rect x="268" y="288" width="205" height="200" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="370.5" y="318" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#C4571C">نقطة الانكسار</text>
+<line x1="284" y1="336" x2="457" y2="336" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="370.5" y="364" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#16181F">نقاط البيع والغسيل</text>
+<text x="370.5" y="388" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#16181F">والتوريد تتعثر</text>
+<line x1="284" y1="416" x2="457" y2="416" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="370.5" y="442" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">البديل، موردون</text>
+<text x="370.5" y="464" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">بدلاء مؤهلون</text>
+<rect x="39" y="118" width="205" height="120" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="141.5" y="150" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">5</text>
+<text x="141.5" y="180" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#16181F">المغادرة والدفع</text>
+<text x="141.5" y="208" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">الحساب والتحصيل</text>
+<rect x="39" y="288" width="205" height="200" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="141.5" y="318" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#C4571C">نقطة الانكسار</text>
+<line x1="55" y1="336" x2="228" y2="336" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="141.5" y="364" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#16181F">الفوترة وبوابة الدفع</text>
+<text x="141.5" y="388" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#16181F">خارج الخدمة</text>
+<line x1="55" y1="416" x2="228" y2="416" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="141.5" y="442" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">البديل، دفتر حساب</text>
+<text x="141.5" y="464" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">يدوي وتحصيل لاحق</text>
+<rect x="40" y="520" width="1120" height="170" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
+<rect x="1154" y="534" width="5" height="142" rx="2.5" fill="#C4571C"/>
+<text x="600" y="552" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#C4571C">ما يبقى في ذاكرة الضيف</text>
+<text x="600" y="588" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#16181F">الضيف لا يتذكر الحادث، يتذكر هل بدا الطاقم عارفا بما يفعل</text>
+<rect x="800" y="612" width="330" height="30" rx="6" fill="#E7E2DA" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="965" y="632" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#16181F">بطاقة ساعات أولى لكل قسم</text>
+<rect x="435" y="612" width="330" height="30" rx="6" fill="#E7E2DA" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="600" y="632" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#16181F">صوت واحد يتحدث باسم الفندق</text>
+<rect x="70" y="612" width="330" height="30" rx="6" fill="#E7E2DA" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="235" y="632" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#16181F">أسعار وتسجيل على الورق</text>
+<text x="600" y="672" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">البدائل اليدوية تكتب وتجرب في وردية هادئة، لا تخترع ليلة الإشغال الكامل</text>
+<text x="600" y="728" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#8A8578">المصدر، استمرارية الضيافة · risk-place.org</text>
+</svg>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760" role="img" aria-label="How the supplier evaluation duty flows down, and three tiers of continuity evidence">
+<rect x="0" y="0" width="1200" height="760" fill="#FDFBF7"/>
+<text x="600" y="48" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="27" fill="#16181F">Three supplier tiers, three evidence packs</text>
+<text x="600" y="82" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="15.5" fill="#5B564A">The weight of evidence follows the impact of your stoppage on the client, not your headcount</text>
+<rect x="60" y="104" width="340" height="74" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="230" y="134" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#16181F">Critical infrastructure operator</text>
+<text x="230" y="158" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12" fill="#5B564A">the national standard obliges it to evaluate suppliers</text>
+<line x1="402" y1="141" x2="416" y2="141" stroke="#C4571C" stroke-width="2"/>
+<polygon points="416,134 428,141 416,148" fill="#C4571C"/>
+<rect x="430" y="104" width="340" height="74" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
+<text x="600" y="134" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="15" fill="#16181F">Direct supplier</text>
+<text x="600" y="158" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12" fill="#5B564A">answers with evidence, not intent</text>
+<line x1="772" y1="141" x2="786" y2="141" stroke="#C4571C" stroke-width="2"/>
+<polygon points="786,134 798,141 786,148" fill="#C4571C"/>
+<rect x="800" y="104" width="340" height="74" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="970" y="134" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="15" fill="#16181F">Sub-supplier</text>
+<text x="970" y="158" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12" fill="#5B564A">asked in turn about its own failure point</text>
+<text x="600" y="200" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#8A8578">The supplier evaluation duty flows down through contracts, not through inspection</text>
+<rect x="40" y="222" width="1120" height="146" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="1.5"/>
+<rect x="60" y="240" width="260" height="110" rx="10" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="190" y="274" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="16.5" fill="#16181F">Critical supplier</text>
+<text x="190" y="302" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#5B564A">your stoppage stops</text>
+<text x="190" y="324" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#5B564A">the client's line</text>
+<rect x="340" y="252" width="150" height="46" rx="8" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="415" y="280" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="11.5" fill="#16181F">Continuity summary</text>
+<rect x="502" y="252" width="150" height="46" rx="8" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="577" y="280" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="11.5" fill="#16181F">Recovery commitments</text>
+<rect x="664" y="252" width="150" height="46" rx="8" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="739" y="280" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="11.5" fill="#16181F">Dated exercise report</text>
+<rect x="826" y="252" width="150" height="46" rx="8" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="901" y="280" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="11.5" fill="#16181F">Sub-supplier map</text>
+<rect x="988" y="252" width="150" height="46" rx="8" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="1063" y="280" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="11.5" fill="#16181F">Communication protocol</text>
+<text x="740" y="330" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#8A8578">The buyer wants the full pack, and asks for the date of the last exercise and the findings closed</text>
+<rect x="40" y="382" width="1120" height="146" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<rect x="60" y="400" width="260" height="110" rx="10" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="190" y="434" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="14" fill="#16181F">Important supplier</text>
+<text x="190" y="462" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#5B564A">your stoppage delays</text>
+<text x="190" y="484" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#5B564A">but does not stop</text>
+<rect x="340" y="412" width="150" height="46" rx="8" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="415" y="440" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="11.5" fill="#16181F">Two-page summary</text>
+<rect x="502" y="412" width="150" height="46" rx="8" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="577" y="440" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="11.5" fill="#16181F">Recovery commitments</text>
+<rect x="664" y="412" width="150" height="46" rx="8" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="739" y="440" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="11.5" fill="#16181F">Communication protocol</text>
+<text x="740" y="490" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#8A8578">Three documents are enough, provided the recovery numbers come from an impact analysis</text>
+<rect x="40" y="542" width="1120" height="146" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<rect x="60" y="560" width="260" height="110" rx="10" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="190" y="594" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="14" fill="#16181F">Replaceable supplier</text>
+<text x="190" y="622" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#5B564A">an alternate exists</text>
+<text x="190" y="644" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#5B564A">within days</text>
+<rect x="340" y="572" width="150" height="46" rx="8" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="415" y="600" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="11.5" fill="#16181F">Continuity statement</text>
+<rect x="502" y="572" width="150" height="46" rx="8" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="577" y="600" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="11.5" fill="#16181F">Emergency contacts</text>
+<text x="740" y="650" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#8A8578">A short statement and contacts that work — attention moves back to price and quality</text>
+<text x="600" y="716" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#5B564A">The same pack is built in six to eight weeks and drops into any prequalification or tender</text>
+<text x="600" y="744" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="12.5" fill="#8A8578">Source — ADNOC supplier qualification and the resilience dimension · risk-place.org</text>
+</svg>

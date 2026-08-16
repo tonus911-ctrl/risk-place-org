@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760" direction="rtl" role="img" aria-label="مستويات نضج المرونة الخمسة من المستوى الأولي إلى المتحسن باستمرار، مع وصف قصير لكل مستوى والدليل الذي ينبغي أن يراه المقيم">
+<rect x="0" y="0" width="1200" height="760" fill="#FDFBF7"/>
+<text x="600" y="48" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="27" fill="#16181F">خمسة مستويات لنضج المرونة</text>
+<text x="600" y="82" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15.5" fill="#5B564A">كل مستوى يبلغ بإزالة اعتماد ما زال المستوى الذي تحته يتسامح معه</text>
+
+<rect x="40" y="108" width="1120" height="96" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="1112" cy="156" r="19" fill="#C4571C"/>
+<text x="1112" y="163" text-anchor="middle" font-family="Consolas, monospace" font-size="17" fill="#FFFFFF">1</text>
+<text x="1076" y="148" text-anchor="end" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="18" fill="#16181F">أولي</text>
+<text x="1076" y="174" text-anchor="end" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">يعتمد على من يكون في المناوبة ذلك اليوم</text>
+<line x1="680" y1="126" x2="680" y2="186" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="656" y="138" text-anchor="end" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="11" fill="#8A8578">ما ينبغي أن يراه المقيم</text>
+<text x="656" y="164" text-anchor="end" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">لا سجل مخاطر ولا تحليل أثر، وخطط منسوخة من قالب جاهز</text>
+<text x="656" y="186" text-anchor="end" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">التعافي لم يجرب من طرفه إلى طرفه ولا أحد يدعي أنه جرب</text>
+
+<line x1="1112" y1="205" x2="1112" y2="214" stroke="#C4571C" stroke-width="2"/>
+<polygon points="1105,213 1112,225 1119,213" fill="#C4571C"/>
+
+<rect x="40" y="226" width="1120" height="96" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="1112" cy="274" r="19" fill="#C4571C"/>
+<text x="1112" y="281" text-anchor="middle" font-family="Consolas, monospace" font-size="17" fill="#FFFFFF">2</text>
+<text x="1076" y="266" text-anchor="end" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="18" fill="#16181F">قابل للتكرار</text>
+<text x="1076" y="292" text-anchor="end" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">يعمل حين يؤديه الأشخاص أنفسهم</text>
+<line x1="680" y1="244" x2="680" y2="304" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="656" y="256" text-anchor="end" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="11" fill="#8A8578">ما ينبغي أن يراه المقيم</text>
+<text x="656" y="282" text-anchor="end" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">بعض الخدمات محللة وخطط موجودة للأعطال الواضحة</text>
+<text x="656" y="304" text-anchor="end" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">التمارين تجرى وملاحظاتها لا تتابع حتى الإغلاق</text>
+
+<line x1="1112" y1="323" x2="1112" y2="332" stroke="#C4571C" stroke-width="2"/>
+<polygon points="1105,331 1112,343 1119,331" fill="#C4571C"/>
+
+<rect x="40" y="344" width="1120" height="96" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="1112" cy="392" r="19" fill="#C4571C"/>
+<text x="1112" y="399" text-anchor="middle" font-family="Consolas, monospace" font-size="17" fill="#FFFFFF">3</text>
+<text x="1076" y="384" text-anchor="end" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="18" fill="#16181F">محدد</text>
+<text x="1076" y="410" text-anchor="end" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">منظومة على الورق تطبق بتفاوت</text>
+<line x1="680" y1="362" x2="680" y2="422" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="656" y="374" text-anchor="end" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="11" fill="#8A8578">ما ينبغي أن يراه المقيم</text>
+<text x="656" y="400" text-anchor="end" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">سياسة ومنهجية وتقويم تمارين معتمدة ومتبعة فعلا</text>
+<text x="656" y="422" text-anchor="end" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">الخط الثاني يتحدى لكن الأدلة ما زالت تجمع يدويا</text>
+
+<line x1="1112" y1="441" x2="1112" y2="450" stroke="#C4571C" stroke-width="2"/>
+<polygon points="1105,449 1112,461 1119,449" fill="#C4571C"/>
+
+<rect x="40" y="462" width="1120" height="96" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="1.5"/>
+<circle cx="1112" cy="510" r="19" fill="#C4571C"/>
+<text x="1112" y="517" text-anchor="middle" font-family="Consolas, monospace" font-size="17" fill="#FFFFFF">4</text>
+<text x="1076" y="502" text-anchor="end" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="18" fill="#16181F">مدار ومقاس</text>
+<text x="1076" y="528" text-anchor="end" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">الأرقام تصدق لأنها اختبرت لا لأنها أعلنت</text>
+<line x1="680" y1="480" x2="680" y2="540" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="656" y="492" text-anchor="end" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="11" fill="#C4571C">الوجهة المناسبة لمعظم المؤسسات</text>
+<text x="656" y="518" text-anchor="end" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">التعافي مثبت ضمن الهدف بتمرين لا بادعاء في وثيقة</text>
+<text x="656" y="540" text-anchor="end" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">رأي مستقل من الخط الثالث وملاحظات مؤرخة لها ملاك</text>
+
+<line x1="1112" y1="559" x2="1112" y2="568" stroke="#C4571C" stroke-width="2"/>
+<polygon points="1105,567 1112,579 1119,567" fill="#C4571C"/>
+
+<rect x="40" y="580" width="1120" height="96" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="1112" cy="628" r="19" fill="#C4571C"/>
+<text x="1112" y="635" text-anchor="middle" font-family="Consolas, monospace" font-size="17" fill="#FFFFFF">5</text>
+<text x="1076" y="620" text-anchor="end" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="18" fill="#16181F">متحسن باستمرار</text>
+<text x="1076" y="646" text-anchor="end" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">يغير العمل نفسه لا الأوراق وحدها</text>
+<line x1="680" y1="598" x2="680" y2="658" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="656" y="610" text-anchor="end" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="11" fill="#8A8578">ما ينبغي أن يراه المقيم</text>
+<text x="656" y="636" text-anchor="end" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">بيانات التعطل تغذي قرارات الهندسة والموردين والاستثمار</text>
+<text x="656" y="658" text-anchor="end" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">المجلس يرى الاتجاه والكلفة وتتحرك الشهية مع الدليل</text>
+
+<text x="600" y="708" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">حددوا الهدف لكل خدمة لا للشركة كلها، فالمستوى الخامس يكلف أكثر مما يعيد ما لم يكن التعطل خطركم التجاري الأساسي</text>
+<text x="600" y="736" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">المستوى المدعى في تقييم ذاتي والمستوى المثبت في تدقيق رقمان مختلفان · risk-place.org</text>
+</svg>

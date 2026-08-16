@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760" direction="rtl" role="img" aria-label="مقارنة بين مؤشر الأداء الرئيسي ومؤشر المخاطر الرئيسي، مع عتبة برتقالية وعتبة حمراء على مقياس واحد والتصعيد المطلوب في كل حالة">
+<rect x="0" y="0" width="1200" height="760" fill="#FDFBF7"/>
+<text x="600" y="48" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="27" fill="#16181F">مؤشران مختلفان لسؤالين مختلفين</text>
+<text x="600" y="82" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15.5" fill="#5B564A">مؤشر الأداء يخبرك بما تحقق فعلا، ومؤشر المخاطر ينبهك إلى خطر يتحرك بينما يبقى وقت للتصرف</text>
+<rect x="605" y="108" width="555" height="250" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="882.5" y="138" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">مؤشر الأداء الرئيسي</text>
+<text x="882.5" y="174" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="19" fill="#16181F">هل سلمنا ما وعدنا به</text>
+<line x1="1140" y1="194" x2="625" y2="194" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="1136" y="224" text-anchor="start" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="11" fill="#8A8578">يقيس</text>
+<text x="996" y="224" text-anchor="start" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">ناتجا أنتجه العمل بالفعل</text>
+<text x="1136" y="258" text-anchor="start" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="11" fill="#8A8578">الأفق</text>
+<text x="996" y="258" text-anchor="start" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">متأخر غالبا، يؤكد ما مضى</text>
+<text x="1136" y="292" text-anchor="start" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="11" fill="#8A8578">يملكه</text>
+<text x="996" y="292" text-anchor="start" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">المدير المسؤول عن التسليم</text>
+<text x="1136" y="326" text-anchor="start" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="11" fill="#8A8578">عند تحركه</text>
+<text x="996" y="326" text-anchor="start" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">يفسر الانحراف في اجتماع المراجعة</text>
+<rect x="40" y="108" width="555" height="250" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="1.5"/>
+<text x="317.5" y="138" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">مؤشر المخاطر الرئيسي</text>
+<text x="317.5" y="174" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="19" fill="#16181F">هل يقترب خطر من حده</text>
+<line x1="575" y1="194" x2="60" y2="194" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="571" y="224" text-anchor="start" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="11" fill="#8A8578">يقيس</text>
+<text x="431" y="224" text-anchor="start" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">محركات الخطر وسلامة الضوابط</text>
+<text x="571" y="258" text-anchor="start" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="11" fill="#8A8578">الأفق</text>
+<text x="431" y="258" text-anchor="start" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">متقدم، يتحرك قبل الخسارة</text>
+<text x="571" y="292" text-anchor="start" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="11" fill="#8A8578">يملكه</text>
+<text x="431" y="292" text-anchor="start" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">مالك الخطر المسمى في السجل</text>
+<text x="571" y="326" text-anchor="start" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="11" fill="#8A8578">عند تحركه</text>
+<text x="431" y="326" text-anchor="start" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">يطلق إجراء متفقا عليه عند العتبة</text>
+<rect x="40" y="378" width="1120" height="54" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
+<text x="600" y="400" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="11.5" fill="#C4571C">الرقم نفسه قد يكون الاثنين</text>
+<text x="600" y="422" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="14" fill="#16181F">تأخر تسليم مورد واحد بنسبة 12 بالمئة، مؤشر أداء لإدارة المشتريات ومؤشر مخاطر للخدمة التي تتوقف بدونه</text>
+<text x="600" y="462" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#16181F">العتبات والتصعيد، ما يحول الرقم إلى ضبط فعلي</text>
+<text x="750" y="492" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12" fill="#8A8578">العتبة البرتقالية</text>
+<line x1="750" y1="498" x2="750" y2="512" stroke="#C4571C" stroke-width="2"/>
+<text x="440" y="492" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12" fill="#8A8578">العتبة الحمراء</text>
+<line x1="440" y1="498" x2="440" y2="512" stroke="#C4571C" stroke-width="2"/>
+<rect x="750" y="510" width="310" height="26" rx="13" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<rect x="440" y="510" width="310" height="26" rx="13" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<rect x="140" y="510" width="300" height="26" rx="13" fill="#C4571C" stroke="#C4571C" stroke-width="1.5"/>
+<text x="905" y="532" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">داخل الشهية</text>
+<text x="595" y="532" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">مراقبة وتصرف</text>
+<text x="290" y="532" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#FFFFFF">تجاوز</text>
+<line x1="905" y1="542" x2="905" y2="548" stroke="#C4571C" stroke-width="2"/>
+<polygon points="912,547 905,562 898,547" fill="#C4571C"/>
+<line x1="595" y1="542" x2="595" y2="548" stroke="#C4571C" stroke-width="2"/>
+<polygon points="602,547 595,562 588,547" fill="#C4571C"/>
+<line x1="290" y1="542" x2="290" y2="548" stroke="#C4571C" stroke-width="2"/>
+<polygon points="297,547 290,562 283,547" fill="#C4571C"/>
+<rect x="760" y="570" width="300" height="132" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="910" y="602" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="16.5" fill="#16181F">لا شيء يصعد</text>
+<line x1="1044" y1="618" x2="776" y2="618" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="910" y="642" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">يراجعه المالك في الدورة الشهرية</text>
+<text x="910" y="664" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">يسجل الاتجاه دون إجراء مطلوب</text>
+<text x="910" y="686" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">يبقى على لوحة المتابعة لا في المحضر</text>
+<rect x="450" y="570" width="300" height="132" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="600" y="602" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="16.5" fill="#16181F">تصرف ولا تنتظر</text>
+<line x1="734" y1="618" x2="466" y2="618" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="600" y="642" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">يستجيب مالك الخطر خلال خمسة أيام عمل</text>
+<text x="600" y="664" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">يسجل السبب والإجراء مقابل الخطر</text>
+<text x="600" y="686" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">تراه لجنة المخاطر في اجتماعها التالي</text>
+<rect x="140" y="570" width="300" height="132" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="1.5"/>
+<text x="290" y="602" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="16.5" fill="#16181F">تجاوز الشهية</text>
+<line x1="424" y1="618" x2="156" y2="618" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="290" y="642" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">تبلغ اللجنة خلال 24 ساعة</text>
+<text x="290" y="664" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">تعرض خطة معالجة بتواريخ وأسماء</text>
+<text x="290" y="686" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">وإن لم يفعل شيء يسجل القبول صراحة</text>
+<text x="600" y="734" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">العتبة بلا مالك مسمى وإجراء متفق عليه مجرد زينة · risk-place.org</text>
+</svg>

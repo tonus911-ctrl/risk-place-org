@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 740" width="1200" height="740" role="img" aria-label="Critical clinical services and the maximum absence each one tolerates">
+<rect x="0" y="0" width="1200" height="740" fill="#FDFBF7"/>
+<text x="600" y="48" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="27" fill="#16181F">Critical services and their tolerable absence</text>
+<text x="600" y="82" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="15.5" fill="#5B564A">Seven services ordered by how long a patient can wait before delay becomes harm</text>
+<text x="175" y="116" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#8A8578">Critical service</text>
+<text x="634" y="116" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#8A8578">Maximum tolerable absence, growing to the right</text>
+<line x1="330" y1="130" x2="938" y2="130" stroke="#E1DCD3" stroke-width="1.5"/>
+<polygon points="950,130 938,124 938,136" fill="#C4571C"/>
+<rect x="40" y="140" width="270" height="48" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="175" y="170" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="14.5" fill="#16181F">Emergency and resuscitation</text>
+<rect x="330" y="153" width="70" height="22" rx="6" fill="#C4571C"/>
+<rect x="408" y="150" width="150" height="28" rx="6" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="483" y="169" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#16181F">Minutes</text>
+<rect x="40" y="200" width="270" height="48" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="175" y="230" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="14.5" fill="#16181F">Intensive care and life support</text>
+<rect x="330" y="213" width="70" height="22" rx="6" fill="#C4571C"/>
+<rect x="408" y="210" width="150" height="28" rx="6" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="483" y="229" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#16181F">Minutes</text>
+<rect x="40" y="260" width="270" height="48" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="175" y="290" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="14.5" fill="#16181F">Operating theatres</text>
+<rect x="330" y="273" width="170" height="22" rx="6" fill="#C4571C"/>
+<rect x="508" y="270" width="150" height="28" rx="6" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="583" y="289" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#16181F">One hour</text>
+<rect x="40" y="320" width="270" height="48" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="175" y="350" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="14.5" fill="#16181F">EMR read-only access</text>
+<rect x="330" y="333" width="230" height="22" rx="6" fill="#C4571C"/>
+<rect x="568" y="330" width="150" height="28" rx="6" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="643" y="349" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#16181F">Two hours</text>
+<rect x="40" y="380" width="270" height="48" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="175" y="410" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="14.5" fill="#16181F">Laboratory and blood bank</text>
+<rect x="330" y="393" width="310" height="22" rx="6" fill="#C4571C"/>
+<rect x="648" y="390" width="150" height="28" rx="6" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="723" y="409" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#16181F">Four hours</text>
+<rect x="40" y="440" width="270" height="48" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="175" y="470" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="14.5" fill="#16181F">Pharmacy and dispensing</text>
+<rect x="330" y="453" width="400" height="22" rx="6" fill="#C4571C"/>
+<rect x="738" y="450" width="150" height="28" rx="6" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="813" y="469" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#16181F">Eight hours</text>
+<rect x="40" y="500" width="270" height="48" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="175" y="530" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="14.5" fill="#16181F">Outpatient clinics and billing</text>
+<rect x="330" y="513" width="560" height="22" rx="6" fill="#C4571C"/>
+<rect x="898" y="510" width="150" height="28" rx="6" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="973" y="529" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#16181F">Two days</text>
+<rect x="40" y="580" width="1120" height="96" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
+<rect x="41" y="594" width="5" height="68" rx="2.5" fill="#C4571C"/>
+<text x="600" y="612" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#C4571C">Illustrative for discussion, not a standard</text>
+<text x="600" y="644" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13.5" fill="#16181F">Every provider derives its own figures in the business impact analysis, then clinical governance signs them off</text>
+<text x="600" y="712" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="13" fill="#8A8578">Source, healthcare continuity · risk-place.org</text>
+</svg>

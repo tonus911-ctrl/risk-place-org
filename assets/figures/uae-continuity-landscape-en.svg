@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" role="img" aria-label="Three layers of business continuity requirement in the UAE and who each layer binds, the contractual pressure on everyone else, and one common starting point">
+<rect x="0" y="0" width="1200" height="700" fill="#FDFBF7"/>
+
+<text x="600" y="44" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="27" fill="#16181F">Three layers of requirement, one starting point</text>
+<text x="600" y="76" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15.5" fill="#5B564A">Business continuity in the UAE — who is bound by what</text>
+
+<!-- layer 1 -->
+<rect x="40" y="104" width="360" height="286" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="1.5"/>
+<text x="220" y="140" text-anchor="middle" font-family="Consolas, monospace" font-size="12.5" fill="#C4571C">MANDATORY</text>
+<text x="220" y="172" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#16181F">The national standard</text>
+<text x="220" y="196" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#16181F">NCEMA 7000</text>
+<line x1="60" y1="214" x2="380" y2="214" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="220" y="238" text-anchor="middle" font-family="Consolas, monospace" font-size="12" fill="#8A8578">WHO IS BOUND</text>
+<text x="220" y="266" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#5B564A">Federal and local government</text>
+<text x="220" y="292" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#5B564A">Critical infrastructure operators</text>
+<text x="220" y="318" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#5B564A">Their suppliers, via contract</text>
+<line x1="60" y1="338" x2="380" y2="338" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="220" y="368" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#16181F">Compliance is measured by audit</text>
+
+<!-- layer 2 -->
+<rect x="420" y="104" width="360" height="286" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="1.5"/>
+<text x="600" y="140" text-anchor="middle" font-family="Consolas, monospace" font-size="12.5" fill="#C4571C">MANDATORY</text>
+<text x="600" y="172" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#16181F">The Central Bank</text>
+<text x="600" y="196" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#16181F">CBUAE Article 7</text>
+<line x1="440" y1="214" x2="760" y2="214" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="600" y="238" text-anchor="middle" font-family="Consolas, monospace" font-size="12" fill="#8A8578">WHO IS BOUND</text>
+<text x="600" y="266" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#5B564A">Banks and financial institutions</text>
+<text x="600" y="292" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#5B564A">Insurers</text>
+<text x="600" y="318" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#5B564A">Payment service providers</text>
+<line x1="440" y1="338" x2="760" y2="338" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="600" y="368" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#16181F">Transition period to 16 September 2026</text>
+
+<!-- layer 3 -->
+<rect x="800" y="104" width="360" height="286" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="980" y="140" text-anchor="middle" font-family="Consolas, monospace" font-size="12.5" fill="#8A8578">VOLUNTARY</text>
+<text x="980" y="172" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#16181F">International standard</text>
+<text x="980" y="196" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#16181F">ISO 22301</text>
+<line x1="820" y1="214" x2="1140" y2="214" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="980" y="238" text-anchor="middle" font-family="Consolas, monospace" font-size="12" fill="#8A8578">WHO ASKS FOR IT</text>
+<text x="980" y="266" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#5B564A">Government and large tenders</text>
+<text x="980" y="292" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#5B564A">Parent companies</text>
+<text x="980" y="318" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#5B564A">International clients</text>
+<line x1="820" y1="338" x2="1140" y2="338" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="980" y="368" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#16181F">No law compels it, contracts do</text>
+
+<line x1="220" y1="390" x2="220" y2="412" stroke="#C4571C" stroke-width="2"/><polygon points="213,411 220,424 227,411" fill="#C4571C"/>
+<line x1="600" y1="390" x2="600" y2="412" stroke="#C4571C" stroke-width="2"/><polygon points="593,411 600,424 607,411" fill="#C4571C"/>
+<line x1="980" y1="390" x2="980" y2="412" stroke="#C4571C" stroke-width="2"/><polygon points="973,411 980,424 987,411" fill="#C4571C"/>
+
+<!-- contractual pressure -->
+<rect x="40" y="424" width="1120" height="96" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<rect x="41" y="440" width="5" height="64" rx="2.5" fill="#C4571C"/>
+<text x="600" y="462" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#16181F">And those bound by no regulator are bound by contracts</text>
+<text x="600" y="492" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#5B564A">Tenders ask for evidence, the requirement flows down the contract chain, and interruption underwriting asks harder questions every year</text>
+
+<line x1="600" y1="520" x2="600" y2="540" stroke="#C4571C" stroke-width="2"/><polygon points="593,539 600,552 607,539" fill="#C4571C"/>
+
+<!-- starting point -->
+<rect x="240" y="552" width="720" height="104" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
+<text x="600" y="586" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17.5" fill="#16181F">One starting point, whatever binds you</text>
+<text x="600" y="614" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#5B564A">Gap assessment, two to three weeks</text>
+<text x="600" y="638" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#5B564A">then three to six months to a tested system</text>
+
+<text x="600" y="684" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#8A8578">Sources — NCEMA 7000 · CBUAE Rulebook, Article 7 · Federal Decree-Law No. 6 of 2025</text>
+</svg>

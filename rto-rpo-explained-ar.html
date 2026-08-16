@@ -1,0 +1,72 @@
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>شرح RTO وRPO بلغة واضحة | risk-place.org</title>
+<meta name="description" content="ما معنى هدف زمن التعافي وهدف نقطة الاستعادة بلغة الأعمال، كيف يوضع الرقمان من منحنى الأثر، أرقام نموذجية لكل نشاط، وأربعة أخطاء تجعل الهدف المعلن وهما.">
+<link rel="canonical" href="https://risk-place.org/rto-rpo-explained-ar.html">
+<link rel="alternate" hreflang="ar" href="https://risk-place.org/rto-rpo-explained-ar.html">
+<link rel="alternate" hreflang="en" href="https://risk-place.org/rto-rpo-explained.html">
+<link rel="alternate" hreflang="x-default" href="https://risk-place.org/rto-rpo-explained.html">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "RTO وRPO بلغة واضحة، وعدان يجب أن تفي بهما ترتيباتكم", "inLanguage": "ar", "author": {"@type": "Organization", "name": "risk-place.org"}, "publisher": {"@type": "Organization", "name": "risk-place.org"}, "mainEntityOfPage": "https://risk-place.org/rto-rpo-explained-ar.html", "image": "https://risk-place.org/assets/figures/rto-rpo-timeline-ar.svg", "datePublished": "2026-08-16"}</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HNF79F1SSN"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HNF79F1SSN');</script><script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");ym(111613223,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});</script><noscript><div><img src="https://mc.yandex.ru/watch/111613223" style="position:absolute;left:-9999px;" alt=""/></div></noscript>
+<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:Georgia,'Times New Roman',serif;background:#FDFBF7;color:#16181F;line-height:1.75}
+.top{background:#0D1117;color:#fff;padding:14px 24px;display:flex;justify-content:space-between;align-items:center}
+.top a{color:#fff;text-decoration:none}.lg b{color:#C4571C}.tg{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.55);font-family:Consolas,monospace}
+.wrap{max-width:760px;margin:0 auto;padding:40px 22px 60px}
+.crumb{font-size:13px;color:#8A8578;margin-bottom:22px}.crumb a{color:#C4571C;text-decoration:none}
+.tagchip{display:inline-block;font-family:Consolas,monospace;font-size:12px;letter-spacing:.1em;color:#C4571C;border:1.5px solid #C4571C;border-radius:6px;padding:2px 10px;margin-bottom:14px}
+h1{font-size:34px;line-height:1.2;margin-bottom:6px}.alt{font-size:17px;color:#5B564A;margin-bottom:22px;font-style:italic}
+h2{font-size:24px;margin:28px 0 12px;color:#16181F}
+.def{background:#F1EEE8;border-right:4px solid #C4571C;border-radius:10px;padding:18px 20px;font-size:17.5px;margin-bottom:28px}
+[dir="ltr"] .def{border-right:none;border-left:4px solid #C4571C}
+p.b{font-size:16.5px;margin-bottom:18px}
+ul,ol{padding-inline-start:24px;margin-bottom:18px;font-size:16.5px}li{margin-bottom:8px}
+img{max-width:100%;height:auto;border:1px solid #E1DCD3;border-radius:10px;margin:8px 0}
+figure{margin:22px 0}figcaption{font-size:13.5px;color:#8A8578;margin-top:6px}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
+.rel{margin:30px 0;padding:16px 20px;background:#fff;border:1px solid #E1DCD3;border-radius:10px;font-size:15px}
+.rel b{display:block;margin-bottom:8px}.rel a{color:#C4571C;text-decoration:none;margin-inline-end:16px}
+.cta{background:#0D1117;color:#fff;border-radius:14px;padding:26px 26px;margin-top:36px}
+.cta p{font-size:15.5px;color:rgba(255,255,255,.85);margin-bottom:14px}
+.cta a{display:inline-block;background:#C4571C;color:#fff;text-decoration:none;padding:10px 22px;border-radius:8px;font-size:15px}
+.langsw{font-size:13px;margin-bottom:18px}.langsw a{color:#C4571C;text-decoration:none;border:1px solid #C4571C;border-radius:6px;padding:3px 12px}
+footer{border-top:1px solid #E1DCD3;margin-top:48px;padding-top:18px;font-size:13px;color:#8A8578}footer a{color:#8A8578}</style></head><body>
+<div class="top"><a href="index.html"><span class="lg">risk-place<b>.org</b></span><div class="tg">Business Continuity &amp; Resilience · GCC</div></a>
+<div class="langsw"><a href="rto-rpo-explained.html">English</a></div></div>
+<div class="wrap">
+<div class="crumb"><a href="index.html">الرئيسية</a> · <a href="glossary.html">المسرد</a> · شرح RTO وRPO</div>
+<div class="tagchip">دليل المنهجية</div>
+<h1>RTO وRPO بلغة واضحة، وعدان يجب أن تفي بهما ترتيباتكم</h1>
+<div class="def">اختصاران يحملان معظم عبء تخطيط الاستمرارية. أحدهما عن الوقت والآخر عن البيانات، وكلاهما وعد لا قيمة له إن لم تكن ترتيباتكم قادرة على الوفاء به يوم التعطل الحقيقي.</div>
+<h2>الرقمان بلا مصطلحات</h2>
+<p class="b"><a href="terms/ar/rto.html">هدف زمن التعافي</a>، أو RTO، هو أقصى مدة يجوز أن يبقى فيها نشاط متوقفا قبل أن يصبح الضرر غير مقبول، وهو يجيب عن سؤال واحد، كم من الوقت أمامنا قبل أن يعود هذا للعمل. <a href="terms/ar/rpo.html">وهدف نقطة الاستعادة</a>، أو RPO، هو أقصى كمية من البيانات، مقيسة بالزمن لا بالحجم، تستطيعون تحمل فقدانها، وهو يجيب عن سؤال آخر تماما، كم يجوز أن تكون آخر نسخة سليمة قديمة. خذوا دورة رواتب لها RTO مقداره 24 ساعة وRPO مقداره ساعة واحدة، والمعنى أن الرواتب يجب أن تعمل من جديد خلال يوم، وأنها حين تعمل قد ينقصها على الأكثر آخر ساعة من المدخلات. وعدان مختلفان يقودان إلى ترتيبات مختلفة، فالأول يشترى بقدرة تعاف وإجراءات وأشخاص، والثاني يشترى بتواتر النسخ والتماثل. وهذه الصفحة مخصصة لهذين الرقمين وحدهما وبلغة يفهمها غير المختص، أما المنظومة الكاملة من أربعة أرقام مع <a href="terms/ar/mtpd.html">أقصى فترة تعطل مقبولة</a> والحد الأدنى لمستوى الخدمة، ومثال رقمي متكامل، فمكانها صفحة <a href="recovery-objectives-ar.html">أهداف التعافي الأربعة</a>.</p>
+<p class="b">ومصدر الخلط بين الرقمين أنهما يقاسان بالوحدة نفسها، بالساعات، فيظن كثيرون أنهما وجهان لشيء واحد. الفارق يظهر لحظة السؤال عن الثمن. لتقصير RTO تشترون قدرة احتياطية وإجراءات مكتوبة وأشخاصا يعرفون أدوارهم ويتدربون عليها، ولتقصير RPO تشترون تواترا أعلى في النسخ أو تماثلا لحظيا بين موقعين. وقد تحتاج شركة إلى الأول دون الثاني، مثل مصنع يحتمل فقد ساعة من بيانات القياس ولا يحتمل توقف الخط، وقد تحتاج أخرى إلى العكس تماما، مثل جهة تحتفظ بسجل معاملات لا يجوز أن ينقص منه شيء ولو تأخرت الخدمة نصف يوم. ومن يخلط بين الرقمين ينفق على الجانب الخاطئ من المشكلة.</p>
+<h2>كيف يوضع الرقم بصدق</h2>
+<ul>
+<li><b>من منحنى الأثر لا من الراحة.</b> <a href="terms/ar/bia.html">تحليل أثر الأعمال</a> يرسم كيف ينمو الضرر عبر الساعات والأيام، ويوضع RTO قبل النقطة التي يبدأ عندها المنحنى بالانحدار الحاد. ومن لا منحنى لديه لا أساس لديه للرقم، مهما بدا الرقم معقولا في العرض التقديمي.</li>
+<li><b>لكل نشاط رقمه.</b> عبارة «هدفنا أربع ساعات» بلا معنى على مستوى شركة كاملة. الفوترة والإنتاج والتقارير التنظيمية تستحق كل منها رقمها الخاص، ومن يمنح الجميع الرقم نفسه يكون قد أنفق زيادة على ما لا يستحق، وقصر عما يستحق فعلا.</li>
+<li><b>الجدوى تقاس على الترتيبات القائمة.</b> هدف بأربع ساعات مع نسخ احتياطية لا تستعاد إلا ليلا هو خيال مكتوب. إما أن تستثمروا لإغلاق الفجوة، وإما أن تعلنوا الرقم الأطول الصادق. والرقم الصادق الطويل أفضل من الرقم القصير الجميل، لأن الثاني يوقع باسم القيادة ثم يسقط أمام أول حادث.</li>
+<li><b>انتبهوا إلى السلسلة.</b> زمن التعافي الحقيقي لأي نشاط هو أطول مسار عبر اعتمادياته، استعادة النظام ثم فحص سلامة البيانات ثم وجود الأشخاص في أماكنهم. والأهداف التي توضع لكل نظام على حدة، وتتجاهل السلسلة، تعطي صورة أفضل من الواقع بمقدار ساعات.</li>
+</ul>
+<figure><img src="assets/figures/rto-rpo-timeline-ar.svg" alt="رسم زمني حول لحظة التعطل يبين نقطة RPO قبلها وهدف RTO بعدها وفوقهما أقصى فترة تعطل مقبولة" loading="lazy"><figcaption>RPO ينظر إلى الوراء ويقاس بالبيانات، وRTO ينظر إلى الأمام ويقاس بالوقت، ويوضع تحت الحد الأقصى المقبول بهامش أمان.</figcaption></figure>
+<h2>أرقام نموذجية، وما الذي يحدد السقف فعلا</h2>
+<p class="b">الجدول التالي يعطي مدى شائعا في السوق لا وصفة، والغرض منه أن تعرفوا ما الذي يحدد الرقم في كل حالة، لأن العامل الحاكم كثيرا ما لا يكون تقنيا أصلا.</p>
+<table><thead><tr><th>مثال على النشاط</th><th>RTO المعتاد</th><th>RPO المعتاد</th><th>ما الذي يحدد السقف</th></tr></thead><tbody>
+<tr><td>المبيعات والمدفوعات عبر الإنترنت</td><td>من دقائق إلى 4 ساعات</td><td>قريب من الصفر</td><td>الإيراد في الساعة، وكلفة التماثل ترتفع بحدة كلما اقتربت من الصفر</td></tr>
+<tr><td>التحكم بخط الإنتاج</td><td>من ساعتين إلى 24 ساعة</td><td>آخر وردية</td><td>إجراءات إعادة التشغيل وفحوص السلامة، لا التقنية وحدها</td></tr>
+<tr><td>الفوترة والرواتب</td><td>من 24 إلى 72 ساعة</td><td>من ساعة إلى 24 ساعة</td><td>التواريخ التعاقدية وثقة الموظفين</td></tr>
+<tr><td>التقارير التنظيمية</td><td>قبل الموعد النهائي</td><td>آخر إفادة مقدمة</td><td>التقويم لا التقنية</td></tr>
+</tbody></table>
+<p class="b">وعلامة الهدف الوهمي واحدة لا تخطئ، أنه لم يثبت عمليا قط. الهدف الذي لم ينج من قياس على الساعة أمنية لا التزام، والمدققون يعاملونه على هذا الأساس، والحوادث تفعل الشيء نفسه بلا مجاملة.</p>
+<h2>أخطاء كلاسيكية</h2>
+<ul>
+<li><b>نسخ أرقام المورد.</b> سرعة التعافي المعلنة لمنصة ما ليست هدف نشاطكم، فأحجام بياناتكم وإجراءاتكم وأشخاصكم هم من يحدد الزمن الحقيقي. والمورد يعلن زمن إتاحة البنية، لا زمن عودة عملكم.</li>
+<li><b>طموح الصفر في كل شيء.</b> هدف بصفر زمن وصفر فقد بيانات موجود فعلا، لكن بثمن لا يبرره إلا عدد قليل من الأنشطة، وتحليل أثر الأعمال هو من يقول لكم أيها.</li>
+<li><b>الخلط بين RPO وجدول النسخ.</b> النسخ الاحتياطي كل ليلة لا يجعل RPO مساويا لأربع وعشرين ساعة، فالاستعادة الفاشلة تجعله ما لا نهاية. هذا الهدف يعيش أو يموت مع اختبار استعادة حقيقي، لا مع تقرير نجاح مهمة.</li>
+<li><b>وضع الرقم مرة ونسيانه.</b> الأحجام تنمو والأنظمة تتغير، وست ساعات أثبتت العام الماضي قد تكون أربع عشرة اليوم. الأهداف تشيخ مثلما يشيخ تحليل الأثر الذي خرجت منه.</li>
+</ul>
+<h2>من يعتمد الرقمين ومتى يعاد التحقق</h2>
+<p class="b">التسلسل الصحيح ثلاث خطوات لا واحدة. يقترح أصحاب الأنشطة الرقم انطلاقا من منحنى الأثر، وتؤكد التقنية إن كان قابلا للتحقيق بالترتيبات الحالية، ثم تعتمد القيادة الفجوة المتبقية، لأن الهدف الذي لا نستطيع الوفاء به هو خطر مقبول باسم أحدهم، وقبول الخطر عمل قيادي لا عمل فني. وحين تتعذر إغلاق الفجوة هذا العام، فالمخرج ليس خفض الرقم على الورق بل تسجيله كما هو، الهدف المطلوب والقدرة الفعلية والفارق بينهما وتاريخ المراجعة واسم من قبل هذا الفارق. أما إعادة التحقق فتجري عند كل تحديث لتحليل أثر الأعمال، وبعد أي تغيير جوهري، وفي التمرين السنوي على أقل تقدير. ومعنى إعادة التحقق هنا القياس على الساعة في <a href="tabletop-exercise-guide-ar.html">تمرين</a> أو اختبار استعادة، لا إعادة التوقيع على الوثيقة نفسها بتاريخ جديد. ولاحظوا أن الرقمين يستقران في قسم التعافي من <a href="terms/ar/bcp.html">خطة الاستمرارية</a>، وبنية ذلك القسم شرحناها في صفحة <a href="bcp-template-structure-ar.html">أقسام خطة الاستمرارية</a>. وفي الإمارات يستخدم كل من NCEMA 7000 وISO 22301 هذا الترتيب الطبقي نفسه، إذ يوضع RTO تحت أقصى فترة تعطل مقبولة بهامش أمان، والمقارنة بين المعيارين في صفحة <a href="ncema-7000-vs-iso-22301-ar.html">NCEMA 7000 وISO 22301</a>.</p>
+<div class="rel"><b>صفحات ذات صلة</b><a href="recovery-objectives-ar.html">أهداف التعافي الأربعة</a> <a href="business-impact-analysis-ar.html">تحليل أثر الأعمال</a> <a href="bcp-template-structure-ar.html">أقسام خطة الاستمرارية</a> <a href="tabletop-exercise-guide-ar.html">التمرين النظري</a> <a href="terms/ar/rto.html">هدف زمن التعافي</a> <a href="terms/ar/rpo.html">هدف نقطة الاستعادة</a></div>
+<div class="cta"><p>اشتقاق أرقام التعافي من منحنى الأثر والدفاع عنها أمام القيادة هو جوهر الوحدة M1 من برنامج ERGP، أول شهادة في حوكمة المرونة متاحة بالكامل باللغة العربية وبالإنجليزية أيضا. ست وحدات وستة مخرجات عملية وشهادة قابلة للتحقق.</p><a href="resilience-governance-certificate-ar.html">تعرفوا على برنامج ERGP</a></div>
+<footer>© 2026 risk-place.org · استمرارية الأعمال والمرونة · <a href="glossary.html">المسرد</a></footer>
+</div></body></html>

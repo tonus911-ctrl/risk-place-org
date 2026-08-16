@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" width="1200" height="660" direction="rtl" role="img" aria-label="اختيار شهادة في استمرارية الأعمال، مؤهل يحمله الشخص مقابل شهادة تحملها المؤسسة، ثم خمسة معايير هي العمق والتقييم والمخرجات والاعتراف وقابلية التحقق">
+<rect x="0" y="0" width="1200" height="660" fill="#FDFBF7"/>
+
+<text x="600" y="50" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="27" fill="#16181F">اختيار شهادة في استمرارية الأعمال</text>
+<text x="600" y="84" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15.5" fill="#5B564A">كلمة واحدة تغطي منتجين مختلفين، حدد ما تحتاجه ثم اختبر البرنامج بالمعايير نفسها</text>
+
+<!-- اللوحة اليمنى، الشهادة للشخص -->
+<rect x="615" y="110" width="545" height="230" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="1136" y="143" text-anchor="end" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#C4571C">تصدر لشخص باسمه</text>
+<text x="1136" y="180" text-anchor="end" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="21" fill="#16181F">مؤهل تحمله معك أنت</text>
+<text x="1136" y="214" text-anchor="end" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="14" fill="#5B564A">تمنحه جمعية مهنية أو جهة تملك برنامج تأهيل أو</text>
+<text x="1136" y="236" text-anchor="end" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="14" fill="#5B564A">مركز تدريب، بعد اختبار تسجل نتيجته.</text>
+<text x="1136" y="266" text-anchor="end" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="14" fill="#5B564A">يثبت أن منهجا غطي وأن اختبارا اجتيز، وأحيانا</text>
+<text x="1136" y="288" text-anchor="end" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="14" fill="#5B564A">سنوات ممارسة يتحقق منها طرف ثالث.</text>
+<line x1="639" y1="305" x2="1136" y2="305" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="1136" y="328" text-anchor="end" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">لا يثبت أن خطط شركتك تعمل</text>
+
+<!-- اللوحة اليسرى، الشهادة للمؤسسة -->
+<rect x="40" y="110" width="545" height="230" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="561" y="143" text-anchor="end" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#C4571C">تصدر لكيان قانوني</text>
+<text x="561" y="180" text-anchor="end" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="21" fill="#16181F">شهادة تحملها الشركة</text>
+<text x="561" y="214" text-anchor="end" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="14" fill="#5B564A">تصدرها جهة منح شهادات بعد تدقيق، لنطاق محدد</text>
+<text x="561" y="236" text-anchor="end" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="14" fill="#5B564A">ومدة صلاحية معلومة، مع تدقيق مراقبة دوري.</text>
+<text x="561" y="266" text-anchor="end" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="14" fill="#5B564A">تثبت أن نظام الإدارة فحص مقابل معيار داخل</text>
+<text x="561" y="288" text-anchor="end" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="14" fill="#5B564A">ذلك النطاق وحده.</text>
+<line x1="64" y1="305" x2="561" y2="305" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="561" y="328" text-anchor="end" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">لا يثبت أن أي موظف بعينه كفء</text>
+
+<!-- سهمان نزولا إلى شريط المعايير -->
+<line x1="888" y1="352" x2="888" y2="384" stroke="#C4571C" stroke-width="2"/><polygon points="882,383 888,394 894,383" fill="#C4571C"/>
+<line x1="312" y1="352" x2="312" y2="384" stroke="#C4571C" stroke-width="2"/><polygon points="306,383 312,394 318,383" fill="#C4571C"/>
+
+<text x="600" y="379" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">أيا كان اختيارك، اختبر البرنامج بالمعايير الخمسة</text>
+
+<!-- المعيار 1 -->
+<rect x="964" y="398" width="196" height="170" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="1062" cy="430" r="15" fill="#C4571C"/>
+<text x="1062" y="436" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">1</text>
+<text x="1062" y="471" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="16.5" fill="#16181F">العمق</text>
+<text x="1062" y="498" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">ساعات التدريس، والعمل</text>
+<text x="1062" y="517" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">الذي تنجزه بين</text>
+<text x="1062" y="536" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">الجلسات.</text>
+<text x="1062" y="558" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="11.5" fill="#8A8578">إشارة خطر، شهادة في يوم</text>
+
+<!-- المعيار 2 -->
+<rect x="733" y="398" width="196" height="170" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="831" cy="430" r="15" fill="#C4571C"/>
+<text x="831" y="436" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">2</text>
+<text x="831" y="471" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="16.5" fill="#16181F">التقييم</text>
+<text x="831" y="498" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">عتبة يمكن الرسوب فيها،</text>
+<text x="831" y="517" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">وإنسان يصحح ما</text>
+<text x="831" y="536" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">أنتجته أنت.</text>
+<text x="831" y="558" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="11.5" fill="#8A8578">إشارة خطر، لا أحد يرسب</text>
+
+<!-- المعيار 3 -->
+<rect x="502" y="398" width="196" height="170" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="600" cy="430" r="15" fill="#C4571C"/>
+<text x="600" y="436" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">3</text>
+<text x="600" y="471" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="16.5" fill="#16181F">المخرجات</text>
+<text x="600" y="498" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">ما يخرج معك من القاعة،</text>
+<text x="600" y="517" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">مبني على نطاقك أنت</text>
+<text x="600" y="536" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">لا على حالة افتراضية.</text>
+<text x="600" y="558" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="11.5" fill="#8A8578">إشارة خطر، شرائح فقط</text>
+
+<!-- المعيار 4 -->
+<rect x="271" y="398" width="196" height="170" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="369" cy="430" r="15" fill="#C4571C"/>
+<text x="369" y="436" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">4</text>
+<text x="369" y="471" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="16.5" fill="#16181F">الاعتراف</text>
+<text x="369" y="498" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">من يقبلها فعلا، اطلب</text>
+<text x="369" y="517" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">أسماء جهات ومناقصات</text>
+<text x="369" y="536" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">لا صفات عامة.</text>
+<text x="369" y="558" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="11.5" fill="#8A8578">إشارة خطر، ادعاء فضفاض</text>
+
+<!-- المعيار 5 -->
+<rect x="40" y="398" width="196" height="170" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="1.5"/>
+<circle cx="138" cy="430" r="15" fill="#C4571C"/>
+<text x="138" y="436" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">5</text>
+<text x="138" y="471" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="16.5" fill="#16181F">قابلية التحقق</text>
+<text x="138" y="498" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">رقم فريد وتحقق علني</text>
+<text x="138" y="517" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">وقاعدة للتجديد أو</text>
+<text x="138" y="536" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">لانتهاء الصلاحية.</text>
+<text x="138" y="558" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="11.5" fill="#8A8578">إشارة خطر، لا سبيل للتحقق</text>
+
+<!-- الأسهم بين المعايير، من اليمين إلى اليسار -->
+<line x1="957" y1="483" x2="944" y2="483" stroke="#C4571C" stroke-width="2"/><polygon points="945,477 935,483 945,489" fill="#C4571C"/>
+<line x1="726" y1="483" x2="713" y2="483" stroke="#C4571C" stroke-width="2"/><polygon points="714,477 704,483 714,489" fill="#C4571C"/>
+<line x1="495" y1="483" x2="482" y2="483" stroke="#C4571C" stroke-width="2"/><polygon points="483,477 473,483 483,489" fill="#C4571C"/>
+<line x1="264" y1="483" x2="251" y2="483" stroke="#C4571C" stroke-width="2"/><polygon points="252,477 242,483 252,489" fill="#C4571C"/>
+
+<text x="600" y="613" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">إذا سقط البرنامج في اثنين من الخمسة فما تشتريه ورقة بإطار لا مؤهلا</text>
+</svg>

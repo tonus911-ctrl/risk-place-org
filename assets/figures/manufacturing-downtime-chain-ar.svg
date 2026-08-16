@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 730" width="1200" height="730" direction="rtl" role="img" aria-label="سلسلة التوقف في المصنع من الحدث إلى أول إنتاج معتمد، وأين تنكسر كل حلقة">
+<rect x="0" y="0" width="1200" height="730" fill="#FDFBF7"/>
+<text x="600" y="48" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="27" fill="#16181F">سلسلة التوقف في المصنع، وأين تنكسر</text>
+<text x="600" y="82" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15.5" fill="#5B564A">من الحدث إلى أول إنتاج معتمد، خمس حلقات لكل واحدة نقطة انكسار معروفة</text>
+<rect x="955" y="118" width="205" height="120" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
+<text x="1057.5" y="150" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">1</text>
+<text x="1057.5" y="180" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#16181F">الحدث</text>
+<text x="1057.5" y="208" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">حريق، مرافق، فدية، مورد</text>
+<line x1="953" y1="178" x2="945" y2="178" stroke="#C4571C" stroke-width="2"/>
+<polygon points="945,171 933,178 945,185" fill="#C4571C"/>
+<rect x="726" y="118" width="205" height="120" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="828.5" y="150" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">2</text>
+<text x="828.5" y="180" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#16181F">الإيقاف الآمن</text>
+<text x="828.5" y="208" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">قرار من يوقف الخط</text>
+<line x1="724" y1="178" x2="716" y2="178" stroke="#C4571C" stroke-width="2"/>
+<polygon points="716,171 704,178 716,185" fill="#C4571C"/>
+<rect x="497" y="118" width="205" height="120" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="599.5" y="150" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">3</text>
+<text x="599.5" y="180" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#16181F">مدة التعذر</text>
+<text x="599.5" y="208" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">لا وصول إلى الموقع</text>
+<line x1="495" y1="178" x2="487" y2="178" stroke="#C4571C" stroke-width="2"/>
+<polygon points="487,171 475,178 487,185" fill="#C4571C"/>
+<rect x="268" y="118" width="205" height="120" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="370.5" y="150" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">4</text>
+<text x="370.5" y="180" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#16181F">إعادة تشغيل متسلسلة</text>
+<text x="370.5" y="208" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">وحدة بعد وحدة</text>
+<line x1="266" y1="178" x2="258" y2="178" stroke="#C4571C" stroke-width="2"/>
+<polygon points="258,171 246,178 258,185" fill="#C4571C"/>
+<rect x="39" y="118" width="205" height="120" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="141.5" y="150" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">5</text>
+<text x="141.5" y="180" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#16181F">أول إنتاج معتمد</text>
+<text x="141.5" y="208" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">بعد فحوص الجودة</text>
+<rect x="955" y="290" width="205" height="200" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="1057.5" y="320" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#C4571C">أين تنكسر</text>
+<line x1="971" y1="338" x2="1144" y2="338" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="1057.5" y="366" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#16181F">الإبلاغ يتأخر</text>
+<text x="1057.5" y="390" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#16181F">لأن الوردية تنتظر إذنا</text>
+<line x1="971" y1="418" x2="1144" y2="418" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="1057.5" y="446" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">المعالجة، تصعيد مكتوب</text>
+<rect x="726" y="290" width="205" height="200" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="828.5" y="320" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#C4571C">أين تنكسر</text>
+<line x1="742" y1="338" x2="915" y2="338" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="828.5" y="366" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#16181F">صلاحية الإيقاف</text>
+<text x="828.5" y="390" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#16181F">غير مكتوبة باسم أحد</text>
+<line x1="742" y1="418" x2="915" y2="418" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="828.5" y="446" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">المعالجة، تفويض معلن</text>
+<rect x="497" y="290" width="205" height="200" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="599.5" y="320" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#C4571C">أين تنكسر</text>
+<line x1="513" y1="338" x2="686" y2="338" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="599.5" y="366" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#16181F">لا خطة تعذر وصول</text>
+<text x="599.5" y="390" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#16181F">ولا مراقبة عن بعد</text>
+<line x1="513" y1="418" x2="686" y2="418" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="599.5" y="442" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">المعالجة، تصاريح</text>
+<text x="599.5" y="464" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">وطاقم مصغر</text>
+<rect x="268" y="290" width="205" height="200" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="370.5" y="320" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#C4571C">أين تنكسر</text>
+<line x1="284" y1="338" x2="457" y2="338" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="370.5" y="366" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#16181F">الكتيب في رأس</text>
+<text x="370.5" y="390" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#16181F">مهندس واحد مسافر</text>
+<line x1="284" y1="418" x2="457" y2="418" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="370.5" y="442" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">المعالجة، كتيب</text>
+<text x="370.5" y="464" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">مكتوب للوردية</text>
+<rect x="39" y="290" width="205" height="200" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="141.5" y="320" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#C4571C">أين تنكسر</text>
+<line x1="55" y1="338" x2="228" y2="338" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="141.5" y="366" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#16181F">مدخل وحيد المصدر</text>
+<text x="141.5" y="390" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#16181F">لم يصل، والدفعة ترفض</text>
+<line x1="55" y1="418" x2="228" y2="418" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="141.5" y="446" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">المعالجة، سجل وحيد المصدر</text>
+<rect x="40" y="520" width="1120" height="160" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
+<rect x="1154" y="534" width="5" height="132" rx="2.5" fill="#C4571C"/>
+<text x="600" y="552" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#C4571C">الفجوة التي تسقط من حسابات الميزانية</text>
+<rect x="844" y="570" width="276" height="28" rx="6" fill="#E7E2DA" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="982" y="590" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#16181F">مدة الحدث، ست ساعات</text>
+<rect x="200" y="610" width="920" height="28" rx="6" fill="#C4571C" stroke="#C4571C" stroke-width="1.5"/>
+<text x="660" y="630" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#FFFFFF">مدة العودة إلى الإنتاج، عشرين ساعة</text>
+<text x="600" y="664" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">إعادة التشغيل تسلسل لا مفتاح، ولهذا تطول العودة بعد حدث قصير</text>
+<text x="600" y="706" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#8A8578">المصدر، استمرارية التصنيع في الخليج · risk-place.org</text>
+</svg>

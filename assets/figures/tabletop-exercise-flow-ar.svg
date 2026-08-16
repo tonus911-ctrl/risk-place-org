@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" direction="rtl" role="img" aria-label="مراحل التمرين النظري الثلاث، الإعداد قبل اليوم وإدارة القاعة في اليوم وإغلاق الملاحظات بعده">
+<rect x="0" y="0" width="1200" height="700" fill="#FDFBF7"/>
+<text x="600" y="48" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="27" fill="#16181F">التمرين النظري، من التصميم إلى إغلاق الملاحظات</text>
+<text x="600" y="82" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15.5" fill="#5B564A">الإعداد يقرر ما يستطيع التمرين أن يجده، والقاعة تقرر بأي صدق، والمراجعة تقرر ما الذي يتغير</text>
+<rect x="808" y="116" width="352" height="244" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="984" y="146" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">قبل التمرين</text>
+<text x="984" y="180" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="19" fill="#16181F">تصميم السيناريو</text>
+<line x1="1142" y1="198" x2="826" y2="198" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="984" y="230" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">أسوأ يوم واقعي لا أسوأ يوم ممكن</text>
+<text x="984" y="260" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">خط زمني من 6 إلى 10 مداخلات على فترات</text>
+<text x="984" y="290" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">قيود مكتوبة بصدق ومنها الغياب</text>
+<text x="984" y="320" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">مفتاح إجابة مأخوذ من الخطة نفسها</text>
+<line x1="803" y1="238" x2="795" y2="238" stroke="#C4571C" stroke-width="2"/>
+<polygon points="795,231 781,238 795,245" fill="#C4571C"/>
+<rect x="424" y="116" width="352" height="244" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="1.5"/>
+<text x="600" y="146" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">يوم التمرين</text>
+<text x="600" y="180" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="19" fill="#16181F">إدارة القاعة</text>
+<line x1="758" y1="198" x2="442" y2="198" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="600" y="230" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">أصحاب القرار أنفسهم لا مندوبوهم</text>
+<text x="600" y="260" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">من ساعتين إلى ثلاث والساعة لا تتوقف</text>
+<text x="600" y="290" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">الميسر يسأل ولا يجيب أبدا</text>
+<text x="600" y="320" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">مدون يسجل التوقيتات والقرارات والخلافات</text>
+<line x1="419" y1="238" x2="411" y2="238" stroke="#C4571C" stroke-width="2"/>
+<polygon points="411,231 397,238 411,245" fill="#C4571C"/>
+<rect x="40" y="116" width="352" height="244" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="216" y="146" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">بعد التمرين</text>
+<text x="216" y="180" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="19" fill="#16181F">إغلاق الملاحظات</text>
+<line x1="374" y1="198" x2="58" y2="198" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="216" y="230" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">تقرير من صفحتين إلى أربع خلال أسبوع</text>
+<text x="216" y="260" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">إغلاق أهم ثلاث ملاحظات أولا</text>
+<text x="216" y="290" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">تعديل الخطة حيث انكسرت فعلا</text>
+<text x="216" y="320" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">حفظ الأدلة، وهي ما يطلبه المدققون</text>
+<rect x="40" y="386" width="1120" height="54" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
+<text x="600" y="418" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="14" fill="#16181F">كل نقاش متوقف هو نفسه ملاحظة، لا أحد يملك هذا القرار، سجلوه وتقدموا</text>
+<text x="600" y="486" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">ثلاثة أشياء لا تستطيع الوثيقة اختبارها</text>
+<rect x="808" y="506" width="352" height="110" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="984" y="546" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="18" fill="#16181F">الصلاحية</text>
+<line x1="1100" y1="562" x2="868" y2="562" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="984" y="590" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">هل يعرف صاحبها حدها</text>
+<rect x="424" y="506" width="352" height="110" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="600" y="546" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="18" fill="#16181F">التسليمات</text>
+<line x1="716" y1="562" x2="484" y2="562" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="600" y="590" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">هل يستلمها التالي فعلا</text>
+<rect x="40" y="506" width="352" height="110" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="216" y="546" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="18" fill="#16181F">الحلول المؤقتة</text>
+<line x1="332" y1="562" x2="100" y2="562" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="216" y="590" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">هل توجد خارج الورقة</text>
+<text x="600" y="664" text-anchor="middle" direction="rtl" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">التمرين الذي ينتهي بلا مشكلات كبرى لم يختبر شيئا · risk-place.org</text>
+</svg>

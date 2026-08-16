@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" width="1200" height="660" role="img" aria-label="Choosing a certification in business continuity: a qualification held by a person versus a certificate held by an organisation, then five tests — depth, assessment, artefacts, recognition, verifiability">
+<rect x="0" y="0" width="1200" height="660" fill="#FDFBF7"/>
+
+<text x="600" y="50" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="27" fill="#16181F">Choosing a certification in business continuity</text>
+<text x="600" y="82" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15.5" fill="#5B564A">One word, two products. Decide which you need, then test the programme the same way.</text>
+
+<!-- panel: the person -->
+<rect x="40" y="110" width="545" height="230" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="64" y="142" font-family="Consolas, monospace" font-size="12" letter-spacing="1.4" fill="#C4571C">CERTIFIES A PERSON</text>
+<text x="64" y="178" font-family="Georgia, 'Times New Roman', serif" font-size="21" fill="#16181F">A qualification you carry</text>
+<text x="64" y="212" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#5B564A">Issued to a named individual by a professional institute,</text>
+<text x="64" y="234" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#5B564A">a scheme owner or a training provider.</text>
+<text x="64" y="264" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#5B564A">Proves a syllabus was covered and an examination passed.</text>
+<text x="64" y="286" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#5B564A">Sometimes years of practice are verified as well.</text>
+<line x1="64" y1="305" x2="561" y2="305" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="64" y="326" font-family="Consolas, monospace" font-size="12" fill="#8A8578">IT DOES NOT PROVE YOUR PLANS WORK</text>
+
+<!-- panel: the organisation -->
+<rect x="615" y="110" width="545" height="230" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="639" y="142" font-family="Consolas, monospace" font-size="12" letter-spacing="1.4" fill="#C4571C">CERTIFIES AN ORGANISATION</text>
+<text x="639" y="178" font-family="Georgia, 'Times New Roman', serif" font-size="21" fill="#16181F">A certificate the company holds</text>
+<text x="639" y="212" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#5B564A">Issued to a legal entity after an audit by a certification</text>
+<text x="639" y="234" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#5B564A">body, for a defined scope and a fixed validity period.</text>
+<text x="639" y="264" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#5B564A">Proves the management system was examined against a</text>
+<text x="639" y="286" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#5B564A">standard on that scope, and is re-checked by surveillance.</text>
+<line x1="639" y1="305" x2="1136" y2="305" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="639" y="326" font-family="Consolas, monospace" font-size="12" fill="#8A8578">IT DOES NOT PROVE ANY PERSON IS COMPETENT</text>
+
+<!-- arrows down into the test band -->
+<line x1="312" y1="352" x2="312" y2="384" stroke="#C4571C" stroke-width="2"/><polygon points="306,383 312,394 318,383" fill="#C4571C"/>
+<line x1="888" y1="352" x2="888" y2="384" stroke="#C4571C" stroke-width="2"/><polygon points="882,383 888,394 894,383" fill="#C4571C"/>
+
+<text x="600" y="378" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#16181F">Whichever you need, put the programme through the same five tests</text>
+
+<!-- test 1 -->
+<rect x="40" y="398" width="196" height="170" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="138" cy="430" r="15" fill="#C4571C"/>
+<text x="138" y="436" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">1</text>
+<text x="138" y="470" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#16181F">Depth</text>
+<text x="138" y="496" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">Contact hours, and the</text>
+<text x="138" y="515" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">work you do between</text>
+<text x="138" y="534" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">the sessions.</text>
+<text x="138" y="557" text-anchor="middle" font-family="Consolas, monospace" font-size="11" fill="#8A8578">flag: 1-day certificate</text>
+
+<!-- test 2 -->
+<rect x="271" y="398" width="196" height="170" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="369" cy="430" r="15" fill="#C4571C"/>
+<text x="369" y="436" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">2</text>
+<text x="369" y="470" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#16181F">Assessment</text>
+<text x="369" y="496" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">A threshold you can miss,</text>
+<text x="369" y="515" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">and a person who marks</text>
+<text x="369" y="534" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">what you produced.</text>
+<text x="369" y="557" text-anchor="middle" font-family="Consolas, monospace" font-size="11" fill="#8A8578">flag: nobody ever fails</text>
+
+<!-- test 3 -->
+<rect x="502" y="398" width="196" height="170" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="600" cy="430" r="15" fill="#C4571C"/>
+<text x="600" y="436" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">3</text>
+<text x="600" y="470" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#16181F">Artefacts</text>
+<text x="600" y="496" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">What leaves the room,</text>
+<text x="600" y="515" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">built on your own scope,</text>
+<text x="600" y="534" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">not a case study.</text>
+<text x="600" y="557" text-anchor="middle" font-family="Consolas, monospace" font-size="11" fill="#8A8578">flag: slides only</text>
+
+<!-- test 4 -->
+<rect x="733" y="398" width="196" height="170" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="831" cy="430" r="15" fill="#C4571C"/>
+<text x="831" y="436" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">4</text>
+<text x="831" y="470" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#16181F">Recognition</text>
+<text x="831" y="496" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">Who accepts it. Ask for</text>
+<text x="831" y="515" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">employers and tenders by</text>
+<text x="831" y="534" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">name, not adjectives.</text>
+<text x="831" y="557" text-anchor="middle" font-family="Consolas, monospace" font-size="11" fill="#8A8578">flag: vague claims</text>
+
+<!-- test 5 -->
+<rect x="964" y="398" width="196" height="170" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="1.5"/>
+<circle cx="1062" cy="430" r="15" fill="#C4571C"/>
+<text x="1062" y="436" text-anchor="middle" font-family="Consolas, monospace" font-size="14" fill="#FFFFFF">5</text>
+<text x="1062" y="470" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#16181F">Verifiable</text>
+<text x="1062" y="496" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">A unique number, a public</text>
+<text x="1062" y="515" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">check, and a rule for</text>
+<text x="1062" y="534" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">renewal or expiry.</text>
+<text x="1062" y="557" text-anchor="middle" font-family="Consolas, monospace" font-size="11" fill="#8A8578">flag: no way to check</text>
+
+<!-- arrows between the tests, left to right -->
+<line x1="243" y1="483" x2="258" y2="483" stroke="#C4571C" stroke-width="2"/><polygon points="257,477 267,483 257,489" fill="#C4571C"/>
+<line x1="474" y1="483" x2="489" y2="483" stroke="#C4571C" stroke-width="2"/><polygon points="488,477 498,483 488,489" fill="#C4571C"/>
+<line x1="705" y1="483" x2="720" y2="483" stroke="#C4571C" stroke-width="2"/><polygon points="719,477 729,483 719,489" fill="#C4571C"/>
+<line x1="936" y1="483" x2="951" y2="483" stroke="#C4571C" stroke-width="2"/><polygon points="950,477 960,483 950,489" fill="#C4571C"/>
+
+<text x="600" y="612" text-anchor="middle" font-family="Consolas, monospace" font-size="12.5" fill="#8A8578">Fail two of the five and what you are buying is a document with a border, not a qualification</text>
+</svg>

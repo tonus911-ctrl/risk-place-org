@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 740" width="1200" height="740" direction="rtl" role="img" aria-label="خريطة برنامج ERGP، ست وحدات و94 فصلا وما يبقى في يد المشارك بعد كل وحدة، ثم المشروع الختامي والشهادة المرقمة في سجل علني">
+<rect x="0" y="0" width="1200" height="740" fill="#FDFBF7"/>
+<text x="600" y="48" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="27" fill="#16181F">خريطة برنامج ERGP</text>
+<text x="600" y="80" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15.5" fill="#5B564A">ست وحدات و94 فصلا، وما يبقى في يد المشارك بعد كل وحدة</text>
+<rect x="816" y="112" width="348" height="222" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="990" cy="144" r="17" fill="#C4571C"/>
+<text x="990" y="150" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#FFFFFF">1</text>
+<text x="990" y="188" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">حوكمة المرونة</text>
+<text x="990" y="210" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">ومجلس الإدارة</text>
+<text x="990" y="236" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#8A8578">19 فصلا</text>
+<line x1="840" y1="252" x2="1140" y2="252" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="990" y="276" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">يبقى في يدك</text>
+<text x="990" y="298" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">سياسة حوكمة المرونة</text>
+<text x="990" y="318" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">وخريطة أجهزة الحوكمة</text>
+<rect x="426" y="112" width="348" height="222" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="600" cy="144" r="17" fill="#C4571C"/>
+<text x="600" y="150" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#FFFFFF">2</text>
+<text x="600" y="188" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">من إدارة المخاطر</text>
+<text x="600" y="210" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">إلى مرونة الأعمال</text>
+<text x="600" y="236" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#8A8578">15 فصلا</text>
+<line x1="450" y1="252" x2="750" y2="252" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="600" y="276" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">يبقى في يدك</text>
+<text x="600" y="298" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">سجل مخاطر المرونة</text>
+<text x="600" y="318" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">بمؤشرات إنذار مبكر</text>
+<rect x="36" y="112" width="348" height="222" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="210" cy="144" r="17" fill="#C4571C"/>
+<text x="210" y="150" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#FFFFFF">3</text>
+<text x="210" y="188" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">تحليل الأثر</text>
+<text x="210" y="210" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">واقتصاد التعافي</text>
+<text x="210" y="236" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#8A8578">15 فصلا</text>
+<line x1="60" y1="252" x2="360" y2="252" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="210" y="276" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">يبقى في يدك</text>
+<text x="210" y="298" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">تحليل أثر مكتمل بأهداف</text>
+<text x="210" y="318" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">يمكن الدفاع عنها بالمال</text>
+<rect x="816" y="358" width="348" height="222" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="990" cy="390" r="17" fill="#C4571C"/>
+<text x="990" y="396" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#FFFFFF">4</text>
+<text x="990" y="434" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">إدارة الأزمات</text>
+<text x="990" y="456" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">واتخاذ القرار</text>
+<text x="990" y="482" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#8A8578">15 فصلا</text>
+<line x1="840" y1="498" x2="1140" y2="498" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="990" y="522" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">يبقى في يدك</text>
+<text x="990" y="544" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">خطة استجابة للأزمات</text>
+<text x="990" y="564" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">وسيناريو تمرين</text>
+<rect x="426" y="358" width="348" height="222" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="600" cy="390" r="17" fill="#C4571C"/>
+<text x="600" y="396" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#FFFFFF">5</text>
+<text x="600" y="434" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">المتطلبات التنظيمية</text>
+<text x="600" y="456" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">للمرونة</text>
+<text x="600" y="482" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#8A8578">15 فصلا</text>
+<line x1="450" y1="498" x2="750" y2="498" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="600" y="522" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">يبقى في يدك</text>
+<text x="600" y="544" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">مصفوفة مطابقة المؤسسة</text>
+<text x="600" y="564" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">مع المعيارين الوطني والدولي</text>
+<rect x="36" y="358" width="348" height="222" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="210" cy="390" r="17" fill="#C4571C"/>
+<text x="210" y="396" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#FFFFFF">6</text>
+<text x="210" y="434" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">التأكيد والتقارير</text>
+<text x="210" y="456" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#16181F">والنضج</text>
+<text x="210" y="482" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#8A8578">15 فصلا</text>
+<line x1="60" y1="498" x2="360" y2="498" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="210" y="522" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">يبقى في يدك</text>
+<text x="210" y="544" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">لوحة متابعة وقالب</text>
+<text x="210" y="564" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#5B564A">تقرير لمجلس الإدارة</text>
+<line x1="812" y1="223" x2="791" y2="223" stroke="#C4571C" stroke-width="2"/>
+<polygon points="792,217 778,223 792,229" fill="#C4571C"/>
+<line x1="422" y1="223" x2="401" y2="223" stroke="#C4571C" stroke-width="2"/>
+<polygon points="402,217 388,223 402,229" fill="#C4571C"/>
+<line x1="812" y1="469" x2="791" y2="469" stroke="#C4571C" stroke-width="2"/>
+<polygon points="792,463 778,469 792,475" fill="#C4571C"/>
+<line x1="422" y1="469" x2="401" y2="469" stroke="#C4571C" stroke-width="2"/>
+<polygon points="402,463 388,469 402,475" fill="#C4571C"/>
+<rect x="816" y="606" width="348" height="76" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="990" y="638" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="16" fill="#16181F">ست وحدات وستة مخرجات</text>
+<text x="990" y="662" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">94 فصلا و24 مجموعة أسئلة تحقق ذاتي</text>
+<rect x="426" y="606" width="348" height="76" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="600" y="638" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="16" fill="#16181F">المشروع الختامي</text>
+<text x="600" y="662" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">تقرير بمستوى المجلس يراجع مع خبير البرنامج</text>
+<rect x="36" y="606" width="348" height="76" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="210" y="638" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="16" fill="#16181F">شهادة مرقمة</text>
+<text x="210" y="662" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#5B564A">في سجل علني يفحصه أي طرف ثالث</text>
+<line x1="36" y1="593" x2="1164" y2="593" stroke="#E1DCD3" stroke-width="1.5"/>
+<line x1="812" y1="644" x2="791" y2="644" stroke="#C4571C" stroke-width="2"/>
+<polygon points="792,638 778,644 792,650" fill="#C4571C"/>
+<line x1="422" y1="644" x2="401" y2="644" stroke="#C4571C" stroke-width="2"/>
+<polygon points="402,638 388,644 402,650" fill="#C4571C"/>
+<text x="600" y="716" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#8A8578">الوحدات تغذي بعضها بعضا، وكل مخرج يدخل مؤسستك قبل أن ينتهي البرنامج</text>
+</svg>

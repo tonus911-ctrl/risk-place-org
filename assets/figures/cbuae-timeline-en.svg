@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 710" width="1200" height="710" role="img" aria-label="The one-year transitional period under Article 184 of Federal Decree-Law No. 6 of 2025, shown as four working windows ending at the 16 September 2026 deadline">
+<rect x="0" y="0" width="1200" height="710" fill="#FDFBF7"/>
+
+<text x="600" y="48" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="27" fill="#16181F">One transitional year, four working windows</text>
+<text x="600" y="82" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15.5" fill="#5B564A">Federal Decree-Law No. 6 of 2025 — the transitional period granted by Article 184</text>
+
+<!-- anchor -->
+<rect x="40" y="104" width="1120" height="78" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<rect x="41" y="116" width="5" height="54" rx="2.5" fill="#C4571C"/>
+<text x="600" y="132" text-anchor="middle" font-family="Consolas, monospace" font-size="12.5" fill="#C4571C">ARTICLE 184 · ONE-YEAR TRANSITIONAL PERIOD</text>
+<text x="600" y="162" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#16181F">In force 16 September 2025 — status to be regularised by 16 September 2026</text>
+
+<!-- axis -->
+<line x1="52" y1="228" x2="1134" y2="228" stroke="#C4571C" stroke-width="2.5"/>
+<polygon points="1132,219 1160,228 1132,237" fill="#C4571C"/>
+<circle cx="172" cy="228" r="7" fill="#C4571C"/>
+<circle cx="457" cy="228" r="7" fill="#C4571C"/>
+<circle cx="742" cy="228" r="7" fill="#C4571C"/>
+<circle cx="1027" cy="228" r="7" fill="#C4571C"/>
+<line x1="172" y1="235" x2="172" y2="258" stroke="#C4571C" stroke-width="2"/><polygon points="165,257 172,271 179,257" fill="#C4571C"/>
+<line x1="457" y1="235" x2="457" y2="258" stroke="#C4571C" stroke-width="2"/><polygon points="450,257 457,271 464,257" fill="#C4571C"/>
+<line x1="742" y1="235" x2="742" y2="258" stroke="#C4571C" stroke-width="2"/><polygon points="735,257 742,271 749,257" fill="#C4571C"/>
+<line x1="1027" y1="235" x2="1027" y2="258" stroke="#C4571C" stroke-width="2"/><polygon points="1020,257 1027,271 1034,257" fill="#C4571C"/>
+
+<!-- window 1 -->
+<rect x="40" y="278" width="265" height="240" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="172" y="318" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#C4571C">Q4 2025 + Q1 2026</text>
+<line x1="56" y1="340" x2="289" y2="340" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="172" y="366" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#16181F">Gap assessment against</text>
+<text x="172" y="386" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#16181F">Article 7 and the new scope</text>
+<text x="172" y="406" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#16181F">BIA refresh</text>
+<text x="172" y="426" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#16181F">Remediation plan approved</text>
+<line x1="56" y1="446" x2="289" y2="446" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="172" y="470" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">Calendars are still free and</text>
+<text x="172" y="490" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">findings need months to fix</text>
+
+<!-- window 2 -->
+<rect x="325" y="278" width="265" height="240" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="457" y="318" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#C4571C">Q2 2026</text>
+<line x1="341" y1="340" x2="574" y2="340" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="457" y="366" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#16181F">Plans rewritten and short</text>
+<text x="457" y="386" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#16181F">Technology recovery</text>
+<text x="457" y="406" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#16181F">arrangements verified</text>
+<text x="457" y="426" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#16181F">First full test with timings</text>
+<line x1="341" y1="446" x2="574" y2="446" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="457" y="470" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">A failed test here is a finding</text>
+<text x="457" y="490" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">you fix, not a risk you carry</text>
+
+<!-- window 3 -->
+<rect x="610" y="278" width="265" height="240" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="742" y="318" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#C4571C">JUL — AUG 2026</text>
+<line x1="626" y1="340" x2="859" y2="340" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="742" y="366" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#16181F">Second test if the first</text>
+<text x="742" y="386" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#16181F">produced material findings</text>
+<text x="742" y="406" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#16181F">Evidence pack assembled,</text>
+<text x="742" y="426" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#16181F">every item dated</text>
+<line x1="626" y1="446" x2="859" y2="446" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="742" y="470" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">The August queue is real and</text>
+<text x="742" y="490" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">sign-offs jam before the date</text>
+
+<!-- window 4 -->
+<rect x="895" y="278" width="265" height="240" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="1.5"/>
+<text x="1027" y="318" text-anchor="middle" font-family="Consolas, monospace" font-size="13" fill="#C4571C">1 — 16 SEPTEMBER 2026</text>
+<line x1="911" y1="340" x2="1144" y2="340" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="1027" y="386" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#16181F">Buffer</text>
+<text x="1027" y="410" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#16181F">Nothing new starts here</text>
+<line x1="911" y1="446" x2="1144" y2="446" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="1027" y="470" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">Late fixes fail interviews and</text>
+<text x="1027" y="490" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">a quiet fortnight signals control</text>
+
+<!-- deadline -->
+<rect x="40" y="548" width="1120" height="78" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
+<rect x="41" y="560" width="5" height="54" rx="2.5" fill="#C4571C"/>
+<text x="600" y="576" text-anchor="middle" font-family="Consolas, monospace" font-size="12.5" fill="#C4571C">16 SEPTEMBER 2026 · TRANSITIONAL PERIOD ENDS</text>
+<text x="600" y="604" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14.5" fill="#5B564A">The Central Bank may extend at its discretion, nothing obliges it, and waiting for an extension is not a plan</text>
+
+<text x="600" y="672" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#8A8578">Sources — Federal Decree-Law No. 6 of 2025, Article 184 · CBUAE Rulebook, Operational Risk Regulation and Standards, Article 7</text>
+</svg>

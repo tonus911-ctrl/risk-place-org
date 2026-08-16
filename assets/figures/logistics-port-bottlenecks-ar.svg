@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 740" width="1200" height="740" direction="rtl" role="img" aria-label="سلسلة التسليم اللوجستي ومواضع الاختناق الأربعة وما يفتح كل اختناق وساعة الالتزامات">
+<rect x="0" y="0" width="1200" height="740" fill="#FDFBF7"/>
+<text x="600" y="48" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="27" fill="#16181F">أين تختنق سلسلة التسليم، وما يفتح الاختناق</text>
+<text x="600" y="82" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15.5" fill="#5B564A">القطاع لا يخسر أصوله بل يخسر وصوله، والاختناق ممر أو نظام أو إذن</text>
+<rect x="796" y="110" width="190" height="64" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
+<text x="891" y="134" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#C4571C">إغلاق منطقة</text>
+<text x="891" y="156" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">أو إغلاق مسار بري</text>
+<line x1="891" y1="176" x2="891" y2="196" stroke="#C4571C" stroke-width="2"/>
+<polygon points="884,196 891,208 898,196" fill="#C4571C"/>
+<rect x="602" y="110" width="190" height="64" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
+<text x="697" y="134" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#C4571C">ازدحام الميناء</text>
+<text x="697" y="156" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">أو إغلاق المجال الجوي</text>
+<line x1="697" y1="176" x2="697" y2="196" stroke="#C4571C" stroke-width="2"/>
+<polygon points="690,196 697,208 704,196" fill="#C4571C"/>
+<rect x="408" y="110" width="190" height="64" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
+<text x="503" y="134" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#C4571C">توقف الأنظمة</text>
+<text x="503" y="156" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">ومنصات الجمارك</text>
+<line x1="503" y1="176" x2="503" y2="196" stroke="#C4571C" stroke-width="2"/>
+<polygon points="496,196 503,208 510,196" fill="#C4571C"/>
+<rect x="214" y="110" width="190" height="64" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
+<text x="309" y="134" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#C4571C">تعثر شريك</text>
+<text x="309" y="156" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#5B564A">ناقل، مخلص، مستودع</text>
+<line x1="309" y1="176" x2="309" y2="196" stroke="#C4571C" stroke-width="2"/>
+<polygon points="302,196 309,208 316,196" fill="#C4571C"/>
+<rect x="1000" y="210" width="170" height="92" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="1085.0" y="248" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#16181F">المنشأ أو المصنع</text>
+<text x="1085.0" y="276" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">1</text>
+<line x1="998" y1="256" x2="990" y2="256" stroke="#C4571C" stroke-width="2"/>
+<polygon points="990,249 978,256 990,263" fill="#C4571C"/>
+<rect x="806" y="210" width="170" height="92" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="891.0" y="248" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#16181F">النقل البري</text>
+<text x="891.0" y="276" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">2</text>
+<line x1="804" y1="256" x2="796" y2="256" stroke="#C4571C" stroke-width="2"/>
+<polygon points="796,249 784,256 796,263" fill="#C4571C"/>
+<rect x="612" y="210" width="170" height="92" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="697.0" y="248" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#16181F">الميناء أو المطار</text>
+<text x="697.0" y="276" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">3</text>
+<line x1="610" y1="256" x2="602" y2="256" stroke="#C4571C" stroke-width="2"/>
+<polygon points="602,249 590,256 602,263" fill="#C4571C"/>
+<rect x="418" y="210" width="170" height="92" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="503.0" y="248" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#16181F">التخليص الجمركي</text>
+<text x="503.0" y="276" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">4</text>
+<line x1="416" y1="256" x2="408" y2="256" stroke="#C4571C" stroke-width="2"/>
+<polygon points="408,249 396,256 408,263" fill="#C4571C"/>
+<rect x="224" y="210" width="170" height="92" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="309.0" y="248" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#16181F">المستودع</text>
+<text x="309.0" y="276" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">5</text>
+<line x1="222" y1="256" x2="214" y2="256" stroke="#C4571C" stroke-width="2"/>
+<polygon points="214,249 202,256 214,263" fill="#C4571C"/>
+<rect x="30" y="210" width="170" height="92" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="115.0" y="248" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13.5" fill="#16181F">التسليم للعميل</text>
+<text x="115.0" y="276" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#8A8578">6</text>
+<rect x="796" y="340" width="190" height="140" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="891" y="368" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">ما يفتح الاختناق</text>
+<line x1="812" y1="384" x2="970" y2="384" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="891" y="412" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#16181F">بديل بري مسعر سلفا</text>
+<text x="891" y="436" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#16181F">ومحفز مكتوب للتحويل</text>
+<rect x="602" y="340" width="190" height="140" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="697" y="368" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">ما يفتح الاختناق</text>
+<line x1="618" y1="384" x2="776" y2="384" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="697" y="412" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#16181F">بوابة ثانية بعقد</text>
+<text x="697" y="436" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#16181F">لا برسالة نوايا</text>
+<rect x="408" y="340" width="190" height="140" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="503" y="368" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">ما يفتح الاختناق</text>
+<line x1="424" y1="384" x2="582" y2="384" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="503" y="412" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#16181F">وضع متدهور بالورق</text>
+<text x="503" y="436" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#16181F">ونسخة دون اتصال</text>
+<rect x="214" y="340" width="190" height="140" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="309" y="368" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#C4571C">ما يفتح الاختناق</text>
+<line x1="230" y1="384" x2="388" y2="384" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="309" y="412" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#16181F">شريك ثان مؤهل</text>
+<text x="309" y="436" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="12.5" fill="#16181F">وعقد جاهز للتوقيع</text>
+<rect x="40" y="516" width="1120" height="150" rx="10" fill="#FFFFFF" stroke="#C4571C" stroke-width="1.5"/>
+<rect x="1154" y="530" width="5" height="122" rx="2.5" fill="#C4571C"/>
+<text x="600" y="542" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#C4571C">ساعة الالتزامات، ما ينكسر ومتى</text>
+<rect x="800" y="558" width="340" height="92" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="970" y="586" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="14" fill="#C4571C">بعد 12 ساعة</text>
+<text x="970" y="610" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#16181F">سلسلة التبريد</text>
+<text x="970" y="632" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#16181F">والشحن العاجل</text>
+<rect x="430" y="558" width="340" height="92" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="600" y="586" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="14" fill="#C4571C">بعد 24 ساعة</text>
+<text x="600" y="610" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#16181F">شحنات المشاريع</text>
+<text x="600" y="632" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#16181F">المرتبطة بغرامات</text>
+<rect x="60" y="558" width="340" height="92" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="230" y="586" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="14" fill="#C4571C">بعد 72 ساعة</text>
+<text x="230" y="610" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#16181F">التدفق كله يعاد</text>
+<text x="230" y="632" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#16181F">تسعيره وتوجيهه</text>
+<text x="600" y="700" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="13" fill="#8A8578">المصدر، استمرارية اللوجستيات والموانئ · risk-place.org</text>
+</svg>

@@ -9,6 +9,9 @@
 <title>CBUAE BCM and operational resilience checklist for banks and financial institutions — risk-place.org</title>
 <meta name="description" content="A practical self-assessment against CBUAE Rulebook Article 7: BCM policy, BIA, plans, annual testing, disaster recovery, outsourcing. See your gaps before the examiner does.">
 <link rel="canonical" href="https://risk-place.org/cbuae-gap-checklist.html">
+<link rel="alternate" hreflang="en" href="https://risk-place.org/cbuae-gap-checklist.html">
+<link rel="alternate" hreflang="ar" href="https://risk-place.org/cbuae-gap-checklist-ar.html">
+<link rel="alternate" hreflang="x-default" href="https://risk-place.org/cbuae-gap-checklist.html">
 <link rel="icon" type="image/png" href="favicon.png">
 <meta property="og:title" content="CBUAE BCM and operational resilience checklist for banks and financial institutions — risk-place.org">
 <meta property="og:description" content="A practical self-assessment against CBUAE Rulebook Article 7: BCM policy, BIA, plans, annual testing, disaster recovery, outsourcing. See your gaps before the examiner does.">
@@ -16,7 +19,7 @@
 <meta property="og:url" content="https://risk-place.org/cbuae-gap-checklist.html">
 <meta property="og:type" content="article">
 <meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is this an official CBUAE checklist?", "acceptedAnswer": {"@type": "Answer", "text": "No — it is a practitioner's checklist built from the Rulebook's Article 7 requirements and regional supervisory practice. The Rulebook text at rulebook.centralbank.ae is the authoritative source."}}, {"@type": "Question", "name": "What does «dated evidence» mean in practice?", "acceptedAnswer": {"@type": "Answer", "text": "Documents an examiner can trust without your narration: a signed policy with a date, BIA outputs with a refresh date, a test report with timings and named findings, board minutes showing resilience on the agenda. Undated or undocumented work does not exist for supervisory purposes."}}, {"@type": "Question", "name": "We outsource our core system. Whose problem is continuity?", "acceptedAnswer": {"@type": "Answer", "text": "Yours. Outsourcing transfers the operation, not the accountability. You need the provider's continuity evaluated against your dependency, contractual recovery commitments, and your own workaround for the gap."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "Is this an official CBUAE checklist?", "acceptedAnswer": {"@type": "Answer", "text": "No — it is a practitioner's checklist built from the Rulebook's Article 7 requirements and regional supervisory practice. The Rulebook text at rulebook.centralbank.ae is the authoritative source."}}, {"@type": "Question", "name": "What does «dated evidence» mean in practice?", "acceptedAnswer": {"@type": "Answer", "text": "Documents an examiner can trust without your narration: a signed policy with a date, BIA outputs with a refresh date, a test report with timings and named findings, board minutes showing resilience on the agenda. Undated or undocumented work does not exist for supervisory purposes."}}, {"@type": "Question", "name": "We outsource our core system. Whose problem is continuity?", "acceptedAnswer": {"@type": "Answer", "text": "Yours. Outsourcing transfers the operation, not the accountability. You need the provider's continuity evaluated against your dependency, contractual recovery commitments, and your own workaround for the gap."}}]}</script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -33,8 +36,9 @@ a{color:#16181F;text-decoration:none}
 .logo .nm b{color:#C4571C;font-weight:600}
 .logo .tg{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8A8478}
 .hdr .right{display:flex;align-items:center;gap:12px}
-.langbtn{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.08em;background:none;border:1px solid #DCD8D0;border-radius:999px;padding:7px 15px;cursor:pointer;color:#3D4149}
-.langbtn:hover{border-color:#16181F;color:#16181F}
+.langsw{font-size:13px}
+.langsw a{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.08em;color:#3D4149;border:1px solid #DCD8D0;border-radius:999px;padding:7px 15px;display:inline-block}
+.langsw a:hover{border-color:#16181F;color:#16181F}
 .backlink{font-size:14.5px;color:#3D4149}
 .backlink:hover{color:#C4571C}
 .hero{background:#0D1117;color:#fff}
@@ -62,6 +66,9 @@ a{color:#16181F;text-decoration:none}
 .art ul{margin:0 0 18px;padding-inline-start:22px;max-width:76ch}
 .art li{font-size:16.5px;font-weight:300;line-height:1.66;color:#3D4149;margin-bottom:9px}
 .art li b,.art p b{font-weight:600;color:#16181F}
+.art figure{margin:30px 0;max-width:76ch}
+.art figure img{width:100%;height:auto;display:block;border:1px solid #EAE7E1;border-radius:12px}
+.art figcaption{font-size:14px;font-weight:300;color:#8A8478;margin-top:8px;line-height:1.55}
 .callout{background:#F7F4EF;border:1px solid #EAE7E1;border-inline-start:3px solid #C4571C;border-radius:12px;padding:20px 24px;margin:26px 0;max-width:76ch}
 .callout p{margin:0;font-size:16px}
 .tbl{width:100%;border-collapse:collapse;margin:24px 0 30px;font-size:15.5px}
@@ -87,6 +94,7 @@ a{color:#16181F;text-decoration:none}
   .logo .nm{font-size:22px}
   .logo .tg{display:none}
   .backlink{font-size:13px}
+  .hdr .in{height:auto;min-height:64px;padding-top:10px;padding-bottom:10px;flex-wrap:wrap;row-gap:8px;gap:12px}
   .hero .in{padding-top:38px;padding-bottom:34px}
   .hero h1{font-size:25px;line-height:1.2}
   .art{padding:40px 0 10px}
@@ -97,7 +105,7 @@ a{color:#16181F;text-decoration:none}
 <body>
 <header class="hdr"><div class="wrap in">
   <a class="logo" href="index.html"><span class="nm">risk-place<b>.org</b></span><span class="tg" data-ui="tagline">Business Continuity &amp; Resilience · GCC</span></a>
-  <div class="right"><a class="backlink" href="cbuae-operational-resilience.html" data-ui="back">← Home</a><button class="langbtn" id="langbtn" onclick="toggleLang()">AR</button></div>
+  <div class="right"><a class="backlink" href="cbuae-operational-resilience.html" data-ui="back">← CBUAE operational resilience</a><div class="langsw"><a href="cbuae-gap-checklist-ar.html">العربية ←</a></div></div>
 </div></header>
 
 <section class="hero"><div class="wrap in">
@@ -115,7 +123,8 @@ a{color:#16181F;text-decoration:none}
 <ul><li>Does a documented BCP cover every critical function end to end, meeting the policy's objectives?</li><li>Are first-hours arrangements explicit: who declares, who decides, who communicates — with written authority?</li><li>Do disaster recovery arrangements exist for critical technology, with recovery targets consistent with the BIA?</li><li>Are workarounds defined for the gap between disruption and recovery — tested, not assumed?</li></ul>
 <h2>Testing and evidence</h2>
 <ul><li>Was the BCP tested in the last 12 months — or sooner after material change?</li><li>Did the test produce timings, findings and actions — and are those actions closed with records?</li><li>Can staff execute contingency plans — verified in the test, not asserted?</li><li>Is there an evidence pack an examiner could read in an hour: policy, BIA, BCP, test reports, board minutes?</li><li>Does the board receive resilience reporting with metrics — not a once-a-year slide?</li><li>Are critical outsourced services covered: provider continuity evaluated, exit and workaround options defined?</li></ul>
-<div class="callout"><p>Scoring guide: 18 «yes with dated evidence» — examination-ready. 13-17 — a focused quarter closes it. Below 13 — you need a programme, and starting this quarter still beats the September 2026 queue comfortably.</p></div>
+<figure><img src="assets/figures/cbuae-gap-selfcheck-en.svg" alt="Structure of the self-assessment: four areas, eighteen questions, the three permitted answers and the three score bands" loading="lazy"><figcaption>Four areas, eighteen questions, and the three bands a score can fall into.</figcaption></figure>
+<div class="callout"><p>Scoring guide: 18 «yes with dated evidence» — examination-ready. 13-17 — a focused quarter of work closes it. Below 13 — you need a programme, and starting early still beats the September 2026 queue comfortably.</p></div>
 <h2>Frequently asked questions</h2>
 <div class="faq"><details><summary>Is this an official CBUAE checklist?</summary><p>No — it is a practitioner's checklist built from the Rulebook's Article 7 requirements and regional supervisory practice. The Rulebook text at rulebook.centralbank.ae is the authoritative source.</p></details><details><summary>What does «dated evidence» mean in practice?</summary><p>Documents an examiner can trust without your narration: a signed policy with a date, BIA outputs with a refresh date, a test report with timings and named findings, board minutes showing resilience on the agenda. Undated or undocumented work does not exist for supervisory purposes.</p></details><details><summary>We outsource our core system. Whose problem is continuity?</summary><p>Yours. Outsourcing transfers the operation, not the accountability. You need the provider's continuity evaluated against your dependency, contractual recovery commitments, and your own workaround for the gap.</p></details></div>
 </div></article>
@@ -138,35 +147,6 @@ a{color:#16181F;text-decoration:none}
 <a class="stickycta" id="stickycta" href="gap-assessment.html" data-ui="sticky">NCEMA-ready gap assessment</a>
 
 <script>
-var C={"en": {"tagline": "Business Continuity &amp; Resilience · GCC", "back": "← NCEMA 7000 hub", "copy": "© 2026 risk-place.org · Business Continuity &amp; Resilience", "privacy": "Privacy policy", "sticky": "NCEMA-ready gap assessment", "cta": "Request a gap assessment", "cta2": "Take the free readiness check", "kicker": "Regulatory watch · UAE · Checklist", "h1": "CBUAE resilience checklist: would your evidence survive an examination?", "sub": "Eighteen questions mapped to the Rulebook's Article 7 and supervisory practice. Answer each with «yes, with dated evidence», «on paper only», or «no» — only the first counts.", "clusterTitle": "More on CBUAE resilience", "ctaTitle": "Too many honest «no» answers? Price the gaps before the supervisor does.", "sections": [["h2", "Policy and governance"], ["ul", ["Is there a documented BCM policy stating objectives, approach, and the roles with authority to act — signed and current?", "Does a named senior executive own business continuity, with the board sighted on it at least annually?", "Are BCM responsibilities known to the people who hold them — would they answer correctly in an interview?", "Is the scope right-sized to your risk profile, nature, size and complexity — documented reasoning included?"]], ["h2", "BIA and risk assessment"], ["ul", ["Are all critical business functions identified, with disruption impact assessed over time?", "Is the BIA refreshed on an ongoing basis — does its date follow your last material business change?", "Do recovery objectives exist per critical function — and can current arrangements actually meet them?", "Are dependencies mapped: systems, suppliers, premises, key people — with single points of failure named?"]], ["h2", "Plans and disaster recovery"], ["ul", ["Does a documented BCP cover every critical function end to end, meeting the policy's objectives?", "Are first-hours arrangements explicit: who declares, who decides, who communicates — with written authority?", "Do disaster recovery arrangements exist for critical technology, with recovery targets consistent with the BIA?", "Are workarounds defined for the gap between disruption and recovery — tested, not assumed?"]], ["h2", "Testing and evidence"], ["ul", ["Was the BCP tested in the last 12 months — or sooner after material change?", "Did the test produce timings, findings and actions — and are those actions closed with records?", "Can staff execute contingency plans — verified in the test, not asserted?", "Is there an evidence pack an examiner could read in an hour: policy, BIA, BCP, test reports, board minutes?", "Does the board receive resilience reporting with metrics — not a once-a-year slide?", "Are critical outsourced services covered: provider continuity evaluated, exit and workaround options defined?"]], ["callout", "Scoring guide: 18 «yes with dated evidence» — examination-ready. 13-17 — a focused quarter closes it. Below 13 — you need a programme, and starting this quarter still beats the September 2026 queue comfortably."], ["h2", "Frequently asked questions"], ["faq", [["Is this an official CBUAE checklist?", "No — it is a practitioner's checklist built from the Rulebook's Article 7 requirements and regional supervisory practice. The Rulebook text at rulebook.centralbank.ae is the authoritative source."], ["What does «dated evidence» mean in practice?", "Documents an examiner can trust without your narration: a signed policy with a date, BIA outputs with a refresh date, a test report with timings and named findings, board minutes showing resilience on the agenda. Undated or undocumented work does not exist for supervisory purposes."], ["We outsource our core system. Whose problem is continuity?", "Yours. Outsourcing transfers the operation, not the accountability. You need the provider's continuity evaluated against your dependency, contractual recovery commitments, and your own workaround for the gap."]]]], "cluster": [["cbuae-operational-resilience.html", "CBUAE operational resilience: the complete guide"], ["cbuae-deadline-timeline.html", "The 16 September 2026 deadline: a countdown plan"], ["operational-resilience-board-reporting.html", "Operational resilience reporting for the board"], ["ncema-7000.html", "NCEMA 7000: the UAE national BCM standard"], ["business-continuity-uae.html", "Business continuity in the UAE: the complete guide"]]}, "ar": {"tagline": "استمرارية الأعمال والمرونة · دول الخليج", "back": "→ دليل NCEMA 7000", "copy": "© ٢٠٢٦ risk-place.org · استمرارية الأعمال والمرونة", "privacy": "سياسة الخصوصية", "sticky": "تقييم فجوات الجاهزية لـ NCEMA", "cta": "اطلبوا تقييم الفجوات", "cta2": "جرّبوا فحص الجاهزية المجاني", "kicker": "المراقبة التنظيمية · الإمارات · قائمة تحقق", "h1": "قائمة تحقق المرونة للمصرف المركزي: هل تصمد أدلتكم أمام الفحص؟", "sub": "ثمانية عشر سؤالاً مرتبطة بالمادة 7 من كتاب القواعد وبممارسة الرقابة. أجيبوا عن كل سؤال بـ«نعم، مع دليل مؤرخ» أو «على الورق فقط» أو «لا» — الأول وحده يُحتسب.", "clusterTitle": "المزيد عن مرونة المصرف المركزي", "ctaTitle": "إجابات «لا» صادقة كثيرة؟ سعّروا الفجوات قبل أن يفعلها المشرف.", "sections": [["h2", "السياسة والحوكمة"], ["ul", ["هل توجد سياسة استمرارية موثقة تبين الأهداف والنهج والأدوار ذات صلاحية التصرف — موقعة ومحدثة؟", "هل يملك مسؤول تنفيذي مسمى استمرارية الأعمال، مع اطلاع المجلس عليها سنوياً على الأقل؟", "هل مسؤوليات الاستمرارية معروفة لأصحابها — هل سيجيبون صحيحاً في مقابلة؟", "هل النطاق متناسب مع حجمكم وتعقيدكم وطبيعة مخاطركم — مع تعليل موثق؟"]], ["h2", "تحليل الأثر وتقييم المخاطر"], ["ul", ["هل حُددت كل الوظائف الحيوية مع تقييم أثر الاضطراب عبر الزمن؟", "هل يُحدّث تحليل الأثر باستمرار — هل يلي تاريخه آخر تغيير جوهري في أعمالكم؟", "هل توجد أهداف تعافٍ لكل وظيفة حيوية — وهل تستطيع الترتيبات الحالية تحقيقها فعلاً؟", "هل رُسمت الاعتماديات: الأنظمة والموردون والمباني والأشخاص المفتاحيون — مع تسمية نقاط الفشل المنفردة؟"]], ["h2", "الخطط والتعافي من الكوارث"], ["ul", ["هل تغطي خطة موثقة كل وظيفة حيوية من طرف إلى طرف وتحقق أهداف السياسة؟", "هل ترتيبات الساعات الأولى صريحة: من يعلن ومن يقرر ومن يتواصل — بصلاحية مكتوبة؟", "هل توجد ترتيبات تعافٍ للتقنية الحيوية بأهداف متسقة مع تحليل الأثر؟", "هل حُددت حلول مؤقتة لفجوة ما بين الاضطراب والتعافي — مختبرة لا مفترضة؟"]], ["h2", "الاختبار والأدلة"], ["ul", ["هل اختُبرت الخطة خلال الأشهر الاثني عشر الأخيرة — أو أبكر بعد تغيير جوهري؟", "هل أنتج الاختبار توقيتات وملاحظات وإجراءات — وهل أُغلقت الإجراءات بسجلات؟", "هل يستطيع الموظفون تنفيذ خطط الطوارئ — تحقق منه الاختبار لا التصريح؟", "هل توجد حزمة أدلة يقرؤها الفاحص في ساعة: السياسة وتحليل الأثر والخطة وتقارير الاختبار ومحاضر المجلس؟", "هل يتلقى المجلس تقارير مرونة بمؤشرات — لا شريحة عرض سنوية؟", "هل الخدمات الحيوية المسندة خارجياً مغطاة: استمرارية المزود مقيّمة، وخيارات الخروج والحلول المؤقتة محددة؟"]], ["callout", "دليل التقييم: 18 «نعم مع دليل مؤرخ» — جاهزون للفحص. 13-17 — ربع سنة مركّز يغلقها. أقل من 13 — تحتاجون برنامجاً، والبدء هذا الربع يظل أريح بكثير من طابور سبتمبر 2026."], ["h2", "أسئلة شائعة"], ["faq", [["هل هذه قائمة رسمية من المصرف المركزي؟", "لا — إنها قائمة ممارسين مبنية من متطلبات المادة 7 وممارسة الرقابة الإقليمية. نص كتاب القواعد على rulebook.centralbank.ae هو المصدر المرجعي."], ["ماذا يعني «دليل مؤرخ» عملياً؟", "وثائق يثق بها الفاحص دون شرحكم: سياسة موقعة بتاريخ، ومخرجات تحليل أثر بتاريخ تحديث، وتقرير اختبار بتوقيتات وملاحظات مسماة، ومحاضر مجلس تُظهر المرونة على الأجندة. العمل غير المؤرخ أو غير الموثق لا وجود له لأغراض الرقابة."], ["نُسند نظامنا الأساسي خارجياً. مشكلة من الاستمرارية؟", "مشكلتكم. الإسناد ينقل التشغيل لا المساءلة. تحتاجون تقييم استمرارية المزود مقابل اعتماديتكم، والتزامات تعافٍ تعاقدية، وحلاً مؤقتاً خاصاً بكم للفجوة."]]]], "cluster": [["cbuae-operational-resilience.html", "المرونة التشغيلية للمصرف المركزي: الدليل الكامل"], ["cbuae-deadline-timeline.html", "الموعد النهائي 16 سبتمبر 2026: خطة العد التنازلي"], ["operational-resilience-board-reporting.html", "تقارير المرونة التشغيلية لمجلس الإدارة"], ["ncema-7000.html", "NCEMA 7000: المعيار الوطني الإماراتي"], ["business-continuity-uae.html", "استمرارية الأعمال في الإمارات: الدليل الكامل"]]}};
-var lang="en";
-function renderSections(secs){
-  var out=[];
-  secs.forEach(function(s){
-    if(s[0]==="h2")out.push("<h2>"+s[1]+"</h2>");
-    else if(s[0]==="p")out.push("<p>"+s[1]+"</p>");
-    else if(s[0]==="ul")out.push("<ul>"+s[1].map(function(x){return "<li>"+x+"</li>";}).join("")+"</ul>");
-    else if(s[0]==="callout")out.push('<div class="callout"><p>'+s[1]+"</p></div>");
-    else if(s[0]==="table"){
-      out.push('<table class="tbl"><thead><tr>'+s[1].map(function(c){return "<th>"+c+"</th>";}).join("")+"</tr></thead><tbody>"+
-        s[2].map(function(r){return "<tr>"+r.map(function(c){return "<td>"+c+"</td>";}).join("")+"</tr>";}).join("")+"</tbody></table>");
-    } else if(s[0]==="faq"){
-      out.push('<div class="faq">'+s[1].map(function(x){return "<details><summary>"+x[0]+"</summary><p>"+x[1]+"</p></details>";}).join("")+"</div>");
-    }
-  });
-  return out.join("\n");
-}
-function setLang(l){
-  lang=l;document.documentElement.lang=l;document.documentElement.dir=(l==="ar")?"rtl":"ltr";
-  var d=C[l];
-  document.querySelectorAll("[data-ui]").forEach(function(el){var k=el.getAttribute("data-ui");if(typeof d[k]==="string")el.innerHTML=d[k];});
-  document.getElementById("art").innerHTML=renderSections(d.sections);
-  document.getElementById("cluster").innerHTML=d.cluster.map(function(x){return '<a href="'+x[0]+'">'+x[1]+"</a>";}).join("");
-  document.getElementById("langbtn").textContent=(l==="ar")?"EN":"AR";
-  try{localStorage.setItem("rp_org_lang",l);}catch(e){}
-}
-function toggleLang(){setLang(lang==="ar"?"en":"ar");}
-(function(){var s=null;try{s=localStorage.getItem("rp_org_lang");}catch(e){}if(s==="ar")setLang("ar");})();
 window.addEventListener('scroll',function(){
   var el=document.getElementById('stickycta');if(!el)return;
   var cta=document.querySelector('section.cta');

@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 730" width="1200" height="730" role="img" aria-label="The two regulatory layers in the UAE: the CBUAE Rulebook with Article 7, and Federal Decree-Law No. 6 of 2025; below them five stages of the evidence file from documented policy to board reporting">
+<rect x="0" y="0" width="1200" height="730" fill="#FDFBF7"/>
+
+<text x="600" y="48" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="27" fill="#16181F">Two regulatory layers, one evidence trail</text>
+<text x="600" y="82" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15.5" fill="#5B564A">What regulates operational resilience in the UAE, and what the examiner expects to find</text>
+
+<!-- layer one -->
+<rect x="40" y="104" width="1120" height="112" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<rect x="41" y="116" width="5" height="88" rx="2.5" fill="#C4571C"/>
+<text x="600" y="132" text-anchor="middle" font-family="Consolas, monospace" font-size="12.5" fill="#C4571C">LAYER ONE · IN FORCE NOW</text>
+<text x="600" y="163" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19.5" fill="#16181F">CBUAE Rulebook — Operational Risk Regulation and Standards</text>
+<text x="600" y="193" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#5B564A">Article 7 — Disaster Recovery and Business Continuity Management · applies to licensed banks</text>
+
+<!-- layer two -->
+<rect x="40" y="228" width="1120" height="112" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<rect x="41" y="240" width="5" height="88" rx="2.5" fill="#C4571C"/>
+<text x="600" y="256" text-anchor="middle" font-family="Consolas, monospace" font-size="12.5" fill="#C4571C">LAYER TWO · TRANSITION DEADLINE 16 SEPTEMBER 2026</text>
+<text x="600" y="287" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19.5" fill="#16181F">Federal Decree-Law No. 6 of 2025</text>
+<text x="600" y="317" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#5B564A">Issued 8 September 2025, effective 16 September 2025 · Article 149 · Article 184</text>
+
+<text x="600" y="368" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#16181F">What the examiner expects to find in the file</text>
+
+<!-- stage 1 -->
+<rect x="40" y="396" width="180" height="176" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="130" cy="428" r="16" fill="#C4571C"/>
+<text x="130" y="434" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#FFFFFF">1</text>
+<text x="130" y="468" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#16181F">Documented</text>
+<text x="130" y="489" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#16181F">BCM policy</text>
+<line x1="56" y1="509" x2="204" y2="509" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="130" y="531" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">Signed, current,</text>
+<text x="130" y="549" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">roles and authorities</text>
+
+<!-- stage 2 -->
+<rect x="275" y="396" width="180" height="176" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="365" cy="428" r="16" fill="#C4571C"/>
+<text x="365" y="434" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#FFFFFF">2</text>
+<text x="365" y="468" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#16181F">BIA and risk</text>
+<text x="365" y="489" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#16181F">assessment</text>
+<line x1="291" y1="509" x2="439" y2="509" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="365" y="531" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">Ongoing, refreshed</text>
+<text x="365" y="549" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">as the business changes</text>
+
+<!-- stage 3 -->
+<rect x="510" y="396" width="180" height="176" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="600" cy="428" r="16" fill="#C4571C"/>
+<text x="600" y="434" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#FFFFFF">3</text>
+<text x="600" y="468" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#16181F">BCP and disaster</text>
+<text x="600" y="489" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#16181F">recovery</text>
+<line x1="526" y1="509" x2="674" y2="509" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="600" y="531" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">Critical functions</text>
+<text x="600" y="549" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">covered end to end</text>
+
+<!-- stage 4 -->
+<rect x="745" y="396" width="180" height="176" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
+<circle cx="835" cy="428" r="16" fill="#C4571C"/>
+<text x="835" y="434" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#FFFFFF">4</text>
+<text x="835" y="468" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#16181F">Testing, annual</text>
+<text x="835" y="489" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#16181F">minimum</text>
+<line x1="761" y1="509" x2="909" y2="509" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="835" y="531" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">Or whenever operations</text>
+<text x="835" y="549" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">materially change</text>
+
+<!-- stage 5 -->
+<rect x="980" y="396" width="180" height="176" rx="10" fill="#F1EEE8" stroke="#C4571C" stroke-width="1.5"/>
+<circle cx="1070" cy="428" r="16" fill="#C4571C"/>
+<text x="1070" y="434" text-anchor="middle" font-family="Consolas, monospace" font-size="15" fill="#FFFFFF">5</text>
+<text x="1070" y="468" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#16181F">Evidence and</text>
+<text x="1070" y="489" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16.5" fill="#16181F">board reporting</text>
+<line x1="996" y1="509" x2="1144" y2="509" stroke="#E1DCD3" stroke-width="1.5"/>
+<text x="1070" y="531" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">A dated file, ready</text>
+<text x="1070" y="549" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="12.5" fill="#5B564A">for examination</text>
+
+<!-- arrows, left to right -->
+<line x1="232" y1="484" x2="259" y2="484" stroke="#C4571C" stroke-width="2"/><polygon points="258,478 271,484 258,490" fill="#C4571C"/>
+<line x1="467" y1="484" x2="494" y2="484" stroke="#C4571C" stroke-width="2"/><polygon points="493,478 506,484 493,490" fill="#C4571C"/>
+<line x1="702" y1="484" x2="729" y2="484" stroke="#C4571C" stroke-width="2"/><polygon points="728,478 741,484 728,490" fill="#C4571C"/>
+<line x1="937" y1="484" x2="964" y2="484" stroke="#C4571C" stroke-width="2"/><polygon points="963,478 976,484 963,490" fill="#C4571C"/>
+
+<!-- proportionality -->
+<rect x="40" y="600" width="1120" height="60" rx="10" fill="#FFFFFF" stroke="#E1DCD3" stroke-width="1.5"/>
+<rect x="41" y="612" width="5" height="36" rx="2.5" fill="#C4571C"/>
+<text x="600" y="626" text-anchor="middle" font-family="Consolas, monospace" font-size="12.5" fill="#C4571C">PROPORTIONALITY</text>
+<text x="600" y="649" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14.5" fill="#5B564A">Requirements scale with the risk profile, nature, size and complexity of the institution — small does not mean exempt</text>
+
+<text x="600" y="698" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#8A8578">Sources — CBUAE Rulebook, Operational Risk Regulation and Standards, Article 7 · Federal Decree-Law No. 6 of 2025, Articles 149 and 184</text>
+</svg>
