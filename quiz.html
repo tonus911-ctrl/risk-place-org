@@ -175,7 +175,7 @@ h1{font-size:38px;font-weight:300;line-height:1.14;letter-spacing:-0.025em;margi
     </div>
     <div class="ctabox">
       <div class="t" id="r-cta-t"></div>
-      <a class="btn" id="r-cta-btn" href="index.html#contact"></a>
+      <a class="btn" id="r-cta-btn" href="index.html#contacts"></a>
     </div>
     <div class="again"><button onclick="restart()" data-ui="again">Take the other scenario →</button></div>
   </div>
@@ -433,7 +433,7 @@ function showResults(){
   document.getElementById("r-cta-t").textContent=isLow?u.ctaLow:u.ctaHigh;
   var btn=document.getElementById("r-cta-btn");
   btn.textContent=isLow?u.ctaLowBtn:u.ctaHighBtn;
-  btn.href=isLow?"index.html#contact":"index.html#services";
+  btn.href=isLow?"index.html#contacts":"index.html#services";
   showScr("s-res");
   sendQuizCompleted(c,lv);
   sendResultNotification(c,lv,rr);
