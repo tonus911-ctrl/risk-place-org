@@ -130,7 +130,7 @@ a{color:#16181F;text-decoration:none}
   .stickycta.on{display:block}
 }
 .hnav{display:flex;gap:18px;align-items:center;margin-inline-start:auto;margin-inline-end:16px}.hnav a{font-size:14px;color:#3D4149}.hnav a:hover{color:#C4571C}@media(max-width:1000px){.hnav{display:none}}
-html[lang="en"] .ar-only{display:none !important}
+html:not([lang="ar"]) .ar-only{display:none !important}
 html[lang="ar"] .en-only{display:none !important}
 </style>
 </head>
@@ -301,7 +301,7 @@ html[lang="ar"] .en-only{display:none !important}
 <style>
 #uform{background:#F7F4EF;border-top:1px solid #EAE7E1}
 #uform .uwrap{max-width:1080px;margin:0 auto;padding:56px 24px}
-html[lang="en"] #uform .ar-only{display:none !important}
+html:not([lang="ar"]) #uform .ar-only{display:none !important}
 html[lang="ar"] #uform .en-only{display:none !important}
 #uform .ukick{font-family:'IBM Plex Mono',monospace;font-size:11.5px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#C4571C;margin:0 0 12px}
 html[dir="rtl"] #uform .ukick{font-family:'IBM Plex Sans Arabic',sans-serif;letter-spacing:0.04em}
