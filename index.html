@@ -56,8 +56,11 @@ html[lang="ar"] .en-only{display:none !important}
 .langbtn{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.08em;background:none;border:1px solid #DCD8D0;border-radius:999px;padding:7px 15px;cursor:pointer;color:#3D4149}
 .langbtn:hover{border-color:#16181F;color:#16181F}
 @media(max-width:900px){.nav a.hm{display:none}}
-.hero{background:#0D1117;color:#fff}
-.hero .in{padding-top:64px;padding-bottom:56px}
+.hero{position:relative;background:#0D1117;color:#fff;overflow:hidden}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:72% center}
+.hero .shade{position:absolute;inset:0;background:linear-gradient(96deg,rgba(9,12,18,0.94) 0%,rgba(9,12,18,0.80) 40%,rgba(9,12,18,0.34) 72%,rgba(9,12,18,0.12) 100%)}
+html[dir="rtl"] .hero .shade{background:linear-gradient(264deg,rgba(9,12,18,0.94) 0%,rgba(9,12,18,0.80) 40%,rgba(9,12,18,0.34) 72%,rgba(9,12,18,0.12) 100%)}
+.hero .in{position:relative;padding-top:64px;padding-bottom:56px}
 .kicker{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#F0A868;margin:0 0 18px}
 html[dir="rtl"] .kicker{font-family:'IBM Plex Sans Arabic',sans-serif;letter-spacing:0.04em}
 .hero h1{font-size:42px;font-weight:300;line-height:1.14;letter-spacing:-0.02em;margin:0 0 16px;max-width:21ch;text-wrap:pretty}
@@ -171,7 +174,7 @@ html[dir="rtl"] .clu .c{font-family:'IBM Plex Sans Arabic',sans-serif}
   </nav>
 </div></header>
 
-<section class="hero"><div class="wrap in">
+<section class="hero"><img class="bg" src="assets/hero-dubai.jpg" alt="" loading="eager" fetchpriority="high"><div class="shade"></div><div class="wrap in">
   <p class="kicker"><span class="en-only">Knowledge · Certification · Consulting — GCC</span><span class="ar-only">المعرفة · الشهادات · الاستشارات — دول الخليج</span></p>
   <h1><span class="en-only">The Gulf's resilience library — and the first certification fully in Arabic</span><span class="ar-only">مكتبة المرونة في الخليج — وأول شهادة مهنية بالعربية بالكامل</span></h1>
   <p class="sub"><span class="en-only">risk-place.org is the largest specialised Arabic-English library on business continuity, operational resilience and crisis governance — free and open. Built from it: ERGP, the first resilience governance certification you can complete entirely in Arabic, plus consulting and a live continuity dashboard for organisations.</span><span class="ar-only">‏risk-place.org هي أكبر مكتبة متخصصة بالعربية والإنجليزية في استمرارية الأعمال والمرونة التشغيلية وحوكمة الأزمات — مجانية ومفتوحة. وبنيت منها ERGP، أول شهادة في حوكمة المرونة يمكن إتمامها بالعربية بالكامل، إلى جانب الاستشارات ولوحة استمرارية حية للمؤسسات.</span></p>
