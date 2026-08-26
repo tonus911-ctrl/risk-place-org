@@ -132,6 +132,9 @@ html[dir="rtl"] .card .k{font-family:'IBM Plex Sans Arabic',sans-serif;letter-sp
 .clu .c{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#8A8478;letter-spacing:0.06em;flex-shrink:0}
 html[dir="rtl"] .clu .c{font-family:'IBM Plex Sans Arabic',sans-serif}
 @media(max-width:560px){}
+.cards3doors{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:900px){.cards3doors{grid-template-columns:1fr}}
+#doors{padding-top:26px;padding-bottom:8px}
 .ftr{border-top:1px solid #EAE7E1;background:#fff}
 .ftr .in{padding:28px 0;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:13px;color:#8A8478}
 .ftr a{color:#3D4149}
@@ -149,8 +152,8 @@ html[dir="rtl"] .clu .c{font-family:'IBM Plex Sans Arabic',sans-serif}
   <nav class="nav">
     <a class="hm" href="library.html"><span class="en-only">Library</span><span class="ar-only">المكتبة</span></a>
     <a class="hm" href="resilience-governance-certificate.html"><span class="en-only">Certification</span><span class="ar-only">الشهادة</span></a>
-    <a class="hm" href="#services"><span class="en-only">Services</span><span class="ar-only">الخدمات</span></a>
-    <a class="hm" href="resilience-governance-certificate.html#verify"><span class="en-only">Verify a certificate</span><span class="ar-only">التحقق من شهادة</span></a>
+    <a class="hm" href="products.html"><span class="en-only">Products</span><span class="ar-only">المنتجات</span></a>
+    <a class="hm" href="start.html"><span class="en-only">Start free</span><span class="ar-only">ابدأوا مجاناً</span></a>
     <a class="hm" href="#contacts"><span class="en-only">Contact</span><span class="ar-only">اتصلوا بنا</span></a>
     <button class="langbtn" id="langbtn" onclick="toggleLang()">AR</button>
   </nav>
@@ -161,7 +164,7 @@ html[dir="rtl"] .clu .c{font-family:'IBM Plex Sans Arabic',sans-serif}
   <h1><span class="en-only">The Gulf's resilience library — and the first certification fully in Arabic</span><span class="ar-only">مكتبة المرونة في الخليج — وأول شهادة مهنية بالعربية بالكامل</span></h1>
   <p class="sub"><span class="en-only">risk-place.org is the largest specialised Arabic-English library on business continuity, operational resilience and crisis governance — free and open. Built from it: ERGP, the first resilience governance certification you can complete entirely in Arabic, plus consulting and a live continuity dashboard for organisations.</span><span class="ar-only">‏risk-place.org هي أكبر مكتبة متخصصة بالعربية والإنجليزية في استمرارية الأعمال والمرونة التشغيلية وحوكمة الأزمات — مجانية ومفتوحة. وبنيت منها ERGP، أول شهادة في حوكمة المرونة يمكن إتمامها بالعربية بالكامل، إلى جانب الاستشارات ولوحة استمرارية حية للمؤسسات.</span></p>
   <div class="cta-row">
-    <a class="btn" href="library.html" onclick="ev('home_cta_library')"><span class="en-only">Open the library</span><span class="ar-only">افتحوا المكتبة</span></a>
+    <a class="btn" href="quiz.html" onclick="ev('home_cta_quiz')"><span class="en-only">Take the free assessment</span><span class="ar-only">ابدأوا التقييم المجاني</span></a>
     <a class="btn ghost" href="resilience-governance-certificate.html" onclick="ev('home_cta_ergp')"><span class="en-only">Explore the ERGP certification</span><span class="ar-only">اكتشفوا شهادة ERGP</span></a>
   </div>
 </div></section>
@@ -174,6 +177,29 @@ html[dir="rtl"] .clu .c{font-family:'IBM Plex Sans Arabic',sans-serif}
   <div class="t"><div class="n">QR</div><div class="l"><span class="en-only">Public register of certificates</span><span class="ar-only">سجل علني للشهادات</span></div></div>
 </div></section>
 
+
+<section class="sec" id="doors"><div class="wrap">
+  <div class="cards cards3doors">
+    <a class="card" href="start.html" onclick="ev('home_door_start')">
+      <span class="k free"><span class="en-only">Free</span><span class="ar-only">مجاني</span></span>
+      <h3><span class="en-only">I want to understand where we stand</span><span class="ar-only">أريد أن أفهم أين نقف</span></h3>
+      <p><span class="en-only">A 10-minute self-assessment, the free Gulf handbook, the bilingual glossary and the CBUAE self-check.</span><span class="ar-only">تقييم ذاتي في 10 دقائق، ودليل الخليج المجاني، والمسرد الثنائي اللغة، وفحص المصرف المركزي الذاتي.</span></p>
+      <span class="go"><span class="en-only">Start free →</span><span class="ar-only">ابدأوا مجاناً ←</span></span>
+    </a>
+    <a class="card" href="resilience-governance-certificate.html" onclick="ev('home_door_cert')">
+      <span class="k"><span class="en-only">For professionals</span><span class="ar-only">للمهنيين</span></span>
+      <h3><span class="en-only">I want a recognised certification</span><span class="ar-only">أريد شهادة مهنية</span></h3>
+      <p><span class="en-only">ERGP — the first resilience governance certification fully available in Arabic, with a verifiable certificate.</span><span class="ar-only">‏ERGP — أول شهادة في حوكمة المرونة متاحة بالعربية بالكامل، مع شهادة قابلة للتحقق.</span></p>
+      <span class="go"><span class="en-only">Explore ERGP →</span><span class="ar-only">اكتشفوا ERGP ←</span></span>
+    </a>
+    <a class="card" href="products.html" onclick="ev('home_door_products')">
+      <span class="k"><span class="en-only">For organisations</span><span class="ar-only">للمؤسسات</span></span>
+      <h3><span class="en-only">I need tools for my organisation</span><span class="ar-only">أحتاج أدوات لمؤسستي</span></h3>
+      <p><span class="en-only">The continuity dashboard, the resilience audit, team certification and the staff basics course.</span><span class="ar-only">لوحة الاستمرارية، وتدقيق المرونة، وشهادة الفريق، ودورة الأساسيات للموظفين.</span></p>
+      <span class="go"><span class="en-only">See the products →</span><span class="ar-only">شاهدوا المنتجات ←</span></span>
+    </a>
+  </div>
+</div></section>
 <section class="sec" id="ergp"><div class="wrap">
   <p class="kick"><span class="en-only">The flagship · ERGP</span><span class="ar-only">البرنامج الرئيسي · ERGP</span></p>
   <h2><span class="en-only">The first resilience governance certification fully available in Arabic</span><span class="ar-only">أول شهادة في حوكمة المرونة متاحة بالعربية بالكامل</span></h2>
@@ -212,6 +238,7 @@ html[dir="rtl"] .clu .c{font-family:'IBM Plex Sans Arabic',sans-serif}
         <button class="btn" type="submit"><span class="en-only">Search</span><span class="ar-only">ابحثوا</span></button>
       </form>
     </div>
+    <a class="clu" href="handbook.html"><span class="t"><span class="en-only">Free handbook: BCM without illusions — Gulf edition</span><span class="ar-only">دليل مجاني: استمرارية الأعمال بدون أوهام — نسخة الخليج</span></span><span class="c">PDF</span></a>
     <a class="clu" href="library.html#c1"><span class="t"><span class="en-only">Foundations of continuity</span><span class="ar-only">أساسيات الاستمرارية</span></span><span class="c">01</span></a>
     <a class="clu" href="library.html#c2"><span class="t"><span class="en-only">Impact analysis and recovery</span><span class="ar-only">تحليل الأثر والتعافي</span></span><span class="c">02</span></a>
     <a class="clu" href="library.html#c3"><span class="t"><span class="en-only">Governance and the board</span><span class="ar-only">الحوكمة ومجلس الإدارة</span></span><span class="c">03</span></a>
@@ -223,8 +250,8 @@ html[dir="rtl"] .clu .c{font-family:'IBM Plex Sans Arabic',sans-serif}
 
 <section class="sec" id="services"><div class="wrap">
   <p class="kick"><span class="en-only">Products and services</span><span class="ar-only">المنتجات والخدمات</span></p>
-  <h2><span class="en-only">Tools for your continuity practice</span><span class="ar-only">أدوات لممارسة الاستمرارية لديكم</span></h2>
-  <p class="sd"><span class="en-only">The library teaches. These tools put that knowledge to work in your organisation.</span><span class="ar-only">المكتبة تعلم. وهذه الأدوات تضع تلك المعرفة موضع التنفيذ في مؤسستكم.</span></p>
+  <h2><span class="en-only">Products for organisations</span><span class="ar-only">منتجات للمؤسسات</span></h2>
+  <p class="sd"><span class="en-only">The library teaches. These tools put that knowledge to work in your organisation. <a href="products.html">All products, including the staff basics course →</a></span><span class="ar-only">المكتبة تعلم. وهذه الأدوات تضع تلك المعرفة موضع التنفيذ في مؤسستكم. <a href="products-ar.html">كل المنتجات، ومنها دورة الأساسيات للموظفين ←</a></span></p>
   <div class="ergp">
     <div>
       <h3 class="ptitle"><span class="en-only">Continuity &amp; risk dashboard</span><span class="ar-only">لوحة الاستمرارية والمخاطر</span></h3>
@@ -290,6 +317,8 @@ html[dir="rtl"] .clu .c{font-family:'IBM Plex Sans Arabic',sans-serif}
     <a href="glossary.html"><span class="en-only">Glossary</span><span class="ar-only">المسرد</span></a> ·
     <a href="resilience-governance-certificate.html">ERGP</a> ·
     <a href="dashboard.html"><span class="en-only">Dashboard</span><span class="ar-only">اللوحة</span></a> ·
+    <a href="about.html"><span class="en-only">About us</span><span class="ar-only">من نحن</span></a> ·
+    <a href="resilience-governance-certificate.html#verify"><span class="en-only">Verify a certificate</span><span class="ar-only">التحقق من شهادة</span></a> ·
     <a href="privacy.html"><span class="en-only">Privacy policy</span><span class="ar-only">سياسة الخصوصية</span></a> ·
     <a href="mailto:info@risk-place.org">info@risk-place.org</a>
   </span>
