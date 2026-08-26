@@ -25,6 +25,10 @@ h1{font-size:34px;line-height:1.2;margin-bottom:6px}.alt{font-size:17px;color:#5
 .def{background:#F1EEE8;border-right:4px solid #C4571C;border-radius:10px;padding:18px 20px;font-size:17.5px;margin-bottom:28px}
 [dir="ltr"] .def{border-right:none;border-left:4px solid #C4571C}
 p.b{font-size:16.5px;margin-bottom:18px}
+h2{font-size:24px;margin:28px 0 12px;color:#16181F}
+ul,ol{padding-inline-start:24px;margin-bottom:18px;font-size:16.5px}li{margin-bottom:8px}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
+.faq details{border-bottom:1px solid #E1DCD3;padding:4px 0}.faq summary{font-size:16.5px;font-weight:bold;padding:12px 0;cursor:pointer}.faq details p{padding:0 0 14px;font-size:16px}
 .rel{margin:30px 0;padding:16px 20px;background:#fff;border:1px solid #E1DCD3;border-radius:10px;font-size:15px}
 .rel b{display:block;margin-bottom:8px}.rel a{color:#C4571C;text-decoration:none;margin-inline-end:16px}
 .cta{background:#0D1117;color:#fff;border-radius:14px;padding:26px 26px;margin-top:36px}
@@ -44,7 +48,8 @@ footer{border-top:1px solid #E1DCD3;margin-top:48px;padding-top:18px;font-size:1
 .sfoot .row2 a:hover{color:#F0A868}
 .sfoot .lg2{font-size:15px;color:#fff;font-weight:bold}
 .sfoot .lg2 b{color:#C4571C}
-</style></head><body>
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "ar", "mainEntity": [{"@type": "Question", "name": "ماذا يعني MBCO؟", "acceptedAnswer": {"@type": "Answer", "text": "MBCO اختصار Minimum Business Continuity Objective، أي المستوى الأدنى من المنتجات أو الخدمات الذي تلتزم المنظمة بتقديمه أثناء الانقطاع. وهو معرف في مصطلحات ISO 22300 وتستخدمه أنظمة الاستمرارية المبنية على ISO 22301 وNCEMA 7000."}}, {"@type": "Question", "name": "من يحدد MBCO ومن يعتمده؟", "acceptedAnswer": {"@type": "Answer", "text": "يقترحه مالكو الأعمال من تحليل الأثر، وتعتمده الإدارة التنفيذية. والاعتماد في القمة لأن MBCO يقرر أي العملاء والالتزامات يحمى أولا حين تشح الموارد."}}, {"@type": "Question", "name": "هل MBCO هو نفسه RTO؟", "acceptedAnswer": {"@type": "Answer", "text": "لا. RTO عن الزمن، أي بأي سرعة تعود الخدمة. وMBCO عن المستوى، أي كم من الخدمة يحفظ أو يستعاد أولا. وتسلسل التعافي المعتاد يعيد الخدمة إلى مستوى MBCO ضمن RTO ثم يبني عائدا إلى الوضع الطبيعي."}}, {"@type": "Question", "name": "كيف يعبر عن MBCO؟", "acceptedAnswer": {"@type": "Answer", "text": "بمستوى قابل للقياس لكل خدمة: نسبة من الحجم الطبيعي، أو مجموعة محددة من العملاء أو الفروع، أو قائمة مخفضة، أو مهلة أطول. وما لا يمكن قياسه أثناء الحادث ليس هدفا."}}]}</script>
+</head><body>
 <div class="top"><a href="../../index.html"><span class="lg">risk-<b>place</b>.org</span><div class="tg">Business Continuity &amp; Resilience · GCC</div></a><nav class="tnav"><a href="../../library.html">المكتبة</a><a href="../../resilience-governance-certificate-ar.html">الشهادة</a><a href="../../products-ar.html">المنتجات</a><a href="../../start-ar.html">ابدأوا مجاناً</a><a href="../../index.html#contacts">اتصلوا بنا</a></nav>
 <div class="langsw"><a href="../en/mbco.html">English →</a></div></div>
 <div class="wrap">
@@ -56,7 +61,30 @@ footer{border-top:1px solid #E1DCD3;margin-top:48px;padding-top:18px;font-size:1
 <p class="b">يعلن MBCO الحد الأدنى من المنتجات والخدمات الذي تلتزم المنظمة بتقديمه أثناء الانقطاع، أي أرضية الخدمة لا سقفها. ووظيفته أن تتخذ أصعب الخيارات، ما يبقى وما يضحى به، بهدوء ومقدما لا ارتجالا في قلب الأزمة. فبالنسبة للإدارة هو الجواب المتفق عليه سلفا عن سؤال من يخدم أولا حين تشح الموارد. كما يحمي السمعة لأن أرضية معروفة يمكن إبلاغها للعملاء وللجهات الرقابية.</p>
 <p class="b">يقترح مالكو الأعمال MBCO أثناء تحليل BIA، وتعتمده الإدارة التنفيذية، ويكتب في خطة استمرارية الأعمال. فمصرف تجزئة مثلا قد يلتزم بأن يبقى 30 بالمئة من الفروع عاملا أثناء انقطاع كبير، مع استمرار السحب النقدي ودفع الرواتب، وتعليق منح القروض الجديدة. ثم يوجه MBCO تسلسل التعافي، إذ يعيد RTO الخدمة أولا إلى مستوى الحد الأدنى ثم تعود الخدمة الكاملة. وتحسب موارد الخطة من أشخاص ومواقع وأنظمة على قدر هذه الأرضية.</p>
 <p class="b">الفشل المعتاد MBCO لم يقس قط، عبارة مثل «سنخدم عملاءنا قدر المستطاع»، فيتنازع المديرون في الحدث الحقيقي على الموارد الشحيحة والعملاء ينتظرون. فالأرضية التي ليست رقما ليست التزاما. وكيف تصمد الفرق عند الحد المتفق عليه تحت الضغط موضوع الوحدة M4 الخاصة بقيادة الأزمات في برنامج ERGP.</p>
-<div class="rel"><b>مصطلحات ذات صلة</b><a href="bia.html">تحليل الأثر على الأعمال</a> <a href="../../glossary.html#bcp">خطة استمرارية الأعمال</a> <a href="important-business-service.html">الخدمة المهمة للأعمال</a></div>
+<h2>كيف يحدد MBCO: منهجية عملية</h2>
+<p class="b">الحد الأدنى يشتق ولا يعلن. والتسلسل الذي يصمد أمام التدقيق أربع خطوات. أولا، تحصر المنتجات والخدمات التي تقدمها المنظمة وترتب بحسب الضرر الذي يسببه فقدانها في اليوم الواحد، وهذا يأتي مباشرة من <a href="bia.html">تحليل الأثر على الأعمال</a>. ثانيا، يطرح عن كل خدمة السؤال الوحيد المهم: ما أصغر حجم أو نطاق أو تغطية تبقي الالتزام قائما، أي العقد غير مخالف والترخيص ساريا والمريض آمنا والرواتب مدفوعة؟ ثالثا، تسعر الأرضية: فالحفاظ على 30 بالمئة من الطاقة يحتاج أشخاصا ومواقع وأنظمة احتياطية، والأرضية التي لا تستطيع المنظمة تحمل كلفتها مجرد خيال. رابعا، تعتمد الإدارة التنفيذية الأرقام كتابة، لأن MBCO التزام تجاري ورقابي وليس معيارا تقنيا.</p>
+<h2>مثال عملي</h2>
+<p class="b">شركة توزيع لديها ثلاثة خطوط خدمة قد تسجل الحد الأدنى هكذا:</p>
+<table><thead><tr><th>الخدمة</th><th>المستوى الطبيعي</th><th>MBCO أثناء الانقطاع</th><th>سبب هذه الأرضية</th></tr></thead><tbody><tr><td>التوريد للمستشفيات والصيدليات</td><td>100% من الطلبات في اليوم نفسه</td><td>100% من القائمة الحرجة في اليوم التالي</td><td>سلامة المرضى وشروط الترخيص</td></tr><tr><td>التوريد لسلاسل التجزئة</td><td>100% من الطلبات خلال 48 ساعة</td><td>60% من الحجم لأكبر 20 عميلا</td><td>الغرامات التعاقدية تبدأ عند 50%</td></tr><tr><td>فتح حسابات عملاء جدد</td><td>5 أيام</td><td>معلق</td><td>لا التزام يخالف بالتوقف</td></tr></tbody></table>
+<p class="b">لاحظوا ما يفعله الجدول: إنه يسمي الخدمات التي يمكن التضحية بها. وهذه الجملة هي جوهر التمرين كله، فالاتفاق عليها في قاعة اجتماعات أرخص كثيرا من ارتجالها في قلب الحادث.</p>
+<h2>MBCO وMTPD وRTO وRPO: كيف تترابط</h2>
+<p class="b">الأرقام الأربعة تجيب عن أسئلة مختلفة. <a href="mtpd.html">MTPD</a> يقول كم تستطيع المنظمة البقاء دون الخدمة إطلاقا. وMBCO يقول كم يجب أن يبقى من الخدمة. و<a href="rto.html">RTO</a> يقول بأي سرعة يجب أن تعود الخدمة، أولا إلى أرضية الحد الأدنى ثم إلى المستوى الكامل. و<a href="rpo.html">RPO</a> يقول كم من البيانات يمكن فقده في الطريق. المقارنة الكاملة بأرقام عملية في دليلنا <a href="../../recovery-objectives-ar.html">MBCO مقابل MTPD وRTO وRPO</a>، ومنطق الخط الزمني مرسوم في <a href="../../rto-rpo-explained-ar.html">شرح RTO وRPO</a>.</p>
+<h2>الأخطاء الشائعة</h2>
+<ul>
+<li><b>أرضية ليست رقما.</b> عبارة «سنخدم عملاءنا قدر المستطاع» لا يمكن تزويدها بالموارد ولا اختبارها ولا تدقيقها.</li>
+<li><b>حد أدنى تحدده تقنية المعلومات.</b> الأرضية التزام أعمال، والتقنية تبني الترتيبات لحملها لا العكس.</li>
+<li><b>حد أدنى واحد للشركة كلها.</b> كل منتج أو خدمة يستحق أرضيته الخاصة من منحنى أثره الخاص.</li>
+<li><b>أرضية لم تختبر قط.</b> إن لم يثبت اختبار قدرة المنظمة على حمل المستوى الأدنى فالالتزام أمنية. و<a href="../../tabletop-exercise-guide-ar.html">التمرين المكتبي</a> أرخص وسيلة لاكتشاف ذلك.</li>
+<li><b>أرضية لم يبلغ بها أحد.</b> ينبغي أن يعرف العملاء والجهات الرقابية والموردون الرئيسيون الأرضية منكم قبل الحادث، لا بالتجربة أثناءه.</li>
+</ul>
+<h2>أسئلة متكررة</h2>
+<div class="faq">
+<details><summary>ماذا يعني MBCO؟</summary><p>MBCO اختصار Minimum Business Continuity Objective، أي المستوى الأدنى من المنتجات أو الخدمات الذي تلتزم المنظمة بتقديمه أثناء الانقطاع. وهو معرف في مصطلحات ISO 22300 وتستخدمه أنظمة الاستمرارية المبنية على ISO 22301 وNCEMA 7000.</p></details>
+<details><summary>من يحدد MBCO ومن يعتمده؟</summary><p>يقترحه مالكو الأعمال من تحليل الأثر، وتعتمده الإدارة التنفيذية. والاعتماد في القمة لأن MBCO يقرر أي العملاء والالتزامات يحمى أولا حين تشح الموارد.</p></details>
+<details><summary>هل MBCO هو نفسه RTO؟</summary><p>لا. RTO عن الزمن، أي بأي سرعة تعود الخدمة. وMBCO عن المستوى، أي كم من الخدمة يحفظ أو يستعاد أولا. وتسلسل التعافي المعتاد يعيد الخدمة إلى مستوى MBCO ضمن RTO ثم يبني عائدا إلى الوضع الطبيعي.</p></details>
+<details><summary>كيف يعبر عن MBCO؟</summary><p>بمستوى قابل للقياس لكل خدمة: نسبة من الحجم الطبيعي، أو مجموعة محددة من العملاء أو الفروع، أو قائمة مخفضة، أو مهلة أطول. وما لا يمكن قياسه أثناء الحادث ليس هدفا.</p></details>
+</div>
+<div class="rel"><b>مصطلحات ذات صلة</b><a href="bia.html">تحليل الأثر على الأعمال</a> <a href="mtpd.html">MTPD</a> <a href="rto.html">RTO</a> <a href="rpo.html">RPO</a> <a href="../../glossary.html#bcp">خطة استمرارية الأعمال</a> <a href="important-business-service.html">الخدمة المهمة للأعمال</a> <a href="../../recovery-objectives-ar.html">المقارنة الكاملة بين المؤشرات الأربعة</a></div>
 <div class="rel" style="background:#FDF6EC;border-color:#E3C9A0"><b>دليل مجاني</b><a href="../../handbook-ar.html">استمرارية الأعمال بدون أوهام (نسخة الخليج) — خريطة عملية للمدراء التنفيذيين. حمّله مجاناً ←</a></div>
 <div class="cta"><p>هذا المصطلح جزء من اللغة العملية لبرنامج ERGP — أول شهادة في حوكمة مرونة المؤسسات متاحة بالعربية بالكامل، ومتاحة بالإنجليزية أيضاً. 94 فصلاً في ست وحدات وشهادة قابلة للتحقق.</p><a href="../../resilience-governance-certificate.html">تعرفوا على برنامج ERGP</a></div>
 

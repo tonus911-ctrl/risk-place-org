@@ -25,6 +25,10 @@ h1{font-size:34px;line-height:1.2;margin-bottom:6px}.alt{font-size:17px;color:#5
 .def{background:#F1EEE8;border-right:4px solid #C4571C;border-radius:10px;padding:18px 20px;font-size:17.5px;margin-bottom:28px}
 [dir="ltr"] .def{border-right:none;border-left:4px solid #C4571C}
 p.b{font-size:16.5px;margin-bottom:18px}
+h2{font-size:24px;margin:28px 0 12px;color:#16181F}
+ul,ol{padding-inline-start:24px;margin-bottom:18px;font-size:16.5px}li{margin-bottom:8px}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
+.faq details{border-bottom:1px solid #E1DCD3;padding:4px 0}.faq summary{font-size:16.5px;font-weight:bold;padding:12px 0;cursor:pointer}.faq details p{padding:0 0 14px;font-size:16px}
 .rel{margin:30px 0;padding:16px 20px;background:#fff;border:1px solid #E1DCD3;border-radius:10px;font-size:15px}
 .rel b{display:block;margin-bottom:8px}.rel a{color:#C4571C;text-decoration:none;margin-inline-end:16px}
 .cta{background:#0D1117;color:#fff;border-radius:14px;padding:26px 26px;margin-top:36px}
@@ -56,7 +60,19 @@ footer{border-top:1px solid #E1DCD3;margin-top:48px;padding-top:18px;font-size:1
 <p class="b">MTPD هو الاسم الذي يستخدمه المعيار ISO 22301 للزمن الذي يصبح بعده أثر الانقطاع غير مقبول. ووجود المصطلح يضمن أن يعمل نظام إدارة الاستمرارية المعتمد بحد واحد وتعريف واحد. وبالنسبة للإدارة يجيب MTPD عن سؤال واحد: كم تستطيع هذه العملية أن تبقى متوقفة قبل أن يتجاوز الضرر الخط الذي لا تقبله المنظمة. وكل عناصر استراتيجية التعافي تقاس على هذا الجواب.</p>
 <p class="b">يحدد MTPD عمليا كما يحدد MAO تماما: ورش BIA تتتبع الأثر عبر الزمن، ومالك العملية يقترح القيمة، والإدارة تعتمدها، ثم توثق في التقرير. فمختبر مستشفى قد يضع MTPD عند 4 ساعات لأن رعاية المرضى تتدهور بعده تدهورا لا يقبل، فيحدد RTO عند ساعتين. ولأن MTPD وMAO يسميان الحد نفسه في إطارين مختلفين، ينبغي أن تختار المنظمة مصطلحا واحدا وتعرفه في مسرد البرنامج وتلتزم به. وتبقى أهداف التعافي دائما داخل MTPD وبهامش.</p>
 <p class="b">الخطأ المتكرر أن يعيش MTPD وMAO رقمين مختلفين للعملية الواحدة لأن وثيقتين اتبعتا إطارين، فتطارد الخطط والتدقيقات أهدافا متعارضة. والعلاج انضباط مصطلحي لا مزيد من التحليل. وتعرض الوحدة M3 «تحليل الأثر واقتصاديات التعافي» في برنامج ERGP كيفية إبقاء منظومة المقاييس متسقة.</p>
-<div class="rel"><b>مصطلحات ذات صلة</b><a href="mao.html">الحد الأقصى المقبول للانقطاع</a> <a href="bia.html">تحليل الأثر على الأعمال</a> <a href="rto.html">الهدف الزمني للتعافي</a></div>
+<h2>كيف يستخرج MTPD عمليا</h2>
+<p class="b">يخرج MTPD من منحنى الأثر لا من تفضيل شخصي. ففي ورشة تحليل الأثر يتتبع مالك العملية ضرر التوقف ساعة بساعة ويوما بيوم عبر خمسة أبعاد: المال المفقود، والالتزامات المخالفة، والانكشاف الرقابي، والسلامة، والسمعة. وMTPD هو النقطة التي يعبر عندها أي بعد من مؤلم إلى غير مقبول، حيث يفسخ العقد أو يخالف شرط الترخيص أو يتعرض المريض للخطر. ولأن «غير المقبول» حكم على الأعمال، يقترح المالك الرقم وتعتمده الإدارة، ولا صوت للتقنية في هذه الخطوة. وبعدها فقط يقاس <a href="rto.html">RTO</a> وترتيبات التعافي لتقع داخله.</p>
+<h2>قيم معتادة بحسب نوع النشاط</h2>
+<table><thead><tr><th>النشاط</th><th>MTPD المعتاد</th><th>ما يرسم الخط عادة</th></tr></thead><tbody><tr><td>المدفوعات والخزانة</td><td>ساعات</td><td>نوافذ التسوية وقواعد المصرف المركزي</td></tr><tr><td>الخدمات الطبية والسريرية</td><td>2–6 ساعات</td><td>سلامة المرضى</td></tr><tr><td>الإنتاج واللوجستيات</td><td>1–3 أيام</td><td>الغرامات التعاقدية والمواد القابلة للتلف وكلفة إعادة التشغيل</td></tr><tr><td>الرواتب</td><td>أيام حتى موعد الدفع</td><td>ثقة الموظفين وقانون العمل</td></tr><tr><td>التقارير الرقابية</td><td>حتى الموعد النهائي</td><td>التقويم لا التقنية</td></tr></tbody></table>
+<h2>MTPD والأرقام الثلاثة الأخرى</h2>
+<p class="b">MTPD هو سقف منظومة المقاييس كلها. فيجب أن يقع <a href="rto.html">RTO</a> تحته وبهامش أمان ظاهر، لأن RTO المساوي لسقف التحمل خطة للوصول في اللحظة التي يصبح فيها الضرر غير مقبول تماما. ويحدد <a href="mbco.html">MBCO</a> المستوى الأدنى من الخدمة الذي يجب أن يعود للعمل داخل تلك النافذة، ويحد <a href="rpo.html">RPO</a> فقد البيانات. والمؤشرات الأربعة تقارن جنبا إلى جنب بمثال عملي في <a href="../../recovery-objectives-ar.html">MBCO مقابل MTPD وRTO وRPO</a>.</p>
+<h2>أسئلة متكررة</h2>
+<div class="faq">
+<details><summary>ما الفرق بين MTPD وMAO؟</summary><p>لا فرق في الجوهر. MTPD مصطلح ISO 22301، وMAO تستخدمه أطر أخرى للحد نفسه. اختاروا مصطلحا واحدا لبرنامجكم وعرفوه في المسرد والتزموا به.</p></details>
+<details><summary>هل MTPD هو نفسه RTO؟</summary><p>لا. MTPD هو السقف، أي الزمن الذي يصبح الضرر بعده غير مقبول. وRTO هو الهدف الذي تلتزم به المنظمة، ويجب أن يقع تحت السقف وبهامش.</p></details>
+<details><summary>من يعتمد MTPD؟</summary><p>يقترحه مالك العملية من تحليل الأثر وتعتمده الإدارة التنفيذية، لأن تقرير أي مستوى من الضرر «غير مقبول» حكم أعمال لا حكم تقني.</p></details>
+</div>
+<div class="rel"><b>مصطلحات ذات صلة</b><a href="mao.html">الحد الأقصى المقبول للانقطاع</a> <a href="bia.html">تحليل الأثر على الأعمال</a> <a href="rto.html">الهدف الزمني للتعافي</a> <a href="mbco.html">MBCO</a> <a href="rpo.html">RPO</a> <a href="../../recovery-objectives-ar.html">المقارنة الكاملة بين المؤشرات الأربعة</a></div>
 <div class="rel" style="background:#FDF6EC;border-color:#E3C9A0"><b>دليل مجاني</b><a href="../../handbook-ar.html">استمرارية الأعمال بدون أوهام (نسخة الخليج) — خريطة عملية للمدراء التنفيذيين. حمّله مجاناً ←</a></div>
 <div class="cta"><p>هذا المصطلح جزء من اللغة العملية لبرنامج ERGP — أول شهادة في حوكمة مرونة المؤسسات متاحة بالعربية بالكامل، ومتاحة بالإنجليزية أيضاً. 94 فصلاً في ست وحدات وشهادة قابلة للتحقق.</p><a href="../../resilience-governance-certificate.html">تعرفوا على برنامج ERGP</a></div>
 
