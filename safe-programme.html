@@ -235,6 +235,8 @@ html[dir="rtl"] .slbox .x{right:auto;left:20px}
 .sfoot .lg2 b{color:#C4571C}
 .tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}
 
+.price{grid-template-columns:repeat(3,1fr);max-width:none}
+@media(max-width:860px){.price{grid-template-columns:1fr}}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:22px 40px;margin-top:8px}
 .two b{font-size:17px;font-weight:600;display:block;margin:0 0 8px}
 .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
@@ -252,8 +254,7 @@ html[dir="rtl"] .slbox .x{right:auto;left:20px}
 <p class="kicker">Workplace safety · Online · One shift</p>
 <h1>SAFE — workplace safety for the people who do the work</h1>
 <p class="firstclaim">A safety programme written for site crews in the Gulf, in English and in Arabic, on the phone they already carry.</p>
-<p class="langline">Three industry editions: construction, oil and gas, logistics and warehousing.</p>
-<p class="sub">Most safety induction is written for the auditor and read by nobody. SAFE is written for the man on the scaffold and the driver in the yard: 32 short chapters, plain language, a diagram on every page, and a named certificate at the end. A crew completes it within one shift, from any phone, with no installation.</p>
+<p class="sub">Most safety induction is written for the auditor and read by nobody. This one is written for the man on the scaffold and the driver in the yard, and ends with a named certificate.</p>
 <div class="facts">
 <div class="fact"><b>32 chapters</b><span>five modules, each ending in a knowledge check</span></div>
 <div class="fact"><b>2 languages</b><span>full Arabic edition, not a machine translation of the English</span></div>
@@ -261,7 +262,7 @@ html[dir="rtl"] .slbox .x{right:auto;left:20px}
 <div class="fact"><b>1 shift</b><span>around four hours, split across breaks if needed</span></div>
 </div>
 <div class="row">
-<a class="btn" href="#demo">Request a demonstration</a>
+<a class="btn" href="#request">Request a demonstration</a>
 <a class="btn2" href="safe-sample.html">Read a chapter now →</a>
 </div>
 <p class="hint">The sample chapter is open — no form, no email.</p>
@@ -387,22 +388,27 @@ html[dir="rtl"] .slbox .x{right:auto;left:20px}
 <p class="prnote">Typical time from decision to a crew starting: two working days.</p></div></section>
 <section class="sec beige" id="price"><div class="wrap"><h2>Pricing</h2>
 <div class="price">
-<div class="pr"><span>25 – 99 people</span><b>AED 140</b></div><div class="pr"><span>100 – 499 people</span><b>AED 95</b></div><div class="pr"><span>500 people and above</span><b>on request</b></div>
-<div class="pr"><span>Single access, one named person</span><b>AED 220</b></div>
+<div class="pr"><span>One person</span><b>AED 220</b></div>
+<div class="pr"><span>25 – 99 people</span><b>AED 140</b></div>
+<div class="pr"><span>100 people and above</span><b>AED 95</b></div>
 </div>
-<p class="prnote">The rate includes the industry edition of your choice, both languages, named certificates and completion records. Single access runs for six months and ends with the same certificate as the corporate route.</p>
-<p class="prnote">Site licence, unlimited users on one project for a year: from AED 35,000. Payment by invoice; corporate purchase orders welcome.</p>
-<div class="cta-row"><a class="btn" href="#demo">Request access</a></div></div></section>
-<section class="sec" id="demo"><div class="wrap">
-<h2>Request a demonstration</h2>
-<p class="ssub">Tell us the industry and roughly how many people, and we will send you a working link to the full programme — not slides about it.</p>
+<p class="prnote">Per person, in either language, in the industry edition of your choice, with named certificates and completion records. Single access runs for six months and ends with the same certificate as the corporate route. From 500 people the rate is agreed on request; a site licence for one project for a year: from AED 35,000.</p>
+<div class="cta-row"><a class="btn" href="#request">Request access</a></div></div></section>
+<section class="sec" id="request"><div class="wrap">
+<h2>Request access or a demonstration</h2>
+<p class="ssub">Tell us the industry and roughly how many people. A demonstration is a working link to the full programme, not slides about it; a request for access comes back with an invoice and the start date you name.</p>
 <form class="frm" onsubmit="return sendDemo(event)">
+<select id="d-want">
+<option value="demo">I want a demonstration</option>
+<option value="quote">I want a quote for a crew</option>
+<option value="single">I want access for one person</option>
+</select>
 <input id="d-name" placeholder="Name" required>
 <input id="d-email" type="email" placeholder="Work email" required>
 <input id="d-org" placeholder="Organisation" required>
 <input id="d-role" placeholder="Role" required>
 <textarea id="d-msg" rows="3" placeholder="Industry, headcount, languages needed (optional)"></textarea>
-<button type="submit" class="btn">Request the demo</button>
+<button type="submit" class="btn">Send request</button>
 <p class="sentnote" id="demonote"></p>
 </form>
 </div></section>
@@ -459,7 +465,8 @@ function postLead(data,noteEl,okKey,errKey,evt){
 }
 function sendDemo(e){
   e.preventDefault();
-  postLead({type:"demo",product:"safe",
+  var want=document.getElementById("d-want");
+  postLead({type:want?want.value:"demo",product:"safe",
     name:document.getElementById("d-name").value.trim(),
     email:document.getElementById("d-email").value.trim(),
     org:document.getElementById("d-org").value.trim(),
