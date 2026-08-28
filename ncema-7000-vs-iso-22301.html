@@ -111,6 +111,7 @@ html[lang="ar"] .en-only{display:none !important}
 .sfoot .row2 a:hover{color:#F0A868}
 .sfoot .lg2{font-size:15px;color:#fff;font-weight:bold}
 .sfoot .lg2 b{color:#C4571C}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}
 </style>
 </head>
 <body>
@@ -131,7 +132,7 @@ html[lang="ar"] .en-only{display:none !important}
 <h2>The short answer</h2>
 <p>If you operate in the UAE, <b>NCEMA 7000 is the standard your auditors and government clients will reference</b>; ISO 22301 is the standard your international partners and certification bodies recognise. The two are deliberately aligned — NCEMA 7000:2021 follows ISO 22301 clauses 3-10 in structure — so a well-built system covers most of both. The differences sit in emphasis, terminology and audit practice.</p>
 <h2>Side-by-side comparison</h2>
-<table class="tbl"><thead><tr><th></th><th>NCEMA 7000:2021</th><th>ISO 22301:2019</th></tr></thead><tbody><tr><td>Issued by</td><td>NCEMA — UAE national authority</td><td>ISO — international</td></tr><tr><td>Legal status in the UAE</td><td>Mandatory for government and critical infrastructure; the local benchmark</td><td>Voluntary; recognised for certification worldwide</td></tr><tr><td>Structure</td><td>Clauses 3-10; 3-7, 9, 10 = management system, 8 = operations</td><td>Clauses 4-10 in ISO harmonised structure</td></tr><tr><td>Format</td><td>Guidance and requirements combined — each clause explains, then requires</td><td>Requirements only; guidance lives in ISO 22313</td></tr><tr><td>Terms and definitions</td><td>Own set, not fully mirroring ISO 22300</td><td>ISO 22300 vocabulary</td></tr><tr><td>Technology recovery</td><td>Part of the response, during the disruption</td><td>Recovery typically framed after the incident</td></tr><tr><td>External providers</td><td>Explicit duty to evaluate critical suppliers' BCM against your dependency</td><td>Addressed, less prescriptive</td></tr><tr><td>Compliance check</td><td>Government audit programmes (e.g. ADCMC in Abu Dhabi)</td><td>Certification audit by accredited bodies</td></tr><tr><td>Document cost</td><td>Free from ncema.gov.ae</td><td>Purchased from ISO / national bodies</td></tr></tbody></table>
+<div class="tw"><table class="tbl"><thead><tr><th></th><th>NCEMA 7000:2021</th><th>ISO 22301:2019</th></tr></thead><tbody><tr><td>Issued by</td><td>NCEMA — UAE national authority</td><td>ISO — international</td></tr><tr><td>Legal status in the UAE</td><td>Mandatory for government and critical infrastructure; the local benchmark</td><td>Voluntary; recognised for certification worldwide</td></tr><tr><td>Structure</td><td>Clauses 3-10; 3-7, 9, 10 = management system, 8 = operations</td><td>Clauses 4-10 in ISO harmonised structure</td></tr><tr><td>Format</td><td>Guidance and requirements combined — each clause explains, then requires</td><td>Requirements only; guidance lives in ISO 22313</td></tr><tr><td>Terms and definitions</td><td>Own set, not fully mirroring ISO 22300</td><td>ISO 22300 vocabulary</td></tr><tr><td>Technology recovery</td><td>Part of the response, during the disruption</td><td>Recovery typically framed after the incident</td></tr><tr><td>External providers</td><td>Explicit duty to evaluate critical suppliers' BCM against your dependency</td><td>Addressed, less prescriptive</td></tr><tr><td>Compliance check</td><td>Government audit programmes (e.g. ADCMC in Abu Dhabi)</td><td>Certification audit by accredited bodies</td></tr><tr><td>Document cost</td><td>Free from ncema.gov.ae</td><td>Purchased from ISO / national bodies</td></tr></tbody></table></div>
 <h2>What this means in practice</h2>
 <ul><li><b>Already ISO 22301 certified?</b> You are most of the way to NCEMA 7000. Close the gaps: NCEMA terminology in your documents, supplier BCM evaluation tied to dependencies, recovery-during-response, and the clause 9 compliance indicators.</li><li><b>Starting from zero in the UAE?</b> Build to NCEMA 7000 first — it is what local audits and clients ask for — and keep the documentation ISO-mappable. Certification against ISO 22301 then becomes an increment, not a second project.</li><li><b>Supplying government clients?</b> They will ask about NCEMA 7000 specifically. An ISO certificate helps but does not answer the question.</li></ul>
 <div class="callout"><p>Our gap assessment maps your organisation against both standards in one pass — one report, two compliance pictures, priced in days of downtime, not abstractions.</p></div>
@@ -164,8 +165,8 @@ function renderSections(secs){
     else if(s[0]==="ul")out.push("<ul>"+s[1].map(function(x){return "<li>"+x+"</li>";}).join("")+"</ul>");
     else if(s[0]==="callout")out.push('<div class="callout"><p>'+s[1]+"</p></div>");
     else if(s[0]==="table"){
-      out.push('<table class="tbl"><thead><tr>'+s[1].map(function(c){return "<th>"+c+"</th>";}).join("")+"</tr></thead><tbody>"+
-        s[2].map(function(r){return "<tr>"+r.map(function(c){return "<td>"+c+"</td>";}).join("")+"</tr>";}).join("")+"</tbody></table>");
+      out.push('<div class="tw"><table class="tbl"><thead><tr>'+s[1].map(function(c){return "<th>"+c+"</th>";}).join("")+"</tr></thead><tbody>"+
+        s[2].map(function(r){return "<tr>"+r.map(function(c){return "<td>"+c+"</td>";}).join("")+"</tr>";}).join("")+"</tbody></table></div>");
     } else if(s[0]==="faq"){
       out.push('<div class="faq">'+s[1].map(function(x){return "<details><summary>"+x[0]+"</summary><p>"+x[1]+"</p></details>";}).join("")+"</div>");
     }

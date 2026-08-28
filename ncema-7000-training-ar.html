@@ -30,7 +30,9 @@ ul,ol{padding-inline-start:24px;margin-bottom:18px;font-size:16.5px}li{margin-bo
 img{max-width:100%;height:auto;border:1px solid #E1DCD3;border-radius:10px;margin:8px 0}
 figure{margin:22px 0}figcaption{font-size:14.5px;color:#5B564A;margin-top:8px;text-align:center}
 figure.wide{width:auto;max-width:none;margin-inline:max(calc(50% - 530px),calc(50% - 50vw + 18px))}
-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
+@media(max-width:700px){figure.wide{margin-inline:0}}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
 .rel{margin:30px 0;padding:16px 20px;background:#fff;border:1px solid #E1DCD3;border-radius:10px;font-size:15px}
 .rel b{display:block;margin-bottom:8px}.rel a{color:#C4571C;text-decoration:none;margin-inline-end:16px}
 .cta{background:#0D1117;color:#fff;border-radius:14px;padding:26px 26px;margin-top:36px}
@@ -97,7 +99,7 @@ footer{border-top:1px solid #E1DCD3;margin-top:48px;padding-top:18px;font-size:1
 </ul>
 <p class="b">إن لم يبق بعد الدورة سوى ملف بإطار مزخرف فقد اشترت المؤسسة حضورا. التدقيق المقبل سيطلب كفاءة، وهما شراءان مختلفان تماما.</p>
 <h2>دورات NCEMA 7000 في لمحة</h2>
-<table><thead><tr><th>الصيغة</th><th>الجمهور</th><th>المدة</th><th>ما تتركه بعدها</th></tr></thead><tbody><tr><td>جلسة توعية</td><td>كل من ورد اسمه في خطة</td><td>60–90 دقيقة سنويا</td><td>سجل حضور ومعرفة محدثة بشجرة الاتصال</td></tr><tr><td>دورة الممارسين</td><td>قائد الاستمرارية ومالكو العمليات وتعافي التقنية</td><td>16–24 ساعة تدريبية على 3–6 أسابيع</td><td>تحليل أثر وأهداف تعاف وهيكل خطة وتقرير تمرين ونتيجة مقيمة</td></tr><tr><td>إحاطة تنفيذية</td><td>المجلس واللجنة التنفيذية ولجنة التدقيق</td><td>2–3 ساعات</td><td>شهية انقطاع معتمدة وثلاثة أسئلة للمجلس</td></tr><tr><td>مسار أدلة الموردين</td><td>فرق العطاءات الحكومية</td><td>مسار الممارسين مضغوطا</td><td>ملف أدلة استمرارية للعطاء</td></tr><tr><td>برنامج الشهادة (ERGP)</td><td>التنفيذيون والقادة، بالعربية أو الإنجليزية</td><td>ست وحدات بالوتيرة الذاتية</td><td>ستة مخرجات ومناقشة ختامية وشهادة قابلة للتحقق</td></tr></tbody></table>
+<div class="tw"><table><thead><tr><th>الصيغة</th><th>الجمهور</th><th>المدة</th><th>ما تتركه بعدها</th></tr></thead><tbody><tr><td>جلسة توعية</td><td>كل من ورد اسمه في خطة</td><td>60–90 دقيقة سنويا</td><td>سجل حضور ومعرفة محدثة بشجرة الاتصال</td></tr><tr><td>دورة الممارسين</td><td>قائد الاستمرارية ومالكو العمليات وتعافي التقنية</td><td>16–24 ساعة تدريبية على 3–6 أسابيع</td><td>تحليل أثر وأهداف تعاف وهيكل خطة وتقرير تمرين ونتيجة مقيمة</td></tr><tr><td>إحاطة تنفيذية</td><td>المجلس واللجنة التنفيذية ولجنة التدقيق</td><td>2–3 ساعات</td><td>شهية انقطاع معتمدة وثلاثة أسئلة للمجلس</td></tr><tr><td>مسار أدلة الموردين</td><td>فرق العطاءات الحكومية</td><td>مسار الممارسين مضغوطا</td><td>ملف أدلة استمرارية للعطاء</td></tr><tr><td>برنامج الشهادة (ERGP)</td><td>التنفيذيون والقادة، بالعربية أو الإنجليزية</td><td>ست وحدات بالوتيرة الذاتية</td><td>ستة مخرجات ومناقشة ختامية وشهادة قابلة للتحقق</td></tr></tbody></table></div>
 <h2>أسئلة متكررة</h2>
 <div class="faq" style="margin:10px 0 6px">
 <details style="border-bottom:1px solid #E1DCD3;padding:4px 0"><summary style="font-size:16.5px;font-weight:bold;padding:12px 0;cursor:pointer">هل توجد دورة رسمية لمعيار NCEMA 7000 معتمدة من الهيئة؟</summary><p class="b" style="padding:0 0 14px">الهيئة الوطنية تنشر المعيار AE/SCNS/NCEMA 7000:2021 وتقيم المنظمات لا مزودي الدورات التجارية. وأي مزود يدعي اعتمادا من الهيئة لدورته ينبغي التحقق منه من المصدر قبل أن تدخل شهادته ملف الأدلة.</p></details>

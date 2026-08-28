@@ -30,7 +30,9 @@ ul,ol{padding-inline-start:24px;margin-bottom:18px;font-size:16.5px}li{margin-bo
 img{max-width:100%;height:auto;border:1px solid #E1DCD3;border-radius:10px;margin:8px 0}
 figure{margin:22px 0}figcaption{font-size:14.5px;color:#5B564A;margin-top:8px;text-align:center}
 figure.wide{width:auto;max-width:none;margin-inline:max(calc(50% - 530px),calc(50% - 50vw + 18px))}
-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
+@media(max-width:700px){figure.wide{margin-inline:0}}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
 .rel{margin:30px 0;padding:16px 20px;background:#fff;border:1px solid #E1DCD3;border-radius:10px;font-size:15px}
 .rel b{display:block;margin-bottom:8px}.rel a{color:#C4571C;text-decoration:none;margin-inline-end:16px}
 .cta{background:#0D1117;color:#fff;border-radius:14px;padding:26px 26px;margin-top:36px}
@@ -65,14 +67,14 @@ footer{border-top:1px solid #E1DCD3;margin-top:48px;padding-top:18px;font-size:1
 <figure class="wide"><img src="assets/figures/hospitality-guest-journey-ar.svg" alt="رسم لرحلة الضيف في الفندق من الحجز إلى المغادرة، ونقطة الانكسار والبديل اليدوي عند كل محطة" loading="lazy"><figcaption>رحلة الضيف في خمس محطات، ولكل محطة نقطة انكسار وبديل يدوي مكتوب.</figcaption></figure>
 <h2>خمسة سيناريوهات تقرر ليلتكم</h2>
 <p class="b">خمسة سيناريوهات تغطي أغلب ما يعطل فندقا في المنطقة، ولكل واحد خصوصية فندقية واختبار جاهزية يجاب عنه بالتجربة لا بالوثيقة.</p>
-<table>
+<div class="tw"><table>
 <tr><th>السيناريو</th><th>الخصوصية الفندقية</th><th>اختبار الجاهزية</th></tr>
 <tr><td>تعطل نظام إدارة الفندق والحجوزات</td><td>تسجيل الوصول والفوترة وتوزيع الغرف يتجمد عند المكتب الأمامي</td><td>بطاقات تسجيل ورقية وقائمة أسعار جرى التدرب عليها، وسؤال واحد، هل يعمل المكتب أربعا وعشرين ساعة دون نظام</td></tr>
 <tr><td>فشل الكهرباء أو التبريد</td><td>في صيف الخليج التبريد سلامة أرواح لا رفاهية</td><td>أولويات حمل المولد مقررة سلفا، ما الذي يبقى يعمل وبأي ترتيب</td></tr>
 <tr><td>برمجية فدية</td><td>بيانات الضيوف والعمليات معا، حادث خصوصية وانقطاع في آن واحد</td><td>شبكات مقسمة، وقائمة ضيوف دون اتصال، وخطة إخطار تلبي قانون حماية البيانات</td></tr>
 <tr><td>حادث في المنطقة أو تقييد الوصول</td><td>الضيوف لا يستطيعون المغادرة أو القادمون لا يصلون</td><td>تموين إقامة ممتدة ومنطق إعادة حجز متفق عليه مع فنادق شقيقة</td></tr>
 <tr><td>حدث سمعة</td><td>المراجعات ووسائل التواصل تضخم كل ساعة ارتباك</td><td>صوت واحد يتحدث، وبيانات جاهزة، وطاقم يعرف ما لا يقال</td></tr>
-</table>
+</table></div>
 <h2>الخطة بنسخة الضيافة، خمسة نواتج</h2>
 <p class="b">خطة الفندق التي تعمل ليلة الحادث تتكون من خمسة نواتج ملموسة تجمعها <a href="terms/ar/bcp.html">خطة استمرارية الأعمال</a> في وثيقة واحدة قابلة للاستخدام.</p>
 <ul>

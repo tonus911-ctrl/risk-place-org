@@ -109,6 +109,7 @@ html[lang="ar"] .en-only{display:none !important}
 .sfoot .row2 a:hover{color:#F0A868}
 .sfoot .lg2{font-size:15px;color:#fff;font-weight:bold}
 .sfoot .lg2 b{color:#C4571C}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}
 </style>
 </head>
 <body>
@@ -164,8 +165,8 @@ function renderSections(secs){
     else if(s[0]==="ul")out.push("<ul>"+s[1].map(function(x){return "<li>"+x+"</li>";}).join("")+"</ul>");
     else if(s[0]==="callout")out.push('<div class="callout"><p>'+s[1]+"</p></div>");
     else if(s[0]==="table"){
-      out.push('<table class="tbl"><thead><tr>'+s[1].map(function(c){return "<th>"+c+"</th>";}).join("")+"</tr></thead><tbody>"+
-        s[2].map(function(r){return "<tr>"+r.map(function(c){return "<td>"+c+"</td>";}).join("")+"</tr>";}).join("")+"</tbody></table>");
+      out.push('<div class="tw"><table class="tbl"><thead><tr>'+s[1].map(function(c){return "<th>"+c+"</th>";}).join("")+"</tr></thead><tbody>"+
+        s[2].map(function(r){return "<tr>"+r.map(function(c){return "<td>"+c+"</td>";}).join("")+"</tr>";}).join("")+"</tbody></table></div>");
     } else if(s[0]==="faq"){
       out.push('<div class="faq">'+s[1].map(function(x){return "<details><summary>"+x[0]+"</summary><p>"+x[1]+"</p></details>";}).join("")+"</div>");
     }

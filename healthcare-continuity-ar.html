@@ -30,7 +30,9 @@ ul,ol{padding-inline-start:24px;margin-bottom:18px;font-size:16.5px}li{margin-bo
 img{max-width:100%;height:auto;border:1px solid #E1DCD3;border-radius:10px;margin:8px 0}
 figure{margin:22px 0}figcaption{font-size:14.5px;color:#5B564A;margin-top:8px;text-align:center}
 figure.wide{width:auto;max-width:none;margin-inline:max(calc(50% - 530px),calc(50% - 50vw + 18px))}
-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
+@media(max-width:700px){figure.wide{margin-inline:0}}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
 .rel{margin:30px 0;padding:16px 20px;background:#fff;border:1px solid #E1DCD3;border-radius:10px;font-size:15px}
 .rel b{display:block;margin-bottom:8px}.rel a{color:#C4571C;text-decoration:none;margin-inline-end:16px}
 .cta{background:#0D1117;color:#fff;border-radius:14px;padding:26px 26px;margin-top:36px}
@@ -65,14 +67,14 @@ footer{border-top:1px solid #E1DCD3;margin-top:48px;padding-top:18px;font-size:1
 <figure class="wide"><img src="assets/figures/healthcare-critical-services-ar.svg" alt="رسم للخدمات السريرية الحرجة في المستشفى وأقصى مدة غياب يتحملها المريض لكل خدمة" loading="lazy"><figcaption>الخدمات الحرجة مرتبة بزمن الغياب المسموح، من دقائق الطوارئ إلى أيام الفوترة.</figcaption></figure>
 <h2>خمسة سيناريوهات تحدد جاهزية المستشفى</h2>
 <p class="b">خمسة سيناريوهات تغطي أغلب ما يعطل مستشفى في المنطقة، ولكل واحد رهانه السريري واختبار جاهزية لا يقبل إجابة ورقية.</p>
-<table>
+<div class="tw"><table>
 <tr><th>السيناريو</th><th>الرهان السريري</th><th>اختبار الجاهزية</th></tr>
 <tr><td>تعطل السجل الطبي الإلكتروني</td><td>الطلبات والنتائج والحساسيات وقوائم الأدوية خارج المتناول</td><td>نماذج تعطل ومرايا للقراءة فقط في كل جناح، وطاقم تدرب على المسار الورقي</td></tr>
 <tr><td>برمجية فدية</td><td>انقطاع تشغيلي واختراق بيانات مرضى في حدث واحد</td><td>تقسيم الشبكة، ونسخ دون اتصال مختبرة بالاستعادة، ومسار إخطار يلبي قانون البيانات الإماراتي</td></tr>
 <tr><td>فشل المرافق</td><td>الكهرباء والتبريد يحملان أجهزة دعم الحياة</td><td>تشغيل تلقائي للمولد مختبر تحت الحمل، وعقود وقود بمواعيد تسليم ملزمة</td></tr>
 <tr><td>انقطاع الإمداد</td><td>أدوية ومستهلكات وأكسجين ومشتقات دم</td><td>سياسة مخزون بحسب فئة الحرج، وموردون بدلاء مؤهلون سلفا</td></tr>
 <tr><td>حادث في المنطقة أو تقييد الوصول</td><td>الطاقم لا يصل المنشأة والمرضى يواصلون الوصول إليها</td><td>بروتوكول تمديد الورديات، وخطة إسكان الطاقم، واتفاقيات تحويل موقعة</td></tr>
-</table>
+</table></div>
 <h2>الخطة بالنسخة السريرية، خمسة نواتج</h2>
 <p class="b">خطة المستشفى التي تعمل ليلة الحادث تتكون من خمسة نواتج ملموسة، وما زاد عليها ورق للمدقق.</p>
 <ul>

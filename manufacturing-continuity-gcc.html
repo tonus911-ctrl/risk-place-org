@@ -102,6 +102,7 @@ a{color:#16181F;text-decoration:none}
 }
 
 figure.wide{width:auto;max-width:none;margin-inline:max(calc(50% - 530px),calc(50% - 50vw + 18px))}
+@media(max-width:700px){figure.wide{margin-inline:0}}
 .hnav{display:flex;gap:18px;align-items:center;margin-inline-start:auto;margin-inline-end:16px}.hnav a{font-size:14px;color:#3D4149}.hnav a:hover{color:#C4571C}@media(max-width:1000px){.hnav{display:none}}
 
 /* --- единый футер --- */
@@ -115,6 +116,7 @@ figure.wide{width:auto;max-width:none;margin-inline:max(calc(50% - 530px),calc(5
 .sfoot .row2 a:hover{color:#F0A868}
 .sfoot .lg2{font-size:15px;color:#fff;font-weight:bold}
 .sfoot .lg2 b{color:#C4571C}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}
 </style>
 </head>
 <body>
@@ -131,7 +133,7 @@ figure.wide{width:auto;max-width:none;margin-inline:max(calc(50% - 530px),calc(5
 
 <article class="art"><div class="wrap" id="art">
 <h2>Where manufacturing actually stops</h2>
-<table class="tbl"><thead><tr><th>Scenario</th><th>Typical trigger</th><th>What decides the damage</th></tr></thead><tbody><tr><td>Fire or explosion</td><td>Hot works, fuel storage, dust, external impact</td><td>Compartmentation and isolation distances — designed years before</td></tr><tr><td>Utility failure</td><td>Power, gas, water, cooling interruption</td><td>Ride-through capacity and safe-shutdown discipline</td></tr><tr><td>OT / IT incident</td><td>Ransomware reaching SCADA or ERP; the line is fine, the control is not</td><td>Network segmentation and a rehearsed manual-mode</td></tr><tr><td>Supplier failure</td><td>A single-source input stops arriving</td><td>Stock policy and a qualified second source — decided in peacetime</td></tr><tr><td>Area closure</td><td>An incident nearby closes the zone; the facility is intact but inaccessible</td><td>Remote monitoring, skeleton-crew permits, restart sequencing</td></tr></tbody></table>
+<div class="tw"><table class="tbl"><thead><tr><th>Scenario</th><th>Typical trigger</th><th>What decides the damage</th></tr></thead><tbody><tr><td>Fire or explosion</td><td>Hot works, fuel storage, dust, external impact</td><td>Compartmentation and isolation distances — designed years before</td></tr><tr><td>Utility failure</td><td>Power, gas, water, cooling interruption</td><td>Ride-through capacity and safe-shutdown discipline</td></tr><tr><td>OT / IT incident</td><td>Ransomware reaching SCADA or ERP; the line is fine, the control is not</td><td>Network segmentation and a rehearsed manual-mode</td></tr><tr><td>Supplier failure</td><td>A single-source input stops arriving</td><td>Stock policy and a qualified second source — decided in peacetime</td></tr><tr><td>Area closure</td><td>An incident nearby closes the zone; the facility is intact but inaccessible</td><td>Remote monitoring, skeleton-crew permits, restart sequencing</td></tr></tbody></table></div>
 <p>Two features distinguish manufacturing from office businesses. First, <b>restart is a process, not a switch</b>: lines restart in sequence, with quality checks, purges and safety verifications — a 6-hour stoppage can cost a 20-hour recovery. Second, <b>the physics is fixed</b>: compartments, isolation distances and utility redundancy are decided at design time, which makes the continuity review of any facility change the cheapest insurance you will ever buy.</p>
 <h2>The manufacturing continuity plan, in five artefacts</h2>
 <ul><li><b>Downtime cost per line.</b> Lost margin, contract penalties, restart cost, scrap — per hour and per day. The number that prices every other decision.</li><li><b>Safe-shutdown and restart runbooks.</b> Who stops the line, in what order things come back, which checks are non-negotiable. Written for the shift that has never done it.</li><li><b>Manual-mode for OT/IT loss.</b> Which operations can run without the ERP or MES, on what paper records, for how long — tested once a year.</li><li><b>Single-source register.</b> Every input with one supplier, one route or one tank — with the mitigation decision recorded: stock, second source, or accepted risk with a name on it.</li><li><b>First-hours authority.</b> Stopping a line costs money; not stopping it can cost the facility. The authority to decide, in writing, at shift-supervisor reach.</li></ul>

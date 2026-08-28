@@ -102,6 +102,7 @@ a{color:#16181F;text-decoration:none}
 }
 
 figure.wide{width:auto;max-width:none;margin-inline:max(calc(50% - 530px),calc(50% - 50vw + 18px))}
+@media(max-width:700px){figure.wide{margin-inline:0}}
 .hnav{display:flex;gap:18px;align-items:center;margin-inline-start:auto;margin-inline-end:16px}.hnav a{font-size:14px;color:#3D4149}.hnav a:hover{color:#C4571C}@media(max-width:1000px){.hnav{display:none}}
 
 /* --- единый футер --- */
@@ -115,6 +116,7 @@ figure.wide{width:auto;max-width:none;margin-inline:max(calc(50% - 530px),calc(5
 .sfoot .row2 a:hover{color:#F0A868}
 .sfoot .lg2{font-size:15px;color:#fff;font-weight:bold}
 .sfoot .lg2 b{color:#C4571C}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}
 </style>
 </head>
 <body>
@@ -137,7 +139,7 @@ figure.wide{width:auto;max-width:none;margin-inline:max(calc(50% - 530px),calc(5
 <ul><li><b>Regulation.</b> NCEMA 7000 is mandatory for government entities and critical infrastructure; CBUAE Rulebook Article 7 binds banks and financial institutions; the new Central Bank law brings insurers and payment providers into one supervised framework with a September 2026 transition deadline.</li><li><b>Clients and tenders.</b> Government and enterprise clients increasingly require continuity evidence from suppliers — the requirement flows down the contract chain.</li><li><b>Insurers.</b> Business-interruption underwriting asks harder questions every year; a tested BCM system directly affects both insurability and claims.</li><li><b>The threat picture.</b> Ransomware and regional airspace incidents have turned «low probability» scenarios into recurring operating conditions. Boards have noticed.</li></ul>
 <figure class="wide"><img src="assets/figures/uae-continuity-landscape-en.svg" alt="Three layers of continuity requirement in the UAE, NCEMA 7000, CBUAE Article 7 and ISO 22301, and who is bound by each of them" loading="lazy"><figcaption>Who is bound by what, and why those bound by no regulator are still bound by contracts.</figcaption></figure>
 <h2>The five components of a working system</h2>
-<table class="tbl"><thead><tr><th>Component</th><th>What it produces</th><th>The test of quality</th></tr></thead><tbody><tr><td>Business impact analysis (BIA)</td><td>Critical activities, cost of downtime per day, recovery objectives</td><td>Numbers a CFO signs, not adjectives</td></tr><tr><td>Risk assessment</td><td>Scenarios that can stop you; single points of failure</td><td>The list gets shorter quarter by quarter</td></tr><tr><td>Continuity strategies &amp; plans</td><td>Alternate facilities, workarounds, technology recovery, first-hours authority</td><td>Short enough to use at 2 a.m.</td></tr><tr><td>Exercises</td><td>Findings, timings, closed actions</td><td>At least one realistic test per year that finds something</td></tr><tr><td>Metrics &amp; governance</td><td>Resilience index, board reporting, review cycle</td><td>Leadership can answer «can we recover?» with a number</td></tr></tbody></table>
+<div class="tw"><table class="tbl"><thead><tr><th>Component</th><th>What it produces</th><th>The test of quality</th></tr></thead><tbody><tr><td>Business impact analysis (BIA)</td><td>Critical activities, cost of downtime per day, recovery objectives</td><td>Numbers a CFO signs, not adjectives</td></tr><tr><td>Risk assessment</td><td>Scenarios that can stop you; single points of failure</td><td>The list gets shorter quarter by quarter</td></tr><tr><td>Continuity strategies &amp; plans</td><td>Alternate facilities, workarounds, technology recovery, first-hours authority</td><td>Short enough to use at 2 a.m.</td></tr><tr><td>Exercises</td><td>Findings, timings, closed actions</td><td>At least one realistic test per year that finds something</td></tr><tr><td>Metrics &amp; governance</td><td>Resilience index, board reporting, review cycle</td><td>Leadership can answer «can we recover?» with a number</td></tr></tbody></table></div>
 <h2>What it costs and how long it takes</h2>
 <p>For a mid-size organisation, a credible path runs: <b>gap assessment 2-3 weeks</b>, then <b>3-6 months</b> from assessment to a tested, audit-ready system — driven mostly by how engaged leadership is and how complex the operation. The single most useful early artefact is the cost of one lost day per critical facility or process: it prices every later decision, from alternate-site spend to insurance limits.</p>
 <div class="callout"><p>A rule that saves budgets: never buy continuity measures before the BIA. Without the cost of downtime, every proposal is either too expensive or too cheap — and you cannot tell which.</p></div>

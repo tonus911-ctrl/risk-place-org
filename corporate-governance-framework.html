@@ -31,7 +31,9 @@ ul,ol{padding-inline-start:24px;margin-bottom:18px;font-size:16.5px}li{margin-bo
 img{max-width:100%;height:auto;border:1px solid #E1DCD3;border-radius:10px;margin:8px 0}
 figure{margin:22px 0}figcaption{font-size:14.5px;color:#5B564A;margin-top:8px;text-align:center}
 figure.wide{width:auto;max-width:none;margin-inline:max(calc(50% - 530px),calc(50% - 50vw + 18px))}
-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
+@media(max-width:700px){figure.wide{margin-inline:0}}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
 .rel{margin:30px 0;padding:16px 20px;background:#fff;border:1px solid #E1DCD3;border-radius:10px;font-size:15px}
 .rel b{display:block;margin-bottom:8px}.rel a{color:#C4571C;text-decoration:none;margin-inline-end:16px}
 .cta{background:#0D1117;color:#fff;border-radius:14px;padding:26px 26px;margin-top:36px}
@@ -62,7 +64,7 @@ footer{border-top:1px solid #E1DCD3;margin-top:48px;padding-top:18px;font-size:1
 <h2>What the framework actually is</h2>
 <p class="b">Strip away the vocabulary and <a href="terms/en/corporate-governance.html">corporate governance</a> answers three questions. Who has the authority to decide — and where that authority ends. Who verifies that decisions are executed and risks are controlled. And who is accountable to owners, regulators and society for the outcome. A governance framework is simply the written, working answer to those three questions: not a binder produced for a listing or a tender, but the mechanism the company actually runs on. The test is practical — when a decision above a manager's limit appears, does everyone know where it goes next, and is there a record that it went there?</p>
 <h2>The seven components</h2>
-<table><thead><tr><th>Component</th><th>What it fixes</th><th>Typical artefact</th></tr></thead><tbody>
+<div class="tw"><table><thead><tr><th>Component</th><th>What it fixes</th><th>Typical artefact</th></tr></thead><tbody>
 <tr><td>Ownership and board structure</td><td>Whose interests rule and who directs</td><td>Charter, board composition, independence rules</td></tr>
 <tr><td>Board committees</td><td>Depth on audit, risk, remuneration, nomination</td><td>Committee charters and annual plans</td></tr>
 <tr><td>Delegation of authority</td><td>Where each decision is taken</td><td>DoA matrix with monetary limits</td></tr>
@@ -70,7 +72,7 @@ footer{border-top:1px solid #E1DCD3;margin-top:48px;padding-top:18px;font-size:1
 <tr><td>Risk management and internal control</td><td>How risk is identified, owned and treated</td><td><a href="terms/en/risk-register.html">Risk register</a>, appetite statement, KRIs</td></tr>
 <tr><td>Assurance</td><td>Independent confirmation that controls work</td><td><a href="three-lines-of-defence.html">Three lines model</a>, internal audit plan</td></tr>
 <tr><td>Reporting and disclosure</td><td>What the board and the market learn, and when</td><td>Board pack, <a href="terms/en/reporting.html">reporting</a> calendar, disclosures</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p class="b">The components are not optional modules; they lock together. A delegation matrix without assurance is trust without verification. Committees without a reporting calendar meet without consequence. A <a href="terms/en/accountability.html">policy of accountability</a> without a delegation matrix names no one.</p>
 <h2>Governance and resilience: the connection boards miss</h2>
 <p class="b">Most frameworks cover financial control thoroughly and operational disruption barely. Yet the same three questions apply: who decides to invoke continuity plans, who verifies the plans hold, who answers when the service is down for a week. In mature frameworks the board sets an appetite for disruption, assigns ownership of continuity to a named executive, and reviews exercise evidence the way it reviews audit findings. How that oversight works in practice is set out in <a href="board-role-resilience.html">the board's role in resilience</a> and in <a href="operational-resilience-board-reporting.html">operational resilience board reporting</a>; the regulatory push in this region is described in our <a href="cbuae-operational-resilience.html">CBUAE operational resilience guide</a>.</p>

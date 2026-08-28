@@ -109,6 +109,7 @@ html[lang="ar"] .en-only{display:none !important}
 .sfoot .row2 a:hover{color:#F0A868}
 .sfoot .lg2{font-size:15px;color:#fff;font-weight:bold}
 .sfoot .lg2 b{color:#C4571C}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}
 </style>
 </head>
 <body>
@@ -130,7 +131,7 @@ html[lang="ar"] .en-only{display:none !important}
 <p>Read your policy against your two worst realistic scenarios — for the region today, a fire following an external impact and a ransomware outage — and answer in writing: <b>Is the trigger covered? Does denial-of-access apply when the facility is intact but the zone is closed? Is cyber excluded from BI, and if so, where does cyber-BI cover live? Do waiting period and indemnity period match your tested recovery times — not your hopes?</b> Every mismatch is a renewal conversation that costs far less than a declined claim.</p>
 <div class="callout"><p>The alignment rule: your BIA already computed the cost of downtime per day and your tested recovery time. The policy's sums, waiting period and indemnity period should be derived from those numbers — insurance is the financial mirror of your continuity plan, or it is decoration.</p></div>
 <h2>During the event: the evidence protocol</h2>
-<table class="tbl"><thead><tr><th>What to record</th><th>Why the adjuster needs it</th><th>Who owns it</th></tr></thead><tbody><tr><td>Incident timeline with timestamps</td><td>Establishes the interruption period end to end</td><td>Incident commander / scribe</td></tr><tr><td>Downtime and output logs per activity</td><td>Quantifies the loss the policy responds to</td><td>Operations</td></tr><tr><td>Mitigation decisions and their costs</td><td>Proves you reduced the loss — a policy duty</td><td>Continuity lead</td></tr><tr><td>Authority communications (closure orders, permits)</td><td>Evidences denial of access and its duration</td><td>Legal / admin</td></tr><tr><td>Photos, inspection reports, expert notes</td><td>Anchors causation — impact, fire, spread</td><td>HSE / engineering</td></tr><tr><td>Client communications and lost-order records</td><td>Supports the revenue-loss calculation</td><td>Commercial team</td></tr></tbody></table>
+<div class="tw"><table class="tbl"><thead><tr><th>What to record</th><th>Why the adjuster needs it</th><th>Who owns it</th></tr></thead><tbody><tr><td>Incident timeline with timestamps</td><td>Establishes the interruption period end to end</td><td>Incident commander / scribe</td></tr><tr><td>Downtime and output logs per activity</td><td>Quantifies the loss the policy responds to</td><td>Operations</td></tr><tr><td>Mitigation decisions and their costs</td><td>Proves you reduced the loss — a policy duty</td><td>Continuity lead</td></tr><tr><td>Authority communications (closure orders, permits)</td><td>Evidences denial of access and its duration</td><td>Legal / admin</td></tr><tr><td>Photos, inspection reports, expert notes</td><td>Anchors causation — impact, fire, spread</td><td>HSE / engineering</td></tr><tr><td>Client communications and lost-order records</td><td>Supports the revenue-loss calculation</td><td>Commercial team</td></tr></tbody></table></div>
 <p>The protocol is one page, assigned in advance, rehearsed in your annual exercise. In the first hours of a real event nobody remembers to photograph the closure notice — unless it is someone's written job.</p>
 <h2>Frequently asked questions</h2>
 <div class="faq"><details><summary>Does standard property insurance cover business interruption?</summary><p>Only if BI cover was bought with it, and only per its wording. Property pays for the damage; BI pays for the interruption — different sections, different sums, different evidence. Many businesses discover the difference during their first claim.</p></details><details><summary>Is a drone incident covered by standard fire policies?</summary><p>Wordings differ — which is the point. The questions to put to your broker in writing: is fire following external impact covered, are strikes/riots/malicious-damage exclusions engaged, does denial-of-access apply. Ask before renewal, not after an event.</p></details><details><summary>How does a tested continuity plan affect the claim?</summary><p>Twice. Before: insurers price and accept risks more readily with evidenced continuity. After: mitigation duties are met by executing a documented plan, and the exercise reports become part of your evidence of competence — shortening negotiations measurably.</p></details></div>
@@ -161,8 +162,8 @@ function renderSections(secs){
     else if(s[0]==="ul")out.push("<ul>"+s[1].map(function(x){return "<li>"+x+"</li>";}).join("")+"</ul>");
     else if(s[0]==="callout")out.push('<div class="callout"><p>'+s[1]+"</p></div>");
     else if(s[0]==="table"){
-      out.push('<table class="tbl"><thead><tr>'+s[1].map(function(c){return "<th>"+c+"</th>";}).join("")+"</tr></thead><tbody>"+
-        s[2].map(function(r){return "<tr>"+r.map(function(c){return "<td>"+c+"</td>";}).join("")+"</tr>";}).join("")+"</tbody></table>");
+      out.push('<div class="tw"><table class="tbl"><thead><tr>'+s[1].map(function(c){return "<th>"+c+"</th>";}).join("")+"</tr></thead><tbody>"+
+        s[2].map(function(r){return "<tr>"+r.map(function(c){return "<td>"+c+"</td>";}).join("")+"</tr>";}).join("")+"</tbody></table></div>");
     } else if(s[0]==="faq"){
       out.push('<div class="faq">'+s[1].map(function(x){return "<details><summary>"+x[0]+"</summary><p>"+x[1]+"</p></details>";}).join("")+"</div>");
     }

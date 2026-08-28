@@ -76,7 +76,8 @@ h2.sec{font-size:19px;font-weight:600;margin:28px 0 12px}
 .def-mark{width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;flex:0 0 22px;font-size:12px}
 .m-yes{background:#1A7A45}.m-part{background:#C4571C}.m-no{background:#D0392B}
 .def-st{margin-inline-start:auto;font-size:11.5px;font-weight:700;color:#8A8478}
-@media(max-width:700px){table{display:block;overflow-x:auto}}
+@media(max-width:700px){table{display:block;overflow-x:auto}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}}
 table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #EAE7E1;border-radius:14px;overflow:hidden;font-size:13.5px}
 th,td{padding:10px 13px;text-align:start;border-bottom:1px solid #F0EDE7}
 th{background:#FBF9F5;font-weight:700;color:#3D4149;font-size:12.5px}
@@ -131,9 +132,9 @@ html[lang="ar"] .en-only{display:none !important}
     <div><h2 class="sec" data-ui="defT">Protective mechanisms</h2><ul class="defs" id="defs"></ul></div>
   </div>
   <h2 class="sec" data-ui="riskT">Top risks</h2>
-  <table id="risks"></table>
+  <div class="tw"><table id="risks"></table></div>
   <h2 class="sec" data-ui="procT">Critical processes: recovery target vs actual</h2>
-  <table id="procs"></table>
+  <div class="tw"><table id="procs"></table></div>
   <div class="cta"><b data-ui="ctaT">Want a dashboard like this for your company?</b><span><a class="btn o" href="dashboard.html" data-ui="cta">About the product</a><a class="btn" href="dashboard.html#uform" data-ui="cta2">Request a demo</a></span></div>
 </div>
 <script>

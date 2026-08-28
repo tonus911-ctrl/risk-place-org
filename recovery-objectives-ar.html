@@ -30,7 +30,9 @@ ul,ol{padding-inline-start:24px;margin-bottom:18px;font-size:16.5px}li{margin-bo
 img{max-width:100%;height:auto;border:1px solid #E1DCD3;border-radius:10px;margin:8px 0}
 figure{margin:22px 0}figcaption{font-size:14.5px;color:#5B564A;margin-top:8px;text-align:center}
 figure.wide{width:auto;max-width:none;margin-inline:max(calc(50% - 530px),calc(50% - 50vw + 18px))}
-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
+@media(max-width:700px){figure.wide{margin-inline:0}}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
 .rel{margin:30px 0;padding:16px 20px;background:#fff;border:1px solid #E1DCD3;border-radius:10px;font-size:15px}
 .rel b{display:block;margin-bottom:8px}.rel a{color:#C4571C;text-decoration:none;margin-inline-end:16px}
 .cta{background:#0D1117;color:#fff;border-radius:14px;padding:26px 26px;margin-top:36px}
@@ -74,13 +76,13 @@ footer{border-top:1px solid #E1DCD3;margin-top:48px;padding-top:18px;font-size:1
 <h2>مثال رقمي متكامل، شركة مدفوعات</h2>
 <p class="b">لنأخذ شركة معالجة مدفوعات تنص عقود تجارها على غرامات بعد 6 ساعات من الانقطاع، ويبدأ عملاؤها بالتحول إلى مزودين آخرين بعد نحو يوم عمل. تضع الشركة MAO عند 6 ساعات، وتحدد RTO عند 4 ساعات بهامش ساعتين، وقد جاء آخر اختبار للتحويل الاحتياطي عند 3 ساعات و10 دقائق، فالسلسلة سليمة: الزمن المختبر أقل من RTO، وRTO أقل من MAO. وتعمل المزامنة مع الموقع الاحتياطي كل 5 دقائق بما يطابق RPO المعتمد البالغ 5 دقائق. وينص MBCO على أن تحافظ الشركة أثناء التعافي على 50% على الأقل من طاقة المعاملات الاعتيادية، مع أولوية لتفويض البطاقات على خدمات التقارير. لكل رقم مالك واعتماد واختبار.</p>
 <h2>العلاقة بين الأرقام الأربعة</h2>
-<table><thead><tr><th>المؤشر</th><th>السؤال الذي يجيب عنه</th><th>قيمة المثال</th></tr></thead>
+<div class="tw"><table><thead><tr><th>المؤشر</th><th>السؤال الذي يجيب عنه</th><th>قيمة المثال</th></tr></thead>
 <tbody>
 <tr><td>MAO (MTPD)</td><td>كم نتحمل من الانقطاع؟</td><td>6 ساعات</td></tr>
 <tr><td>RTO</td><td>بأي سرعة يجب استعادة العملية؟</td><td>4 ساعات (هامش ساعتان)</td></tr>
 <tr><td>RPO</td><td>كم من البيانات يمكن أن نفقد؟</td><td>5 دقائق</td></tr>
 <tr><td>MBCO</td><td>ما الحد الأدنى من الخدمة أثناء التعافي؟</td><td>50% من الطاقة</td></tr>
-</tbody></table>
+</tbody></table></div>
 <h2>أخطاء شائعة</h2>
 <ul>
 <li>أرقام مستديرة من السقف، فالهدف الزمني المختار بلا حساب كلفة التوقف إما باهظ بلا مبرر أو بطيء بلا فائدة.</li>

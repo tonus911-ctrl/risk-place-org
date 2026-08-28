@@ -109,6 +109,7 @@ html[lang="ar"] .en-only{display:none !important}
 .sfoot .row2 a:hover{color:#F0A868}
 .sfoot .lg2{font-size:15px;color:#fff;font-weight:bold}
 .sfoot .lg2 b{color:#C4571C}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}
 </style>
 </head>
 <body>
@@ -130,7 +131,7 @@ html[lang="ar"] .en-only{display:none !important}
 <h2>The four questions that define your exposure</h2>
 <ul><li><b>What burns, and what is next to it?</b> Fuel storage, solvents, packaging, dust — mapped against isolation distances and compartments.</li><li><b>What does one closed day cost?</b> Per facility, in money — the number that prices every protective measure.</li><li><b>Can you operate with the facility inaccessible for 72 hours?</b> Orders, shipping, client communication — the «intact but closed zone» scenario.</li><li><b>Will your insurer pay?</b> Business-interruption wording for external-impact fire, and the evidence discipline a claim requires.</li></ul>
 <h2>The readiness stack, from cheap to capital</h2>
-<table class="tbl"><thead><tr><th>Layer</th><th>Measures</th><th>Cost profile</th></tr></thead><tbody><tr><td>Organisational</td><td>First-hours authority in writing, evacuation and shutdown playbooks, a tested 72-hour continuity plan</td><td>Days of work; mostly internal time</td></tr><tr><td>Passive physical</td><td>Mesh screens over open fuel and critical storage, compartmentation, isolation distances, roof and skylight review</td><td>Engineering budget; one-off</td></tr><tr><td>Detection and response</td><td>Early notification arrangements, shelter and muster procedures, fire suppression rated for intense fuel fires</td><td>Moderate; often upgrades of existing systems</td></tr><tr><td>Financial</td><td>BI insurance wording review, deductible and waiting-period alignment with your real recovery time, evidence protocol</td><td>Advisory time; changes at renewal</td></tr></tbody></table>
+<div class="tw"><table class="tbl"><thead><tr><th>Layer</th><th>Measures</th><th>Cost profile</th></tr></thead><tbody><tr><td>Organisational</td><td>First-hours authority in writing, evacuation and shutdown playbooks, a tested 72-hour continuity plan</td><td>Days of work; mostly internal time</td></tr><tr><td>Passive physical</td><td>Mesh screens over open fuel and critical storage, compartmentation, isolation distances, roof and skylight review</td><td>Engineering budget; one-off</td></tr><tr><td>Detection and response</td><td>Early notification arrangements, shelter and muster procedures, fire suppression rated for intense fuel fires</td><td>Moderate; often upgrades of existing systems</td></tr><tr><td>Financial</td><td>BI insurance wording review, deductible and waiting-period alignment with your real recovery time, evidence protocol</td><td>Advisory time; changes at renewal</td></tr></tbody></table></div>
 <div class="callout"><p>The paradox that should encourage executives: unlike a ship or an aircraft, a fixed facility can be hardened passively — compartments, distances, screens. The scenario feels new; the protective toolbox is a century old.</p></div>
 <h2>What we test in the readiness check</h2>
 <p>Our free 13-question check runs the drone track against exactly this stack: detection and notification, first-hours authority, evacuation and shutdown, fire physics around your storage, the 72-hour continuity question, insurance evidence. Five minutes, result on screen with your three biggest gaps — no email asked.</p>
@@ -163,8 +164,8 @@ function renderSections(secs){
     else if(s[0]==="ul")out.push("<ul>"+s[1].map(function(x){return "<li>"+x+"</li>";}).join("")+"</ul>");
     else if(s[0]==="callout")out.push('<div class="callout"><p>'+s[1]+"</p></div>");
     else if(s[0]==="table"){
-      out.push('<table class="tbl"><thead><tr>'+s[1].map(function(c){return "<th>"+c+"</th>";}).join("")+"</tr></thead><tbody>"+
-        s[2].map(function(r){return "<tr>"+r.map(function(c){return "<td>"+c+"</td>";}).join("")+"</tr>";}).join("")+"</tbody></table>");
+      out.push('<div class="tw"><table class="tbl"><thead><tr>'+s[1].map(function(c){return "<th>"+c+"</th>";}).join("")+"</tr></thead><tbody>"+
+        s[2].map(function(r){return "<tr>"+r.map(function(c){return "<td>"+c+"</td>";}).join("")+"</tr>";}).join("")+"</tbody></table></div>");
     } else if(s[0]==="faq"){
       out.push('<div class="faq">'+s[1].map(function(x){return "<details><summary>"+x[0]+"</summary><p>"+x[1]+"</p></details>";}).join("")+"</div>");
     }

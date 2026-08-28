@@ -30,7 +30,9 @@ ul,ol{padding-inline-start:24px;margin-bottom:18px;font-size:16.5px}li{margin-bo
 img{max-width:100%;height:auto;border:1px solid #E1DCD3;border-radius:10px;margin:8px 0}
 figure{margin:22px 0}figcaption{font-size:14.5px;color:#5B564A;margin-top:8px;text-align:center}
 figure.wide{width:auto;max-width:none;margin-inline:max(calc(50% - 530px),calc(50% - 50vw + 18px))}
-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
+@media(max-width:700px){figure.wide{margin-inline:0}}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
 .rel{margin:30px 0;padding:16px 20px;background:#fff;border:1px solid #E1DCD3;border-radius:10px;font-size:15px}
 .rel b{display:block;margin-bottom:8px}.rel a{color:#C4571C;text-decoration:none;margin-inline-end:16px}
 .cta{background:#0D1117;color:#fff;border-radius:14px;padding:26px 26px;margin-top:36px}
@@ -62,13 +64,13 @@ footer{border-top:1px solid #E1DCD3;margin-top:48px;padding-top:18px;font-size:1
 <p class="b">لأي تعطل بروتوكول واحد للساعة الأولى، تتأكدون ثم تصنفون ثم تفعلون فريق <a href="terms/ar/crisis-management.html">إدارة الأزمات</a> وتفتحون سجل القرارات، وقد شرحناه في صفحة <a href="crisis-first-60-minutes-ar.html">الدقائق الستون الأولى من الأزمة</a> ولا نكرره هنا. ما يلي مخصص لما يميز التشفير عن سائر الأعطال، لأن الفدية تنفرد بأربع خصائص تقلب ترتيب العمل. أولاها أن الضرر يتسع ما دامت الشبكة موصولة، فالتأخر هنا ليس انتظارا بل خسارة تضاف كل دقيقة. وثانيتها أن أدوات إدارة الحادث نفسها قد تكون داخل ما جرى تشفيره، من قوائم الاتصال إلى <a href="terms/ar/bcp.html">خطة الاستمرارية</a> ذاتها. وثالثتها أن كل إصلاح متسرع يمحو الأدلة التي سيطلبها المؤمن والمستشار القانوني وربما جهة تنظيمية. ورابعتها أن أمامكم خصما يقرأ ما تكتبونه إن كان بريدكم في يده. أما الاكتشاف فنادرا ما يأتي إنذارا نظيفا، بل خادم يتصرف بغرابة أو مجلد مشترك يصبح غير مقروء أو مورد يبلغ عن رسالة غريبة من نطاقكم، ثم تتجمد الأنظمة واحدا بعد آخر ولا أحد متأكد مما بقي يعمل.</p>
 <h2>القرارات الخمسة التي تحدد حجم الخسارة</h2>
 <p class="b">هذه القرارات لا تحتمل اجتماعا يشكل عند وقوع الحادث، فكل واحد منها يحتاج اسما وصلاحية مكتوبة ونائبا. اكتبوها اليوم في جدول من خمسة أسطر، وستكتشفون أن الخلاف عليها في وقت السلم يستغرق ساعتين، بينما الخلاف نفسه في يوم الحادث يستغرق نصف يوم ويكلف ما لا يقاس.</p>
-<table><thead><tr><th>القرار</th><th>السؤال الذي يجيب عنه</th><th>من يمسك القلم</th></tr></thead><tbody>
+<div class="tw"><table><thead><tr><th>القرار</th><th>السؤال الذي يجيب عنه</th><th>من يمسك القلم</th></tr></thead><tbody>
 <tr><td>العزل</td><td>هل نفصل الشبكات والمواقع ونقبل توقفا تشغيليا، ومتى بالضبط</td><td>شخص مسمى متاح على مدار الساعة بصلاحية مكتوبة</td></tr>
 <tr><td>الإعلان</td><td>عند أي عتبة نفعل خطة الاستمرارية وهيكل الأزمة</td><td>قيادة المناوبة، والعتبة محددة سلفا لا مطروحة للنقاش</td></tr>
 <tr><td>التشغيل المتدهور</td><td>أي الأنشطة يستمر يدويا وأيها يتوقف بأمان</td><td>العمليات، انطلاقا من خطط الوضع اليدوي المعدة سلفا</td></tr>
 <tr><td>التواصل</td><td>من يخاطب الموظفين والعملاء والمنظم والمؤمن، وبأي ترتيب</td><td>صوت واحد، وبيانات أولية صيغت في وقت السلم</td></tr>
 <tr><td>حفظ الأدلة</td><td>ماذا نصور ونحفظ من سجلات وصور أنظمة قبل استعادة أي شيء</td><td>التقنية مع مدون الحادث، فالمؤمن وأي تحقيق يعتمدان عليها</td></tr>
-</tbody></table>
+</tbody></table></div>
 <figure class="wide"><img src="assets/figures/ransomware-first-hours-ar.svg" alt="رسم يوزع عمل اليوم الأول لهجوم برمجية الفدية على أربع مراحل زمنية ويعرض القرارات الخمسة التي تحتاج صاحبا مسمى" loading="lazy"><figcaption>اليوم الأول موزعا على مراحله، وتحته القرارات الخمسة التي يجب أن يحمل كل منها اسما قبل الحادث.</figcaption></figure>
 <h2>الأخطاء التي تضاعف الكلفة</h2>
 <ul>

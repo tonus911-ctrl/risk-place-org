@@ -30,7 +30,9 @@ ul,ol{padding-inline-start:24px;margin-bottom:18px;font-size:16.5px}li{margin-bo
 img{max-width:100%;height:auto;border:1px solid #E1DCD3;border-radius:10px;margin:8px 0}
 figure{margin:22px 0}figcaption{font-size:14.5px;color:#5B564A;margin-top:8px;text-align:center}
 figure.wide{width:auto;max-width:none;margin-inline:max(calc(50% - 530px),calc(50% - 50vw + 18px))}
-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
+@media(max-width:700px){figure.wide{margin-inline:0}}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
 .rel{margin:30px 0;padding:16px 20px;background:#fff;border:1px solid #E1DCD3;border-radius:10px;font-size:15px}
 .rel b{display:block;margin-bottom:8px}.rel a{color:#C4571C;text-decoration:none;margin-inline-end:16px}
 .cta{background:#0D1117;color:#fff;border-radius:14px;padding:26px 26px;margin-top:36px}
@@ -61,7 +63,7 @@ footer{border-top:1px solid #E1DCD3;margin-top:48px;padding-top:18px;font-size:1
 <h2>اختبار الثانية صباحا</h2>
 <p class="b">تخيلوا الساعة الثانية بعد منتصف الليل وحادثا جاريا ومناوبا يفتح <a href="terms/ar/bcp.html">خطة الاستمرارية</a> لأول مرة تحت ضغط حقيقي. إن لم يجد جواب سؤال واحد، ماذا أفعل في الثلاثين دقيقة القادمة، خلال تسعين ثانية، فالخطة فشلت مهما بلغ عدد صفحاتها ومهما كانت مراجعها دقيقة. وهذا السيناريو وحده يملي المعمار كله، العمل أولا والمرجع لاحقا، ولا مكان لأي فقرة لا تفيد هذه الليلة. والفارق بين وثيقة امتثال ووثيقة عمل يظهر في السطر الأول من كل قسم، فوثيقة الامتثال تبدأ بالنطاق والتعريفات، ووثيقة العمل تبدأ بفعل أمر وباسم من ينفذه.</p>
 <h2>الأقسام السبعة، ماذا في كل قسم وكيف يختبر</h2>
-<table><thead><tr><th>القسم</th><th>ماذا يحتوي</th><th>اختبار الجودة</th></tr></thead><tbody>
+<div class="tw"><table><thead><tr><th>القسم</th><th>ماذا يحتوي</th><th>اختبار الجودة</th></tr></thead><tbody>
 <tr><td>1 · التفعيل</td><td>من يعلن الحادث، وعلى أي مؤشرات، وكيف تستدعى الخطة</td><td>صفحة واحدة يطبقها مناوب وحده ليلا دون سؤال أحد</td></tr>
 <tr><td>2 · الأدوار والصلاحيات</td><td>أدوار مسماة بصلاحيات مكتوبة، إيقاف العمليات وصرف المال والتصريح للخارج</td><td>لكل دور نائب، ولا خطوة واحدة تحتاج انعقاد اجتماع</td></tr>
 <tr><td>3 · الساعات الأولى</td><td>قوائم تدقيق حسب السيناريو للساعات من 1 إلى 4، سلامة الأرواح ثم الاحتواء ثم الإبلاغ</td><td>أفعال وأصحاب، لا نصوص سياسات ولا مبررات</td></tr>
@@ -69,7 +71,7 @@ footer{border-top:1px solid #E1DCD3;margin-top:48px;padding-top:18px;font-size:1
 <tr><td>5 · التعافي</td><td>إعادة الأنشطة إلى وضعها الطبيعي وفق RTO وRPO وبترتيب الاعتماديات</td><td>متسق مع أرقام تحليل الأثر ومثبت في اختبار</td></tr>
 <tr><td>6 · التواصل</td><td>من يبلغ الموظفين والعملاء والجهات والإعلام، مع بيانات أولية مصاغة سلفا</td><td>أول بيان جاهز خلال ساعة دون صياغة قانونية من الصفر</td></tr>
 <tr><td>7 · جهات الاتصال والموارد</td><td>أشخاص وموردون ومؤمنون ومنظمون، وموضع رموز الوصول وتفاصيل الموقع البديل</td><td>مؤرخة ومتحقق منها كل ربع ومتاحة دون اتصال بالشبكة</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p class="b">اقرؤوا العمود الثالث قبل الثاني. اختبار الجودة هو ما يحول القسم من عنوان إلى ضابط، وهو مصاغ عمدا بحيث يجاب عنه بنعم أو لا دون نقاش. والقسمان اللذان يفشلان أكثر من غيرهما هما الرابع والخامس. فالحلول المؤقتة تكتب عادة بصيغة النية دون طاقة قصوى ولا حد زمني، فتبدو حلا وهي في الحقيقة أمنية. والتعافي يكتب دون ربط بأرقام <a href="terms/ar/rto.html">هدف زمن التعافي</a> و<a href="terms/ar/rpo.html">هدف نقطة الاستعادة</a> الخارجة من <a href="terms/ar/bia.html">تحليل أثر الأعمال</a>، فتظهر في الخطة أرقام لم يوافق عليها أحد ولم تختبر قط. ومعنى الرقمين وكيفية وضعهما بصدق في صفحة <a href="rto-rpo-explained-ar.html">شرح RTO وRPO</a>.</p>
 <figure class="wide"><img src="assets/figures/bcp-structure-ar.svg" alt="رسم للأقسام السبعة لخطة استمرارية الأعمال وماذا يحتوي كل قسم واختبار الجودة الذي يجب أن يجتازه" loading="lazy"><figcaption>سبعة أقسام، ولكل قسم اختبار جودة واحد يقال بجملة واحدة ويجاب عنه بنعم أو لا.</figcaption></figure>
 <h2>انضباط الطول، وهو ضابط لا ذوق</h2>

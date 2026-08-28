@@ -189,6 +189,7 @@ html[dir="rtl"] .fmt li{padding:12px 26px 12px 0}
 }
 
 figure.wide{width:auto;max-width:none;margin-inline:max(calc(50% - 530px),calc(50% - 50vw + 18px))}
+@media(max-width:700px){figure.wide{margin-inline:0}}
 .hnav{display:flex;gap:18px;align-items:center;margin-inline-start:auto;margin-inline-end:16px}.hnav a{font-size:14px;color:#3D4149}.hnav a:hover{color:#C4571C}@media(max-width:1000px){.hnav{display:none}}
 
 /* --- course screenshots carousel --- */
@@ -227,6 +228,7 @@ html[dir="rtl"] .slbox .x{right:auto;left:20px}
 .sfoot .row2 a:hover{color:#F0A868}
 .sfoot .lg2{font-size:15px;color:#fff;font-weight:bold}
 .sfoot .lg2 b{color:#C4571C}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}
 </style>
 </head>
 <body>
@@ -382,7 +384,7 @@ document.addEventListener('keydown',function(e){
   <h2 data-ui="stdTitle">Standards coverage</h2>
   <span class="stdcore" data-ui="stdCore">Core: ISO 22301:2019 · ISO 31000:2018 · AE/SCNS/NCEMA 7000:2021</span>
   <details class="stdmap"><summary data-ui="stdOpen">Open the full coverage map — which module covers which standard</summary>
-    <table class="tbl"><thead><tr><th data-ui="stdColS">Standard</th><th data-ui="stdColW">Covers</th><th data-ui="stdColM">Module</th></tr></thead>
+    <div class="tw"><table class="tbl"><thead><tr><th data-ui="stdColS">Standard</th><th data-ui="stdColW">Covers</th><th data-ui="stdColM">Module</th></tr></thead>
     <tbody>
     <tr><td>ISO 22313</td><td data-ui="st0">BCMS guidance</td><td>M1</td></tr>
     <tr><td>ISO 22317</td><td data-ui="st1">Business impact analysis</td><td>M3</td></tr>
@@ -406,7 +408,7 @@ document.addEventListener('keydown',function(e){
     <tr><td>UAE: NCEMA 7000 · CBUAE · TDRA IAS · DESC ISR · ADHICS v2 · UAE PDPL</td><td data-ui="st19">Gulf regulatory layer</td><td>M5</td></tr>
     <tr><td>KSA: NCA ECC</td><td data-ui="st20">Saudi cybersecurity controls</td><td>M5</td></tr>
     <tr><td>Qatar: NCSA NIA</td><td data-ui="st21">Qatar information assurance</td><td>M5</td></tr>
-    </tbody></table>
+    </tbody></table></div>
     <p class="stdnote" data-ui="stdNote">This table is the promise of completeness: from board appetite to the auditor's report.</p>
   </details>
 </div></section>

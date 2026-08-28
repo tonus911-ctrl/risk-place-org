@@ -109,6 +109,7 @@ html[lang="ar"] .en-only{display:none !important}
 .sfoot .row2 a:hover{color:#F0A868}
 .sfoot .lg2{font-size:15px;color:#fff;font-weight:bold}
 .sfoot .lg2 b{color:#C4571C}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}
 </style>
 </head>
 <body>
@@ -128,7 +129,7 @@ html[lang="ar"] .en-only{display:none !important}
 <p>Paying buys a decryption tool of uncertain quality and a promise from criminals. Industry experience worldwide is consistent on the limits: <b>decryption is often slow and partial, some data never returns, stolen data is not reliably deleted, and payment marks the payer</b> — organisations that pay are documented to be re-targeted. Payment also does not shorten the hardest part of recovery: rebuilding trust in compromised systems, which you must do whether or not a decryptor works.</p>
 <p>None of that makes the decision trivial for a company staring at a stopped business and no working backups. It makes the real lesson visible: <b>the decision is lost or won months earlier</b>, when backups were or were not isolated and restore-tested, and continuity plans were or were not built.</p>
 <h2>The decision factors, laid out</h2>
-<table class="tbl"><thead><tr><th>Factor</th><th>Questions the board will ask</th><th>Where the answer comes from</th></tr></thead><tbody><tr><td>Recovery capability</td><td>Can we restore from backups, and how long will it truly take?</td><td>Restore tests — not backup logs</td></tr><tr><td>Business tolerance</td><td>How long can critical activities run degraded or stopped?</td><td>The BIA and manual-mode plans</td></tr><tr><td>Legal and sanctions exposure</td><td>Is payment lawful here? Does the recipient trigger sanctions liability?</td><td>Counsel — engaged before, not during</td></tr><tr><td>Insurance position</td><td>What does the policy cover, require and forbid?</td><td>The cyber policy wording and insurer hotline</td></tr><tr><td>Data theft dimension</td><td>What was exfiltrated, and what are the notification duties?</td><td>Forensics plus data-protection counsel</td></tr></tbody></table>
+<div class="tw"><table class="tbl"><thead><tr><th>Factor</th><th>Questions the board will ask</th><th>Where the answer comes from</th></tr></thead><tbody><tr><td>Recovery capability</td><td>Can we restore from backups, and how long will it truly take?</td><td>Restore tests — not backup logs</td></tr><tr><td>Business tolerance</td><td>How long can critical activities run degraded or stopped?</td><td>The BIA and manual-mode plans</td></tr><tr><td>Legal and sanctions exposure</td><td>Is payment lawful here? Does the recipient trigger sanctions liability?</td><td>Counsel — engaged before, not during</td></tr><tr><td>Insurance position</td><td>What does the policy cover, require and forbid?</td><td>The cyber policy wording and insurer hotline</td></tr><tr><td>Data theft dimension</td><td>What was exfiltrated, and what are the notification duties?</td><td>Forensics plus data-protection counsel</td></tr></tbody></table></div>
 <div class="callout"><p>A decision this heavy should never be improvised at 3 a.m. The preparation artefact is a pre-agreed decision framework: who convenes, which factors are weighed, who has the final word, which advisers are on retainer. Write it in peacetime; it reads impossible to write during the event.</p></div>
 <h2>Why tested recovery changes everything</h2>
 <ul><li><b>It converts extortion into an outage.</b> With isolated, restore-tested backups and rehearsed manual-mode, the attackers hold your inconvenience, not your survival.</li><li><b>It changes the negotiation even if you engage.</b> A credible recovery path collapses the attacker's leverage and the price.</li><li><b>It satisfies the people you answer to.</b> Boards, insurers and regulators all ask the same question after the event: could you have recovered without paying? «Yes, and here is the test evidence» is the only comfortable answer.</li></ul>
@@ -161,8 +162,8 @@ function renderSections(secs){
     else if(s[0]==="ul")out.push("<ul>"+s[1].map(function(x){return "<li>"+x+"</li>";}).join("")+"</ul>");
     else if(s[0]==="callout")out.push('<div class="callout"><p>'+s[1]+"</p></div>");
     else if(s[0]==="table"){
-      out.push('<table class="tbl"><thead><tr>'+s[1].map(function(c){return "<th>"+c+"</th>";}).join("")+"</tr></thead><tbody>"+
-        s[2].map(function(r){return "<tr>"+r.map(function(c){return "<td>"+c+"</td>";}).join("")+"</tr>";}).join("")+"</tbody></table>");
+      out.push('<div class="tw"><table class="tbl"><thead><tr>'+s[1].map(function(c){return "<th>"+c+"</th>";}).join("")+"</tr></thead><tbody>"+
+        s[2].map(function(r){return "<tr>"+r.map(function(c){return "<td>"+c+"</td>";}).join("")+"</tr>";}).join("")+"</tbody></table></div>");
     } else if(s[0]==="faq"){
       out.push('<div class="faq">'+s[1].map(function(x){return "<details><summary>"+x[0]+"</summary><p>"+x[1]+"</p></details>";}).join("")+"</div>");
     }

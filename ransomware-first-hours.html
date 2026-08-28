@@ -102,6 +102,7 @@ a{color:#16181F;text-decoration:none}
 }
 
 figure.wide{width:auto;max-width:none;margin-inline:max(calc(50% - 530px),calc(50% - 50vw + 18px))}
+@media(max-width:700px){figure.wide{margin-inline:0}}
 .hnav{display:flex;gap:18px;align-items:center;margin-inline-start:auto;margin-inline-end:16px}.hnav a{font-size:14px;color:#3D4149}.hnav a:hover{color:#C4571C}@media(max-width:1000px){.hnav{display:none}}
 
 /* --- единый футер --- */
@@ -115,6 +116,7 @@ figure.wide{width:auto;max-width:none;margin-inline:max(calc(50% - 530px),calc(5
 .sfoot .row2 a:hover{color:#F0A868}
 .sfoot .lg2{font-size:15px;color:#fff;font-weight:bold}
 .sfoot .lg2 b{color:#C4571C}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}
 </style>
 </head>
 <body>
@@ -133,7 +135,7 @@ figure.wide{width:auto;max-width:none;margin-inline:max(calc(50% - 530px),calc(5
 <h2>What the first hours actually look like</h2>
 <p>Detection is rarely a clean alarm: a server behaves oddly, a share becomes unreadable, a supplier reports strange mail from your domain. Then the cascade: <b>systems freeze one by one, phones fill, nobody is sure what still works, and every minute of indecision widens the encryption</b>. The organisations that come out with survivable losses are not the ones with the best firewalls — they are the ones where the next five decisions had names attached before the day.</p>
 <h2>The five decisions, prepared in advance</h2>
-<table class="tbl"><thead><tr><th>Decision</th><th>The question</th><th>Who must hold the pen</th></tr></thead><tbody><tr><td>Isolate</td><td>Disconnect networks and sites — accepting operational stop — yes or no, when?</td><td>A named person reachable 24/7, with written authority</td></tr><tr><td>Declare</td><td>Trigger the continuity plan and crisis structure — on what threshold?</td><td>Duty leadership; the threshold defined, not debated</td></tr><tr><td>Operate degraded</td><td>Which activities continue manually, which stop safely?</td><td>Operations, from the pre-built manual-mode plans</td></tr><tr><td>Communicate</td><td>Staff, clients, regulator, insurer — who says what, when?</td><td>One voice; holding statements drafted in peacetime</td></tr><tr><td>Preserve evidence</td><td>Images, logs, timelines — before restoring anything</td><td>IT with the incident scribe; the insurer and any investigation depend on it</td></tr></tbody></table>
+<div class="tw"><table class="tbl"><thead><tr><th>Decision</th><th>The question</th><th>Who must hold the pen</th></tr></thead><tbody><tr><td>Isolate</td><td>Disconnect networks and sites — accepting operational stop — yes or no, when?</td><td>A named person reachable 24/7, with written authority</td></tr><tr><td>Declare</td><td>Trigger the continuity plan and crisis structure — on what threshold?</td><td>Duty leadership; the threshold defined, not debated</td></tr><tr><td>Operate degraded</td><td>Which activities continue manually, which stop safely?</td><td>Operations, from the pre-built manual-mode plans</td></tr><tr><td>Communicate</td><td>Staff, clients, regulator, insurer — who says what, when?</td><td>One voice; holding statements drafted in peacetime</td></tr><tr><td>Preserve evidence</td><td>Images, logs, timelines — before restoring anything</td><td>IT with the incident scribe; the insurer and any investigation depend on it</td></tr></tbody></table></div>
 <figure class="wide"><img src="assets/figures/ransomware-first-hours-en.svg" alt="The first day of a ransomware incident hour by hour: confirm and classify, isolate and declare, run degraded and communicate, then preserve the evidence" loading="lazy"><figcaption>The first day in the order the decisions arrive, each one owned before the day rather than during it.</figcaption></figure>
 <h2>The mistakes that multiply the loss</h2>
 <ul><li><b>Waiting for certainty before isolating.</b> Encryption spreads while the meeting assembles. The isolation decision is bought in advance with written authority — or paid for in scope.</li><li><b>Restoring before preserving.</b> Wiping systems destroys the evidence your insurer, lawyers and any regulator will ask for — and can reinstall the attacker's access.</li><li><b>Trusting backups untested by restore.</b> The worst possible moment to discover a backup does not restore is the moment you need it. Restore-tested is the only «tested».</li><li><b>Silence toward clients.</b> Hours of silence cost more trust than the incident. A holding statement within the first hours keeps the relationship survivable.</li><li><b>Improvised negotiation contact.</b> Any contact with the attackers — if it happens at all — belongs to specialists and counsel, not to the night-shift admin. See our pay-or-recover analysis.</li></ul>

@@ -30,7 +30,9 @@ ul,ol{padding-inline-start:24px;margin-bottom:18px;font-size:16.5px}li{margin-bo
 img{max-width:100%;height:auto;border:1px solid #E1DCD3;border-radius:10px;margin:8px 0}
 figure{margin:22px 0}figcaption{font-size:14.5px;color:#5B564A;margin-top:8px;text-align:center}
 figure.wide{width:auto;max-width:none;margin-inline:max(calc(50% - 530px),calc(50% - 50vw + 18px))}
-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
+@media(max-width:700px){figure.wide{margin-inline:0}}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
 .rel{margin:30px 0;padding:16px 20px;background:#fff;border:1px solid #E1DCD3;border-radius:10px;font-size:15px}
 .rel b{display:block;margin-bottom:8px}.rel a{color:#C4571C;text-decoration:none;margin-inline-end:16px}
 .cta{background:#0D1117;color:#fff;border-radius:14px;padding:26px 26px;margin-top:36px}
@@ -62,14 +64,14 @@ footer{border-top:1px solid #E1DCD3;margin-top:48px;padding-top:18px;font-size:1
 <p class="b">استعادة الإنتاج ليست قرارا لحظيا كما يفترض من لم يقض وردية كاملة داخل مصنع. إعادة التشغيل عملية لها تسلسل ملزم، فالخطوط تعود واحدا بعد الآخر، ويسبقها تطهير الخطوط وتسخين الأفران واستقرار الحرارة والضغط وفحوص الجودة والسلامة قبل اعتماد أول إنتاج للبيع. ولهذا يكلف توقف ست ساعات عشرين ساعة من التعافي في حالات ليست نادرة، وهذه الفجوة بين مدة الحدث ومدة العودة هي ما تسقطه لجان الميزانية حين تناقش أي إجراء وقائي. والسمة الثانية أن الفيزياء ثابتة، فالتقسيم إلى أقسام ومسافات العزل وازدواجية المرافق تقرر في مرحلة التصميم قبل سنوات من الحادث، ولا تشترى يوم الأزمة بأي مبلغ. ومن هنا تصبح مراجعة الاستمرارية عند أي تعديل في المنشأة، من خط يضاف إلى مستودع يوسع، أرخص تأمين تشتريه الشركة على الإطلاق. ومن أراد الأساس الإداري وراء ذلك يجده في <a href="what-is-bcm-ar.html">صفحة تعريف استمرارية الأعمال</a>.</p>
 <h2>أين يتوقف المصنع فعلا، خمسة مسارات</h2>
 <p class="b">خمسة مسارات تغطي أغلب ما يوقف مصنعا في المنطقة، ولكل مسار محفز معتاد وعامل واحد يحدد حجم الضرر أكثر من غيره.</p>
-<table>
+<div class="tw"><table>
 <tr><th>المسار</th><th>المحفز المعتاد</th><th>ما يحدد حجم الضرر</th></tr>
 <tr><td>حريق أو انفجار</td><td>أعمال ساخنة وتخزين وقود وغبار قابل للاشتعال وارتطام خارجي</td><td>التقسيم إلى أقسام ومسافات العزل، وقد صممت قبل سنوات</td></tr>
 <tr><td>انقطاع المرافق</td><td>كهرباء أو غاز أو ماء أو تبريد</td><td>قدرة العبور المؤقت وانضباط الإيقاف الآمن</td></tr>
 <tr><td>حادث في التقنية التشغيلية أو المعلوماتية</td><td>برمجية فدية تصل إلى SCADA أو ERP، فالخط سليم والتحكم ليس كذلك</td><td>تقسيم الشبكة ووضع يدوي جرى التدرب عليه</td></tr>
 <tr><td>تعثر مورد</td><td>مدخل وحيد المصدر يتوقف وصوله</td><td>سياسة المخزون ومصدر ثان مؤهل، ويقرران في وقت السلم</td></tr>
 <tr><td>إغلاق المنطقة</td><td>حادث قريب يغلق النطاق، فالمنشأة سليمة والوصول إليها متعذر</td><td>المراقبة عن بعد وتصاريح الطاقم المصغر وتسلسل إعادة التشغيل</td></tr>
-</table>
+</table></div>
 <figure class="wide"><img src="assets/figures/manufacturing-downtime-chain-ar.svg" alt="سلسلة التوقف في المصنع من الحدث إلى أول إنتاج معتمد، وأين تنكسر كل حلقة فيها" loading="lazy"><figcaption>سلسلة التوقف من الحدث إلى أول إنتاج معتمد، وما ينكسر عند كل حلقة.</figcaption></figure>
 <h2>الرقم الذي يسعر كل قرار آخر</h2>
 <p class="b">كلفة الساعة المتوقفة لكل خط ليست تمرينا محاسبيا، بل هي عملة الحديث مع المالية والتأمين والمشتري. وتتكون من أربعة بنود، الهامش المفقود من الطن الذي لم ينتج، وغرامات التأخير في عقود التوريد، وكلفة إعادة التشغيل من طاقة ومواد مساعدة وعمالة إضافية، والهدر من الدفعة التالفة. وتحسب بالساعة وباليوم ولخط بعينه لا لمجمع الشركة، لأن المتوسط يخفي أن خطا واحدا قد يحمل نصف الهامش. ومصدر هذا الرقم هو <a href="business-impact-analysis-ar.html">تحليل أثر الأعمال</a>، وهو ما ينقل النقاش بين الصيانة والمالية من التفضيلات إلى الأرقام. ومنه تشتق <a href="terms/ar/mtpd.html">أقصى مدة توقف محتملة</a> لكل خط و<a href="terms/ar/mbco.html">الحد الأدنى المقبول من الإنتاج</a> الذي يبقي العقود قائمة، وصياغتهما في <a href="recovery-objectives-ar.html">صفحة أهداف التعافي</a>. وإن كانت الميزانية محدودة فابدؤوا بناتجين، كلفة التوقف لكل خط محسوبة بصدق ثم كتيب إعادة التشغيل، فهما يستغرقان عادة من ثلاثة إلى أربعة أسابيع ويغيران بعدها تسعير كل قرار مخاطرة.</p>

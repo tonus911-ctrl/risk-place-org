@@ -109,6 +109,7 @@ html[lang="ar"] .en-only{display:none !important}
 .sfoot .row2 a:hover{color:#F0A868}
 .sfoot .lg2{font-size:15px;color:#fff;font-weight:bold}
 .sfoot .lg2 b{color:#C4571C}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}
 </style>
 </head>
 <body>
@@ -128,7 +129,7 @@ html[lang="ar"] .en-only{display:none !important}
 <p>Both regulatory layers in the UAE point the same way. The CBUAE Rulebook requires business continuity arrangements the board can be held accountable for; NCEMA 7000 puts top management accountability and measurable performance indicators into the standard itself. Supervisory interviews now routinely ask directors what they know about the institution's recovery capability — and «we approved the policy» is a weak answer.</p>
 <p>The failure is rarely willingness; it is format. Continuity teams produce operational detail the board cannot act on, or a reassuring annual summary the board cannot interrogate. The fix is a short, recurring report built on a handful of metrics that do not change shape month to month.</p>
 <h2>The five metrics that belong in front of the board</h2>
-<table class="tbl"><thead><tr><th>Metric</th><th>What it answers</th><th>Red flag</th></tr></thead><tbody><tr><td>Resilience index (0-100)</td><td>Overall: are we getting stronger or weaker?</td><td>Falling trend, or a number nobody can decompose</td></tr><tr><td>Cost of one lost day</td><td>How much is at stake, per critical facility or function</td><td>«We have never calculated it»</td></tr><tr><td>Recovery objectives vs tested reality</td><td>Can we actually recover in the time we promise?</td><td>Objectives without a test date next to them</td></tr><tr><td>Single points of failure</td><td>Where one supplier, system or person stops the business</td><td>A list that has not shrunk in two quarters</td></tr><tr><td>Last test: findings and closure</td><td>Is the system alive and learning?</td><td>A test with zero findings — nothing real was tested</td></tr></tbody></table>
+<div class="tw"><table class="tbl"><thead><tr><th>Metric</th><th>What it answers</th><th>Red flag</th></tr></thead><tbody><tr><td>Resilience index (0-100)</td><td>Overall: are we getting stronger or weaker?</td><td>Falling trend, or a number nobody can decompose</td></tr><tr><td>Cost of one lost day</td><td>How much is at stake, per critical facility or function</td><td>«We have never calculated it»</td></tr><tr><td>Recovery objectives vs tested reality</td><td>Can we actually recover in the time we promise?</td><td>Objectives without a test date next to them</td></tr><tr><td>Single points of failure</td><td>Where one supplier, system or person stops the business</td><td>A list that has not shrunk in two quarters</td></tr><tr><td>Last test: findings and closure</td><td>Is the system alive and learning?</td><td>A test with zero findings — nothing real was tested</td></tr></tbody></table></div>
 <h2>The one-page format</h2>
 <ul><li><b>Top strip:</b> the index, its 12-month trend, and one sentence of leadership commentary.</li><li><b>Middle:</b> the five metrics with traffic-light status and the single most important change since last report.</li><li><b>Bottom:</b> decisions requested from the board — budget, risk acceptance, deadline — never more than three.</li><li><b>Frequency:</b> monthly to the risk committee, quarterly to the full board, immediately after any material incident or failed test.</li></ul>
 <div class="callout"><p>The test of a good board report: a director who reads only this page can answer the supervisor's question «how do you satisfy yourself the institution can recover?» — with numbers, dates and a trend.</p></div>
@@ -163,8 +164,8 @@ function renderSections(secs){
     else if(s[0]==="ul")out.push("<ul>"+s[1].map(function(x){return "<li>"+x+"</li>";}).join("")+"</ul>");
     else if(s[0]==="callout")out.push('<div class="callout"><p>'+s[1]+"</p></div>");
     else if(s[0]==="table"){
-      out.push('<table class="tbl"><thead><tr>'+s[1].map(function(c){return "<th>"+c+"</th>";}).join("")+"</tr></thead><tbody>"+
-        s[2].map(function(r){return "<tr>"+r.map(function(c){return "<td>"+c+"</td>";}).join("")+"</tr>";}).join("")+"</tbody></table>");
+      out.push('<div class="tw"><table class="tbl"><thead><tr>'+s[1].map(function(c){return "<th>"+c+"</th>";}).join("")+"</tr></thead><tbody>"+
+        s[2].map(function(r){return "<tr>"+r.map(function(c){return "<td>"+c+"</td>";}).join("")+"</tr>";}).join("")+"</tbody></table></div>");
     } else if(s[0]==="faq"){
       out.push('<div class="faq">'+s[1].map(function(x){return "<details><summary>"+x[0]+"</summary><p>"+x[1]+"</p></details>";}).join("")+"</div>");
     }

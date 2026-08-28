@@ -31,7 +31,9 @@ ul,ol{padding-inline-start:24px;margin-bottom:18px;font-size:16.5px}li{margin-bo
 img{max-width:100%;height:auto;border:1px solid #E1DCD3;border-radius:10px;margin:8px 0}
 figure{margin:22px 0}figcaption{font-size:14.5px;color:#5B564A;margin-top:8px;text-align:center}
 figure.wide{width:auto;max-width:none;margin-inline:max(calc(50% - 530px),calc(50% - 50vw + 18px))}
-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
+@media(max-width:700px){figure.wide{margin-inline:0}}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
 .rel{margin:30px 0;padding:16px 20px;background:#fff;border:1px solid #E1DCD3;border-radius:10px;font-size:15px}
 .rel b{display:block;margin-bottom:8px}.rel a{color:#C4571C;text-decoration:none;margin-inline-end:16px}
 .cta{background:#0D1117;color:#fff;border-radius:14px;padding:26px 26px;margin-top:36px}
@@ -62,7 +64,7 @@ footer{border-top:1px solid #E1DCD3;margin-top:48px;padding-top:18px;font-size:1
 <h2>ما الإطار في حقيقته</h2>
 <p class="b">إذا نزعنا المصطلحات، تجيب <a href="terms/ar/corporate-governance.html">حوكمة الشركات</a> عن ثلاثة أسئلة. من يملك صلاحية القرار، وأين تنتهي تلك الصلاحية. ومن يتحقق من أن القرارات تنفذ والمخاطر تضبط. ومن يحاسب أمام الملاك والجهات الرقابية والمجتمع على النتيجة. وإطار الحوكمة هو ببساطة الجواب المكتوب والعامل عن هذه الأسئلة الثلاثة: ليس ملفا يعد لإدراج أو عطاء، بل الآلية التي تدار بها الشركة فعلا. والاختبار عملي: حين يظهر قرار يتجاوز حد مدير ما، هل يعرف الجميع إلى أين يذهب، وهل يوجد سجل بأنه ذهب إلى هناك؟</p>
 <h2>المكونات السبعة</h2>
-<table><thead><tr><th>المكون</th><th>ما يحسمه</th><th>الوثيقة المعتادة</th></tr></thead><tbody>
+<div class="tw"><table><thead><tr><th>المكون</th><th>ما يحسمه</th><th>الوثيقة المعتادة</th></tr></thead><tbody>
 <tr><td>هيكل الملكية والمجلس</td><td>مصالح من تسود ومن يوجه</td><td>الميثاق وتشكيل المجلس وقواعد الاستقلال</td></tr>
 <tr><td>لجان المجلس</td><td>العمق في التدقيق والمخاطر والمكافآت والترشيح</td><td>مواثيق اللجان وخططها السنوية</td></tr>
 <tr><td>تفويض الصلاحيات</td><td>أين يتخذ كل قرار</td><td>مصفوفة صلاحيات بحدود مالية</td></tr>
@@ -70,7 +72,7 @@ footer{border-top:1px solid #E1DCD3;margin-top:48px;padding-top:18px;font-size:1
 <tr><td>إدارة المخاطر والرقابة الداخلية</td><td>كيف تحدد المخاطر وتملك وتعالج</td><td><a href="terms/ar/risk-register.html">سجل المخاطر</a> وبيان الشهية والمؤشرات</td></tr>
 <tr><td>التوكيد</td><td>تأكيد مستقل أن الضوابط تعمل</td><td><a href="three-lines-of-defence-ar.html">خطوط الدفاع الثلاثة</a> وخطة التدقيق الداخلي</td></tr>
 <tr><td>التقارير والإفصاح</td><td>ماذا يعلم المجلس والسوق ومتى</td><td>حزمة المجلس وتقويم <a href="terms/ar/reporting.html">التقارير</a> والإفصاحات</td></tr>
-</tbody></table>
+</tbody></table></div>
 <p class="b">هذه المكونات ليست وحدات اختيارية بل تتعاشق. فمصفوفة تفويض بلا توكيد ثقة بلا تحقق. ولجان بلا تقويم تقارير تجتمع بلا أثر. وسياسة <a href="terms/ar/accountability.html">مساءلة</a> بلا مصفوفة صلاحيات لا تسمي أحدا.</p>
 <h2>الحوكمة والمرونة: الوصلة التي تفوتها المجالس</h2>
 <p class="b">تغطي معظم الأطر الرقابة المالية تغطية وافية وتكاد تغفل التعطل التشغيلي. والأسئلة الثلاثة نفسها تنطبق هنا: من يقرر تفعيل خطط الاستمرارية، ومن يتحقق من صمودها، ومن يحاسب حين تتوقف الخدمة أسبوعا. في الأطر الناضجة يحدد المجلس شهية للانقطاع، ويسند ملكية الاستمرارية إلى تنفيذي مسمى، ويراجع أدلة التمارين كما يراجع ملاحظات التدقيق. وكيف يعمل هذا الإشراف عمليا مبين في <a href="board-role-resilience-ar.html">دور المجلس في المرونة</a>، والدفع الرقابي في المنطقة موصوف في <a href="cbuae-operational-resilience-ar.html">دليل المرونة التشغيلية للمصرف المركزي الإماراتي</a>.</p>

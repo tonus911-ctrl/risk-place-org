@@ -28,7 +28,9 @@ ul,ol{padding-inline-start:24px;margin-bottom:18px;font-size:16.5px}li{margin-bo
 img{max-width:100%;height:auto;border:1px solid #E1DCD3;border-radius:10px;margin:8px 0}
 figure{margin:22px 0}figcaption{font-size:14.5px;color:#5B564A;margin-top:8px;text-align:center}
 figure.wide{width:auto;max-width:none;margin-inline:max(calc(50% - 530px),calc(50% - 50vw + 18px))}
-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
+@media(max-width:700px){figure.wide{margin-inline:0}}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
 .rel{margin:30px 0;padding:16px 20px;background:#fff;border:1px solid #E1DCD3;border-radius:10px;font-size:15px}
 .rel b{display:block;margin-bottom:8px}.rel a{color:#C4571C;text-decoration:none;margin-inline-end:16px}
 .cta{background:#0D1117;color:#fff;border-radius:14px;padding:26px 26px;margin-top:36px}
@@ -63,11 +65,11 @@ footer{border-top:1px solid #E1DCD3;margin-top:48px;padding-top:18px;font-size:1
 <figure class="wide"><img src="assets/figures/capacity-appetite-tolerance-en.png" alt="Diagram of risk capacity, risk appetite and impact tolerance as nested boundaries" loading="lazy"><figcaption>Impact tolerance belongs to the same nested logic as capacity and appetite: it is the boundary of harm the board accepts for a single service.</figcaption></figure>
 <h2>What actually changes compared with classic BCM</h2>
 <p class="b">The differences are few, but each one bites.</p>
-<table><tr><th></th><th>Classic BCM</th><th>Operational resilience</th></tr>
+<div class="tw"><table><tr><th></th><th>Classic BCM</th><th>Operational resilience</th></tr>
 <tr><td>Unit of analysis</td><td>Critical processes and the resources behind them</td><td>Important business services, end to end, third parties included</td></tr>
 <tr><td>Core metric</td><td>RTO and RPO per process</td><td>Impact tolerance per service — a harm boundary, not a recovery target</td></tr>
 <tr><td>Testing</td><td>Plan walkthroughs and scheduled exercises</td><td>Severe but plausible scenarios, run to the point of failure</td></tr>
-<tr><td>Governance</td><td>Delegated to the continuity manager</td><td>Board accountability built into the regime</td></tr></table>
+<tr><td>Governance</td><td>Delegated to the continuity manager</td><td>Board accountability built into the regime</td></tr></table></div>
 <p class="b">The sharpest change is the metric. An RTO is a target for restoring one process, and meeting every RTO proves only that the plans work in isolation — the mechanics of RTO, RPO and MTPD are set out in our <a href="recovery-objectives.html">recovery objectives guide</a>. An impact tolerance is a judgement about harm: the point beyond which disruption of a service hurts customers, the market or the firm's own viability in a way the board refuses to accept. A firm can meet every RTO on the schedule and still breach a tolerance, because harm accumulates along the whole chain. Testing changes with the metric: a walkthrough asks whether the plan runs; a severe but plausible scenario asks at what point the service breaks, and expects the honest answer to be uncomfortable. Accountability moves up in the same motion — the board approves the list of services and their tolerances and answers for them to the supervisor. What a board pack for that duty should contain is a <a href="operational-resilience-board-reporting.html">separate guide on board reporting</a>.</p>
 <figure class="wide"><img src="assets/figures/mao-boundary-en.png" alt="Diagram of the boundary beyond which disruption becomes intolerable harm" loading="lazy"><figcaption>The tolerance boundary: before it, disruption is damage to be managed; beyond it, harm the board has declared unacceptable.</figcaption></figure>
 <h2>The bridge from an existing BCM system: four steps</h2>

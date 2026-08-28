@@ -109,6 +109,7 @@ html[lang="ar"] .en-only{display:none !important}
 .sfoot .row2 a:hover{color:#F0A868}
 .sfoot .lg2{font-size:15px;color:#fff;font-weight:bold}
 .sfoot .lg2 b{color:#C4571C}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}
 </style>
 </head>
 <body>
@@ -131,7 +132,7 @@ html[lang="ar"] .en-only{display:none !important}
 <ul><li>Review open-air fuel and solvent storage first — the highest energy at the least protection.</li><li>Check compartment integrity where later modifications cut walls and routed cables.</li><li>Rate suppression against an intense fuel fire, not an office fire.</li><li>Screen what cannot be moved: mesh and covers keep an ignition source from what burns.</li></ul>
 <h2>Link three: downtime — the silent majority of the loss</h2>
 <p>Then the fire is out — and the loss keeps running. The zone stays closed for investigation; access needs permits; clients need answers; penalties accrue. In business-interruption claims across industries, <b>the interruption routinely outweighs the property damage</b> — and it is governed not by the event but by your recovery arrangements: the 72-hour plan, alternate routes and facilities, first-hours authority, communication discipline, and the evidence your insurer will accept.</p>
-<table class="tbl"><thead><tr><th>Chain link</th><th>What decides the outcome</th><th>Discipline that breaks it</th></tr></thead><tbody><tr><td>Impact</td><td>Random point of arrival</td><td>You cannot break this link — plan around it</td></tr><tr><td>Fire</td><td>Storage layout, compartments, suppression</td><td>Classic fire protection engineering</td></tr><tr><td>Downtime</td><td>Recovery arrangements, authority, evidence</td><td>Business continuity management</td></tr></tbody></table>
+<div class="tw"><table class="tbl"><thead><tr><th>Chain link</th><th>What decides the outcome</th><th>Discipline that breaks it</th></tr></thead><tbody><tr><td>Impact</td><td>Random point of arrival</td><td>You cannot break this link — plan around it</td></tr><tr><td>Fire</td><td>Storage layout, compartments, suppression</td><td>Classic fire protection engineering</td></tr><tr><td>Downtime</td><td>Recovery arrangements, authority, evidence</td><td>Business continuity management</td></tr></tbody></table></div>
 <div class="callout"><p>Read your own exposure in this order: what burns → what spreads → what stops. Companies instinctively invest in the first link they can see (the airspace) — the only link they cannot influence. The leverage is entirely in links two and three.</p></div>
 <h2>Frequently asked questions</h2>
 <div class="faq"><details><summary>Is there data on drone incident losses?</summary><p>Public loss data for the region is sparse and often anonymised — which is precisely why the chain logic matters: each link is governed by disciplines with abundant loss history (fire, business interruption). You do not need incident statistics to engineer against fire and downtime.</p></details><details><summary>Our facility survived a nearby incident with no damage. Are we fine?</summary><p>You experienced link three without links one and two — closure without fire. The question your own event answered: how many days did access take, and what did they cost? That number is your continuity case.</p></details><details><summary>Who should own this analysis internally?</summary><p>Jointly: HSE owns the fire layer, operations and continuity own the downtime layer, finance prices both. A drone-readiness review that lives only in security stays in link one — where you have the least leverage.</p></details></div>
@@ -162,8 +163,8 @@ function renderSections(secs){
     else if(s[0]==="ul")out.push("<ul>"+s[1].map(function(x){return "<li>"+x+"</li>";}).join("")+"</ul>");
     else if(s[0]==="callout")out.push('<div class="callout"><p>'+s[1]+"</p></div>");
     else if(s[0]==="table"){
-      out.push('<table class="tbl"><thead><tr>'+s[1].map(function(c){return "<th>"+c+"</th>";}).join("")+"</tr></thead><tbody>"+
-        s[2].map(function(r){return "<tr>"+r.map(function(c){return "<td>"+c+"</td>";}).join("")+"</tr>";}).join("")+"</tbody></table>");
+      out.push('<div class="tw"><table class="tbl"><thead><tr>'+s[1].map(function(c){return "<th>"+c+"</th>";}).join("")+"</tr></thead><tbody>"+
+        s[2].map(function(r){return "<tr>"+r.map(function(c){return "<td>"+c+"</td>";}).join("")+"</tr>";}).join("")+"</tbody></table></div>");
     } else if(s[0]==="faq"){
       out.push('<div class="faq">'+s[1].map(function(x){return "<details><summary>"+x[0]+"</summary><p>"+x[1]+"</p></details>";}).join("")+"</div>");
     }
