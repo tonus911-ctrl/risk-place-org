@@ -43,14 +43,35 @@ a{color:#C4571C}
 .sfoot .row2{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline;font-size:13px}
 .sfoot .row2 a{color:rgba(255,255,255,.65);text-decoration:none}
 .sfoot .row2 a:hover{color:#F0A868}
-.sfoot .lg2{font-size:15px;color:#fff;font-weight:bold}
+.sfoot .lg2{font-size:15px;color:#fff;font-weight:600;letter-spacing:-0.02em}
 .sfoot .lg2 b{color:#C4571C}
+
+/* Шапка внутренних страниц. Ровно та же, что на странице сертификации:
+   двух видов шапок на одном сайте быть не должно — посетитель считывает
+   смену шапки как переход на другой сайт. */
+.hdr{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.94);backdrop-filter:blur(14px);border-bottom:1px solid #EAE7E1}
+.hdr .in{height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;flex-direction:column;gap:1px;text-decoration:none}
+.logo .nm{font-size:26px;font-weight:600;letter-spacing:-0.02em;color:#16181F}
+.logo .nm b{color:#C4571C;font-weight:600}
+.logo .tg{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8A8478}
+.hnav{display:flex;gap:18px;align-items:center;margin-inline-start:auto;margin-inline-end:16px}
+.hnav a{font-size:14px;color:#3D4149;text-decoration:none}
+.hnav a:hover{color:#C4571C}
+.hdr .right{display:flex;align-items:center;gap:12px}
+.backlink{font-size:14.5px;color:#3D4149;text-decoration:none}
+.backlink:hover{color:#C4571C}
+.langsw a{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.08em;color:#3D4149;border:1px solid #DCD8D0;border-radius:999px;padding:7px 15px;display:inline-block;text-decoration:none}
+.langsw a:hover{border-color:#16181F;color:#16181F}
+@media(max-width:760px){.hnav{display:none}}
+
+html:not([lang="ar"]) .ar-only{display:none !important}
+html[lang="ar"] .en-only{display:none !important}
 </style>
 </head>
 <body>
 <div class="wrap">
-<p class="top"><a href="index.html">&larr; risk-place.org</a></p>
-<p style="font-size:14px;color:#666"><a href="library.html">Library</a> · <a href="resilience-governance-certificate.html">Certification</a> · <a href="index.html#services">Services</a> · <a href="resilience-governance-certificate.html#verify">Verify</a> · <a href="index.html#contacts">Contact</a></p>
+<header class="hdr"><div class="wrap in"><a class="logo" href="index.html"><span class="nm">risk-<b>place</b>.org</span><span class="tg">Business Continuity &amp; Resilience · GCC</span></a><nav class="hnav"><a href="library.html">Library</a><a href="resilience-governance-certificate.html">Certification</a><a href="products.html">Products</a><a href="start.html">Start free</a><a href="index.html#contacts">Contact</a></nav><div class="right"><a class="backlink" href="index.html">← Home</a></div></div></header>
 <h1>Privacy policy</h1>
 <p>Last updated: 28 July 2026. This policy explains how risk-place.org ("we") handles personal data, in line with UAE Federal Decree-Law No. 45 of 2021 on the Protection of Personal Data (PDPL) and other applicable law.</p>
 <h2>What we collect</h2>

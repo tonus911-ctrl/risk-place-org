@@ -152,8 +152,19 @@ html[dir="rtl"] .clu .c{font-family:'IBM Plex Sans Arabic',sans-serif}
 .sfoot .row2{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline;font-size:13px}
 .sfoot .row2 a{color:rgba(255,255,255,.65);text-decoration:none}
 .sfoot .row2 a:hover{color:#F0A868}
-.sfoot .lg2{font-size:15px;color:#fff;font-weight:bold}
+.sfoot .lg2{font-size:15px;color:#fff;font-weight:600;letter-spacing:-0.02em}
 .sfoot .lg2 b{color:#C4571C}
+
+/* Значок программы в рамке. Взят со страницы сертификации, где он уже
+   работает как опознавательный знак ERGP. На главной тот же значок
+   связывает блок с внутренней страницей, а второй, для SAFE, повторяет
+   его один в один: узнаваемость строится на повторе, а не на разнообразии. */
+.pbadge{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:22px;font-weight:500;letter-spacing:0.22em;border:2px solid #C4571C;color:#C4571C;border-radius:12px;padding:6px 12px 6px 17px;margin:0 0 14px}
+.certduo{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+.certduo figure{margin:0}
+.certduo img{width:100%;border:1px solid #EAE7E1;border-radius:12px;display:block}
+.certduo figcaption{font-size:13px;color:#8A8478;margin-top:8px}
+@media(max-width:760px){.certduo{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -189,8 +200,7 @@ html[dir="rtl"] .clu .c{font-family:'IBM Plex Sans Arabic',sans-serif}
   <div class="t"><div class="n">69</div><div class="l"><span class="en-only">Glossary terms</span><span class="ar-only">مصطلحاً في المسرد</span></div></div>
   <div class="t"><div class="n">94</div><div class="l"><span class="en-only">Chapters in the ERGP programme</span><span class="ar-only">فصلاً في برنامج ERGP</span></div></div>
   <div class="t"><div class="n">31</div><div class="l"><span class="en-only">Matched Arabic-English pairs</span><span class="ar-only">زوجاً متطابقاً بالعربية والإنجليزية</span></div></div>
-  <div class="t"><div class="n">QR</div><div class="l"><span class="en-only">Public register of certificates</span><span class="ar-only">سجل علني للشهادات</span></div></div>
-</div></section>
+  </div></section>
 
 
 <section class="sec" id="doors"><div class="wrap">
@@ -215,7 +225,8 @@ html[dir="rtl"] .clu .c{font-family:'IBM Plex Sans Arabic',sans-serif}
     </a>
   </div>
 </div></section>
-<section class="sec" id="ergp"><div class="wrap">
+<section class="sec beige" id="ergp"><div class="wrap">
+<span class="pbadge">ERGP</span>
   <p class="kick"><span class="en-only">The flagship · ERGP</span><span class="ar-only">البرنامج الرئيسي · ERGP</span></p>
   <h2><span class="en-only">The first resilience governance certification fully available in Arabic</span><span class="ar-only">أول شهادة في حوكمة المرونة متاحة بالعربية بالكامل</span></h2>
   <p class="sd"><span class="en-only">ERGP — the Executive Certificate in Enterprise Resilience Governance — is a self-paced programme for executives who answer for resilience before the board and the regulator. Fully in Arabic, also available in English.</span><span class="ar-only">‏ERGP — الشهادة التنفيذية في حوكمة مرونة المؤسسات — برنامج بإيقاع حر للتنفيذيين الذين يجيبون عن المرونة أمام مجلس الإدارة والمنظم. بالعربية بالكامل، ومتوفر أيضاً بالإنجليزية.</span></p>
@@ -236,56 +247,23 @@ html[dir="rtl"] .clu .c{font-family:'IBM Plex Sans Arabic',sans-serif}
     <img src="ergp-certificate-sample.jpg" alt="ERGP certificate sample — Executive Certificate in Enterprise Resilience Governance" loading="lazy">
   </div>
 </div></section>
-<section class="sec beige" id="safe"><div class="wrap">
-<p class="kick"><span class="en-only">The second programme · SAFE</span><span class="ar-only">البرنامج الثاني · SAFE</span></p>
-<h2><span class="en-only">Workplace safety for the people who do the work</span><span class="ar-only">سلامة مهنية لمن ينفّذ العمل</span></h2>
-<p class="sd"><span class="en-only">SAFE is a safety programme for site crews — construction, oil and gas, logistics — written in English and in Arabic and read on the phone the worker already carries. A crew completes it within one shift.</span><span class="ar-only">‏SAFE برنامج سلامة لفرق المواقع في البناء والنفط والغاز والخدمات اللوجستية، مكتوب بالعربية والإنجليزية ويُقرأ على الهاتف الذي يحمله العامل أصلا. وتنجزه الفرقة خلال وردية واحدة.</span></p>
-<div class="ergp">
-<div>
-<ul class="facts">
-<li><span class="dot">●</span><span><b><span class="en-only">32 chapters in five modules</span><span class="ar-only">32 فصلا في خمس وحدات</span></b> — <span class="en-only">plain language, a diagram on every page, a knowledge check after each module</span><span class="ar-only">لغة مباشرة وشكل توضيحي في كل فصل واختبار معرفة بعد كل وحدة</span></span></li>
-<li><span class="dot">●</span><span><b><span class="en-only">Written in Arabic, not translated</span><span class="ar-only">مكتوب بالعربية لا مترجم إليها</span></b> — <span class="en-only">the crew reads in its own language; the records come to you in one format</span><span class="ar-only">تقرأ الفرقة بلغتها، وتصلكم السجلات بصيغة واحدة</span></span></li>
-<li><span class="dot">●</span><span><b><span class="en-only">Heat as a real hazard</span><span class="ar-only">الحرارة بوصفها خطرا حقيقيا</span></b> — <span class="en-only">the midday break calendar, acclimatisation, and heat stroke against exhaustion</span><span class="ar-only">رزنامة الراحة الظهيرة والتأقلم والفرق بين ضربة الشمس والإنهاك</span></span></li>
-<li><span class="dot">●</span><span><b><span class="en-only">Three industry editions</span><span class="ar-only">ثلاث إصدارات قطاعية</span></b> — <span class="en-only">the fifth module carries your sector's scenarios, barriers and shift checklist</span><span class="ar-only">تحمل الوحدة الخامسة سيناريوهات قطاعكم وحواجزه وقائمة فحص الوردية</span></span></li>
-</ul>
-<div class="cta-row">
-<a class="btn" href="safe-programme.html#demo" onclick="ev('home_safe_demo')"><span class="en-only">Request a demo</span><span class="ar-only">اطلبوا عرضا توضيحيا</span></a>
-<a class="btn ghost2" href="safe-sample.html"><span class="en-only">Read a chapter →</span><span class="ar-only">اقرأوا فصلا ←</span></a>
+<section class="sec" id="safe"><div class="wrap">
+<span class="pbadge">SAFE</span>
+<p class="kick"><span class="en-only">Two short programmes for staff</span><span class="ar-only">برنامجان قصيران للموظفين</span></p>
+<h2><span class="en-only">Certificates your people can show</span><span class="ar-only">شهادات يمكن لموظفيكم إبرازها</span></h2>
+<p class="sd"><span class="en-only">SAFE covers occupational safety for site crews; ERGP Essentials covers business continuity for office staff. Both are completed within a shift, in English or Arabic, and end with a named certificate that can be verified.</span><span class="ar-only">يغطي برنامج SAFE السلامة المهنية لفرق المواقع، ويغطي برنامج الأساسيات استمرارية الأعمال لموظفي المكاتب. ويُنجز كلاهما خلال وردية واحدة، بالإنجليزية أو العربية، وينتهي بشهادة باسم المشارك قابلة للتحقق.</span></p>
+<div class="certduo">
+<figure><img src="en-safe-certificate-sample.jpg" alt="SAFE certificate, English" loading="lazy"><figcaption><span class="en-only">SAFE · workplace safety, site crews</span><span class="ar-only">SAFE · السلامة المهنية لفرق المواقع</span></figcaption></figure>
+<figure><img src="ergp-certificate-sample.jpg" alt="ERGP Essentials certificate" loading="lazy"><figcaption><span class="en-only">ERGP Essentials · continuity, office staff</span><span class="ar-only">الأساسيات · الاستمرارية لموظفي المكاتب</span></figcaption></figure>
 </div>
-<p class="sd"><span class="en-only">One chapter is open with no form — <a href="safe-sample.html">the one on heat</a>. Full details on the <a href="safe-programme.html">programme page</a>.</span><span class="ar-only">فصل واحد مفتوح بلا نموذج، <a href="safe-sample-ar.html">وهو فصل الحرارة</a>. والتفاصيل كاملة في <a href="safe-programme-ar.html">صفحة البرنامج</a>.</span></p>
-</div>
-<img src="safe-shot-1.png" alt="SAFE programme on a phone — workplace safety for site crews" loading="lazy">
+<div class="cta-row" style="margin-top:18px">
+<a class="btn" href="safe-programme.html"><span class="en-only">SAFE programme →</span><span class="ar-only">برنامج SAFE ←</span></a>
+<a class="btn ghost2" href="products.html#safe"><span class="en-only">ERGP Essentials →</span><span class="ar-only">برنامج الأساسيات ←</span></a>
 </div>
 </div></section>
 
 
-<section class="sec beige" id="library"><div class="wrap">
-  <p class="kick"><span class="en-only">The Knowledge Library · Free and open</span><span class="ar-only">مكتبة المعرفة · مجانية ومفتوحة</span></p>
-  <h2><span class="en-only">Read the library: six topics, two languages, no paywall</span><span class="ar-only">اقرأوا المكتبة: ستة مواضيع بلغتين دون مقابل</span></h2>
-  <p class="sd"><span class="en-only">Everything we certify and consult on, we also publish — the only specialised Arabic-English glossary online and practical guides from BIA methodology to NCEMA 7000 clause by clause.</span><span class="ar-only">كل ما نمنح فيه الشهادات ونقدم فيه الاستشارات ننشره أيضاً — المسرد العربي-الإنجليزي المتخصص الوحيد على الإنترنت وأدلة عملية من منهجية تحليل الأثر إلى NCEMA 7000 بنداً بنداً.</span></p>
-  <p class="sd"><span class="en-only">The Gulf regulatory layer is covered end to end and in both languages — <a href="cbuae-operational-resilience.html">CBUAE operational resilience</a>, a <a href="cbuae-gap-checklist.html">clause-by-clause self-check</a>, the <a href="cbuae-deadline-timeline.html">transition calendar to 16 September 2026</a>, <a href="iso-22301-implementation-uae.html">ISO 22301 in the UAE</a> and <a href="ncema-7000-training.html">NCEMA 7000 training</a>.</span><span class="ar-only">‏الطبقة التنظيمية الخليجية مغطاة بالكامل وباللغتين — <a href="cbuae-operational-resilience-ar.html">المرونة التشغيلية لدى مصرف الإمارات المركزي</a> و<a href="cbuae-gap-checklist-ar.html">تقييم ذاتي بنداً بنداً</a> و<a href="cbuae-deadline-timeline-ar.html">التقويم الانتقالي حتى 16 سبتمبر 2026</a> و<a href="iso-22301-implementation-uae-ar.html">تطبيق الأيزو 22301 في الإمارات</a> و<a href="ncema-7000-training-ar.html">التدريب على NCEMA 7000</a>.</span></p>
-  <div class="lib">
-    <div class="big">
-      <div>
-        <h3><span class="en-only">Arabic-English glossary — 69 terms</span><span class="ar-only">المسرد العربي-الإنجليزي — 69 مصطلحاً</span></h3>
-        <p><span class="en-only">Concise definitions in both languages, each with a detail page: practice, examples and common mistakes.</span><span class="ar-only">تعريفات موجزة باللغتين، ولكل مصطلح صفحة تفصيل بالتطبيق والأمثلة والأخطاء الشائعة.</span></p>
-      </div>
-      <form class="libsearch" onsubmit="return goSearch(event)">
-        <input id="hq" type="search" autocomplete="off" placeholder="RTO, NCEMA, شهية المخاطر…">
-        <button class="btn" type="submit"><span class="en-only">Search</span><span class="ar-only">ابحثوا</span></button>
-      </form>
-    </div>
-    <a class="clu" href="handbook.html"><span class="t"><span class="en-only">Free handbook: BCM without illusions — Gulf edition</span><span class="ar-only">دليل مجاني: استمرارية الأعمال بدون أوهام — نسخة الخليج</span></span><span class="c">PDF</span></a>
-    <a class="clu" href="library.html#c1"><span class="t"><span class="en-only">Foundations of continuity</span><span class="ar-only">أساسيات الاستمرارية</span></span><span class="c">01</span></a>
-    <a class="clu" href="library.html#c2"><span class="t"><span class="en-only">Impact analysis and recovery</span><span class="ar-only">تحليل الأثر والتعافي</span></span><span class="c">02</span></a>
-    <a class="clu" href="library.html#c3"><span class="t"><span class="en-only">Governance and the board</span><span class="ar-only">الحوكمة ومجلس الإدارة</span></span><span class="c">03</span></a>
-    <a class="clu" href="library.html#c4"><span class="t"><span class="en-only">Gulf regulation: NCEMA, CBUAE</span><span class="ar-only">التنظيم الخليجي: NCEMA وCBUAE</span></span><span class="c">04</span></a>
-    <a class="clu" href="library.html#c5"><span class="t"><span class="en-only">Crisis scenarios</span><span class="ar-only">سيناريوهات الأزمات</span></span><span class="c">05</span></a>
-    <a class="clu" href="library.html#c6"><span class="t"><span class="en-only">Industries of the GCC</span><span class="ar-only">قطاعات الخليج</span></span><span class="c">06</span></a>
-  </div>
-</div></section>
-
-<section class="sec" id="services"><div class="wrap">
+<section class="sec beige" id="services"><div class="wrap">
   <p class="kick"><span class="en-only">Products and services</span><span class="ar-only">المنتجات والخدمات</span></p>
   <h2><span class="en-only">Products for organisations</span><span class="ar-only">منتجات للمؤسسات</span></h2>
   <p class="sd"><span class="en-only">The library teaches. These tools put that knowledge to work in your organisation. <a href="products.html">All products, including the staff basics course →</a></span><span class="ar-only">المكتبة تعلم. وهذه الأدوات تضع تلك المعرفة موضع التنفيذ في مؤسستكم. <a href="products-ar.html">كل المنتجات، ومنها دورة الأساسيات للموظفين ←</a></span></p>
@@ -318,6 +296,33 @@ html[dir="rtl"] .clu .c{font-family:'IBM Plex Sans Arabic',sans-serif}
     </div>
   </div>
 </div></section>
+<section class="sec" id="library"><div class="wrap">
+  <p class="kick"><span class="en-only">The Knowledge Library · Free and open</span><span class="ar-only">مكتبة المعرفة · مجانية ومفتوحة</span></p>
+  <h2><span class="en-only">Read the library: six topics, two languages, no paywall</span><span class="ar-only">اقرأوا المكتبة: ستة مواضيع بلغتين دون مقابل</span></h2>
+  <p class="sd"><span class="en-only">Everything we certify and consult on, we also publish — the only specialised Arabic-English glossary online and practical guides from BIA methodology to NCEMA 7000 clause by clause.</span><span class="ar-only">كل ما نمنح فيه الشهادات ونقدم فيه الاستشارات ننشره أيضاً — المسرد العربي-الإنجليزي المتخصص الوحيد على الإنترنت وأدلة عملية من منهجية تحليل الأثر إلى NCEMA 7000 بنداً بنداً.</span></p>
+  <p class="sd"><span class="en-only">The Gulf regulatory layer is covered end to end and in both languages — <a href="cbuae-operational-resilience.html">CBUAE operational resilience</a>, a <a href="cbuae-gap-checklist.html">clause-by-clause self-check</a>, the <a href="cbuae-deadline-timeline.html">transition calendar to 16 September 2026</a>, <a href="iso-22301-implementation-uae.html">ISO 22301 in the UAE</a> and <a href="ncema-7000-training.html">NCEMA 7000 training</a>.</span><span class="ar-only">‏الطبقة التنظيمية الخليجية مغطاة بالكامل وباللغتين — <a href="cbuae-operational-resilience-ar.html">المرونة التشغيلية لدى مصرف الإمارات المركزي</a> و<a href="cbuae-gap-checklist-ar.html">تقييم ذاتي بنداً بنداً</a> و<a href="cbuae-deadline-timeline-ar.html">التقويم الانتقالي حتى 16 سبتمبر 2026</a> و<a href="iso-22301-implementation-uae-ar.html">تطبيق الأيزو 22301 في الإمارات</a> و<a href="ncema-7000-training-ar.html">التدريب على NCEMA 7000</a>.</span></p>
+  <div class="lib">
+    <div class="big">
+      <div>
+        <h3><span class="en-only">Arabic-English glossary — 69 terms</span><span class="ar-only">المسرد العربي-الإنجليزي — 69 مصطلحاً</span></h3>
+        <p><span class="en-only">Concise definitions in both languages, each with a detail page: practice, examples and common mistakes.</span><span class="ar-only">تعريفات موجزة باللغتين، ولكل مصطلح صفحة تفصيل بالتطبيق والأمثلة والأخطاء الشائعة.</span></p>
+      </div>
+      <form class="libsearch" onsubmit="return goSearch(event)">
+        <input id="hq" type="search" autocomplete="off" placeholder="RTO, NCEMA, شهية المخاطر…">
+        <button class="btn" type="submit"><span class="en-only">Search</span><span class="ar-only">ابحثوا</span></button>
+      </form>
+    </div>
+    <a class="clu" href="handbook.html"><span class="t"><span class="en-only">Free handbook: BCM without illusions — Gulf edition</span><span class="ar-only">دليل مجاني: استمرارية الأعمال بدون أوهام — نسخة الخليج</span></span><span class="c">PDF</span></a>
+    <a class="clu" href="library.html#c1"><span class="t"><span class="en-only">Foundations of continuity</span><span class="ar-only">أساسيات الاستمرارية</span></span><span class="c">01</span></a>
+    <a class="clu" href="library.html#c2"><span class="t"><span class="en-only">Impact analysis and recovery</span><span class="ar-only">تحليل الأثر والتعافي</span></span><span class="c">02</span></a>
+    <a class="clu" href="library.html#c3"><span class="t"><span class="en-only">Governance and the board</span><span class="ar-only">الحوكمة ومجلس الإدارة</span></span><span class="c">03</span></a>
+    <a class="clu" href="library.html#c4"><span class="t"><span class="en-only">Gulf regulation: NCEMA, CBUAE</span><span class="ar-only">التنظيم الخليجي: NCEMA وCBUAE</span></span><span class="c">04</span></a>
+    <a class="clu" href="library.html#c5"><span class="t"><span class="en-only">Crisis scenarios</span><span class="ar-only">سيناريوهات الأزمات</span></span><span class="c">05</span></a>
+    <a class="clu" href="library.html#c6"><span class="t"><span class="en-only">Industries of the GCC</span><span class="ar-only">قطاعات الخليج</span></span><span class="c">06</span></a>
+  </div>
+</div></section>
+
+
 
 
 

@@ -50,11 +50,29 @@ footer{border-top:1px solid #E1DCD3;margin-top:48px;padding-top:18px;font-size:1
 .sfoot .row2{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline;font-size:13px}
 .sfoot .row2 a{color:rgba(255,255,255,.65);text-decoration:none}
 .sfoot .row2 a:hover{color:#F0A868}
-.sfoot .lg2{font-size:15px;color:#fff;font-weight:bold}
+.sfoot .lg2{font-size:15px;color:#fff;font-weight:600;letter-spacing:-0.02em}
 .sfoot .lg2 b{color:#C4571C}
+
+/* Шапка внутренних страниц. Ровно та же, что на странице сертификации:
+   двух видов шапок на одном сайте быть не должно — посетитель считывает
+   смену шапки как переход на другой сайт. */
+.hdr{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.94);backdrop-filter:blur(14px);border-bottom:1px solid #EAE7E1}
+.hdr .in{height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;flex-direction:column;gap:1px;text-decoration:none}
+.logo .nm{font-size:26px;font-weight:600;letter-spacing:-0.02em;color:#16181F}
+.logo .nm b{color:#C4571C;font-weight:600}
+.logo .tg{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8A8478}
+.hnav{display:flex;gap:18px;align-items:center;margin-inline-start:auto;margin-inline-end:16px}
+.hnav a{font-size:14px;color:#3D4149;text-decoration:none}
+.hnav a:hover{color:#C4571C}
+.hdr .right{display:flex;align-items:center;gap:12px}
+.backlink{font-size:14.5px;color:#3D4149;text-decoration:none}
+.backlink:hover{color:#C4571C}
+.langsw a{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.08em;color:#3D4149;border:1px solid #DCD8D0;border-radius:999px;padding:7px 15px;display:inline-block;text-decoration:none}
+.langsw a:hover{border-color:#16181F;color:#16181F}
+@media(max-width:760px){.hnav{display:none}}
 </style></head><body>
-<div class="top"><a href="index.html"><span class="lg">risk-<b>place</b>.org</span><div class="tg">Business Continuity &amp; Resilience · GCC</div></a><nav class="tnav"><a href="library.html">المكتبة</a><a href="resilience-governance-certificate-ar.html">الشهادة</a><a href="products-ar.html">المنتجات</a><a href="start-ar.html">ابدأوا مجاناً</a><a href="index.html#contacts">اتصلوا بنا</a></nav>
-<div class="langsw"><a href="ransomware-first-hours.html">English</a></div></div>
+<header class="hdr"><div class="wrap in"><a class="logo" href="index.html"><span class="nm">risk-<b>place</b>.org</span><span class="tg">استمرارية الأعمال والمرونة · دول الخليج</span></a><nav class="hnav"><a href="library.html">المكتبة</a><a href="resilience-governance-certificate.html">الشهادة</a><a href="products.html">المنتجات</a><a href="start.html">ابدأوا مجاناً</a><a href="index.html#contacts">اتصلوا بنا</a></nav><div class="right"><a class="backlink" href="index.html">→ الرئيسية</a><div class="langsw"><a href="ransomware-first-hours.html">English</a></div></div></div></header>
 <div class="wrap">
 <div class="crumb"><a href="index.html">الرئيسية</a> · <a href="glossary.html">المسرد</a> · الساعات الأولى لهجوم الفدية</div>
 <div class="tagchip">دليل الاستجابة</div>
