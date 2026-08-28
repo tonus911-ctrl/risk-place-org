@@ -28,7 +28,6 @@ h1{font-size:34px;font-weight:300;letter-spacing:-0.02em}
 h2{font-size:21px;font-weight:600;margin-top:36px}
 p,li{font-size:15.5px;font-weight:300;color:#3D4149}
 a{color:#C4571C}
-.top a{font-size:14.5px;color:#3D4149;text-decoration:none}
 @media(max-width:600px){
   .wrap{padding:40px 20px 60px}
   h1{font-size:26px}
@@ -50,7 +49,7 @@ a{color:#C4571C}
    двух видов шапок на одном сайте быть не должно — посетитель считывает
    смену шапки как переход на другой сайт. */
 .hdr{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.94);backdrop-filter:blur(14px);border-bottom:1px solid #EAE7E1}
-.hdr .in{height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.hdr .in{max-width:1080px;margin:0 auto;padding-left:24px;padding-right:24px;height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
 .logo{display:flex;flex-direction:column;gap:1px;text-decoration:none}
 .logo .nm{font-size:26px;font-weight:600;letter-spacing:-0.02em;color:#16181F}
 .logo .nm b{color:#C4571C;font-weight:600}
