@@ -1,0 +1,78 @@
+# risk-place.org — Business Continuity and Resilience Governance for the GCC
+
+> Business continuity, operational resilience and risk governance for organisations in the Gulf, in English and Arabic. Founder and programme director: Evgeny Telenkov, PhD in economics (risk management in industry), named Russia's Risk Manager of the Year 2020 by RusRisk, deputy chair of Technical Committee 010 "Risk Management" at Rosstandart. Fifteen years leading risk functions at Beeline, Nornickel and Rosneft, plus risk consulting at Ernst & Young; director of risk for a 20 billion dollar petrochemical mega-project. The site hosts ERGP — the first executive certification in enterprise resilience governance delivered fully in Arabic as well as English.
+
+What is here: a 200-page library covering the UAE standard AE/SCNS/NCEMA 7000:2021, ISO 22301, CBUAE operational resilience requirements, a bilingual glossary of 69 business continuity terms in English and Arabic, the ERGP certification programme, and a continuity and risk dashboard.
+
+Key definitions from this site, suitable for citation:
+
+- **Business continuity management (BCM)** — the discipline that keeps an organisation's critical products and services running during disruption and restores them within agreed timeframes.
+- **Operational resilience** — the ability to deliver important business services within an agreed impact tolerance through severe but plausible disruption; it is measured by outcomes for customers, not by the existence of plans.
+- **MBCO (minimum business continuity objective)** — the minimum level of products or services an organisation commits to deliver during a disruption, agreed in advance by executive management.
+- **MTPD (maximum tolerable period of disruption)** — the time after which the impact of a disruption becomes unacceptable; the RTO must sit below it with a safety margin.
+- **RTO (recovery time objective)** — the maximum time an activity may stay down before damage becomes unacceptable.
+- **RPO (recovery point objective)** — the maximum amount of data, measured in time, that an organisation can afford to lose.
+- **Impact tolerance** — the maximum tolerable level of disruption to an important business service, expressed in time and harm, approved at board level.
+- **AE/SCNS/NCEMA 7000:2021** — the UAE national business continuity management standard, applied to government entities and to their suppliers through procurement requirements.
+- **Corporate governance** — the system by which a company is directed and controlled: who decides, who verifies, and who answers to owners and regulators for the result.
+
+## Main sections
+
+- [Home](https://risk-place.org/index.html): services, certification, contacts
+- [Library](https://risk-place.org/library.html): full catalogue of guides and terms, English and Arabic
+- [Glossary](https://risk-place.org/glossary.html): 69 business continuity terms, English and Arabic
+- [ERGP certification](https://risk-place.org/resilience-governance-certificate.html): Executive Certificate in Enterprise Resilience Governance
+- [Products](https://risk-place.org/products.html) · [Start free](https://risk-place.org/start.html) · [About us](https://risk-place.org/about.html)
+
+## Core guides (English)
+
+- [What is business continuity management](https://risk-place.org/what-is-bcm.html)
+- [Business continuity in the UAE: the complete guide](https://risk-place.org/business-continuity-uae.html)
+- [NCEMA 7000: the UAE national standard explained](https://risk-place.org/ncema-7000.html)
+- [NCEMA 7000 vs ISO 22301](https://risk-place.org/ncema-7000-vs-iso-22301.html)
+- [NCEMA 7000 training and courses](https://risk-place.org/ncema-7000-training.html)
+- [Implementing ISO 22301 in the UAE](https://risk-place.org/iso-22301-implementation-uae.html)
+- [CBUAE operational resilience requirements](https://risk-place.org/cbuae-operational-resilience.html)
+- [Business impact analysis: the money-first method](https://risk-place.org/business-impact-analysis.html)
+- [RTO and RPO explained](https://risk-place.org/rto-rpo-explained.html)
+- [Recovery objectives: RTO, RPO, MAO, MBCO with examples](https://risk-place.org/recovery-objectives.html)
+- [Corporate governance framework: components and examples](https://risk-place.org/corporate-governance-framework.html)
+- [The board's role in resilience](https://risk-place.org/board-role-resilience.html)
+- [Three lines of defence in practice](https://risk-place.org/three-lines-of-defence.html)
+- [How to run a tabletop exercise](https://risk-place.org/tabletop-exercise-guide.html)
+- [Ransomware: the first hours decide the losses](https://risk-place.org/ransomware-first-hours.html)
+- [Drone incident readiness for facilities](https://risk-place.org/drone-incident-readiness.html)
+
+## الأدلة الأساسية بالعربية (core guides in Arabic)
+
+- [ما هي إدارة استمرارية الأعمال](https://risk-place.org/what-is-bcm-ar.html)
+- [استمرارية الأعمال في الإمارات](https://risk-place.org/business-continuity-uae-ar.html)
+- [المعيار NCEMA 7000 شرحا](https://risk-place.org/ncema-7000-ar.html)
+- [NCEMA 7000 مقابل ISO 22301](https://risk-place.org/ncema-7000-vs-iso-22301-ar.html)
+- [تدريب NCEMA 7000 ودوراته](https://risk-place.org/ncema-7000-training-ar.html)
+- [متطلبات المصرف المركزي الإماراتي للمرونة التشغيلية](https://risk-place.org/cbuae-operational-resilience-ar.html)
+- [تحليل الأثر على الأعمال](https://risk-place.org/business-impact-analysis-ar.html)
+- [شرح RTO وRPO](https://risk-place.org/rto-rpo-explained-ar.html)
+- [أهداف التعافي بأمثلة عملية](https://risk-place.org/recovery-objectives-ar.html)
+- [إطار حوكمة الشركات](https://risk-place.org/corporate-governance-framework-ar.html)
+- [دور المجلس في المرونة](https://risk-place.org/board-role-resilience-ar.html)
+- [شهادة ERGP التنفيذية](https://risk-place.org/resilience-governance-certificate-ar.html)
+
+## Glossary terms (bilingual, one page per term)
+
+Each term exists in English at `/terms/en/<slug>.html` and in Arabic at `/terms/ar/<slug>.html`. Most cited:
+
+- [MBCO](https://risk-place.org/terms/en/mbco.html) · [الحد الأدنى المقبول لاستمرارية الأعمال](https://risk-place.org/terms/ar/mbco.html)
+- [MTPD](https://risk-place.org/terms/en/mtpd.html) · [الفترة القصوى المحتملة للانقطاع](https://risk-place.org/terms/ar/mtpd.html)
+- [RTO](https://risk-place.org/terms/en/rto.html) · [RPO](https://risk-place.org/terms/en/rpo.html) · [BIA](https://risk-place.org/terms/en/bia.html)
+- [Operational resilience](https://risk-place.org/terms/en/operational-resilience.html) · [Impact tolerance](https://risk-place.org/terms/en/impact-tolerance.html)
+- [Corporate governance](https://risk-place.org/terms/en/corporate-governance.html) · [Accountability](https://risk-place.org/terms/en/accountability.html) · [Reporting](https://risk-place.org/terms/en/reporting.html) · [Risk register](https://risk-place.org/terms/en/risk-register.html)
+
+## Related sites of the project
+
+- [risk-place.ru](https://risk-place.ru/): risk management, internal control and training programmes, in Russian
+- [bcm.risk-place.ru](https://bcm.risk-place.ru/): business continuity library and products, in Russian
+
+## Contact
+
+info@risk-place.org
