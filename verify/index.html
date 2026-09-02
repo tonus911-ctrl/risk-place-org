@@ -1,0 +1,151 @@
+<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verify a certificate · risk-place.org</title>
+<meta name="description" content="Check a risk-place.org certificate number and see the holder, the programme, the issue date and whether it is still valid.">
+<link rel="canonical" href="https://risk-place.org/verify/">
+<meta property="og:title" content="Verify a certificate · risk-place.org">
+<meta property="og:description" content="Check a risk-place.org certificate number and see the holder, the programme, the issue date and whether it is still valid.">
+<meta property="og:image" content="https://risk-place.org/og-risk-place.png">
+<meta property="og:url" content="https://risk-place.org/verify/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="risk-place.org">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" hreflang="en" href="https://risk-place.org/verify/">
+<link rel="alternate" hreflang="ar" href="https://risk-place.org/verify/index-ar.html">
+<link rel="alternate" hreflang="x-default" href="https://risk-place.org/verify/">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HNF79F1SSN"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HNF79F1SSN');</script><script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");ym(111613223,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});</script><noscript><div><img src="https://mc.yandex.ru/watch/111613223" style="position:absolute;left:-9999px;" alt=""/></div></noscript>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>*{margin:0;padding:0;box-sizing:border-box}
+body{-webkit-font-smoothing:antialiased;font-family:'Figtree','IBM Plex Sans Arabic',system-ui,sans-serif;
+  background:#fff;color:#16181F;line-height:1.7}
+/* Ширина как у страниц-хабов сайта: здесь не чтение, а действие. */
+.wrap{max-width:1080px;margin:0 auto;padding:40px 24px 60px}
+.narrow{max-width:760px}
+.hdr{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.94);backdrop-filter:blur(14px);border-bottom:1px solid #EAE7E1}
+.hdr .in{max-width:1080px;margin:0 auto;padding-left:24px;padding-right:24px;height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;flex-direction:column;gap:1px;text-decoration:none}
+.logo .nm{font-size:26px;font-weight:600;letter-spacing:-0.02em;color:#16181F}
+.logo .nm b{color:#C4571C;font-weight:600}
+.logo .tg{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8A8478}
+.hnav{display:flex;gap:18px;align-items:center;margin-inline-start:auto;margin-inline-end:16px}
+.hnav a{font-size:14px;color:#3D4149;text-decoration:none}.hnav a:hover{color:#C4571C}
+.hnav a{white-space:nowrap}
+.hdr .right{display:flex;align-items:center;gap:12px}
+.backlink{font-size:14.5px;color:#3D4149;text-decoration:none}
+.langsw{font-size:13px}.langsw a{color:#C4571C;text-decoration:none;border:1px solid #C4571C;border-radius:6px;padding:3px 12px}
+@media(max-width:900px){.hnav{display:none}}
+.crumb{font-size:13px;color:#8A8578;margin-bottom:22px}.crumb a{color:#C4571C;text-decoration:none}
+h1{font-size:34px;line-height:1.2;margin-bottom:10px}
+p.b{font-size:16.5px;margin-bottom:18px}
+h2{font-size:24px;margin:34px 0 12px}
+.box{background:#0D1117;color:#fff;border-radius:14px;padding:22px 24px;margin:22px 0}
+.box .row{display:flex;gap:10px}
+.box input{flex:1;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.22);border-radius:10px;
+  padding:12px 14px;font-size:15px;color:#fff;font-family:'IBM Plex Mono',monospace;letter-spacing:.04em}
+.box input::placeholder{color:rgba(255,255,255,0.4);letter-spacing:0;font-family:'Figtree',sans-serif}
+.box button{background:#C4571C;color:#fff;border:0;border-radius:10px;padding:12px 26px;font-size:15px;cursor:pointer;font:inherit;font-size:15px}
+.box button:hover{background:#A84813}
+.box .hint{font-size:13px;color:rgba(255,255,255,.6);margin-top:10px}
+@media(max-width:620px){.box .row{flex-direction:column}}
+.res{border:1px solid #E1DCD3;border-radius:14px;padding:22px 24px;margin:22px 0;display:none}
+.res.on{display:block}
+.res .st{display:inline-block;font-size:12px;letter-spacing:.1em;text-transform:uppercase;
+  border-radius:999px;padding:4px 14px;margin-bottom:14px;font-family:'IBM Plex Mono',monospace}
+.res .st.ok{background:#E4F0E8;color:#2F6B47}
+.res .st.warn{background:#F8EEDC;color:#8A5B18}
+.res .st.bad{background:#F7E4E2;color:#8C2A22}
+.res dl{display:grid;grid-template-columns:minmax(120px,auto) 1fr;gap:8px 20px;font-size:16px;margin:0}
+.res dt{color:#8A8578;font-size:14px}
+.res dd{margin:0;font-weight:500}
+.res .nm{font-size:22px;font-weight:600;margin-bottom:2px}
+.res .no{font-family:'IBM Plex Mono',monospace;font-size:15px;letter-spacing:.04em}
+.res .say{font-size:15.5px;color:#5B564A;margin-top:14px}
+.res .doc{display:inline-block;margin-top:16px;color:#C4571C;text-decoration:none;font-size:15px}
+.sfoot{background:#0D1117;color:rgba(255,255,255,.65)}
+.sfoot .in{max-width:1080px;margin:0 auto;padding:54px 24px 30px}
+.sfoot .row1{display:flex;flex-wrap:wrap;gap:10px 26px;padding-bottom:16px;margin-bottom:16px;border-bottom:1px solid rgba(255,255,255,.14)}
+.sfoot .row1 a{color:rgba(255,255,255,.95);text-decoration:none;font-size:15px}
+.sfoot .row1 a:hover{color:#F0A868}
+.sfoot .row2{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline;font-size:13px}
+.sfoot .row2 a{color:rgba(255,255,255,.65);text-decoration:none}
+.sfoot .lg2{font-size:15px;color:#fff;font-weight:600;letter-spacing:-0.02em}
+.sfoot .lg2 b{color:#C4571C}</style></head><body>
+<header class="hdr"><div class="wrap in"><a class="logo" href="../index.html"><span class="nm" lang="en" translate="no">risk-<b>place</b>.org</span><span class="tg" lang="en">Business Continuity &amp; Resilience · GCC</span></a><nav class="hnav"><a href="../resilience-governance-certificate.html">ERGP certification</a><a href="../safe-programme.html">SAFE programme</a><a href="../products.html">For organisations</a><a href="../library.html">Library</a><a href="../about.html">About</a><a href="../index.html#contacts">Contact</a></nav><div class="right"><div class="langsw"><a href="../verify/index-ar.html" translate="no">العربية ←</a></div></div></div></header>
+<div class="wrap">
+<div class="crumb"><a href="../index.html">Home</a> · Verify a certificate</div>
+<h1>Verify a certificate</h1>
+<p class="b">Every certificate issued by risk-place.org carries a unique number. Enter it below, or scan the QR code printed on the document.</p>
+<div class="box">
+  <div class="row">
+    <input id="vnum" placeholder="Certificate number, e.g. ERGP-26-7K4M-Q9D3" autocomplete="off" spellcheck="false">
+    <button id="vgo" type="button">Verify</button>
+  </div>
+  <div class="hint">The number is printed in the lower left corner of the certificate.</div>
+</div>
+<div class="res" id="res"></div>
+<h2>About this register</h2>
+<p class="b">The register is kept by risk-place.org and answers in real time. A certificate that has been revoked stays in the register and is shown as revoked — it does not quietly disappear. If a document you were shown does not appear here, it was not issued by us.</p>
+</div>
+<footer class="sfoot"><div class="in">
+<div class="row1"><a href="../resilience-governance-certificate.html">ERGP certification</a><a href="../safe-programme.html">SAFE programme</a><a href="../products.html">For organisations</a><a href="../library.html">Library</a><a href="../about.html">About</a><a href="../index.html#contacts">Contact</a></div>
+<div class="row2"><span class="lg2" lang="en" translate="no">risk-<b>place</b>.org</span><span>© 2026 · Business Continuity &amp; Resilience · GCC</span>
+<a href="../about.html">About us</a><a href="../glossary.html">Glossary</a>
+<a href="../privacy.html">Privacy policy</a>
+<a href="mailto:info@risk-place.org" lang="en">info@risk-place.org</a></div>
+</div></footer>
+<script>var W={"st_valid": "Valid", "st_expired": "Expired", "st_revoked": "Revoked", "l_holder": "Holder", "l_credential": "Credential", "l_issued": "Issued", "l_valid": "Valid through", "l_no": "Certificate number", "notfound_h": "No such certificate", "notfound_p": "No certificate with this number has been issued by risk-place.org. Check the number for typing errors — the letters O and I and the digits 0 and 1 are never used, so a number containing them is misread.", "badformat_p": "This does not look like our certificate number. The format is ERGP-26-XXXX-XXXX.", "expired_p": "This certificate was genuine but its validity period has ended. It confirms that the programme was completed, not current standing.", "revoked_p": "This certificate has been revoked by risk-place.org and must not be relied upon.", "err_p": "The register did not respond. Please try again in a minute, or write to info@risk-place.org.", "asking": "Checking the register…"}, API="https://ergp.risk-place.org/api/verify", LANG="en";
+var MON={en:["January","February","March","April","May","June","July","August","September","October","November","December"],
+         ar:["يناير","فبراير","مارس","أبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر"]};
+function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+function fmtDate(iso){
+  var m=String(iso||"").match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if(!m) return "";
+  return (+m[3])+" "+MON[LANG][+m[2]-1]+" "+m[1];
+}
+function show(html){var r=document.getElementById("res");r.innerHTML=html;r.className="res on";}
+function plain(head,text){show('<div class="nm">'+esc(head)+'</div><div class="say">'+esc(text)+'</div>');}
+function render(d){
+  var st=d.status==="revoked"?["bad",W.st_revoked,W.revoked_p]
+        :d.status==="expired"?["warn",W.st_expired,W.expired_p]
+        :["ok",W.st_valid,""];
+  var h='<span class="st '+st[0]+'">'+esc(st[1])+'</span>'
+    +'<div class="nm">'+esc(d.name)+'</div>'
+    +'<dl>'
+    +'<dt>'+esc(W.l_credential)+'</dt><dd>'+esc(d.credential||"")+'</dd>'
+    +'<dt>'+esc(W.l_issued)+'</dt><dd>'+esc(fmtDate(d.issued))+'</dd>'
+    +'<dt>'+esc(W.l_valid)+'</dt><dd>'+esc(fmtDate(d.valid))+'</dd>'
+    +'<dt>'+esc(W.l_no)+'</dt><dd class="no">'+esc(d.no)+'</dd>'
+    +'</dl>';
+  if(st[2]) h+='<div class="say">'+esc(st[2])+'</div>';
+  if(d.url&&d.status!=="revoked") h+='<a class="doc" href="'+esc(d.url)+'" target="_blank" rel="noopener">'
+    +(LANG==="ar"?"عرض الوثيقة ←":"Open the document →")+'</a>';
+  show(h);
+}
+function ask(no){
+  no=String(no||"").trim().toUpperCase();
+  if(!no){document.getElementById("res").className="res";return;}
+  document.getElementById("vnum").value=no;
+  plain("", W.asking);
+  try{gtag('event','certificate_verify_attempt',{number:no});}catch(e){}
+  try{ym(111613223,'reachGoal','certificate_verify');}catch(e){}
+  fetch(API+"?no="+encodeURIComponent(no))
+    .then(function(r){return r.json();})
+    .then(function(d){
+      if(!d||!d.ok) return plain(W.notfound_h, W.err_p);
+      if(!d.found) return plain(W.notfound_h, d.reason==="format"?W.badformat_p:W.notfound_p);
+      render(d);
+    })
+    .catch(function(){plain(W.notfound_h, W.err_p);});
+}
+document.getElementById("vgo").addEventListener("click",function(){ask(document.getElementById("vnum").value);});
+document.getElementById("vnum").addEventListener("keydown",function(e){if(e.key==="Enter")ask(this.value);});
+(function(){
+  /* Номер приходит из QR как ?no=..., но принимаем и хвост пути —
+     вдруг адрес наберут руками как /verify/НОМЕР.                */
+  var q=new URLSearchParams(location.search).get("no");
+  if(!q){var m=location.pathname.match(/\/verify\/([A-Za-z0-9-]{6,})/); if(m) q=m[1];}
+  if(q) ask(q);
+})();</script>
+</body></html>

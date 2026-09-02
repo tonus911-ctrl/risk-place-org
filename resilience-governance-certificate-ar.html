@@ -446,7 +446,7 @@ document.addEventListener('keydown',function(e){
       <h3>التحقق من شهادة</h3>
       <p>كل رقم شهادة يمكن فحصه هنا.</p>
       <div class="row">
-        <input id="vnum" placeholder="رقم الشهادة، مثال RP-2026-0001">
+        <input id="vnum" placeholder="رقم الشهادة، مثال ERGP-26-7K4M-Q9D3">
         <button class="btn" onclick="verifyCert()">تحقق</button>
       </div>
       <div class="vmsg" id="vmsg"></div>
@@ -564,13 +564,42 @@ var MSG={
   tOk:"شكرا لك. سنرد شخصيا، وباحترام كامل لوقتك.",
   tErr:"تعذر الإرسال. راسلنا على info@risk-place.org"
 };
+/* Проверка сертификата по номеру. Спрашиваем реестр risk-place.org и
+   отвечаем словами. Разбор в 08 - Проверки/patch_verify_forms.py.   */
+function rpVerify(no, box, W){
+  no = String(no || "").trim().toUpperCase();
+  if (!no){ box.innerHTML = ""; box.style.display = "none"; return; }
+  box.style.display = "block";
+  box.textContent = W.asking;
+  try{ gtag('event','certificate_verify_attempt',{number:no}); }catch(e){}
+  try{ ym(111613223,'reachGoal','certificate_verify'); }catch(e){}
+  var esc = function(s){ return String(s == null ? "" : s)
+    .replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); };
+  var day = function(iso){
+    var m = String(iso||"").match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    return m ? (+m[3]) + " " + W.mon[+m[2]-1] + " " + m[1] : "";
+  };
+  fetch("https://ergp.risk-place.org/api/verify" + "?no=" + encodeURIComponent(no))
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      if (!d || !d.ok) { box.textContent = W.err; return; }
+      if (!d.found){ box.textContent = d.reason === "format" ? W.badformat : W.notfound; return; }
+      var tail = d.status === "revoked" ? W.revoked : (d.status === "expired" ? W.expired : "");
+      box.innerHTML = "<b>" + esc(d.name) + "</b> — " + esc(d.credential || "")
+        + "<br>" + W.issued + " " + esc(day(d.issued)) + " · " + W.until + " " + esc(day(d.valid))
+        + "<br>" + (d.status === "valid" ? W.ok : "") + (tail ? " " + esc(tail) : "");
+    })
+    .catch(function(){ box.textContent = W.err; });
+}
 function verifyCert(){
-  var v=(document.getElementById("vnum").value||"").trim();
-  var m=document.getElementById("vmsg");
-  if(!v){m.textContent="";return;}
-  m.textContent=MSG.ver;
-  try{gtag('event','certificate_verify_attempt',{number:v});}catch(e){}
-  try{ym(111613223,'reachGoal','certificate_verify');}catch(e){}
+  rpVerify(document.getElementById("vnum").value, document.getElementById("vmsg"), {asking:"جار التحقق من السجل…",
+   mon:["يناير","فبراير","مارس","أبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر"],
+   issued:"صدرت في", until:"سارية حتى", ok:"هذه الشهادة سارية.",
+   expired:"انتهت مدة السريان: البرنامج مكتمل غير أن الشهادة لم تعد سارية.",
+   revoked:"ألغيت هذه الشهادة ولا يجوز الاعتماد عليها.",
+   notfound:"لم تصدر risk-place.org أي شهادة بهذا الرقم. تحقق من الرقم، فنحن لا نستخدم الحرفين O و I ولا الرقمين 0 و 1.",
+   badformat:"هذا لا يشبه رقم شهادتنا. الصيغة هي ERGP-26-XXXX-XXXX.",
+   err:"لم يستجب السجل. حاول بعد دقيقة أو راسلنا على info@risk-place.org."});
 }
 function postLead(body,note,okMsg,errMsg,goal){
   fetch("https://ergp.risk-place.org/api/lead",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)})

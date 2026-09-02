@@ -435,9 +435,9 @@ document.addEventListener('keydown',function(e){
     </div>
     <div class="verify" id="verify">
       <h3 data-ui="verTitle">Verify a certificate</h3>
-      <p data-ui="verSub">Every certificate number can be checked here.</p>
+      <p data-ui="verSub">Enter the number printed on the document, or scan its QR code. <a href="verify/" style="color:#F0A868">Full verification page →</a></p>
       <div class="row">
-        <input id="vnum" data-uip="verPh" placeholder="Certificate number, e.g. RP-2026-0001">
+        <input id="vnum" data-uip="verPh" placeholder="Certificate number, e.g. ERGP-26-7K4M-Q9D3">
         <button class="btn" onclick="verifyCert()" data-ui="verBtn">Verify</button>
       </div>
       <div class="vmsg" id="vmsg"></div>
@@ -528,15 +528,44 @@ document.addEventListener('keydown',function(e){
 </div>
 
 <script>
-var C={"en": {"verMsg": "The public register goes live with the first cohort. To verify a certificate today, write to info@risk-place.org — we respond the same day.", "dOk": "Thank you — we will email you an invitation to the demonstration.", "dErr": "Could not send. Please email info@risk-place.org", "tOk": "Thank you. We will reply personally — and with respect for your time.", "tErr": "Could not send. Please email info@risk-place.org"}};
+var C={"en": {"dOk": "Thank you — we will email you an invitation to the demonstration.", "dErr": "Could not send. Please email info@risk-place.org", "tOk": "Thank you. We will reply personally — and with respect for your time.", "tErr": "Could not send. Please email info@risk-place.org"}};
 var lang="en";
+/* Проверка сертификата по номеру. Спрашиваем реестр risk-place.org и
+   отвечаем словами. Разбор в 08 - Проверки/patch_verify_forms.py.   */
+function rpVerify(no, box, W){
+  no = String(no || "").trim().toUpperCase();
+  if (!no){ box.innerHTML = ""; box.style.display = "none"; return; }
+  box.style.display = "block";
+  box.textContent = W.asking;
+  try{ gtag('event','certificate_verify_attempt',{number:no}); }catch(e){}
+  try{ ym(111613223,'reachGoal','certificate_verify'); }catch(e){}
+  var esc = function(s){ return String(s == null ? "" : s)
+    .replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); };
+  var day = function(iso){
+    var m = String(iso||"").match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    return m ? (+m[3]) + " " + W.mon[+m[2]-1] + " " + m[1] : "";
+  };
+  fetch("https://ergp.risk-place.org/api/verify" + "?no=" + encodeURIComponent(no))
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      if (!d || !d.ok) { box.textContent = W.err; return; }
+      if (!d.found){ box.textContent = d.reason === "format" ? W.badformat : W.notfound; return; }
+      var tail = d.status === "revoked" ? W.revoked : (d.status === "expired" ? W.expired : "");
+      box.innerHTML = "<b>" + esc(d.name) + "</b> — " + esc(d.credential || "")
+        + "<br>" + W.issued + " " + esc(day(d.issued)) + " · " + W.until + " " + esc(day(d.valid))
+        + "<br>" + (d.status === "valid" ? W.ok : "") + (tail ? " " + esc(tail) : "");
+    })
+    .catch(function(){ box.textContent = W.err; });
+}
 function verifyCert(){
-  var v=(document.getElementById("vnum").value||"").trim();
-  var m=document.getElementById("vmsg");
-  if(!v){m.textContent="";return;}
-  m.textContent=C[lang].verMsg;
-  try{gtag('event','certificate_verify_attempt',{number:v});}catch(e){}
-  try{ym(111613223,'reachGoal','certificate_verify');}catch(e){}
+  rpVerify(document.getElementById("vnum").value, document.getElementById("vmsg"), {asking:"Checking the register…",
+   mon:["January","February","March","April","May","June","July","August","September","October","November","December"],
+   issued:"Issued", until:"valid through", ok:"This certificate is valid.",
+   expired:"The validity period has ended: the programme was completed, but the certificate is no longer current.",
+   revoked:"This certificate has been revoked and must not be relied upon.",
+   notfound:"No certificate with this number has been issued by risk-place.org. Please check for typing errors: the letters O and I and the digits 0 and 1 are never used in our numbers.",
+   badformat:"This does not look like our certificate number. The format is ERGP-26-XXXX-XXXX.",
+   err:"The register did not respond. Please try again in a minute, or write to info@risk-place.org."});
 }
 function postLead(body,note,okKey,errKey,goal){
   fetch("https://ergp.risk-place.org/api/lead",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)})
