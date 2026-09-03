@@ -200,7 +200,11 @@ html[lang="ar"] .en-only{display:none !important}
 </section>
 
 <script>
-var WORKER_URL = "https://risk-place-quiz.tonus911.workers.dev";
+/* Собственный приемник. Раньше здесь стоял воркер Cloudflare:
+   свой формат сообщения, один получатель и зависимость от
+   сервиса, который из России не открывается. Разбор перевода —
+   в 08 - Проверки/patch_quiz_org_to_own.py.                  */
+var WORKER_URL = "https://ergp.risk-place.org/api/lead";
 
 /* ============ UI STRINGS ============ */
 var UI = {
@@ -480,19 +484,40 @@ function sendQuizCompleted(c,lv){
       score:c.score+" / "+c.max, level:"Level "+lv.n+" — "+lv.en},2);
   }catch(e){}
 }
+function quizAnswersText(){
+  /* Разбор ответов в том же виде, что у русской диагностики: вопрос,
+     выбранный вариант и его вес. Берем английские формулировки — они
+     общие для обеих языковых версий страницы.                      */
+  var qq = Q[track] || [];
+  return qq.map(function(item, i){
+    var a = answers[i];
+    var opt = (a === undefined) ? null : item.o[a];
+    return "Q" + (i + 1) + ": " + item.q.en + "\n \u2192 "
+         + (opt ? opt.t.en + " (" + opt.p + ")" : "\u2014");
+  }).join("\n\n");
+}
 function sendResultNotification(c,lv,rr){
   try{
     var gapsTxt=c.gaps.map(function(g){return (g.flag?"[FLAG] ":"")+g.hl.en;}).join("\n");
+    var u=UI[lang]||UI.en;
+    var isLow=(rr.cta==="low");
     postWorker({
+      /* Событие диагностики, а не заявка: контакта здесь нет и быть не
+         должно. По этому признаку приемник не требует почту.        */
+      type:"quiz",
       formTitle:"risk-place.org — квиз пройден ("+(track==="drone"?"ДРОН":"ШИФРОВАЛЬЩИК")+")",
       name:"Диагностика (без контакта)", company:"—", email:"—",
-      product:"risk-place.org · "+trackName(),
+      /* В строке «Рекомендуем» должна стоять услуга, а не код
+         сценария: сценарий выведен отдельной строкой ниже.      */
+      product:(isLow?"Gap assessment (диагностика разрывов)":"Дашборд непрерывности и рисков"),
       language:lang.toUpperCase(),
       score:c.score+" / "+c.max,
       level:"Level "+lv.n+" — "+lv.en,
       description:rr.v.en,
       risks:gapsTxt,
-      comment:"—"
+      comment:"Сценарий: "+(track==="drone"?"дрон / БПЛА":"шифровальщик"),
+      recommendations:(isLow?u.ctaLow:u.ctaHigh),
+      answers:quizAnswersText()
     });
   }catch(e){}
 }
