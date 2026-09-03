@@ -223,7 +223,10 @@ html[dir="rtl"] .shots .next{right:auto;left:12px}
 html[dir="rtl"] .slbox .x{right:auto;left:20px}
 
 /* --- единый футер --- */
-.sfoot{background:#0D1117;color:rgba(255,255,255,.65)}
+.sfoot{background:#0D1117;color:rgba(255,255,255,.65);margin-top:auto}
+/* Подвал у нижнего края даже на короткой странице. Разбор — в
+   08 - Проверки/patch_footer_bottom.py                        */
+body{min-height:100dvh;display:flex;flex-direction:column}
 .sfoot .in{max-width:1080px;margin:0 auto;padding:54px 24px 30px}
 .sfoot .row1{display:flex;flex-wrap:wrap;gap:10px 26px;padding-bottom:16px;margin-bottom:16px;border-bottom:1px solid rgba(255,255,255,.14)}
 .sfoot .row1 a{color:rgba(255,255,255,.95);text-decoration:none;font-size:15px}
