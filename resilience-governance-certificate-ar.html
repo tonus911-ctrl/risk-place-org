@@ -229,6 +229,15 @@ body{min-height:100dvh;display:flex;flex-direction:column}
 .sfoot .lg2 b{color:#C4571C}
 .tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}
 .hnav a{white-space:nowrap}.logo .tg{white-space:nowrap}.dir .role{display:block;font-size:13.5px;color:#8A8478;margin:-4px 0 10px}
+
+/* --- What you join: the ERGP Circle --- */
+.join{display:grid;grid-template-columns:1.05fr 1fr;gap:32px;align-items:center;margin-top:8px}
+@media(max-width:900px){.join{grid-template-columns:1fr}}
+.join img{width:100%;height:auto;display:block}
+.join .lead{font-size:18px;line-height:1.5;margin-bottom:12px}
+.join ul{margin:10px 0 18px;padding-inline-start:20px;font-size:15.5px;line-height:1.6}
+.join li{margin-bottom:6px}
+.join .cta{font-size:14.5px;color:#8A8578}
 </style>
 </head>
 <body>
@@ -457,7 +466,23 @@ document.addEventListener('keydown',function(e){
   </div>
 </div></section>
 
-<section class="sec beige" id="team"><div class="wrap">
+<section class="sec beige" id="circle"><div class="wrap">
+  <h2>ما الذي تنضمون إليه، دائرة ERGP</h2>
+  <div class="join">
+    <img src="assets/ergp-circle-ar.svg" alt="دائرة ERGP، ممارسون معتمدون في الوسط ومنسقان يصلانهم بالمؤسسات" width="1060" height="520" loading="lazy">
+    <div>
+      <p class="lead">الشهادة هي المدخل. اجتياز ERGP يدخلكم إلى الدائرة، مجتمع خاص من الممارسين المعتمدين ينسقه المؤسسان، صغير اليوم وينمو مع كل شهادة تصدر.</p>
+      <ul>
+        <li><b>معرفة قبل السوق</b>، جلسة فصلية للدائرة حول حالة حقيقية واحدة، والوحدات الجديدة والقراءات التنظيمية قبل النشر.</li>
+        <li><b>أشخاص يمكنكم الاتصال بهم</b>، دليل أعضاء خاص متاح للأعضاء فقط، ووصول مباشر إلى الممتحنين.</li>
+        <li><b>عمل حقيقي</b>، نكلف أعضاء الدائرة بمهام العملاء، التدقيق واللوحات وأنظمة الاستمرارية. والأعضاء ذوو المكانة يصبحون ممتحنين.</li>
+      </ul>
+      <p class="cta">تقيم عليها إرجينا خيلكو، وينسق المهام إيفجيني تيلينكوف. <a href="about-ar.html#circle" style="color:#C4571C">المزيد عن الدائرة ←</a></p>
+    </div>
+  </div>
+</div></section>
+
+<section class="sec" id="team"><div class="wrap">
   <h2 id="director">قيادة البرنامج</h2>
   <div class="dir">
     <img src="erzhena.jpg" alt="إرجينا خيلكو">
