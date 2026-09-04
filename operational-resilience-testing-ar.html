@@ -1,0 +1,139 @@
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>اختبار المرونة التشغيلية، كيف تثبتون أنها تعمل</title>
+<meta name="description" content="كيف تختبرون المرونة التشغيلية، سيناريوهات قاسية لكنها معقولة، وما الذي يثبته كل نوع من الاختبارات، وكيف يقاس الاختبار مقابل حدود تحمل الأثر، وكيف يكتب التقرير ليقبله المنظم.">
+<link rel="canonical" href="https://risk-place.org/operational-resilience-testing-ar.html">
+<link rel="alternate" hreflang="ar" href="https://risk-place.org/operational-resilience-testing-ar.html">
+<link rel="alternate" hreflang="en" href="https://risk-place.org/operational-resilience-testing.html">
+<link rel="alternate" hreflang="x-default" href="https://risk-place.org/operational-resilience.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="اختبار المرونة التشغيلية، كيف تثبتون أنها تعمل">
+<meta property="og:description" content="كيف تختبرون المرونة التشغيلية، سيناريوهات قاسية لكنها معقولة، وما الذي يثبته كل نوع من الاختبارات، وكيف يقاس الاختبار مقابل حدود تحمل الأثر، وكيف يكتب التقرير ليقبله المنظم.">
+<meta property="og:url" content="https://risk-place.org/operational-resilience-testing-ar.html">
+<meta property="og:image" content="https://risk-place.org/assets/figures/capacity-appetite-tolerance-ar.png">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HNF79F1SSN"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HNF79F1SSN');</script><script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");ym(111613223,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});</script><noscript><div><img src="https://mc.yandex.ru/watch/111613223" style="position:absolute;left:-9999px;" alt=""/></div></noscript>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>*{margin:0;padding:0;box-sizing:border-box}body{-webkit-font-smoothing:antialiased;font-family:'IBM Plex Sans Arabic','Figtree',system-ui,sans-serif;background:#fff;color:#16181F;line-height:1.7}
+.tg{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.78);font-family:'IBM Plex Mono',monospace}
+.wrap{max-width:760px;margin:0 auto;padding:40px 24px 60px}
+.crumb{font-size:13px;color:#8A8578;margin-bottom:22px}.crumb a{color:#C4571C;text-decoration:none}
+.tagchip{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;color:#C4571C;border:1.5px solid #C4571C;border-radius:6px;padding:2px 10px;margin-bottom:14px}
+h1{font-size:34px;line-height:1.2;margin-bottom:6px}.alt{font-size:17px;color:#5B564A;margin-bottom:22px;font-style:italic}
+h2{font-size:24px;margin:28px 0 12px;color:#16181F}
+.def{background:#F1EEE8;border-right:4px solid #C4571C;border-radius:10px;padding:18px 20px;font-size:17.5px;margin-bottom:28px}
+[dir="ltr"] .def{border-right:none;border-left:4px solid #C4571C}
+p.b{font-size:16.5px;margin-bottom:18px}
+ul,ol{padding-inline-start:24px;margin-bottom:18px;font-size:16.5px}li{margin-bottom:8px}
+img{max-width:100%;height:auto;border:1px solid #E1DCD3;border-radius:10px;margin:8px 0}
+figure{margin:22px 0}figcaption{font-size:14.5px;color:#5B564A;margin-top:8px;text-align:center}
+figure.wide{width:auto;max-width:none;margin-inline:max(calc(50% - 530px),calc(50% - 50vw + 18px))}
+@media(max-width:700px){figure.wide{margin-inline:0}}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
+.rel{margin:30px 0;padding:16px 20px;background:#fff;border:1px solid #E1DCD3;border-radius:10px;font-size:15px}
+.rel b{display:block;margin-bottom:8px}.rel a{color:#C4571C;text-decoration:none;margin-inline-end:16px}
+.cta{background:#0D1117;color:#fff;border-radius:14px;padding:26px 26px;margin-top:36px}
+.cta p{font-size:15.5px;color:rgba(255,255,255,.85);margin-bottom:14px}
+.cta a{display:inline-block;background:#C4571C;color:#fff;text-decoration:none;padding:10px 22px;border-radius:8px;font-size:15px}
+.langsw{font-size:13px;margin-bottom:18px}.langsw a{color:#C4571C;text-decoration:none;border:1px solid #C4571C;border-radius:6px;padding:3px 12px}
+footer{border-top:1px solid #E1DCD3;margin-top:48px;padding-top:18px;font-size:13px;color:#8A8578}footer a{color:#8A8578}@media(max-width:1000px){}
+
+/* --- единый футер --- */
+.sfoot{background:#0D1117;color:rgba(255,255,255,.65);margin-top:auto}
+/* Подвал у нижнего края даже на короткой странице. Разбор — в
+   08 - Проверки/patch_footer_bottom.py                        */
+body{min-height:100dvh;display:flex;flex-direction:column}
+.sfoot .in{max-width:1080px;margin:0 auto;padding:54px 24px 30px}
+.sfoot .row1{display:flex;flex-wrap:wrap;gap:10px 26px;padding-bottom:16px;margin-bottom:16px;border-bottom:1px solid rgba(255,255,255,.14)}
+.sfoot .row1 a{color:rgba(255,255,255,.95);text-decoration:none;font-size:15px}
+.sfoot .row1 a:hover{color:#F0A868}
+.sfoot .row2{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline;font-size:13px}
+.sfoot .row2 a{color:rgba(255,255,255,.65);text-decoration:none}
+.sfoot .row2 a:hover{color:#F0A868}
+.sfoot .lg2{font-size:15px;color:#fff;font-weight:600;letter-spacing:-0.02em}
+.sfoot .lg2 b{color:#C4571C}
+
+/* Шапка внутренних страниц. Ровно та же, что на странице сертификации:
+   двух видов шапок на одном сайте быть не должно — посетитель считывает
+   смену шапки как переход на другой сайт. */
+.hdr{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.94);backdrop-filter:blur(14px);border-bottom:1px solid #EAE7E1}
+.hdr .in{max-width:1080px;margin:0 auto;padding-left:24px;padding-right:24px;height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;flex-direction:column;gap:1px;text-decoration:none}
+.logo .nm{font-size:26px;font-weight:600;letter-spacing:-0.02em;color:#16181F}
+.logo .nm b{color:#C4571C;font-weight:600}
+.logo .tg{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8A8478}
+.hnav{display:flex;gap:18px;align-items:center;margin-inline-start:auto;margin-inline-end:16px}
+.hnav a{font-size:14px;color:#3D4149;text-decoration:none}
+.hnav a:hover{color:#C4571C}
+.hdr .right{display:flex;align-items:center;gap:12px}
+.backlink{font-size:14.5px;color:#3D4149;text-decoration:none}
+.backlink:hover{color:#C4571C}
+.langsw a{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.08em;color:#3D4149;border:1px solid #DCD8D0;border-radius:999px;padding:7px 15px;display:inline-block;text-decoration:none}
+.langsw a:hover{border-color:#16181F;color:#16181F}
+@media(max-width:760px){.hnav{display:none}}
+/*progblock*/.progblock{margin:44px 0 0;border-top:1px solid #EAE7E1;padding-top:30px;font-family:'Figtree','IBM Plex Sans Arabic',system-ui,sans-serif}.progblock .pcard{display:block;background:#0D1117;color:#fff;border-radius:16px;padding:24px 26px;text-decoration:none}.progblock .pcard .k{display:block;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#F0A868;margin-bottom:8px}html[lang="ar"] .progblock .pcard .k{font-family:'IBM Plex Sans Arabic',sans-serif;letter-spacing:.04em}.progblock .pcard b{display:block;font-size:19px;font-weight:600;line-height:1.3;margin-bottom:8px;color:#fff}.progblock .pcard p{margin:0 0 12px;font-size:14.5px;line-height:1.6;color:rgba(255,255,255,.78)}.progblock .pcard .go{color:#F0A868;font-weight:600;font-size:15px}.progblock .nb{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}@media(max-width:700px){.progblock .nb{grid-template-columns:1fr}}.progblock .nb>div{border:1px solid #EAE7E1;border-radius:14px;padding:16px 18px;background:#F7F4EF}.progblock .nb .h{display:block;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#8A8478;margin-bottom:8px}html[lang="ar"] .progblock .nb .h{font-family:'IBM Plex Sans Arabic',sans-serif;letter-spacing:.04em}.progblock .nb a{display:block;color:#16181F;text-decoration:none;font-size:15px;line-height:1.45;margin:0 0 6px}.progblock .nb a:hover{color:#C4571C}
+.hnav a{white-space:nowrap}.logo .tg{white-space:nowrap}.faq{margin:10px 0 30px;max-width:76ch}.faq details{border-bottom:1px solid #E1DCD3;padding:4px 0}.faq summary{font-size:17px;font-weight:600;padding:14px 0;cursor:pointer;list-style-position:outside}.faq details p{padding:0 0 16px}</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "اختبار المرونة التشغيلية، كيف تثبتون أنها تعمل", "description": "كيف تختبرون المرونة التشغيلية، سيناريوهات قاسية لكنها معقولة، وما الذي يثبته كل نوع من الاختبارات، وكيف يقاس الاختبار مقابل حدود تحمل الأثر، وكيف يكتب التقرير ليقبله المنظم.", "inLanguage": "ar", "mainEntityOfPage": "https://risk-place.org/operational-resilience-testing-ar.html", "author": {"@type": "Organization", "name": "risk-place.org"}, "publisher": {"@type": "Organization", "name": "risk-place.org"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "كم مرة يجب اختبار المرونة التشغيلية", "acceptedAnswer": {"@type": "Answer", "text": "تواجه كل خدمة أعمال مهمة اختبارا جديا مرة في السنة على الأقل، وتعاد اختبار أي خدمة تغيرت اعتمادياتها جوهريا قبل ذلك. أما تمارين الطاولة السنوية لكل شيء دون اختبارات حقيقية فهو النمط الذي ينتقده المشرفون."}}, {"@type": "Question", "name": "ما الفرق بين اختبار المرونة واختبار التعافي من الكوارث", "acceptedAnswer": {"@type": "Answer", "text": "يثبت اختبار التعافي أن نظاما أو موقعا يمكن استعادته. ويثبت اختبار المرونة أن الخدمة التي يعتمد عليها العميل بقيت داخل حدود الضرر المحتمل. ونجاح الأول مع فشل الثاني نتيجة شائعة ومفيدة."}}, {"@type": "Question", "name": "ما الذي يجعل السيناريو قاسيا لكنه معقول", "acceptedAnswer": {"@type": "Answer", "text": "أن يكون قد وقع لمؤسسة مماثلة في مكان ما، وأن يهاجم تركزا حقيقيا في اعتمادياتكم. أما السيناريوهات التي تخترع لتكون قابلة للنجاة فتنتج أدلة مريحة عديمة الفائدة."}}, {"@type": "Question", "name": "من ينفذ الاختبار", "acceptedAnswer": {"@type": "Answer", "text": "ينفذه صاحب الخدمة، وتصممه وظيفة الاستمرارية أو المخاطر وتراقبه، ويراجع التدقيق الداخلي أدلته. والاختبار الذي ينفذه الفريق المختبر وحده نادرا ما يجد الفجوة المحرجة."}}, {"@type": "Question", "name": "هل نجاح الاختبار يعني أن الخدمة مرنة", "acceptedAnswer": {"@type": "Answer", "text": "يعني أن الخدمة صمدت في ذلك السيناريو في ذلك اليوم. والمرونة ادعاء عن المستقبل، لذا فقيمة الاختبار في الفجوات التي يكشفها بقدر قيمتها في النجاح."}}]}</script>
+</head><body>
+<header class="hdr"><div class="wrap in"><a class="logo" href="index.html"><span class="nm" translate="no">risk-<b>place</b>.org</span><span class="tg">استمرارية الأعمال والمرونة · دول الخليج</span></a><nav class="hnav"><a href="resilience-governance-certificate-ar.html">شهادة ERGP</a><a href="safe-programme-ar.html">برنامج SAFE</a><a href="products-ar.html">للمؤسسات</a><a href="library.html">المكتبة</a><a href="about-ar.html">من نحن</a><a href="index.html#contacts">اتصلوا بنا</a></nav><div class="right"><div class="langsw"><a href="operational-resilience-testing.html" lang="en" translate="no">English</a></div></div></div></header>
+<div class="wrap">
+<div class="crumb"><a href="index.html">الرئيسية</a> · <a href="library.html">المكتبة</a> · اختبار المرونة التشغيلية</div>
+<div class="tagchip">دليل المرونة التشغيلية</div>
+<h1>اختبار المرونة التشغيلية، كيف تثبتون أنها تعمل</h1>
+<div class="def">الاختبار هو اللحظة التي تتوقف فيها المرونة التشغيلية عن كونها وثيقة. يأخذ الاختبار خدمة أعمال مهمة، ويكسر اعتمادية تقوم عليها، ويقيس هل بقيت الخدمة داخل حد تحمل الأثر. وكل ما عداه من خطط وخرائط وسياسات يبقى فرضية حتى يؤكده اختبار.</div>
+
+<h2>ما الذي يجب أن يثبته الاختبار</h2>
+<p class="b">يجيب اختبار المرونة عن سؤال واحد بصيغة يقبلها المجلس والمنظم معا، <b>هل تبقى هذه الخدمة داخل حد تحملها لو وقع الاضطراب اليوم</b>. هذه الصياغة تستبعد معظم ما تسميه المؤسسات اختبارا. استعادة نسخة احتياطية بنجاح تثبت أن النسخة تعمل، ولا تقول شيئا عن استمرار تدفق المدفوعات إلى العملاء.</p>
+<p class="b">ثلاثة عناصر تجعل الاختبار ذا قيمة. أن يكون السيناريو <b>قاسيا لكنه معقول</b> لا مريحا. وأن يجري القياس مقابل <b>حد تحمل الأثر</b> لخدمة، لا مقابل أهداف التعافي الداخلية. وأن تكتب النتيجة <b>مع تسمية الفجوات</b>، بما فيها تلك التي لا يرغب أحد في رؤيتها في وثيقة.</p>
+
+<h2>خمسة أنواع من الاختبارات وما يستحقه كل منها</h2>
+<div class="tw"><table>
+<thead><tr><th>النوع</th><th>الجهد</th><th>ما يثبته</th><th>ما لا يثبته</th></tr></thead>
+<tbody>
+<tr><td>مراجعة الخطة</td><td>ساعات</td><td>أن الناس يعرفون بوجود الخطة ويجدون دورهم فيها</td><td>أن الخطة تعمل تحت الضغط</td></tr>
+<tr><td>تمرين طاولة</td><td>نصف يوم</td><td>القرارات والتصعيد ومن يتصل بمن وأين تصمت الخطة</td><td>أن الأنظمة والموردين يستجيبون فعلا</td></tr>
+<tr><td>اختبار مكون</td><td>أيام</td><td>أن اعتمادية واحدة تتعافى ضمن هدفها، مركز بيانات أو نظام أو موقع</td><td>أن الخدمة كاملة تصمد من طرف إلى طرف</td></tr>
+<tr><td>محاكاة على مستوى الخدمة</td><td>أيام إلى أسابيع</td><td>أن خدمة الأعمال المهمة تبقى داخل حد تحملها من طرف إلى طرف</td><td>الأعطال المركبة النادرة</td></tr>
+<tr><td>اختبار اضطراب حي</td><td>أسابيع من التحضير</td><td>الواقع، إذ تحول الخدمة فعليا إلى بديلها وتعمل هناك</td><td>لا شيء يذكر، وهو أقوى دليل متاح</td></tr>
+</tbody></table></div>
+<p class="b">تتوقف معظم البرامج عند تمارين الطاولة لأنها آمنة. وتمرين الطاولة بروفة جيدة للقرارات واختبار ضعيف للقدرة. وقد لاحظ المنظمون ذلك، فمصرف الإمارات المركزي وبنك إنجلترا والمشرفون الأوروبيون يتوقعون دليلا على اختبار الخدمات لا على انعقاد الاجتماعات.</p>
+
+<h2>كيف يبنى سيناريو قاس لكنه معقول</h2>
+<p class="b">النطاق ضيق عن قصد. سيناريو لين يمر دون أن يخبركم شيئا، وسيناريو متطرف يرفض الجميع نتيجته بوصفها غير واقعية. والقاعدة العملية، خذوا اضطرابا نجت منه مؤسسة مماثلة في مكان ما خلال خمس سنوات، وطبقوه على أكثر اعتمادياتكم تركزا.</p>
+<ol class="st">
+<li><b>ابدأوا من الخدمة لا من التهديد.</b> اختاروا خدمة أعمال مهمة وحد تحملها، فالسيناريو موجود لتحدي ذلك الحد.</li>
+<li><b>ابحثوا عن التركز.</b> أين تعتمد الخدمة على مزود واحد أو موقع واحد أو فريق واحد أو برنامج واحد، هناك يجب أن يقع السيناريو.</li>
+<li><b>أزيلوا الاعتمادية لا المبنى.</b> السيناريو الذي يدمر كل شيء لا يعلم شيئا، انزعوا عنصرا واحدا وأبقوا الباقي يعمل.</li>
+<li><b>اضبطوا الساعة.</b> الاختبار ضد الزمن، كم يلزم حتى تخرق الخدمة حد تحملها وهل خرقته.</li>
+<li><b>حددوا مسبقا شكل الفشل.</b> الاتفاق على معايير النجاح قبل الاختبار يمنع إعادة التفاوض على النتيجة بعده.</li>
+</ol>
+
+<h2>الاختبار في القطاع المصرفي، ما الذي يبحث عنه المشرفون</h2>
+<p class="b">المطلب صريح للمؤسسات المالية في الخليج. تتوقع <a href="cbuae-operational-resilience-ar.html" lang="ar">لائحة المرونة التشغيلية لمصرف الإمارات المركزي</a> خرائط لخدمات الأعمال المهمة وحدود تحمل متفقا عليها ودليلا على الاختبار مقابل سيناريوهات قاسية لكنها معقولة، مع مراجعة النتائج من المجلس. تنتهي الفترة الانتقالية في 16 سبتمبر 2026، والدليل المطلوب هو ملف الاختبار، السيناريو والقياس والفجوات وأصحابها ومواعيدها.</p>
+<p class="b">والملاحظة الشائعة في المراجعات ليست غياب الاختبار، بل أن الاختبار قاس تعافي الأنظمة بينما تسأل اللائحة عن استمرار الخدمات، والاثنان يعطيان استنتاجين مختلفين من الحادث نفسه.</p>
+
+<h2>كيف يكتب التقرير ليصمد</h2>
+<p class="b">تقرير الاختبار الذي يصمد أمام التدقيق يقع في صفحتين، الخدمة وحد تحملها، والسيناريو، وما جرى فعلا مقابل الساعة، وهل صمد الحد، والفجوات المكتشفة ولكل منها صاحب وموعد، وتاريخ الاختبار التالي. وما زاد عن ذلك يحمي أحدا في الغالب.</p>
+<p class="b">والجزء غير المريح هو تسمية الفجوات بصدق. الاختبار الذي لا يجد شيئا كان إما سهلا أكثر مما ينبغي أو كتب بلباقة أكثر مما ينبغي، وكلاهما يترك المؤسسة حيث كانت.</p>
+
+<h2>أسئلة متكررة</h2>
+<div class="faq">
+<details><summary>كم مرة يجب اختبار المرونة التشغيلية</summary><p>تواجه كل خدمة أعمال مهمة اختبارا جديا مرة في السنة على الأقل، وتعاد اختبار أي خدمة تغيرت اعتمادياتها جوهريا قبل ذلك. أما تمارين الطاولة السنوية لكل شيء دون اختبارات حقيقية فهو النمط الذي ينتقده المشرفون.</p></details>
+<details><summary>ما الفرق بين اختبار المرونة واختبار التعافي من الكوارث</summary><p>يثبت اختبار التعافي أن نظاما أو موقعا يمكن استعادته. ويثبت اختبار المرونة أن الخدمة التي يعتمد عليها العميل بقيت داخل حدود الضرر المحتمل. ونجاح الأول مع فشل الثاني نتيجة شائعة ومفيدة.</p></details>
+<details><summary>ما الذي يجعل السيناريو قاسيا لكنه معقول</summary><p>أن يكون قد وقع لمؤسسة مماثلة في مكان ما، وأن يهاجم تركزا حقيقيا في اعتمادياتكم. أما السيناريوهات التي تخترع لتكون قابلة للنجاة فتنتج أدلة مريحة عديمة الفائدة.</p></details>
+<details><summary>من ينفذ الاختبار</summary><p>ينفذه صاحب الخدمة، وتصممه وظيفة الاستمرارية أو المخاطر وتراقبه، ويراجع التدقيق الداخلي أدلته. والاختبار الذي ينفذه الفريق المختبر وحده نادرا ما يجد الفجوة المحرجة.</p></details>
+<details><summary>هل نجاح الاختبار يعني أن الخدمة مرنة</summary><p>يعني أن الخدمة صمدت في ذلك السيناريو في ذلك اليوم. والمرونة ادعاء عن المستقبل، لذا فقيمة الاختبار في الفجوات التي يكشفها بقدر قيمتها في النجاح.</p></details>
+</div>
+
+<section class="progblock">
+  <a class="pcard" href="resilience-governance-certificate-ar.html"><span class="k">تعلموا هذا كما ينبغي</span><b>ERGP — الشهادة التنفيذية في حوكمة مرونة المؤسسات</b><p>ست وحدات و94 فصلا وعمل ختامي يناقش أمام الممتحن وشهادة يمكن لأي أحد التحقق منها. أول شهادة في حوكمة المرونة متاحة بالعربية بالكامل، وبالإنجليزية أيضا. وحدة AE/SCNS/NCEMA 7000 في الداخل.</p><span class="go">اكتشفوا شهادة ERGP ←</span></a>
+  <div class="nb">
+    <div><span class="h">اقرأوا بعد ذلك</span><a href="what-is-bcm-ar.html">ما هي إدارة استمرارية الأعمال (BCM)؟ دليل عملي للقيادات</a><a href="operational-resilience-ar.html">المرونة التشغيلية واستمرارية الأعمال، ما الذي يتغير فعلا</a><a href="business-continuity-uae-ar.html">استمرارية الأعمال في الإمارات، من أين تبدأ</a></div>
+    <div><span class="h">مصطلح رئيسي</span><a href="terms/ar/bcm.html">إدارة استمرارية الأعمال (BCM)</a></div>
+  </div>
+</section>
+</div><footer class="sfoot"><div class="in"><div class="row1"><a href="resilience-governance-certificate-ar.html">شهادة ERGP</a><a href="safe-programme-ar.html">برنامج SAFE</a><a href="products-ar.html">للمؤسسات</a><a href="library.html">المكتبة</a><a href="about-ar.html">من نحن</a><a href="index.html#contacts">اتصلوا بنا</a></div><div class="row2"><span class="lg2" lang="en" translate="no">risk-<b>place</b>.org</span><span>© 2026 · استمرارية الأعمال والمرونة · دول الخليج</span><a href="about-ar.html">من نحن</a><a href="resilience-governance-certificate-ar.html#verify">التحقق من شهادة</a><a href="glossary.html">المسرد</a><a href="privacy.html">سياسة الخصوصية</a><a href="mailto:info@risk-place.org" lang="en">info@risk-place.org</a><a href="https://bcm.risk-place.ru/" hreflang="ru">مكتبة استمرارية الأعمال (بالروسية)</a></div></div></footer>
+</body></html>

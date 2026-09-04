@@ -324,16 +324,17 @@ body{min-height:100dvh;display:flex;flex-direction:column}
 </div></div></section>
 <section class="sec" id="inside"><div class="wrap">
 <h2>See inside the programme</h2>
-<p class="ssub">No stock photography of people in hard hats. This is the programme as it opens on a phone.</p>
+<p class="ssub">Live screenshots from the actual programme: five chapters of module one exactly as a worker sees them, with the diagrams and the wording as written.</p>
 <div class="shots">
+<div class="shots-lang"><span>🌐</span><span><b>These screenshots show the English edition.</b> The programme is fully available in Arabic as well — every chapter, every knowledge check and the final assessment. <a href="safe-programme-ar.html">View the Arabic page ←</a></span></div>
 <div class="frame">
-<img id="csImg" src="safe-shot-1.png" alt="SAFE programme screen">
+<img id="csImg" src="safe-shot-1.jpg" alt="SAFE programme, chapter 1 as the worker sees it" loading="lazy" width="1400" height="780">
 <button class="prev" onclick="csGo(-1)" aria-label="Previous">‹</button>
 <button class="next" onclick="csGo(1)" aria-label="Next">›</button>
 </div>
 <div class="capt"><span id="csNum"></span> <span id="csCap"></span></div>
 <div class="dots" id="csDots"></div>
-<p class="shots-note">Works on any phone through the browser. Nothing to install, no account for the worker to create.</p>
+<p class="shots-note">Click any screenshot to view it full size. Works on any phone through the browser. Nothing to install, no account for the worker to create.</p>
 </div></div></section>
 <section class="sec beige"><div class="wrap">
 <h2>How assessment works</h2>
@@ -438,13 +439,14 @@ body{min-height:100dvh;display:flex;flex-direction:column}
 <div class="it"><b>Can the content be adapted to our site?</b><p>Yes — your rules, your permit forms, your emergency numbers and your muster points can be built into the fifth module. That is a separate piece of work and is quoted on its own.</p></div>
 <div class="it"><b>What happens when the regulations change?</b><p>The seasonal figures and the regulatory references are reviewed annually. Existing clients get the updated file.</p></div>
 </div></div></section>
+<div class="slbox" id="csBox" onclick="csClose(event)"><button class="x" onclick="csClose(event)" aria-label="Close">×</button><img id="csBig" alt=""></div>
 <footer class="sfoot"><div class="in"><div class="row1"><a href="resilience-governance-certificate.html">ERGP certification</a><a href="safe-programme.html">SAFE programme</a><a href="products.html">For organisations</a><a href="library.html">Library</a><a href="about.html">About</a><a href="index.html#contacts">Contact</a></div><div class="row2"><span class="lg2" translate="no">risk-<b>place</b>.org</span><span>© 2026 · Business Continuity &amp; Resilience · GCC</span><a href="about.html">About us</a><a href="resilience-governance-certificate.html#verify">Verify a certificate</a><a href="glossary.html">Glossary</a><a href="privacy.html">Privacy policy</a><a href="mailto:info@risk-place.org">info@risk-place.org</a><a href="https://bcm.risk-place.ru/" hreflang="ru">BCM library (RU)</a></div></div></footer>
 <script>
 var csI=0;
-var csCaps=["Module screen — the chapter list and progress", "A chapter as it opens: text, diagram, key line", "The wrong way and the right way, side by side", "A knowledge check at the end of a module", "The named certificate on completion"];
+var csCaps=["Chapter 1 · Why safety matters to you personally: how an injury builds up, and where a person stops it", "Chapter 2 · Who is responsible for your safety: the two halves of one defence", "Chapter 3 · What you must be given before work starts", "Chapter 4 · What depends on you alone: five things nobody will do for you", "Chapter 5 · Your right to refuse unsafe work: the four steps that make refusal lawful"];
 var csN=csCaps.length;
 function csRender(){
-  document.getElementById("csImg").src="safe-shot-"+(csI+1)+".png";
+  document.getElementById("csImg").src="safe-shot-"+(csI+1)+".jpg";
   document.getElementById("csNum").textContent=(csI+1)+" / "+csN;
   document.getElementById("csCap").textContent=csCaps[csI];
   var d=document.getElementById("csDots");
@@ -458,6 +460,23 @@ function csRender(){
   }
 }
 function csGo(step){ csI=(csI+step+csN)%csN; csRender(); }
+
+/* Увеличение по клику: та же механика, что на странице сертификации,
+   чтобы поведение галерей на сайте не различалось. */
+document.getElementById("csImg").addEventListener("click",function(){
+  document.getElementById("csBig").src="safe-shot-"+(csI+1)+"-full.jpg";
+  document.getElementById("csBig").alt=csCaps[csI];
+  document.getElementById("csBox").classList.add("open");
+  document.body.style.overflow="hidden";
+  try{ym(111613223,'reachGoal','safe_shots_zoom');}catch(e){}
+});
+function csClose(e){
+  if(e && e.target && e.target.id==="csBig")return;
+  document.getElementById("csBox").classList.remove("open");
+  document.body.style.overflow="";
+}
+document.addEventListener("keydown",function(e){ if(e.key==="Escape") csClose(); });
+
 csRender();
 
 var lang="en";

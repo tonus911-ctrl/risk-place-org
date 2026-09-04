@@ -1,10 +1,10 @@
 <!DOCTYPE html><html lang="en" dir="ltr"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>RTO, RPO, MAO, MBCO: recovery objectives with examples</title>
-<meta name="description" content="The four recovery objectives — MAO, RTO, RPO and MBCO — explained with a worked numeric example of a payment service, a relation table and the mistakes that make the numbers fiction.">
+<title>RTO and RPO explained: recovery objectives that hold up</title>
+<meta name="description" content="RTO, RPO and MTPD in one place: what each number means, how they are set from the impact analysis, how they relate to each other, and the mistakes that make them useless in a real incident.">
 <link rel="canonical" href="https://risk-place.org/recovery-objectives.html">
-<meta property="og:title" content="RTO, RPO, MAO, MBCO: recovery objectives with examples">
-<meta property="og:description" content="The four recovery objectives — MAO, RTO, RPO and MBCO — explained with a worked numeric example of a payment service, a relation table and the mistakes that make the numbers fiction.">
+<meta property="og:title" content="RTO and RPO explained: recovery objectives that hold up">
+<meta property="og:description" content="RTO, RPO and MTPD in one place: what each number means, how they are set from the impact analysis, how they relate to each other, and the mistakes that make them useless in a real incident.">
 <meta property="og:image" content="https://risk-place.org/og-risk-place.png">
 <meta property="og:url" content="https://risk-place.org/recovery-objectives.html">
 <meta property="og:type" content="article">
@@ -84,7 +84,7 @@ body{min-height:100dvh;display:flex;flex-direction:column}
 <div class="crumb"><a href="index.html">Home</a> · <a href="glossary.html">Glossary</a> · Recovery objectives</div>
 <div class="tagchip">Business continuity guide</div>
 <h1>RTO, RPO, MAO, MBCO: recovery objectives on real examples</h1>
-<div class="def">Four numbers turn "recover quickly" into a requirement that can be engineered, budgeted and tested: MAO, RTO, RPO and MBCO. Set together, they define how much disruption your company can actually survive.</div>
+<div class="def"><b>RTO</b> is how fast a service must be restored, <b>RPO</b> is how much data you can afford to lose, and <b>MTPD</b> is the outer limit of tolerable downtime. The three numbers only work together: the RTO sits below the MTPD, and the RPO is set by how often the data changes.</div>
 <h2>Why four numbers, and who approves them</h2>
 <p class="b">"We will recover as fast as possible" is not a plan — it is a hope. Recovery becomes manageable when it is expressed as targets: how long the business survives an outage (MAO), how fast a process must be restored (RTO), how much data may be lost (RPO), and what minimum level of service must be kept during recovery (MBCO). Process owners propose the numbers based on the <a href="terms/en/bia.html">Business Impact Analysis (BIA)</a>, finance checks them against the cost of downtime, executive management approves them, and the board sees the aggregate picture. The approved numbers then flow into architecture decisions, supplier SLAs and test plans.</p>
 <h2>MAO: the boundary of the unacceptable</h2>
