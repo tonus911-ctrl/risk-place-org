@@ -226,12 +226,12 @@ body{min-height:100dvh;display:flex;flex-direction:column}
 .join ul{margin:10px 0 18px;padding-inline-start:20px;font-size:15.5px;line-height:1.6}
 .join li{margin-bottom:6px}
 .join .cta{font-size:14.5px;color:#8A8578}
-</style>
+/*hdr-mobile*/.hburger{display:none;margin-inline-start:6px;background:none;border:0;font-size:24px;line-height:1;cursor:pointer;color:#16181F;padding:4px 6px}.hdr .right{display:flex;align-items:center;gap:8px}@media(max-width:960px){.hburger{display:inline-block}.hnav,.nav{display:none;position:absolute;top:70px;left:0;right:0;background:#fff;border-bottom:1px solid #EAE7E1;flex-direction:column;align-items:flex-start;padding:14px 24px 16px;gap:12px;z-index:70;margin:0}.hnav.open,.nav.open{display:flex}.hnav a,.nav a.hm{display:block;font-size:16px;white-space:normal}.logo .tg{display:none}.hdr .in{gap:10px}}</style>
 </head>
 <body>
 <header class="hdr"><div class="wrap in">
   <a class="logo" href="index.html"><span class="nm" translate="no">risk-<b>place</b>.org</span><span class="tg">استمرارية الأعمال والمرونة · دول الخليج</span></a>
-  <nav class="hnav"><a href="resilience-governance-certificate-ar.html">شهادة ERGP</a><a href="safe-programme-ar.html">برنامج SAFE</a><a href="products-ar.html">للمؤسسات</a><a href="library.html">المكتبة</a><a href="about-ar.html">من نحن</a><a href="index.html#contacts">اتصلوا بنا</a></nav><div class="right"><a class="langbtn" href="resilience-governance-certificate.html" lang="en">English</a></div>
+  <nav class="hnav" id="hnav"><a href="resilience-governance-certificate-ar.html">شهادة ERGP</a><a href="safe-programme-ar.html">برنامج SAFE</a><a href="products-ar.html">للمؤسسات</a><a href="library.html">المكتبة</a><a href="about-ar.html">من نحن</a><a href="index.html#contacts">اتصلوا بنا</a></nav><div class="right"><a class="langbtn" href="resilience-governance-certificate.html" lang="en">English</a><button class="hburger" onclick="document.getElementById('hnav').classList.toggle('open')" aria-label="Menu">&#9776;</button></div>
 </div></header>
 
 <section class="hero"><div class="wrap in">
