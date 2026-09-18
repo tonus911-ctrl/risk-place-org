@@ -16,30 +16,88 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>*{margin:0;padding:0;box-sizing:border-box}body{-webkit-font-smoothing:antialiased;font-family:'Figtree','IBM Plex Sans Arabic',system-ui,sans-serif;background:#fff;color:#16181F;line-height:1.7}
-.tg{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.78);font-family:'IBM Plex Mono',monospace}
-.wrap{max-width:760px;margin:0 auto;padding:40px 24px 60px}
-.crumb{font-size:13px;color:#8A8578;margin-bottom:22px}.crumb a{color:#C4571C;text-decoration:none}
-.tagchip{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;color:#C4571C;border:1.5px solid #C4571C;border-radius:6px;padding:2px 10px;margin-bottom:14px}
-h1{font-size:34px;line-height:1.2;margin-bottom:6px}.alt{font-size:17px;color:#5B564A;margin-bottom:22px;font-style:italic}
-h2{font-size:24px;margin:28px 0 12px;color:#16181F}
-.def{background:#F1EEE8;border-right:4px solid #C4571C;border-radius:10px;padding:18px 20px;font-size:17.5px;margin-bottom:28px}
-[dir="ltr"] .def{border-right:none;border-left:4px solid #C4571C}
-p.b{font-size:16.5px;margin-bottom:18px}
-ul,ol{padding-inline-start:24px;margin-bottom:18px;font-size:16.5px}li{margin-bottom:8px}
-img{max-width:100%;height:auto;border:1px solid #E1DCD3;border-radius:10px;margin:8px 0}
-figure{margin:22px 0}figcaption{font-size:14.5px;color:#5B564A;margin-top:8px;text-align:center}
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#fff;-webkit-font-smoothing:antialiased;font-family:'Figtree','IBM Plex Sans Arabic',system-ui,sans-serif;color:#16181F;line-height:1.7}
+html[dir="rtl"] body{font-family:'IBM Plex Sans Arabic','Figtree',system-ui,sans-serif}
+a{color:#16181F;text-decoration:none}
+::selection{background:#FBE0CB}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+.hdr{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.94);backdrop-filter:blur(14px);border-bottom:1px solid #EAE7E1}
+.hdr .in{max-width:1080px;margin:0 auto;padding-left:24px;padding-right:24px;height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;flex-direction:column;gap:1px}
+.logo .nm{font-size:26px;font-weight:600;letter-spacing:-0.02em}
+.logo .nm b{color:#C4571C;font-weight:600}
+.logo .tg{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8A8478}
+.hdr .right{display:flex;align-items:center;gap:12px}
+.langsw{font-size:13px}
+.langsw a{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.08em;color:#3D4149;border:1px solid #DCD8D0;border-radius:999px;padding:7px 15px;display:inline-block}
+.langsw a:hover{border-color:#16181F;color:#16181F}
+.backlink{font-size:14.5px;color:#3D4149}
+.backlink:hover{color:#C4571C}
+.hero{background:#0D1117;color:#fff}
+.hero .in{padding-top:64px;padding-bottom:56px}
+.kicker{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#F0A868;margin:0 0 20px}
+.hero h1{font-size:42px;font-weight:300;line-height:1.14;letter-spacing:-0.025em;margin:0 0 16px;max-width:28ch;text-wrap:pretty}
+.hero .sub{font-size:18px;font-weight:300;color:rgba(255,255,255,0.75);margin:0;max-width:62ch;line-height:1.6}
+.btn{display:inline-block;font-size:16.5px;font-weight:600;background:#C4571C;color:#fff !important;padding:15px 32px;border-radius:999px}
+.btn:hover{background:#A03F12}
+.btn2{display:inline-block;font-size:16px;font-weight:400;color:#fff !important;border:1px solid rgba(255,255,255,0.34);padding:14px 28px;border-radius:999px;margin-inline-start:10px}
+.btn2:hover{border-color:#fff}
+.cta{background:#0D1117;color:#fff}
+.cta .in{padding-top:64px;padding-bottom:64px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:22px}
+.cta h2{font-size:30px;font-weight:300;letter-spacing:-0.02em;margin:0;max-width:30ch;text-wrap:pretty}
+.foot{background:#0D1117;color:rgba(255,255,255,0.46);border-top:1px solid rgba(255,255,255,0.12)}
+.foot .in{padding-top:22px;padding-bottom:22px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13.5px;font-weight:300}
+.foot a{color:rgba(255,255,255,0.6)}
+.foot a:hover{color:#fff}
+.stickycta{display:none;position:fixed;left:14px;right:14px;bottom:14px;z-index:70;background:#C4571C;color:#fff !important;text-align:center;font-size:16px;font-weight:600;padding:14px 18px;border-radius:999px;box-shadow:0 10px 28px rgba(13,17,23,0.28)}
+
+.art{padding:64px 0 20px}
+.art h2{font-size:30px;font-weight:300;line-height:1.18;letter-spacing:-0.02em;margin:52px 0 18px;text-wrap:pretty}
+.art h2:first-child{margin-top:0}
+.art p{font-size:16.5px;font-weight:300;line-height:1.72;color:#3D4149;margin:0 0 16px;max-width:76ch}
+.art ul{margin:0 0 18px;padding-inline-start:22px;max-width:76ch}
+.art li{font-size:16.5px;font-weight:300;line-height:1.66;color:#3D4149;margin-bottom:9px}
+.art li b,.art p b{font-weight:600;color:#16181F}
+.art figure{margin:30px 0;max-width:76ch}
+.art figure img{width:100%;height:auto;display:block;border:1px solid #EAE7E1;border-radius:12px}
+.art figcaption{font-size:14px;font-weight:300;color:#8A8478;margin-top:8px;line-height:1.55}
+.callout{background:#F7F4EF;border:1px solid #EAE7E1;border-inline-start:3px solid #C4571C;border-radius:12px;padding:20px 24px;margin:26px 0;max-width:76ch}
+.callout p{margin:0;font-size:16px}
+.tbl{width:100%;border-collapse:collapse;margin:24px 0 30px;font-size:15.5px}
+.tbl th{text-align:start;font-weight:600;padding:12px 14px;border-bottom:2px solid #16181F;font-size:14.5px}
+.tbl td{padding:12px 14px;border-bottom:1px solid #E1DCD3;font-weight:300;color:#3D4149;vertical-align:top;line-height:1.55}
+.tbl td:first-child{font-weight:500;color:#16181F}
+.faq{margin:10px 0 30px;max-width:76ch}
+.faq details{border-bottom:1px solid #E1DCD3;padding:4px 0}
+.faq summary{font-size:17px;font-weight:600;padding:14px 0;cursor:pointer;list-style-position:outside}
+.faq details p{padding:0 0 16px}
+.cluster{background:#F7F4EF;border-top:1px solid #EAE7E1;border-bottom:1px solid #EAE7E1;padding:56px 0}
+.cluster h2{font-size:26px;font-weight:300;margin:0 0 26px}
+.cluster .links{display:grid;grid-template-columns:1fr 1fr;gap:14px 40px}
+.cluster a{display:block;padding:14px 0;border-bottom:1px solid #E1DCD3;font-size:16px;font-weight:500}
+.cluster a:hover{color:#C4571C}
+.src{font-size:13.5px;color:#8A8478;margin-top:30px;max-width:76ch}
+.src a{color:#8A8478;text-decoration:underline}
+@media(max-width:760px){.art h2{font-size:24px}.cluster .links{grid-template-columns:1fr}.tbl{font-size:14px}.tbl th,.tbl td{padding:9px 8px}}
+
+@media(max-width:760px){.hero h1{font-size:30px}}
+@media(max-width:600px){
+  .wrap{padding-left:20px;padding-right:20px}
+  .logo .nm{font-size:22px}
+  .logo .tg{display:none}
+  .backlink{font-size:13px}
+  .hdr .in{height:auto;min-height:64px;padding-top:10px;padding-bottom:10px;flex-wrap:wrap;row-gap:8px;gap:12px}
+  .hero .in{padding-top:38px;padding-bottom:34px}
+  .hero h1{font-size:25px;line-height:1.2}
+  .art{padding:40px 0 10px}
+  .stickycta.on{display:block}
+}
+
 figure.wide{width:auto;max-width:none;margin-inline:max(calc(50% - 530px),calc(50% - 50vw + 18px))}
 @media(max-width:700px){figure.wide{margin-inline:0}}
-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}
-.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}th,td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start}th{background:#F1EEE8}
-.rel{margin:30px 0;padding:16px 20px;background:#fff;border:1px solid #E1DCD3;border-radius:10px;font-size:15px}
-.rel b{display:block;margin-bottom:8px}.rel a{color:#C4571C;text-decoration:none;margin-inline-end:16px}
-.cta{background:#0D1117;color:#fff;border-radius:14px;padding:26px 26px;margin-top:36px}
-.cta p{font-size:15.5px;color:rgba(255,255,255,.85);margin-bottom:14px}
-.cta a{display:inline-block;background:#C4571C;color:#fff;text-decoration:none;padding:10px 22px;border-radius:8px;font-size:15px}
-.langsw{font-size:13px;margin-bottom:18px}.langsw a{color:#C4571C;text-decoration:none;border:1px solid #C4571C;border-radius:6px;padding:3px 12px}
-@media(max-width:1000px){}
+.hnav{display:flex;gap:18px;align-items:center;margin-inline-start:auto;margin-inline-end:16px}.hnav a{font-size:14px;color:#3D4149}.hnav a:hover{color:#C4571C}@media(max-width:1000px){.hnav{display:none}}
 
 /* --- единый футер --- */
 .sfoot{background:#0D1117;color:rgba(255,255,255,.65);margin-top:auto}
@@ -55,33 +113,32 @@ body{min-height:100dvh;display:flex;flex-direction:column}
 .sfoot .row2 a:hover{color:#F0A868}
 .sfoot .lg2{font-size:15px;color:#fff;font-weight:600;letter-spacing:-0.02em}
 .sfoot .lg2 b{color:#C4571C}
-
-/* Шапка внутренних страниц. Ровно та же, что на странице сертификации:
-   двух видов шапок на одном сайте быть не должно — посетитель считывает
-   смену шапки как переход на другой сайт. */
-.hdr{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.94);backdrop-filter:blur(14px);border-bottom:1px solid #EAE7E1}
-.hdr .in{max-width:1080px;margin:0 auto;padding-left:24px;padding-right:24px;height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.logo{display:flex;flex-direction:column;gap:1px;text-decoration:none}
-.logo .nm{font-size:26px;font-weight:600;letter-spacing:-0.02em;color:#16181F}
-.logo .nm b{color:#C4571C;font-weight:600}
-.logo .tg{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8A8478}
-.hnav{display:flex;gap:18px;align-items:center;margin-inline-start:auto;margin-inline-end:16px}
-.hnav a{font-size:14px;color:#3D4149;text-decoration:none}
-.hnav a:hover{color:#C4571C}
-.hdr .right{display:flex;align-items:center;gap:12px}
-.backlink{font-size:14.5px;color:#3D4149;text-decoration:none}
-.backlink:hover{color:#C4571C}
-.langsw a{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.08em;color:#3D4149;border:1px solid #DCD8D0;border-radius:999px;padding:7px 15px;display:inline-block;text-decoration:none}
-.langsw a:hover{border-color:#16181F;color:#16181F}
-
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}
 /*progblock*/.progblock{margin:44px 0 0;border-top:1px solid #EAE7E1;padding-top:30px;font-family:'Figtree','IBM Plex Sans Arabic',system-ui,sans-serif}.progblock .pcard{display:block;background:#0D1117;color:#fff;border-radius:16px;padding:24px 26px;text-decoration:none}.progblock .pcard .k{display:block;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#F0A868;margin-bottom:8px}html[lang="ar"] .progblock .pcard .k{font-family:'IBM Plex Sans Arabic',sans-serif;letter-spacing:.04em}.progblock .pcard b{display:block;font-size:19px;font-weight:600;line-height:1.3;margin-bottom:8px;color:#fff}.progblock .pcard p{margin:0 0 12px;font-size:14.5px;line-height:1.6;color:rgba(255,255,255,.78)}.progblock .pcard .go{color:#F0A868;font-weight:600;font-size:15px}.progblock .nb{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}@media(max-width:700px){.progblock .nb{grid-template-columns:1fr}}.progblock .nb>div{border:1px solid #EAE7E1;border-radius:14px;padding:16px 18px;background:#F7F4EF}.progblock .nb .h{display:block;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#8A8478;margin-bottom:8px}html[lang="ar"] .progblock .nb .h{font-family:'IBM Plex Sans Arabic',sans-serif;letter-spacing:.04em}.progblock .nb a{display:block;color:#16181F;text-decoration:none;font-size:15px;line-height:1.45;margin:0 0 6px}.progblock .nb a:hover{color:#C4571C}
-.hnav a{white-space:nowrap}.logo .tg{white-space:nowrap}/*hdr-mobile*/.hburger{display:none;margin-inline-start:6px;background:none;border:0;font-size:24px;line-height:1;cursor:pointer;color:#16181F;padding:4px 6px}.hdr .right{display:flex;align-items:center;gap:8px}@media(max-width:960px){.hburger{display:inline-block}.hnav,.nav{display:none;position:absolute;top:70px;left:0;right:0;background:#fff;border-bottom:1px solid #EAE7E1;flex-direction:column;align-items:flex-start;padding:14px 24px 16px;gap:12px;z-index:70;margin:0}.hnav.open,.nav.open{display:flex}.hnav a,.nav a.hm{display:block;font-size:16px;white-space:normal}.logo .tg{display:none}.hdr .in{gap:10px}}</style></head><body>
+.hnav a{white-space:nowrap}.logo .tg{white-space:nowrap}/*hdr-mobile*/.hburger{display:none;margin-inline-start:6px;background:none;border:0;font-size:24px;line-height:1;cursor:pointer;color:#16181F;padding:4px 6px}.hdr .right{display:flex;align-items:center;gap:8px}@media(max-width:960px){.hburger{display:inline-block}.hnav,.nav{display:none;position:absolute;top:70px;left:0;right:0;background:#fff;border-bottom:1px solid #EAE7E1;flex-direction:column;align-items:flex-start;padding:14px 24px 16px;gap:12px;z-index:70;margin:0}.hnav.open,.nav.open{display:flex}.hnav a,.nav a.hm{display:block;font-size:16px;white-space:normal}.logo .tg{display:none}.hdr .in{gap:10px}}
+/* additions 18.09.2026 for pages converted from design B */
+.art ol{margin:0 0 18px;padding-inline-start:22px;max-width:76ch}
+.art h3{font-size:21px;font-weight:500;line-height:1.3;margin:30px 0 10px}
+.art table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}
+.art th,.art td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start;vertical-align:top;font-weight:300;color:#3D4149;line-height:1.55}
+.art th{background:#F1EEE8;font-weight:600;color:#16181F}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}
+/* page */
+.rel{margin:30px 0;padding:16px 20px;background:#fff;border:1px solid #E1DCD3;border-radius:10px;font-size:15px}
+.rel b{display:block;margin-bottom:8px}
+.rel a{color:#C4571C;text-decoration:none;margin-inline-end:16px}
+.ctacard{background:#0D1117;color:#fff;border-radius:14px;padding:26px 26px;margin-top:36px}
+.ctacard p{font-size:15.5px;color:rgba(255,255,255,.85);margin-bottom:14px}
+.ctacard a{display:inline-block;background:#C4571C;color:#fff;text-decoration:none;padding:10px 22px;border-radius:8px;font-size:15px}
+</style></head><body>
 <header class="hdr"><div class="wrap in"><a class="logo" href="index.html"><span class="nm" translate="no">risk-<b>place</b>.org</span><span class="tg">Business Continuity &amp; Resilience · GCC</span></a><nav class="hnav" id="hnav"><a href="resilience-governance-certificate.html">ERGP certification</a><a href="safe-programme.html">SAFE programme</a><a href="products.html">For organisations</a><a href="library.html">Library</a><a href="about.html">About</a><a href="index.html#contacts">Contact</a></nav><div class="right"><div class="langsw"><a href="operational-resilience-ar.html" lang="ar" translate="no">العربية ←</a></div><button class="hburger" onclick="document.getElementById('hnav').classList.toggle('open')" aria-label="Menu">&#9776;</button></div></div></header>
-<div class="wrap">
-<div class="crumb"><a href="index.html">Home</a> · <a href="glossary.html">Glossary</a> · Operational resilience</div>
-<div class="tagchip">Operational resilience guide</div>
-<h1>Operational resilience vs business continuity: what actually changes</h1>
-<div class="def">Operational resilience is an outcome-based discipline: the organisation's ability to keep its important business services within impact tolerance during disruption. The test is not whether each recovery plan worked — it is whether the service the customer depends on stayed inside the boundary of tolerable harm.</div>
+<section class="hero"><div class="wrap in">
+  <p class="kicker" data-ui="kicker">Operational resilience guide</p>
+  <h1 data-ui="h1">Operational resilience vs business continuity: what actually changes</h1>
+  <p class="sub" data-ui="sub">Operational resilience is an outcome-based discipline: the organisation's ability to keep its important business services within impact tolerance during disruption. The test is not whether each recovery plan worked — it is whether the service the customer depends on stayed inside the boundary of tolerable harm.</p>
+</div></section>
+
+<article class="art"><div class="wrap" id="art">
 <h2>An outcome, not a thicker plan</h2>
 <p class="b">Classic business continuity management grew up around processes and resources: identify the critical processes, analyse the impact of losing them, write recovery plans, exercise the plans. Operational resilience starts from the opposite end. It assumes disruption will happen — the data centre will fail, a key vendor will be breached, the payment switch will drop — and asks one question: will the <a href="terms/en/important-business-service.html">important business services</a> stay within tolerable harm while it happens? The two views can disagree. A process can be down while the service is still delivered through a workaround; equally, every process can recover "on time" while customers, counterparties and the regulator absorb damage nobody agreed to accept. So the unit of management shifts from the process inside the organisation to the service as the customer and the market experience it — end to end, across departments, systems and third parties.</p>
 <h2>Where the term comes from, and why it is now law</h2>
@@ -114,5 +171,5 @@ body{min-height:100dvh;display:flex;flex-direction:column}
     <div><span class="h">Key term</span><a href="terms/en/bcm.html">Business Continuity Management (BCM)</a></div>
   </div>
 </section>
-</div><footer class="sfoot"><div class="in"><div class="row1"><a href="resilience-governance-certificate.html">ERGP certification</a><a href="safe-programme.html">SAFE programme</a><a href="products.html">For organisations</a><a href="library.html">Library</a><a href="about.html">About</a><a href="index.html#contacts">Contact</a></div><div class="row2"><span class="lg2" translate="no">risk-<b>place</b>.org</span><span>© 2026 · Business Continuity &amp; Resilience · GCC</span><a href="about.html">About us</a><a href="resilience-governance-certificate.html#verify">Verify a certificate</a><a href="glossary.html">Glossary</a><a href="privacy.html">Privacy policy</a><a href="mailto:info@risk-place.org">info@risk-place.org</a><a href="https://bcm.risk-place.ru/" hreflang="ru">BCM library (RU)</a></div></div></footer>
+</div></article><footer class="sfoot"><div class="in"><div class="row1"><a href="resilience-governance-certificate.html">ERGP certification</a><a href="safe-programme.html">SAFE programme</a><a href="products.html">For organisations</a><a href="library.html">Library</a><a href="about.html">About</a><a href="index.html#contacts">Contact</a></div><div class="row2"><span class="lg2" translate="no">risk-<b>place</b>.org</span><span>© 2026 · Business Continuity &amp; Resilience · GCC</span><a href="about.html">About us</a><a href="resilience-governance-certificate.html#verify">Verify a certificate</a><a href="glossary.html">Glossary</a><a href="privacy.html">Privacy policy</a><a href="mailto:info@risk-place.org">info@risk-place.org</a><a href="https://bcm.risk-place.ru/" hreflang="ru">BCM library (RU)</a></div></div></footer>
 </body></html>

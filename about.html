@@ -17,32 +17,89 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>*{margin:0;padding:0;box-sizing:border-box}body{-webkit-font-smoothing:antialiased;font-family:'Figtree','IBM Plex Sans Arabic',system-ui,sans-serif;background:#fff;color:#16181F;line-height:1.55}
-.tg{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.78);font-family:'IBM Plex Mono',monospace}
-@media(max-width:1000px){}
-.langsw{font-size:13px}.langsw a{color:#C4571C;text-decoration:none;border:1px solid #C4571C;border-radius:6px;padding:3px 12px}
-.wrap{max-width:1080px;margin:0 auto;padding:40px 24px 60px}
-.crumb{font-size:13px;color:#8A8578;margin-bottom:22px}.crumb a{color:#C4571C;text-decoration:none}
-.tagchip{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;color:#C4571C;border:1.5px solid #C4571C;border-radius:6px;padding:2px 10px;margin-bottom:14px}
-h1{font-size:34px;line-height:1.25;margin-bottom:10px}
-.def{background:#F1EEE8;border-inline-start:4px solid #C4571C;border-radius:10px;padding:18px 20px;font-size:17.5px;margin:22px 0 28px}
-h2{font-size:23px;line-height:1.3;margin:32px 0 12px}
-p.b{font-size:16.5px;margin-bottom:16px}
-ul.st{margin:0 0 18px;padding-inline-start:22px;font-size:16px}ul.st li{margin-bottom:8px}
-.pgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0 8px}
-@media(max-width:700px){.pgrid{grid-template-columns:1fr}}
-.pc{background:#fff;border:1px solid #E1DCD3;border-radius:14px;padding:22px;display:flex;flex-direction:column;gap:8px}
-.pc.hero2{grid-column:1/-1;background:#0D1117;color:#fff;border-color:#0D1117}
-.pc.hero2 p{color:rgba(255,255,255,.8)}
-.pc .k{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#8A8578}
-.pc.hero2 .k{color:#F0A868}
-.pc .k.free{color:#1E7A46;font-weight:bold}
-.pc h3{font-size:19px;line-height:1.3}
-.pc p{font-size:14.5px;color:#3A372F;flex-grow:1}
-.pc .go{color:#C4571C;text-decoration:none;font-weight:bold;font-size:15px}
-.pc .go.btn2{display:inline-block;background:#C4571C;color:#fff;border-radius:8px;padding:10px 20px;align-self:flex-start}
-.pc .soon{display:inline-block;background:#F1EEE8;color:#7A5E17;border-radius:6px;padding:2px 10px;font-size:12px;font-family:'IBM Plex Mono',monospace;letter-spacing:.08em}
-.small{font-size:13px;color:#8A8578}
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#fff;-webkit-font-smoothing:antialiased;font-family:'Figtree','IBM Plex Sans Arabic',system-ui,sans-serif;color:#16181F;line-height:1.7}
+html[dir="rtl"] body{font-family:'IBM Plex Sans Arabic','Figtree',system-ui,sans-serif}
+a{color:#16181F;text-decoration:none}
+::selection{background:#FBE0CB}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.hdr{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.94);backdrop-filter:blur(14px);border-bottom:1px solid #EAE7E1}
+.hdr .in{max-width:1080px;margin:0 auto;padding-left:24px;padding-right:24px;height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;flex-direction:column;gap:1px}
+.logo .nm{font-size:26px;font-weight:600;letter-spacing:-0.02em}
+.logo .nm b{color:#C4571C;font-weight:600}
+.logo .tg{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8A8478}
+.hdr .right{display:flex;align-items:center;gap:12px}
+.langsw{font-size:13px}
+.langsw a{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.08em;color:#3D4149;border:1px solid #DCD8D0;border-radius:999px;padding:7px 15px;display:inline-block}
+.langsw a:hover{border-color:#16181F;color:#16181F}
+.backlink{font-size:14.5px;color:#3D4149}
+.backlink:hover{color:#C4571C}
+.hero{background:#0D1117;color:#fff}
+.hero .in{padding-top:64px;padding-bottom:56px}
+.kicker{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#F0A868;margin:0 0 20px}
+.hero h1{font-size:42px;font-weight:300;line-height:1.14;letter-spacing:-0.025em;margin:0 0 16px;max-width:28ch;text-wrap:pretty}
+.hero .sub{font-size:18px;font-weight:300;color:rgba(255,255,255,0.75);margin:0;max-width:62ch;line-height:1.6}
+.btn{display:inline-block;font-size:16.5px;font-weight:600;background:#C4571C;color:#fff !important;padding:15px 32px;border-radius:999px}
+.btn:hover{background:#A03F12}
+.btn2{display:inline-block;font-size:16px;font-weight:400;color:#fff !important;border:1px solid rgba(255,255,255,0.34);padding:14px 28px;border-radius:999px;margin-inline-start:10px}
+.btn2:hover{border-color:#fff}
+.cta{background:#0D1117;color:#fff}
+.cta .in{padding-top:64px;padding-bottom:64px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:22px}
+.cta h2{font-size:30px;font-weight:300;letter-spacing:-0.02em;margin:0;max-width:30ch;text-wrap:pretty}
+.foot{background:#0D1117;color:rgba(255,255,255,0.46);border-top:1px solid rgba(255,255,255,0.12)}
+.foot .in{padding-top:22px;padding-bottom:22px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13.5px;font-weight:300}
+.foot a{color:rgba(255,255,255,0.6)}
+.foot a:hover{color:#fff}
+.stickycta{display:none;position:fixed;left:14px;right:14px;bottom:14px;z-index:70;background:#C4571C;color:#fff !important;text-align:center;font-size:16px;font-weight:600;padding:14px 18px;border-radius:999px;box-shadow:0 10px 28px rgba(13,17,23,0.28)}
+
+.art{padding:64px 0 20px}
+.art h2{font-size:30px;font-weight:300;line-height:1.18;letter-spacing:-0.02em;margin:52px 0 18px;text-wrap:pretty}
+.art h2:first-child{margin-top:0}
+.art p{font-size:16.5px;font-weight:300;line-height:1.72;color:#3D4149;margin:0 0 16px;max-width:76ch}
+.art ul{margin:0 0 18px;padding-inline-start:22px;max-width:76ch}
+.art li{font-size:16.5px;font-weight:300;line-height:1.66;color:#3D4149;margin-bottom:9px}
+.art li b,.art p b{font-weight:600;color:#16181F}
+.art figure{margin:30px 0;max-width:76ch}
+.art figure img{width:100%;height:auto;display:block;border:1px solid #EAE7E1;border-radius:12px}
+.art figcaption{font-size:14px;font-weight:300;color:#8A8478;margin-top:8px;line-height:1.55}
+.callout{background:#F7F4EF;border:1px solid #EAE7E1;border-inline-start:3px solid #C4571C;border-radius:12px;padding:20px 24px;margin:26px 0;max-width:76ch}
+.callout p{margin:0;font-size:16px}
+.tbl{width:100%;border-collapse:collapse;margin:24px 0 30px;font-size:15.5px}
+.tbl th{text-align:start;font-weight:600;padding:12px 14px;border-bottom:2px solid #16181F;font-size:14.5px}
+.tbl td{padding:12px 14px;border-bottom:1px solid #E1DCD3;font-weight:300;color:#3D4149;vertical-align:top;line-height:1.55}
+.tbl td:first-child{font-weight:500;color:#16181F}
+.faq{margin:10px 0 30px;max-width:76ch}
+.faq details{border-bottom:1px solid #E1DCD3;padding:4px 0}
+.faq summary{font-size:17px;font-weight:600;padding:14px 0;cursor:pointer;list-style-position:outside}
+.faq details p{padding:0 0 16px}
+.cluster{background:#F7F4EF;border-top:1px solid #EAE7E1;border-bottom:1px solid #EAE7E1;padding:56px 0}
+.cluster h2{font-size:26px;font-weight:300;margin:0 0 26px}
+.cluster .links{display:grid;grid-template-columns:1fr 1fr;gap:14px 40px}
+.cluster a{display:block;padding:14px 0;border-bottom:1px solid #E1DCD3;font-size:16px;font-weight:500}
+.cluster a:hover{color:#C4571C}
+.src{font-size:13.5px;color:#8A8478;margin-top:30px;max-width:76ch}
+.src a{color:#8A8478;text-decoration:underline}
+@media(max-width:760px){.art h2{font-size:24px}.cluster .links{grid-template-columns:1fr}.tbl{font-size:14px}.tbl th,.tbl td{padding:9px 8px}}
+
+@media(max-width:760px){.hero h1{font-size:30px}}
+@media(max-width:600px){
+  .wrap{padding-left:20px;padding-right:20px}
+  .logo .nm{font-size:22px}
+  .logo .tg{display:none}
+  .backlink{font-size:13px}
+  .hdr .in{height:auto;min-height:64px;padding-top:10px;padding-bottom:10px;flex-wrap:wrap;row-gap:8px;gap:12px}
+  .hero .in{padding-top:38px;padding-bottom:34px}
+  .hero h1{font-size:25px;line-height:1.2}
+  .art{padding:40px 0 10px}
+  .stickycta.on{display:block}
+}
+
+figure.wide{width:auto;max-width:none;margin-inline:max(calc(50% - 530px),calc(50% - 50vw + 18px))}
+@media(max-width:700px){figure.wide{margin-inline:0}}
+.hnav{display:flex;gap:18px;align-items:center;margin-inline-start:auto;margin-inline-end:16px}.hnav a{font-size:14px;color:#3D4149}.hnav a:hover{color:#C4571C}@media(max-width:1000px){.hnav{display:none}}
+
 /* --- единый футер --- */
 .sfoot{background:#0D1117;color:rgba(255,255,255,.65);margin-top:auto}
 /* Подвал у нижнего края даже на короткой странице. Разбор — в
@@ -57,59 +114,92 @@ body{min-height:100dvh;display:flex;flex-direction:column}
 .sfoot .row2 a:hover{color:#F0A868}
 .sfoot .lg2{font-size:15px;color:#fff;font-weight:600;letter-spacing:-0.02em}
 .sfoot .lg2 b{color:#C4571C}
-
-/* Шапка внутренних страниц. Ровно та же, что на странице сертификации:
-   двух видов шапок на одном сайте быть не должно — посетитель считывает
-   смену шапки как переход на другой сайт. */
-.hdr{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.94);backdrop-filter:blur(14px);border-bottom:1px solid #EAE7E1}
-.hdr .in{max-width:1080px;margin:0 auto;padding-left:24px;padding-right:24px;height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.logo{display:flex;flex-direction:column;gap:1px;text-decoration:none}
-.logo .nm{font-size:26px;font-weight:600;letter-spacing:-0.02em;color:#16181F}
-.logo .nm b{color:#C4571C;font-weight:600}
-.logo .tg{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8A8478}
-.hnav{display:flex;gap:18px;align-items:center;margin-inline-start:auto;margin-inline-end:16px}
-.hnav a{font-size:14px;color:#3D4149;text-decoration:none}
-.hnav a:hover{color:#C4571C}
-.hdr .right{display:flex;align-items:center;gap:12px}
-.backlink{font-size:14.5px;color:#3D4149;text-decoration:none}
-.backlink:hover{color:#C4571C}
-.langsw a{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.08em;color:#3D4149;border:1px solid #DCD8D0;border-radius:999px;padding:7px 15px;display:inline-block;text-decoration:none}
-.langsw a:hover{border-color:#16181F;color:#16181F}
-
-.team{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:22px 0 8px}@media(max-width:700px){.team{grid-template-columns:1fr}}.tcard{background:#fff;border:1px solid #E1DCD3;border-radius:16px;padding:24px 24px 20px}.tcard img{width:112px;height:112px;border-radius:50%;object-fit:cover;display:block;margin-bottom:14px;border:3px solid #F1EEE8}.tcard .en{font-size:20px;font-weight:600;line-height:1.3}.tcard .er{font-size:13.5px;color:#8A8578;margin:4px 0 12px}.tcard ul{margin:0;padding-inline-start:20px;font-size:14.5px;line-height:1.55;color:#3A372F}.tcard li{margin-bottom:6px}.tcard .lk{display:inline-block;margin-top:12px;font-size:14px;color:#C4571C;text-decoration:none;font-weight:600}.vals{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin:18px 0 8px}@media(max-width:760px){.vals{grid-template-columns:1fr}}.val{background:#F7F4EF;border:1px solid #E1DCD3;border-radius:14px;padding:18px 20px}.val b{display:block;font-size:16px;margin-bottom:6px}.val p{font-size:14.5px;line-height:1.55;color:#3A372F}
-.hnav a{white-space:nowrap}.logo .tg{white-space:nowrap}
-/* --- The ERGP Circle --- */
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}
+/*progblock*/.progblock{margin:44px 0 0;border-top:1px solid #EAE7E1;padding-top:30px;font-family:'Figtree','IBM Plex Sans Arabic',system-ui,sans-serif}.progblock .pcard{display:block;background:#0D1117;color:#fff;border-radius:16px;padding:24px 26px;text-decoration:none}.progblock .pcard .k{display:block;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#F0A868;margin-bottom:8px}html[lang="ar"] .progblock .pcard .k{font-family:'IBM Plex Sans Arabic',sans-serif;letter-spacing:.04em}.progblock .pcard b{display:block;font-size:19px;font-weight:600;line-height:1.3;margin-bottom:8px;color:#fff}.progblock .pcard p{margin:0 0 12px;font-size:14.5px;line-height:1.6;color:rgba(255,255,255,.78)}.progblock .pcard .go{color:#F0A868;font-weight:600;font-size:15px}.progblock .nb{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}@media(max-width:700px){.progblock .nb{grid-template-columns:1fr}}.progblock .nb>div{border:1px solid #EAE7E1;border-radius:14px;padding:16px 18px;background:#F7F4EF}.progblock .nb .h{display:block;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#8A8478;margin-bottom:8px}html[lang="ar"] .progblock .nb .h{font-family:'IBM Plex Sans Arabic',sans-serif;letter-spacing:.04em}.progblock .nb a{display:block;color:#16181F;text-decoration:none;font-size:15px;line-height:1.45;margin:0 0 6px}.progblock .nb a:hover{color:#C4571C}
+.hnav a{white-space:nowrap}.logo .tg{white-space:nowrap}/*hdr-mobile*/.hburger{display:none;margin-inline-start:6px;background:none;border:0;font-size:24px;line-height:1;cursor:pointer;color:#16181F;padding:4px 6px}.hdr .right{display:flex;align-items:center;gap:8px}@media(max-width:960px){.hburger{display:inline-block}.hnav,.nav{display:none;position:absolute;top:70px;left:0;right:0;background:#fff;border-bottom:1px solid #EAE7E1;flex-direction:column;align-items:flex-start;padding:14px 24px 16px;gap:12px;z-index:70;margin:0}.hnav.open,.nav.open{display:flex}.hnav a,.nav a.hm{display:block;font-size:16px;white-space:normal}.logo .tg{display:none}.hdr .in{gap:10px}}
+/* additions 18.09.2026 for pages converted from design B */
+.art ol{margin:0 0 18px;padding-inline-start:22px;max-width:76ch}
+.art h3{font-size:21px;font-weight:500;line-height:1.3;margin:30px 0 10px}
+.art table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}
+.art th,.art td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start;vertical-align:top;font-weight:300;color:#3D4149;line-height:1.55}
+.art th{background:#F1EEE8;font-weight:600;color:#16181F}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}
+/* page */
+ul.st{margin:0 0 18px;padding-inline-start:22px;font-size:16px}
+ul.st li{margin-bottom:8px}
+.pgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0 8px}
+@media(max-width:700px){
+  .pgrid{grid-template-columns:1fr}
+}
+.pc{background:#fff;border:1px solid #E1DCD3;border-radius:14px;padding:22px;display:flex;flex-direction:column;gap:8px}
+.pc.hero2{grid-column:1/-1;background:#0D1117;color:#fff;border-color:#0D1117}
+.pc.hero2 p{color:rgba(255,255,255,.8)}
+.pc .k{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#8A8578}
+.pc.hero2 .k{color:#F0A868}
+.pc .k.free{color:#1E7A46;font-weight:bold}
+.pc h3{font-size:19px;line-height:1.3}
+.pc p{font-size:14.5px;color:#3A372F;flex-grow:1}
+.pc .go{color:#C4571C;text-decoration:none;font-weight:bold;font-size:15px}
+.pc .go.btn2{display:inline-block;background:#C4571C;color:#fff;border-radius:8px;padding:10px 20px;align-self:flex-start}
+.pc .soon{display:inline-block;background:#F1EEE8;color:#7A5E17;border-radius:6px;padding:2px 10px;font-size:12px;font-family:'IBM Plex Mono',monospace;letter-spacing:.08em}
+.small{font-size:13px;color:#8A8578}
+.team{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:22px 0 8px}
+@media(max-width:700px){
+  .team{grid-template-columns:1fr}
+}
+.tcard{background:#fff;border:1px solid #E1DCD3;border-radius:16px;padding:24px 24px 20px}
+.tcard img{width:112px;height:112px;border-radius:50%;object-fit:cover;display:block;margin-bottom:14px;border:3px solid #F1EEE8}
+.tcard .en{font-size:20px;font-weight:600;line-height:1.3}
+.tcard .er{font-size:13.5px;color:#8A8578;margin:4px 0 12px}
+.tcard ul{margin:0;padding-inline-start:20px;font-size:14.5px;line-height:1.55;color:#3A372F}
+.tcard li{margin-bottom:6px}
+.tcard .lk{display:inline-block;margin-top:12px;font-size:14px;color:#C4571C;text-decoration:none;font-weight:600}
+.vals{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin:18px 0 8px}
+@media(max-width:760px){
+  .vals{grid-template-columns:1fr}
+}
+.val{background:#F7F4EF;border:1px solid #E1DCD3;border-radius:14px;padding:18px 20px}
+.val b{display:block;font-size:16px;margin-bottom:6px}
+.val p{font-size:14.5px;line-height:1.55;color:#3A372F}
 .circ{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:center;margin:18px 0 8px}
-@media(max-width:900px){.circ{grid-template-columns:1fr}}
+@media(max-width:900px){
+  .circ{grid-template-columns:1fr}
+}
 .circ img{width:100%;height:auto;display:block}
 .circ .lead{font-size:17.5px;line-height:1.5;margin-bottom:14px}
 .three{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin:18px 0 8px}
-@media(max-width:760px){.three{grid-template-columns:1fr}}
+@media(max-width:760px){
+  .three{grid-template-columns:1fr}
+}
 .three .t{background:#fff;border:1px solid #E1DCD3;border-radius:14px;padding:18px 20px}
 .three .t .k{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#C4571C;display:block;margin-bottom:6px}
 .three .t b{display:block;font-size:16.5px;margin-bottom:8px}
 .three .t ul{margin:0;padding-inline-start:18px;font-size:14.5px;line-height:1.55;color:#3A372F}
 .three .t li{margin-bottom:5px}
 .steps{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:18px 0 6px}
-@media(max-width:760px){.steps{grid-template-columns:1fr}}
+@media(max-width:760px){
+  .steps{grid-template-columns:1fr}
+}
 .steps .s{background:#0D1117;color:#fff;border-radius:12px;padding:16px 18px;font-size:14.5px;line-height:1.5}
 .steps .s .n{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;color:#F0A868;display:block;margin-bottom:6px}
 .orgbox{background:#F7F4EF;border:1px solid #E1DCD3;border-radius:16px;padding:24px 26px;margin:18px 0 8px;display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center}
-@media(max-width:760px){.orgbox{grid-template-columns:1fr}}
+@media(max-width:760px){
+  .orgbox{grid-template-columns:1fr}
+}
 .orgbox p{font-size:15.5px;line-height:1.55;color:#3A372F}
 .orgbox .btn{display:inline-block;background:#C4571C;color:#fff;text-decoration:none;font-weight:600;border-radius:999px;padding:12px 24px;font-size:15px;white-space:nowrap}
 .tcard .cr{margin-top:12px;padding-top:10px;border-top:1px dashed #E1DCD3;font-size:14px;color:#3A372F}
 .tcard .cr b{color:#C4571C}
-/*hdr-mobile*/.hburger{display:none;margin-inline-start:6px;background:none;border:0;font-size:24px;line-height:1;cursor:pointer;color:#16181F;padding:4px 6px}.hdr .right{display:flex;align-items:center;gap:8px}@media(max-width:960px){.hburger{display:inline-block}.hnav,.nav{display:none;position:absolute;top:70px;left:0;right:0;background:#fff;border-bottom:1px solid #EAE7E1;flex-direction:column;align-items:flex-start;padding:14px 24px 16px;gap:12px;z-index:70;margin:0}.hnav.open,.nav.open{display:flex}.hnav a,.nav a.hm{display:block;font-size:16px;white-space:normal}.logo .tg{display:none}.hdr .in{gap:10px}}</style></head>
+</style></head>
 <body>
 <header class="hdr"><div class="wrap in"><a class="logo" href="index.html"><span class="nm" translate="no">risk-<b>place</b>.org</span><span class="tg">Business Continuity &amp; Resilience · GCC</span></a><nav class="hnav" id="hnav"><a href="resilience-governance-certificate.html">ERGP certification</a><a href="safe-programme.html">SAFE programme</a><a href="products.html">For organisations</a><a href="library.html">Library</a><a href="about.html">About</a><a href="index.html#contacts">Contact</a></nav><div class="right"><div class="langsw"><a href="about-ar.html" lang="ar" translate="no">العربية ←</a></div><button class="hburger" onclick="document.getElementById('hnav').classList.toggle('open')" aria-label="Menu">&#9776;</button></div></div></header>
-<div class="wrap">
-<div class="crumb"><a href="index.html">Home</a> · About us</div>
-<div class="tagchip">ABOUT US</div>
+<section class="hero"><div class="wrap in">
+  <p class="kicker" data-ui="kicker">ABOUT US</p>
+  <h1 data-ui="h1">The people behind ERGP — and the Circle it opens</h1>
+  <p class="sub" data-ui="sub">Two practitioners with twenty years each in the risk and continuity functions of large organisations, and the community they coordinate: the ERGP Circle, where certified practitioners of resilience meet, learn ahead of the market and get called upon for real engagements.</p>
+</div></section>
 
-<h1>The people behind ERGP — and the Circle it opens</h1>
-<div class="def">Two practitioners with twenty years each in the risk and continuity functions of large organisations, and the community they coordinate: the ERGP Circle, where certified practitioners of resilience meet, learn ahead of the market and get called upon for real engagements.</div>
-
+<article class="art"><div class="wrap" id="art">
 <h2>Founders and coordinators of the Circle</h2>
 <p class="b">One partner runs the continuity practice and brings the engagements. The other runs the programmes and keeps the Circle alive. Between them, industry and banking — the two sides of resilience.</p>
 <div class="team">
@@ -182,7 +272,6 @@ body{min-height:100dvh;display:flex;flex-direction:column}
 
 <h2>Talk to us</h2>
 <p class="b">Write to <a href="mailto:info@risk-place.org" style="color:#C4571C">info@risk-place.org</a> or use the <a href="index.html#contacts" style="color:#C4571C">contact form</a> — we reply by email, usually the same day.</p>
-
-</div>
+</div></article>
 <footer class="sfoot"><div class="in"><div class="row1"><a href="resilience-governance-certificate.html">ERGP certification</a><a href="safe-programme.html">SAFE programme</a><a href="products.html">For organisations</a><a href="library.html">Library</a><a href="about.html">About</a><a href="index.html#contacts">Contact</a></div><div class="row2"><span class="lg2" translate="no">risk-<b>place</b>.org</span><span>© 2026 · Business Continuity &amp; Resilience · GCC</span><a href="about.html">About us</a><a href="resilience-governance-certificate.html#verify">Verify a certificate</a><a href="glossary.html">Glossary</a><a href="privacy.html">Privacy policy</a><a href="mailto:info@risk-place.org">info@risk-place.org</a><a href="https://bcm.risk-place.ru/" hreflang="ru">BCM library (RU)</a></div></div></footer>
 </body></html>
