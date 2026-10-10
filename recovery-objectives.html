@@ -143,7 +143,7 @@ body{min-height:100dvh;display:flex;flex-direction:column}
 
 <article class="art"><div class="wrap" id="art">
 <h2>Why four numbers, and who approves them</h2>
-<p class="b">"We will recover as fast as possible" is not a plan — it is a hope. Recovery becomes manageable when it is expressed as targets: how long the business survives an outage (MTPD, or MAO), how fast a process must be restored (RTO), how much data may be lost (RPO), and what minimum level of service must be kept during recovery (MBCO). Process owners propose the numbers based on the <a href="terms/en/bia.html">Business Impact Analysis (BIA)</a>, finance checks them against the cost of downtime, executive management approves them, and the board sees the aggregate picture. The approved numbers then flow into architecture decisions, supplier SLAs and test plans.</p>
+<p class="b">“We will recover as fast as possible” is not a plan — it is a hope. Recovery becomes manageable when it is expressed as targets: how long the business survives an outage (MTPD, or MAO), how fast a process must be restored (RTO), how much data may be lost (RPO), and what minimum level of service must be kept during recovery (MBCO). Process owners propose the numbers based on the <a href="terms/en/bia.html">Business Impact Analysis (BIA)</a>, finance checks them against the cost of downtime, executive management approves them, and the board sees the aggregate picture. The approved numbers then flow into architecture decisions, supplier SLAs and test plans.</p>
 <h2>MAO: the boundary of the unacceptable</h2>
 <p class="b">The <a href="terms/en/mao.html">Maximum Acceptable Outage</a> is the longest a process can stand still before the damage becomes unacceptable: contract penalties, regulatory breach, patient safety, irreversible loss of clients. ISO 22301 calls the same boundary <a href="terms/en/mtpd.html">MTPD</a> — the Maximum Tolerable Period of Disruption. Beyond this line you are no longer managing an incident; you are managing the survival of the business. The MAO comes from business analysis, not from IT: it reflects what customers, contracts and regulators will tolerate.</p>
 <figure class="wide"><img src="assets/figures/mao-boundary-en.png" alt="Timeline diagram showing the Maximum Acceptable Outage (MAO) as the boundary where disruption damage becomes unacceptable" loading="lazy"><figcaption>The MAO marks the point where disruption damage becomes unacceptable.</figcaption></figure>
@@ -166,7 +166,7 @@ body{min-height:100dvh;display:flex;flex-direction:column}
 </tbody></table></div>
 <h2>Common mistakes</h2>
 <ul>
-<li>Round numbers from the ceiling — an RTO chosen without the cost of downtime is either ruinously expensive or uselessly slow.</li>
+<li>Arbitrary round numbers — an RTO chosen without the cost of downtime is either ruinously expensive or uselessly slow.</li>
 <li>RTO equal to MAO, leaving zero margin for the slippage every real recovery has.</li>
 <li>An RPO promised on paper while backup restores are never tested.</li>
 <li>No MBCO, so every recovery aims at 100% at once.</li>

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 1056" width="1060" height="1056" direction="rtl" role="img" aria-label="خمس مراحل من التدريب على المعيار 7000 إلى كفاءة مثبتة، الأساس في المعيار ثم التطبيق على عملياتك ثم مخرجات العمل ثم التقييم ثم الكفاءة المثبتة">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 1056" width="1060" height="1056" direction="rtl" role="img" aria-label="خمس مراحل من التدريب على المعيار 7000 إلى كفاءة مثبتة، الأساس في المعيار ثم التطبيق على عملياتكم ثم مخرجات العمل ثم التقييم ثم الكفاءة المثبتة">
 <rect x="0" y="0" width="1060" height="1056" fill="#FDFBF7"/>
 
 <text x="530" y="48" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="28" fill="#16181F">من التدريب إلى كفاءة مثبتة</text>
@@ -17,8 +17,8 @@
 <rect x="8" y="246" width="1044" height="108" rx="10" fill="#F1EEE8" stroke="#E1DCD3" stroke-width="1.5"/>
 <circle cx="1000" cy="300" r="25" fill="#C4571C"/>
 <text x="1000" y="308" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">2</text>
-<text x="586" y="290" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">التطبيق على عملياتك أنت</text>
-<text x="586" y="324" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">تحليل أثر لأنشطتك أنت واعتماديات وموردين وكلفة يوم توقف</text>
+<text x="586" y="290" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">التطبيق على عملياتكم أنتم</text>
+<text x="586" y="324" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">تحليل أثر لأنشطتكم أنتم واعتماديات وموردين وكلفة يوم توقف</text>
 <text x="116" y="324" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#A34D19">من 8 إلى 10 ساعات</text>
 <polygon points="993,360 1007,360 1000,372" fill="#C4571C"/>
 
@@ -36,7 +36,7 @@
 <circle cx="1000" cy="568" r="25" fill="#C4571C"/>
 <text x="1000" y="576" text-anchor="middle" font-family="Consolas, monospace" font-size="21" fill="#FFFFFF">4</text>
 <text x="586" y="558" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="23" fill="#16181F">تقييم بعتبة نجاح</text>
-<text x="586" y="592" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">اختبار يمكن الرسوب فيه ومناقشة عمل من إعدادك لا تسليم ملف فقط</text>
+<text x="586" y="592" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="17" fill="#3F3B33">اختبار يمكن الرسوب فيه ومناقشة عمل من إعدادكم لا تسليم ملف فقط</text>
 <text x="116" y="592" text-anchor="middle" font-family="'Noto Naskh Arabic','Segoe UI',Tahoma,serif" font-size="15" fill="#A34D19">ساعتان إلى ثلاث</text>
 <polygon points="993,628 1007,628 1000,640" fill="#C4571C"/>
 
