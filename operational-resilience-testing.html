@@ -167,6 +167,21 @@ body{min-height:100dvh;display:flex;flex-direction:column}
 <li><b>Decide in advance what failure looks like.</b> Agreeing the pass criteria before the test prevents the result from being renegotiated afterwards.</li>
 </ol>
 
+<h2>How to run the test, step by step</h2>
+<p class="b">The scenario is only half of a test. The other half is the discipline of running it so that the result counts as evidence. Nine steps, in order:</p>
+<ol class="st">
+<li><b>Name the service and its tolerance.</b> One important business service, its maximum tolerable disruption and the point at which harm to customers starts.</li>
+<li><b>Agree scope and pass criteria in writing.</b> Which dependencies are in, who takes part, what result counts as a pass. The service owner signs before the test.</li>
+<li><b>Prepare the measurement.</b> Decide what is timed: detection, the decision to invoke, the switch to the alternative, the service running again. Appoint someone whose only job is the log.</li>
+<li><b>Brief participants on roles and keep the scenario closed.</b> People should know how the exercise runs without learning the details of the disruption in advance. In a tabletop the facilitator holds the injects.</li>
+<li><b>Start the clock at the disruption.</b> Record every decision with its time and who made it. Add one or two complications during the test: an absent deputy, a supplier that does not answer.</li>
+<li><b>Measure against the tolerance.</b> Did the service stay inside its boundary, and with how much margin? Record the real times, including the parts that went badly.</li>
+<li><b>Debrief the same day.</b> What worked, what did not, where the plan was silent. Memory fades within a week.</li>
+<li><b>Write it up and assign the gaps.</b> Every gap gets an owner and a date; the format is described below.</li>
+<li><b>Retest and report.</b> Schedule the retest of the gaps and take the result to the board or its risk committee.</li>
+</ol>
+<p class="b">For a tabletop exercise, the facilitator's side of these steps is covered in the <a href="tabletop-exercise-guide.html">tabletop exercise guide</a>.</p>
+
 <h2>Testing in banking: what supervisors look for</h2>
 <p class="b">For financial institutions in the Gulf the requirement is explicit. The <a href="cbuae-operational-resilience.html">CBUAE operational resilience regulation</a> expects mapped important business services, agreed impact tolerances and evidence of testing against severe but plausible scenarios, with results reviewed by the board. The transition period ended on 16 September 2026, and the evidence supervisors ask for is the test file: scenario, measurement, gaps, owners, dates.</p>
 <p class="b">The common finding in reviews is not the absence of testing. It is that the testing measured recovery of systems while the regulation asks about continuity of services. The two produce different conclusions from the same incident.</p>
