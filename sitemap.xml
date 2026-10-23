@@ -36,7 +36,7 @@
   <url><loc>https://risk-place.org/ransomware-first-hours.html</loc><lastmod>2026-10-10</lastmod><priority>0.6</priority></url>
   <url><loc>https://risk-place.org/ransomware-pay-or-recover.html</loc><lastmod>2026-10-10</lastmod><priority>0.6</priority></url>
   <url><loc>https://risk-place.org/resilience-governance-certificate.html</loc><lastmod>2026-10-19</lastmod><priority>0.9</priority></url>
-  <url><loc>https://risk-place.org/rto-rpo-explained.html</loc><lastmod>2026-10-10</lastmod><priority>0.6</priority></url>
+  <url><loc>https://risk-place.org/rto-rpo-explained.html</loc><lastmod>2026-10-23</lastmod><priority>0.6</priority></url>
   <url><loc>https://risk-place.org/tabletop-exercise-guide.html</loc><lastmod>2026-10-10</lastmod><priority>0.6</priority></url>
   <url><loc>https://risk-place.org/terms/en/assumption.html</loc><lastmod>2026-09-02</lastmod><priority>0.7</priority></url>
   <url><loc>https://risk-place.org/terms/ar/assumption.html</loc><lastmod>2026-09-02</lastmod><priority>0.7</priority></url>
@@ -156,8 +156,8 @@
   <url><loc>https://risk-place.org/terms/ar/regulator.html</loc><lastmod>2026-09-02</lastmod><priority>0.7</priority></url>
   <url><loc>https://risk-place.org/terms/en/regulatory-requirement.html</loc><lastmod>2026-09-02</lastmod><priority>0.7</priority></url>
   <url><loc>https://risk-place.org/terms/ar/regulatory-requirement.html</loc><lastmod>2026-09-02</lastmod><priority>0.7</priority></url>
-  <url><loc>https://risk-place.org/terms/en/compliance.html</loc><lastmod>2026-09-02</lastmod><priority>0.7</priority></url>
-  <url><loc>https://risk-place.org/terms/ar/compliance.html</loc><lastmod>2026-09-02</lastmod><priority>0.7</priority></url>
+  <url><loc>https://risk-place.org/terms/en/compliance.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://risk-place.org/terms/ar/compliance.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://risk-place.org/terms/en/supervisor.html</loc><lastmod>2026-09-02</lastmod><priority>0.7</priority></url>
   <url><loc>https://risk-place.org/terms/ar/supervisor.html</loc><lastmod>2026-09-02</lastmod><priority>0.7</priority></url>
   <url><loc>https://risk-place.org/terms/en/mandatory-regime.html</loc><lastmod>2026-09-02</lastmod><priority>0.7</priority></url>
@@ -211,10 +211,10 @@
 <url><loc>https://risk-place.org/resilience-maturity-metrics.html</loc><lastmod>2026-09-02</lastmod><priority>0.8</priority></url>
 <url><loc>https://risk-place.org/risk-map-in-an-hour-ar.html</loc><lastmod>2026-09-02</lastmod><priority>0.8</priority></url>
 <url><loc>https://risk-place.org/risk-map-in-an-hour.html</loc><lastmod>2026-09-02</lastmod><priority>0.8</priority></url>
-<url><loc>https://risk-place.org/rto-rpo-explained-ar.html</loc><lastmod>2026-09-02</lastmod><priority>0.8</priority></url>
+<url><loc>https://risk-place.org/rto-rpo-explained-ar.html</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
 <url><loc>https://risk-place.org/tabletop-exercise-guide-ar.html</loc><lastmod>2026-10-10</lastmod><priority>0.8</priority></url>
-<url><loc>https://risk-place.org/three-lines-of-defence-ar.html</loc><lastmod>2026-09-02</lastmod><priority>0.8</priority></url>
-<url><loc>https://risk-place.org/three-lines-of-defence.html</loc><lastmod>2026-09-02</lastmod><priority>0.8</priority></url>
+<url><loc>https://risk-place.org/three-lines-of-defence-ar.html</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+<url><loc>https://risk-place.org/three-lines-of-defence.html</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
   <url><loc>https://risk-place.org/handbook.html</loc><lastmod>2026-10-10</lastmod><priority>0.9</priority></url>
   <url><loc>https://risk-place.org/handbook-ar.html</loc><lastmod>2026-10-10</lastmod><priority>0.9</priority></url>
   <url><loc>https://risk-place.org/start.html</loc><lastmod>2026-09-02</lastmod><priority>0.9</priority></url>
@@ -233,8 +233,8 @@
   <url><loc>https://risk-place.org/safe-sample-ar.html</loc><lastmod>2026-09-02</lastmod><priority>0.8</priority></url>
   <url><loc>https://risk-place.org/verify/</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://risk-place.org/verify/index-ar.html</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://risk-place.org/operational-resilience-testing.html</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
-  <url><loc>https://risk-place.org/operational-resilience-testing-ar.html</loc><lastmod>2026-10-16</lastmod><priority>0.7</priority></url>
+  <url><loc>https://risk-place.org/operational-resilience-testing.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://risk-place.org/operational-resilience-testing-ar.html</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://risk-place.org/training.html</loc><lastmod>2026-10-19</lastmod><priority>0.6</priority></url>
   <url><loc>https://risk-place.org/bcp-plan-assessment.html</loc><lastmod>2026-10-10</lastmod><priority>0.6</priority></url>
   <url><loc>https://risk-place.org/bcp-plan-assessment-ar.html</loc><lastmod>2026-10-10</lastmod><priority>0.6</priority></url>
