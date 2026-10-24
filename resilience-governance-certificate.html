@@ -262,6 +262,34 @@ body{min-height:100dvh;display:flex;flex-direction:column}
 @media(max-width:980px){.split{grid-template-columns:1fr;gap:16px}}
 @media(max-width:600px){.buy .sum{font-size:26px}}
 .links{display:grid;grid-template-columns:1fr 1fr;gap:10px 40px;list-style:none;margin:0;padding:0}.links li{font-size:15.5px;font-weight:300;padding:10px 0;border-bottom:1px solid #E1DCD3}.links a{color:#C4571C}@media(max-width:860px){.links{grid-template-columns:1fr}}
+/*LEADFORM 24.10.2026: единая форма запроса (leadform.py), одинаковая на всех страницах .org*/
+.fbox.lform{container-type:inline-size;container-name:lform;background:#F7F4EF;border:1px solid #EAE7E1;border-radius:16px;padding:clamp(20px,3vw,32px);margin:6px 0 0;max-width:none;text-align:start}
+.lform .flabel{display:block;font-size:13px;font-weight:600;line-height:1.4;letter-spacing:0;color:#3D4149;margin:0 0 6px}
+.lform .fld{display:block;width:100%;box-sizing:border-box;min-width:0;margin:0;background:#fff;border:1px solid #DCD8D0;border-radius:10px;padding:13px 15px;font-size:15.5px;line-height:1.4;color:#16181F;font-family:inherit}
+.lform .fld::placeholder{color:#8A8478;opacity:1}
+.lform .fld:focus{outline:none;border-color:#C4571C;box-shadow:0 0 0 3px rgba(196,87,28,.14)}
+.lform select.fld{-webkit-appearance:none;appearance:none;cursor:pointer;padding-inline-end:42px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%235E636D' stroke-width='1.6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center}
+html[dir="rtl"] .lform select.fld{background-position:left 16px center}
+.lform .fgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:12px 0 0}
+.lform .fend{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px 28px;margin:18px 0 0}
+.lform .consent{display:flex;align-items:flex-start;gap:10px;flex:1 1 300px;max-width:64ch;margin:0;font-size:14px;font-weight:400;line-height:1.5;color:#3D4149;cursor:pointer}
+.lform .consent input{width:16px;height:16px;margin:3px 0 0;padding:0;border:0;flex-shrink:0;accent-color:#C4571C}
+.lform .consent a{color:#C4571C;text-decoration:underline}
+.lform .btn{display:inline-block;margin:0;background:#C4571C;color:#fff;border:0;border-radius:999px;padding:14px 30px;font-size:16px;font-weight:600;line-height:1.3;font-family:inherit;white-space:nowrap;cursor:pointer}
+.lform .btn:hover{background:#A03F12}
+.lform .btn[disabled]{opacity:.6;cursor:default}
+.lform .fmsg{min-height:22px;max-width:none;margin:14px 0 0;font-size:14.5px;line-height:1.5;color:#5E636D}
+.lform .fmsg.ok{color:#1D7A46}
+.lform .fmsg.err{color:#B4231F}
+.lform .fsmall{max-width:none;margin:6px 0 0;font-size:13.5px;line-height:1.5;color:#8A8478}
+.lform .fsmall a{color:#3D4149;text-decoration:underline}
+.lfsec{margin:44px 0 8px;scroll-margin-top:84px}
+.lfsec>h2{margin-top:0}
+@media(max-width:900px){.lform .fgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.lform .fgrid{grid-template-columns:1fr}.lform .fend{flex-direction:column;align-items:stretch}.lform .btn{width:100%;text-align:center}}
+@container lform (max-width:759px){.lform .fgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@container lform (max-width:479px){.lform .fgrid{grid-template-columns:1fr}}
+/*/LEADFORM*/
 </style>
 </head>
 <body>
@@ -279,7 +307,7 @@ body{min-height:100dvh;display:flex;flex-direction:column}
   <div class="facts"><div class="fact"><b>94 chapters</b><span>in six modules, at your own pace, no deadlines</span></div><div class="fact"><b>6 working documents</b><span>built on your own organisation, from policy to board report</span></div><div class="fact"><b>Capstone review</b><span>a board-level report, reviewed live with the examiner</span></div><div class="fact"><b>Public register</b><span>a numbered certificate with QR verification</span></div></div>
   <div class="buy">
     <div class="sum">USD 990 · AED 3,650<span>per person · excl. VAT · certification included</span></div>
-    <div class="btns"><a class="btn" href="#demo" data-want="Join the programme">Join the programme</a><a class="btn2" href="#demo" data-want="Zoom walkthrough, 30 minutes">See the course on Zoom</a></div>
+    <div class="btns"><a class="btn" href="#demo" data-topic="join">Join the programme</a><a class="btn2" href="#demo" data-topic="zoom">See the course on Zoom</a></div>
   </div>
 </div></section>
 
@@ -493,7 +521,7 @@ document.addEventListener('keydown',function(e){
     <div class="pr"><span>In-house cohort, up to 12 executives</span><b>USD 7,900 · AED 29,000</b></div>
   </div>
   <p class="prnote">The individual price is per person, in either language. The certification exam, the capstone review and admission to the ERGP Circle are included. Prices exclude VAT.</p>
-  <div class="prbtns"><a class="btn" href="#demo" data-want="Join the programme">Join the programme</a><a class="btn2" href="#demo" data-want="Zoom walkthrough, 30 minutes">See the course on Zoom</a></div>
+  <div class="prbtns"><a class="btn" href="#demo" data-topic="join">Join the programme</a><a class="btn2" href="#demo" data-topic="zoom">See the course on Zoom</a></div>
 </div></section>
 
 <section class="sec beige" id="faq"><div class="wrap">
@@ -505,23 +533,23 @@ document.addEventListener('keydown',function(e){
 <section class="sec" id="demo"><div class="wrap">
   <h2>Join ERGP or see the course on Zoom</h2>
   <p class="ssub">Leave your details and choose what you need. We reply within one working day with the next step or a Zoom link.</p>
-  <form class="frm" onsubmit="return sendDemo(event)">
-    <div class="want" role="radiogroup" aria-label="What do you need?"><label><input type="radio" name="want" value="Join the programme" checked><span>Join the programme</span></label><label><input type="radio" name="want" value="Zoom walkthrough, 30 minutes"><span>See the course on Zoom, 30 minutes</span></label><label><input type="radio" name="want" value="Team cohort"><span>A cohort for our team</span></label></div>
-    <input id="d-name" placeholder="Name" required>
-    <input id="d-email" type="email" placeholder="Work email" required>
-    <input id="d-org" placeholder="Organisation" required>
-    <input id="d-role" placeholder="Role" required>
-    <textarea id="d-msg" rows="3" placeholder="Message (optional)"></textarea>
-    <label class="consent"><input type="checkbox" required><span>I agree to the processing of my personal data under the <a href='privacy.html' target='_blank' rel='noopener'>privacy policy</a>.</span></label>
-    <button type="submit" class="btn">Send the request</button>
-    <p class="sentnote" id="demonote"></p>
-    <p class="fsmall">Prefer email? Write to <a href="mailto:info@risk-place.org">info@risk-place.org</a>.</p>
-  </form>
+  <div class="fbox lform">
+    <label class="flabel" for="lfTopic">Topic</label>
+    <select class="fld" id="lfTopic"><option value="discuss" selected>Discuss your task</option><option value="call">Request a call</option><option value="zoom">Zoom meeting</option><option value="estimate">Cost estimate</option><option value="demo">Product demo</option><option value="corporate">Corporate access and invoice</option><option value="join">Join the programme</option></select>
+    <div class="fgrid">
+      <input type="text" class="fld" id="lfName" placeholder="Name" autocomplete="name">
+      <input type="text" class="fld" id="lfOrg" placeholder="Company" autocomplete="organization">
+      <input type="email" class="fld" id="lfEmail" placeholder="Work email" autocomplete="email">
+      <input type="tel" class="fld" id="lfPhone" placeholder="Phone (optional)" autocomplete="tel">
+    </div>
+    <div class="fend">
+      <label class="consent"><input type="checkbox" id="lfConsent"><span>I agree to the processing of my personal data under the <a href="privacy.html" target="_blank" rel="noopener">privacy policy</a></span></label>
+      <button type="button" class="btn" id="lfSubmit">Send request</button>
+    </div>
+    <p class="fmsg" id="lfOut" aria-live="polite"></p>
+    <p class="fsmall">Prefer to write? <a href="mailto:info@risk-place.org">info@risk-place.org</a></p>
+  </div>
 </div></section>
-<script>
-function ergpWant(){var w=document.querySelector('input[name="want"]:checked');return w?"["+w.value+"] ":"";}
-document.querySelectorAll("a[data-want]").forEach(function(a){a.addEventListener("click",function(){var r=document.querySelector('input[name="want"][value="'+a.getAttribute("data-want")+'"]');if(r)r.checked=true;});});
-</script>
 
 <section class="sec beige"><div class="wrap">
   <h2>Read more</h2>
@@ -565,7 +593,7 @@ document.querySelectorAll("a[data-want]").forEach(function(a){a.addEventListener
 </div>
 
 <script>
-var C={"en": {"dOk": "Thank you. We reply within one working day with the next step or a Zoom link.", "dErr": "Could not send. Please email info@risk-place.org", "tOk": "Thank you. We will reply personally — and with respect for your time.", "tErr": "Could not send. Please email info@risk-place.org"}};
+var C={"en": {"tOk": "Thank you. We will reply personally — and with respect for your time.", "tErr": "Could not send. Please email info@risk-place.org"}};
 var lang="en";
 /* Проверка сертификата по номеру. Спрашиваем реестр risk-place.org и
    отвечаем словами. Разбор в 08 - Проверки/patch_verify_forms.py.   */
@@ -618,21 +646,6 @@ function postLead(body,note,okKey,errKey,goal){
       note.classList.add("err");
     });
 }
-function sendDemo(e){
-  e.preventDefault();
-  postLead({
-    type:"demo",
-    product:"ergp",
-    name:document.getElementById("d-name").value.trim(),
-    email:document.getElementById("d-email").value.trim(),
-    org:document.getElementById("d-org").value.trim(),
-    role:document.getElementById("d-role").value.trim(),
-    message:ergpWant()+document.getElementById("d-msg").value.trim(),
-    lang:lang,
-    page:"ergp"
-  },document.getElementById("demonote"),"dOk","dErr","demo_lead_submit");
-  return false;
-}
 function sendTester(e){
   e.preventDefault();
   postLead({
@@ -666,6 +679,24 @@ window.addEventListener('scroll',function(){
   var show=window.scrollY>600&&(!en||en.getBoundingClientRect().top>window.innerHeight);
   el.classList.toggle('on',show);
 },{passive:true});
+</script>
+<script>
+(function(){var b=document.getElementById("lfSubmit");if(!b)return;
+  function v(id){var e=document.getElementById(id);return e?e.value.trim():"";}
+  var out=document.getElementById("lfOut");function say(k,t){out.className="fmsg "+k;out.textContent=t;}
+  var sel=document.getElementById("lfTopic");
+  document.querySelectorAll("[data-topic]").forEach(function(a){a.addEventListener("click",function(){if(sel)sel.value=a.getAttribute("data-topic");});});
+  b.addEventListener("click",async function(){var name=v("lfName"),org=v("lfOrg"),email=v("lfEmail"),phone=v("lfPhone");
+    var topic=sel?sel.options[sel.selectedIndex].text:"";
+    if(!name||!org||email.indexOf("@")<1){say("err","Please fill in your name, company and work email.");return;}
+    if(phone&&phone.replace(/\D/g,"").length<7){say("err","Please check the phone number.");return;}
+    if(!document.getElementById("lfConsent").checked){say("err","Please tick the consent to the processing of personal data.");return;}
+    this.disabled=true;say("note","Sending…");
+    var body={type:"demo",product:"ergp",source:"",name:name,email:email,org:org,phone:phone,role:"",formTitle:topic,message:"["+topic+"]"+(phone?" · "+"Phone"+": "+phone:""),lang:"en",page:"ergp"};
+    try{var r=await fetch("https://ergp.risk-place.org/api/lead",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)});
+      if(!r.ok)throw new Error("fail");say("ok","Thank you! We will reply within one working day.");
+      try{ym(111613223,"reachGoal","demo_lead_submit");}catch(e){}try{gtag("event","demo_lead_submit");}catch(e){}
+    }catch(e){say("err","Could not send. Please write to us: info@risk-place.org");this.disabled=false;}});})();
 </script>
 <footer class="sfoot"><div class="in"><div class="row1"><a href="resilience-governance-certificate.html">ERGP certification</a><a href="safe-programme.html">SAFE programme</a><a href="products.html">For organisations</a><a href="library.html">Library</a><a href="about.html">About</a><a href="index.html#contacts">Contact</a></div><div class="row2"><span class="lg2" translate="no">risk-<b>place</b>.org</span><span>© 2026 · Business Continuity &amp; Resilience · GCC</span><a href="about.html">About us</a><a href="resilience-governance-certificate.html#verify">Verify a certificate</a><a href="glossary.html">Glossary</a><a href="privacy.html">Privacy policy</a><a href="mailto:info@risk-place.org">info@risk-place.org</a><a href="https://bcm.risk-place.ru/" hreflang="ru">BCM library (RU)</a></div></div></footer>
 </body>
