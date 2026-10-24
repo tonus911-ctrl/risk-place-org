@@ -14,7 +14,7 @@
 <link rel="icon" type="image/png" href="favicon.png">
 <meta property="og:title" content="Continuity &amp; risk dashboard">
 <meta property="og:description" content="Would your business survive tomorrow's disruption? Now you can see it on one screen. Data never leaves your company.">
-<meta property="og:image" content="https://risk-place.org/hero-dubai.jpg">
+<meta property="og:image" content="https://risk-place.org/assets/dashboard-preview.jpg">
 <meta property="og:url" content="https://risk-place.org/dashboard.html">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
@@ -22,7 +22,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box}
-body{margin:0;background:#fff;-webkit-font-smoothing:antialiased;font-family:'Figtree','IBM Plex Sans Arabic',system-ui,sans-serif;color:#16181F;line-height:1.55}
+body{margin:0;background:#fff;-webkit-font-smoothing:antialiased;font-family:'Figtree','IBM Plex Sans Arabic',system-ui,sans-serif;color:#16181F;line-height:1.7}
 html[dir="rtl"] body{font-family:'IBM Plex Sans Arabic','Figtree',system-ui,sans-serif}
 a{color:#16181F;text-decoration:none}
 ::selection{background:#FBE0CB}
@@ -34,84 +34,296 @@ a{color:#16181F;text-decoration:none}
 .logo .nm b{color:#C4571C;font-weight:600}
 .logo .tg{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8A8478}
 .hdr .right{display:flex;align-items:center;gap:12px}
-.langbtn{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.08em;background:none;border:1px solid #DCD8D0;border-radius:999px;padding:7px 15px;cursor:pointer;color:#3D4149}
-.langbtn:hover{border-color:#16181F;color:#16181F}
+.langsw{font-size:13px}
+.langsw a{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.08em;color:#3D4149;border:1px solid #DCD8D0;border-radius:999px;padding:7px 15px;display:inline-block}
+.langsw a:hover{border-color:#16181F;color:#16181F}
 .backlink{font-size:14.5px;color:#3D4149}
 .backlink:hover{color:#C4571C}
 .hero{background:#0D1117;color:#fff}
-.hero .in{padding-top:72px;padding-bottom:64px}
+.hero .in{padding-top:64px;padding-bottom:56px}
 .kicker{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#F0A868;margin:0 0 20px}
-.hero h1{font-size:46px;font-weight:300;line-height:1.12;letter-spacing:-0.025em;margin:0 0 16px;max-width:22ch;text-wrap:pretty}
-.hero .sub{font-size:18.5px;font-weight:300;color:rgba(255,255,255,0.75);margin:0 0 30px;max-width:60ch}
-.hero .price{font-size:26px;font-weight:600;letter-spacing:-0.02em;margin-bottom:6px}
-.hero .prn{font-size:14.5px;font-weight:300;color:rgba(255,255,255,0.55);margin-bottom:28px}
-.btn{display:inline-block;font-size:16.5px;font-weight:600;background:#C4571C;color:#fff !important;padding:15px 32px;border-radius:999px;border:0;cursor:pointer}
+.hero h1{font-size:42px;font-weight:300;line-height:1.14;letter-spacing:-0.025em;margin:0 0 16px;max-width:28ch;text-wrap:pretty}
+.hero .sub{font-size:18px;font-weight:300;color:rgba(255,255,255,0.75);margin:0;max-width:62ch;line-height:1.6}
+.btn{display:inline-block;font-size:16.5px;font-weight:600;background:#C4571C;color:#fff !important;padding:15px 32px;border-radius:999px}
 .btn:hover{background:#A03F12}
 .btn2{display:inline-block;font-size:16px;font-weight:400;color:#fff !important;border:1px solid rgba(255,255,255,0.34);padding:14px 28px;border-radius:999px;margin-inline-start:10px}
 .btn2:hover{border-color:#fff}
-.sec{padding:72px 0 64px}
-.sec.beige{background:#F7F4EF;border-top:1px solid #EAE7E1;border-bottom:1px solid #EAE7E1}
-.sec.dark{background:#0D1117;color:#fff}
-.sec h2{font-size:34px;font-weight:300;line-height:1.16;letter-spacing:-0.02em;margin:0 0 14px;text-wrap:pretty}
-.sec .secsub{font-size:16.5px;font-weight:300;color:#5E636D;margin:0 0 36px;max-width:60ch}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:30px 44px;margin-top:26px}
-.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:26px;margin-top:26px}
-.it{display:flex;flex-direction:column;gap:8px;padding-top:16px;border-top:2px solid #16181F}
-.dark .it{border-top-color:rgba(255,255,255,0.3)}
-.it b{font-size:18.5px;font-weight:600;letter-spacing:-0.01em}
-.it p{font-size:15.5px;font-weight:300;color:#5E636D;margin:0;line-height:1.6}
-.dark .it p{color:rgba(255,255,255,0.7)}
-.big{font-size:30px;font-weight:300;letter-spacing:-0.02em}
-.note{font-size:15.5px;font-weight:300;color:#5E636D;margin-top:28px;max-width:70ch}
-.dark .note{color:rgba(255,255,255,0.65)}
-/* dashboard mock */
-.mock{background:#0D1117;color:#fff;border-radius:20px;padding:30px;margin-top:10px;display:block}
-.mock:hover{box-shadow:0 18px 44px rgba(0,0,0,0.3)}
-.mock .mt{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:22px}
-.mock .mt b{font-size:16px;font-weight:600;color:#fff}
-.mock .mt span{font-family:'IBM Plex Mono',monospace;font-size:12px;color:rgba(255,255,255,0.5)}
-.mock .kpis{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
-.mock .k{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:14px;padding:16px}
-.mock .k .v{font-size:26px;font-weight:600;letter-spacing:-0.02em;color:#F0A868}
-.mock .k .v small{font-size:14px;color:rgba(255,255,255,0.5)}
-.mock .k .l{font-size:12.5px;font-weight:300;color:rgba(255,255,255,0.65);margin-top:5px;line-height:1.4}
-.steps{display:flex;flex-direction:column;margin-top:8px}
-.step{display:grid;grid-template-columns:60px 1fr;gap:20px;padding:20px 0;border-bottom:1px solid #E1DCD3;align-items:baseline}
-.step .n{font-family:'IBM Plex Mono',monospace;font-size:24px;font-weight:500;color:#C4571C}
-.step b{font-size:18px;font-weight:600;display:block;margin-bottom:4px}
-.step p{font-size:15.5px;font-weight:300;color:#5E636D;margin:0}
-.scheme{background:#fff;border:1px solid #EAE7E1;border-radius:18px;padding:18px;margin:30px 0;overflow-x:auto;direction:ltr}
-.scheme svg{width:100%;height:auto;min-width:640px;direction:ltr}
-html[dir="rtl"] .scheme, html[dir="rtl"] .scheme svg, html[dir="rtl"] .scheme svg text{direction:ltr !important;unicode-bidi:isolate}
-.faq .it b{font-size:17px}
 .cta{background:#0D1117;color:#fff}
-.cta .in{padding-top:64px;padding-bottom:64px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px}
-.cta h2{font-size:30px;font-weight:300;letter-spacing:-0.02em;margin:0 0 10px;max-width:26ch;text-wrap:pretty}
-.cta p{font-size:15.5px;font-weight:300;color:rgba(255,255,255,0.65);margin:0;max-width:52ch}
+.cta .in{padding-top:64px;padding-bottom:64px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:22px}
+.cta h2{font-size:30px;font-weight:300;letter-spacing:-0.02em;margin:0;max-width:30ch;text-wrap:pretty}
 .foot{background:#0D1117;color:rgba(255,255,255,0.46);border-top:1px solid rgba(255,255,255,0.12)}
 .foot .in{padding-top:22px;padding-bottom:22px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13.5px;font-weight:300}
 .foot a{color:rgba(255,255,255,0.6)}
 .foot a:hover{color:#fff}
-@media(max-width:860px){.hero h1{font-size:33px}.grid2,.grid3{grid-template-columns:1fr}.mock .kpis{grid-template-columns:1fr 1fr}.sec h2{font-size:27px}}
 .stickycta{display:none;position:fixed;left:14px;right:14px;bottom:14px;z-index:70;background:#C4571C;color:#fff !important;text-align:center;font-size:16px;font-weight:600;padding:14px 18px;border-radius:999px;box-shadow:0 10px 28px rgba(13,17,23,0.28)}
+
+.art{padding:64px 0 20px}
+.art h2{font-size:30px;font-weight:300;line-height:1.18;letter-spacing:-0.02em;margin:52px 0 18px;text-wrap:pretty}
+.art h2:first-child{margin-top:0}
+.art p{font-size:16.5px;font-weight:300;line-height:1.72;color:#3D4149;margin:0 0 16px;max-width:76ch}
+.art ul{margin:0 0 18px;padding-inline-start:22px;max-width:76ch}
+.art li{font-size:16.5px;font-weight:300;line-height:1.66;color:#3D4149;margin-bottom:9px}
+.art li b,.art p b{font-weight:600;color:#16181F}
+.art figure{margin:30px 0;max-width:76ch}
+.art figure img{width:100%;height:auto;display:block;border:1px solid #EAE7E1;border-radius:12px}
+.art figcaption{font-size:14px;font-weight:300;color:#8A8478;margin-top:8px;line-height:1.55}
+.callout{background:#F7F4EF;border:1px solid #EAE7E1;border-inline-start:3px solid #C4571C;border-radius:12px;padding:20px 24px;margin:26px 0;max-width:76ch}
+.callout p{margin:0;font-size:16px}
+.tbl{width:100%;border-collapse:collapse;margin:24px 0 30px;font-size:15.5px}
+.tbl th{text-align:start;font-weight:600;padding:12px 14px;border-bottom:2px solid #16181F;font-size:14.5px}
+.tbl td{padding:12px 14px;border-bottom:1px solid #E1DCD3;font-weight:300;color:#3D4149;vertical-align:top;line-height:1.55}
+.tbl td:first-child{font-weight:500;color:#16181F}
+.faq{margin:10px 0 30px;max-width:76ch}
+.faq details{border-bottom:1px solid #E1DCD3;padding:4px 0}
+.faq summary{font-size:17px;font-weight:600;padding:14px 0;cursor:pointer;list-style-position:outside}
+.faq details p{padding:0 0 16px}
+.cluster{background:#F7F4EF;border-top:1px solid #EAE7E1;border-bottom:1px solid #EAE7E1;padding:56px 0}
+.cluster h2{font-size:26px;font-weight:300;margin:0 0 26px}
+.cluster .links{display:grid;grid-template-columns:1fr 1fr;gap:14px 40px}
+.cluster a{display:block;padding:14px 0;border-bottom:1px solid #E1DCD3;font-size:16px;font-weight:500}
+.cluster a:hover{color:#C4571C}
+.src{font-size:13.5px;color:#8A8478;margin-top:30px;max-width:76ch}
+.src a{color:#8A8478;text-decoration:underline}
+@media(max-width:760px){.art h2{font-size:24px}.cluster .links{grid-template-columns:1fr}.tbl{font-size:14px}.tbl th,.tbl td{padding:9px 8px}}
+
+@media(max-width:760px){.hero h1{font-size:30px}}
 @media(max-width:600px){
   .wrap{padding-left:20px;padding-right:20px}
   .logo .nm{font-size:22px}
   .logo .tg{display:none}
   .backlink{font-size:13px}
-  .hero .in{padding-top:40px;padding-bottom:36px}
-  .hero h1{font-size:26px;line-height:1.18}
-  .sec{padding:46px 0 42px}
-  .sec h2{font-size:23px}
+  .hdr .in{height:auto;min-height:64px;padding-top:10px;padding-bottom:10px;flex-wrap:wrap;row-gap:8px;gap:12px}
+  .hero .in{padding-top:38px;padding-bottom:34px}
+  .hero h1{font-size:25px;line-height:1.2}
+  .art{padding:40px 0 10px}
   .stickycta.on{display:block}
 }
+
+figure.wide{width:auto;max-width:none;margin-inline:max(calc(50% - 530px),calc(50% - 50vw + 18px))}
+@media(max-width:700px){figure.wide{margin-inline:0}}
 .hnav{display:flex;gap:18px;align-items:center;margin-inline-start:auto;margin-inline-end:16px}.hnav a{font-size:14px;color:#3D4149}.hnav a:hover{color:#C4571C}@media(max-width:1000px){.hnav{display:none}}
+
+/* --- единый футер --- */
+.sfoot{background:#0D1117;color:rgba(255,255,255,.65);margin-top:auto}
+/* Подвал у нижнего края даже на короткой странице. Разбор — в
+   08 - Проверки/patch_footer_bottom.py                        */
+body{min-height:100dvh;display:flex;flex-direction:column}
+.sfoot .in{max-width:1080px;margin:0 auto;padding:30px 24px 26px}
+.sfoot .row1{display:flex;flex-wrap:wrap;gap:10px 26px;padding-bottom:16px;margin-bottom:16px;border-bottom:1px solid rgba(255,255,255,.14)}
+.sfoot .row1 a{color:rgba(255,255,255,.95);text-decoration:none;font-size:15px}
+.sfoot .row1 a:hover{color:#F0A868}
+.sfoot .row2{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline;font-size:13px}
+.sfoot .row2 a{color:rgba(255,255,255,.65);text-decoration:none}
+.sfoot .row2 a:hover{color:#F0A868}
+.sfoot .lg2{font-size:15px;color:#fff;font-weight:600;letter-spacing:-0.02em}
+.sfoot .lg2 b{color:#C4571C}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}
+/*progblock*/.progblock{margin:44px 0 0;border-top:1px solid #EAE7E1;padding-top:30px;font-family:'Figtree','IBM Plex Sans Arabic',system-ui,sans-serif}.progblock .pcard{display:block;background:#0D1117;color:#fff;border-radius:16px;padding:24px 26px;text-decoration:none}.progblock .pcard .k{display:block;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#F0A868;margin-bottom:8px}html[lang="ar"] .progblock .pcard .k{font-family:'IBM Plex Sans Arabic',sans-serif;letter-spacing:.04em}.progblock .pcard b{display:block;font-size:19px;font-weight:600;line-height:1.3;margin-bottom:8px;color:#fff}.progblock .pcard p{margin:0 0 12px;font-size:14.5px;line-height:1.6;color:rgba(255,255,255,.78)}.progblock .pcard .go{color:#F0A868;font-weight:600;font-size:15px}.progblock .nb{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}@media(max-width:700px){.progblock .nb{grid-template-columns:1fr}}.progblock .nb>div{border:1px solid #EAE7E1;border-radius:14px;padding:16px 18px;background:#F7F4EF}.progblock .nb .h{display:block;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#8A8478;margin-bottom:8px}html[lang="ar"] .progblock .nb .h{font-family:'IBM Plex Sans Arabic',sans-serif;letter-spacing:.04em}.progblock .nb a{display:block;color:#16181F;text-decoration:none;font-size:15px;line-height:1.45;margin:0 0 6px}.progblock .nb a:hover{color:#C4571C}
+.hnav a{white-space:nowrap}.logo .tg{white-space:nowrap}/*hdr-mobile*/.hburger{display:none;margin-inline-start:6px;background:none;border:0;font-size:24px;line-height:1;cursor:pointer;color:#16181F;padding:4px 6px}.hdr .right{display:flex;align-items:center;gap:8px}@media(max-width:960px){.hburger{display:inline-block}.hnav,.nav{display:none;position:absolute;top:70px;left:0;right:0;background:#fff;border-bottom:1px solid #EAE7E1;flex-direction:column;align-items:flex-start;padding:14px 24px 16px;gap:12px;z-index:70;margin:0}.hnav.open,.nav.open{display:flex}.hnav a,.nav a.hm{display:block;font-size:16px;white-space:normal}.logo .tg{display:none}.hdr .in{gap:10px}}
+/* additions 18.09.2026 for pages converted from design B */
+.art ol{margin:0 0 18px;padding-inline-start:22px;max-width:76ch}
+.art h3{font-size:21px;font-weight:500;line-height:1.3;margin:30px 0 10px}
+.art table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}
+.art th,.art td{border:1px solid #E1DCD3;padding:8px 10px;text-align:start;vertical-align:top;font-weight:300;color:#3D4149;line-height:1.55}
+.art th{background:#F1EEE8;font-weight:600;color:#16181F}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}
+/*CHECK-PAGE 24.10.2026: продуктовая страница «Проверка готовности» по канону*/
+.hero .in{padding-top:60px;padding-bottom:60px}
+.hero h1{font-size:42px;max-width:30ch}
+.hero .sub{margin:0 0 28px}
+html[dir="rtl"] .kicker{font-family:'IBM Plex Sans Arabic',sans-serif;letter-spacing:0.04em}
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:0 0 30px}
+.fact{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.14);border-radius:14px;padding:16px 18px}
+.fact b{display:block;font-size:19px;font-weight:600;line-height:1.3;margin-bottom:5px}
+.fact span{display:block;font-size:14.5px;line-height:1.5;color:rgba(255,255,255,0.86)}
+.buy{display:flex;flex-wrap:wrap;align-items:center;gap:18px 34px}
+.buy .sum{font-size:32px;font-weight:600;letter-spacing:-0.02em;line-height:1.15}
+.buy .sum span{display:block;font-size:14px;font-weight:300;letter-spacing:0;color:rgba(255,255,255,0.64);margin-top:5px}
+.buy .btns{display:flex;flex-wrap:wrap;gap:10px}
+.buy .btn2{margin-inline-start:0}
+.sec{padding:72px 0 66px;scroll-margin-top:76px}
+.sec.beige{background:#F7F4EF;border-top:1px solid #EAE7E1;border-bottom:1px solid #EAE7E1}
+.sec h2{font-size:32px;font-weight:300;line-height:1.16;letter-spacing:-0.02em;margin:0 0 14px;text-wrap:pretty}
+.sec .ssub{font-size:16.5px;font-weight:300;line-height:1.62;color:#5E636D;margin:0 0 30px;max-width:72ch}
+.split{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:26px 64px;align-items:start}
+.split .ssub{margin-bottom:20px}
+.lines{list-style:none;margin:0;padding:0;border-top:1px solid #E1DCD3}
+.lines li{padding:16px 0 17px;border-bottom:1px solid #E1DCD3}
+.lines b{display:block;font-size:17px;font-weight:600;line-height:1.4;color:#16181F;margin:0 0 5px}
+.lines span{display:block;font-size:15.5px;font-weight:300;line-height:1.62;color:#3D4149}
+.lines span a{color:#C4571C;text-decoration:underline;text-underline-offset:2px}
+.lines .src{font-size:13.5px;color:#8A8478;margin-top:7px}
+.lines .src a{color:#5E636D}
+.lines.qa b{font-size:16.5px}
+figure.map{margin:4px 0 0}
+figure.map img{display:block;width:100%;height:auto;border:1px solid #E1DCD3;border-radius:14px}
+.keys{list-style:none;margin:20px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px 30px}
+.keys li{display:flex;align-items:center;gap:10px;font-size:14.5px;line-height:1.4;color:#3D4149}
+.keys i{flex-shrink:0;display:inline-block;position:relative}
+.keys .k-hit{width:18px;height:18px;border-radius:50%;background:radial-gradient(circle,#B4362A 0 3px,#fff 3px 5px,#B4362A 5px 9px)}
+.keys .k-fire{width:22px;height:22px;border-radius:50%;border:2px dashed #B4362A;background:rgba(180,54,42,0.12)}
+.keys .k-spof{width:13px;height:13px;background:#B4362A;transform:rotate(45deg);margin:0 4px}
+.keys .k-flow{width:26px;height:3px;background:#8A6A1F;margin-right:6px}
+.keys .k-flow::after{content:'';position:absolute;right:-7px;top:-5px;border-top:6.5px solid transparent;border-bottom:6.5px solid transparent;border-left:8px solid #8A6A1F}
+.keys .k-lock{width:16px;height:13px;border-radius:3px;background:#B4362A;margin-top:5px}
+.keys .k-lock::before{content:'';position:absolute;left:3px;top:-7px;width:6px;height:7px;border:2px solid #B4362A;border-bottom:0;border-radius:5px 5px 0 0}
+.keys .k-cut{width:13px;height:17px;border-left:3px solid #B4362A;border-right:3px solid #B4362A}
+ol.legend{list-style:none;margin:18px 0 0;padding:18px 0 0;border-top:1px solid #E1DCD3;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 30px}
+ol.legend li{display:flex;gap:12px;align-items:flex-start;font-size:15px;line-height:1.5;color:#3D4149}
+ol.legend .n{flex-shrink:0;width:26px;height:26px;border-radius:50%;background:#1E3352;color:#fff;font-size:13px;font-weight:600;display:inline-flex;align-items:center;justify-content:center}
+ol.legend b{color:#16181F;font-weight:600}
+.hrs{list-style:none;margin:26px 0 0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border:1px solid #E1DCD3;border-radius:12px;overflow:hidden;background:#fff}
+.hrs li{padding:16px 16px 18px;border-top:6px solid #F3D9C9;border-inline-start:1px solid #EAE7E1}
+.hrs li:first-child{border-inline-start:0}
+.hrs li:nth-child(2){border-top-color:#EDB89B}
+.hrs li:nth-child(3){border-top-color:#E0906B}
+.hrs li:nth-child(4){border-top-color:#C4571C}
+.hrs li:nth-child(5){border-top-color:#B4362A}
+.hrs .t{display:block;font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#B4362A}
+html[dir="rtl"] .hrs .t{font-family:'IBM Plex Sans Arabic',sans-serif;letter-spacing:0.02em}
+.hrs b{display:block;font-size:16px;font-weight:600;line-height:1.35;margin:8px 0 4px}
+.hrs .d{display:block;font-size:14px;font-weight:300;line-height:1.45;color:#3D4149}
+.capn{font-size:13.5px;color:#8A8478;margin:10px 0 0}
+.tl{list-style:none;margin:8px 0 0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0 22px;position:relative}
+.tl::before{content:'';position:absolute;left:28px;right:28px;top:27px;height:2px;background:#DCD8D0}
+.tl li{position:relative;padding-top:74px}
+.tl .ic{position:absolute;top:0;inset-inline-start:0;width:56px;height:56px;border-radius:50%;background:#fff;border:2px solid #C4571C;display:flex;align-items:center;justify-content:center;color:#16181F}
+.tl .ic svg{width:25px;height:25px}
+.tl li.flag .ic{background:#0D1117;border-color:#0D1117;color:#fff}
+.tl li.key .ic{background:#C4571C;border-color:#C4571C;color:#fff}
+.tl .w{display:block;font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#C4571C;margin:0 0 6px}
+html[dir="rtl"] .tl .w{font-family:'IBM Plex Sans Arabic',sans-serif;letter-spacing:0.02em}
+.tl b{display:block;font-size:16.5px;font-weight:600;line-height:1.35;margin:0 0 6px}
+.tl .t{display:block;font-size:14.5px;font-weight:300;line-height:1.55;color:#3D4149}
+.tl .tag{display:inline-block;margin-top:10px;font-size:13px;font-weight:600;line-height:1.4;color:#16181F;background:#F9EBC6;border:1px solid #F0A868;border-radius:8px;padding:6px 10px}
+.tl-note{font-size:15px;font-weight:300;line-height:1.6;color:#3D4149;margin:32px 0 0;padding-top:18px;border-top:1px solid #DCD8D0}
+.ba{display:flex;flex-direction:column;gap:16px;min-width:0}
+.ba .ill{align-self:flex-start;font-family:'IBM Plex Mono',monospace;font-size:11.5px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#8A8478;border:1px solid #DCD8D0;border-radius:999px;padding:4px 12px}
+html[dir="rtl"] .ba .ill{font-family:'IBM Plex Sans Arabic',sans-serif;letter-spacing:0.02em}
+.ba .row{display:grid;grid-template-columns:128px minmax(0,1fr) auto;gap:16px;align-items:center}
+.ba .l{font-size:13px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:#5E636D}
+.ba .bar{display:block;height:30px;background:#EAE7E1;border-radius:6px;overflow:hidden}
+.ba .bar i{display:block;height:100%;border-radius:6px}
+.ba .now .bar i{background:#B4362A;width:100%}
+.ba .after .bar i{background:#0D1117}
+.ba .bar i.w31{width:31%}
+.ba .bar i.w27{width:27%}
+.ba .v{font-size:22px;font-weight:600;white-space:nowrap}
+.ba .facts3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:4px}
+.ba .facts3 div{background:#fff;border:1px solid #EAE7E1;border-radius:12px;padding:16px 16px 14px}
+.ba .facts3 b{display:block;font-size:24px;font-weight:600;color:#C4571C;line-height:1.15}
+.ba .facts3 span{display:block;font-size:14px;line-height:1.45;color:#3D4149;margin-top:6px}
+.ba .note{font-size:13.5px;line-height:1.5;color:#8A8478;margin:0}
+.acards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.acard{min-width:0;display:flex;flex-direction:column;gap:8px}
+.acard b{font-size:16px;font-weight:600;line-height:1.35;margin-top:6px}
+.acard p{font-size:14px;font-weight:300;line-height:1.55;color:#5E636D;margin:0}
+.mock{background:#fff;border:1px solid #DCD8D0;border-radius:10px;padding:11px 12px;height:172px;display:flex;flex-direction:column;gap:7px;box-shadow:0 8px 22px rgba(13,17,23,0.07);overflow:hidden;direction:ltr;text-align:left}
+html[dir="rtl"] .mock{direction:rtl;text-align:right}
+.mk-head{display:flex;align-items:center;gap:6px}
+.mk-dot{width:8px;height:8px;border-radius:50%;background:#C4571C;flex-shrink:0}
+.mk-line{display:block;height:7px;width:60%;border-radius:4px;background:#EAE7E1}
+.mk-title{font-family:'IBM Plex Mono',monospace;font-size:8.5px;font-weight:500;letter-spacing:0.09em;color:#8A8478;text-transform:uppercase}
+html[dir="rtl"] .mk-title{font-family:'IBM Plex Sans Arabic',sans-serif;font-size:10px;letter-spacing:0}
+.mk-kv{display:flex;justify-content:space-between;align-items:center;gap:6px;background:#F7F4EF;border-radius:5px;padding:4px 7px}
+.mk-kv span{font-size:9.5px;color:#3D4149;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mk-kv b{font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500;color:#16181F;flex-shrink:0;margin:0}
+html[dir="rtl"] .mk-kv span,html[dir="rtl"] .mk-kv b{font-family:'IBM Plex Sans Arabic',sans-serif;font-size:10.5px}
+.mk-kv b.loss{color:#B4362A}
+.mk-kv b.hot{color:#C4571C}
+.mk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;flex:1}
+.mk-grid i{border-radius:4px;font-style:normal;font-size:8.5px;display:flex;align-items:center;justify-content:center;color:#16181F;padding:1px;text-align:center}
+.mk-grid .g1{background:#EAE7E1}.mk-grid .g2{background:#F0A868}.mk-grid .g3{background:#C4571C;color:#fff}
+.mk-axis{display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:7.5px;color:#8A8478}
+.mk-flow{display:flex;align-items:center;gap:4px}
+.mk-flow i{flex:1;height:26px;border-radius:6px;background:#EAE7E1;font-style:normal;font-size:9px;display:flex;align-items:center;justify-content:center;color:#16181F}
+.mk-flow i.hot{background:#C4571C;color:#fff}
+.mk-flow em{color:#8A8478;font-style:normal;font-size:10px}
+.mk-kpis{display:flex;gap:5px}
+.mk-kpis b{flex:1;background:#F7F4EF;border:1px solid #EAE7E1;border-radius:6px;text-align:center;font-size:9.5px;line-height:1.3;padding:5px 0;color:#16181F;font-weight:600;margin:0}
+.mk-kpis b.hot{background:#C4571C;color:#fff;border-color:#C4571C}
+.subh{font-family:'IBM Plex Mono',monospace;font-size:11.5px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#C4571C;margin:0 0 10px}
+html[dir="rtl"] .subh{font-family:'IBM Plex Sans Arabic',sans-serif;letter-spacing:0.02em}
+.lines+.subh{margin-top:30px}
+.price-big{font-size:42px;font-weight:600;letter-spacing:-0.02em;line-height:1.1;margin:10px 0 0}
+.price-big span{display:block;font-size:14.5px;font-weight:300;letter-spacing:0;color:#5E636D;margin-top:8px}
+.price-col .btn{margin-top:22px}
+.after-btn{font-size:14.5px;line-height:1.6;color:#3D4149;margin:18px 0 0;max-width:48ch}
+.after-btn a{color:#C4571C;text-decoration:underline;text-underline-offset:2px}
+.sec .faq{max-width:none;margin:6px 0 0}
+.sec .faq p{font-size:15.5px;font-weight:300;line-height:1.65;color:#3D4149;margin:0;max-width:84ch}
+.sec .faq p a{color:#C4571C;text-decoration:underline}
+.road{list-style:none;margin:0;padding:0;border-top:1px solid #E1DCD3}
+.road li{display:grid;grid-template-columns:52px minmax(0,1fr);gap:2px 16px;padding:16px 0;border-bottom:1px solid #E1DCD3}
+.road .n{grid-row:span 2;font-family:'IBM Plex Mono',monospace;font-size:22px;font-weight:500;color:#C4571C;line-height:1.3}
+.road b{font-size:17px;font-weight:600;line-height:1.4}
+.road span{font-size:15.5px;font-weight:300;line-height:1.6;color:#3D4149}
+.fbox{background:#F7F4EF;border:1px solid #EAE7E1;border-radius:16px;padding:clamp(20px,3vw,34px);margin-top:6px}
+.want{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 16px}
+.want label{display:inline-flex;align-items:center;gap:9px;padding:9px 16px;border:1px solid #DCD8D0;border-radius:999px;background:#fff;cursor:pointer;font-size:15px;font-weight:600}
+.want label:has(input:checked){border-color:#C4571C;background:#FBEFE6}
+.want input{width:16px;height:16px;margin:0;accent-color:#C4571C}
+.fgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.fld{width:100%;background:#fff;border:1px solid #DCD8D0;border-radius:10px;padding:13px 15px;font-size:15.5px;color:#16181F;font-family:inherit}
+.fld:focus{outline:none;border-color:#C4571C}
+textarea.fld{display:block;margin-top:12px;resize:vertical}
+.fend{display:flex;align-items:center;justify-content:space-between;gap:14px 28px;flex-wrap:wrap;margin-top:16px}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.5;color:#3D4149;max-width:62ch;cursor:pointer}
+.consent input{margin-top:3px;width:16px;height:16px;accent-color:#C4571C;flex-shrink:0}
+.consent a{color:#C4571C;text-decoration:underline}
+button.btn{border:0;cursor:pointer;font-family:inherit}
+button.btn[disabled]{opacity:.6;cursor:default}
+.fmsg{min-height:22px;margin:14px 0 0;font-size:14.5px;line-height:1.5}
+.fmsg.ok{color:#1D7A46}
+.fmsg.err{color:#B4231F}
+.fmsg.note{color:#5E636D}
+.fsmall{font-size:13.5px;color:#8A8478;margin:8px 0 0}
+.fsmall a{color:#3D4149;text-decoration:underline}
+@media(max-width:980px){.facts{grid-template-columns:repeat(2,minmax(0,1fr))}.split{grid-template-columns:1fr;gap:16px}.tl{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 22px}.tl::before{display:none}.hrs{grid-template-columns:1fr}.hrs li{border-top:0;border-inline-start:6px solid #F3D9C9}.hrs li:first-child{border-inline-start:6px solid #F3D9C9}.hrs li:nth-child(2){border-inline-start-color:#EDB89B}.hrs li:nth-child(3){border-inline-start-color:#E0906B}.hrs li:nth-child(4){border-inline-start-color:#C4571C}.hrs li:nth-child(5){border-inline-start-color:#B4362A}.hrs li+li{border-top:1px solid #EAE7E1}.acards{grid-template-columns:repeat(2,minmax(0,1fr))}ol.legend{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.tl{grid-template-columns:1fr}.tl li{padding-top:0;padding-inline-start:74px;min-height:56px}.ba .row{grid-template-columns:1fr auto}.ba .l{grid-column:1/-1}.ba .facts3{grid-template-columns:1fr}.fgrid{grid-template-columns:1fr}ol.legend{grid-template-columns:1fr}.sec h2{font-size:26px}.price-big{font-size:34px}}
+@media(max-width:600px){.facts{grid-template-columns:1fr}.hero h1{font-size:26px}.acards{grid-template-columns:1fr}.sec{padding:46px 0 42px}.buy .sum{font-size:27px}.hero .in{padding-top:38px;padding-bottom:36px}}
+/*CANON 24.10.2026: двуязычная продуктовая страница*/
+.langbtn{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.08em;background:none;border:1px solid #DCD8D0;border-radius:999px;padding:7px 15px;cursor:pointer;color:#3D4149}
+.langbtn:hover{border-color:#16181F;color:#16181F}
 html:not([lang="ar"]) .ar-only{display:none !important}
 html[lang="ar"] .en-only{display:none !important}
-.hnav a{white-space:nowrap}.logo .tg{white-space:nowrap}
-/* блок цены, тот же вид, что у SAFE и ERGP */
-#price .price{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:720px;margin-top:6px}#price .pr{background:#fff;border:1px solid #EAE7E1;border-radius:16px;padding:26px}#price .pr span{font-size:15px;color:#5E636D;display:block;margin-bottom:8px}#price .pr b{font-size:26px;font-weight:600;letter-spacing:-0.02em;display:block;color:#16181F}#price .prnote{font-size:14px;color:#8A8478;margin-top:14px;max-width:720px}@media(max-width:760px){#price .price{grid-template-columns:1fr}}/*hdr-mobile*/.hburger{display:none;margin-inline-start:6px;background:none;border:0;font-size:24px;line-height:1;cursor:pointer;color:#16181F;padding:4px 6px}.hdr .right{display:flex;align-items:center;gap:8px}@media(max-width:960px){.hburger{display:inline-block}.hnav,.nav{display:none;position:absolute;top:70px;left:0;right:0;background:#fff;border-bottom:1px solid #EAE7E1;flex-direction:column;align-items:flex-start;padding:14px 24px 16px;gap:12px;z-index:70;margin:0}.hnav.open,.nav.open{display:flex}.hnav a,.nav a.hm{display:block;font-size:16px;white-space:normal}.logo .tg{display:none}.hdr .in{gap:10px}}</style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "@id": "https://risk-place.org/dashboard.html#service", "name": "Continuity and risk dashboard", "serviceType": "Business continuity monitoring and reporting", "description": "One board-level screen: a 0-100 resilience index, cost of downtime and recovery status. Runs inside your own perimeter, so data never leaves the company.", "provider": {"@type": "Organization", "@id": "https://risk-place.org/#org", "name": "risk-place.org", "url": "https://risk-place.org/"}, "areaServed": [{"@type": "Country", "name": "United Arab Emirates"}, {"@type": "Country", "name": "Saudi Arabia"}, {"@type": "Country", "name": "Qatar"}, {"@type": "Country", "name": "Kuwait"}, {"@type": "Country", "name": "Oman"}, {"@type": "Country", "name": "Bahrain"}], "availableLanguage": ["en", "ar"], "url": "https://risk-place.org/dashboard.html", "image": "https://risk-place.org/og-site.png", "offers": {"@type": "Offer", "availability": "https://schema.org/InStock", "url": "https://risk-place.org/dashboard.html"}}</script>
+.stages{list-style:none;margin:8px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.stages>li{background:#fff;border:1px solid #E1DCD3;border-top:4px solid #C4571C;border-radius:14px;padding:20px 22px 22px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.stages .w{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#C4571C}
+html[dir="rtl"] .stages .w{font-family:'IBM Plex Sans Arabic',sans-serif;letter-spacing:0.02em}
+.stages b{font-size:19px;font-weight:600;line-height:1.3}
+.stages ul{margin:4px 0 0;padding-inline-start:18px}
+.stages ul li{font-size:15px;font-weight:300;line-height:1.55;color:#3D4149;margin:0 0 8px}
+.stages .tag{margin-top:auto;align-self:flex-start;font-size:13px;font-weight:600;line-height:1.4;color:#16181F;background:#F9EBC6;border:1px solid #F0A868;border-radius:8px;padding:6px 10px}
+.excall{background:#F7F4EF;border:1px solid #EAE7E1;border-inline-start:3px solid #C4571C;border-radius:14px;padding:24px 28px;margin-top:34px}
+.excall h3{font-size:17px;font-weight:600;margin:0 0 10px}
+.excall p{font-size:15.5px;font-weight:300;line-height:1.65;color:#3D4149;margin:0;max-width:82ch}
+.acard .rd{font-size:12.5px;line-height:1.45;color:#8A8478;margin-top:auto}
+.mk-gwrap{display:flex;align-items:center;gap:12px;justify-content:center}
+.mk-gauge{width:64px;height:32px;border-radius:64px 64px 0 0;background:conic-gradient(from 270deg at 50% 100%, #C4571C 0 60deg, #F0A868 60deg 110deg, #EAE7E1 110deg 180deg);position:relative}
+.mk-needle{position:absolute;left:50%;bottom:0;width:2px;height:24px;background:#16181F;transform:rotate(28deg);transform-origin:bottom}
+.mk-gnum{font-size:21px;font-weight:600;color:#16181F;letter-spacing:-0.02em}
+.mk-gnum small{font-size:10px;color:#8A8478;font-weight:400}
+.mk-bars{display:flex;align-items:flex-end;gap:8px;flex:1;padding:0 2px}
+.mk-bar{display:flex;flex-direction:column;align-items:center;gap:2px;flex:1}
+.mk-bar i{width:100%;background:#DCD8D0;border-radius:3px 3px 0 0;display:block}
+.mk-bar i.hot{background:#C4571C}
+.mk-bar i.h40{height:40px}.mk-bar i.h26{height:26px}.mk-bar i.h18{height:18px}.mk-bar i.h14{height:14px}
+.mk-bar em{font-style:normal;font-family:'IBM Plex Mono',monospace;font-size:7.5px;color:#5E636D;white-space:nowrap}
+.mk-note{font-size:9px;color:#8A8478;font-style:italic;text-align:center}
+.lines.g2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:44px;border-top:0;margin-top:26px}
+.lines.g2 li{border-top:1px solid #E1DCD3;border-bottom:0}
+.scheme svg{width:100%;height:auto;display:block;border-radius:14px;border:1px solid #eadfbf}
+.shot{display:block;margin:6px 0 0}
+.shot img{display:block;width:100%;height:auto;border:1px solid #E1DCD3;border-radius:14px;box-shadow:0 10px 26px rgba(13,17,23,0.08)}
+.btn2.dk{color:#16181F !important;border-color:#DCD8D0}
+.btn2.dk:hover{border-color:#16181F}
+.shot-cta{margin:22px 0 0}
+.buy .sum b,.price-big b{font-weight:inherit;display:block}
+html[dir="rtl"] .acards .mock{direction:ltr;text-align:left}
+@media(max-width:860px){.stages{grid-template-columns:1fr}.lines.g2{grid-template-columns:1fr}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Service", "@id": "https://risk-place.org/dashboard.html#service", "name": "Continuity and risk dashboard", "serviceType": "Business continuity monitoring and reporting", "description": "One board-level screen: a 0-100 resilience index, critical processes, single points of failure, cost of downtime and recovery status. Runs inside your own perimeter, so data never leaves the company.", "provider": {"@type": "Organization", "@id": "https://risk-place.org/#org", "name": "risk-place.org", "url": "https://risk-place.org/"}, "areaServed": [{"@type": "Country", "name": "United Arab Emirates"}, {"@type": "Country", "name": "Saudi Arabia"}, {"@type": "Country", "name": "Qatar"}, {"@type": "Country", "name": "Kuwait"}, {"@type": "Country", "name": "Oman"}, {"@type": "Country", "name": "Bahrain"}], "availableLanguage": ["en", "ar"], "url": "https://risk-place.org/dashboard.html", "image": "https://risk-place.org/assets/dashboard-preview.jpg", "offers": {"@type": "Offer", "availability": "https://schema.org/InStock", "url": "https://risk-place.org/dashboard.html", "description": "Priced by scope, quote within two working days, excl. VAT"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Will the data leave the company?", "acceptedAnswer": {"@type": "Answer", "text": "No. Everything runs on your side, so not a single number goes outside."}}, {"@type": "Question", "name": "We have no data for a dashboard. Where do we start?", "acceptedAnswer": {"@type": "Answer", "text": "With the Excel workbook: the methodology inside tells you what to collect. If there is no baseline data at all, we gather it together in the Resilience audit and improvement programme."}}, {"@type": "Question", "name": "Who will update the data?", "acceptedAnswer": {"@type": "Answer", "text": "Your coordinator, 1–2 hours a month following the guidance. Or subscribe to the monthly service and we handle it."}}, {"@type": "Question", "name": "How long until the first dashboard?", "acceptedAnswer": {"@type": "Answer", "text": "Usually two weeks from the start: setup, form filling, the first build and a results review."}}, {"@type": "Question", "name": "We already have BI reports. Why a separate dashboard?", "acceptedAnswer": {"@type": "Answer", "text": "The continuity metrics are already selected, defined and linked, so the coordinator fills the form from day one. The start needs no integrations, servers or procurement, every rebuild keeps a dated snapshot for trends, and scheduled updates keep the continuity system alive after the project."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://risk-place.org/"}, {"@type": "ListItem", "position": 2, "name": "For organisations", "item": "https://risk-place.org/products.html"}, {"@type": "ListItem", "position": 3, "name": "Continuity and risk dashboard", "item": "https://risk-place.org/dashboard.html"}]}]}</script>
 </head>
 <body>
 <header class="hdr"><div class="wrap in">
@@ -120,53 +332,42 @@ html[lang="ar"] .en-only{display:none !important}
 </div></header>
 
 <section class="hero"><div class="wrap in">
-  <p class="kicker" data-ui="kicker">Step 3 · Flagship · on-premise</p>
-  <h1 data-ui="h1">Would your business survive tomorrow's disruption?</h1>
-  <p class="sub" data-ui="sub">Now you can see it on one screen. The continuity dashboard shows the resilience index, critical processes, points of failure and the cost of one day down — for the CEO, the board and audit. Data never leaves your company.</p>
-  <div class="price" data-ui="price">Priced by scope</div>
-  <div class="prn" data-ui="prn">quote within two working days · runs inside your perimeter</div>
-  <div><a class="btn" href="#uform" data-ui="ctaMeet">Request a demo</a><a class="btn2" href="demo.html" data-ui="ctaDemo">Open the live demo →</a></div>
+  <p data-ui="kicker" class="kicker">Continuity and risk dashboard · first screen in 2 weeks · inside your perimeter</p>
+  <h1 data-ui="h1">Continuity and risk dashboard: one screen that shows whether the business would survive a disruption</h1>
+  <p data-ui="sub" class="sub">The resilience index, critical processes, single points of failure and the cost of one day of downtime, on one screen for the CEO, the board and audit. First dashboard in two weeks. Data never leaves your company.</p>
+  <div class="facts"><div class="fact"><b data-ui="f0b">2 weeks</b><span data-ui="f0t">from the start to the first dashboard</span></div><div class="fact"><b data-ui="f1b">1–2 hours a month</b><span data-ui="f1t">from your coordinator, or our monthly service</span></div><div class="fact"><b data-ui="f2b">Inside your perimeter</b><span data-ui="f2t">a laptop, a server or a private cloud; data never leaves</span></div><div class="fact"><b data-ui="f3b">Live demo</b><span data-ui="f3t">open an example now, no sign-up</span></div></div>
+  <div class="buy">
+    <div class="sum"><b data-ui="price">Priced by scope</b><span data-ui="prn">quote within two working days · excl. VAT</span></div>
+    <div class="btns"><a class="btn" href="#uform" data-ui="cta">Discuss on Zoom</a><a data-ui="ctaDemo" class="btn2" href="demo.html">Open the live demo →</a></div>
+  </div>
 </div></section>
 
-<section class="sec"><div class="wrap">
-  <h2 data-ui="s1t">Sound familiar?</h2><div class="grid3" id="s1"></div>
+<section class="sec" id="gives"><div class="wrap split">
+  <div><h2 data-ui="givesH">What it gives you</h2><p data-ui="givesP" class="ssub">For the CEO, the board, the risk manager and audit. Five questions they ask, and what the dashboard shows.</p></div>
+  <ul class="lines qa"><li><b data-ui="g0b">“Are we ready for a major disruption?”</b><span data-ui="g0t">A resilience index from 0 to 100 with its trend: one number for the board conversation.</span></li><li><b data-ui="g1b">“What fails first?”</b><span data-ui="g1t">Critical processes with traffic lights: readiness, recovery time and recovery point objectives (RTO, RPO), owners.</span></li><li><b data-ui="g2b">“Where are the thin threads?”</b><span data-ui="g2t">Single points of failure: one person, one supplier, one server, one AI service.</span></li><li><b data-ui="g3b">“What does an hour of downtime cost?”</b><span data-ui="g3t">Financial exposure: the cost of downtime and the recovery cushion.</span></li><li><b data-ui="g4b">“Are the plans still alive after the project?”</b><span data-ui="g4t">BCP and DRP coverage, review dates, the last exercise and what it revealed, and quarterly trends: where things improved and where they started to slip.</span></li></ul>
 </div></section>
 
-<section class="sec beige"><div class="wrap">
-  <h2 data-ui="s2t">The cost of not seeing</h2><div class="grid3" id="s2"></div>
-  <p class="note" data-ui="s2n">The cure for blindness is an instrument that shows the state at all times.</p>
+<section class="sec beige" id="now"><div class="wrap split">
+  <div><h2 data-ui="nowH">Why it is worth starting now</h2><p data-ui="nowP" class="ssub">Risks change week by week, and an annual report shows last year’s picture. A dashboard is especially timely before a tender or a regulator review, after an incident or when the insurer starts asking questions.</p></div>
+  <ul class="lines"><li><b data-ui="n0b">Boards in the region put cyber risk first.</b><span data-ui="n0t">In a Heidrick &amp; Struggles survey of 148 CEOs and directors in the Middle East, 49% named cybersecurity among the most significant issues for 2026, against 31% worldwide. 58% said they were confident in managing it. A dashboard shows what that confidence rests on.</span><span data-ui="n0s" class="src"><a href='https://meatechwatch.com/2026/04/14/cybersecurity-dominates-the-leadership-agenda-in-the-middle-east-as-ai-readiness-lags/' target='_blank' rel='noopener nofollow'>Heidrick &amp; Struggles via MEA Tech Watch, 14 April 2026</a></span></li><li><b data-ui="n1b">The threat moves faster than an annual report.</b><span data-ui="n1t">In September 2026 organisations in the UAE faced on average 2,521 cyber attacks a week, 47% more than a year earlier.</span><span data-ui="n1s" class="src"><a href='https://securitymea.com/2026/10/09/uae-records-47-year-on-year-rise-in-cyber-attacks/' target='_blank' rel='noopener nofollow'>Check Point Research via Security MEA, 9 October 2026</a></span></li><li><b data-ui="n2b">In financial institutions, management answers personally.</b><span data-ui="n2t">Under Article 181 of the new UAE Central Bank Law, responsible management personnel may face personal consequences where their knowledge, negligence or failure to perform their duties is established.</span><span data-ui="n2s" class="src"><a href='https://hadefpartners.com/news-insights/insights/uae-central-bank-law-2026-developments-and-the-september-2026-reconciliation-deadline/' target='_blank' rel='noopener nofollow'>Hadef &amp; Partners, 26 August 2026</a></span></li><li><b data-ui="n3b">What you can do this week.</b><span data-ui="n3t">Ask for three numbers before the next board meeting: the cost of one day of downtime, the actual recovery time from the last test and how many critical processes have a tested plan. If they take more than a day to collect, the dashboard saves that time every quarter.</span></li></ul>
 </div></section>
 
-<section class="sec"><div class="wrap">
-  <h2 data-ui="s3t">This is what it looks like</h2><p class="secsub" data-ui="s3n">Click to open a live example built on fictional ABC company data.</p>
-  <a class="mock" href="demo.html">
-    <div class="mt"><b data-ui="mockTitle">Business continuity dashboard · ABC company</b><span data-ui="mockUpd">updated today</span></div>
-    <div class="kpis" id="kpi"></div>
-  </a>
-  <p style="margin-top:22px"><a class="btn" href="demo.html" data-ui="ctaDemo">Open the live demo →</a></p>
+<section class="sec" id="how"><div class="wrap split">
+  <div><h2 data-ui="howH">How it works and when you see the first dashboard</h2><p data-ui="howP" class="ssub">Three steps, about two weeks. No IT project is needed to start.</p><p data-ui="howNote" class="after-btn">When you are ready, we connect your systems directly (the Integration level) and the numbers update without manual input.</p></div>
+  <ol class="road"><li><span class="n">01</span><b data-ui="hs0b">Week 1 · An Excel workbook with the methodology inside</b><span data-ui="hs0t">One sheet is a data form with pre-selected metrics, another is guidance: what, from where and how often. No months spent deciding what to measure.</span></li><li><span class="n">02</span><b data-ui="hs1b">Weeks 1–2 · Your coordinator fills the form</b><span data-ui="hs1t">A regular employee, 1–2 hours. No data yet? We collect the basics with you in the <a href='gap-assessment.html'>Resilience audit and improvement</a> programme.</span></li><li><span class="n">03</span><b data-ui="hs2b">Week 2 · The first dashboard is on your desk</b><span data-ui="hs2t">The engine builds an HTML file that opens in any browser and works offline. We review the results with you; then it rebuilds on schedule.</span></li></ol>
 </div></section>
 
-<section class="sec beige"><div class="wrap">
-  <h2 data-ui="s4t">What you will see on the dashboard</h2><div class="grid3" id="s4"></div>
+<section class="sec beige" id="result"><div class="wrap">
+  <h2 data-ui="rezH">This is what it looks like</h2>
+  <p data-ui="rezP" class="ssub">A live example built on the data of a fictional company, ABC. Click to open the demo.</p>
+  <a class="shot" href="demo.html"><img src="assets/dashboard-preview.jpg" width="1600" height="842" loading="lazy" alt="Continuity and risk dashboard: live demo screenshot with the resilience index, the cost of one day of downtime and key metrics" data-uialt="shotAlt"></a>
+  <p class="shot-cta"><a data-ui="ctaDemo2" class="btn" href="demo.html">Open the live demo →</a></p>
 </div></section>
 
-<section class="sec"><div class="wrap">
-  <h2 data-ui="s5t">Who needs it and when</h2><div class="grid2" id="s5"></div>
-  <p class="note" data-ui="s5n"><b>Especially timely</b> before a tender or a regulator review (NCEMA 7000, CBUAE), after a recent incident, when the insurer starts asking questions — or right after a BCM project, to keep the system alive.</p>
-</div></section>
-
-<section class="sec beige"><div class="wrap">
-  <h2 data-ui="s6t">Start within days</h2><div class="steps" id="s6"></div>
-  <p class="note" data-ui="s6n">When the appetite comes, we connect your systems directly (the Integration level) and the numbers update without manual input.</p>
-</div></section>
-
-<section class="sec"><div class="wrap">
-  <h2 data-ui="s7t">Product levels</h2><div class="grid3" id="s7"></div>
-</div></section>
-
-<section class="sec beige"><div class="wrap">
-  <h2 data-ui="s8t">How the dashboard works</h2><p class="secsub" data-ui="s8i">A light setup: the dashboard is a single HTML file built by a small engine. The engine runs entirely inside your perimeter — on the coordinator's laptop, a corporate server or your private cloud. Data never leaves the company.</p>
-  <div class="scheme"><svg xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;border-radius:14px;border:1px solid #eadfbf" viewBox="0 0 680 552" font-family="'Work Sans','Segoe UI',Arial,sans-serif">
+<section class="sec" id="scheme"><div class="wrap">
+  <h2 data-ui="schH">How the dashboard works inside your perimeter</h2>
+  <p data-ui="schP" class="ssub">A light setup: the dashboard is a single HTML file built by a small engine. The engine runs entirely inside your perimeter, on the coordinator’s laptop, a corporate server or your private cloud.</p>
+  <div class="scheme"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 552" font-family="'Work Sans','Segoe UI',Arial,sans-serif">
 <defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
 <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
 <rect width="680" height="552" fill="#FBF6EA"/>
@@ -214,168 +415,109 @@ html[lang="ar"] .en-only{display:none !important}
 <text x="340" y="514" font-size="12" font-weight="400" fill="#4A5563" text-anchor="middle">pull — the engine reads your workbook on schedule</text>
 <text x="340" y="532" font-size="12" font-weight="400" fill="#4A5563" text-anchor="middle">API — the engine pulls, or your data mart pushes</text>
 </svg></div>
-  <div class="grid2" id="s8"></div>
+  <ul class="lines g2"><li><b data-ui="sc0b">Start within days.</b><span data-ui="sc0t">At the first level the data source is an Excel workbook we ship with the dashboard. The methodology is already inside, so the coordinator starts on day one.</span></li><li><b data-ui="sc1b">Integration level, when you need it.</b><span data-ui="sc1t">If the company has a data mart or source systems (BI, ERP, ITSM), the engine connects to them and collects the numbers automatically. We design the structure and mapping; your IT team makes the connection.</span></li><li><b data-ui="sc2b">History and trends.</b><span data-ui="sc2t">On every rebuild the engine stores a dated snapshot in a light embedded database, so the dashboard shows the current state with its dynamics.</span></li><li><b data-ui="sc3b">Support, optional.</b><span data-ui="sc3t">Run the dashboard on your own, or subscribe to the monthly service: we collect updates, rebuild and send a short commentary on what changed.</span></li></ul>
 </div></section>
 
-<section class="sec"><div class="wrap">
-  <h2 data-ui="s9t">How the dashboard differs from a BI report</h2><div class="grid2" id="s9"></div>
+<section class="sec beige" id="trust"><div class="wrap split">
+  <div><h2 data-ui="trustH">Why clients trust us</h2><p data-ui="trustP" class="ssub">The dashboard shows the most sensitive numbers of the company. So it runs where your data already lives.</p></div>
+  <ul class="lines"><li><b data-ui="t0b">Data never leaves the company.</b><span data-ui="t0t">The engine and the data live inside your perimeter: on your computer, server or private cloud. A key requirement for UAE government and financial clients.</span></li><li><b data-ui="t1b">NDA before the first working meeting.</b><span data-ui="t1t">We sign your non-disclosure agreement or offer ours.</span></li><li><b data-ui="t2b">Experience.</b><span data-ui="t2t">Evgeny Telenkov built business continuity from scratch at a large mining and metals company, with more than 20 plans for its sites. He has led risk functions in telecom, oil and gas and consulting (EY), and was Chief Risk Officer of a USD 20 billion petrochemical megaproject. Deputy Chair of Technical Committee 010 “Risk Management” of Rosstandart, Russia’s national standards body, and co-author of six GOST R national standards.</span></li><li><b data-ui="t3b">Industries.</b><span data-ui="t3t">Mining and metals, oil and gas and petrochemicals, telecom, manufacturing.</span></li><li><b data-ui="t4b">An honest boundary.</b><span data-ui="t4t">The dashboard is a management tool with a methodology inside. It is not a certified monitoring system, and the connection to your systems is made by your IT team to our design.</span></li></ul>
 </div></section>
 
-<section class="sec beige faq"><div class="wrap">
-  <h2 data-ui="s10t">FAQ</h2><div class="grid2" id="s10"></div>
-</div></section>
-
-<section class="sec " id="price"><div class="wrap">
-  <h2 data-ui="prTitle">Pricing</h2>
-  <div class="price">
-    <div class="pr"><span data-ui="pr0">Continuity and risk dashboard</span><b data-ui="pr0v">Priced by scope</b></div>
+<section class="sec" id="price"><div class="wrap split">
+  <div class="price-col"><h2 data-ui="priceH">Price</h2><p data-ui="priceP" class="ssub">The price depends on the number of critical processes on the screen, the data sources we connect and the deployment inside your perimeter. We send a quote within two working days.</p>
+    <div class="price-big"><b data-ui="priceBig">Priced by scope</b><span data-ui="priceBigN">quote within two working days · excl. VAT</span></div>
+    <a class="btn" href="#uform" data-ui="cta">Discuss on Zoom</a>
+    <p data-ui="afterBtn" class="after-btn">After the <a href='gap-assessment.html'>Resilience audit and improvement</a> programme the metrics are already collected and go straight onto the dashboard.</p>
   </div>
-  <p class="prnote" data-ui="prNote">Quote within two working days. The price depends on the number of critical processes on the screen, the data sources we connect and deployment inside your perimeter. Monthly service is agreed with the setup.</p>
+  <div><p data-ui="lvH" class="subh">Levels</p><ul class="lines"><li><b data-ui="lv0b">Standard, priced by scope.</b><span data-ui="lv0t">The Excel workbook with the methodology, the engine, setup for your structure, coordinator training and the first dashboard. Live in two weeks.</span></li><li><b data-ui="lv1b">Integration, on request.</b><span data-ui="lv1t">Connection to your data mart or systems (BI, ERP, ITSM): structure design, mapping and data quality rules, delivered with your IT team.</span></li><li><b data-ui="lv2b">Monthly service, agreed with the setup.</b><span data-ui="lv2t">We collect the updates, rebuild the dashboard and send a short expert commentary: what changed and what to watch.</span></li></ul>
+    <p data-ui="goodH" class="subh">Good to know</p>
+    <ul class="lines"><li><b data-ui="gd0b">Prices exclude VAT.</b><span data-ui="gd0t">The final amount is fixed in the contract.</span></li></ul>
+  </div>
 </div></section>
 
-<section class="cta"><div class="wrap in">
-  <div><h2 data-ui="ctaT">We will show the dashboard on your industry's example</h2><p data-ui="ctaS">An online demo, no strings attached: we walk through a live dashboard, map the metrics to your business and honestly tell you whether it will fly. We meet on Zoom and take as much time as the conversation needs.</p></div>
-  <a class="btn" href="#uform" data-ui="ctaMeet">Request a demo</a>
+<section class="sec beige" id="faq"><div class="wrap">
+  <h2 data-ui="faqH">Frequently asked questions</h2>
+  <div class="faq"><details><summary data-ui="q0q">Will the data leave the company?</summary><p data-ui="q0a">No. Everything runs on your side, so not a single number goes outside.</p></details><details><summary data-ui="q1q">We have no data for a dashboard. Where do we start?</summary><p data-ui="q1a">With the Excel workbook: the methodology inside tells you what to collect. If there is no baseline data at all, we gather it together in the <a href='gap-assessment.html'>Resilience audit and improvement</a> programme.</p></details><details><summary data-ui="q2q">Who will update the data?</summary><p data-ui="q2a">Your coordinator, 1–2 hours a month following the guidance. Or subscribe to the monthly service and we handle it.</p></details><details><summary data-ui="q3q">How long until the first dashboard?</summary><p data-ui="q3a">Usually two weeks from the start: setup, form filling, the first build and a results review.</p></details><details><summary data-ui="q4q">We already have BI reports. Why a separate dashboard?</summary><p data-ui="q4a">The continuity metrics are already selected, defined and linked, so the coordinator fills the form from day one. The start needs no integrations, servers or procurement, every rebuild keeps a dated snapshot for trends, and scheduled updates keep the continuity system alive after the project.</p></details></div>
 </div></section>
 
-<!-- Universal demo request form -->
-<style>
-#uform{background:#F7F4EF;border-top:1px solid #EAE7E1}
-#uform .uwrap{max-width:1080px;margin:0 auto;padding:56px 24px}
-html:not([lang="ar"]) #uform .ar-only{display:none !important}
-html[lang="ar"] #uform .en-only{display:none !important}
-#uform .ukick{font-family:'IBM Plex Mono',monospace;font-size:11.5px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#C4571C;margin:0 0 12px}
-html[dir="rtl"] #uform .ukick{font-family:'IBM Plex Sans Arabic',sans-serif;letter-spacing:0.04em}
-#uform h2{font-size:28px;font-weight:300;letter-spacing:-0.015em;margin:0 0 8px}
-#uform .usd{font-size:15.5px;color:#3D4149;margin:0 0 26px;max-width:70ch}
-#uform form{max-width:640px}
-#uform .urow{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-@media(max-width:560px){#uform .urow{grid-template-columns:1fr}}
-#uform input,#uform select,#uform textarea{width:100%;box-sizing:border-box;border:1px solid #DCD8D0;border-radius:12px;padding:13px 16px;font-size:15px;background:#fff;margin-bottom:12px;color:#16181F;font-family:inherit}
-#uform input:focus,#uform select:focus,#uform textarea:focus{outline:none;border-color:#C4571C}
-#uform .ulabel{display:block;font-size:13px;color:#3D4149;margin:0 0 6px;font-weight:600}
-#uform .ubtn{display:inline-block;background:#C4571C;color:#fff;border:none;border-radius:999px;padding:14px 28px;font-size:15.5px;font-weight:600;cursor:pointer;font-family:inherit}
-#uform .ubtn:hover{background:#A8490F}
-#uform .unote{font-size:14.5px;color:#1E7A46;min-height:20px;margin:6px 0 0}
-#uform .unote.err{color:#A03F12}
-#uform .umail{font-size:13px;color:#8A8478;margin-top:14px}
-#uform .umail a{color:#3D4149;text-decoration:underline}
+<section class="sec" id="start"><div class="wrap split">
+  <div><h2 data-ui="startH">How to start</h2><p data-ui="startP" class="ssub">Three steps to the start. We meet on Zoom and write by email.</p></div>
+  <ol class="road"><li><span class="n">01</span><b data-ui="start0b">Request</b><span data-ui="start0t">Leave your name and work email. We reply within one working day.</span></li><li><span class="n">02</span><b data-ui="start1b">Zoom call, 30 minutes</b><span data-ui="start1t">We go through your situation and your questions. If needed, we sign an NDA before the call.</span></li><li><span class="n">03</span><b data-ui="start2b">Quote and contract</b><span data-ui="start2t">We send the quote and the list of data we need to start.</span></li></ol>
+</div></section>
 
-/* --- единый футер --- */
-.sfoot{background:#0D1117;color:rgba(255,255,255,.65);margin-top:auto}
-/* Подвал у нижнего края даже на короткой странице. Разбор — в
-   08 - Проверки/patch_footer_bottom.py                        */
-body{min-height:100dvh;display:flex;flex-direction:column}
-.sfoot .in{max-width:1080px;margin:0 auto;padding:30px 24px 26px}
-.sfoot .row1{display:flex;flex-wrap:wrap;gap:10px 26px;padding-bottom:16px;margin-bottom:16px;border-bottom:1px solid rgba(255,255,255,.14)}
-.sfoot .row1 a{color:rgba(255,255,255,.95);text-decoration:none;font-size:15px}
-.sfoot .row1 a:hover{color:#F0A868}
-.sfoot .row2{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline;font-size:13px}
-.sfoot .row2 a{color:rgba(255,255,255,.65);text-decoration:none}
-.sfoot .row2 a:hover{color:#F0A868}
-.sfoot .lg2{font-size:15px;color:#fff;font-weight:600;letter-spacing:-0.02em}
-.sfoot .lg2 b{color:#C4571C}
-</style>
-<section id="uform"><div class="uwrap">
-  <p class="ukick"><span class="en-only" lang="en">One form for everything</span><span class="ar-only" lang="ar">نموذج واحد لكل شيء</span></p>
-  <h2><span class="en-only" lang="en">Request a demonstration or ask a question</span><span class="ar-only" lang="ar">اطلبوا عرضاً توضيحياً أو اطرحوا سؤالاً</span></h2>
-  <p class="usd"><span class="en-only" lang="en">Pick the product, leave your details and we reply by email — usually the same day.</span><span class="ar-only" lang="ar">اختاروا المنتج واتركوا بياناتكم ونرد عبر البريد — عادة في اليوم نفسه.</span></p>
-  <form id="uf">
-    <label class="ulabel" for="uf-product"><span class="en-only" lang="en">What are you interested in?</span><span class="ar-only" lang="ar">ما الذي يهمكم؟</span></label>
-    <select id="uf-product">
-      <option value="dashboard" data-en="Continuity &amp; risk dashboard — demo" data-ar="لوحة الاستمرارية والمخاطر — عرض توضيحي">Continuity &amp; risk dashboard — demo</option>
-      <option value="consulting" data-en="Consulting and audit" data-ar="الاستشارات والتدقيق">Consulting and audit</option>
-      <option value="ergp" data-en="ERGP certification — demo" data-ar="شهادة ERGP — عرض توضيحي">ERGP certification — demo</option>
-    </select>
-    <div class="urow">
-      <input id="uf-name" data-en="Name" data-ar="الاسم" placeholder="Name" required>
-      <input id="uf-email" type="email" data-en="Work email" data-ar="البريد المهني" placeholder="Work email" required>
+<section class="sec beige" id="uform"><div class="wrap">
+  <h2 data-ui="formH">Get a cost estimate or discuss on Zoom</h2>
+  <p data-ui="formP" class="ssub">We reply within one working day with an estimate or a Zoom link. If needed, we sign an NDA before the call.</p>
+  <form class="fbox" id="rcForm" novalidate>
+    <div class="want" role="radiogroup">
+      <label><input type="radio" name="want" value="Cost estimate" checked><span data-ui="want1">Cost estimate</span></label>
+      <label><input type="radio" name="want" value="Zoom call, 30 minutes"><span data-ui="want2">Zoom call, 30 minutes</span></label>
     </div>
-    <div class="urow">
-      <input id="uf-org" data-en="Organisation" data-ar="المؤسسة" placeholder="Organisation">
-      <input id="uf-role" data-en="Role" data-ar="الدور" placeholder="Role">
+    <div class="fgrid">
+      <input type="text" class="fld" id="rcName" placeholder="Your name" data-uip="fName" autocomplete="name">
+      <input type="email" class="fld" id="rcEmail" placeholder="Work email" data-uip="fEmail" autocomplete="email">
+      <input type="text" class="fld" id="rcOrg" placeholder="Company" data-uip="fOrg" autocomplete="organization">
+      <input type="text" class="fld" id="rcRole" placeholder="Role" data-uip="fRole" autocomplete="organization-title">
     </div>
-    <textarea id="uf-msg" rows="4" data-en="Message (optional)" data-ar="رسالة (اختياري)" placeholder="Message (optional)"></textarea>
-    <button type="submit" class="ubtn"><span class="en-only" lang="en">Send the request</span><span class="ar-only" lang="ar">أرسلوا الطلب</span></button>
-    <p class="unote" id="uf-note"></p>
+    <textarea class="fld" id="rcMsg" rows="3" placeholder="Which critical processes should the board see first? (optional)" data-uip="fMsg"></textarea>
+    <div class="fend">
+      <label class="consent"><input type="checkbox" id="rcConsent"><span data-ui="consent">I agree to the processing of my personal data under the <a href='privacy.html' target='_blank' rel='noopener'>privacy policy</a>.</span></label>
+      <button type="submit" class="btn" id="rcSend"><span data-ui="send">Send request</span></button>
+    </div>
+    <p class="fmsg" id="rcOut" aria-live="polite"></p>
+    <p data-ui="mail" class="fsmall">Prefer email? Write to <a href='mailto:info@risk-place.org'>info@risk-place.org</a>.</p>
   </form>
-  <p class="umail"><span class="en-only" lang="en">Prefer email? Write to <a href="https://bcm.risk-place.ru/" hreflang="ru"><span class="en-only" lang="en">BCM library (RU)</span><span class="ar-only" lang="ar">مكتبة استمرارية الأعمال (بالروسية)</span></a> ·
-    <a href="mailto:info@risk-place.org">info@risk-place.org</a>.</span><span class="ar-only" lang="ar">تفضلون البريد؟ راسلوا <a href="mailto:info@risk-place.org">info@risk-place.org</a>.</span></p>
 </div></section>
-<script>
-(function(){
-  var PRESET="dashboard", PAGE="dashboard";
-  var sel=document.getElementById("uf-product");
-  sel.value=PRESET;
-  function ufLang(){return document.documentElement.lang==="ar"?"ar":"en";}
-  function ufApply(){
-    var l=ufLang();
-    document.querySelectorAll("#uform [data-en]").forEach(function(el){
-      var v=el.getAttribute(l==="ar"?"data-ar":"data-en");
-      if(!v)return;
-      v=v.replace(/&amp;/g,"&");
-      if(el.tagName==="OPTION"){el.textContent=v;}else{el.setAttribute("placeholder",v);}
-    });
-  }
-  new MutationObserver(ufApply).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});
-  ufApply();
-  document.getElementById("uf").addEventListener("submit",function(e){
-    e.preventDefault();
-    var l=ufLang(), note=document.getElementById("uf-note");
-    var body={type:"demo",product:sel.value,
-      name:document.getElementById("uf-name").value.trim(),
-      email:document.getElementById("uf-email").value.trim(),
-      org:document.getElementById("uf-org").value.trim(),
-      role:document.getElementById("uf-role").value.trim(),
-      message:document.getElementById("uf-msg").value.trim(),
-      lang:l,page:PAGE};
-    fetch("https://ergp.risk-place.org/api/lead",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)})
-      .then(function(r){
-        if(!r.ok)throw 0;
-        note.textContent=(l==="ar")?"شكراً — سنرد عبر البريد قريباً.":"Thank you — we will reply by email shortly.";
-        note.classList.remove("err");
-        try{gtag('event','demo_lead_submit',{page:PAGE,product:sel.value});}catch(x){}
-        try{ym(111613223,'reachGoal','demo_lead_submit');}catch(x){}
-      })
-      .catch(function(){
-        note.textContent=(l==="ar")?"تعذر الإرسال. راسلوا info@risk-place.org":"Could not send. Please email info@risk-place.org";
-        note.classList.add("err");
-      });
-  });
-})();
-</script>
 
-
-
-<a class="stickycta" id="stickycta" href="#uform" data-ui="sticky">Request a meeting</a>
+<a class="stickycta" id="stickycta" href="#uform" data-ui="sticky">Discuss on Zoom</a>
 
 <script>
-var C={"en": {"sticky": "Request a meeting", "tagline": "Business Continuity &amp; Resilience · GCC", "back": "← All services", "copy": "© 2026 risk-place.org · Business Continuity &amp; Resilience", "privacy": "Privacy policy", "kicker": "Step 3 · Flagship · on-premise", "h1": "Would your business survive tomorrow's disruption?", "sub": "Now you can see it on one screen. The continuity dashboard shows the resilience index, critical processes, points of failure and the cost of one day down — for the CEO, the board and audit. Data never leaves your company.", "price": "Priced by scope", "prn": "quote within two working days · runs inside your perimeter", "ctaDemo": "Open the live demo →", "ctaMeet": "Request a demo", "s1t": "Sound familiar?", "s1": [["“Are we ready for a major disruption?”", "The board asks — and there is no answer: a folder of plans, but no numbers."], ["The BCM project ended — the system died", "A quarter later the plans are stale, exercises stopped, and nobody noticed."], ["You learn about problems from incidents", "Degrading protection becomes visible only when something breaks and costs money."]], "s2t": "The cost of not seeing", "s2": [["$18K+ per day", "A typical cost of one day down even for a mid-size business — most companies never calculated theirs."], ["40% never reopen", "The share of small businesses that never resume operations after a major disruption (FEMA)."], ["26 hours against a 4-hour target", "Actual recovery time is often several times the target — discovered during the outage."]], "s2n": "The cure for blindness is an instrument that shows the state at all times.", "s3t": "This is what it looks like", "s3n": "Click to open a live example built on fictional ABC company data.", "mockTitle": "Business continuity dashboard · ABC company", "mockUpd": "updated today", "kpi": [["68 <small>/100</small>", "Resilience index · trend +4"], ["26 h", "MTTR · target 4 h"], ["3 / 8", "processes at risk"], ["5", "single points of failure"], ["$18K", "cost of one day down"]], "s4t": "What you will see on the dashboard", "s4": [["How protected we are", "Resilience index 0-100 with its trend: one number for the board conversation."], ["What fails first", "Critical processes with traffic lights: readiness, RTO/RPO, owners."], ["Where the thin threads are", "Single points of failure: one person, one supplier, one server, one AI service."], ["What an hour of downtime costs", "Financial exposure: cost of downtime and the recovery cushion."], ["Are the plans alive", "BCP/DRP coverage, review dates, when exercises ran and what they revealed."], ["What changed", "Quarterly trends: where things improved and where degradation started."]], "s5t": "Who needs it and when", "s5": [["CEO", "See business resilience the way you see revenue — without reading the plans."], ["Board of directors", "One screen that answers “are we ready?” with numbers."], ["Risk manager and BCM owner", "A single picture of the whole system; arguments for the budget."], ["Audit and counterparties", "Show maturity to banks, exchanges, tenders and insurers — with numbers."]], "s5n": "<b>Especially timely</b> before a tender or a regulator review (NCEMA 7000, CBUAE), after a recent incident, when the insurer starts asking questions — or right after a BCM project, to keep the system alive.", "s6t": "Start within days", "s6": [["You receive an Excel workbook with the methodology inside", "One sheet is a data form with pre-selected metrics, another is guidance: what, where from and how often. No months of deciding “what to measure”."], ["Your coordinator fills the form", "A regular employee, 1-2 hours. No data yet? We will help collect the basics in a gap assessment."], ["The first dashboard is on your desk", "The engine builds an HTML file: opens in any browser, works offline. Then it rebuilds on schedule."]], "s6n": "When the appetite comes, we connect your systems directly (the Integration level) and the numbers update without manual input.", "s7t": "Product levels", "s7": [["Standard — priced by scope", "Excel workbook with the methodology, the engine, setup for your structure, coordinator training, first dashboard. Live in 2 weeks."], ["Integration — on request", "Connection to your data mart or systems (BI, ERP, ITSM): structure design, mapping, data quality rules. Delivered together with your IT team."], ["Monthly service — agreed with the setup", "We collect the updates, rebuild the dashboard and send a short expert commentary: what changed and what to watch."]], "s8t": "How the dashboard works", "s8i": "A light setup: the dashboard is a single HTML file built by a small engine. The engine runs entirely inside your perimeter — on the coordinator's laptop, a corporate server or your private cloud. Data never leaves the company.", "s8": [["Start within days.", "At the first level the data source is an Excel workbook we ship with the dashboard: the methodology is already inside the file, so the coordinator starts filling the form on day one."], ["Integration level — when the appetite comes.", "If the company has a data mart or source systems (BI, ERP, ITSM), the engine connects to them and collects the numbers automatically. We design the structure and mapping; your IT team does the connection."], ["History and trends.", "On every rebuild the engine stores a dated snapshot in a lightweight embedded database next to itself. The dashboard shows the current state together with its dynamics."], ["Support — optional.", "Run the dashboard fully on your own, or subscribe to the monthly service: we collect updates, rebuild and send a short commentary on what changed."]], "s9t": "How the dashboard differs from a BI report", "s9": [["Methodology inside", "A BI team spends months deciding what to measure. Here the continuity metrics are already selected, defined and linked — fill from day one."], ["No IT project needed", "The start requires no integrations, servers or procurement: Excel plus a light engine inside your perimeter."], ["History and trends out of the box", "Every rebuild stores a snapshot, so you see the dynamics over time."], ["It stays alive after the project", "Scheduled updates and traffic lights keep the continuity system from quietly dying."]], "s10t": "FAQ", "s10": [["Will the data leave the company?", "No. The engine and the data live entirely inside your perimeter — on your computer, server or private cloud. Not a single number goes outside. A key requirement for UAE government and financial clients."], ["We have no data for a dashboard. Where do we start?", "With the Excel workbook: the methodology inside tells you what to collect. If there is no baseline data at all, we will gather it together in a gap assessment."], ["Who will update the data?", "Your coordinator — 1-2 hours a month following the guidance. Or subscribe to the monthly service and we will handle it."], ["How long until the first dashboard?", "Usually 2 weeks from the start: setup, form filling, first build and a results review."], ["Is this a certified monitoring system?", "No. It is a management tool and a methodology — honestly, with no inflated promises."]], "ctaT": "We will show the dashboard on your industry's example", "ctaS": "An online demo, no strings attached: we walk through a live dashboard, map the metrics to your business and honestly tell you whether it will fly. We meet on Zoom and take as much time as the conversation needs.", "prTitle": "Pricing", "pr0": "Continuity and risk dashboard", "pr0v": "Priced by scope", "prNote": "Quote within two working days. The price depends on the number of critical processes on the screen, the data sources we connect and deployment inside your perimeter. Monthly service is agreed with the setup."}, "ar": {"sticky": "اطلبوا اجتماعاً", "tagline": "استمرارية الأعمال والمرونة · دول الخليج", "back": "→ كل الخدمات", "copy": "© ٢٠٢٦ risk-place.org · استمرارية الأعمال والمرونة", "privacy": "سياسة الخصوصية", "kicker": "الخطوة ٣ · المنتج الرائد · داخل بنيتكم", "h1": "هل سيصمد عملكم أمام اضطراب الغد؟", "sub": "الآن يمكن رؤية ذلك على شاشة واحدة. لوحة الاستمرارية تعرض مؤشر المرونة والعمليات الحرجة ونقاط الفشل وتكلفة يوم التوقف — للرئيس التنفيذي والمجلس والتدقيق. البيانات لا تغادر شركتكم.", "price": "السعر حسب النطاق", "prn": "عرض سعر خلال يومي عمل · تعمل داخل بنيتكم", "ctaDemo": "افتحوا العرض الحي ←", "ctaMeet": "اطلبوا عرضاً", "s1t": "هل يبدو هذا مألوفاً؟", "s1": [["«هل نحن مستعدون لاضطراب كبير؟»", "المجلس يسأل — ولا جواب: مجلد خطط بلا أرقام."], ["انتهى مشروع الاستمرارية — وماتت المنظومة", "بعد ربع سنة الخطط قديمة والتمارين متوقفة ولم يلحظ أحد."], ["تعرفون المشكلات من الحوادث", "تدهور الحماية لا يظهر إلا حين ينكسر شيء ويكلف مالاً."]], "s2t": "تكلفة ألا ترى", "s2": [["+١٨ ألف $ يومياً", "تكلفة نموذجية ليوم توقف واحد حتى لشركة متوسطة — ومعظم الشركات لم تحسب رقمها."], ["٤٠٪ لا تعود للعمل", "نسبة الشركات الصغيرة التي لا تستأنف نشاطها بعد اضطراب كبير (FEMA)."], ["٢٦ ساعة مقابل هدف ٤ ساعات", "زمن التعافي الفعلي كثيراً ما يفوق الهدف أضعافاً — ويُكتشف أثناء العطل."]], "s2n": "علاج العمى جهاز قياس يعرض الحالة باستمرار.", "s3t": "هكذا تبدو", "s3n": "انقروا لفتح مثال حي ببيانات شركة ABC الافتراضية.", "mockTitle": "لوحة استمرارية الأعمال · شركة ABC", "mockUpd": "حُدّثت اليوم", "kpi": [["68 <small>/100</small>", "مؤشر المرونة · الاتجاه +٤"], ["٢٦ س", "زمن التعافي · الهدف ٤ س"], ["٣ / ٨", "عمليات في خطر"], ["٥", "نقاط فشل أحادية"], ["١٨ ألف $", "تكلفة يوم توقف"]], "s4t": "ما الذي سترونه على اللوحة", "s4": [["ما مدى حمايتنا", "مؤشر المرونة ٠-١٠٠ واتجاهه: رقم واحد لحوار المجلس."], ["ما الذي يسقط أولاً", "العمليات الحرجة بإشارات ضوئية: الجاهزية وأهداف التعافي والمسؤولون."], ["أين الخيوط الرفيعة", "نقاط الفشل الأحادية: شخص واحد، مورد واحد، خادم واحد، خدمة ذكاء اصطناعي واحدة."], ["كم تكلف ساعة التوقف", "التعرض المالي: تكلفة التوقف ووسادة التعافي."], ["هل الخطط حية", "تغطية BCP/DRP وتواريخ المراجعة ومتى جرت التمارين وما كشفته."], ["ما الذي تغير", "اتجاهات ربع سنوية: أين تحسنت الأمور وأين بدأ التدهور."]], "s5t": "لمن هذه اللوحة ومتى", "s5": [["الرئيس التنفيذي", "رؤية مرونة الأعمال كما ترون الإيرادات — دون قراءة الخطط."], ["مجلس الإدارة", "شاشة واحدة تجيب بالأرقام عن سؤال «هل نحن مستعدون؟»."], ["مدير المخاطر ومالك الاستمرارية", "صورة موحدة للمنظومة كلها؛ وحجج للميزانية."], ["التدقيق والأطراف المقابلة", "إظهار النضج للبنوك والبورصات والمناقصات وشركات التأمين — بالأرقام."]], "s5n": "<b lang='ar'>مناسبة خصوصاً</b> قبل مناقصة أو مراجعة منظم (NCEMA 7000، المصرف المركزي)، وبعد حادث قريب، وحين يبدأ المؤمِّن بطرح الأسئلة — أو بعد مشروع استمرارية مباشرة لإبقاء المنظومة حية.", "s6t": "انطلاق خلال أيام", "s6": [["تستلمون مصنف Excel والمنهجية بداخله", "ورقة نموذج بيانات بمقاييس مختارة مسبقاً وورقة إرشادات: ماذا ومن أين وكم مرة. لا شهور من نقاش «ماذا نقيس»."], ["منسقكم يملأ النموذج", "موظف عادي، ساعة أو ساعتان. لا بيانات بعد؟ نساعدكم بجمع الأساسيات في تقييم الفجوات."], ["أول لوحة على مكتبكم", "المحرك يبني ملف HTML يعمل في أي متصفح وبلا إنترنت، ثم يعيد البناء وفق جدول."]], "s6n": "وحين تأتي الشهية نربط أنظمتكم مباشرة (مستوى التكامل) فتتحدث الأرقام دون إدخال يدوي.", "s7t": "مستويات المنتج", "s7": [["القياسي — السعر حسب النطاق", "مصنف Excel بالمنهجية، والمحرك، والإعداد لهيكلكم، وتدريب المنسق، وأول لوحة. جاهز خلال أسبوعين."], ["التكامل — حسب الطلب", "ربط بمستودع بياناتكم أو أنظمتكم (BI، ERP، ITSM): تصميم الهيكل والربط وقواعد جودة البيانات — مع فريقكم التقني."], ["الخدمة الشهرية — تتفق مع الإعداد", "نجمع التحديثات ونعيد بناء اللوحة ونرسل تعليقاً موجزاً من الخبير: ما تغير وما الذي يستحق الانتباه."]], "s8t": "كيف تعمل اللوحة", "s8i": "إعداد خفيف: اللوحة ملف HTML واحد يبنيه محرك صغير يعمل بالكامل داخل نطاقكم — على حاسوب المنسق أو خادم الشركة أو سحابتكم الخاصة. البيانات لا تغادر الشركة.", "s8": [["انطلاق خلال أيام.", "في المستوى الأول مصدر البيانات مصنف Excel نسلمه مع اللوحة، والمنهجية بداخله — فيبدأ المنسق من اليوم الأول."], ["مستوى التكامل — حين تأتي الشهية.", "إن وُجد مستودع بيانات أو أنظمة مصدر، يتصل بها المحرك ويجمع الأرقام تلقائياً. نصمم الهيكل والربط، وفريقكم التقني ينفذ الاتصال."], ["التاريخ والاتجاهات.", "مع كل إعادة بناء يخزن المحرك لقطة مؤرخة في قاعدة مدمجة خفيفة، فتعرض اللوحة الوضع الحالي ومساره عبر الزمن."], ["الدعم — اختياري.", "أديروا اللوحة بأنفسكم كلياً أو اشتركوا بالخدمة الشهرية: نجمع ونبني ونرسل تعليقاً بما تغير."]], "s9t": "الفرق بين اللوحة وتقرير <span lang='en'>BI</span>", "s9": [["المنهجية بالداخل", "فريق BI يقضي شهوراً يقرر ماذا يقيس. هنا مقاييس الاستمرارية مختارة ومعرفة ومترابطة — املأوا من اليوم الأول."], ["لا حاجة لمشروع تقني", "البداية بلا تكاملات ولا خوادم ولا مشتريات: Excel ومحرك خفيف داخل نطاقكم."], ["التاريخ والاتجاهات جاهزة", "كل إعادة بناء تخزن لقطة، فترون الديناميكا عبر الزمن."], ["تبقى حية بعد المشروع", "التحديث المجدول والإشارات الضوئية يمنعان موت منظومة الاستمرارية بصمت."]], "s10t": "أسئلة شائعة", "s10": [["هل تغادر البيانات الشركة؟", "لا. المحرك والبيانات داخل نطاقكم بالكامل. لا يخرج رقم واحد — متطلب أساسي للجهات الحكومية والمالية في الإمارات."], ["لا نملك بيانات للوحة، من أين نبدأ؟", "من مصنف Excel: المنهجية بداخله تدلكم على ما يُجمع. وإن غابت البيانات الأساسية كلياً نجمعها معاً في تقييم الفجوات."], ["من سيحدّث البيانات؟", "منسقكم — ساعة إلى ساعتين شهرياً وفق الإرشادات. أو اشتركوا بالخدمة الشهرية ونتولى الأمر."], ["كم يلزم حتى أول لوحة؟", "عادة أسبوعان من البدء: إعداد وملء النموذج وأول بناء وجلسة مراجعة."], ["هل هي منظومة مراقبة معتمدة؟", "لا. إنها أداة إدارية ومنهجية — بصدق ودون وعود منفوخة."]], "ctaT": "سنعرض اللوحة على مثال من قطاعكم", "ctaS": "عرض عبر الإنترنت دون أي التزام: نمر على لوحة حية ونطبق المقاييس على أعمالكم ونقول بصدق إن كانت ستنجح لديكم. نلتقي عبر Zoom ونأخذ من الوقت ما يحتاجه الحوار.", "prTitle": "التسعير", "pr0": "لوحة الاستمرارية والمخاطر", "pr0v": "السعر حسب النطاق", "prNote": "عرض سعر خلال يومي عمل. يعتمد السعر على عدد العمليات الحرجة على الشاشة، ومصادر البيانات التي نربطها، والنشر داخل بنيتكم. وتتفق الخدمة الشهرية مع الإعداد."}};
+var C={"en": {"tagline": "Business Continuity &amp; Resilience · GCC", "back": "← All services", "copy": "© 2026 risk-place.org · Business Continuity &amp; Resilience", "privacy": "Privacy policy", "sticky": "Discuss on Zoom", "hs0b": "Week 1 · An Excel workbook with the methodology inside", "hs0t": "One sheet is a data form with pre-selected metrics, another is guidance: what, from where and how often. No months spent deciding what to measure.", "hs1b": "Weeks 1–2 · Your coordinator fills the form", "hs1t": "A regular employee, 1–2 hours. No data yet? We collect the basics with you in the <a href='gap-assessment.html'>Resilience audit and improvement</a> programme.", "hs2b": "Week 2 · The first dashboard is on your desk", "hs2t": "The engine builds an HTML file that opens in any browser and works offline. We review the results with you; then it rebuilds on schedule.", "lvH": "Levels", "lv0b": "Standard, priced by scope.", "lv0t": "The Excel workbook with the methodology, the engine, setup for your structure, coordinator training and the first dashboard. Live in two weeks.", "lv1b": "Integration, on request.", "lv1t": "Connection to your data mart or systems (BI, ERP, ITSM): structure design, mapping and data quality rules, delivered with your IT team.", "lv2b": "Monthly service, agreed with the setup.", "lv2t": "We collect the updates, rebuild the dashboard and send a short expert commentary: what changed and what to watch.", "shotAlt": "Continuity and risk dashboard: live demo screenshot with the resilience index, the cost of one day of downtime and key metrics", "ctaDemo": "Open the live demo →", "cta": "Discuss on Zoom", "kicker": "Continuity and risk dashboard · first screen in 2 weeks · inside your perimeter", "h1": "Continuity and risk dashboard: one screen that shows whether the business would survive a disruption", "sub": "The resilience index, critical processes, single points of failure and the cost of one day of downtime, on one screen for the CEO, the board and audit. First dashboard in two weeks. Data never leaves your company.", "f0b": "2 weeks", "f0t": "from the start to the first dashboard", "f1b": "1–2 hours a month", "f1t": "from your coordinator, or our monthly service", "f2b": "Inside your perimeter", "f2t": "a laptop, a server or a private cloud; data never leaves", "f3b": "Live demo", "f3t": "open an example now, no sign-up", "price": "Priced by scope", "prn": "quote within two working days · excl. VAT", "g0b": "“Are we ready for a major disruption?”", "g0t": "A resilience index from 0 to 100 with its trend: one number for the board conversation.", "g1b": "“What fails first?”", "g1t": "Critical processes with traffic lights: readiness, recovery time and recovery point objectives (RTO, RPO), owners.", "g2b": "“Where are the thin threads?”", "g2t": "Single points of failure: one person, one supplier, one server, one AI service.", "g3b": "“What does an hour of downtime cost?”", "g3t": "Financial exposure: the cost of downtime and the recovery cushion.", "g4b": "“Are the plans still alive after the project?”", "g4t": "BCP and DRP coverage, review dates, the last exercise and what it revealed, and quarterly trends: where things improved and where they started to slip.", "givesH": "What it gives you", "givesP": "For the CEO, the board, the risk manager and audit. Five questions they ask, and what the dashboard shows.", "n0b": "Boards in the region put cyber risk first.", "n0t": "In a Heidrick &amp; Struggles survey of 148 CEOs and directors in the Middle East, 49% named cybersecurity among the most significant issues for 2026, against 31% worldwide. 58% said they were confident in managing it. A dashboard shows what that confidence rests on.", "n0s": "<a href='https://meatechwatch.com/2026/04/14/cybersecurity-dominates-the-leadership-agenda-in-the-middle-east-as-ai-readiness-lags/' target='_blank' rel='noopener nofollow'>Heidrick &amp; Struggles via MEA Tech Watch, 14 April 2026</a>", "n1b": "The threat moves faster than an annual report.", "n1t": "In September 2026 organisations in the UAE faced on average 2,521 cyber attacks a week, 47% more than a year earlier.", "n1s": "<a href='https://securitymea.com/2026/10/09/uae-records-47-year-on-year-rise-in-cyber-attacks/' target='_blank' rel='noopener nofollow'>Check Point Research via Security MEA, 9 October 2026</a>", "n2b": "In financial institutions, management answers personally.", "n2t": "Under Article 181 of the new UAE Central Bank Law, responsible management personnel may face personal consequences where their knowledge, negligence or failure to perform their duties is established.", "n2s": "<a href='https://hadefpartners.com/news-insights/insights/uae-central-bank-law-2026-developments-and-the-september-2026-reconciliation-deadline/' target='_blank' rel='noopener nofollow'>Hadef &amp; Partners, 26 August 2026</a>", "n3b": "What you can do this week.", "n3t": "Ask for three numbers before the next board meeting: the cost of one day of downtime, the actual recovery time from the last test and how many critical processes have a tested plan. If they take more than a day to collect, the dashboard saves that time every quarter.", "nowH": "Why it is worth starting now", "nowP": "Risks change week by week, and an annual report shows last year’s picture. A dashboard is especially timely before a tender or a regulator review, after an incident or when the insurer starts asking questions.", "howH": "How it works and when you see the first dashboard", "howP": "Three steps, about two weeks. No IT project is needed to start.", "howNote": "When you are ready, we connect your systems directly (the Integration level) and the numbers update without manual input.", "rezH": "This is what it looks like", "rezP": "A live example built on the data of a fictional company, ABC. Click to open the demo.", "ctaDemo2": "Open the live demo →", "schH": "How the dashboard works inside your perimeter", "schP": "A light setup: the dashboard is a single HTML file built by a small engine. The engine runs entirely inside your perimeter, on the coordinator’s laptop, a corporate server or your private cloud.", "sc0b": "Start within days.", "sc0t": "At the first level the data source is an Excel workbook we ship with the dashboard. The methodology is already inside, so the coordinator starts on day one.", "sc1b": "Integration level, when you need it.", "sc1t": "If the company has a data mart or source systems (BI, ERP, ITSM), the engine connects to them and collects the numbers automatically. We design the structure and mapping; your IT team makes the connection.", "sc2b": "History and trends.", "sc2t": "On every rebuild the engine stores a dated snapshot in a light embedded database, so the dashboard shows the current state with its dynamics.", "sc3b": "Support, optional.", "sc3t": "Run the dashboard on your own, or subscribe to the monthly service: we collect updates, rebuild and send a short commentary on what changed.", "t0b": "Data never leaves the company.", "t0t": "The engine and the data live inside your perimeter: on your computer, server or private cloud. A key requirement for UAE government and financial clients.", "t1b": "NDA before the first working meeting.", "t1t": "We sign your non-disclosure agreement or offer ours.", "t2b": "Experience.", "t2t": "Evgeny Telenkov built business continuity from scratch at a large mining and metals company, with more than 20 plans for its sites. He has led risk functions in telecom, oil and gas and consulting (EY), and was Chief Risk Officer of a USD 20 billion petrochemical megaproject. Deputy Chair of Technical Committee 010 “Risk Management” of Rosstandart, Russia’s national standards body, and co-author of six GOST R national standards.", "t3b": "Industries.", "t3t": "Mining and metals, oil and gas and petrochemicals, telecom, manufacturing.", "t4b": "An honest boundary.", "t4t": "The dashboard is a management tool with a methodology inside. It is not a certified monitoring system, and the connection to your systems is made by your IT team to our design.", "trustH": "Why clients trust us", "trustP": "The dashboard shows the most sensitive numbers of the company. So it runs where your data already lives.", "priceH": "Price", "priceP": "The price depends on the number of critical processes on the screen, the data sources we connect and the deployment inside your perimeter. We send a quote within two working days.", "priceBig": "Priced by scope", "priceBigN": "quote within two working days · excl. VAT", "afterBtn": "After the <a href='gap-assessment.html'>Resilience audit and improvement</a> programme the metrics are already collected and go straight onto the dashboard.", "goodH": "Good to know", "gd0b": "Prices exclude VAT.", "gd0t": "The final amount is fixed in the contract.", "faqH": "Frequently asked questions", "q0q": "Will the data leave the company?", "q0a": "No. Everything runs on your side, so not a single number goes outside.", "q1q": "We have no data for a dashboard. Where do we start?", "q1a": "With the Excel workbook: the methodology inside tells you what to collect. If there is no baseline data at all, we gather it together in the <a href='gap-assessment.html'>Resilience audit and improvement</a> programme.", "q2q": "Who will update the data?", "q2a": "Your coordinator, 1–2 hours a month following the guidance. Or subscribe to the monthly service and we handle it.", "q3q": "How long until the first dashboard?", "q3a": "Usually two weeks from the start: setup, form filling, the first build and a results review.", "q4q": "We already have BI reports. Why a separate dashboard?", "q4a": "The continuity metrics are already selected, defined and linked, so the coordinator fills the form from day one. The start needs no integrations, servers or procurement, every rebuild keeps a dated snapshot for trends, and scheduled updates keep the continuity system alive after the project.", "jsNeed": "Please enter your name and work email.", "jsConsent": "Please tick the consent to the processing of personal data.", "jsWait": "Sending…", "jsOk": "Thank you. We reply within one working day with an estimate or a Zoom link.", "jsErr": "Could not send. Please write to info@risk-place.org.", "fName": "Your name", "fEmail": "Work email", "fOrg": "Company", "fRole": "Role", "fMsg": "Which critical processes should the board see first? (optional)", "startH": "How to start", "startP": "Three steps to the start. We meet on Zoom and write by email.", "start0b": "Request", "start0t": "Leave your name and work email. We reply within one working day.", "start1b": "Zoom call, 30 minutes", "start1t": "We go through your situation and your questions. If needed, we sign an NDA before the call.", "start2b": "Quote and contract", "start2t": "We send the quote and the list of data we need to start.", "formH": "Get a cost estimate or discuss on Zoom", "formP": "We reply within one working day with an estimate or a Zoom link. If needed, we sign an NDA before the call.", "want1": "Cost estimate", "want2": "Zoom call, 30 minutes", "consent": "I agree to the processing of my personal data under the <a href='privacy.html' target='_blank' rel='noopener'>privacy policy</a>.", "send": "Send request", "mail": "Prefer email? Write to <a href='mailto:info@risk-place.org'>info@risk-place.org</a>."}, "ar": {"tagline": "استمرارية الأعمال والمرونة · دول الخليج", "back": "→ كل الخدمات", "copy": "© ٢٠٢٦ risk-place.org · استمرارية الأعمال والمرونة", "privacy": "سياسة الخصوصية", "sticky": "ناقشوا معنا عبر زووم", "hs0b": "الأسبوع 1 · مصنف Excel والمنهجية بداخله", "hs0t": "ورقة نموذج بيانات بمقاييس مختارة مسبقا، وورقة إرشادات: ماذا ومن أين وكم مرة. لا شهور في نقاش ماذا نقيس.", "hs1b": "الأسبوعان 1–2 · منسقكم يملأ النموذج", "hs1t": "موظف عادي، ساعة أو ساعتان. لا بيانات بعد؟ نجمع الأساسيات معكم في برنامج <a href='gap-assessment.html'>تدقيق المرونة وتحسينها</a>.", "hs2b": "الأسبوع 2 · أول لوحة على مكتبكم", "hs2t": "يبني المحرك ملف HTML يفتح في أي متصفح ويعمل دون اتصال. نراجع النتائج معكم، ثم يعيد البناء وفق جدول.", "lvH": "المستويات", "lv0b": "القياسي، السعر حسب النطاق.", "lv0t": "مصنف Excel بالمنهجية، والمحرك، والإعداد لهيكلكم، وتدريب المنسق، وأول لوحة. جاهز خلال أسبوعين.", "lv1b": "التكامل، حسب الطلب.", "lv1t": "الربط بمستودع بياناتكم أو أنظمتكم (BI وERP وITSM): تصميم الهيكل والربط وقواعد جودة البيانات، مع فريقكم التقني.", "lv2b": "الخدمة الشهرية، يتفق عليها مع الإعداد.", "lv2t": "نجمع التحديثات ونعيد بناء اللوحة ونرسل تعليقا موجزا من الخبير: ما الذي تغير وما الذي يستحق الانتباه.", "shotAlt": "لوحة الاستمرارية والمخاطر: لقطة من العرض الحي تظهر مؤشر المرونة وكلفة يوم التوقف والمقاييس الرئيسية", "ctaDemo": "افتحوا العرض الحي ←", "cta": "ناقشوا معنا عبر زووم", "kicker": "لوحة الاستمرارية والمخاطر · أول لوحة خلال أسبوعين · داخل بنيتكم", "h1": "لوحة الاستمرارية والمخاطر: شاشة واحدة تبين هل يصمد عملكم أمام الاضطراب", "sub": "مؤشر المرونة والعمليات الحرجة ونقاط الفشل المفردة وكلفة يوم التوقف، على شاشة واحدة للرئيس التنفيذي ومجلس الإدارة والتدقيق. أول لوحة خلال أسبوعين، والبيانات لا تغادر شركتكم.", "f0b": "أسبوعان", "f0t": "من البدء حتى أول لوحة", "f1b": "ساعة إلى ساعتين شهريا", "f1t": "من منسقكم، أو تتولاها خدمتنا الشهرية", "f2b": "داخل بنيتكم", "f2t": "حاسوب أو خادم أو سحابة خاصة، والبيانات لا تغادر", "f3b": "عرض حي", "f3t": "افتحوا مثالا الآن دون تسجيل", "price": "السعر حسب النطاق", "prn": "عرض سعر خلال يومي عمل · دون ضريبة القيمة المضافة", "g0b": "«هل نحن مستعدون لاضطراب كبير؟»", "g0t": "مؤشر مرونة من 0 إلى 100 مع اتجاهه: رقم واحد لحوار مجلس الإدارة.", "g1b": "«ما الذي يسقط أولا؟»", "g1t": "العمليات الحرجة بإشارات ضوئية: الجاهزية وأهداف زمن التعافي ونقطة الاستعادة والمسؤولون.", "g2b": "«أين الخيوط الرفيعة؟»", "g2t": "نقاط الفشل المفردة: شخص واحد، مورد واحد، خادم واحد، خدمة ذكاء اصطناعي واحدة.", "g3b": "«كم تكلف ساعة التوقف؟»", "g3t": "التعرض المالي: كلفة التوقف ووسادة التعافي.", "g4b": "«هل ما زالت الخطط حية بعد انتهاء المشروع؟»", "g4t": "تغطية خطط الاستمرارية والتعافي التقني، وتواريخ المراجعة، وآخر تمرين وما كشفه، والاتجاهات الربع سنوية: أين تحسنت الأمور وأين بدأ التراجع.", "givesH": "ما الذي يقدمه لكم", "givesP": "للرئيس التنفيذي ومجلس الإدارة ومدير المخاطر والتدقيق. خمسة أسئلة يطرحونها، وما تعرضه اللوحة.", "n0b": "مجالس الإدارة في المنطقة تضع الخطر السيبراني أولا.", "n0t": "في استطلاع أجرته Heidrick &amp; Struggles وشمل 148 رئيسا تنفيذيا وعضو مجلس إدارة في الشرق الأوسط، عد 49% الأمن السيبراني من أهم قضايا 2026، مقابل 31% عالميا. وقال 58% إنهم واثقون من إدارته. واللوحة تبين على ماذا تقوم هذه الثقة.", "n0s": "<a href='https://meatechwatch.com/2026/04/14/cybersecurity-dominates-the-leadership-agenda-in-the-middle-east-as-ai-readiness-lags/' target='_blank' rel='noopener nofollow'>Heidrick &amp; Struggles عبر MEA Tech Watch، 14 أبريل 2026</a>", "n1b": "التهديد أسرع من التقرير السنوي.", "n1t": "في سبتمبر 2026 واجهت المؤسسات في الإمارات في المتوسط 2,521 هجوما سيبرانيا في الأسبوع، بزيادة 47% عن العام السابق.", "n1s": "<a href='https://securitymea.com/2026/10/09/uae-records-47-year-on-year-rise-in-cyber-attacks/' target='_blank' rel='noopener nofollow'>Check Point Research عبر Security MEA، 9 أكتوبر 2026</a>", "n2b": "في المؤسسات المالية تجيب الإدارة شخصيا.", "n2t": "بموجب المادة 181 من قانون المصرف المركزي الإماراتي الجديد، قد يتحمل المسؤولون في الإدارة عواقب شخصية إذا ثبت علمهم أو إهمالهم أو تقصيرهم في أداء واجباتهم.", "n2s": "<a href='https://hadefpartners.com/news-insights/insights/uae-central-bank-law-2026-developments-and-the-september-2026-reconciliation-deadline/' target='_blank' rel='noopener nofollow'>Hadef &amp; Partners، 26 أغسطس 2026</a>", "n3b": "ما يمكنكم فعله هذا الأسبوع.", "n3t": "اطلبوا ثلاثة أرقام قبل اجتماع المجلس القادم: كلفة يوم توقف واحد، وزمن التعافي الفعلي في آخر اختبار، وعدد العمليات الحرجة التي لها خطة مختبرة. وإذا استغرق جمعها أكثر من يوم، فاللوحة توفر هذا الوقت كل ربع سنة.", "nowH": "لماذا يستحق الأمر البدء الآن", "nowP": "المخاطر تتغير أسبوعا بعد أسبوع، والتقرير السنوي يعرض صورة العام الماضي. واللوحة مفيدة خصوصا قبل مناقصة أو مراجعة منظم، وبعد حادث، وحين تبدأ شركة التأمين بطرح الأسئلة.", "howH": "كيف تعمل ومتى ترون أول لوحة", "howP": "ثلاث خطوات، نحو أسبوعين. البداية لا تحتاج مشروعا تقنيا.", "howNote": "وحين تكونون مستعدين، نربط أنظمتكم مباشرة (مستوى التكامل) فتتحدث الأرقام دون إدخال يدوي.", "rezH": "هكذا تبدو", "rezP": "مثال حي مبني على بيانات شركة افتراضية هي ABC. انقروا لفتح العرض.", "ctaDemo2": "افتحوا العرض الحي ←", "schH": "كيف تعمل اللوحة داخل بنيتكم", "schP": "إعداد خفيف: اللوحة ملف HTML واحد يبنيه محرك صغير يعمل بالكامل داخل بنيتكم، على حاسوب المنسق أو خادم الشركة أو سحابتكم الخاصة.", "sc0b": "انطلاق خلال أيام.", "sc0t": "في المستوى الأول مصدر البيانات مصنف Excel نسلمه مع اللوحة، والمنهجية بداخله، فيبدأ المنسق من اليوم الأول.", "sc1b": "مستوى التكامل حين تحتاجونه.", "sc1t": "إن وجد مستودع بيانات أو أنظمة مصدر (BI وERP وITSM) يتصل بها المحرك ويجمع الأرقام تلقائيا. نصمم الهيكل والربط، وفريقكم التقني ينفذ الاتصال.", "sc2b": "التاريخ والاتجاهات.", "sc2t": "مع كل إعادة بناء يخزن المحرك لقطة مؤرخة في قاعدة بيانات مدمجة خفيفة، فتعرض اللوحة الوضع الحالي ومساره عبر الزمن.", "sc3b": "الدعم اختياري.", "sc3t": "أديروا اللوحة بأنفسكم، أو اشتركوا في الخدمة الشهرية: نجمع التحديثات ونعيد البناء ونرسل تعليقا موجزا على ما تغير.", "t0b": "البيانات لا تغادر الشركة.", "t0t": "المحرك والبيانات داخل بنيتكم: على حاسوبكم أو خادمكم أو سحابتكم الخاصة. وهذا متطلب أساسي للجهات الحكومية والمالية في الإمارات.", "t1b": "اتفاقية عدم الإفصاح قبل أول اجتماع عمل.", "t1t": "نوقع اتفاقيتكم أو نقترح اتفاقيتنا.", "t2b": "الخبرة.", "t2t": "بنى إيفجيني تيلينكوف استمرارية الأعمال من الصفر في شركة كبرى للتعدين والمعادن، مع أكثر من 20 خطة لمواقعها. وقاد وظائف المخاطر في الاتصالات والنفط والغاز والاستشارات (EY)، وكان رئيس المخاطر في مشروع بتروكيماويات عملاق بقيمة 20 مليار دولار. وهو نائب رئيس اللجنة الفنية 010 «إدارة المخاطر» لدى روسستاندارت، هيئة التقييس الوطنية في روسيا، ومشارك في تأليف ستة معايير وطنية GOST R.", "t3b": "القطاعات.", "t3t": "التعدين والمعادن، والنفط والغاز والبتروكيماويات، والاتصالات، والتصنيع.", "t4b": "حدود صادقة.", "t4t": "اللوحة أداة إدارية بمنهجية مدمجة، وليست منظومة مراقبة معتمدة، ويتولى فريقكم التقني ربطها بأنظمتكم وفق تصميمنا.", "trustH": "لماذا يثق بنا العملاء", "trustP": "تعرض اللوحة أكثر أرقام الشركة حساسية، لذلك تعمل حيث تعيش بياناتكم أصلا.", "priceH": "السعر", "priceP": "يعتمد السعر على عدد العمليات الحرجة على الشاشة، ومصادر البيانات التي نربطها، والنشر داخل بنيتكم. ونرسل عرض السعر خلال يومي عمل.", "priceBig": "السعر حسب النطاق", "priceBigN": "عرض سعر خلال يومي عمل · دون ضريبة القيمة المضافة", "afterBtn": "بعد برنامج <a href='gap-assessment.html'>تدقيق المرونة وتحسينها</a> تكون المقاييس مجموعة بالفعل وتنتقل مباشرة إلى اللوحة.", "goodH": "ما يجب معرفته", "gd0b": "الأسعار لا تشمل ضريبة القيمة المضافة.", "gd0t": "يثبت المبلغ النهائي في العقد.", "faqH": "أسئلة شائعة", "q0q": "هل تغادر البيانات الشركة؟", "q0a": "لا. كل شيء يعمل لديكم، فلا يخرج رقم واحد.", "q1q": "لا نملك بيانات للوحة. من أين نبدأ؟", "q1a": "من مصنف Excel: المنهجية بداخله تدلكم على ما يجمع. وإن غابت البيانات الأساسية كليا نجمعها معا في برنامج <a href='gap-assessment.html'>تدقيق المرونة وتحسينها</a>.", "q2q": "من سيحدث البيانات؟", "q2a": "منسقكم، ساعة إلى ساعتين شهريا وفق الإرشادات. أو اشتركوا في الخدمة الشهرية ونتولى الأمر.", "q3q": "كم يلزم حتى أول لوحة؟", "q3a": "عادة أسبوعان من البدء: الإعداد وملء النموذج وأول بناء وجلسة مراجعة النتائج.", "q4q": "لدينا تقارير BI. لماذا لوحة منفصلة؟", "q4a": "مقاييس الاستمرارية مختارة ومعرفة ومترابطة مسبقا، فيبدأ المنسق ملء النموذج من اليوم الأول. والبداية لا تحتاج تكاملات ولا خوادم ولا مشتريات، وكل إعادة بناء تحفظ لقطة مؤرخة للاتجاهات، والتحديث المجدول يبقي منظومة الاستمرارية حية بعد المشروع.", "jsNeed": "يرجى إدخال الاسم والبريد المهني.", "jsConsent": "يرجى تأكيد الموافقة على معالجة البيانات الشخصية.", "jsWait": "جار الإرسال…", "jsOk": "شكرا لكم. نرد خلال يوم عمل واحد بتقدير للكلفة أو برابط زووم.", "jsErr": "تعذر الإرسال. راسلونا على info@risk-place.org", "fName": "الاسم", "fEmail": "البريد المهني", "fOrg": "الشركة", "fRole": "المنصب", "fMsg": "أي العمليات الحرجة يجب أن يراها المجلس أولا؟ (اختياري)", "startH": "كيف تبدؤون", "startP": "ثلاث خطوات حتى البدء. نلتقي عبر زووم ونتراسل بالبريد الإلكتروني.", "start0b": "الطلب", "start0t": "اتركوا اسمكم وبريدكم المهني. نرد خلال يوم عمل واحد.", "start1b": "اجتماع عبر زووم، 30 دقيقة", "start1t": "نناقش وضعكم وأسئلتكم. وإذا لزم الأمر نوقع اتفاقية عدم إفصاح قبل الاجتماع.", "start2b": "عرض السعر والعقد", "start2t": "نرسل عرض السعر وقائمة البيانات اللازمة للبدء.", "formH": "احصلوا على تقدير للكلفة أو ناقشوا معنا عبر زووم", "formP": "نرد خلال يوم عمل واحد بتقدير للكلفة أو برابط اجتماع زووم. وإذا لزم الأمر نوقع اتفاقية عدم إفصاح قبل الاجتماع.", "want1": "تقدير الكلفة", "want2": "اجتماع عبر زووم، 30 دقيقة", "consent": "أوافق على معالجة بياناتي الشخصية وفق <a href='privacy.html' target='_blank' rel='noopener'>سياسة الخصوصية</a>.", "send": "أرسلوا الطلب", "mail": "تفضلون البريد؟ راسلونا على <a href='mailto:info@risk-place.org' lang='en'>info@risk-place.org</a>."}};
 var lang="en";
-function fill(id,items,cls){var g=document.getElementById(id);g.innerHTML="";items.forEach(function(x){var v=document.createElement("div");v.className=cls||"it";v.innerHTML="<b>"+x[0]+"</b><p>"+x[1]+"</p>";g.appendChild(v);});}
 function setLang(l){
   lang=l;document.documentElement.lang=l;document.documentElement.dir=(l==="ar")?"rtl":"ltr";
   var d=C[l];
   document.querySelectorAll("[data-ui]").forEach(function(el){var k=el.getAttribute("data-ui");if(typeof d[k]==="string")el.innerHTML=d[k];});
-  ["s1","s2","s4","s5","s7","s9","s10"].forEach(function(s){fill(s,d[s]);});
-  var st=document.getElementById("s6");st.innerHTML="";
-  d.s6.forEach(function(x,i){var v=document.createElement("div");v.className="step";v.innerHTML='<span class="n">'+String(i+1).padStart(2,"0")+'</span><span><b>'+x[0]+"</b><p>"+x[1]+"</p></span>";st.appendChild(v);});
-  fill("s8",d.s8);
-  var kp=document.getElementById("kpi");kp.innerHTML="";
-  d.kpi.forEach(function(x){var v=document.createElement("div");v.className="k";v.innerHTML='<div class="v">'+x[0]+'</div><div class="l">'+x[1]+'</div>';kp.appendChild(v);});
+  document.querySelectorAll("[data-uip]").forEach(function(el){var k=el.getAttribute("data-uip");if(typeof d[k]==="string")el.setAttribute("placeholder",d[k]);});
+  document.querySelectorAll("[data-uialt]").forEach(function(el){var k=el.getAttribute("data-uialt");if(typeof d[k]==="string")el.setAttribute("alt",d[k]);});
   document.getElementById("langbtn").textContent=(l==="ar")?"EN":"AR";
   try{localStorage.setItem("rp_org_lang",l);}catch(e){}
 }
 function toggleLang(){setLang(lang==="ar"?"en":"ar");}
-(function(){var s=null;try{s=localStorage.getItem("rp_org_lang");}catch(e){}setLang(s==="ar"?"ar":"en");})();
+(function(){var s=null;try{s=localStorage.getItem("rp_org_lang");}catch(e){}if(s==="ar")setLang("ar");})();
+window.addEventListener("scroll",function(){
+  var el=document.getElementById("stickycta");if(!el)return;
+  var f=document.getElementById("uform");
+  var show=window.scrollY>500&&(!f||f.getBoundingClientRect().top>window.innerHeight);
+  el.classList.toggle("on",show);
+},{passive:true});
 </script>
 <script>
-window.addEventListener('scroll',function(){
-  var el=document.getElementById('stickycta');if(!el)return;
-  var cta=document.querySelector('section.cta');
-  var show=window.scrollY>500&&(!cta||cta.getBoundingClientRect().top>window.innerHeight);
-  el.classList.toggle('on',show);
-},{passive:true});
+(function(){
+  var PRODUCT="dashboard", PAGE="dashboard";
+  var f=document.getElementById("rcForm");if(!f)return;
+  var out=document.getElementById("rcOut"),btn=document.getElementById("rcSend");
+  function v(id){var el=document.getElementById(id);return el?el.value.trim():"";}
+  function say(k,key){out.className="fmsg "+k;out.textContent=C[lang][key];}
+  f.addEventListener("submit",function(e){
+    e.preventDefault();
+    var name=v("rcName"),email=v("rcEmail");
+    if(!name||email.indexOf("@")<1){say("err","jsNeed");return;}
+    if(!document.getElementById("rcConsent").checked){say("err","jsConsent");return;}
+    var w=f.querySelector('input[name="want"]:checked'),want=w?w.value:"";
+    btn.disabled=true;say("note","jsWait");
+    var body={type:"demo",product:PRODUCT,name:name,email:email,org:v("rcOrg"),role:v("rcRole"),
+      message:(want?"["+want+"] ":"")+v("rcMsg"),lang:lang,page:PAGE};
+    fetch("https://ergp.risk-place.org/api/lead",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)})
+      .then(function(r){
+        if(!r.ok)throw 0;
+        say("ok","jsOk");f.reset();btn.disabled=false;
+        try{gtag('event','demo_lead_submit',{page:PAGE,product:PRODUCT});}catch(x){}
+        try{ym(111613223,'reachGoal','demo_lead_submit');}catch(x){}
+      })
+      .catch(function(){say("err","jsErr");btn.disabled=false;});
+  });
+})();
 </script>
 <footer class="sfoot"><div class="in"><div class="row1"><a href="resilience-governance-certificate.html"><span class="en-only" lang="en">ERGP certification</span><span class="ar-only" lang="ar">شهادة ERGP</span></a><a href="safe-programme.html"><span class="en-only" lang="en">SAFE programme</span><span class="ar-only" lang="ar">برنامج SAFE</span></a><a href="products.html"><span class="en-only" lang="en">For organisations</span><span class="ar-only" lang="ar">للمؤسسات</span></a><a href="library.html"><span class="en-only" lang="en">Library</span><span class="ar-only" lang="ar">المكتبة</span></a><a href="about.html"><span class="en-only" lang="en">About</span><span class="ar-only" lang="ar">من نحن</span></a><a href="index.html#contacts"><span class="en-only" lang="en">Contact</span><span class="ar-only" lang="ar">اتصلوا بنا</span></a></div><div class="row2"><span class="lg2" translate="no">risk-<b>place</b>.org</span><span>© 2026 · <span class="en-only" lang="en">Business Continuity &amp; Resilience · GCC</span><span class="ar-only" lang="ar">استمرارية الأعمال والمرونة · دول الخليج</span></span><a href="about.html"><span class="en-only" lang="en">About us</span><span class="ar-only" lang="ar">من نحن</span></a><a href="resilience-governance-certificate.html#verify"><span class="en-only" lang="en">Verify a certificate</span><span class="ar-only" lang="ar">التحقق من شهادة</span></a><a href="glossary.html"><span class="en-only" lang="en">Glossary</span><span class="ar-only" lang="ar">المسرد</span></a><a href="privacy.html"><span class="en-only" lang="en">Privacy policy</span><span class="ar-only" lang="ar">سياسة الخصوصية</span></a><a href="mailto:info@risk-place.org">info@risk-place.org</a><a href="https://bcm.risk-place.ru/" hreflang="ru"><span class="en-only" lang="en">BCM library (RU)</span><span class="ar-only" lang="ar">مكتبة استمرارية الأعمال (بالروسية)</span></a></div></div></footer>
 </body>
