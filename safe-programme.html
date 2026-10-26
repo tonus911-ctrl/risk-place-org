@@ -424,7 +424,7 @@ html[dir="rtl"] .lform select.fld{background-position:left 16px center}
   <h2 id="director">Programme leadership</h2>
   <div class="dir">
     <img src="erzhena.jpg" alt="Erzhena Khilko">
-    <div><b>Erzhena Khilko</b><span class="role">Director of Educational Programmes · ERGP, SAFE</span><p>Chief Risk Officer of American Express Bank and its payment system operator, 2010–2024; chair of the Risk Committee, member of ALCO and the Credit Committee. Built risk governance across 12 business units on the Three Lines of Defence model with zero audit findings; ran ICAAP under Basel III Pillar 2, RCSA across 15+ core processes and the continuity plan with annual test cycles. Earlier: head of risk at Bank of Cyprus Russia, corporate finance at Deloitte, audit at Ernst &amp; Young. She owns the learning design, the cohort schedule and the student experience across all our programmes.</p></div>
+    <div><b>Erzhena Khilko</b><span class="role">Director of Programmes · ERGP, SAFE</span><p>Chief Risk Officer of American Express Bank and its payment system operator, 2010–2024; chair of the Risk Committee, member of ALCO and the Credit Committee. Built risk governance across 12 business units on the Three Lines of Defence model with zero audit findings; ran ICAAP under Basel III Pillar 2, RCSA across 15+ core processes and the continuity plan with annual test cycles. Earlier: head of risk at Bank of Cyprus Russia, corporate finance at Deloitte, audit at Ernst &amp; Young. She owns the course design, the cohort schedule and the participant experience across all our programmes.</p></div>
   </div>
   <div class="dir" style="margin-top:18px">
     <img src="evgeny.jpg" alt="Evgeny Telenkov">
@@ -444,7 +444,7 @@ html[dir="rtl"] .lform select.fld{background-position:left 16px center}
   <p class="ssub">Leave your contacts. We reply within one working day and arrange a call or a Zoom meeting. If needed, we sign an NDA before the conversation.</p>
   <div class="fbox lform">
     <label class="flabel" for="lfTopic">Topic</label>
-    <select class="fld" id="lfTopic"><option value="discuss" selected>Discuss your task</option><option value="call">Request a call</option><option value="zoom">Zoom meeting</option><option value="estimate">Cost estimate</option><option value="demo">Product demo</option><option value="corporate">Corporate access and invoice</option></select>
+    <select class="fld" id="lfTopic"><option value="discuss" selected>Discuss your task</option><option value="demo">See the product</option><option value="team">Programme for your staff</option><option value="compliance">Regulator or client requirement</option><option value="partner">Partnership</option></select>
     <div class="fgrid">
       <input type="text" class="fld" id="lfName" placeholder="Name" autocomplete="name">
       <input type="text" class="fld" id="lfOrg" placeholder="Company" autocomplete="organization">
@@ -476,9 +476,9 @@ html[dir="rtl"] .lform select.fld{background-position:left 16px center}
   function v(id){var e=document.getElementById(id);return e?e.value.trim():"";}
   var out=document.getElementById("lfOut");function say(k,t){out.className="fmsg "+k;out.textContent=t;}
   var sel=document.getElementById("lfTopic");
-  document.querySelectorAll("[data-topic]").forEach(function(a){a.addEventListener("click",function(){if(sel)sel.value=a.getAttribute("data-topic");});});
+  document.querySelectorAll("[data-topic]").forEach(function(a){a.addEventListener("click",function(){if(sel){sel.value=a.getAttribute("data-topic");if(sel.selectedIndex<0)sel.selectedIndex=0;}});});
   b.addEventListener("click",async function(){var name=v("lfName"),org=v("lfOrg"),email=v("lfEmail"),phone=v("lfPhone");
-    var topic=sel?sel.options[sel.selectedIndex].text:"";
+    var topic=sel&&sel.selectedIndex>=0?sel.options[sel.selectedIndex].text:"";
     if(!name||!org||email.indexOf("@")<1){say("err","Please fill in your name, company and work email.");return;}
     if(phone&&phone.replace(/\D/g,"").length<7){say("err","Please check the phone number.");return;}
     if(!document.getElementById("lfConsent").checked){say("err","Please tick the consent to the processing of personal data.");return;}

@@ -378,7 +378,7 @@ html[dir="rtl"] .lform select.fld{background-position:left 16px center}
 
 <section class="sec" id="trust"><div class="wrap split">
   <div><h2>Why clients trust us</h2><p class="ssub">We see the most sensitive things: the site plan, stocks, contracts and the weak points of the site. So the rules for your data are fixed before we start.</p></div>
-  <ul class="lines"><li><b>NDA before the first working meeting.</b><span>We sign your non-disclosure agreement or offer ours.</span></li><li><b>Site data stays with you.</b><span>We work on your site and with your documents, and hand the report to you. On our website and in talks we use only anonymised examples.</span></li><li><b>Experience.</b><span>Evgeny Telenkov built business continuity from scratch at a large mining and metals company, with more than 20 plans for its sites. He has led risk functions in telecom, oil and gas and consulting (EY), and was Chief Risk Officer of a USD 20 billion petrochemical megaproject. Deputy Chair of Technical Committee 010 “Risk Management” of Rosstandart, Russia’s national standards body, and co-author of six GOST R national standards.</span></li><li><b>Industries.</b><span>Mining and metals, oil and gas and petrochemicals, telecom, manufacturing.</span></li><li><b>Independent advice.</b><span>We do not sell or install counter-drone equipment, so we recommend only what cuts the loss at your site.</span></li><li><b>A clear boundary.</b><span>Counter-drone systems, fire engineering under Civil Defence codes and security design are done by licensed specialists. We answer for the economics of the consequences and for the measures.</span></li></ul>
+  <ul class="lines"><li><b>NDA before the first working meeting.</b><span>We sign your non-disclosure agreement or offer ours.</span></li><li><b>Site data stays with you.</b><span>We work on your site and with your documents, and hand the report to you. On our website and in talks we use only anonymised examples.</span></li><li><b>Experience.</b><span>Evgeny Telenkov built business continuity from scratch at a large mining and metals company and has written more than 30 continuity plans over his career. He has led risk functions in telecom, oil and gas and consulting (EY), and was Chief Risk Officer of a USD 20 billion petrochemical megaproject. Deputy Chair of Technical Committee 010 “Risk Management” of Rosstandart, Russia’s national standards body, and co-author of six GOST R national standards.</span></li><li><b>Industries.</b><span>Mining and metals, oil and gas and petrochemicals, telecom, manufacturing.</span></li><li><b>Independent advice.</b><span>We do not sell or install counter-drone equipment, so we recommend only what cuts the loss at your site.</span></li><li><b>A clear boundary.</b><span>Counter-drone systems, fire engineering under Civil Defence codes and security design are done by licensed specialists. We answer for the economics of the consequences and for the measures.</span></li></ul>
 </div></section>
 
 <section class="sec beige" id="price"><div class="wrap split">
@@ -410,7 +410,7 @@ html[dir="rtl"] .lform select.fld{background-position:left 16px center}
   <p class="ssub">Leave your contacts. We reply within one working day and arrange a call or a Zoom meeting. If needed, we sign an NDA before the conversation.</p>
   <div class="fbox lform">
     <label class="flabel" for="lfTopic">Topic</label>
-    <select class="fld" id="lfTopic"><option value="discuss" selected>Discuss your task</option><option value="call">Request a call</option><option value="zoom">Zoom meeting</option><option value="estimate">Cost estimate</option><option value="demo">Product demo</option><option value="corporate">Corporate access and invoice</option></select>
+    <select class="fld" id="lfTopic"><option value="discuss" selected>Discuss your task</option><option value="demo">See the product</option><option value="team">Programme for your staff</option><option value="compliance">Regulator or client requirement</option><option value="partner">Partnership</option></select>
     <div class="fgrid">
       <input type="text" class="fld" id="lfName" placeholder="Name" autocomplete="name">
       <input type="text" class="fld" id="lfOrg" placeholder="Company" autocomplete="organization">
@@ -430,9 +430,9 @@ html[dir="rtl"] .lform select.fld{background-position:left 16px center}
   function v(id){var e=document.getElementById(id);return e?e.value.trim():"";}
   var out=document.getElementById("lfOut");function say(k,t){out.className="fmsg "+k;out.textContent=t;}
   var sel=document.getElementById("lfTopic");
-  document.querySelectorAll("[data-topic]").forEach(function(a){a.addEventListener("click",function(){if(sel)sel.value=a.getAttribute("data-topic");});});
+  document.querySelectorAll("[data-topic]").forEach(function(a){a.addEventListener("click",function(){if(sel){sel.value=a.getAttribute("data-topic");if(sel.selectedIndex<0)sel.selectedIndex=0;}});});
   b.addEventListener("click",async function(){var name=v("lfName"),org=v("lfOrg"),email=v("lfEmail"),phone=v("lfPhone");
-    var topic=sel?sel.options[sel.selectedIndex].text:"";
+    var topic=sel&&sel.selectedIndex>=0?sel.options[sel.selectedIndex].text:"";
     if(!name||!org||email.indexOf("@")<1){say("err","Please fill in your name, company and work email.");return;}
     if(phone&&phone.replace(/\D/g,"").length<7){say("err","Please check the phone number.");return;}
     if(!document.getElementById("lfConsent").checked){say("err","Please tick the consent to the processing of personal data.");return;}

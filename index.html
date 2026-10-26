@@ -473,7 +473,7 @@ html[dir="rtl"] .lform select.fld{background-position:left 16px center}
   <p class="sd"><span class="en-only" lang="en">Leave your contacts. We reply within one working day and arrange a call or a Zoom meeting. If needed, we sign an NDA before the conversation.</span><span class="ar-only" lang="ar">اتركوا بيانات التواصل. نرد خلال يوم عمل واحد ونتفق على مكالمة أو اجتماع عبر Zoom. وعند الحاجة نوقع اتفاقية عدم إفصاح قبل المحادثة.</span></p>
   <div class="fbox lform">
     <label class="flabel" for="lfTopic"><span class="en-only" lang="en">Topic</span><span class="ar-only" lang="ar">الموضوع</span></label>
-    <select class="fld" id="lfTopic"><option value="discuss" selected data-en="Discuss your task" data-ar="مناقشة احتياجاتكم">Discuss your task</option><option value="call" data-en="Request a call" data-ar="طلب اتصال هاتفي">Request a call</option><option value="zoom" data-en="Zoom meeting" data-ar="اجتماع عبر Zoom">Zoom meeting</option><option value="estimate" data-en="Cost estimate" data-ar="تقدير التكلفة">Cost estimate</option><option value="demo" data-en="Product demo" data-ar="عرض توضيحي للمنتج">Product demo</option><option value="corporate" data-en="Corporate access and invoice" data-ar="وصول مؤسسي وفاتورة للشركة">Corporate access and invoice</option></select>
+    <select class="fld" id="lfTopic"><option value="discuss" selected data-en="Discuss your task" data-ar="مناقشة احتياجاتكم">Discuss your task</option><option value="demo" data-en="See the product" data-ar="الاطلاع على المنتج">See the product</option><option value="team" data-en="Programme for your staff" data-ar="برنامج لموظفيكم">Programme for your staff</option><option value="compliance" data-en="Regulator or client requirement" data-ar="متطلبات جهة رقابية أو عميل">Regulator or client requirement</option><option value="partner" data-en="Partnership" data-ar="الشراكة">Partnership</option></select>
     <div class="fgrid">
       <input type="text" class="fld" id="lfName" data-en="Name" data-ar="الاسم" placeholder="Name" autocomplete="name">
       <input type="text" class="fld" id="lfOrg" data-en="Company" data-ar="الشركة" placeholder="Company" autocomplete="organization">
@@ -494,9 +494,9 @@ var LFM={"en": {"e_req": "Please fill in your name, company and work email.", "e
   function v(id){var e=document.getElementById(id);return e?e.value.trim():"";}
   var out=document.getElementById("lfOut");function say(k,t){out.className="fmsg "+k;out.textContent=t;}
   var sel=document.getElementById("lfTopic");
-  document.querySelectorAll("[data-topic]").forEach(function(a){a.addEventListener("click",function(){if(sel)sel.value=a.getAttribute("data-topic");});});
+  document.querySelectorAll("[data-topic]").forEach(function(a){a.addEventListener("click",function(){if(sel){sel.value=a.getAttribute("data-topic");if(sel.selectedIndex<0)sel.selectedIndex=0;}});});
   b.addEventListener("click",async function(){var name=v("lfName"),org=v("lfOrg"),email=v("lfEmail"),phone=v("lfPhone");
-    var topic=sel?sel.options[sel.selectedIndex].text:"";
+    var topic=sel&&sel.selectedIndex>=0?sel.options[sel.selectedIndex].text:"";
     if(!name||!org||email.indexOf("@")<1){say("err",LFM[lang].e_req);return;}
     if(phone&&phone.replace(/\D/g,"").length<7){say("err",LFM[lang].e_phone);return;}
     if(!document.getElementById("lfConsent").checked){say("err",LFM[lang].e_consent);return;}

@@ -307,7 +307,7 @@ html[dir="rtl"] .lform select.fld{background-position:left 16px center}
   <div class="facts"><div class="fact"><b>94 chapters</b><span>in six modules, at your own pace, no deadlines</span></div><div class="fact"><b>6 working documents</b><span>built on your own organisation, from policy to board report</span></div><div class="fact"><b>Capstone review</b><span>a board-level report, reviewed live with the examiner</span></div><div class="fact"><b>Public register</b><span>a numbered certificate with QR verification</span></div></div>
   <div class="buy">
     <div class="sum">USD 990 · AED 3,650<span>per person · excl. VAT · certification included</span></div>
-    <div class="btns"><a class="btn" href="#demo" data-topic="join">Join the programme</a><a class="btn2" href="#demo" data-topic="zoom">See the course on Zoom</a></div>
+    <div class="btns"><a class="btn" href="#demo" data-topic="join">Join the programme</a><a class="btn2" href="#demo" data-topic="discuss">See the course on Zoom</a></div>
   </div>
 </div></section>
 
@@ -497,11 +497,11 @@ document.addEventListener('keydown',function(e){
   <h2 id="director">Programme leadership</h2>
   <div class="dir">
     <img src="erzhena.jpg" alt="Erzhena Khilko">
-    <div><b>Erzhena Khilko</b><span class="role">Director of Educational Programmes · ERGP, SAFE</span><p>Chief Risk Officer of American Express Bank and its payment system operator, 2010–2024; chair of the Risk Committee, member of ALCO and the Credit Committee. Built risk governance across 12 business units on the Three Lines of Defence model with zero audit findings; ran ICAAP under Basel III Pillar 2, RCSA across 15+ core processes and the continuity plan with annual test cycles. Earlier: head of risk at Bank of Cyprus Russia, corporate finance at Deloitte, audit at Ernst &amp; Young. She owns the programme design, the cohort schedule and the participant experience across all our programmes — and curates the ERGP Circle: the quarterly sessions, the member directory and the invitation of examiners.</p></div>
+    <div><b>Erzhena Khilko</b><span class="role">Director of Programmes · ERGP, SAFE</span><p>Chief Risk Officer of American Express Bank and its payment system operator, 2010–2024; chair of the Risk Committee, member of ALCO and the Credit Committee. Built risk governance across 12 business units on the Three Lines of Defence model with zero audit findings; ran ICAAP under Basel III Pillar 2, RCSA across 15+ core processes and the continuity plan with annual test cycles. Earlier: head of risk at Bank of Cyprus Russia, corporate finance at Deloitte, audit at Ernst &amp; Young. She owns the programme design, the cohort schedule and the participant experience across all our programmes — and curates the ERGP Circle: the quarterly sessions, the member directory and the invitation of examiners.</p></div>
   </div>
   <div class="dir" style="margin-top:18px">
     <img src="evgeny.jpg" alt="Evgeny Telenkov">
-    <div><b>Evgeny Telenkov</b><span class="role">Director, business continuity practice · PhD in Economics · Academic Director &amp; Chief Examiner</span><p>Best Risk Manager of the Year 2020 (RusRisk). 15+ years leading risk and continuity functions: Nornickel, where he built business continuity from zero with 20+ plans, Rosneft, Beeline, Ernst &amp; Young. CRO of a $20bn petrochemical megaproject (AGCC, SIBUR) with 200+ construction risk indicators. Author of the programme; he chairs the examination board, signs every certificate issued and matches Circle members to engagements with organisations.</p></div>
+    <div><b>Evgeny Telenkov</b><span class="role">Director, business continuity practice · PhD in Economics · Academic Director &amp; Chief Examiner</span><p>Best Risk Manager of the Year 2020 (RusRisk). 15+ years leading risk and continuity functions: Nornickel, where he built business continuity from zero, Rosneft, Beeline, Ernst &amp; Young; author of 30+ continuity plans. CRO of a $20bn petrochemical megaproject (AGCC, SIBUR) with 200+ construction risk indicators. Author of the programme; he chairs the examination board, signs every certificate issued and matches Circle members to engagements with organisations.</p></div>
   </div>
 </div></section>
 
@@ -521,7 +521,7 @@ document.addEventListener('keydown',function(e){
     <div class="pr"><span>In-house cohort, up to 12 executives</span><b>USD 7,900 · AED 29,000</b></div>
   </div>
   <p class="prnote">The individual price is per person, in either language. The certification exam, the capstone review and admission to the ERGP Circle are included. Prices exclude VAT.</p>
-  <div class="prbtns"><a class="btn" href="#demo" data-topic="join">Join the programme</a><a class="btn2" href="#demo" data-topic="zoom">See the course on Zoom</a></div>
+  <div class="prbtns"><a class="btn" href="#demo" data-topic="join">Join the programme</a><a class="btn2" href="#demo" data-topic="discuss">See the course on Zoom</a></div>
 </div></section>
 
 <section class="sec beige" id="faq"><div class="wrap">
@@ -535,7 +535,7 @@ document.addEventListener('keydown',function(e){
   <p class="ssub">Leave your details and choose what you need. We reply within one working day with the next step or a Zoom link.</p>
   <div class="fbox lform">
     <label class="flabel" for="lfTopic">Topic</label>
-    <select class="fld" id="lfTopic"><option value="discuss" selected>Discuss your task</option><option value="call">Request a call</option><option value="zoom">Zoom meeting</option><option value="estimate">Cost estimate</option><option value="demo">Product demo</option><option value="corporate">Corporate access and invoice</option><option value="join">Join the programme</option></select>
+    <select class="fld" id="lfTopic"><option value="discuss" selected>Discuss your task</option><option value="demo">See the product</option><option value="team">Programme for your staff</option><option value="compliance">Regulator or client requirement</option><option value="partner">Partnership</option><option value="join">Join the programme</option></select>
     <div class="fgrid">
       <input type="text" class="fld" id="lfName" placeholder="Name" autocomplete="name">
       <input type="text" class="fld" id="lfOrg" placeholder="Company" autocomplete="organization">
@@ -685,9 +685,9 @@ window.addEventListener('scroll',function(){
   function v(id){var e=document.getElementById(id);return e?e.value.trim():"";}
   var out=document.getElementById("lfOut");function say(k,t){out.className="fmsg "+k;out.textContent=t;}
   var sel=document.getElementById("lfTopic");
-  document.querySelectorAll("[data-topic]").forEach(function(a){a.addEventListener("click",function(){if(sel)sel.value=a.getAttribute("data-topic");});});
+  document.querySelectorAll("[data-topic]").forEach(function(a){a.addEventListener("click",function(){if(sel){sel.value=a.getAttribute("data-topic");if(sel.selectedIndex<0)sel.selectedIndex=0;}});});
   b.addEventListener("click",async function(){var name=v("lfName"),org=v("lfOrg"),email=v("lfEmail"),phone=v("lfPhone");
-    var topic=sel?sel.options[sel.selectedIndex].text:"";
+    var topic=sel&&sel.selectedIndex>=0?sel.options[sel.selectedIndex].text:"";
     if(!name||!org||email.indexOf("@")<1){say("err","Please fill in your name, company and work email.");return;}
     if(phone&&phone.replace(/\D/g,"").length<7){say("err","Please check the phone number.");return;}
     if(!document.getElementById("lfConsent").checked){say("err","Please tick the consent to the processing of personal data.");return;}

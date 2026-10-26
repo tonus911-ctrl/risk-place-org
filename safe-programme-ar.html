@@ -417,7 +417,7 @@ html[dir="rtl"] .lform select.fld{background-position:left 16px center}
   <h2 id="director">قيادة البرنامج</h2>
   <div class="dir">
     <img src="erzhena.jpg" alt="إرجينا خيلكو">
-    <div><b>إرجينا خيلكو</b><span class="role">مديرة البرامج التعليمية · ERGP وSAFE</span><p>رئيسة المخاطر في بنك أمريكان إكسبريس ومشغل نظام الدفع التابع له، 2010–2024، ورئيسة لجنة المخاطر وعضو لجنة الأصول والخصوم ولجنة الائتمان. بنت حوكمة المخاطر عبر 12 وحدة أعمال على نموذج خطوط الدفاع الثلاثة بلا ملاحظات تدقيق، وأدارت تقييم كفاية رأس المال الداخلي وفق بازل 3 الركيزة الثانية، والتقييم الذاتي للمخاطر والضوابط عبر أكثر من 15 عملية أساسية، وخطة الاستمرارية بدورات اختبار سنوية. وسابقا، رئيسة المخاطر في بنك قبرص روسيا، وتمويل الشركات في ديلويت، والتدقيق في إرنست آند يونغ. وتتولى تصميم التعلم وجدول الدفعات وتجربة الطالب في كل برامجنا.</p></div>
+    <div><b>إرجينا خيلكو</b><span class="role">مديرة البرامج · ERGP وSAFE</span><p>رئيسة المخاطر في بنك أمريكان إكسبريس ومشغل نظام الدفع التابع له، 2010–2024، ورئيسة لجنة المخاطر وعضو لجنة الأصول والخصوم ولجنة الائتمان. بنت حوكمة المخاطر عبر 12 وحدة أعمال على نموذج خطوط الدفاع الثلاثة بلا ملاحظات تدقيق، وأدارت تقييم كفاية رأس المال الداخلي وفق بازل 3 الركيزة الثانية، والتقييم الذاتي للمخاطر والضوابط عبر أكثر من 15 عملية أساسية، وخطة الاستمرارية بدورات اختبار سنوية. وسابقا، رئيسة المخاطر في بنك قبرص روسيا، وتمويل الشركات في ديلويت، والتدقيق في إرنست آند يونغ. وتتولى تصميم الدورات وجدول الدفعات وتجربة المشاركين في كل برامجنا.</p></div>
   </div>
   <div class="dir" style="margin-top:18px">
     <img src="evgeny.jpg" alt="إيفجيني تيلينكوف">
@@ -437,7 +437,7 @@ html[dir="rtl"] .lform select.fld{background-position:left 16px center}
   <p class="ssub">اتركوا بيانات التواصل. نرد خلال يوم عمل واحد ونتفق على مكالمة أو اجتماع عبر Zoom. وعند الحاجة نوقع اتفاقية عدم إفصاح قبل المحادثة.</p>
   <div class="fbox lform">
     <label class="flabel" for="lfTopic">الموضوع</label>
-    <select class="fld" id="lfTopic"><option value="discuss" selected>مناقشة احتياجاتكم</option><option value="call">طلب اتصال هاتفي</option><option value="zoom">اجتماع عبر Zoom</option><option value="estimate">تقدير التكلفة</option><option value="demo">عرض توضيحي للمنتج</option><option value="corporate">وصول مؤسسي وفاتورة للشركة</option></select>
+    <select class="fld" id="lfTopic"><option value="discuss" selected>مناقشة احتياجاتكم</option><option value="demo">الاطلاع على المنتج</option><option value="team">برنامج لموظفيكم</option><option value="compliance">متطلبات جهة رقابية أو عميل</option><option value="partner">الشراكة</option></select>
     <div class="fgrid">
       <input type="text" class="fld" id="lfName" placeholder="الاسم" autocomplete="name">
       <input type="text" class="fld" id="lfOrg" placeholder="الشركة" autocomplete="organization">
@@ -468,9 +468,9 @@ html[dir="rtl"] .lform select.fld{background-position:left 16px center}
   function v(id){var e=document.getElementById(id);return e?e.value.trim():"";}
   var out=document.getElementById("lfOut");function say(k,t){out.className="fmsg "+k;out.textContent=t;}
   var sel=document.getElementById("lfTopic");
-  document.querySelectorAll("[data-topic]").forEach(function(a){a.addEventListener("click",function(){if(sel)sel.value=a.getAttribute("data-topic");});});
+  document.querySelectorAll("[data-topic]").forEach(function(a){a.addEventListener("click",function(){if(sel){sel.value=a.getAttribute("data-topic");if(sel.selectedIndex<0)sel.selectedIndex=0;}});});
   b.addEventListener("click",async function(){var name=v("lfName"),org=v("lfOrg"),email=v("lfEmail"),phone=v("lfPhone");
-    var topic=sel?sel.options[sel.selectedIndex].text:"";
+    var topic=sel&&sel.selectedIndex>=0?sel.options[sel.selectedIndex].text:"";
     if(!name||!org||email.indexOf("@")<1){say("err","يرجى إدخال الاسم والشركة والبريد الإلكتروني للعمل.");return;}
     if(phone&&phone.replace(/\D/g,"").length<7){say("err","يرجى التحقق من رقم الهاتف.");return;}
     if(!document.getElementById("lfConsent").checked){say("err","يرجى الموافقة على معالجة البيانات الشخصية.");return;}
