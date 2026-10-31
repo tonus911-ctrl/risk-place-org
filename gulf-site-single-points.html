@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HNF79F1SSN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HNF79F1SSN');</script><script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");ym(111613223,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});</script><noscript><div><img src="https://mc.yandex.ru/watch/111613223" style="position:absolute;left:-9999px;" alt=""/></div></noscript><script>/*dl-goal-v2*/document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a[href]");if(!a)return;var f=a.getAttribute("href")||"";if(!/(^|\/)files\/[^?#]+\.(docx|xlsx|pdf|pptx|zip)([?#]|$)/i.test(f))return;try{ym(111613223,"reachGoal","download",{file:f});ym(111613223,"params",{download:f});}catch(x){}try{gtag("event","download",{file:f});}catch(x){}});</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Single points of failure on a Gulf site</title>
+<meta name="description" content="A map of a Gulf site: the line, finished goods, raw material, packaging, the gate and the one system. What the market covers tomorrow, and what the owner duplicates.">
+<link rel="canonical" href="https://risk-place.org/gulf-site-single-points.html">
+<link rel="alternate" hreflang="en" href="https://risk-place.org/gulf-site-single-points.html">
+<link rel="alternate" hreflang="ar" href="https://risk-place.org/gulf-site-single-points-ar.html">
+<link rel="alternate" hreflang="x-default" href="https://risk-place.org/gulf-site-single-points.html">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:title" content="Single points of failure on a Gulf site">
+<meta property="og:description" content="A map of a Gulf site: the line, finished goods, raw material, packaging, the gate and the one system. What the market covers tomorrow, and what the owner duplicates.">
+<meta property="og:image" content="https://risk-place.org/gulf-site-single-points.png">
+<meta property="og:url" content="https://risk-place.org/gulf-site-single-points.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "Does every node need a duplicate?", "acceptedAnswer": {"@type": "Answer", "text": "A node the market sells in quantity the next day needs a supplier and a reserve. A node the market cannot sell needs a pair in another place, or a named deputy."}}, {"@type": "Question", "name": "Where do logistics and packaging sit on the map?", "acceptedAnswer": {"@type": "Answer", "text": "They sit with raw material when they are commodity, and with the unique line when a customer contract depends on one pack or one route."}}, {"@type": "Question", "name": "Who holds the map?", "acceptedAnswer": {"@type": "Answer", "text": "The owner, with the people who can stop a shift and release a shipment. A drawing that nobody with authority has signed is a poster."}}]}</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#fff;-webkit-font-smoothing:antialiased;font-family:'Figtree','IBM Plex Sans Arabic',system-ui,sans-serif;color:#16181F;line-height:1.7}
+html[dir="rtl"] body{font-family:'IBM Plex Sans Arabic','Figtree',system-ui,sans-serif}
+a{color:#16181F;text-decoration:none}
+::selection{background:#FBE0CB}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+.hdr{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.94);backdrop-filter:blur(14px);border-bottom:1px solid #EAE7E1}
+.hdr .in{max-width:1080px;margin:0 auto;padding-left:24px;padding-right:24px;height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;flex-direction:column;gap:1px}
+.logo .nm{font-size:26px;font-weight:600;letter-spacing:-0.02em}
+.logo .nm b{color:#C4571C;font-weight:600}
+.logo .tg{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8A8478}
+.hdr .right{display:flex;align-items:center;gap:12px}
+.langsw{font-size:13px}
+.langsw a{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.08em;color:#3D4149;border:1px solid #DCD8D0;border-radius:999px;padding:7px 15px;display:inline-block}
+.langsw a:hover{border-color:#16181F;color:#16181F}
+.backlink{font-size:14.5px;color:#3D4149}
+.backlink:hover{color:#C4571C}
+.hero{background:#0D1117;color:#fff}
+.hero .in{padding-top:64px;padding-bottom:56px}
+.kicker{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#F0A868;margin:0 0 20px}
+.hero h1{font-size:42px;font-weight:300;line-height:1.14;letter-spacing:-0.025em;margin:0 0 16px;max-width:28ch;text-wrap:pretty}
+.hero .sub{font-size:18px;font-weight:300;color:rgba(255,255,255,0.75);margin:0;max-width:62ch;line-height:1.6}
+.btn{display:inline-block;font-size:16.5px;font-weight:600;background:#C4571C;color:#fff !important;padding:15px 32px;border-radius:999px}
+.btn:hover{background:#A03F12}
+.btn2{display:inline-block;font-size:16px;font-weight:400;color:#fff !important;border:1px solid rgba(255,255,255,0.34);padding:14px 28px;border-radius:999px;margin-inline-start:10px}
+.btn2:hover{border-color:#fff}
+.cta{background:#0D1117;color:#fff}
+.cta .in{padding-top:64px;padding-bottom:64px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:22px}
+.cta h2{font-size:30px;font-weight:300;letter-spacing:-0.02em;margin:0;max-width:30ch;text-wrap:pretty}
+.foot{background:#0D1117;color:rgba(255,255,255,0.46);border-top:1px solid rgba(255,255,255,0.12)}
+.foot .in{padding-top:22px;padding-bottom:22px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13.5px;font-weight:300}
+.foot a{color:rgba(255,255,255,0.6)}
+.foot a:hover{color:#fff}
+.stickycta{display:none;position:fixed;left:14px;right:14px;bottom:14px;z-index:70;background:#C4571C;color:#fff !important;text-align:center;font-size:16px;font-weight:600;padding:14px 18px;border-radius:999px;box-shadow:0 10px 28px rgba(13,17,23,0.28)}
+
+.art{padding:64px 0 20px}
+.art h2{font-size:30px;font-weight:300;line-height:1.18;letter-spacing:-0.02em;margin:52px 0 18px;text-wrap:pretty}
+.art h2:first-child{margin-top:0}
+.art p{font-size:16.5px;font-weight:300;line-height:1.72;color:#3D4149;margin:0 0 16px;max-width:76ch}
+.art ul{margin:0 0 18px;padding-inline-start:22px;max-width:76ch}
+.art li{font-size:16.5px;font-weight:300;line-height:1.66;color:#3D4149;margin-bottom:9px}
+.art li b,.art p b{font-weight:600;color:#16181F}
+.art figure{margin:30px 0;max-width:76ch}
+.art figure img{width:100%;height:auto;display:block;border:1px solid #EAE7E1;border-radius:12px}
+.art figcaption{font-size:14px;font-weight:300;color:#8A8478;margin-top:8px;line-height:1.55}
+.callout{background:#F7F4EF;border:1px solid #EAE7E1;border-inline-start:3px solid #C4571C;border-radius:12px;padding:20px 24px;margin:26px 0;max-width:76ch}
+.callout p{margin:0;font-size:16px}
+.tbl{width:100%;border-collapse:collapse;margin:24px 0 30px;font-size:15.5px}
+.tbl th{text-align:start;font-weight:600;padding:12px 14px;border-bottom:2px solid #16181F;font-size:14.5px}
+.tbl td{padding:12px 14px;border-bottom:1px solid #E1DCD3;font-weight:300;color:#3D4149;vertical-align:top;line-height:1.55}
+.tbl td:first-child{font-weight:500;color:#16181F}
+.faq{margin:10px 0 30px;max-width:76ch}
+.faq details{border-bottom:1px solid #E1DCD3;padding:4px 0}
+.faq summary{font-size:17px;font-weight:600;padding:14px 0;cursor:pointer;list-style-position:outside}
+.faq details p{padding:0 0 16px}
+.cluster{background:#F7F4EF;border-top:1px solid #EAE7E1;border-bottom:1px solid #EAE7E1;padding:56px 0}
+.cluster h2{font-size:26px;font-weight:300;margin:0 0 26px}
+.cluster .links{display:grid;grid-template-columns:1fr 1fr;gap:14px 40px}
+.cluster a{display:block;padding:14px 0;border-bottom:1px solid #E1DCD3;font-size:16px;font-weight:500}
+.cluster a:hover{color:#C4571C}
+.src{font-size:13.5px;color:#8A8478;margin-top:30px;max-width:76ch}
+.src a{color:#8A8478;text-decoration:underline}
+@media(max-width:760px){.art h2{font-size:24px}.cluster .links{grid-template-columns:1fr}.tbl{font-size:14px}.tbl th,.tbl td{padding:9px 8px}}
+
+@media(max-width:760px){.hero h1{font-size:30px}}
+@media(max-width:600px){
+  .wrap{padding-left:20px;padding-right:20px}
+  .logo .nm{font-size:22px}
+  .logo .tg{display:none}
+  .backlink{font-size:13px}
+  .hdr .in{height:auto;min-height:64px;padding-top:10px;padding-bottom:10px;flex-wrap:wrap;row-gap:8px;gap:12px}
+  .hero .in{padding-top:38px;padding-bottom:34px}
+  .hero h1{font-size:25px;line-height:1.2}
+  .art{padding:40px 0 10px}
+  .stickycta.on{display:block}
+}
+
+figure.wide{width:auto;max-width:none;margin-inline:max(calc(50% - 530px),calc(50% - 50vw + 18px))}
+@media(max-width:700px){figure.wide{margin-inline:0}}
+.hnav{display:flex;gap:18px;align-items:center;margin-inline-start:auto;margin-inline-end:16px}.hnav a{font-size:14px;color:#3D4149}.hnav a:hover{color:#C4571C}@media(max-width:1000px){.hnav{display:none}}
+
+/* --- единый футер --- */
+.sfoot{background:#0D1117;color:rgba(255,255,255,.65);margin-top:auto}
+/* Подвал у нижнего края даже на короткой странице. Разбор — в
+   08 - Проверки/patch_footer_bottom.py                        */
+body{min-height:100dvh;display:flex;flex-direction:column}
+.sfoot .in{max-width:1080px;margin:0 auto;padding:12px 24px 12px}.cta + .sfoot{margin-top:56px}
+.sfoot .row1{display:flex;flex-wrap:wrap;gap:10px 26px;padding-bottom:8px;margin-bottom:8px;border-bottom:1px solid rgba(255,255,255,.14)}
+.sfoot .row1 a{color:rgba(255,255,255,.95);text-decoration:none;font-size:15px}
+.sfoot .row1 a:hover{color:#F0A868}
+.sfoot .row2{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline;font-size:13px}
+.sfoot .row2 a{color:rgba(255,255,255,.65);text-decoration:none}
+.sfoot .row2 a:hover{color:#F0A868}
+.sfoot .lg2{font-size:15px;color:#fff;font-weight:600;letter-spacing:-0.02em}
+.sfoot .lg2 b{color:#C4571C}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}
+/*progblock*/.progblock{margin:56px 0;border-top:none;padding-top:0;font-family:'Figtree','IBM Plex Sans Arabic',system-ui,sans-serif}.progblock .pcard{display:block;background:#0D1117;color:#fff;border-radius:16px;padding:24px 26px;text-decoration:none}.progblock .pcard .k{display:block;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#F0A868;margin-bottom:8px}html[lang="ar"] .progblock .pcard .k{font-family:'IBM Plex Sans Arabic',sans-serif;letter-spacing:.04em}.progblock .pcard b{display:block;font-size:19px;font-weight:600;line-height:1.3;margin-bottom:8px;color:#fff}.progblock .pcard p{margin:0 0 12px;font-size:14.5px;line-height:1.6;color:rgba(255,255,255,.78)}.progblock .pcard .go{color:#F0A868;font-weight:600;font-size:15px}.progblock .nb{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:56px}@media(max-width:700px){.progblock .nb{grid-template-columns:1fr}}.progblock .nb>div{border:1px solid #EAE7E1;border-radius:14px;padding:16px 18px;background:#F7F4EF}.progblock .nb .h{display:block;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#8A8478;margin-bottom:8px}html[lang="ar"] .progblock .nb .h{font-family:'IBM Plex Sans Arabic',sans-serif;letter-spacing:.04em}.progblock .nb a{display:block;color:#16181F;text-decoration:none;font-size:15px;line-height:1.45;margin:0 0 6px}.progblock .nb a:hover{color:#C4571C}
+.hnav a{white-space:nowrap}.logo .tg{white-space:nowrap}/*hdr-mobile*/.hburger{display:none;margin-inline-start:6px;background:none;border:0;font-size:24px;line-height:1;cursor:pointer;color:#16181F;padding:4px 6px}.hdr .right{display:flex;align-items:center;gap:8px}@media(max-width:960px){.hburger{display:inline-block}.hnav,.nav{display:none;position:absolute;top:70px;left:0;right:0;background:#fff;border-bottom:1px solid #EAE7E1;flex-direction:column;align-items:flex-start;padding:14px 24px 16px;gap:12px;z-index:70;margin:0}.hnav.open,.nav.open{display:flex}.hnav a,.nav a.hm{display:block;font-size:16px;white-space:normal}.logo .tg{display:none}.hdr .in{gap:10px}}</style>
+</head>
+<body>
+<header class="hdr"><div class="wrap in">
+  <a class="logo" href="index.html"><span class="nm" translate="no">risk-<b>place</b>.org</span><span class="tg" data-ui="tagline">Business Continuity &amp; Resilience · GCC</span></a>
+  <nav class="hnav" id="hnav"><a href="resilience-governance-certificate.html">ERGP certification</a><a href="safe-programme.html">SAFE programme</a><a href="products.html">For organisations</a><a href="library.html">Library</a><a href="about.html">About</a><a href="index.html#contacts">Contact</a></nav><div class="right"><div class="langsw"><a href="gulf-site-single-points-ar.html" lang="ar" translate="no">العربية ←</a></div><button class="hburger" onclick="document.getElementById('hnav').classList.toggle('open')" aria-label="Menu">&#9776;</button></div>
+</div></header>
+<section class="hero"><div class="wrap in">
+  <p class="kicker">Gulf · continuity</p>
+  <h1>Single points of failure on a Gulf site</h1>
+  <p class="sub">Logistics, raw material, packaging, production and the one system. What the market sells tomorrow in quantity, and what is unique enough to duplicate.</p>
+</div></section>
+<article class="art"><div class="wrap" id="art">
+<h2>Four nodes a Gulf day stands on</h2><p>An owner starts from a map of the site. The map asks what the line produces, where finished goods wait to ship, where raw material and packaging come from, which gate the site lives through, and which system releases the shipment.</p><p>Logistics, production, raw materials, packaging, and the one ledger are the same kind of question. Each node has a day-cost. The method is the cost of shipments not made, of people and rent that continue, of a contractual penalty, and of the work of returning to the previous throughput.</p><figure><img src="gulf-site-single-points.png" alt="Four nodes on a Gulf site: the line, the store, the gate, the one system" width="1200" height="680"><figcaption>The line and the finished-goods store hold the day. Commodity raw material and a second gate are easier for the market to cover.</figcaption></figure><div class="tw"><table class="tbl"><thead><tr><th>Node</th><th>If it stops</th><th>What the owner does</th></tr></thead><tbody><tr><td>The line</td><td>A day of output</td><td>Duplicates the route or the shift</td></tr><tr><td>Finished goods</td><td>A day of shipping</td><td>Keeps a reserve on a second site</td></tr><tr><td>Commodity inputs</td><td>A restart after a pause</td><td>Buys raw material and packaging on the market</td></tr><tr><td>The only gate or system</td><td>The whole site</td><td>Prepares a second intake and a second way to release goods</td></tr></tbody></table></div><h2>What the market covers the next day</h2><p>Commodity raw material, standard packaging, a neighbouring warehouse for rent and a hired shift exist on the market in quantity. Losing them hurts for hours, and a reserve or a cover contract brings the flow back.</p><p>What is unique is the recipe, the tooling, the only line with a long changeover, the customer store tied to one contract, and the person without whose signature a shipment does not leave. Those are the candidates for duplication, for spatial separation, or for a written deputy.</p><ul><li>Market: raw material, packaging, a warehouse for rent, a shift.</li><li>Unique: tooling, the recipe, the only line, the authority to release a shipment.</li><li>Test: if a node cannot be bought in a day, it has a pair somewhere else.</li><li>The sum: the day-cost of that node is written before the event.</li></ul><h2>Where the check starts</h2><p>The <a href="drone-strike-readiness-check.html">drone strike readiness check</a> splits one site into these nodes, names the single points of failure, prices the day of downtime and the cost of restoring throughput, and assigns who stops the shift and who writes to the supplier.</p><p>A day without the system that holds orders and stock is the neighbouring question, on the <a href="ransomware-readiness-check.html">ransomware readiness check</a>.</p>
+<h2>Questions owners ask</h2>
+<div class="faq"><details><summary>Does every node need a duplicate?</summary><p>A node the market sells in quantity the next day needs a supplier and a reserve. A node the market cannot sell needs a pair in another place, or a named deputy.</p></details><details><summary>Where do logistics and packaging sit on the map?</summary><p>They sit with raw material when they are commodity, and with the unique line when a customer contract depends on one pack or one route.</p></details><details><summary>Who holds the map?</summary><p>The owner, with the people who can stop a shift and release a shipment. A drawing that nobody with authority has signed is a poster.</p></details></div>
+</div></article>
+<section class="cluster"><div class="wrap">
+  <h2>Continue in the library</h2>
+  <div class="links"><a href="gulf-drone-pressure.html">Drone pressure in the Gulf</a><a href="day-after-drone-incident.html">The day after a drone incident</a><a href="drone-strike-readiness-check.html">Drone strike readiness check</a><a href="ransomware-readiness-check.html">Ransomware readiness check</a></div>
+</div></section>
+<section class="cta"><div class="wrap in">
+  <h2>Put the day-cost and the roles on your own site.</h2>
+  <div><a class="btn" href="drone-strike-readiness-check.html">Open the readiness check</a></div>
+</div></section>
+<a class="stickycta" id="stickycta" href="drone-strike-readiness-check.html">Readiness check</a>
+<script>
+window.addEventListener('scroll',function(){
+  var el=document.getElementById('stickycta');if(!el)return;
+  var cta=document.querySelector('section.cta');
+  var show=window.scrollY>600&&(!cta||cta.getBoundingClientRect().top>window.innerHeight);
+  el.classList.toggle('on',show);
+},{passive:true});
+</script>
+<div class="wrap">
+<section class="progblock">
+  <a class="pcard" href="resilience-governance-certificate.html"><span class="k">Learn this properly</span><b>ERGP, the Executive Certificate in Enterprise Resilience Governance</b><p>Six modules, a capstone defended before the examiner and a certificate anyone can verify. The AE/SCNS/NCEMA 7000 module is inside.</p><span class="go">Explore the ERGP certification →</span></a>
+  <div class="nb">
+    <div><span class="h">Read next</span><a href="gulf-drone-pressure.html">Drone pressure in the Gulf</a><a href="day-after-drone-incident.html">The day after a drone incident</a></div>
+    <div><span class="h">Key term</span><a href="terms/en/crisis-management.html">Crisis management</a></div>
+  </div>
+</section>
+</div>
+<footer class="sfoot"><div class="in"><div class="row1"><a href="resilience-governance-certificate.html">ERGP certification</a><a href="safe-programme.html">SAFE programme</a><a href="products.html">For organisations</a><a href="library.html">Library</a><a href="about.html">About</a><a href="index.html#contacts">Contact</a></div><div class="row2"><span class="lg2" translate="no">risk-<b>place</b>.org</span><span>© 2026 · Business Continuity &amp; Resilience · GCC</span><a href="about.html">About us</a><a href="resilience-governance-certificate.html#verify">Verify a certificate</a><a href="glossary.html">Glossary</a><a href="privacy.html">Privacy policy</a><a href="mailto:info@risk-place.org">info@risk-place.org</a><a href="https://bcm.risk-place.ru/" hreflang="ru">BCM library (RU)</a></div></div></footer>
+</body>
+</html>
