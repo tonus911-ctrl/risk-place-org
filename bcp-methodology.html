@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HNF79F1SSN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HNF79F1SSN');</script><script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");ym(111613223,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});</script><noscript><div><img src="https://mc.yandex.ru/watch/111613223" style="position:absolute;left:-9999px;" alt=""/></div></noscript><script>/*dl-goal-v2*/document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a[href]");if(!a)return;var f=a.getAttribute("href")||"";if(!/(^|\/)files\/[^?#]+\.(docx|xlsx|pdf|pptx|zip)([?#]|$)/i.test(f))return;try{ym(111613223,"reachGoal","download",{file:f});ym(111613223,"params",{download:f});}catch(x){}try{gtag("event","download",{file:f});}catch(x){}});</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Business continuity plan methodology: the six steps in order</title>
+<meta name="description" content="The methodology behind a business continuity plan, step by step: scope, impact analysis, plan risk assessment, strategies, writing, exercising. What each step produces, how the risk assessment differs from the impact analysis, and where risk management meets continuity.">
+<link rel="canonical" href="https://risk-place.org/bcp-methodology.html">
+<link rel="alternate" hreflang="en" href="https://risk-place.org/bcp-methodology.html">
+<link rel="alternate" hreflang="ar" href="https://risk-place.org/bcp-methodology-ar.html">
+<link rel="alternate" hreflang="x-default" href="https://risk-place.org/bcp-methodology.html">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:title" content="Business continuity plan methodology: the six steps in order">
+<meta property="og:description" content="The methodology behind a business continuity plan, step by step: scope, impact analysis, plan risk assessment, strategies, writing, exercising. What each step produces, how the risk assessment differs from the impact analysis, and where risk management meets continuity.">
+<meta property="og:image" content="https://risk-place.org/hero-dubai.jpg">
+<meta property="og:url" content="https://risk-place.org/bcp-methodology.html">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "What is a business continuity plan methodology?", "acceptedAnswer": {"@type": "Answer", "text": "An agreed sequence of six steps that produces the plan and lets you defend it: set the scope, run the business impact analysis, assess the risks to the prioritised activities, choose strategies, write the plan, then exercise and improve. The order is the methodology, and every step skipped shows up later in an audit."}}, {"@type": "Question", "name": "How is the plan risk assessment different from the business impact analysis?", "acceptedAnswer": {"@type": "Answer", "text": "The impact analysis asks what happens if an activity stops and when the stoppage becomes intolerable, regardless of cause. The risk assessment asks what could stop it and how likely that is. The first sets priority and recovery times, the second decides where prevention goes."}}, {"@type": "Question", "name": "How long does the full methodology take?", "acceptedAnswer": {"@type": "Answer", "text": "Eight to twelve weeks for a mid-size organisation starting from nothing, of which three to four are the impact analysis alone. The only honest shortcut is a narrower scope, never a skipped step."}}, {"@type": "Question", "name": "Is a ready-made template enough instead of the methodology?", "acceptedAnswer": {"@type": "Answer", "text": "A template gives you the shape, not the decisions. A plan built on a template without an impact analysis contains recovery times nobody agreed to, and those are the first thing to collapse in an exercise. Fill the template in after steps two and three."}}, {"@type": "Question", "name": "How do risk management and business continuity relate?", "acceptedAnswer": {"@type": "Answer", "text": "Risk management reduces the likelihood and impact of an event before it happens; business continuity assumes the event happened anyway and manages what follows. They share the activity register and the dependency map, which is why they are built together rather than in parallel."}}, {"@type": "Question", "name": "Who owns the methodology inside the organisation?", "acceptedAnswer": {"@type": "Answer", "text": "The continuity lead owns the method, the activity owners own the content. When the continuity lead writes the plans on behalf of departments, the plan becomes their document alone, and the people who will execute it do not know it."}}]}</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#fff;-webkit-font-smoothing:antialiased;font-family:'Figtree','IBM Plex Sans Arabic',system-ui,sans-serif;color:#16181F;line-height:1.7}
+html[dir="rtl"] body{font-family:'IBM Plex Sans Arabic','Figtree',system-ui,sans-serif}
+a{color:#16181F;text-decoration:none}
+::selection{background:#FBE0CB}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+.hdr{position:sticky;top:0;z-index:60;background:rgba(255,255,255,0.94);backdrop-filter:blur(14px);border-bottom:1px solid #EAE7E1}
+.hdr .in{max-width:1080px;margin:0 auto;padding-left:24px;padding-right:24px;height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;flex-direction:column;gap:1px}
+.logo .nm{font-size:26px;font-weight:600;letter-spacing:-0.02em}
+.logo .nm b{color:#C4571C;font-weight:600}
+.logo .tg{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8A8478}
+.hdr .right{display:flex;align-items:center;gap:12px}
+.langsw{font-size:13px}
+.langsw a{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.08em;color:#3D4149;border:1px solid #DCD8D0;border-radius:999px;padding:7px 15px;display:inline-block}
+.langsw a:hover{border-color:#16181F;color:#16181F}
+.backlink{font-size:14.5px;color:#3D4149}
+.backlink:hover{color:#C4571C}
+.hero{background:#0D1117;color:#fff}
+.hero .in{padding-top:64px;padding-bottom:56px}
+.kicker{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#F0A868;margin:0 0 20px}
+.hero h1{font-size:42px;font-weight:300;line-height:1.14;letter-spacing:-0.025em;margin:0 0 16px;max-width:28ch;text-wrap:pretty}
+.hero .sub{font-size:18px;font-weight:300;color:rgba(255,255,255,0.75);margin:0;max-width:62ch;line-height:1.6}
+.btn{display:inline-block;font-size:16.5px;font-weight:600;background:#C4571C;color:#fff !important;padding:15px 32px;border-radius:999px}
+.btn:hover{background:#A03F12}
+.btn2{display:inline-block;font-size:16px;font-weight:400;color:#fff !important;border:1px solid rgba(255,255,255,0.34);padding:14px 28px;border-radius:999px;margin-inline-start:10px}
+.btn2:hover{border-color:#fff}
+.cta{background:#0D1117;color:#fff}
+.cta .in{padding-top:64px;padding-bottom:64px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:22px}
+.cta h2{font-size:30px;font-weight:300;letter-spacing:-0.02em;margin:0;max-width:30ch;text-wrap:pretty}
+.foot{background:#0D1117;color:rgba(255,255,255,0.46);border-top:1px solid rgba(255,255,255,0.12)}
+.foot .in{padding-top:22px;padding-bottom:22px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13.5px;font-weight:300}
+.foot a{color:rgba(255,255,255,0.6)}
+.foot a:hover{color:#fff}
+.stickycta{display:none;position:fixed;left:14px;right:14px;bottom:14px;z-index:70;background:#C4571C;color:#fff !important;text-align:center;font-size:16px;font-weight:600;padding:14px 18px;border-radius:999px;box-shadow:0 10px 28px rgba(13,17,23,0.28)}
+
+.art{padding:64px 0 20px}
+.art h2{font-size:30px;font-weight:300;line-height:1.18;letter-spacing:-0.02em;margin:52px 0 18px;text-wrap:pretty}
+.art h2:first-child{margin-top:0}
+.art p{font-size:16.5px;font-weight:300;line-height:1.72;color:#3D4149;margin:0 0 16px;max-width:76ch}
+.art ul{margin:0 0 18px;padding-inline-start:22px;max-width:76ch}
+.art li{font-size:16.5px;font-weight:300;line-height:1.66;color:#3D4149;margin-bottom:9px}
+.art li b,.art p b{font-weight:600;color:#16181F}
+.art figure{margin:30px 0;max-width:76ch}
+.art figure img{width:100%;height:auto;display:block;border:1px solid #EAE7E1;border-radius:12px}
+.art figcaption{font-size:14px;font-weight:300;color:#8A8478;margin-top:8px;line-height:1.55}
+.callout{background:#F7F4EF;border:1px solid #EAE7E1;border-inline-start:3px solid #C4571C;border-radius:12px;padding:20px 24px;margin:26px 0;max-width:76ch}
+.callout p{margin:0;font-size:16px}
+.tbl{width:100%;border-collapse:collapse;margin:24px 0 30px;font-size:15.5px}
+.tbl th{text-align:start;font-weight:600;padding:12px 14px;border-bottom:2px solid #16181F;font-size:14.5px}
+.tbl td{padding:12px 14px;border-bottom:1px solid #E1DCD3;font-weight:300;color:#3D4149;vertical-align:top;line-height:1.55}
+.tbl td:first-child{font-weight:500;color:#16181F}
+.faq{margin:10px 0 30px;max-width:76ch}
+.faq details{border-bottom:1px solid #E1DCD3;padding:4px 0}
+.faq summary{font-size:17px;font-weight:600;padding:14px 0;cursor:pointer;list-style-position:outside}
+.faq details p{padding:0 0 16px}
+.cluster{background:#F7F4EF;border-top:1px solid #EAE7E1;border-bottom:1px solid #EAE7E1;padding:56px 0}
+.cluster h2{font-size:26px;font-weight:300;margin:0 0 26px}
+.cluster .links{display:grid;grid-template-columns:1fr 1fr;gap:14px 40px}
+.cluster a{display:block;padding:14px 0;border-bottom:1px solid #E1DCD3;font-size:16px;font-weight:500}
+.cluster a:hover{color:#C4571C}
+.src{font-size:13.5px;color:#8A8478;margin-top:30px;max-width:76ch}
+.src a{color:#8A8478;text-decoration:underline}
+@media(max-width:760px){.art h2{font-size:24px}.cluster .links{grid-template-columns:1fr}.tbl{font-size:14px}.tbl th,.tbl td{padding:9px 8px}}
+
+@media(max-width:760px){.hero h1{font-size:30px}}
+@media(max-width:600px){
+  .wrap{padding-left:20px;padding-right:20px}
+  .logo .nm{font-size:22px}
+  .logo .tg{display:none}
+  .backlink{font-size:13px}
+  .hdr .in{height:auto;min-height:64px;padding-top:10px;padding-bottom:10px;flex-wrap:wrap;row-gap:8px;gap:12px}
+  .hero .in{padding-top:38px;padding-bottom:34px}
+  .hero h1{font-size:25px;line-height:1.2}
+  .art{padding:40px 0 10px}
+  .stickycta.on{display:block}
+}
+
+figure.wide{width:auto;max-width:none;margin-inline:max(calc(50% - 530px),calc(50% - 50vw + 18px))}
+@media(max-width:700px){figure.wide{margin-inline:0}}
+.hnav{display:flex;gap:18px;align-items:center;margin-inline-start:auto;margin-inline-end:16px}.hnav a{font-size:14px;color:#3D4149}.hnav a:hover{color:#C4571C}@media(max-width:1000px){.hnav{display:none}}
+
+/* --- единый футер --- */
+.sfoot{background:#0D1117;color:rgba(255,255,255,.65);margin-top:auto}
+/* Подвал у нижнего края даже на короткой странице. Разбор — в
+   08 - Проверки/patch_footer_bottom.py                        */
+body{min-height:100dvh;display:flex;flex-direction:column}
+.sfoot .in{max-width:1080px;margin:0 auto;padding:30px 24px 26px}
+.sfoot .row1{display:flex;flex-wrap:wrap;gap:10px 26px;padding-bottom:16px;margin-bottom:16px;border-bottom:1px solid rgba(255,255,255,.14)}
+.sfoot .row1 a{color:rgba(255,255,255,.95);text-decoration:none;font-size:15px}
+.sfoot .row1 a:hover{color:#F0A868}
+.sfoot .row2{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline;font-size:13px}
+.sfoot .row2 a{color:rgba(255,255,255,.65);text-decoration:none}
+.sfoot .row2 a:hover{color:#F0A868}
+.sfoot .lg2{font-size:15px;color:#fff;font-weight:600;letter-spacing:-0.02em}
+.sfoot .lg2 b{color:#C4571C}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:18px 0 22px}
+/*progblock*/.progblock{margin:44px 0 0;border-top:1px solid #EAE7E1;padding-top:30px;font-family:'Figtree','IBM Plex Sans Arabic',system-ui,sans-serif}.progblock .pcard{display:block;background:#0D1117;color:#fff;border-radius:16px;padding:24px 26px;text-decoration:none}.progblock .pcard .k{display:block;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#F0A868;margin-bottom:8px}html[lang="ar"] .progblock .pcard .k{font-family:'IBM Plex Sans Arabic',sans-serif;letter-spacing:.04em}.progblock .pcard b{display:block;font-size:19px;font-weight:600;line-height:1.3;margin-bottom:8px;color:#fff}.progblock .pcard p{margin:0 0 12px;font-size:14.5px;line-height:1.6;color:rgba(255,255,255,.78)}.progblock .pcard .go{color:#F0A868;font-weight:600;font-size:15px}.progblock .nb{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}@media(max-width:700px){.progblock .nb{grid-template-columns:1fr}}.progblock .nb>div{border:1px solid #EAE7E1;border-radius:14px;padding:16px 18px;background:#F7F4EF}.progblock .nb .h{display:block;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#8A8478;margin-bottom:8px}html[lang="ar"] .progblock .nb .h{font-family:'IBM Plex Sans Arabic',sans-serif;letter-spacing:.04em}.progblock .nb a{display:block;color:#16181F;text-decoration:none;font-size:15px;line-height:1.45;margin:0 0 6px}.progblock .nb a:hover{color:#C4571C}
+.hnav a{white-space:nowrap}.logo .tg{white-space:nowrap}/*hdr-mobile*/.hburger{display:none;margin-inline-start:6px;background:none;border:0;font-size:24px;line-height:1;cursor:pointer;color:#16181F;padding:4px 6px}.hdr .right{display:flex;align-items:center;gap:8px}@media(max-width:960px){.hburger{display:inline-block}.hnav,.nav{display:none;position:absolute;top:70px;left:0;right:0;background:#fff;border-bottom:1px solid #EAE7E1;flex-direction:column;align-items:flex-start;padding:14px 24px 16px;gap:12px;z-index:70;margin:0}.hnav.open,.nav.open{display:flex}.hnav a,.nav a.hm{display:block;font-size:16px;white-space:normal}.logo .tg{display:none}.hdr .in{gap:10px}}</style>
+</head>
+<body>
+<header class="hdr"><div class="wrap in">
+  <a class="logo" href="index.html"><span class="nm" translate="no">risk-<b>place</b>.org</span><span class="tg" data-ui="tagline">Business Continuity &amp; Resilience · GCC</span></a>
+  <nav class="hnav" id="hnav"><a href="resilience-governance-certificate.html">ERGP certification</a><a href="safe-programme.html">SAFE programme</a><a href="products.html">For organisations</a><a href="library.html">Library</a><a href="about.html">About</a><a href="index.html#contacts">Contact</a></nav><div class="right"><div class="langsw"><a href="bcp-methodology-ar.html" lang="ar" translate="no">العربية ←</a></div><button class="hburger" onclick="document.getElementById('hnav').classList.toggle('open')" aria-label="Menu">&#9776;</button></div>
+</div></header>
+
+<section class="hero"><div class="wrap in">
+  <p class="kicker" data-ui="kicker">Guide · Method · Business continuity</p>
+  <h1 data-ui="h1">Business continuity plan methodology: the six steps in order</h1>
+  <p class="sub" data-ui="sub">What comes before what, the output of each step, what the plan risk assessment actually assesses, where risk management meets continuity, and how to tell that the method was really applied rather than written down.</p>
+</div></section>
+
+<article class="art"><div class="wrap" id="art">
+<h2>Why the order is the method</h2>
+<p>Most plans that fail an exercise did not fail in the writing, they failed in the order. The plan was written before anyone knew which activities came first, so it carried recovery times the service owner never agreed to, and strategies that protect what is not critical. A methodology is not the shape of the document, it is the sequence of decisions that precede it.</p>
+<p>The six steps below are the common ground between ISO 22301 and the UAE national standard <a href="ncema-7000.html">AE/SCNS/NCEMA 7000</a>. The vocabulary differs slightly; the sequence does not.</p>
+<h2>The six steps and what each one produces</h2>
+<div class="tw"><table class="tbl"><thead><tr><th>Step</th><th>The question it answers</th><th>Output</th><th>Who decides</th></tr></thead><tbody><tr><td>1 · Scope and context</td><td>Which entities, sites and activities are covered, and who the interested parties are</td><td>A signed scope statement with exclusions justified</td><td>Top management</td></tr><tr><td>2 · Business impact analysis</td><td>What happens if this activity stops, and when the stoppage becomes intolerable</td><td>Prioritised activities with recovery times and dependencies</td><td>Activity owners</td></tr><tr><td>3 · Risk assessment</td><td>What could stop these specific activities, and how likely it is</td><td>A risk register linked to the prioritised activities</td><td>Risk owners with the risk function</td></tr><tr><td>4 · Strategies</td><td>How to close the gap between the recovery time needed and the one achievable today</td><td>One strategic option per prioritised activity, priced</td><td>Top management</td></tr><tr><td>5 · Plan and procedures</td><td>Who does what in the first hour and the first day</td><td>A plan with named roles, department cards and contact lists</td><td>The continuity lead with departments</td></tr><tr><td>6 · Exercise and improve</td><td>Does the plan work under pressure, and what broke</td><td>An exercise report with findings and closed actions</td><td>The continuity lead</td></tr></tbody></table></div><p>The output of each step is the input of the next. If the output does not exist, the step was not performed, whatever the steering slide says. Step two is covered in detail in <a href="business-impact-analysis.html">business impact analysis</a>, and the sections of the document itself in <a href="bcp-template-structure.html">what a real business continuity plan contains</a>.</p>
+<h2>The plan risk assessment: what exactly is assessed</h2>
+<p>The most common confusion is that the risk assessment repeats the impact analysis. Its job is different: the impact analysis ranks the activities, the risk assessment examines what threatens those activities specifically, not everything that could happen to the organisation.</p>
+<div class="tw"><table class="tbl"><thead><tr><th>Dimension</th><th>Business impact analysis</th><th>Plan risk assessment</th></tr></thead><tbody><tr><td>The question</td><td>What if the activity stops</td><td>What could stop it</td></tr><tr><td>The cause</td><td>Irrelevant, a stoppage is a stoppage</td><td>Central, because it decides the prevention</td></tr><tr><td>Output</td><td>Priority and recovery time</td><td>Likelihood and impact per threat to the activity</td></tr><tr><td>Use</td><td>Deciding what is worth protecting</td><td>Deciding where the protection goes</td></tr></tbody></table></div><p>Tie every risk to the activity it threatens, not to the organisation in general. A risk that touches no prioritised activity does not belong in the continuity plan; it belongs in the enterprise <a href="risk-register-template.html">risk register</a>.</p>
+<h2>Where risk management meets continuity</h2>
+<p>The two functions differ in timing, not in subject. Risk management works before the event to reduce its likelihood and impact; continuity assumes it happened and manages what follows. Three practical things join them: one register of activities and dependencies, one impact scale measured in money and time, and one committee that receives both sets of results. When the two streams run apart, a familiar contradiction appears: a risk marked acceptable in the register takes down a critical service in reality, because nobody compared the two on the same scale.</p>
+<h2>How to tell the method was really applied</h2>
+<ul><li>Every prioritised activity has a recovery time agreed in writing by the service owner, not by IT alone.</li><li>At least one activity is explicitly described as non-critical: a list where everything is critical has not been prioritised.</li><li>Every risk in the register names an activity, not a general heading such as reputation or people.</li><li>Every strategy carries a written cost, because a choice without a price is not a choice.</li><li>The last exercise left findings closed with dates, not a report saying everything went well.</li><li>The plan was reviewed after the last reorganisation, not only after the last audit.</li></ul>
+<p>The full readiness checklist for an existing plan is in <a href="bcp-plan-assessment.html">assessing a business continuity plan</a>.</p>
+<h2>Frequently asked questions</h2>
+<div class="faq"><details><summary>What is a business continuity plan methodology?</summary><p>An agreed sequence of six steps that produces the plan and lets you defend it: set the scope, run the business impact analysis, assess the risks to the prioritised activities, choose strategies, write the plan, then exercise and improve. The order is the methodology, and every step skipped shows up later in an audit.</p></details><details><summary>How is the plan risk assessment different from the business impact analysis?</summary><p>The impact analysis asks what happens if an activity stops and when the stoppage becomes intolerable, regardless of cause. The risk assessment asks what could stop it and how likely that is. The first sets priority and recovery times, the second decides where prevention goes.</p></details><details><summary>How long does the full methodology take?</summary><p>Eight to twelve weeks for a mid-size organisation starting from nothing, of which three to four are the impact analysis alone. The only honest shortcut is a narrower scope, never a skipped step.</p></details><details><summary>Is a ready-made template enough instead of the methodology?</summary><p>A template gives you the shape, not the decisions. A plan built on a template without an impact analysis contains recovery times nobody agreed to, and those are the first thing to collapse in an exercise. Fill the template in after steps two and three.</p></details><details><summary>How do risk management and business continuity relate?</summary><p>Risk management reduces the likelihood and impact of an event before it happens; business continuity assumes the event happened anyway and manages what follows. They share the activity register and the dependency map, which is why they are built together rather than in parallel.</p></details><details><summary>Who owns the methodology inside the organisation?</summary><p>The continuity lead owns the method, the activity owners own the content. When the continuity lead writes the plans on behalf of departments, the plan becomes their document alone, and the people who will execute it do not know it.</p></details></div>
+</div></article>
+
+<section class="cluster"><div class="wrap">
+  <h2 data-ui="clusterTitle">More from the continuity hub</h2>
+  <div class="links" id="cluster"><a href="business-impact-analysis.html">Business impact analysis: the money-first method</a><a href="bcp-template-structure.html">What a real business continuity plan contains</a><a href="bcp-plan-assessment.html">Assessing a business continuity plan</a><a href="recovery-objectives.html">Recovery objectives: RTO, RPO and MBCO</a><a href="ncema-7000.html">NCEMA 7000: the UAE national BCM standard</a><a href="tabletop-exercise-guide.html">How to run a tabletop exercise that finds real gaps</a></div>
+</div></section>
+
+<section class="cta"><div class="wrap in">
+  <h2 data-ui="ctaTitle">Which of the six steps is missing in your organisation? A gap assessment answers that in two weeks.</h2>
+  <div><a class="btn" href="gap-assessment.html" data-ui="cta">Request a gap assessment</a><a class="btn2" href="quiz.html" data-ui="cta2">Take the free readiness check</a></div>
+</div></section>
+
+
+
+<a class="stickycta" id="stickycta" href="gap-assessment.html" data-ui="sticky">NCEMA-ready gap assessment</a>
+
+<script>
+window.addEventListener('scroll',function(){
+  var el=document.getElementById('stickycta');if(!el)return;
+  var cta=document.querySelector('section.cta');
+  var show=window.scrollY>600&&(!cta||cta.getBoundingClientRect().top>window.innerHeight);
+  el.classList.toggle('on',show);
+},{passive:true});
+</script>
+<div class="wrap">
+<section class="progblock">
+  <a class="pcard" href="resilience-governance-certificate.html"><span class="k">Learn this properly</span><b>ERGP — the Executive Certificate in Enterprise Resilience Governance</b><p>Six modules, 94 chapters, a capstone defended before the examiner and a certificate anyone can verify. The first resilience governance certification fully available in Arabic, also in English. The AE/SCNS/NCEMA 7000 module is inside.</p><span class="go">Explore the ERGP certification →</span></a>
+  <div class="nb">
+    <div><span class="h">Read next</span><a href="what-is-bcm.html">What Is Business Continuity Management (BCM)? A Leader's Guide</a><a href="operational-resilience.html">Operational Resilience vs Business Continuity: What Actually Changes</a><a href="operational-resilience-testing.html">Operational resilience testing: how to prove that resilience works</a></div>
+    <div><span class="h">Key term</span><a href="terms/en/bcm.html">Business Continuity Management (BCM)</a></div>
+  </div>
+</section>
+</div>
+<footer class="sfoot"><div class="in"><div class="row1"><a href="resilience-governance-certificate.html">ERGP certification</a><a href="safe-programme.html">SAFE programme</a><a href="products.html">For organisations</a><a href="library.html">Library</a><a href="about.html">About</a><a href="index.html#contacts">Contact</a></div><div class="row2"><span class="lg2" translate="no">risk-<b>place</b>.org</span><span>© 2026 · Business Continuity &amp; Resilience · GCC</span><a href="about.html">About us</a><a href="resilience-governance-certificate.html#verify">Verify a certificate</a><a href="glossary.html">Glossary</a><a href="privacy.html">Privacy policy</a><a href="mailto:info@risk-place.org">info@risk-place.org</a><a href="https://bcm.risk-place.ru/" hreflang="ru">BCM library (RU)</a></div></div></footer>
+</body>
+</html>
