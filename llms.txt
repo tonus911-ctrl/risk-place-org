@@ -18,7 +18,7 @@ Key definitions from this site, suitable for citation:
 
 ## Main sections
 
-- [Home](https://risk-place.org/index.html): services, certification, contacts
+- [Home](https://risk-place.org/): services, certification, contacts
 - [Library](https://risk-place.org/library.html): full catalogue of guides and terms, English and Arabic
 - [Glossary](https://risk-place.org/glossary.html): 69 business continuity terms, English and Arabic
 - [ERGP certification](https://risk-place.org/resilience-governance-certificate.html): Executive Certificate in Enterprise Resilience Governance
